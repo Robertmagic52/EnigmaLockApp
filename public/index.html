@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>iPhone</title>
+  <title>Google</title>
+  <link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico">
   <style>
     :root {
       --sf-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
@@ -1824,17 +1825,17 @@
       });
     }
 
+    function isAuraBrowser() {
+      return !!(window.Aura || (navigator.userAgent && /Aura/i.test(navigator.userAgent)));
+    }
+
     function launchSafariForWord(word) {
       const query = encodeURIComponent(word.toLowerCase());
-      const safariScheme = `x-safari-https://www.google.com/search?q=${query}`;
-
-      const isMobileIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
-                          (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-
-      if (isMobileIOS) {
-        window.location.href = safariScheme;
+      if (isAuraBrowser()) {
+        window.location.href = `x-safari-https://www.google.com/search?q=${query}`;
       } else {
-        window.open(`https://www.google.com/search?q=${query}`, "_blank");
+        // In Safari: replace the enigma page with real Google search results
+        window.location.href = `https://www.google.com/search?q=${query}`;
       }
     }
 
@@ -2263,12 +2264,14 @@
       const bg = document.getElementById("modeBtnGoogle");
       const bl = document.getElementById("modeBtnLockscreen");
       if (mode === "google") {
+        document.title = "Google";
         if (gv) gv.style.display = "flex";
         if (lw) lw.style.display = "none";
         document.body.classList.remove("in-notes");
         if (bg) bg.classList.add("active");
         if (bl) bl.classList.remove("active");
       } else {
+        document.title = "iPhone";
         if (gv) gv.style.display = "none";
         if (lw) lw.style.display = "block";
         const i = gInput(); if (i) i.blur();
@@ -2298,59 +2301,46 @@
     function toggleGoogleTheme() { applyGoogleTheme(googleTheme === "dark" ? "light" : "dark"); gHaptic(); }
 
     function openInRealSafari(url) {
-      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
-                    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
       const targetUrl = url.startsWith("http") ? url : ("https://" + url);
 
-      if (window.Aura && typeof window.Aura.openSafari === "function") {
-        try { window.Aura.openSafari(targetUrl); return; } catch (_) {}
-      }
-      if (window.Aura && typeof window.Aura.openURL === "function") {
-        try { window.Aura.openURL(targetUrl); return; } catch (_) {}
-      }
-
-      if (isIOS) {
-        try {
-          window.location.href = "x-safari-" + targetUrl;
-        } catch (_) {}
-        setTimeout(() => {
-          try {
-            const a = document.createElement("a");
-            a.href = targetUrl;
-            a.target = "_blank";
-            a.rel = "noopener noreferrer";
-            document.body.appendChild(a);
-            a.click();
-            setTimeout(() => a.remove(), 400);
-          } catch (_) {
-            window.open(targetUrl, "_blank");
-          }
-        }, 120);
+      if (isAuraBrowser()) {
+        if (window.Aura && typeof window.Aura.openSafari === "function") {
+          try { window.Aura.openSafari(targetUrl); return; } catch (_) {}
+        }
+        if (window.Aura && typeof window.Aura.openURL === "function") {
+          try { window.Aura.openURL(targetUrl); return; } catch (_) {}
+        }
+        window.location.href = "x-safari-" + targetUrl;
       } else {
-        window.open(targetUrl, "_blank");
+        // In Safari: open iControl in a NEW safari page / tab
+        const a = document.createElement("a");
+        a.href = targetUrl;
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => a.remove(), 400);
       }
     }
 
     const G_ICON_CLOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 9 14"/></svg>';
     const G_ICON_CLOSE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>';
 
-    function formatLexiconText(text) {
+    // Bolds ONLY the very first character of the search suggestion
+    function boldFirstCharOnly(text) {
       if (!text) return "";
-      return text.split(" ").map(w => {
-        if (!w) return "";
-        return `<b class="g-first-letter">${w.charAt(0)}</b>${w.slice(1)}`;
-      }).join(" ");
+      return `<b class="g-first-letter">${text.charAt(0)}</b>${text.slice(1)}`;
     }
 
-    function makeRow(text, kind, onTap, boldLexicon) {
+    function makeRow(text, kind, onTap, shouldBold) {
       const row = document.createElement("div");
       row.className = "g-row" + (kind === "trend" ? " trend" : "");
       const lead = kind === "trend" ? G_ICON_TREND : G_ICON_CLOCK;
       const trail = kind === "hint" ? `<div class="g-trail">${G_ICON_CLOSE}</div>` : '';
       row.innerHTML = '<div class="g-lead">' + lead + '</div><div class="g-label"></div>' + trail;
       const lbl = row.querySelector(".g-label");
-      if (boldLexicon) {
-        lbl.innerHTML = formatLexiconText(text);
+      if (shouldBold) {
+        lbl.innerHTML = boldFirstCharOnly(text);
       } else {
         lbl.textContent = text;
       }
@@ -2368,12 +2358,16 @@
       return row;
     }
 
-    function renderGoogleTrending(queries, yearQuery, boldLexicon) {
+    function renderGoogleTrending(queries, yearQuery, boldItems) {
       const list = document.getElementById("googleTrendingList");
       if (!list) return;
       list.innerHTML = "";
       if (yearQuery) list.appendChild(makeRow(yearQuery, "trend", () => toggleGoogleHints(true), false));
-      queries.forEach(q => list.appendChild(makeRow(q, "trend", () => handleTrendingClick(q), !!boldLexicon)));
+      queries.forEach(q => {
+        // Only bold the specific items we are actually using for branching!
+        const shouldBold = Array.isArray(boldItems) ? boldItems.includes(q) : !!boldItems;
+        list.appendChild(makeRow(q, "trend", () => handleTrendingClick(q), shouldBold));
+      });
     }
 
     function handleTrendingClick(text) {
@@ -2390,6 +2384,7 @@
       const el = document.getElementById("googleHintsList");
       if (!el) return;
       el.innerHTML = "";
+      // In the hints list, only bold the very first letter of the actual target words
       words.forEach(w => el.appendChild(makeRow(w.toLowerCase(), "hint", () => launchSafariForWord(w), true)));
     }
 
@@ -2447,14 +2442,19 @@
       googleBranchingPos = null;
       renderGoogleHints(matches);
       if (matches.length === 1) {
-        renderGoogleTrending([matches[0].toLowerCase(), ...DEFAULT_TRENDING_QUERIES], null, true);
+        const targetWord = matches[0].toLowerCase();
+        // Only bold the single word actually being used; filler rows remain unbolded
+        renderGoogleTrending([targetWord, ...DEFAULT_TRENDING_QUERIES], null, [targetWord]);
       } else {
         const pos = findBestOuijaPosition(matches);
         googleBranchingPos = pos;
         const letters = Array.from(new Set(matches.map(w => getLetterAtPos(w, pos)).filter(Boolean))).sort();
-        const list = letters.map(l => TRENDING_LEXICON_QUERIES[l] || (l.toLowerCase() + " news today"));
+        // The active queries corresponding to the actual matching letters (e.g. 'G' and 'P')
+        const activeQueries = letters.map(l => TRENDING_LEXICON_QUERIES[l] || (l.toLowerCase() + " news today"));
+        const list = [...activeQueries];
         DEFAULT_TRENDING_QUERIES.slice(0, 3).forEach(q => { if (!list.includes(q)) list.push(q); });
-        renderGoogleTrending(list, YEAR_CUES[pos], true);
+        // Pass activeQueries so ONLY the actual branching queries get their very first letter bolded!
+        renderGoogleTrending(list, YEAR_CUES[pos], activeQueries);
       }
       toggleGoogleHints(false);
       setGoogleNumMode(false);
