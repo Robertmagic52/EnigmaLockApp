@@ -809,7 +809,8 @@
 
     .g-scroll { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 9px 11px 20px 11px; }
     .g-section-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 6px 8px 6px; }
-    .g-section-title { font-size: 20px; font-weight: 500; color: var(--g-icon); }
+    .g-section-title { font-size: 20px; font-weight: 500; color: var(--g-icon); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+    .g-section-title:active { opacity: .7; }
     .g-section-head svg { width: 22px; height: 22px; color: var(--g-icon); }
 
     .g-row { display: flex; align-items: center; height: 54px; padding: 0 2px; touch-action: manipulation; }
@@ -817,10 +818,13 @@
     .g-row.trend { border-bottom: 1px solid var(--g-line); }
     .g-row .g-lead { width: 44px; display: flex; align-items: center; justify-content: flex-start; padding-left: 8px; color: var(--g-sub); flex-shrink: 0; }
     .g-row .g-lead svg { width: 24px; height: 24px; }
-    .g-row .g-label { flex: 1; font-size: 18px; font-weight: 600; color: var(--g-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .g-row .g-label { flex: 1; font-size: 18px; font-weight: 400; color: var(--g-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .g-row.trend .g-label { font-weight: 400; color: var(--g-icon); }
-    .g-row .g-trail { width: 40px; display: flex; justify-content: center; color: var(--g-sub); }
-    .g-row .g-trail svg { width: 22px; height: 22px; }
+    .g-first-letter { font-weight: 800; color: inherit; }
+    .google-view.theme-dark .g-first-letter { color: #ffffff; font-weight: 800; }
+    .google-view.theme-light .g-first-letter { color: #000000; font-weight: 800; }
+    .g-row .g-trail { width: 40px; display: flex; justify-content: center; align-items: center; color: var(--g-sub); flex-shrink: 0; cursor: pointer; }
+    .g-row .g-trail svg { width: 20px; height: 20px; }
 
     /* Floating "google.com" pill that sits just above the keyboard (tap = number pad, double tap = category) */
     .g-pill-zone { position: fixed; left: 50%; transform: translateX(-50%); height: 33px; padding: 0 18px; z-index: 95; display: none; align-items: center; justify-content: center; border-radius: 17px; background: rgba(64,64,66,.94); color: #fff; font-size: 14.5px; font-weight: 500; letter-spacing: -.1px; white-space: nowrap; -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); -webkit-tap-highlight-color: transparent; box-shadow: 0 1px 3px rgba(0,0,0,.25); }
@@ -2296,26 +2300,80 @@
     function openInRealSafari(url) {
       const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
                     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-      if (isIOS) { const a = document.createElement("a"); a.href = "x-safari-" + url; a.rel = "noopener"; document.body.appendChild(a); a.click(); setTimeout(() => a.remove(), 500); }
-      else window.open(url, "_blank");
+      const targetUrl = url.startsWith("http") ? url : ("https://" + url);
+
+      if (window.Aura && typeof window.Aura.openSafari === "function") {
+        try { window.Aura.openSafari(targetUrl); return; } catch (_) {}
+      }
+      if (window.Aura && typeof window.Aura.openURL === "function") {
+        try { window.Aura.openURL(targetUrl); return; } catch (_) {}
+      }
+
+      if (isIOS) {
+        try {
+          window.location.href = "x-safari-" + targetUrl;
+        } catch (_) {}
+        setTimeout(() => {
+          try {
+            const a = document.createElement("a");
+            a.href = targetUrl;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(() => a.remove(), 400);
+          } catch (_) {
+            window.open(targetUrl, "_blank");
+          }
+        }, 120);
+      } else {
+        window.open(targetUrl, "_blank");
+      }
     }
 
-    function makeRow(text, kind, onTap) {
+    const G_ICON_CLOCK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 9 14"/></svg>';
+    const G_ICON_CLOSE = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+
+    function formatLexiconText(text) {
+      if (!text) return "";
+      return text.split(" ").map(w => {
+        if (!w) return "";
+        return `<b class="g-first-letter">${w.charAt(0)}</b>${w.slice(1)}`;
+      }).join(" ");
+    }
+
+    function makeRow(text, kind, onTap, boldLexicon) {
       const row = document.createElement("div");
       row.className = "g-row" + (kind === "trend" ? " trend" : "");
-      const lead = kind === "trend" ? G_ICON_TREND : G_ICON_SEARCH;
-      row.innerHTML = '<div class="g-lead">' + lead + '</div><div class="g-label"></div>';
-      row.querySelector(".g-label").textContent = text;
+      const lead = kind === "trend" ? G_ICON_TREND : G_ICON_CLOCK;
+      const trail = kind === "hint" ? `<div class="g-trail">${G_ICON_CLOSE}</div>` : '';
+      row.innerHTML = '<div class="g-lead">' + lead + '</div><div class="g-label"></div>' + trail;
+      const lbl = row.querySelector(".g-label");
+      if (boldLexicon) {
+        lbl.innerHTML = formatLexiconText(text);
+      } else {
+        lbl.textContent = text;
+      }
+      if (trail) {
+        const tr = row.querySelector(".g-trail");
+        if (tr) {
+          tr.addEventListener("click", (e) => {
+            e.stopPropagation();
+            row.style.opacity = "0";
+            setTimeout(() => row.remove(), 120);
+          });
+        }
+      }
       row.addEventListener("click", (e) => { e.stopPropagation(); onTap(); });
       return row;
     }
 
-    function renderGoogleTrending(queries, yearQuery) {
+    function renderGoogleTrending(queries, yearQuery, boldLexicon) {
       const list = document.getElementById("googleTrendingList");
       if (!list) return;
       list.innerHTML = "";
-      if (yearQuery) list.appendChild(makeRow(yearQuery, "trend", () => toggleGoogleHints(true)));
-      queries.forEach(q => list.appendChild(makeRow(q, "trend", () => handleTrendingClick(q))));
+      if (yearQuery) list.appendChild(makeRow(yearQuery, "trend", () => toggleGoogleHints(true), false));
+      queries.forEach(q => list.appendChild(makeRow(q, "trend", () => handleTrendingClick(q), !!boldLexicon)));
     }
 
     function handleTrendingClick(text) {
@@ -2332,7 +2390,7 @@
       const el = document.getElementById("googleHintsList");
       if (!el) return;
       el.innerHTML = "";
-      words.forEach(w => el.appendChild(makeRow(w.toLowerCase(), "hint", () => launchSafariForWord(w))));
+      words.forEach(w => el.appendChild(makeRow(w.toLowerCase(), "hint", () => launchSafariForWord(w), true)));
     }
 
     function toggleGoogleHints(forceShow) {
@@ -2389,14 +2447,14 @@
       googleBranchingPos = null;
       renderGoogleHints(matches);
       if (matches.length === 1) {
-        renderGoogleTrending([matches[0].toLowerCase(), ...DEFAULT_TRENDING_QUERIES]);
+        renderGoogleTrending([matches[0].toLowerCase(), ...DEFAULT_TRENDING_QUERIES], null, true);
       } else {
         const pos = findBestOuijaPosition(matches);
         googleBranchingPos = pos;
         const letters = Array.from(new Set(matches.map(w => getLetterAtPos(w, pos)).filter(Boolean))).sort();
         const list = letters.map(l => TRENDING_LEXICON_QUERIES[l] || (l.toLowerCase() + " news today"));
         DEFAULT_TRENDING_QUERIES.slice(0, 3).forEach(q => { if (!list.includes(q)) list.push(q); });
-        renderGoogleTrending(list, YEAR_CUES[pos]);
+        renderGoogleTrending(list, YEAR_CUES[pos], true);
       }
       toggleGoogleHints(false);
       setGoogleNumMode(false);
@@ -2462,27 +2520,76 @@
       document.getElementById("googleBtnMore").addEventListener("click", (e) => { e.stopPropagation(); toggleModeMenu(); });
       document.getElementById("googleScroll").addEventListener("click", () => toggleModeMenu(false));
       const input = gInput();
+      const n = gNumInput();
       const zone = document.getElementById("googlePillZone");
 
+      // Tapping "Trending searches" title opens iControl in Safari
+      const sectionTitle = document.getElementById("googleSectionTitle");
+      if (sectionTitle) {
+        const handleIControl = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          openInRealSafari("https://icontrol-magic.onrender.com");
+        };
+        sectionTitle.addEventListener("touchend", handleIControl);
+        sectionTitle.addEventListener("click", handleIControl);
+      }
+
       document.getElementById("googleBtnMic").addEventListener("click", (e) => { e.stopPropagation(); toggleGoogleTheme(); gInput().focus(); });
-      document.getElementById("googleBtnLens").addEventListener("click", (e) => {
-        e.stopPropagation();
-        openInRealSafari("https://icontrol-magic.onrender.com");
+
+      // Camera/Lens button opens iControl in Safari
+      const lensBtn = document.getElementById("googleBtnLens");
+      if (lensBtn) {
+        const handleLens = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          openInRealSafari("https://icontrol-magic.onrender.com");
+        };
+        lensBtn.addEventListener("touchend", handleLens);
+        lensBtn.addEventListener("click", handleLens);
+      }
+
+      // Plus button toggles numeric keypad
+      const plusBtn = document.getElementById("googleBtnPlus");
+      if (plusBtn) {
+        const handlePlus = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          toggleModeMenu(false);
+          setGoogleNumMode(!googleNumMode);
+        };
+        plusBtn.addEventListener("touchend", handlePlus);
+        plusBtn.addEventListener("click", handlePlus);
+      }
+
+      // Tapping background keeps keyboard active unless clicking a row or button
+      document.getElementById("googleView").addEventListener("click", (e) => {
+        if (e.target && e.target.closest && (e.target.closest("#googleSectionHead") || e.target.closest(".g-row") || e.target.closest(".g-menu") || e.target.closest(".g-icon-btn"))) return;
+        const f = googleNumMode ? gNumInput() : input;
+        if (document.activeElement !== f) f.focus();
       });
-      document.getElementById("googleBtnPlus").addEventListener("click", (e) => { e.stopPropagation(); toggleModeMenu(false); setGoogleNumMode(!googleNumMode); });
 
-      // Tapping anywhere on the page keeps the native keyboard up
-      document.getElementById("googleView").addEventListener("click", () => { const f = googleNumMode ? gNumInput() : input; if (document.activeElement !== f) f.focus(); });
-
-      // Double-tap on the text field toggles theme
-      let lastTap = 0;
-      input.addEventListener("touchend", () => {
+      // Double-tap on the text field triggers numeric keypad
+      let lastFieldTap = 0;
+      function handleFieldDoubleTap(e) {
         const now = Date.now();
-        if (now - lastTap < 300) { toggleGoogleTheme(); lastTap = 0; } else lastTap = now;
-      });
+        if (now - lastFieldTap > 40 && now - lastFieldTap < 400) {
+          e.preventDefault();
+          e.stopPropagation();
+          setGoogleNumMode(!googleNumMode);
+          lastFieldTap = 0;
+        } else {
+          lastFieldTap = now;
+        }
+      }
+      input.addEventListener("touchend", handleFieldDoubleTap);
+      n.addEventListener("touchend", handleFieldDoubleTap);
+      const wrap = document.querySelector(".g-input-wrap");
+      if (wrap) wrap.addEventListener("touchend", handleFieldDoubleTap);
+      input.addEventListener("dblclick", (e) => { e.preventDefault(); e.stopPropagation(); setGoogleNumMode(!googleNumMode); });
+      n.addEventListener("dblclick", (e) => { e.preventDefault(); e.stopPropagation(); setGoogleNumMode(!googleNumMode); });
 
       input.addEventListener("input", () => {
-
         // Space typed on an empty field reveals the hints
         if (input.value.length > 0 && input.value.trim() === "") {
           input.value = "";
@@ -2490,26 +2597,25 @@
         }
       });
 
-      const n = gNumInput();
       n.addEventListener("input", () => {
-          const digits = n.value.replace(/\D/g, "").slice(0, 4);
-          n.value = digits;
-          googleSecretDigits = digits;
-          if (digits.length === 4) {
-            setTimeout(() => {
-              const code = googleSecretDigits;
-              googleSecretDigits = "";
-              n.value = "";
-              if (code === "0000") {
-                setGoogleNumMode(false);
-                n.blur();
-                openSettings();
-              } else {
-                process4DigitCode(code);
-              }
-            }, 140);
-          }
-        });
+        const digits = n.value.replace(/\D/g, "").slice(0, 4);
+        n.value = digits;
+        googleSecretDigits = digits;
+        if (digits.length === 4) {
+          setTimeout(() => {
+            const code = googleSecretDigits;
+            googleSecretDigits = "";
+            n.value = "";
+            if (code === "0000") {
+              setGoogleNumMode(false);
+              n.blur();
+              openSettings();
+            } else {
+              process4DigitCode(code);
+            }
+          }, 140);
+        }
+      });
 
       input.addEventListener("keydown", (e) => {
         if (e.key === "Enter" && !googleNumMode) {
