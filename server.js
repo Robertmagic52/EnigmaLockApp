@@ -74,6 +74,65 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Handle Groq Whisper Audio Transcription API
+  if (req.method === "POST" && pathname === "/api/transcribe") {
+    const apiKey = req.headers["x-groq-key"] || process.env.GROQ_API_KEY;
+    if (!apiKey) {
+      res.writeHead(400, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ ok: false, error: "Missing Groq API Key" }));
+      return;
+    }
+
+    let bodyBuffers = [];
+    req.on("data", chunk => bodyBuffers.push(chunk));
+    req.on("end", async () => {
+      try {
+        const audioBuffer = Buffer.concat(bodyBuffers);
+        if (!audioBuffer || audioBuffer.length < 500) {
+          res.writeHead(400, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ ok: false, error: "Audio buffer too small" }));
+          return;
+        }
+
+        const contentType = req.headers["content-type"] || "audio/mp4";
+        const mimeType = contentType.includes(";") ? contentType.split(";")[0] : contentType;
+        const extension = mimeType.includes("webm") ? "webm" : (mimeType.includes("wav") ? "wav" : "mp4");
+
+        const formData = new FormData();
+        const blob = new Blob([audioBuffer], { type: mimeType });
+        formData.append("file", blob, `audio.${extension}`);
+        formData.append("model", "whisper-large-v3-turbo");
+        formData.append("language", "en");
+        formData.append("response_format", "json");
+
+        const groqRes = await fetch("https://api.groq.com/openai/v1/audio/transcriptions", {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${apiKey.trim()}`
+          },
+          body: formData
+        });
+
+        if (!groqRes.ok) {
+          const errText = await groqRes.text();
+          console.error("Groq API error:", errText);
+          res.writeHead(groqRes.status, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ ok: false, error: errText }));
+          return;
+        }
+
+        const data = await groqRes.json();
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ ok: true, text: data.text || "" }));
+      } catch (err) {
+        console.error("Transcription error:", err);
+        res.writeHead(500, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ ok: false, error: err.message }));
+      }
+    });
+    return;
+  }
+
   if (pathname === "/") pathname = "/index.html";
 
   const filePath = path.join(PUBLIC_DIR, pathname);

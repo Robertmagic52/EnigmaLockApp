@@ -914,6 +914,20 @@
         <button class="cat-pill-btn" style="flex: 1;" onclick="testMicPermission()">Allow / Test Microphone</button>
       </div>
 
+      <!-- Groq Whisper API Key Input for Standalone Cellular Performance -->
+      <div style="margin-top: 10px; margin-bottom: 10px; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.08);">
+        <label style="font-size: 12px; color: #aeaeb2; display: block; margin-bottom: 6px; font-weight: 500;">
+          Groq Whisper API Key (Free for Phone / Cellular):
+        </label>
+        <div style="display: flex; gap: 6px;">
+          <input type="password" id="groqApiKeyInput" placeholder="gsk_..." style="flex: 1; background: #1c1c1e; border: 1px solid #38383a; border-radius: 8px; color: #fff; padding: 8px 10px; font-size: 13px; font-family: -apple-system, monospace;" oninput="saveGroqApiKey(this.value)">
+          <button class="cat-pill-btn" style="padding: 6px 12px; font-size: 12px;" onclick="saveGroqApiKey(document.getElementById('groqApiKeyInput').value); alert('Key saved!');">Save</button>
+        </div>
+        <div style="font-size: 11px; color: #8e8e93; margin-top: 5px;">
+          Get free key instantly at <span style="color:#0A84FF;">console.groq.com</span> (zero cost, ~150ms transcription).
+        </div>
+      </div>
+
       <div id="lexiconMicStatus" style="font-size: 12px; color: #8e8e93; margin-bottom: 6px;">
         Mic Status: Tap button to initialize
       </div>
@@ -1111,6 +1125,11 @@
       updateUnlockModeUI();
       updateLexiconVoiceUI();
       updateCalendarIconDate();
+
+      const groqInput = document.getElementById("groqApiKeyInput");
+      if (groqInput && localStorage.getItem("enigma_groq_key")) {
+        groqInput.value = localStorage.getItem("enigma_groq_key");
+      }
     }
     loadSavedImages();
 
@@ -1640,7 +1659,11 @@
         clearOuijaDots();
         currentOuijaTargetPos = null;
 
-        // Covert performer haptic lock buzz: double buzz (120ms, pause 70ms, 160ms)
+        // Covert performer haptic lock buzz: Real Aura Taptic Engine if running in Aura!
+        if (window.Aura && window.Aura.haptic) {
+          try { Aura.haptic('notification', { style: 'success' }); } catch(_) {}
+          try { Aura.haptic('impact', { style: 'heavy' }); } catch(_) {}
+        }
         if (navigator.vibrate) navigator.vibrate([120, 70, 160]);
 
         // Update Homescreen top candidate text
@@ -1656,6 +1679,9 @@
         } catch (e) {}
       } else {
         // Multiple candidate words remain: advance to next Ouija branching position
+        if (window.Aura && window.Aura.haptic) {
+          try { Aura.haptic('impact', { style: 'light' }); } catch(_) {}
+        }
         if (navigator.vibrate) navigator.vibrate(50);
         renderTopCandidates(matched);
         renderBottomLetters(matched);
@@ -1697,13 +1723,212 @@
       applyOuijaLetterFilter(result.letter, result.word);
     }
 
+    /* ========================================================
+       AURA MEDIA AUDIO RECORDER & GROQ WHISPER CLIENT
+       ======================================================== */
+    let auraMediaRecorder = null;
+    let auraAudioStream = null;
+    let auraAudioCtx = null;
+    let auraAnalyser = null;
+    let isAuraRecordingSpeech = false;
+    let speechSilenceTimer = null;
+    let maxSpeechTimer = null;
+    let recordedAudioChunks = [];
+    let isTranscribing = false;
+
+    function saveGroqApiKey(key) {
+      if (key && key.trim()) {
+        localStorage.setItem("enigma_groq_key", key.trim());
+      } else {
+        localStorage.removeItem("enigma_groq_key");
+      }
+    }
+
+    function getGroqApiKey() {
+      return localStorage.getItem("enigma_groq_key") || "";
+    }
+
+    async function startAuraMediaStream() {
+      if (!lexiconVoiceEnabled) return;
+      if (auraAudioStream && auraAudioStream.active) return;
+
+      try {
+        if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+          updateLexiconStatusUI(false, "Microphone not accessible in this browser");
+          return;
+        }
+
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        auraAudioStream = stream;
+        window._enigmaAudioStream = stream;
+
+        let mimeType = 'audio/mp4';
+        if (typeof MediaRecorder !== 'undefined') {
+          if (MediaRecorder.isTypeSupported('audio/mp4')) mimeType = 'audio/mp4';
+          else if (MediaRecorder.isTypeSupported('audio/webm')) mimeType = 'audio/webm';
+          else mimeType = '';
+        }
+
+        const AudioCtx = window.AudioContext || window.webkitAudioContext;
+        if (AudioCtx) {
+          try {
+            auraAudioCtx = new AudioCtx();
+            if (auraAudioCtx.state === 'suspended') {
+              await auraAudioCtx.resume();
+            }
+            const source = auraAudioCtx.createMediaStreamSource(stream);
+            auraAnalyser = auraAudioCtx.createAnalyser();
+            auraAnalyser.fftSize = 512;
+            source.connect(auraAnalyser);
+
+            monitorVoiceLevels(mimeType);
+          } catch (e) {
+            console.warn("AudioContext init error:", e);
+          }
+        }
+
+        updateLexiconStatusUI(true);
+      } catch (err) {
+        console.warn("Aura getUserMedia notice:", err);
+        updateLexiconStatusUI(false, "Microphone access needed - tap Allow in Settings");
+      }
+    }
+
+    function monitorVoiceLevels(mimeType) {
+      if (!auraAnalyser) return;
+      const buffer = new Uint8Array(auraAnalyser.frequencyBinCount);
+
+      function checkAudio() {
+        if (!lexiconVoiceEnabled || !auraAudioStream || !auraAudioStream.active) return;
+
+        auraAnalyser.getByteFrequencyData(buffer);
+        let sum = 0;
+        for (let i = 0; i < buffer.length; i++) {
+          sum += buffer[i];
+        }
+        const avg = sum / buffer.length;
+
+        const THRESHOLD = 16;
+
+        if (avg > THRESHOLD) {
+          if (!isAuraRecordingSpeech && !isTranscribing) {
+            startSpeechRecording(mimeType);
+          }
+          if (speechSilenceTimer) {
+            clearTimeout(speechSilenceTimer);
+            speechSilenceTimer = null;
+          }
+        } else if (isAuraRecordingSpeech) {
+          if (!speechSilenceTimer) {
+            speechSilenceTimer = setTimeout(() => {
+              stopSpeechRecordingAndTranscribe();
+            }, 650);
+          }
+        }
+
+        requestAnimationFrame(checkAudio);
+      }
+
+      requestAnimationFrame(checkAudio);
+    }
+
+    function startSpeechRecording(mimeType) {
+      if (typeof MediaRecorder === 'undefined' || !auraAudioStream) return;
+      try {
+        recordedAudioChunks = [];
+        const options = mimeType ? { mimeType } : {};
+        auraMediaRecorder = new MediaRecorder(auraAudioStream, options);
+
+        auraMediaRecorder.ondataavailable = (e) => {
+          if (e.data && e.data.size > 0) {
+            recordedAudioChunks.push(e.data);
+          }
+        };
+
+        auraMediaRecorder.onstop = () => {
+          sendAudioForTranscription(mimeType);
+        };
+
+        auraMediaRecorder.start(250);
+        isAuraRecordingSpeech = true;
+
+        maxSpeechTimer = setTimeout(() => {
+          if (isAuraRecordingSpeech) {
+            stopSpeechRecordingAndTranscribe();
+          }
+        }, 3800);
+      } catch (e) {
+        console.warn("MediaRecorder start notice:", e);
+      }
+    }
+
+    function stopSpeechRecordingAndTranscribe() {
+      if (speechSilenceTimer) { clearTimeout(speechSilenceTimer); speechSilenceTimer = null; }
+      if (maxSpeechTimer) { clearTimeout(maxSpeechTimer); maxSpeechTimer = null; }
+
+      if (auraMediaRecorder && auraMediaRecorder.state === 'recording') {
+        try {
+          auraMediaRecorder.stop();
+        } catch (e) {}
+      }
+      isAuraRecordingSpeech = false;
+    }
+
+    async function sendAudioForTranscription(mimeType) {
+      if (recordedAudioChunks.length === 0) return;
+      const audioBlob = new Blob(recordedAudioChunks, { type: mimeType || 'audio/mp4' });
+      recordedAudioChunks = [];
+
+      if (audioBlob.size < 400) return;
+
+      isTranscribing = true;
+      const groqKey = getGroqApiKey();
+
+      try {
+        const headers = {
+          "Content-Type": audioBlob.type || "audio/mp4"
+        };
+        if (groqKey) {
+          headers["x-groq-key"] = groqKey;
+        }
+
+        const res = await fetch("/api/transcribe", {
+          method: "POST",
+          headers: headers,
+          body: audioBlob
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.text) {
+            processLexiconVoiceInput(data.text);
+          }
+        } else {
+          const err = await res.json().catch(() => ({}));
+          console.warn("Transcription notice:", err);
+          if (err.error && err.error.includes("Missing Groq API Key")) {
+            const statusEl = document.getElementById("lexiconMatchStatus");
+            if (statusEl) {
+              statusEl.innerHTML = '<span style="color:#FF9F0A;">Please enter Groq API Key in Settings</span>';
+            }
+          }
+        }
+      } catch (err) {
+        console.warn("Transcription fetch notice:", err);
+      } finally {
+        isTranscribing = false;
+      }
+    }
+
     function startLexiconVoice() {
       if (!lexiconVoiceEnabled) return;
+
+      // 1. Start Aura raw audio capture & VAD stream
+      startAuraMediaStream();
+
+      // 2. Also start Web Speech API if supported in browser environment
       const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
-      if (!SpeechRec) {
-        updateLexiconStatusUI(false, "Speech recognition not supported on this browser");
-        return;
-      }
+      if (!SpeechRec) return;
 
       if (recognition && isLexiconListening) return;
 
@@ -1739,7 +1964,6 @@
             console.warn("Speech recognition notice:", event.error);
             if (event.error === 'not-allowed') {
               isLexiconListening = false;
-              updateLexiconStatusUI(false, "Microphone access blocked - tap button above to allow");
             }
           };
 
@@ -1749,8 +1973,6 @@
               setTimeout(() => {
                 try { recognition.start(); } catch(e) {}
               }, 400);
-            } else {
-              updateLexiconStatusUI(false);
             }
           };
         }
@@ -1784,9 +2006,15 @@
       updateLexiconVoiceUI();
       if (lexiconVoiceEnabled) {
         startLexiconVoice();
-      } else if (recognition) {
-        try { recognition.stop(); } catch(e) {}
-        isLexiconListening = false;
+      } else {
+        if (recognition) {
+          try { recognition.stop(); } catch(e) {}
+          isLexiconListening = false;
+        }
+        if (auraAudioStream) {
+          auraAudioStream.getTracks().forEach(t => t.stop());
+          auraAudioStream = null;
+        }
       }
     }
 
