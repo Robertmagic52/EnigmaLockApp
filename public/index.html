@@ -143,7 +143,7 @@
     }
 
     /* =========================================================
-       LAYER 2: GENUINE iOS PASSCODE SCREEN (PIXEL-ACCURATE)
+       LAYER 2: AUTHENTIC GENUINE iOS PASSCODE SCREEN
        ========================================================= */
     .lockscreen-wrapper {
       position: absolute;
@@ -158,7 +158,7 @@
       transform: translateY(-100%);
     }
 
-    /* Full-screen Wallpaper Layer with subtle genuine iOS scrim */
+    /* Wallpaper Layer with Authentic subtle iOS scrim */
     .lock-wallpaper-bg {
       position: absolute;
       inset: 0;
@@ -179,16 +179,7 @@
       z-index: 2;
     }
 
-    /* =========================================================
-       GENUINE iOS GEOMETRIC POSITIONING
-       Top: 19.1% -> Enter Passcode
-       Top: 23.8% -> 6 Dots Row
-       Top: 34.6% -> Row 1 (1, 2, 3)
-       Top: 45.4% -> Row 2 (4, 5, 6)
-       Top: 56.3% -> Row 3 (7, 8, 9)
-       Top: 67.2% -> Row 4 (0)
-       Top: 90.0% -> Emergency / Cancel
-       ========================================================= */
+    /* UI Layer */
     .passcode-ui-layer {
       position: absolute;
       inset: 0;
@@ -198,22 +189,23 @@
       align-items: center;
     }
 
-    /* "Enter Passcode" Prompt (Top: 19.1% on iOS) */
+    /* "Your passcode is required to enable Face ID" (Top: 18.8%) */
     .passcode-prompt {
       position: absolute;
-      top: 19.1%;
+      top: 18.8%;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 21px;
-      font-weight: 500;
-      color: #ffffff;
-      letter-spacing: -0.3px;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.9);
+      letter-spacing: -0.15px;
       text-align: center;
       cursor: pointer;
-      white-space: nowrap;
+      max-width: 280px;
+      line-height: 1.35;
     }
 
-    /* 6 Dots Row (Top: 23.8% on iOS) */
+    /* 6 Dots Row (Top: 23.8%) */
     .passcode-dots-row {
       position: absolute;
       top: 23.8%;
@@ -232,22 +224,12 @@
       border-radius: 50%;
       border: 1.5px solid rgba(255, 255, 255, 0.85);
       background: transparent;
-      transition: background-color 0.12s ease, transform 0.12s ease, border-color 0.12s ease;
+      transition: background-color 0.12s ease, transform 0.12s ease;
     }
 
     .dot.filled {
       background: #ffffff;
       transform: scale(1.05);
-    }
-
-    .dot.success {
-      background: #30d158 !important;
-      border-color: #30d158 !important;
-    }
-
-    .dot.error {
-      background: #ff453a !important;
-      border-color: #ff453a !important;
     }
 
     @keyframes shakeKeypad {
@@ -339,20 +321,6 @@
     }
     .sub-action-btn:active {
       opacity: 0.5;
-    }
-
-    /* Home Indicator Pill Bar */
-    .home-indicator {
-      position: absolute;
-      bottom: 8px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 134px;
-      height: 5px;
-      background: rgba(255, 255, 255, 0.75);
-      border-radius: 100px;
-      pointer-events: none;
-      z-index: 10;
     }
 
     /* =========================================================
@@ -497,6 +465,22 @@
       margin-bottom: 12px;
     }
 
+    .guide-box {
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .guide-box strong {
+      color: #ffffff;
+    }
+
+    .guide-step {
+      margin-bottom: 8px;
+      padding-left: 12px;
+      border-left: 2px solid var(--accent-blue);
+    }
+
     .file-input-btn {
       display: inline-block;
       background: rgba(255, 255, 255, 0.16);
@@ -509,6 +493,10 @@
       cursor: pointer;
       text-align: center;
       margin-top: 6px;
+    }
+
+    .file-input-btn:active {
+      background: rgba(255, 255, 255, 0.3);
     }
 
     .reset-btn {
@@ -567,12 +555,12 @@
        ======================================================== -->
   <div class="homescreen-view" id="homescreenView">
 
-    <!-- Top Discreet Candidate Words Bar (CLEAN WHITE TEXT) -->
+    <!-- Top Discreet Candidate Words Bar (CLEAN WHITE TEXT, NO GRAY PILLS) -->
     <div class="top-candidates-bar" id="topCandidatesBar" style="display:none;">
       <!-- Word chips injected dynamically -->
     </div>
 
-    <!-- Bottom Discreet First-Letters Strip (CLEAN WHITE TEXT) -->
+    <!-- Bottom Discreet First-Letters Strip (CLEAN WHITE TEXT, NO PILLS) -->
     <div class="bottom-letters-strip" id="bottomLettersStrip" style="display:none;">
       <!-- Letter chips injected dynamically -->
     </div>
@@ -588,8 +576,10 @@
 
     <div class="passcode-ui-layer">
 
-      <!-- "Enter Passcode" Prompt (Top: 19.1%) -->
-      <div class="passcode-prompt" id="passcodePrompt">Enter Passcode</div>
+      <!-- "Your passcode is required to enable Face ID" Prompt -->
+      <div class="passcode-prompt" id="passcodePrompt" onclick="cyclePromptText()">
+        Your passcode is required to enable Face ID
+      </div>
 
       <!-- 6 Dots Row (Top: 23.8%) -->
       <div class="passcode-dots-row" id="dotsRow">
@@ -649,11 +639,10 @@
         </button>
       </div>
 
-      <!-- Row 4: 0 (Top: 67.2%) -->
+      <!-- Row 4: 0 (No plus sign, clean numeral) -->
       <div class="keypad-row row-4">
         <button class="key-btn" onclick="pressDigit('0')">
           <div class="key-num">0</div>
-          <div class="key-sub" style="font-size:12px;letter-spacing:0;">+</div>
         </button>
       </div>
 
@@ -662,9 +651,6 @@
         <button class="sub-action-btn" id="emergencyBtn" onclick="handleEmergencyClick()">Emergency</button>
         <button class="sub-action-btn" id="cancelBtn" onclick="handleCancelClick()">Cancel</button>
       </div>
-
-      <!-- Home Indicator -->
-      <div class="home-indicator"></div>
 
     </div>
 
@@ -677,7 +663,6 @@
       <div class="category-grid-pills" id="categoryPillsGrid">
         <button class="cat-pill-btn" data-cat="handheld" onclick="selectCategory('handheld')">Objects (In Hand)</button>
         <button class="cat-pill-btn" data-cat="everyday" onclick="selectCategory('everyday')">Everyday Objects</button>
-        <button class="cat-pill-btn" data-cat="big_objects" onclick="selectCategory('big_objects')">Large Objects / Furniture</button>
         <button class="cat-pill-btn" data-cat="animals" onclick="selectCategory('animals')">Animals</button>
         <button class="cat-pill-btn" data-cat="food" onclick="selectCategory('food')">Foods & Drinks</button>
         <button class="cat-pill-btn" data-cat="countries" onclick="selectCategory('countries')">Countries & Cities</button>
@@ -696,6 +681,37 @@
     <div class="settings-header">
       <div class="settings-title">Enigma Settings</div>
       <button class="settings-done-btn" onclick="closeSettings()">Done</button>
+    </div>
+
+    <!-- Quick Reference Guide for Performance -->
+    <div class="settings-section">
+      <div class="settings-section-title">Enigma Performance Guide</div>
+      <div class="guide-box">
+        <div class="guide-step">
+          <strong>1. 6-Digit Code Formula:</strong><br>
+          &bull; <strong>Digit 1</strong>: Length of word (3–9, 0=10, 1=11+)<br>
+          &bull; <strong>Digit 2</strong>: Position of 1st vowel (1–9)<br>
+          &bull; <strong>Digit 3</strong>: Position of 2nd vowel (or 0 if only 1 vowel)<br>
+          &bull; <strong>Digits 4 & 5</strong>: <code>0 0</code> (standard wildcards)<br>
+          &bull; <strong>Digit 6</strong>: First letter capital shape:<br>
+          &nbsp;&nbsp;&bull; <code>1</code> = Straight lines only (A, E, F, H, I, K, L, M, N, T, V, W, X, Y, Z)<br>
+          &nbsp;&nbsp;&bull; <code>2</code> = Straight + Curves (B, D, G, J, P, R, U)<br>
+          &nbsp;&nbsp;&bull; <code>3</code> = Curves only (C, O, Q, S)<br>
+          &nbsp;&nbsp;&bull; <code>0</code> = Skip shape (matches all words of that length & vowels)
+        </div>
+        <div class="guide-step">
+          <strong>2. Performance Examples:</strong><br>
+          &bull; <strong>SPOON</strong>: <code>5 3 4 0 0 3</code> (5 letters, vowels at 3 & 4, S is curved)<br>
+          &bull; <strong>LIGHTER</strong>: <code>7 2 6 0 0 1</code> (7 letters, vowels at 2 & 6, L is straight)<br>
+          &bull; <strong>GLASS</strong>: <code>5 3 0 0 0 2</code> (5 letters, vowel at 3, G is mixed)
+        </div>
+        <div class="guide-step">
+          <strong>3. Secret Controls:</strong><br>
+          &bull; <strong>Reset Screen</strong>: Double-tap or long-press ANY of the 4 corners at any time.<br>
+          &bull; <strong>Category Sheet</strong>: Tap "Emergency" to discreetly select category.<br>
+          &bull; <strong>Homescreen Reveal</strong>: If multiple words match, phone unlocks to fake homescreen with clean white text words at top and letters at bottom. Tap letter to filter, tap word to launch Safari Google Search.
+        </div>
+      </div>
     </div>
 
     <!-- Wallpaper Uploads (Lockscreen & Homescreen) -->
@@ -811,6 +827,7 @@
     const cancelBtn = document.getElementById("cancelBtn");
     const categorySheet = document.getElementById("categorySheet");
     const settingsModal = document.getElementById("settingsModal");
+    const passcodePrompt = document.getElementById("passcodePrompt");
 
     const dots = [
       document.getElementById("dot0"),
@@ -847,6 +864,19 @@
       updateCategoryPills();
     }
     loadSavedImages();
+
+    // Prompt text cycling
+    let promptMode = 0;
+    function cyclePromptText() {
+      promptMode = (promptMode + 1) % 2;
+      if (promptMode === 0) {
+        passcodePrompt.textContent = "Your passcode is required to enable Face ID";
+        passcodePrompt.style.fontSize = "15px";
+      } else {
+        passcodePrompt.textContent = "Enter Passcode";
+        passcodePrompt.style.fontSize = "21px";
+      }
+    }
 
     /* ========================================================
        CORNER RESET SYSTEM (ANY OF THE 4 CORNERS)
@@ -888,7 +918,7 @@
       topCandidatesBar.style.display = "none";
       bottomLettersStrip.style.display = "none";
       currentInput = "";
-      dots.forEach(d => d.classList.remove("filled", "success", "error"));
+      dots.forEach(d => d.classList.remove("filled"));
       cancelBtn.textContent = "Cancel";
       isUnlocked = false;
       currentCandidateWords = [];
@@ -967,7 +997,7 @@
         if (idx < currentInput.length) {
           dot.classList.add("filled");
         } else {
-          dot.classList.remove("filled", "success", "error");
+          dot.classList.remove("filled");
         }
       });
       cancelBtn.textContent = currentInput.length > 0 ? "Delete" : "Cancel";
@@ -975,13 +1005,12 @@
 
     function clearDots() {
       currentInput = "";
-      dots.forEach(d => d.classList.remove("filled", "success", "error"));
+      dots.forEach(d => d.classList.remove("filled"));
       cancelBtn.textContent = "Cancel";
       isUnlocked = false;
     }
 
     function shakeKeypad() {
-      dots.forEach(d => d.classList.add("error"));
       dotsRow.classList.add("shake");
       if (window.navigator && window.navigator.vibrate) {
         window.navigator.vibrate([40, 60, 40]);
@@ -989,7 +1018,7 @@
       setTimeout(() => {
         dotsRow.classList.remove("shake");
         clearDots();
-      }, 420);
+      }, 380);
     }
 
     /* ========================================================
@@ -1018,11 +1047,11 @@
     }
 
     /* ========================================================
-       SINGLE MATCH: UNLOCK DIRECTLY TO SAFARI
+       SINGLE MATCH: UNLOCK DIRECTLY TO SAFARI (NO GREEN)
        ======================================================== */
     function unlockSingleWord(word) {
       isUnlocked = true;
-      dots.forEach(d => d.classList.add("filled", "success"));
+      dots.forEach(d => d.classList.add("filled"));
 
       const query = encodeURIComponent(word.toLowerCase());
       const safariScheme = `x-safari-https://www.google.com/search?q=${query}`;
@@ -1036,31 +1065,28 @@
         } else {
           window.open(`https://www.google.com/search?q=${query}`, "_blank");
         }
-      }, 200);
+      }, 180);
     }
 
     /* ========================================================
-       MULTIPLE MATCHES: UNLOCK TO HOMESCREEN (DISCREET WHITE TEXT)
+       MULTIPLE MATCHES: UNLOCK TO HOMESCREEN (NO GREEN)
        ======================================================== */
     function unlockToHomescreen(words) {
       isUnlocked = true;
-      dots.forEach(d => d.classList.add("filled", "success"));
+      dots.forEach(d => d.classList.add("filled"));
 
       currentCandidateWords = words;
       activeLetterFilter = null;
 
       setTimeout(() => {
-        // Slide up lockscreen to reveal homescreen
         lockscreenWrapper.classList.add("unlocked-up");
 
-        // Render candidate words at top (Clean white text)
         renderTopCandidates(words);
         topCandidatesBar.style.display = "flex";
 
-        // Render first-letters strip at bottom (Clean white text)
         renderBottomLetters(words);
         bottomLettersStrip.style.display = "flex";
-      }, 200);
+      }, 180);
     }
 
     function renderTopCandidates(words) {
@@ -1079,7 +1105,6 @@
     function renderBottomLetters(words) {
       bottomLettersStrip.innerHTML = "";
 
-      // All option
       const allBtn = document.createElement("button");
       allBtn.className = "letter-chip all-chip active";
       allBtn.textContent = "All";
@@ -1091,7 +1116,6 @@
       };
       bottomLettersStrip.appendChild(allBtn);
 
-      // Unique first letters in alphabetical order
       const letters = Array.from(new Set(words.map(w => w[0].toUpperCase()))).sort();
       letters.forEach(letter => {
         const chip = document.createElement("button");
@@ -1102,7 +1126,6 @@
           document.querySelectorAll(".letter-chip").forEach(c => c.classList.remove("active"));
           chip.classList.add("active");
 
-          // Filter top words
           const filtered = currentCandidateWords.filter(w => w[0].toUpperCase() === letter);
           renderTopCandidates(filtered);
 
@@ -1132,14 +1155,13 @@
        SECRET SETTINGS & GESTURES
        ======================================================== */
     let promptPressTimer = null;
-    const promptEl = document.getElementById("passcodePrompt");
-    promptEl.addEventListener("touchstart", () => {
+    passcodePrompt.addEventListener("touchstart", () => {
       promptPressTimer = setTimeout(openSettings, 700);
     });
-    promptEl.addEventListener("touchend", () => {
+    passcodePrompt.addEventListener("touchend", () => {
       clearTimeout(promptPressTimer);
     });
-    promptEl.addEventListener("dblclick", openSettings);
+    passcodePrompt.addEventListener("dblclick", openSettings);
 
     function openSettings() {
       settingsModal.classList.add("show");

@@ -111,42 +111,6 @@
       "Ruler",
       "Lamp"
     ],
-    "big_objects": [
-      "Chair",
-      "Table",
-      "Desk",
-      "Bed",
-      "Couch",
-      "Sofa",
-      "Door",
-      "Window",
-      "Wall",
-      "Floor",
-      "Roof",
-      "Stairs",
-      "Elevator",
-      "Bridge",
-      "Tower",
-      "Castle",
-      "House",
-      "Apartment",
-      "Hotel",
-      "Car",
-      "Truck",
-      "Van",
-      "Bus",
-      "Taxi",
-      "Train",
-      "Subway",
-      "Airplane",
-      "Helicopter",
-      "Boat",
-      "Ship",
-      "Bicycle",
-      "Motorcycle",
-      "Scooter",
-      "Skateboard"
-    ],
     "animals": [
       "Dog",
       "Cat",
@@ -481,7 +445,6 @@
       "Keys",
       "Fork",
       "Lamp",
-      "Wall",
       "Wolf",
       "Hawk",
       "Milk"
@@ -504,8 +467,6 @@
       "Belt",
       "Ball",
       "Lamp",
-      "Desk",
-      "Wall",
       "Pony",
       "Bull",
       "Wolf",
@@ -526,7 +487,6 @@
       "Key",
       "Mug",
       "Hat",
-      "Van",
       "Fox",
       "May"
     ],
@@ -545,10 +505,6 @@
       "Cap",
       "Bag",
       "Box",
-      "Bed",
-      "Car",
-      "Van",
-      "Bus",
       "Dog",
       "Cat",
       "Rat",
@@ -580,9 +536,6 @@
       "Soap",
       "Nail",
       "Book",
-      "Door",
-      "Roof",
-      "Boat",
       "Goat",
       "Deer",
       "Lion",
@@ -604,7 +557,6 @@
       "Bell",
       "Belt",
       "Ball",
-      "Desk",
       "Pony",
       "Bull",
       "Duck",
@@ -647,8 +599,6 @@
       "Pen",
       "Bag",
       "Box",
-      "Bed",
-      "Bus",
       "Dog",
       "Rat",
       "Pig",
@@ -691,8 +641,6 @@
       "Basket",
       "Ticket",
       "Bucket",
-      "Window",
-      "Subway",
       "Kitten",
       "Rabbit",
       "Donkey",
@@ -758,7 +706,6 @@
       "Scarf",
       "Shirt",
       "Brick",
-      "Truck",
       "Chimp",
       "Sloth",
       "Skunk",
@@ -793,7 +740,6 @@
       "Mirror",
       "Hammer",
       "Ticket",
-      "Window",
       "Kitten",
       "Monkey",
       "Falcon",
@@ -911,7 +857,6 @@
     "all:424001": [
       "Tape",
       "Vase",
-      "Taxi",
       "Lime",
       "Kiwi",
       "Taco",
@@ -927,8 +872,6 @@
       "Tape",
       "Dice",
       "Vase",
-      "Sofa",
-      "Taxi",
       "Lime",
       "Kiwi",
       "Taco",
@@ -1006,8 +949,6 @@
       "Paper",
       "Towel",
       "Ruler",
-      "Tower",
-      "Hotel",
       "Camel",
       "Tiger",
       "Lemur",
@@ -1213,7 +1154,6 @@
     ],
     "all:534003": [
       "Spoon",
-      "Chair",
       "Sheep",
       "Squid",
       "Steak",
@@ -1227,9 +1167,6 @@
     "all:534000": [
       "Spoon",
       "Broom",
-      "Chair",
-      "Floor",
-      "Train",
       "Sheep",
       "Squid",
       "Steak",
@@ -1304,7 +1241,6 @@
       "Can",
       "Saw",
       "Cap",
-      "Car",
       "Cat",
       "Cow",
       "Sun"
@@ -1359,7 +1295,6 @@
       "Bottle",
       "Candle",
       "Kettle",
-      "Castle",
       "Turtle",
       "Waffle",
       "Pebble",
@@ -1381,9 +1316,6 @@
     ],
     "all:423002": [
       "Book",
-      "Door",
-      "Roof",
-      "Boat",
       "Goat",
       "Deer",
       "Bear",
@@ -1471,7 +1403,6 @@
     ],
     "all:525000": [
       "Cable",
-      "Table",
       "Horse",
       "Panda",
       "Zebra",
@@ -1498,7 +1429,6 @@
     ],
     "all:523001": [
       "Mouse",
-      "House",
       "Moose",
       "Koala",
       "Toast",
@@ -1509,7 +1439,6 @@
     ],
     "all:523501": [
       "Mouse",
-      "House",
       "Moose",
       "Koala"
     ],
@@ -1518,8 +1447,6 @@
     ],
     "all:523000": [
       "Mouse",
-      "Couch",
-      "House",
       "Moose",
       "Koala",
       "Goose",
@@ -1535,7 +1462,6 @@
     ],
     "all:523500": [
       "Mouse",
-      "House",
       "Moose",
       "Koala",
       "Goose",
@@ -1606,7 +1532,6 @@
     ],
     "all:734003": [
       "Speaker",
-      "Scooter",
       "Cheetah",
       "Croatia"
     ],
@@ -1615,7 +1540,6 @@
     ],
     "all:734603": [
       "Speaker",
-      "Scooter",
       "Cheetah"
     ],
     "everyday:734000": [
@@ -1623,7 +1547,6 @@
     ],
     "all:734000": [
       "Speaker",
-      "Scooter",
       "Cheetah",
       "Croatia"
     ],
@@ -1632,7 +1555,6 @@
     ],
     "all:734600": [
       "Speaker",
-      "Scooter",
       "Cheetah"
     ],
     "everyday:624003": [
@@ -1737,7 +1659,6 @@
     ],
     "all:626003": [
       "Candle",
-      "Castle",
       "Circle"
     ],
     "everyday:023801": [
@@ -1757,8 +1678,6 @@
     ],
     "all:524001": [
       "Towel",
-      "Tower",
-      "Hotel",
       "Tiger",
       "Lemur",
       "Lemon",
@@ -1881,7 +1800,6 @@
     ],
     "all:634000": [
       "Pliers",
-      "Stairs",
       "Cheese",
       "Greece",
       "Square"
@@ -2025,366 +1943,6 @@
       "Bread",
       "Green"
     ],
-    "big_objects:534003": [
-      "Chair"
-    ],
-    "big_objects:534000": [
-      "Chair",
-      "Floor",
-      "Train"
-    ],
-    "big_objects:525001": [
-      "Table"
-    ],
-    "all:525001": [
-      "Table",
-      "Horse",
-      "Zebra",
-      "Hippo",
-      "Mango",
-      "Kenya",
-      "Tokyo",
-      "Virgo",
-      "Libra"
-    ],
-    "big_objects:525000": [
-      "Table"
-    ],
-    "big_objects:420002": [
-      "Desk"
-    ],
-    "big_objects:420000": [
-      "Desk",
-      "Wall"
-    ],
-    "big_objects:320002": [
-      "Bed",
-      "Bus"
-    ],
-    "big_objects:320000": [
-      "Bed",
-      "Car",
-      "Van",
-      "Bus"
-    ],
-    "big_objects:523003": [
-      "Couch"
-    ],
-    "all:523003": [
-      "Couch",
-      "Cairo"
-    ],
-    "big_objects:523000": [
-      "Couch",
-      "House"
-    ],
-    "big_objects:424003": [
-      "Sofa"
-    ],
-    "all:424003": [
-      "Sofa",
-      "Cake",
-      "Soda",
-      "Cave"
-    ],
-    "big_objects:424000": [
-      "Sofa",
-      "Taxi"
-    ],
-    "big_objects:423002": [
-      "Door",
-      "Roof",
-      "Boat"
-    ],
-    "big_objects:423000": [
-      "Door",
-      "Roof",
-      "Boat"
-    ],
-    "big_objects:625001": [
-      "Window"
-    ],
-    "big_objects:625000": [
-      "Window",
-      "Subway"
-    ],
-    "big_objects:420001": [
-      "Wall"
-    ],
-    "big_objects:534001": [
-      "Floor",
-      "Train"
-    ],
-    "all:534001": [
-      "Floor",
-      "Train"
-    ],
-    "big_objects:634003": [
-      "Stairs"
-    ],
-    "all:634003": [
-      "Stairs",
-      "Cheese",
-      "Square"
-    ],
-    "big_objects:634000": [
-      "Stairs"
-    ],
-    "big_objects:813001": [
-      "Elevator"
-    ],
-    "all:813001": [
-      "Elevator",
-      "Elephant",
-      "Ice Cream",
-      "Aquarius"
-    ],
-    "big_objects:813571": [
-      "Elevator"
-    ],
-    "all:813571": [
-      "Elevator"
-    ],
-    "big_objects:813000": [
-      "Elevator"
-    ],
-    "all:813000": [
-      "Elevator",
-      "Elephant",
-      "Ice Cream",
-      "Aquarius"
-    ],
-    "big_objects:813570": [
-      "Elevator"
-    ],
-    "all:813570": [
-      "Elevator"
-    ],
-    "big_objects:636002": [
-      "Bridge"
-    ],
-    "all:636002": [
-      "Bridge"
-    ],
-    "big_objects:636000": [
-      "Bridge"
-    ],
-    "all:636000": [
-      "Bridge",
-      "France"
-    ],
-    "big_objects:524001": [
-      "Tower",
-      "Hotel"
-    ],
-    "big_objects:524000": [
-      "Tower",
-      "Hotel"
-    ],
-    "big_objects:626003": [
-      "Castle"
-    ],
-    "big_objects:626000": [
-      "Castle"
-    ],
-    "big_objects:523001": [
-      "House"
-    ],
-    "big_objects:523501": [
-      "House"
-    ],
-    "big_objects:523500": [
-      "House"
-    ],
-    "big_objects:913001": [
-      "Apartment"
-    ],
-    "all:913001": [
-      "Apartment"
-    ],
-    "big_objects:913701": [
-      "Apartment"
-    ],
-    "all:913701": [
-      "Apartment"
-    ],
-    "big_objects:913000": [
-      "Apartment"
-    ],
-    "all:913000": [
-      "Apartment"
-    ],
-    "big_objects:913700": [
-      "Apartment"
-    ],
-    "all:913700": [
-      "Apartment"
-    ],
-    "big_objects:320003": [
-      "Car"
-    ],
-    "big_objects:530001": [
-      "Truck"
-    ],
-    "all:530001": [
-      "Truck"
-    ],
-    "big_objects:530000": [
-      "Truck"
-    ],
-    "big_objects:320001": [
-      "Van"
-    ],
-    "big_objects:424001": [
-      "Taxi"
-    ],
-    "big_objects:625003": [
-      "Subway"
-    ],
-    "all:625003": [
-      "Subway",
-      "Carrot",
-      "Coffee",
-      "Silver",
-      "Cancer"
-    ],
-    "big_objects:812001": [
-      "Airplane"
-    ],
-    "all:812001": [
-      "Airplane"
-    ],
-    "big_objects:812681": [
-      "Airplane"
-    ],
-    "all:812681": [
-      "Airplane"
-    ],
-    "big_objects:812000": [
-      "Airplane"
-    ],
-    "all:812000": [
-      "Airplane"
-    ],
-    "big_objects:812680": [
-      "Airplane"
-    ],
-    "all:812680": [
-      "Airplane"
-    ],
-    "big_objects:024001": [
-      "Helicopter",
-      "Motorcycle"
-    ],
-    "all:024001": [
-      "Helicopter",
-      "Motorcycle",
-      "Watermelon"
-    ],
-    "big_objects:024691": [
-      "Helicopter"
-    ],
-    "all:024691": [
-      "Helicopter"
-    ],
-    "big_objects:024000": [
-      "Helicopter",
-      "Motorcycle"
-    ],
-    "all:024000": [
-      "Helicopter",
-      "Motorcycle",
-      "Watermelon"
-    ],
-    "big_objects:024690": [
-      "Helicopter"
-    ],
-    "all:024690": [
-      "Helicopter"
-    ],
-    "big_objects:430003": [
-      "Ship"
-    ],
-    "all:430003": [
-      "Ship",
-      "Swan",
-      "Crab",
-      "Snow",
-      "Star"
-    ],
-    "big_objects:430000": [
-      "Ship"
-    ],
-    "all:430000": [
-      "Ship",
-      "Swan",
-      "Crab",
-      "Frog",
-      "Plum",
-      "Twig",
-      "Snow",
-      "Star"
-    ],
-    "big_objects:727002": [
-      "Bicycle"
-    ],
-    "all:727002": [
-      "Bicycle"
-    ],
-    "big_objects:727000": [
-      "Bicycle"
-    ],
-    "all:727000": [
-      "Bicycle"
-    ],
-    "big_objects:0241001": [
-      "Motorcycle"
-    ],
-    "all:0241001": [
-      "Motorcycle"
-    ],
-    "big_objects:0241000": [
-      "Motorcycle"
-    ],
-    "all:0241000": [
-      "Motorcycle"
-    ],
-    "big_objects:734003": [
-      "Scooter"
-    ],
-    "big_objects:734603": [
-      "Scooter"
-    ],
-    "big_objects:734000": [
-      "Scooter"
-    ],
-    "big_objects:734600": [
-      "Scooter"
-    ],
-    "big_objects:035003": [
-      "Skateboard"
-    ],
-    "all:035003": [
-      "Skateboard"
-    ],
-    "big_objects:035783": [
-      "Skateboard"
-    ],
-    "all:035783": [
-      "Skateboard"
-    ],
-    "big_objects:035000": [
-      "Skateboard"
-    ],
-    "all:035000": [
-      "Skateboard"
-    ],
-    "big_objects:035780": [
-      "Skateboard"
-    ],
-    "all:035780": [
-      "Skateboard"
-    ],
     "animals:320002": [
       "Dog",
       "Rat",
@@ -2469,6 +2027,16 @@
       "Horse",
       "Zebra",
       "Hippo"
+    ],
+    "all:525001": [
+      "Horse",
+      "Zebra",
+      "Hippo",
+      "Mango",
+      "Kenya",
+      "Tokyo",
+      "Virgo",
+      "Libra"
     ],
     "animals:525000": [
       "Horse",
@@ -2699,6 +2267,11 @@
     "animals:813001": [
       "Elephant"
     ],
+    "all:813001": [
+      "Elephant",
+      "Ice Cream",
+      "Aquarius"
+    ],
     "animals:813601": [
       "Elephant"
     ],
@@ -2707,6 +2280,11 @@
     ],
     "animals:813000": [
       "Elephant"
+    ],
+    "all:813000": [
+      "Elephant",
+      "Ice Cream",
+      "Aquarius"
     ],
     "animals:813600": [
       "Elephant"
@@ -2854,10 +2432,25 @@
       "Swan",
       "Crab"
     ],
+    "all:430003": [
+      "Swan",
+      "Crab",
+      "Snow",
+      "Star"
+    ],
     "animals:430000": [
       "Swan",
       "Crab",
       "Frog"
+    ],
+    "all:430000": [
+      "Swan",
+      "Crab",
+      "Frog",
+      "Plum",
+      "Twig",
+      "Snow",
+      "Star"
     ],
     "animals:523002": [
       "Goose"
@@ -3124,6 +2717,9 @@
     "food:024001": [
       "Watermelon"
     ],
+    "all:024001": [
+      "Watermelon"
+    ],
     "food:024791": [
       "Watermelon"
     ],
@@ -3131,6 +2727,9 @@
       "Watermelon"
     ],
     "food:024000": [
+      "Watermelon"
+    ],
+    "all:024000": [
       "Watermelon"
     ],
     "food:024790": [
@@ -3268,6 +2867,12 @@
     "food:625003": [
       "Carrot",
       "Coffee"
+    ],
+    "all:625003": [
+      "Carrot",
+      "Coffee",
+      "Silver",
+      "Cancer"
     ],
     "food:625000": [
       "Carrot",
@@ -3448,6 +3053,10 @@
     "food:634003": [
       "Cheese"
     ],
+    "all:634003": [
+      "Cheese",
+      "Square"
+    ],
     "food:634603": [
       "Cheese"
     ],
@@ -3508,6 +3117,11 @@
     "food:424003": [
       "Cake",
       "Soda"
+    ],
+    "all:424003": [
+      "Cake",
+      "Soda",
+      "Cave"
     ],
     "food:736002": [
       "Brownie"
@@ -3761,6 +3375,9 @@
       "France"
     ],
     "countries:636000": [
+      "France"
+    ],
+    "all:636000": [
       "France"
     ],
     "countries:534003": [
@@ -4301,6 +3918,9 @@
       "Sydney"
     ],
     "countries:523003": [
+      "Cairo"
+    ],
+    "all:523003": [
       "Cairo"
     ],
     "countries:523503": [
