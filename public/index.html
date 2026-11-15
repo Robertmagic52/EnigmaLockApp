@@ -183,19 +183,70 @@
       margin-top: 1px;
     }
 
+    /* Discreet Corner Indicators for Safari vs Notes reveal mode */
+    .destination-indicator {
+      position: fixed;
+      top: 9px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      z-index: 9999;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      opacity: 0;
+    }
+    .destination-indicator.active {
+      opacity: 0.85;
+      transform: scale(1);
+    }
+    .indicator-safari {
+      left: 10px;
+      background: #0A84FF; /* Apple System Blue */
+      box-shadow: 0 0 5px rgba(10, 132, 255, 0.9);
+    }
+    .indicator-notes {
+      right: 10px;
+      background: #FFD60A; /* Apple System Yellow / Amber */
+      box-shadow: 0 0 5px rgba(255, 214, 10, 0.9);
+    }
+
+    /* Secret Left / Right edge toggle touch zones */
+    .secret-toggle-zone {
+      position: fixed;
+      top: 50px;
+      height: 240px;
+      width: 48px;
+      z-index: 85;
+      pointer-events: auto;
+      touch-action: manipulation;
+    }
+    .toggle-zone-left {
+      left: 0;
+    }
+    .toggle-zone-right {
+      right: 0;
+    }
+
     /* Homescreen Discreet Candidate Words (CLEAN WHITE TEXT, NO GRAY PILLS) */
     .top-candidates-bar {
       position: absolute;
-      top: calc(env(safe-area-inset-top, 44px) + 12px);
-      left: 16px;
-      right: 16px;
+      top: calc(env(safe-area-inset-top, 44px) + 8px);
+      left: 14px;
+      right: 14px;
       z-index: 20;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 16px 22px;
-      padding: 6px 0;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      gap: 16px;
+      padding: 6px 4px;
+      pointer-events: auto;
+    }
+    .top-candidates-bar::-webkit-scrollbar {
+      display: none;
     }
 
     .candidate-word-chip {
@@ -212,6 +263,8 @@
       transition: transform 0.1s ease, opacity 0.15s ease;
       touch-action: manipulation;
       letter-spacing: -0.2px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .candidate-word-chip:active {
@@ -219,75 +272,53 @@
       opacity: 0.7;
     }
 
-    /* Homescreen Discreet Bottom Letter Strip (MULTI-TIERED LAYERS) */
+    /* Homescreen Discreet Bottom Letter Strip (DYNAMIC SPREAD & THUMB COMFORT) */
     .bottom-letters-strip {
       position: absolute;
-      bottom: calc(env(safe-area-inset-bottom, 20px) + 90px);
-      left: 16px;
-      right: 16px;
+      bottom: calc(env(safe-area-inset-bottom, 20px) + 72px);
+      left: 12px;
+      right: 12px;
+      width: calc(100% - 24px);
       z-index: 25;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+      display: grid;
+      box-sizing: border-box;
       pointer-events: auto;
-    }
-
-    .letters-layer-row {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 16px;
-      width: 100%;
+      transition: bottom 0.22s cubic-bezier(0.16, 1, 0.3, 1), gap 0.2s ease;
     }
 
     .letter-chip {
-      background: rgba(26, 26, 30, 0.68);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border: 1.5px solid rgba(255, 255, 255, 0.24);
-      border-radius: 24px;
+      background: rgba(22, 22, 26, 0.75);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border: 1.5px solid rgba(255, 255, 255, 0.28);
+      border-radius: 25px;
       color: #ffffff;
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 700;
-      min-width: 80px;
-      height: 50px;
-      padding: 0 20px;
-      display: inline-flex;
+      width: 100%;
+      height: 52px;
+      display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.55);
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
-      transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+      transition: transform 0.1s ease, background 0.12s ease, border-color 0.12s ease;
       touch-action: manipulation;
       -webkit-tap-highlight-color: transparent;
+      box-sizing: border-box;
     }
 
     .letter-chip:active {
       transform: scale(0.92);
-      background: rgba(10, 132, 255, 0.65);
-      border-color: rgba(255, 255, 255, 0.8);
+      background: rgba(10, 132, 255, 0.75);
+      border-color: rgba(255, 255, 255, 0.95);
     }
 
     .letter-chip.active {
-      background: rgba(10, 132, 255, 0.75);
+      background: rgba(10, 132, 255, 0.85);
       border-color: #ffffff;
-      box-shadow: 0 0 16px rgba(10, 132, 255, 0.85);
-    }
-
-    .letter-chip.all-chip {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      min-width: 58px;
-      height: 32px;
-      border-radius: 16px;
-      background: rgba(40, 40, 45, 0.5);
-      border-color: rgba(255, 255, 255, 0.15);
-      opacity: 0.8;
+      box-shadow: 0 0 18px rgba(10, 132, 255, 0.9);
     }
 
     /* =========================================================
@@ -702,6 +733,14 @@
   <div class="corner-reset-zone corner-tr" id="cornerTR"></div>
   <div class="corner-reset-zone corner-bl" id="cornerBL"></div>
   <div class="corner-reset-zone corner-br" id="cornerBR"></div>
+
+  <!-- Discreet Reveal Mode Corner Indicators: Top-Left (Safari / Blue), Top-Right (Notes / Yellow) -->
+  <div class="destination-indicator indicator-safari active" id="indicatorSafari"></div>
+  <div class="destination-indicator indicator-notes" id="indicatorNotes"></div>
+
+  <!-- Secret Left / Right Screen Toggle Touch Zones -->
+  <div class="secret-toggle-zone toggle-zone-left" id="toggleZoneLeft" onclick="setRevealMode('safari')"></div>
+  <div class="secret-toggle-zone toggle-zone-right" id="toggleZoneRight" onclick="setRevealMode('notes')"></div>
 
   <!-- ========================================================
        LAYER 1: FAKE HOMESCREEN VIEW
@@ -1123,6 +1162,7 @@
       updateCategoryPills();
       updateUnlockModeUI();
       updateCalendarIconDate();
+      updateRevealIndicators();
     }
     loadSavedImages();
 
@@ -1321,15 +1361,49 @@
           stopCluePolling();
         }
 
-        if (unlockMode === "notes") {
-          unlockToNotes(matches);
-        } else if (matches.length === 1 && unlockMode === "safari") {
-          unlockSingleWord(matches[0]);
-        } else {
-          unlockToHomescreen(matches);
-        }
+        // ALWAYS unlock to homescreen first per user specification!
+        unlockToHomescreen(matches);
       } else {
         shakeKeypad();
+      }
+    }
+
+    /* ========================================================
+       REVEAL MODE TOGGLE: SAFARI (LEFT) VS NOTES (RIGHT)
+       With Top-Left (Blue) and Top-Right (Amber) Indicators
+       ======================================================== */
+    let revealMode = localStorage.getItem("enigma_reveal_mode") || "safari";
+
+    function setRevealMode(mode) {
+      revealMode = mode;
+      localStorage.setItem("enigma_reveal_mode", mode);
+      updateRevealIndicators();
+      if (window.Aura && window.Aura.haptic) {
+        try { Aura.haptic('selection'); } catch(_) {}
+      } else if (navigator.vibrate) {
+        navigator.vibrate(20);
+      }
+    }
+
+    function updateRevealIndicators() {
+      const safariInd = document.getElementById("indicatorSafari");
+      const notesInd = document.getElementById("indicatorNotes");
+      if (safariInd && notesInd) {
+        if (revealMode === "safari") {
+          safariInd.classList.add("active");
+          notesInd.classList.remove("active");
+        } else {
+          safariInd.classList.remove("active");
+          notesInd.classList.add("active");
+        }
+      }
+    }
+
+    function launchSelectedReveal(word) {
+      if (revealMode === "notes") {
+        unlockToNotes([word]);
+      } else {
+        launchSafariForWord(word);
       }
     }
 
@@ -1391,7 +1465,7 @@
     }
 
     /* ========================================================
-       MULTIPLE MATCHES: UNLOCK TO HOMESCREEN (NO GREEN)
+       UNLOCK TO HOMESCREEN (ALWAYS UNLOCKS HERE FIRST)
        ======================================================== */
     function unlockToHomescreen(words) {
       isUnlocked = true;
@@ -1409,7 +1483,7 @@
         if (words.length > 1) {
           updateOuijaBranching(words);
           renderBottomLetters(words);
-          bottomLettersStrip.style.display = "flex";
+          bottomLettersStrip.style.display = "grid";
         } else {
           bottomLettersStrip.style.display = "none";
           clearOuijaDots();
@@ -1419,12 +1493,14 @@
 
     function renderTopCandidates(words) {
       topCandidatesBar.innerHTML = "";
+      if (!words || words.length === 0) return;
+
       words.forEach(word => {
         const btn = document.createElement("button");
         btn.className = "candidate-word-chip";
         btn.textContent = word;
         btn.onclick = () => {
-          launchSafariForWord(word);
+          launchSelectedReveal(word);
         };
         topCandidatesBar.appendChild(btn);
       });
@@ -1444,31 +1520,59 @@
         return;
       }
 
-      // Format in distinct layers/tiers so performer can never misclick
-      // If 2 letters: 1 per layer (top row and bottom row) for 100% fail-safe thumb accuracy
-      // If 3+ letters: 2 per layer row
-      const chunkSize = letters.length === 2 ? 1 : 2;
-      const rows = [];
-      for (let i = 0; i < letters.length; i += chunkSize) {
-        rows.push(letters.slice(i, i + chunkSize));
+      // Dynamic thumb-reach and grid layout based on letter count:
+      // When options dwindle down to 2-4, move WAY down right above dock for minimal thumb travel!
+      if (letters.length === 2) {
+        // 2 options left: Move down to dock, 2 giant half-screen buttons!
+        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 70px)";
+        bottomLettersStrip.style.gridTemplateColumns = "1fr 1fr";
+        bottomLettersStrip.style.gap = "24px";
+      } else if (letters.length === 3) {
+        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 70px)";
+        bottomLettersStrip.style.gridTemplateColumns = "repeat(3, 1fr)";
+        bottomLettersStrip.style.gap = "14px";
+      } else if (letters.length === 4) {
+        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 74px)";
+        bottomLettersStrip.style.gridTemplateColumns = "1fr 1fr";
+        bottomLettersStrip.style.gap = "12px 20px";
+      } else if (letters.length <= 6) {
+        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 76px)";
+        bottomLettersStrip.style.gridTemplateColumns = "repeat(3, 1fr)";
+        bottomLettersStrip.style.gap = "10px 14px";
+      } else {
+        // Large sets (e.g. 7-12 letters): 4 columns across full screen width, only 2-3 rows tall!
+        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 80px)";
+        bottomLettersStrip.style.gridTemplateColumns = "repeat(4, 1fr)";
+        bottomLettersStrip.style.gap = "10px 10px";
       }
 
-      rows.forEach((rowLetters) => {
-        const rowEl = document.createElement("div");
-        rowEl.className = "letters-layer-row";
-        rowLetters.forEach(letter => {
-          const chip = document.createElement("button");
-          chip.className = "letter-chip";
-          chip.textContent = letter;
-          chip.onclick = () => {
-            activeLetterFilter = letter;
-            document.querySelectorAll(".letter-chip").forEach(c => c.classList.remove("active"));
-            chip.classList.add("active");
-            applyOuijaLetterFilter(letter);
-          };
-          rowEl.appendChild(chip);
-        });
-        bottomLettersStrip.appendChild(rowEl);
+      bottomLettersStrip.style.display = "grid";
+
+      letters.forEach(letter => {
+        const chip = document.createElement("button");
+        chip.className = "letter-chip";
+        chip.textContent = letter;
+        if (letters.length === 2) {
+          chip.style.height = "56px";
+          chip.style.fontSize = "26px";
+        } else if (letters.length === 3) {
+          chip.style.height = "54px";
+          chip.style.fontSize = "24px";
+        } else if (letters.length <= 6) {
+          chip.style.height = "50px";
+          chip.style.fontSize = "23px";
+        } else {
+          chip.style.height = "46px";
+          chip.style.fontSize = "21px";
+        }
+
+        chip.onclick = () => {
+          activeLetterFilter = letter;
+          document.querySelectorAll(".letter-chip").forEach(c => c.classList.remove("active"));
+          chip.classList.add("active");
+          applyOuijaLetterFilter(letter);
+        };
+        bottomLettersStrip.appendChild(chip);
       });
     }
 
@@ -1681,9 +1785,9 @@
           try { Aura.haptic('impact', { style: 'light' }); } catch(_) {}
         }
         if (navigator.vibrate) navigator.vibrate(50);
-        renderTopCandidates(matched);
-        renderBottomLetters(matched);
         updateOuijaBranching(matched);
+        renderBottomLetters(matched);
+        renderTopCandidates(matched);
 
         try {
           const notesIframe = document.getElementById("notesIframe");
