@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Lock Screen">
+  <title>iPhone</title>
+  <style>
+    :root {
+      --sf-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", -system-ui, sans-serif;
+      --accent-blue: #0a84ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000000;
+      font-family: var(--sf-font);
+      color: #ffffff;
+    }
+
+    /* Full-screen Wallpaper Layer */
+    .wallpaper-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(180deg, #182236 0%, #0d121c 50%, #07090e 100%);
+      transition: filter 0.3s ease, transform 0.3s ease;
+      z-index: 1;
+    }
+
+    /* Subtle lock screen blur overlay when entering passcode */
+    .wallpaper-blur-overlay {
+      position: absolute;
+      inset: 0;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: rgba(0, 0, 0, 0.28);
+      z-index: 2;
+      opacity: 0.95;
+    }
+
+    /* Main Container */
+    .lock-screen-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: calc(env(safe-area-inset-top, 44px) + 8px);
+      padding-bottom: calc(env(safe-area-inset-bottom, 24px) + 8px);
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    /* Status Bar Header */
+    .status-bar {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 8px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.2px;
+      margin-bottom: 4px;
+    }
+
+    .status-time {
+      font-weight: 600;
+    }
+
+    .status-icons {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Padlock Icon & Clock Area */
+    .lock-top-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2px;
+    }
+
+    .padlock-btn {
+      background: none;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .padlock-svg {
+      width: 22px;
+      height: 22px;
+      fill: none;
+      stroke: #ffffff;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .date-label {
+      font-size: 19px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+      letter-spacing: -0.3px;
+      margin-bottom: 2px;
+    }
+
+    .clock-display {
+      font-size: 82px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -2px;
+      color: #ffffff;
+      text-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+      margin-bottom: 14px;
+    }
+
+    /* "Enter Passcode" Prompt & Dots */
+    .passcode-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+
+    .passcode-prompt {
+      font-size: 19px;
+      font-weight: 500;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+      margin-bottom: 16px;
+    }
+
+    .passcode-dots-row {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      height: 18px;
+    }
+
+    .dot {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      border: 1.5px solid #ffffff;
+      background: transparent;
+      transition: background-color 0.1s ease, transform 0.1s ease;
+    }
+
+    .dot.filled {
+      background: #ffffff;
+      transform: scale(1.08);
+    }
+
+    /* Shake Animation for Incorrect/Reset */
+    @keyframes shakeAnimation {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-14px); }
+      40%, 80% { transform: translateX(14px); }
+    }
+
+    .passcode-dots-row.shake {
+      animation: shakeAnimation 0.35s ease;
+    }
+
+    /* Keypad Grid (Authentic iOS Circle Buttons) */
+    .keypad-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 76px);
+      gap: 16px 26px;
+      justify-content: center;
+      margin: 0 auto 10px auto;
+    }
+
+    .key-btn {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.17);
+      border: none;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.15s ease, transform 0.1s ease;
+      touch-action: manipulation;
+    }
+
+    .key-btn:active, .key-btn.active {
+      background: rgba(255, 255, 255, 0.45);
+      transform: scale(0.96);
+    }
+
+    .key-num {
+      font-size: 35px;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .key-sub {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-top: 1px;
+      color: rgba(255, 255, 255, 0.9);
+      height: 12px;
+      line-height: 12px;
+    }
+
+    /* Keypad Bottom Row (Emergency, 0, Delete) */
+    .bottom-row-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 280px;
+      margin: 10px auto 0 auto;
+      padding: 0 10px;
+    }
+
+    .sub-action-btn {
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 6px 12px;
+      font-family: inherit;
+    }
+
+    .sub-action-btn:active {
+      opacity: 0.6;
+    }
+
+    /* Bottom Flashlight & Camera Shortcuts */
+    .bottom-shortcuts-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 14px;
+      margin-top: 10px;
+    }
+
+    .round-shortcut-btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: none;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .round-shortcut-btn:active {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    /* Bottom Home Indicator Pill */
+    .home-indicator {
+      width: 135px;
+      height: 5px;
+      background: #ffffff;
+      border-radius: 10px;
+      margin: 8px auto 0 auto;
+    }
+
+    /* =========================================================
+       MULTIPLE CANDIDATES SELECTION SHEET (SPOTLIGHT STYLE)
+       ========================================================= */
+    .candidates-sheet {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(28, 28, 30, 0.94);
+      backdrop-filter: blur(35px);
+      -webkit-backdrop-filter: blur(35px);
+      border-bottom-left-radius: 28px;
+      border-bottom-right-radius: 28px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: calc(env(safe-area-inset-top, 40px) + 14px) 20px 24px 20px;
+      z-index: 50;
+      transform: translateY(-115%);
+      transition: transform 0.32s cubic-bezier(0.18, 0.89, 0.32, 1);
+    }
+
+    .candidates-sheet.open {
+      transform: translateY(0);
+    }
+
+    .sheet-pill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+
+    .sheet-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #8e8e93;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .sheet-close-btn {
+      background: #3a3a3c;
+      color: #ffffff;
+      border: none;
+      border-radius: 14px;
+      padding: 4px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .candidates-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+
+    .candidate-card-btn {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s ease, transform 0.1s ease;
+    }
+
+    .candidate-card-btn:active {
+      background: var(--accent-blue);
+      transform: scale(0.98);
+    }
+
+    .search-arrow {
+      color: #8e8e93;
+      font-size: 16px;
+    }
+
+    /* =========================================================
+       SECRET SETTINGS MODAL (WALLPAPER + CATEGORY + PRACTICE)
+       ========================================================= */
+    .settings-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      z-index: 100;
+      display: none;
+      flex-direction: column;
+      padding: calc(env(safe-area-inset-top, 40px) + 16px) 20px calc(env(safe-area-inset-bottom, 20px) + 16px) 20px;
+      overflow-y: auto;
+    }
+
+    .settings-modal.show {
+      display: flex;
+    }
+
+    .settings-card {
+      background: #1c1c1e;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 16px;
+    }
+
+    .settings-card-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #8e8e93;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 12px;
+    }
+
+    .settings-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .settings-row:last-child { border-bottom: none; }
+
+    select, input[type="text"] {
+      background: #2c2c2e;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 15px;
+      font-family: inherit;
+      outline: none;
+    }
+
+    .action-pill-btn {
+      background: var(--accent-blue);
+      color: #ffffff;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 16px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .close-settings-btn {
+      width: 100%;
+      background: #2c2c2e;
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 17px;
+      font-weight: 600;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Wallpaper Layer -->
+  <div class="wallpaper-bg" id="wallpaperLayer"></div>
+  <div class="wallpaper-blur-overlay"></div>
+
+  <!-- Main Lock Screen Layout -->
+  <div class="lock-screen-container">
+
+    <!-- Top Status Bar -->
+    <div class="status-bar">
+      <div class="status-time" id="statusTime">9:41</div>
+      <div class="status-icons">
+        <!-- Cellular Signal -->
+        <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor">
+          <rect x="0" y="8" width="3" height="3" rx="0.5"/>
+          <rect x="4.5" y="5.5" width="3" height="5.5" rx="0.5"/>
+          <rect x="9" y="3" width="3" height="8" rx="0.5"/>
+          <rect x="13.5" y="0" width="3" height="11" rx="0.5"/>
+        </svg>
+        <!-- 5G Label -->
+        <span style="font-size:12px;font-weight:700;">5G</span>
+        <!-- Battery Icon -->
+        <svg width="25" height="12" viewBox="0 0 25 12" fill="none">
+          <rect x="0.75" y="0.75" width="20.5" height="10.5" rx="3.25" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="2.5" y="2.5" width="16" height="7" rx="1.5" fill="currentColor"/>
+          <path d="M23 4C23.6 4.3 24 4.8 24 5.5C24 6.2 23.6 6.7 23 7V4Z" fill="currentColor"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Padlock & Big Clock -->
+    <div class="lock-top-area">
+      <button class="padlock-btn" id="padlockBtn" title="Hold to Open Settings" aria-label="Padlock">
+        <svg class="padlock-svg" id="padlockSvg" viewBox="0 0 24 24">
+          <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+          <path id="shacklePath" d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+      </button>
+      <div class="date-label" id="dateLabel">Saturday, November 14</div>
+      <div class="clock-display" id="clockDisplay">7:02</div>
+    </div>
+
+    <!-- "Enter Passcode" and Dots Indicator -->
+    <div class="passcode-section">
+      <div class="passcode-prompt">Enter Passcode</div>
+      <div class="passcode-dots-row" id="dotsRow">
+        <div class="dot" id="dot0"></div>
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+      </div>
+    </div>
+
+    <!-- Authentic Keypad 0-9 -->
+    <div class="keypad-grid">
+      <!-- 1 -->
+      <button class="key-btn" onclick="pressDigit('1')">
+        <div class="key-num">1</div>
+        <div class="key-sub">&nbsp;</div>
+      </button>
+      <!-- 2 -->
+      <button class="key-btn" onclick="pressDigit('2')">
+        <div class="key-num">2</div>
+        <div class="key-sub">ABC</div>
+      </button>
+      <!-- 3 -->
+      <button class="key-btn" onclick="pressDigit('3')">
+        <div class="key-num">3</div>
+        <div class="key-sub">DEF</div>
+      </button>
+      <!-- 4 -->
+      <button class="key-btn" onclick="pressDigit('4')">
+        <div class="key-num">4</div>
+        <div class="key-sub">GHI</div>
+      </button>
+      <!-- 5 -->
+      <button class="key-btn" onclick="pressDigit('5')">
+        <div class="key-num">5</div>
+        <div class="key-sub">JKL</div>
+      </button>
+      <!-- 6 -->
+      <button class="key-btn" onclick="pressDigit('6')">
+        <div class="key-num">6</div>
+        <div class="key-sub">MNO</div>
+      </button>
+      <!-- 7 -->
+      <button class="key-btn" onclick="pressDigit('7')">
+        <div class="key-num">7</div>
+        <div class="key-sub">PQRS</div>
+      </button>
+      <!-- 8 -->
+      <button class="key-btn" onclick="pressDigit('8')">
+        <div class="key-num">8</div>
+        <div class="key-sub">TUV</div>
+      </button>
+      <!-- 9 -->
+      <button class="key-btn" onclick="pressDigit('9')">
+        <div class="key-num">9</div>
+        <div class="key-sub">WXYZ</div>
+      </button>
+    </div>
+
+    <!-- Keypad Bottom Actions: Emergency, 0, Delete -->
+    <div class="bottom-row-actions">
+      <button class="sub-action-btn" onclick="openSettings()">Emergency</button>
+      <!-- 0 -->
+      <button class="key-btn" onclick="pressDigit('0')">
+        <div class="key-num">0</div>
+        <div class="key-sub" style="font-size:12px;letter-spacing:0;">+</div>
+      </button>
+      <button class="sub-action-btn" onclick="deleteDigit()">Delete</button>
+    </div>
+
+    <!-- Bottom Flashlight & Camera Shortcuts -->
+    <div class="bottom-shortcuts-row">
+      <button class="round-shortcut-btn" type="button" aria-label="Flashlight">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M6 2h12v3l-2 3v12a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V8L6 5V2zm2 2v1h8V4H8zm0 3.5l1.5 2.25V18h5v-8.25L16 7.5H8z"/>
+        </svg>
+      </button>
+      <button class="round-shortcut-btn" type="button" aria-label="Camera">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/>
+          <path d="M9 3l-1.5 2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.5L15 3H9z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- iOS Home Indicator Bar -->
+    <div class="home-indicator"></div>
+  </div>
+
+  <!-- ========================================================
+       MULTIPLE MATCHES CANDIDATES SHEET
+       ======================================================== -->
+  <div class="candidates-sheet" id="candidatesSheet">
+    <div class="sheet-pill-header">
+      <div class="sheet-title">Candidate Words</div>
+      <button class="sheet-close-btn" onclick="dismissCandidates()">Cancel</button>
+    </div>
+    <div class="candidates-list" id="candidatesList">
+      <!-- Injected dynamically -->
+    </div>
+  </div>
+
+  <!-- ========================================================
+       SECRET SETTINGS PANEL (WALLPAPER + CATEGORY + LOOKUP)
+       ======================================================== -->
+  <div class="settings-modal" id="settingsModal">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+      <h2 style="font-size:22px;font-weight:700;">Enigma Settings</h2>
+      <button class="action-pill-btn" style="background:#3a3a3c;" onclick="closeSettings()">Done</button>
+    </div>
+
+    <!-- Wallpaper Upload -->
+    <div class="settings-card">
+      <div class="settings-card-title">Custom Wallpaper</div>
+      <p style="font-size:13px;color:#8e8e93;margin-bottom:12px;">
+        Upload a photo from your iPhone to match your real lock screen 100%.
+      </p>
+      <div style="display:flex;gap:10px;align-items:center;">
+        <input type="file" id="wallpaperFileInput" accept="image/*" style="display:none;" onchange="handleWallpaperUpload(event)">
+        <button class="action-pill-btn" onclick="document.getElementById('wallpaperFileInput').click()">Choose Photo</button>
+        <button class="action-pill-btn" style="background:#ff453a;" onclick="resetWallpaper()">Reset Default</button>
+      </div>
+    </div>
+
+    <!-- Active Category -->
+    <div class="settings-card">
+      <div class="settings-card-title">Active Category</div>
+      <div class="settings-row">
+        <span>Category:</span>
+        <select id="categorySelect" onchange="changeCategory(this.value)">
+          <option value="objects">Everyday Objects (Default)</option>
+          <option value="animals">Animals</option>
+          <option value="countries">Countries &amp; Cities</option>
+          <option value="food">Food &amp; Drinks</option>
+          <option value="all">All Words (Combined)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Word Practice & Code Lookup -->
+    <div class="settings-card">
+      <div class="settings-card-title">Word Code Finder</div>
+      <div style="display:flex;gap:8px;margin-bottom:10px;">
+        <input type="text" id="testWordInput" placeholder="Enter word e.g. Spoon, Drill" style="flex:1;">
+        <button class="action-pill-btn" onclick="lookupWordCode()">Check</button>
+      </div>
+      <div id="testWordResult" style="font-size:14px;color:#30d158;font-weight:600;"></div>
+    </div>
+
+    <button class="close-settings-btn" onclick="closeSettings()">Close</button>
+  </div>
+
+  <!-- Load Comprehensive Dictionary Data -->
+  <script src="dictionary.js"></script>
+
+  <script>
+    "use strict";
+
+    // State
+    let currentInput = "";
+    let activeCategory = localStorage.getItem("enigma_category") || "objects";
+    let isUnlocked = false;
+
+    // Elements
+    const dots = [
+      document.getElementById("dot0"),
+      document.getElementById("dot1"),
+      document.getElementById("dot2"),
+      document.getElementById("dot3")
+    ];
+    const dotsRow = document.getElementById("dotsRow");
+    const candidatesSheet = document.getElementById("candidatesSheet");
+    const candidatesList = document.getElementById("candidatesList");
+    const settingsModal = document.getElementById("settingsModal");
+    const wallpaperLayer = document.getElementById("wallpaperLayer");
+
+    // Live Clock & Date update
+    function updateClock() {
+      const now = new Date();
+      let hours = now.getHours();
+      const minutes = String(now.getMinutes()).padStart(2, "0");
+      hours = hours % 12 || 12; // 12-hour format
+      document.getElementById("clockDisplay").textContent = `${hours}:${minutes}`;
+      document.getElementById("statusTime").textContent = `${hours}:${minutes}`;
+
+      const options = { weekday: "long", month: "long", day: "numeric" };
+      document.getElementById("dateLabel").textContent = now.toLocaleDateString("en-US", options);
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Wallpaper persistence
+    function initWallpaper() {
+      const saved = localStorage.getItem("enigma_custom_wallpaper");
+      if (saved) {
+        wallpaperLayer.style.backgroundImage = `url(${saved})`;
+      }
+    }
+    initWallpaper();
+
+    function handleWallpaperUpload(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(evt) {
+        const base64 = evt.target.result;
+        try {
+          localStorage.setItem("enigma_custom_wallpaper", base64);
+          wallpaperLayer.style.backgroundImage = `url(${base64})`;
+          alert("Wallpaper updated successfully!");
+        } catch (_) {
+          alert("Image file too large for browser storage. Please try a smaller photo.");
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function resetWallpaper() {
+      localStorage.removeItem("enigma_custom_wallpaper");
+      wallpaperLayer.style.backgroundImage = "linear-gradient(180deg, #182236 0%, #0d121c 50%, #07090e 100%)";
+      alert("Reset to default wallpaper.");
+    }
+
+    // Keypad Logic
+    function pressDigit(num) {
+      if (isUnlocked) return;
+      if (currentInput.length >= 4) return;
+
+      // Haptic feedback
+      if (navigator.vibrate) {
+        navigator.vibrate([10]);
+      }
+
+      currentInput += num;
+      updateDots();
+
+      // Check for match:
+      // If 3 digits, check if there is an exact single-vowel match (e.g. 421 for Fork)
+      if (currentInput.length === 3) {
+        const candidates = findMatches(currentInput);
+        if (candidates && candidates.length === 1) {
+          // Exact 3-digit match found! Unlock immediately
+          triggerUnlock(candidates[0]);
+          return;
+        }
+      }
+
+      // If 4 digits entered, resolve match
+      if (currentInput.length === 4) {
+        setTimeout(processCode, 120);
+      }
+    }
+
+    function deleteDigit() {
+      if (currentInput.length > 0) {
+        currentInput = currentInput.slice(0, -1);
+        updateDots();
+      }
+    }
+
+    function updateDots() {
+      for (let i = 0; i < 4; i++) {
+        if (i < currentInput.length) {
+          dots[i].classList.add("filled");
+        } else {
+          dots[i].classList.remove("filled");
+        }
+      }
+    }
+
+    function clearDots() {
+      currentInput = "";
+      updateDots();
+    }
+
+    function shakeDots() {
+      dotsRow.classList.add("shake");
+      if (navigator.vibrate) navigator.vibrate([40, 40, 40]);
+      setTimeout(() => {
+        dotsRow.classList.remove("shake");
+        clearDots();
+      }, 400);
+    }
+
+    // Enigma Dictionary Match Finder
+    function findMatches(code) {
+      if (!window.ENIGMA_DATA || !window.ENIGMA_DATA.database) return [];
+
+      const db = window.ENIGMA_DATA.database;
+      // 1. Check in active category
+      const catKey = `${activeCategory}:${code}`;
+      if (db[catKey] && db[catKey].length > 0) {
+        return db[catKey];
+      }
+
+      // 2. Fallback to all categories
+      const allKey = `all:${code}`;
+      if (db[allKey] && db[allKey].length > 0) {
+        return db[allKey];
+      }
+
+      return [];
+    }
+
+    // Process 4-digit code
+    function processCode() {
+      const candidates = findMatches(currentInput);
+
+      if (!candidates || candidates.length === 0) {
+        // No match found
+        shakeDots();
+        return;
+      }
+
+      if (candidates.length === 1) {
+        // Exactly ONE match: e.g. Spoon, Fork, Lighter
+        triggerUnlock(candidates[0]);
+      } else {
+        // MULTIPLE matches: e.g. Glass, Brick, Drill
+        showCandidatesSheet(candidates);
+      }
+    }
+
+    // Show Multiple Candidates Sheet (Spotlight style)
+    function showCandidatesSheet(words) {
+      candidatesList.innerHTML = "";
+      words.forEach((w) => {
+        const btn = document.createElement("button");
+        btn.className = "candidate-card-btn";
+        btn.innerHTML = `<span>${w}</span><span class="search-arrow">Google &rarr;</span>`;
+        btn.onclick = () => {
+          dismissCandidates();
+          triggerUnlock(w);
+        };
+        candidatesList.appendChild(btn);
+      });
+      candidatesSheet.classList.add("open");
+    }
+
+    function dismissCandidates() {
+      candidatesSheet.classList.remove("open");
+      clearDots();
+    }
+
+    // Trigger Unlock and Redirect to Real Safari with Real Google!
+    function triggerUnlock(word) {
+      isUnlocked = true;
+      // Visual unlock animation
+      document.getElementById("shacklePath").setAttribute("d", "M7 11V5a5 5 0 0 1 10 0v2");
+      dots.forEach(d => d.style.background = "#30d158");
+
+      const query = encodeURIComponent(word.toLowerCase());
+      const safariScheme = `x-safari-https://www.google.com/search?q=${query}`;
+      const regularUrl = `https://www.google.com/search?q=${query}`;
+
+      setTimeout(() => {
+        // Try opening in Real Safari via x-safari-https (specifically for Aura Browser)
+        window.location.href = safariScheme;
+
+        // Fallback for desktop or non-Aura browsers
+        setTimeout(() => {
+          window.location.href = regularUrl;
+        }, 300);
+      }, 150);
+    }
+
+    // Settings Modal
+    let padlockPressTimer = null;
+    const padlockBtn = document.getElementById("padlockBtn");
+
+    // Long press padlock or click to open settings
+    padlockBtn.addEventListener("touchstart", () => {
+      padlockPressTimer = setTimeout(openSettings, 800);
+    });
+    padlockBtn.addEventListener("touchend", () => {
+      clearTimeout(padlockPressTimer);
+    });
+    padlockBtn.addEventListener("dblclick", openSettings);
+
+    function openSettings() {
+      document.getElementById("categorySelect").value = activeCategory;
+      settingsModal.classList.add("show");
+    }
+
+    function closeSettings() {
+      settingsModal.classList.remove("show");
+    }
+
+    function changeCategory(cat) {
+      activeCategory = cat;
+      localStorage.setItem("enigma_category", cat);
+    }
+
+    // In-app Word Code Calculator for practice / testing
+    function computeWordCode(word) {
+      const w = word.trim().toUpperCase().replace(/[^A-Z]/g, "");
+      if (!w) return null;
+      const L = w.length;
+      const lenCode = L < 10 ? String(L) : (L === 10 ? "0" : "1");
+
+      const vowels = "AEIOU";
+      const vPos = [];
+      for (let i = 0; i < w.length; i++) {
+        if (vowels.includes(w[i])) vPos.push(i + 1);
+      }
+
+      function shapeOf(ch) {
+        if ("AEFHIKLMNTVWXYZ".includes(ch)) return "1"; // Straight
+        if ("BDGJPRU".includes(ch)) return "2";         // Mix
+        if ("COQS".includes(ch)) return "3";           // Curve
+        return "1";
+      }
+      const shape = shapeOf(w[0]);
+
+      if (vPos.length === 0) return `${lenCode}00${shape}`;
+      if (vPos.length === 1) return `${lenCode}${vPos[0]}${shape} (or ${lenCode}${vPos[0]}0${shape})`;
+      return `${lenCode}${vPos[0]}${vPos[1]}${shape}`;
+    }
+
+    function lookupWordCode() {
+      const val = document.getElementById("testWordInput").value;
+      if (!val) return;
+      const code = computeWordCode(val);
+      document.getElementById("testWordResult").textContent = `Word: "${val}" -> Code: ${code}`;
+    }
+  </script>
+</body>
+</html>
