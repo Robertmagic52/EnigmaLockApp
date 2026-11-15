@@ -83,6 +83,128 @@
       display: block;
     }
 
+    /* =========================================================
+       AUTHENTIC iOS TOP ROW APPS (4 ICONS) & OUIJA YELLOW DOT
+       ========================================================= */
+    .homescreen-top-apps-row {
+      position: absolute;
+      top: calc(env(safe-area-inset-top, 44px) + 55px);
+      left: 12px;
+      right: 12px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      z-index: 15;
+      pointer-events: auto;
+    }
+
+    .home-app-slot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 68px;
+      cursor: pointer;
+      touch-action: manipulation;
+    }
+
+    .home-app-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+      transition: transform 0.12s ease;
+    }
+
+    .home-app-slot:active .home-app-icon {
+      transform: scale(0.92);
+    }
+
+    .home-app-label {
+      margin-top: 6px;
+      font-size: 11.5px;
+      color: #ffffff;
+      font-weight: 500;
+      letter-spacing: -0.1px;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95);
+      text-align: center;
+      width: 72px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    /* Ouija Yellow Dot indicator */
+    .ouija-yellow-dot {
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #FFD60A; /* iOS System Yellow */
+      border: 1.5px solid #000000;
+      box-shadow: 0 0 10px rgba(255, 214, 10, 0.95), 0 0 3px #ffffff;
+      display: none;
+      z-index: 25;
+      animation: pulseOuija 1.6s infinite ease-in-out;
+    }
+
+    .ouija-yellow-dot.active {
+      display: block;
+    }
+
+    @keyframes pulseOuija {
+      0%, 100% { transform: scale(1); opacity: 0.95; }
+      50% { transform: scale(1.25); opacity: 1; }
+    }
+
+    /* When user has custom wallpaper, hide icon artwork so only the yellow dot floats over their real screenshot apps */
+    .homescreen-view.has-custom-wallpaper .home-app-icon {
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+    .homescreen-view.has-custom-wallpaper .home-app-icon svg,
+    .homescreen-view.has-custom-wallpaper .cal-icon-card,
+    .homescreen-view.has-custom-wallpaper .home-app-label {
+      opacity: 0 !important;
+      pointer-events: none;
+    }
+    .homescreen-view.has-custom-wallpaper .ouija-yellow-dot {
+      opacity: 1 !important;
+    }
+
+    /* Calendar icon styling */
+    .cal-icon-card {
+      width: 100%;
+      height: 100%;
+      border-radius: 14px;
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .cal-day-name {
+      font-size: 10px;
+      font-weight: 700;
+      color: #FF3B30;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-top: -2px;
+    }
+    .cal-day-num {
+      font-size: 28px;
+      font-weight: 300;
+      color: #000000;
+      line-height: 1;
+      margin-top: 1px;
+    }
+
     /* Homescreen Discreet Candidate Words (CLEAN WHITE TEXT, NO GRAY PILLS) */
     .top-candidates-bar {
       position: absolute;
@@ -585,6 +707,41 @@
       <!-- Word chips injected dynamically -->
     </div>
 
+    <!-- Authentic iOS Top Row of 4 Apps with Dynamic Ouija Dot Indicator -->
+    <div class="homescreen-top-apps-row" id="topAppsRow">
+      <div class="home-app-slot" id="appSlot1" onclick="handleAppSlotClick(1)">
+        <div class="home-app-icon icon-facetime">
+          <svg viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#30D158"/><path d="M16 22 H32 C34 22 35 23 35 25 V35 C35 37 34 38 32 38 H16 C14 38 13 37 13 35 V25 C13 23 14 22 16 22 Z M37 26 L45 21 C46 20 47 21 47 22 V38 C47 39 46 40 45 39 L37 34 Z" fill="#fff"/></svg>
+          <div class="ouija-yellow-dot" id="ouijaDot1"></div>
+        </div>
+        <div class="home-app-label">FaceTime</div>
+      </div>
+      <div class="home-app-slot" id="appSlot2" onclick="handleAppSlotClick(2)">
+        <div class="home-app-icon icon-calendar">
+          <div class="cal-icon-card">
+            <div class="cal-day-name" id="calDayName">SAT</div>
+            <div class="cal-day-num" id="calDayNum">14</div>
+          </div>
+          <div class="ouija-yellow-dot" id="ouijaDot2"></div>
+        </div>
+        <div class="home-app-label">Calendar</div>
+      </div>
+      <div class="home-app-slot" id="appSlot3" onclick="handleAppSlotClick(3)">
+        <div class="home-app-icon icon-photos">
+          <svg viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#ffffff"/><circle cx="30" cy="22" r="6" fill="#FF9500"/><circle cx="38" cy="26" r="6" fill="#FF2D55"/><circle cx="38" cy="34" r="6" fill="#AF52DE"/><circle cx="30" cy="38" r="6" fill="#5856D6"/><circle cx="22" cy="34" r="6" fill="#007AFF"/><circle cx="22" cy="26" r="6" fill="#34C759"/><circle cx="30" cy="30" r="4.5" fill="#FFCC00"/></svg>
+          <div class="ouija-yellow-dot" id="ouijaDot3"></div>
+        </div>
+        <div class="home-app-label">Photos</div>
+      </div>
+      <div class="home-app-slot" id="appSlot4" onclick="handleAppSlotClick(4)">
+        <div class="home-app-icon icon-camera">
+          <svg viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#8E8E93"/><path d="M22 19 L25 16 H35 L38 19 H43 C45 19 47 21 47 23 V39 C47 41 45 43 43 43 H17 C15 43 13 41 13 39 V23 C13 21 15 19 17 19 Z M30 38 C34 38 37 35 37 31 C37 27 34 24 30 24 C26 24 23 27 23 31 C23 35 26 38 30 38 Z" fill="#fff"/></svg>
+          <div class="ouija-yellow-dot" id="ouijaDot4"></div>
+        </div>
+        <div class="home-app-label">Camera</div>
+      </div>
+    </div>
+
     <!-- Bottom Discreet First-Letters Strip (CLEAN WHITE TEXT, NO PILLS) -->
     <div class="bottom-letters-strip" id="bottomLettersStrip" style="display:none;">
       <!-- Letter chips injected dynamically -->
@@ -744,7 +901,49 @@
           &bull; <strong>Category Sheet</strong>: Tap "Emergency" to discreetly select category.<br>
           &bull; <strong>Homescreen Reveal</strong>: If multiple words match, phone unlocks to fake homescreen with clean white text words at top and letters at bottom. Tap letter to filter, tap word to launch Safari Google Search.
         </div>
+        <div class="guide-step">
+          <strong>4. Lexicon Voice &amp; Ouija Dot Branching:</strong><br>
+          &bull; When multiple words match, a discreet <strong>Yellow Dot</strong> appears on one of the top 4 app icons indicating which letter to ask about:<br>
+          &nbsp;&nbsp;&bull; <strong>Icon 1 (FaceTime)</strong> &rarr; 1st letter<br>
+          &nbsp;&nbsp;&bull; <strong>Icon 2 (Calendar)</strong> &rarr; 2nd letter<br>
+          &nbsp;&nbsp;&bull; <strong>Icon 3 (Photos)</strong> &rarr; 3rd letter<br>
+          &nbsp;&nbsp;&bull; <strong>Icon 4 (Camera)</strong> &rarr; Last letter<br>
+          &bull; Have the spectator name a clue word starting with that letter (or name the object directly).<br>
+          &bull; Say: <em>"[word] interesting..."</em> (e.g. <em>"A gun, that's interesting"</em> or <em>"Gun, interesting"</em>). The phone detects the clue word, resolves the exact target word, gives a discreet haptic buzz, turns off the yellow dot, and updates Notes/Safari!
+        </div>
       </div>
+    </div>
+
+    <!-- Lexicon Voice & Ouija Branching Mode Section -->
+    <div class="settings-section">
+      <div class="settings-section-title">Lexicon Voice &amp; Ouija Branching</div>
+      <p style="font-size: 13px; color: #8e8e93; line-height: 1.4; margin-bottom: 10px;">
+        When multiple words match a passcode, Enigma displays a discreet <strong>Yellow Dot</strong> on one of the top 4 app icons indicating which letter position to prompt:
+      </p>
+      
+      <div style="background: rgba(255,255,255,0.06); border-radius: 10px; padding: 10px; font-size: 12.5px; line-height: 1.6; margin-bottom: 12px; border: 1px solid rgba(255,255,255,0.1);">
+        <div>&bull; <strong>Icon 1 (FaceTime)</strong> &rarr; 1st letter</div>
+        <div>&bull; <strong>Icon 2 (Calendar)</strong> &rarr; 2nd letter</div>
+        <div>&bull; <strong>Icon 3 (Photos)</strong> &rarr; 3rd letter</div>
+        <div>&bull; <strong>Icon 4 (Camera)</strong> &rarr; Last letter</div>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+        <span style="font-size: 14px; font-weight: 500;">Lexicon Voice Recognition</span>
+        <button class="cat-pill-btn" id="lexiconVoiceToggleBtn" onclick="toggleLexiconVoice()">Enabled</button>
+      </div>
+
+      <div style="display: flex; gap: 8px; margin-bottom: 10px;">
+        <button class="cat-pill-btn" style="flex: 1;" onclick="testMicPermission()">Allow / Test Microphone</button>
+      </div>
+
+      <div id="lexiconMicStatus" style="font-size: 12px; color: #8e8e93; margin-bottom: 6px;">
+        Mic Status: Tap button to initialize
+      </div>
+      <div id="lexiconLiveTranscript" style="font-size: 12px; color: #aeaeb2; font-style: italic; background: rgba(0,0,0,0.3); padding: 8px; border-radius: 8px; min-height: 32px;">
+        Say: <em>"Gun, that's interesting..."</em> or <em>"Interesting, a gun"</em>
+      </div>
+      <div id="lexiconMatchStatus" style="font-size: 12.5px; margin-top: 6px; min-height: 18px;"></div>
     </div>
 
     <!-- Unlock Destination Section -->
@@ -864,6 +1063,12 @@
     let unlockMode = localStorage.getItem("enigma_unlock_mode") || "notes";
     let currentCandidateWords = [];
     let activeLetterFilter = null;
+    let currentOuijaTargetPos = null; // 1 = 1st, 2 = 2nd, 3 = 3rd, 4 = Last letter
+    let lexiconVoiceEnabled = localStorage.getItem("enigma_lexicon_voice") !== "false"; // default enabled
+    let recognition = null;
+    let isLexiconListening = false;
+    let lastProcessedUtterance = "";
+    let lastProcessedTime = 0;
 
     // DOM Elements
     const lockscreenWrapper = document.getElementById("lockscreenWrapper");
@@ -887,6 +1092,15 @@
     ];
     const dotsRow = document.getElementById("dotsRow");
 
+    function updateCalendarIconDate() {
+      const d = new Date();
+      const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+      const dayEl = document.getElementById("calDayName");
+      const numEl = document.getElementById("calDayNum");
+      if (dayEl) dayEl.textContent = days[d.getDay()];
+      if (numEl) numEl.textContent = String(d.getDate());
+    }
+
     // Load saved images
     async function loadSavedImages() {
       // 1. Lockscreen
@@ -903,14 +1117,23 @@
       const homeData = await getImageFromDB("homescreen_wallpaper") || localStorage.getItem("enigma_homescreen_wallpaper");
       if (homeData) {
         homescreenView.style.backgroundImage = `url("${homeData}")`;
+        homescreenView.classList.add("has-custom-wallpaper");
       } else {
         const testHome = new Image();
-        testHome.onload = () => { homescreenView.style.backgroundImage = 'url("/custom_homescreen.jpg")'; };
+        testHome.onload = () => { 
+          homescreenView.style.backgroundImage = 'url("/custom_homescreen.jpg")'; 
+          homescreenView.classList.add("has-custom-wallpaper");
+        };
+        testHome.onerror = () => {
+          homescreenView.classList.remove("has-custom-wallpaper");
+        };
         testHome.src = "/custom_homescreen.jpg";
       }
 
       updateCategoryPills();
       updateUnlockModeUI();
+      updateLexiconVoiceUI();
+      updateCalendarIconDate();
     }
     loadSavedImages();
 
@@ -982,6 +1205,8 @@
       isUnlocked = false;
       currentCandidateWords = [];
       activeLetterFilter = null;
+      clearOuijaDots();
+      currentOuijaTargetPos = null;
       closeCategorySheet();
       closeSettings();
 
@@ -1095,6 +1320,20 @@
         localStorage.setItem("enigma_last_category", activeCategory);
         localStorage.setItem("enigma_last_code", code);
 
+        currentCandidateWords = [...matches];
+
+        // Trigger Ouija branching dot if multiple words match
+        if (matches.length > 1) {
+          updateOuijaBranching(matches);
+        } else {
+          clearOuijaDots();
+        }
+
+        // Start Lexicon voice listening
+        if (lexiconVoiceEnabled) {
+          startLexiconVoice();
+        }
+
         if (unlockMode === "notes") {
           unlockToNotes(matches);
         } else if (matches.length === 1 && unlockMode === "safari") {
@@ -1171,7 +1410,7 @@
       isUnlocked = true;
       dots.forEach(d => d.classList.add("filled"));
 
-      currentCandidateWords = words;
+      currentCandidateWords = [...words];
       activeLetterFilter = null;
 
       setTimeout(() => {
@@ -1180,8 +1419,14 @@
         renderTopCandidates(words);
         topCandidatesBar.style.display = "flex";
 
-        renderBottomLetters(words);
-        bottomLettersStrip.style.display = "flex";
+        if (words.length > 1) {
+          renderBottomLetters(words);
+          bottomLettersStrip.style.display = "flex";
+          updateOuijaBranching(words);
+        } else {
+          bottomLettersStrip.style.display = "none";
+          clearOuijaDots();
+        }
       }, 180);
     }
 
@@ -1246,6 +1491,364 @@
         window.open(`https://www.google.com/search?q=${query}`, "_blank");
       }
     }
+
+    /* ========================================================
+       LEXICON VOICE RECOGNITION & OUIJA DOT BRANCHING
+       ======================================================== */
+    function getLetterAtPos(word, pos) {
+      if (!word) return "";
+      const clean = word.trim().toUpperCase();
+      if (pos === 1) return clean[0] || "";
+      if (pos === 2) return clean[1] || "";
+      if (pos === 3) return clean[2] || ""; // strictly 3rd letter
+      if (pos === 4) return clean[clean.length - 1] || ""; // strictly last letter
+      return "";
+    }
+
+    function findBestOuijaPosition(words) {
+      if (!words || words.length <= 1) return 1;
+
+      const positions = [1, 2, 3, 4];
+      let bestPos = 1;
+      let bestScore = -Infinity;
+
+      positions.forEach(pos => {
+        const letters = words.map(w => getLetterAtPos(w, pos));
+        if (letters.some(l => !l)) return;
+
+        const freq = {};
+        letters.forEach(l => { freq[l] = (freq[l] || 0) + 1; });
+        const uniqueCount = Object.keys(freq).length;
+        if (uniqueCount <= 1) return;
+
+        const maxBucket = Math.max(...Object.values(freq));
+        const score = (uniqueCount * 10) - (maxBucket * 2);
+
+        if (score > bestScore) {
+          bestScore = score;
+          bestPos = pos;
+        }
+      });
+
+      return bestPos;
+    }
+
+    function updateOuijaBranching(words) {
+      clearOuijaDots();
+      if (!words || words.length <= 1) {
+        currentOuijaTargetPos = null;
+        return;
+      }
+
+      const bestPos = findBestOuijaPosition(words);
+      currentOuijaTargetPos = bestPos;
+
+      const targetDot = document.getElementById("ouijaDot" + bestPos);
+      if (targetDot) targetDot.classList.add("active");
+    }
+
+    function clearOuijaDots() {
+      for (let i = 1; i <= 4; i++) {
+        const dot = document.getElementById("ouijaDot" + i);
+        if (dot) dot.classList.remove("active");
+      }
+    }
+
+    function handleAppSlotClick(slotNum) {
+      if (!currentCandidateWords || currentCandidateWords.length <= 1) return;
+      currentOuijaTargetPos = slotNum;
+      clearOuijaDots();
+      const dot = document.getElementById("ouijaDot" + slotNum);
+      if (dot) dot.classList.add("active");
+      if (navigator.vibrate) navigator.vibrate(20);
+    }
+
+    const OUIJA_STOPWORDS = new Set([
+      "a", "an", "the", "that", "thats", "that's", "this", "these", "those",
+      "is", "was", "are", "were", "it", "its", "it's",
+      "so", "very", "and", "or", "but", "oh", "um", "uh", "like", "okay", "ok", "cool",
+      "yeah", "yes", "right", "well", "now", "just", "say", "said", "you", "your",
+      "i", "im", "i'm", "me", "my", "we", "he", "she", "they", "think", "thought",
+      "got", "how", "what", "which", "hmmm", "hmm", "pretty", "really", "kind", "of",
+      "about", "great", "nice", "fine", "fascinating", "word", "letter",
+      "tell", "have", "had", "has", "do", "does", "did", "to", "for", "with", "in", "on", "at"
+    ]);
+
+    const PHONETIC_LETTER_NAMES = {
+      "bee": "B", "see": "C", "sea": "C", "dee": "D", "ef": "F", "gee": "G",
+      "aitch": "H", "eye": "I", "jay": "J", "kay": "K", "el": "L", "em": "M",
+      "en": "N", "oh": "O", "pee": "P", "cue": "Q", "ar": "R", "are": "R",
+      "es": "S", "tee": "T", "tea": "T", "you": "U", "vee": "V", "double": "W",
+      "ex": "X", "why": "Y", "zee": "Z", "zed": "Z"
+    };
+
+    function extractOuijaLetter(text) {
+      if (!text) return null;
+      const lower = text.toLowerCase().replace(/[^a-z0-9'\s]/g, " ");
+      const tokens = lower.split(/\s+/).filter(Boolean);
+
+      const interestIdx = tokens.findLastIndex(t => t.startsWith("interest"));
+      if (interestIdx === -1) return null;
+
+      // 1. Primary: Word spoken immediately before "interesting" (e.g. "gun interesting", "a gun that's interesting")
+      for (let i = interestIdx - 1; i >= Math.max(0, interestIdx - 5); i--) {
+        const t = tokens[i];
+        if (OUIJA_STOPWORDS.has(t)) continue;
+        if (PHONETIC_LETTER_NAMES[t]) {
+          return { letter: PHONETIC_LETTER_NAMES[t], word: t };
+        }
+        const cleanWord = t.replace(/[^a-z]/g, "");
+        if (cleanWord.length > 0) {
+          return { letter: cleanWord[0].toUpperCase(), word: cleanWord };
+        }
+      }
+
+      // 2. Secondary: Word spoken immediately after "interesting" (e.g. "interesting, a gun")
+      for (let i = interestIdx + 1; i < Math.min(tokens.length, interestIdx + 5); i++) {
+        const t = tokens[i];
+        if (OUIJA_STOPWORDS.has(t)) continue;
+        if (PHONETIC_LETTER_NAMES[t]) {
+          return { letter: PHONETIC_LETTER_NAMES[t], word: t };
+        }
+        const cleanWord = t.replace(/[^a-z]/g, "");
+        if (cleanWord.length > 0) {
+          return { letter: cleanWord[0].toUpperCase(), word: cleanWord };
+        }
+      }
+
+      return null;
+    }
+
+    function applyOuijaLetterFilter(letter, rawWord) {
+      if (!currentCandidateWords || currentCandidateWords.length <= 1) return;
+
+      const upperLetter = letter.toUpperCase();
+      let matched = [];
+
+      // 1. Check if the raw word said directly matches one of the candidate words
+      if (rawWord) {
+        const directMatch = currentCandidateWords.filter(w => w.toUpperCase() === rawWord.toUpperCase());
+        if (directMatch.length > 0) {
+          matched = directMatch;
+        }
+      }
+
+      // 2. Filter by target letter position indicated by the yellow dot
+      if (matched.length === 0 && currentOuijaTargetPos) {
+        matched = currentCandidateWords.filter(w => {
+          const l = getLetterAtPos(w, currentOuijaTargetPos);
+          return l === upperLetter;
+        });
+      }
+
+      // 3. Fallback: if spectator or performer picked a letter that uniquely belongs to one candidate
+      if (matched.length === 0) {
+        const uniqueMatches = currentCandidateWords.filter(w => w.toUpperCase().includes(upperLetter));
+        if (uniqueMatches.length === 1) {
+          matched = uniqueMatches;
+        }
+      }
+
+      if (matched.length === 0) {
+        console.warn("No match for letter", upperLetter, "at position", currentOuijaTargetPos);
+        if (navigator.vibrate) navigator.vibrate([30, 40, 30]);
+        return;
+      }
+
+      currentCandidateWords = matched;
+      localStorage.setItem("enigma_last_words", JSON.stringify(matched));
+
+      if (matched.length === 1) {
+        const finalWord = matched[0];
+        clearOuijaDots();
+        currentOuijaTargetPos = null;
+
+        // Covert performer haptic lock buzz: double buzz (120ms, pause 70ms, 160ms)
+        if (navigator.vibrate) navigator.vibrate([120, 70, 160]);
+
+        // Update Homescreen top candidate text
+        renderTopCandidates([finalWord]);
+        if (bottomLettersStrip) bottomLettersStrip.style.display = "none";
+
+        // Update Notes peek in iframe if active
+        try {
+          const notesIframe = document.getElementById("notesIframe");
+          if (notesIframe && notesIframe.contentWindow && notesIframe.contentWindow.updatePeekContent) {
+            notesIframe.contentWindow.updatePeekContent();
+          }
+        } catch (e) {}
+      } else {
+        // Multiple candidate words remain: advance to next Ouija branching position
+        if (navigator.vibrate) navigator.vibrate(50);
+        renderTopCandidates(matched);
+        renderBottomLetters(matched);
+        updateOuijaBranching(matched);
+
+        try {
+          const notesIframe = document.getElementById("notesIframe");
+          if (notesIframe && notesIframe.contentWindow && notesIframe.contentWindow.updatePeekContent) {
+            notesIframe.contentWindow.updatePeekContent();
+          }
+        } catch (e) {}
+      }
+    }
+
+    function processLexiconVoiceInput(text) {
+      if (!text) return;
+      const now = Date.now();
+
+      const testDisplay = document.getElementById("lexiconLiveTranscript");
+      if (testDisplay) {
+        testDisplay.textContent = `Heard: "${text.trim()}"`;
+      }
+
+      const result = extractOuijaLetter(text);
+      if (!result) return;
+
+      if (result.word === lastProcessedUtterance && (now - lastProcessedTime < 2500)) {
+        return;
+      }
+
+      lastProcessedUtterance = result.word;
+      lastProcessedTime = now;
+
+      const statusEl = document.getElementById("lexiconMatchStatus");
+      if (statusEl) {
+        statusEl.innerHTML = `<span style="color:#30D158;">✓ Detected: <strong>"${result.word}"</strong> &rarr; Letter: <strong>${result.letter}</strong></span>`;
+      }
+
+      applyOuijaLetterFilter(result.letter, result.word);
+    }
+
+    function startLexiconVoice() {
+      if (!lexiconVoiceEnabled) return;
+      const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SpeechRec) {
+        updateLexiconStatusUI(false, "Speech recognition not supported on this browser");
+        return;
+      }
+
+      if (recognition && isLexiconListening) return;
+
+      try {
+        if (!recognition) {
+          recognition = new SpeechRec();
+          recognition.continuous = true;
+          recognition.interimResults = true;
+          recognition.lang = 'en-US';
+          recognition.maxAlternatives = 3;
+
+          recognition.onstart = () => {
+            isLexiconListening = true;
+            updateLexiconStatusUI(true);
+          };
+
+          recognition.onresult = (event) => {
+            let interimTranscript = '';
+            let finalTranscript = '';
+            for (let i = event.resultIndex; i < event.results.length; ++i) {
+              const res = event.results[i];
+              if (res.isFinal) {
+                finalTranscript += res[0].transcript + ' ';
+              } else {
+                interimTranscript += res[0].transcript;
+              }
+            }
+            const fullText = (finalTranscript + ' ' + interimTranscript).trim();
+            processLexiconVoiceInput(fullText);
+          };
+
+          recognition.onerror = (event) => {
+            console.warn("Speech recognition notice:", event.error);
+            if (event.error === 'not-allowed') {
+              isLexiconListening = false;
+              updateLexiconStatusUI(false, "Microphone access blocked - tap button above to allow");
+            }
+          };
+
+          recognition.onend = () => {
+            isLexiconListening = false;
+            if (lexiconVoiceEnabled) {
+              setTimeout(() => {
+                try { recognition.start(); } catch(e) {}
+              }, 400);
+            } else {
+              updateLexiconStatusUI(false);
+            }
+          };
+        }
+
+        recognition.start();
+      } catch (e) {
+        console.warn("Recognition start notice:", e);
+      }
+    }
+
+    async function testMicPermission() {
+      const statusEl = document.getElementById("lexiconMicStatus");
+      if (statusEl) statusEl.textContent = "Requesting microphone permission...";
+
+      try {
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          window._enigmaAudioStream = stream;
+          if (statusEl) statusEl.innerHTML = '<span style="color:#30D158;">✓ Microphone access granted!</span>';
+        }
+      } catch (err) {
+        if (statusEl) statusEl.innerHTML = `<span style="color:#FF453A;">Microphone error: ${err.message || err}</span>`;
+      }
+
+      startLexiconVoice();
+    }
+
+    function toggleLexiconVoice() {
+      lexiconVoiceEnabled = !lexiconVoiceEnabled;
+      localStorage.setItem("enigma_lexicon_voice", lexiconVoiceEnabled ? "true" : "false");
+      updateLexiconVoiceUI();
+      if (lexiconVoiceEnabled) {
+        startLexiconVoice();
+      } else if (recognition) {
+        try { recognition.stop(); } catch(e) {}
+        isLexiconListening = false;
+      }
+    }
+
+    function updateLexiconVoiceUI() {
+      const btn = document.getElementById("lexiconVoiceToggleBtn");
+      if (btn) {
+        btn.textContent = lexiconVoiceEnabled ? "Enabled" : "Disabled";
+        btn.classList.toggle("selected", lexiconVoiceEnabled);
+      }
+    }
+
+    function updateLexiconStatusUI(active, errorMsg) {
+      const statusEl = document.getElementById("lexiconMicStatus");
+      if (!statusEl) return;
+      if (errorMsg) {
+        statusEl.innerHTML = `<span style="color:#FF453A;">${errorMsg}</span>`;
+      } else if (active) {
+        statusEl.innerHTML = '<span style="color:#30D158;">● Listening continuously</span>';
+      } else {
+        statusEl.textContent = 'Mic Status: Standby';
+      }
+    }
+
+    function userInteractionStartVoice() {
+      if (lexiconVoiceEnabled && !isLexiconListening) {
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+          navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+            window._enigmaAudioStream = stream;
+            startLexiconVoice();
+          }).catch(() => {
+            startLexiconVoice();
+          });
+        } else {
+          startLexiconVoice();
+        }
+      }
+    }
+    document.addEventListener("pointerdown", userInteractionStartVoice, { once: true });
+    document.addEventListener("touchstart", userInteractionStartVoice, { once: true });
 
     /* ========================================================
        SECRET SETTINGS & GESTURES
