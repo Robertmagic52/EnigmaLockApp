@@ -65,7 +65,7 @@
 
     /* LAYER 1.5: AUTHENTIC DARK iOS NOTES APP VIEW */
     .notes-view {
-      position: absolute;
+      position: fixed;
       inset: 0;
       z-index: 2;
       background: #000000;
@@ -75,7 +75,7 @@
 
     .notes-view.active {
       display: block;
-      z-index: 95;
+      z-index: 99999;
       pointer-events: auto;
     }
 
@@ -125,17 +125,18 @@
       justify-content: center;
     }
 
-    /* Ouija Yellow Dot indicator - SOLID (NO BLINKING) */
+    /* Ouija Yellow Dot indicator - SOLID ON BOTTOM OF DOCK ICONS */
     .ouija-yellow-dot {
       position: absolute;
-      top: -2px;
-      right: -2px;
-      width: 13px;
-      height: 13px;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
       background: #FFD60A; /* Solid Apple System Yellow */
       border: 1.5px solid rgba(0, 0, 0, 0.75);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
       display: none;
       z-index: 35;
     }
@@ -222,6 +223,9 @@
     body.in-notes .corner-reset-zone,
     body.in-notes .top-candidates-bar,
     body.in-notes .bottom-letters-strip,
+    body.in-notes .homescreen-dock-row,
+    body.in-notes .homescreen-view,
+    body.in-notes .lockscreen-wrapper,
     .notes-view.active ~ .destination-indicator,
     .notes-view.active ~ .secret-toggle-zone {
       display: none !important;
@@ -266,6 +270,12 @@
     .top-candidates-bar.dwindled-middle {
       top: 42% !important;
       transform: translateY(-50%) !important;
+      gap: 20px 28px !important;
+    }
+
+    .top-candidates-bar.dwindled-middle .candidate-word-chip {
+      font-size: 24px;
+      padding: 10px 18px;
     }
 
     .candidate-word-chip {
@@ -1261,6 +1271,14 @@
       closeSettings();
       updateRevealIndicators();
 
+      try {
+        localStorage.removeItem('aura-all-notes:v1');
+        const notesIframe = document.getElementById("notesIframe");
+        if (notesIframe && notesIframe.contentWindow && notesIframe.contentWindow.clearAllNotes) {
+          notesIframe.contentWindow.clearAllNotes();
+        }
+      } catch (e) {}
+
       if (window.navigator && window.navigator.vibrate) {
         window.navigator.vibrate([30, 40, 30]);
       }
@@ -1459,6 +1477,14 @@
     }
 
     function launchSelectedReveal(word) {
+      localStorage.setItem("enigma_last_words", JSON.stringify([word]));
+      try {
+        const notesIframe = document.getElementById("notesIframe");
+        if (notesIframe && notesIframe.contentWindow && notesIframe.contentWindow.updatePeekContent) {
+          notesIframe.contentWindow.updatePeekContent();
+        }
+      } catch (e) {}
+
       if (revealMode === "notes") {
         unlockToNotes([word]);
       } else {
@@ -1493,7 +1519,11 @@
       document.querySelectorAll('.corner-reset-zone').forEach(el => el.style.display = 'none');
 
       try {
+        localStorage.removeItem('aura-all-notes:v1');
         if (notesIframe && notesIframe.contentWindow) {
+          if (notesIframe.contentWindow.clearAllNotes) {
+            notesIframe.contentWindow.clearAllNotes();
+          }
           if (notesIframe.contentWindow.updatePeekContent) {
             notesIframe.contentWindow.updatePeekContent();
           }
@@ -1507,8 +1537,13 @@
         lockscreenWrapper.classList.add("unlocked-up");
         setTimeout(() => {
           try {
-            if (notesIframe && notesIframe.contentWindow && notesIframe.contentWindow.auraRefresh) {
-              notesIframe.contentWindow.auraRefresh();
+            if (notesIframe && notesIframe.contentWindow) {
+              if (notesIframe.contentWindow.clearAllNotes) {
+                notesIframe.contentWindow.clearAllNotes();
+              }
+              if (notesIframe.contentWindow.auraRefresh) {
+                notesIframe.contentWindow.auraRefresh();
+              }
             }
           } catch (e) {}
         }, 300);
@@ -1600,30 +1635,25 @@
         return;
       }
 
-      // Dynamic thumb-reach and grid layout based on letter count:
-      // When options dwindle down to 2-4, move WAY down right above dock for minimal thumb travel!
+      // Dynamic thumb-reach: position comfortably above the dock icons so yellow dot is never blocked!
+      bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 94px)";
+
       if (letters.length === 2) {
-        // 2 options left: Move down to dock, 2 giant half-screen buttons!
-        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 70px)";
         bottomLettersStrip.style.gridTemplateColumns = "1fr 1fr";
-        bottomLettersStrip.style.gap = "24px";
+        bottomLettersStrip.style.gap = "20px";
       } else if (letters.length === 3) {
-        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 70px)";
         bottomLettersStrip.style.gridTemplateColumns = "repeat(3, 1fr)";
         bottomLettersStrip.style.gap = "14px";
       } else if (letters.length === 4) {
-        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 74px)";
-        bottomLettersStrip.style.gridTemplateColumns = "1fr 1fr";
-        bottomLettersStrip.style.gap = "12px 20px";
-      } else if (letters.length <= 6) {
-        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 76px)";
-        bottomLettersStrip.style.gridTemplateColumns = "repeat(3, 1fr)";
-        bottomLettersStrip.style.gap = "10px 14px";
-      } else {
-        // Large sets (e.g. 7-12 letters): 4 columns across full screen width, only 2-3 rows tall!
-        bottomLettersStrip.style.bottom = "calc(env(safe-area-inset-bottom, 20px) + 80px)";
         bottomLettersStrip.style.gridTemplateColumns = "repeat(4, 1fr)";
-        bottomLettersStrip.style.gap = "10px 10px";
+        bottomLettersStrip.style.gap = "12px 14px";
+      } else if (letters.length <= 8) {
+        bottomLettersStrip.style.gridTemplateColumns = "repeat(4, 1fr)";
+        bottomLettersStrip.style.gap = "10px 12px";
+      } else {
+        // Large sets: 4 columns across full screen width, maximum 3-4 compact rows
+        bottomLettersStrip.style.gridTemplateColumns = "repeat(4, 1fr)";
+        bottomLettersStrip.style.gap = "8px 10px";
       }
 
       bottomLettersStrip.style.display = "grid";
@@ -1833,11 +1863,9 @@
         return;
       }
 
-      // Single-step dwindling: pick the primary candidate and immediately lock! Never dwindle a second time.
-      const finalWord = matched[0];
-      currentCandidateWords = [finalWord];
-      localStorage.setItem("enigma_last_words", JSON.stringify([finalWord]));
-
+      // Single-step dwindling per user requirement: Dwindle ONCE only!
+      // Immediately hide letter options & yellow dot, and stop listening
+      if (bottomLettersStrip) bottomLettersStrip.style.display = "none";
       clearOuijaDots();
       currentOuijaTargetPos = null;
       stopCluePolling();
@@ -1849,9 +1877,14 @@
       }
       if (navigator.vibrate) navigator.vibrate([120, 70, 160]);
 
-      // Update Homescreen top candidate text to the single locked word (slides down to middle)
-      renderTopCandidates([finalWord]);
-      if (bottomLettersStrip) bottomLettersStrip.style.display = "none";
+      currentCandidateWords = [...matched];
+      localStorage.setItem("enigma_last_words", JSON.stringify(matched));
+
+      // Display remaining matched candidate(s) in the middle of the screen!
+      // If 1 word (e.g. ['Wallet']), shows 1 word in middle.
+      // If multiple words match (e.g. ['Pen', 'Pan', 'Bin']), shows all matches in middle!
+      // Tapping either word locks that exact word down and launches the reveal!
+      renderTopCandidates(matched);
 
       // Update Notes peek in iframe if active
       try {

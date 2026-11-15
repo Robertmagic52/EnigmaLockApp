@@ -209,11 +209,13 @@
     if (e.pointerType === 'pen' && e.pressure > 0) {
       return baseW * (0.35 + e.pressure * 1.3);
     }
+    const prevW = (prev && typeof prev.w === 'number' && Number.isFinite(prev.w)) ? prev.w : baseW;
     if (!prev) return baseW;
     const dt = Math.max(1, e.timeStamp - prev.t);
     const v = Math.hypot(p.x - prev.x, p.y - prev.y) / dt; // px/ms
     const target = baseW * Math.max(0.55, Math.min(1.25, 1.25 - v * 0.28));
-    return prev.w + (target - prev.w) * 0.35;
+    const res = prevW + (target - prevW) * 0.35;
+    return Number.isFinite(res) ? res : baseW;
   }
 
   // Offline helper stubs
@@ -228,35 +230,20 @@
   function liveEnd() {}
   function syncOut() {}
 
-  // 0.5s Single-Finger Hold-to-Peek
-  let holdTimer = null;
-  let didHoldPeek = false;
-  let holdStartPos = null;
-
   base.addEventListener('pointerdown', (e) => {
     closePopovers();
     if (morph) { morphTapStart = { id: e.pointerId, x: e.clientX, y: e.clientY, t: e.timeStamp }; return; }
-    if (viewMode || active) return;
+    if (viewMode) return;
     if (e.button !== undefined && e.button > 0) return;
+
+    // If a previous stroke was interrupted without pointerup, cleanly end it
+    if (active) {
+      endPointer(e);
+    }
+
     try { base.setPointerCapture(e.pointerId); } catch (_) {}
     const p = pointFromEvent(e);
     const t = tools[current];
-
-    // Hold 0.5s to trigger Noteify overlay peek
-    holdStartPos = { x: p.x, y: p.y };
-    didHoldPeek = false;
-    clearTimeout(holdTimer);
-    holdTimer = setTimeout(() => {
-      didHoldPeek = true;
-      if (typeof window.showNoteifyPeek === 'function') {
-        window.showNoteifyPeek();
-      }
-      if (active && active.type === 'draw') {
-        active = null;
-        lctx.setTransform(1, 0, 0, 1, 0, 0);
-        lctx.clearRect(0, 0, live.width, live.height);
-      }
-    }, 500);
 
     if (current === 'lasso') {
       if (selection && pointInPolygon(p, selection.poly)) {
@@ -290,21 +277,14 @@
     scheduleLive();
   });
 
-  base.addEventListener('pointermove', (e) => {
+  window.addEventListener('pointermove', (e) => {
     if (!active || e.pointerId !== active.id) return;
     const events = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
     for (const ev of (events.length ? events : [e])) handleMove(ev);
-  });
+  }, { passive: false });
 
   function handleMove(e) {
     const p = pointFromEvent(e);
-    if (holdTimer && holdStartPos) {
-      const dist = Math.hypot(p.x - holdStartPos.x, p.y - holdStartPos.y);
-      if (dist > 8) {
-        clearTimeout(holdTimer);
-        holdTimer = null;
-      }
-    }
 
     if (active && active.type === 'draw') {
       const s = active.stroke;
@@ -331,17 +311,8 @@
   }
 
   function endPointer(e) {
-    clearTimeout(holdTimer);
-    holdTimer = null;
-    if (didHoldPeek) {
-      didHoldPeek = false;
-      if (typeof window.hideNoteifyPeek === 'function') {
-        window.hideNoteifyPeek();
-      }
-      return;
-    }
-
-    if (!active || e.pointerId !== active.id) return;
+    if (!active) return;
+    if (e && e.pointerId !== undefined && active.id !== undefined && e.pointerId !== active.id) return;
     const a = active;
     active = null;
 
@@ -364,8 +335,8 @@
     }
     renderLive();
   }
-  base.addEventListener('pointerup', endPointer);
-  base.addEventListener('pointercancel', endPointer);
+  window.addEventListener('pointerup', endPointer);
+  window.addEventListener('pointercancel', endPointer);
 
   const r1 = (n) => Math.round(n * 10) / 10;
 
@@ -763,6 +734,17 @@
       window.location.href = '/';
     }
   });
+
+  const btnMore = document.getElementById('btn-more');
+  if (btnMore) {
+    btnMore.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (window.parent && window.parent !== window && typeof window.parent.launchSafariFromNotes === 'function') {
+        window.parent.launchSafariFromNotes();
+      }
+    });
+  }
+
   document.getElementById('btn-done').addEventListener('click', () => {
     viewMode = !viewMode;
     document.body.classList.toggle('view-mode', viewMode);
@@ -1069,6 +1051,19 @@
   function liveStart() {}
   function liveAdd() {}
   function liveEnd() {}
+
+  window.clearAllNotes = function() {
+    strokes = [];
+    undoStack = [];
+    redoStack = [];
+    active = null;
+    morph = null;
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (_) {}
+    renderAll();
+    renderLive();
+  };
 
   window.auraRefresh = () => resize();
 
