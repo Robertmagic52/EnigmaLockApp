@@ -314,7 +314,240 @@ window.ENIGMA_DATA = {
       "Canopener",
       "Deck",
       "Rock",
-      "Stone"
+      "Stone",
+      "Teddy",
+      "Doll",
+      "Lego",
+      "Puzzle",
+      "Frisbee",
+      "Football",
+      "Baseball",
+      "Racket",
+      "Helmet",
+      "Bike",
+      "Scooter",
+      "Kite",
+      "Balloon",
+      "Drum",
+      "Piano",
+      "Violin",
+      "Flute",
+      "Trumpet",
+      "Ukulele",
+      "Harmonica",
+      "Crayons",
+      "Canvas",
+      "Easel",
+      "Clipboard",
+      "Pushpin",
+      "Thumbtack",
+      "Snowglobe",
+      "Postcard",
+      "Letter",
+      "Package",
+      "Parcel",
+      "Gift",
+      "Ribbon",
+      "Mask",
+      "Hairspray",
+      "Gel",
+      "Lipliner",
+      "Blush",
+      "Powder",
+      "Wig",
+      "Headband",
+      "Bandana",
+      "Visor",
+      "Earmuffs",
+      "Poncho",
+      "Raincoat",
+      "Pajamas",
+      "Robe",
+      "Leggings",
+      "Tights",
+      "Underwear",
+      "Boxers",
+      "Swimsuit",
+      "Bikini",
+      "Flipflops",
+      "Crocs",
+      "Cleats",
+      "Radio",
+      "Stereo",
+      "Console",
+      "Joystick",
+      "Gamepad",
+      "Xbox",
+      "Nintendo",
+      "Ipad",
+      "Iphone",
+      "Macbook",
+      "Printer",
+      "Router",
+      "Outlet",
+      "Fan",
+      "Heater",
+      "Doorbell",
+      "Mailbox",
+      "Toilet",
+      "Bathtub",
+      "Shower",
+      "Loofah",
+      "Plunger",
+      "Detergent",
+      "Bleach",
+      "Flag",
+      "Globe",
+      "Trophy",
+      "Medal",
+      "Crown",
+      "Wand",
+      "Sword",
+      "Shield",
+      "Axe",
+      "Bow",
+      "Arrow",
+      "Spear",
+      "Anchor",
+      "Rope",
+      "Net",
+      "Cage",
+      "Nest",
+      "Horn",
+      "Whip",
+      "Hose",
+      "Pump",
+      "Gear",
+      "Wheel",
+      "Tire",
+      "Pedal",
+      "Seat",
+      "Handlebar",
+      "Steering",
+      "Dashboard",
+      "Airbag",
+      "Antenna",
+      "Satellite",
+      "Telescope",
+      "Beaker",
+      "Bulb",
+      "Flashbulb",
+      "Sparkler",
+      "Fireworks",
+      "Cauldron",
+      "Cape",
+      "Costume",
+      "Puppet",
+      "Rattle",
+      "Pacifier",
+      "Diaper",
+      "Stroller",
+      "Crib",
+      "Highchair",
+      "Playpen",
+      "Swing",
+      "Slide",
+      "Seesaw",
+      "Sandbox",
+      "Bucket",
+      "Shovel",
+      "Rake",
+      "Hoe",
+      "Sprinkler",
+      "Lawnmower",
+      "Grill",
+      "Cooler",
+      "Hammock",
+      "Tent",
+      "Canteen",
+      "Map",
+      "Backpack",
+      "Luggage",
+      "Camera",
+      "Film",
+      "Polaroid",
+      "Photo",
+      "Album",
+      "Scrapbook",
+      "Guitar",
+      "Banjo",
+      "Cello",
+      "Harp",
+      "Maracas",
+      "Xylophone",
+      "Kazoo",
+      "Megaphone",
+      "Speaker",
+      "Jukebox",
+      "Vinyl",
+      "Cassette",
+      "Cd",
+      "Dvd",
+      "Floppy",
+      "Remote",
+      "Pointer",
+      "Laser",
+      "Projector",
+      "Screen",
+      "Sharpener",
+      "Ruler",
+      "Textbook",
+      "Atlas",
+      "Bible",
+      "Quran",
+      "Rosary",
+      "Cross",
+      "Altar",
+      "Tarot",
+      "Pendulum",
+      "Ouija",
+      "Horseshoe",
+      "Clover",
+      "Wishbone",
+      "Piggybank",
+      "Safe",
+      "Vault",
+      "Handcuffs",
+      "Gavel",
+      "Scale",
+      "Hourglass",
+      "Sundial",
+      "Stopwatch",
+      "Timer",
+      "Metronome",
+      "Barometer",
+      "Scalepan",
+      "Syringe",
+      "Crutches",
+      "Cane",
+      "Walker",
+      "Brace",
+      "Cast",
+      "Sling",
+      "Monocle",
+      "Dentures",
+      "Retainer",
+      "Dishrag",
+      "Placemat",
+      "Chopstick",
+      "Ladle",
+      "Whisk",
+      "Mallet",
+      "Oven",
+      "Mitt",
+      "Potholder",
+      "Trivet",
+      "Teakettle",
+      "Samovar",
+      "Keurig",
+      "Pitcher",
+      "Carafe",
+      "Growler",
+      "Keg",
+      "Stein",
+      "Tankard",
+      "Chalice",
+      "Shotglass"
     ],
     "everyday": [
       "Spoon",
@@ -1046,7 +1279,470 @@ window.ENIGMA_DATA = {
       "Beanies",
       "Bedspread",
       "Picture",
-      "Frame"
+      "Frame",
+      "Teddy",
+      "Doll",
+      "Lego",
+      "Puzzle",
+      "Frisbee",
+      "Football",
+      "Basketball",
+      "Baseball",
+      "Soccerball",
+      "Racket",
+      "Helmet",
+      "Skateboard",
+      "Bike",
+      "Scooter",
+      "Kite",
+      "Balloon",
+      "Drum",
+      "Piano",
+      "Violin",
+      "Flute",
+      "Trumpet",
+      "Ukulele",
+      "Harmonica",
+      "Crayons",
+      "Paintbrush",
+      "Canvas",
+      "Easel",
+      "Clipboard",
+      "Pushpin",
+      "Thumbtack",
+      "Snowglobe",
+      "Postcard",
+      "Letter",
+      "Package",
+      "Parcel",
+      "Gift",
+      "Ribbon",
+      "Mask",
+      "Hairspray",
+      "Gel",
+      "Nailpolish",
+      "Lipliner",
+      "Blush",
+      "Powder",
+      "Wig",
+      "Headband",
+      "Bandana",
+      "Visor",
+      "Earmuffs",
+      "Poncho",
+      "Raincoat",
+      "Pajamas",
+      "Robe",
+      "Leggings",
+      "Tights",
+      "Underwear",
+      "Boxers",
+      "Swimsuit",
+      "Bikini",
+      "Flipflops",
+      "Crocs",
+      "Cleats",
+      "Television",
+      "Radio",
+      "Stereo",
+      "Console",
+      "Joystick",
+      "Gamepad",
+      "Xbox",
+      "Playstation",
+      "Nintendo",
+      "Ipad",
+      "Iphone",
+      "Macbook",
+      "Printer",
+      "Router",
+      "Outlet",
+      "Fan",
+      "Heater",
+      "Doorbell",
+      "Mailbox",
+      "Toilet",
+      "Bathtub",
+      "Shower",
+      "Loofah",
+      "Plunger",
+      "Detergent",
+      "Bleach",
+      "Flag",
+      "Globe",
+      "Trophy",
+      "Medal",
+      "Crown",
+      "Wand",
+      "Sword",
+      "Shield",
+      "Axe",
+      "Bow",
+      "Arrow",
+      "Spear",
+      "Anchor",
+      "Net",
+      "Cage",
+      "Nest",
+      "Horn",
+      "Whip",
+      "Hose",
+      "Pump",
+      "Gear",
+      "Wheel",
+      "Tire",
+      "Pedal",
+      "Seat",
+      "Handlebar",
+      "Steering",
+      "Dashboard",
+      "Airbag",
+      "Antenna",
+      "Satellite",
+      "Telescope",
+      "Binoculars",
+      "Microscope",
+      "Beaker",
+      "Bulb",
+      "Flashbulb",
+      "Matchstick",
+      "Firecracker",
+      "Sparkler",
+      "Fireworks",
+      "Cauldron",
+      "Broomstick",
+      "Cape",
+      "Costume",
+      "Puppet",
+      "Marionette",
+      "Rattle",
+      "Pacifier",
+      "Diaper",
+      "Stroller",
+      "Crib",
+      "Highchair",
+      "Playpen",
+      "Swing",
+      "Slide",
+      "Seesaw",
+      "Sandbox",
+      "Shovel",
+      "Rake",
+      "Hoe",
+      "Wheelbarrow",
+      "Sprinkler",
+      "Lawnmower",
+      "Grill",
+      "Cooler",
+      "Hammock",
+      "Tent",
+      "Sleepingbag",
+      "Canteen",
+      "Map",
+      "Film",
+      "Polaroid",
+      "Photo",
+      "Album",
+      "Scrapbook",
+      "Banjo",
+      "Cello",
+      "Harp",
+      "Tambourine",
+      "Maracas",
+      "Xylophone",
+      "Kazoo",
+      "Megaphone",
+      "Jukebox",
+      "Vinyl",
+      "Cassette",
+      "Cd",
+      "Dvd",
+      "Floppy",
+      "Pointer",
+      "Laser",
+      "Projector",
+      "Screen",
+      "Chalkboard",
+      "Whiteboard",
+      "Sharpener",
+      "Protractor",
+      "Textbook",
+      "Dictionary",
+      "Atlas",
+      "Bible",
+      "Quran",
+      "Rosary",
+      "Cross",
+      "Altar",
+      "Tarot",
+      "Pendulum",
+      "Ouija",
+      "Dreamcatcher",
+      "Horseshoe",
+      "Clover",
+      "Wishbone",
+      "Piggybank",
+      "Safe",
+      "Vault",
+      "Handcuffs",
+      "Gavel",
+      "Hourglass",
+      "Sundial",
+      "Stopwatch",
+      "Timer",
+      "Metronome",
+      "Thermometer",
+      "Barometer",
+      "Scalepan",
+      "Syringe",
+      "Stethoscope",
+      "Crutches",
+      "Wheelchair",
+      "Cane",
+      "Walker",
+      "Brace",
+      "Cast",
+      "Sling",
+      "Monocle",
+      "Hearingaid",
+      "Dentures",
+      "Retainer",
+      "Dishrag",
+      "Tablecloth",
+      "Placemat",
+      "Chopstick",
+      "Mallet",
+      "Rollingpin",
+      "Cuttingboard",
+      "Apronstrings",
+      "Mitt",
+      "Potholder",
+      "Trivet",
+      "Teakettle",
+      "Samovar",
+      "Coffeemaker",
+      "Keurig",
+      "Carafe",
+      "Growler",
+      "Keg",
+      "Stein",
+      "Tankard",
+      "Chalice",
+      "Shotglass",
+      "Nachos",
+      "Lasagna",
+      "Spaghetti",
+      "Meatballs",
+      "Quesadilla",
+      "Enchilada",
+      "Kebab",
+      "Falafel",
+      "Hummus",
+      "Guacamole",
+      "Salsa",
+      "Pickles",
+      "Olives",
+      "Avocado",
+      "Kiwi",
+      "Papaya",
+      "Coconut",
+      "Apricot",
+      "Fig",
+      "Dates",
+      "Raisins",
+      "Cranberry",
+      "Pomegranate",
+      "Grapefruit",
+      "Tangerine",
+      "Clementine",
+      "Zucchini",
+      "Eggplant",
+      "Celery",
+      "Cabbage",
+      "Kale",
+      "Asparagus",
+      "Pumpkin",
+      "Squash",
+      "Radish",
+      "Beet",
+      "Turnip",
+      "Ginger",
+      "Cinnamon",
+      "Vanilla",
+      "Honey",
+      "Jam",
+      "Jelly",
+      "Nutella",
+      "Peanutbutter",
+      "Marshmallow",
+      "Skittles",
+      "Twix",
+      "Snickers",
+      "Oreo",
+      "Doritos",
+      "Cheetos",
+      "Pringles",
+      "Gatorade",
+      "Sprite",
+      "Fanta",
+      "Redbull",
+      "Monster",
+      "Starbucks",
+      "Frappuccino",
+      "Mocha",
+      "Whiskey",
+      "Vodka",
+      "Tequila",
+      "Rum",
+      "Champagne",
+      "Margarita",
+      "Mojito",
+      "Cornbread",
+      "Gravy",
+      "Meatloaf",
+      "Ribs",
+      "Brisket",
+      "Wings",
+      "Nuggets",
+      "Tenders",
+      "Milkshake",
+      "Popsicle",
+      "Sorbet",
+      "Cheesecake",
+      "Tiramisu",
+      "Granola",
+      "Dumplings",
+      "Pierogi",
+      "Gnocchi",
+      "Risotto",
+      "Paella",
+      "Pho",
+      "Bibimbap",
+      "Teriyaki",
+      "Tempura",
+      "Sashimi",
+      "Guac",
+      "Queso",
+      "Cheddar",
+      "Mozzarella",
+      "Parmesan",
+      "Brie",
+      "Feta",
+      "Cream",
+      "Whipcream",
+      "Sprinkles",
+      "Frosting",
+      "Caramel",
+      "Toffee",
+      "Fudge",
+      "Licorice",
+      "Gummies",
+      "Jellybeans",
+      "Candycane",
+      "Chewinggum",
+      "Bubblegum",
+      "Cottoncandy",
+      "Funnelcake",
+      "Churro",
+      "Eclair",
+      "Macaron",
+      "Scone",
+      "Crumpet",
+      "Danish",
+      "Strudel",
+      "Cobbler",
+      "Tart",
+      "Flan",
+      "Mousse",
+      "Trifle",
+      "Truffle",
+      "Praline",
+      "Bonbon",
+      "Cocoa",
+      "Kombucha",
+      "Eggnog",
+      "Sangria",
+      "Prosecco",
+      "Moonshine",
+      "Bourbon",
+      "Gin",
+      "Brandy",
+      "Sake",
+      "Soju",
+      "Lager",
+      "Stout",
+      "Ale",
+      "Pilsner",
+      "Seltzer",
+      "Tonic",
+      "Kefir",
+      "Oats",
+      "Quinoa",
+      "Couscous",
+      "Barley",
+      "Lentils",
+      "Chickpeas",
+      "Tofu",
+      "Tempeh",
+      "Seitan",
+      "Edamame",
+      "Wasabi",
+      "Soy",
+      "Sriracha",
+      "Tabasco",
+      "Vinegar",
+      "Oil",
+      "Flour",
+      "Yeast",
+      "Baking",
+      "Nutmeg",
+      "Paprika",
+      "Oregano",
+      "Basil",
+      "Parsley",
+      "Cilantro",
+      "Thyme",
+      "Rosemary",
+      "Sage",
+      "Dill",
+      "Chives",
+      "Scallion",
+      "Leek",
+      "Shallot",
+      "Parsnip",
+      "Yam",
+      "Cauliflower",
+      "Artichoke",
+      "Okra",
+      "Jalapeno",
+      "Habanero",
+      "Pepperoni",
+      "Salami",
+      "Prosciutto",
+      "Bologna",
+      "Jerky",
+      "Spam",
+      "Venison",
+      "Duck",
+      "Lamb",
+      "Veal",
+      "Oyster",
+      "Clam",
+      "Mussel",
+      "Scallop",
+      "Calamari",
+      "Anchovy",
+      "Sardine",
+      "Trout",
+      "Cod",
+      "Tilapia",
+      "Halibut",
+      "Catfish",
+      "Bass",
+      "Herring",
+      "Eel",
+      "Caviar",
+      "Roe"
     ],
     "big_objects": [
       "Chair",
@@ -1285,7 +1981,31 @@ window.ENIGMA_DATA = {
       "Canyon",
       "Windmill",
       "Piers",
-      "Dock"
+      "Dock",
+      "Tent",
+      "Dumpster",
+      "Streetlamp",
+      "Hydrant",
+      "Bleachers",
+      "Jetski",
+      "Raft",
+      "Golfcart",
+      "Limo",
+      "Firetruck",
+      "Jeep",
+      "Carousel",
+      "Ferriswheel",
+      "Rollercoaster",
+      "Swingset",
+      "Gym",
+      "Foosball",
+      "Jukebox",
+      "Arcade",
+      "Pinball",
+      "Vendingmachine",
+      "Atm",
+      "Washer",
+      "Dryer"
     ],
     "animals": [
       "Dog",
@@ -1412,7 +2132,88 @@ window.ENIGMA_DATA = {
       "Moth",
       "Beetle",
       "Fly",
-      "Mosquito"
+      "Mosquito",
+      "Gerbil",
+      "Bunny",
+      "Goldfish",
+      "Budgie",
+      "Canary",
+      "Lamb",
+      "Rooster",
+      "Crow",
+      "Raven",
+      "Pigeon",
+      "Seagull",
+      "Peacock",
+      "Seahorse",
+      "Starfish",
+      "Gecko",
+      "Iguana",
+      "Ladybug",
+      "Cricket",
+      "Hedgehog",
+      "Alpaca",
+      "Bison",
+      "Buffalo",
+      "Dinosaur",
+      "Dragon",
+      "Unicorn",
+      "Hen",
+      "Chick",
+      "Turkey",
+      "Ox",
+      "Mule",
+      "Hog",
+      "Boar",
+      "Hare",
+      "Chipmunk",
+      "Gopher",
+      "Mole",
+      "Weasel",
+      "Ferret",
+      "Lynx",
+      "Cougar",
+      "Puma",
+      "Meerkat",
+      "Orangutan",
+      "Manatee",
+      "Stingray",
+      "Piranha",
+      "Clownfish",
+      "Shrimp",
+      "Snail",
+      "Slug",
+      "Worm",
+      "Caterpillar",
+      "Dragonfly",
+      "Grasshopper",
+      "Firefly",
+      "Tick",
+      "Flea",
+      "Scorpion",
+      "Cobra",
+      "Python",
+      "Viper",
+      "Rattlesnake",
+      "Pelican",
+      "Stork",
+      "Heron",
+      "Crane",
+      "Vulture",
+      "Condor",
+      "Toucan",
+      "Cockatoo",
+      "Hummingbird",
+      "Woodpecker",
+      "Robin",
+      "Sparrow",
+      "Cardinal",
+      "Bluejay",
+      "Finch",
+      "Dove",
+      "Ostrich",
+      "Emu",
+      "Kiwi"
     ],
     "food": [
       "Apple",
@@ -1616,7 +2417,208 @@ window.ENIGMA_DATA = {
       "Sugar",
       "Honey",
       "Jam",
-      "Jelly"
+      "Jelly",
+      "Enchilada",
+      "Kebab",
+      "Falafel",
+      "Hummus",
+      "Guacamole",
+      "Salsa",
+      "Pickles",
+      "Olives",
+      "Papaya",
+      "Coconut",
+      "Apricot",
+      "Fig",
+      "Dates",
+      "Raisins",
+      "Cranberry",
+      "Pomegranate",
+      "Grapefruit",
+      "Tangerine",
+      "Clementine",
+      "Zucchini",
+      "Eggplant",
+      "Cabbage",
+      "Kale",
+      "Asparagus",
+      "Pumpkin",
+      "Squash",
+      "Radish",
+      "Beet",
+      "Turnip",
+      "Ginger",
+      "Cinnamon",
+      "Vanilla",
+      "Nutella",
+      "Peanutbutter",
+      "Marshmallow",
+      "Skittles",
+      "Twix",
+      "Snickers",
+      "Oreo",
+      "Doritos",
+      "Cheetos",
+      "Pringles",
+      "Gatorade",
+      "Sprite",
+      "Fanta",
+      "Redbull",
+      "Monster",
+      "Starbucks",
+      "Frappuccino",
+      "Mocha",
+      "Whiskey",
+      "Vodka",
+      "Tequila",
+      "Rum",
+      "Champagne",
+      "Margarita",
+      "Mojito",
+      "Cornbread",
+      "Gravy",
+      "Meatloaf",
+      "Ribs",
+      "Brisket",
+      "Wings",
+      "Nuggets",
+      "Tenders",
+      "Milkshake",
+      "Popsicle",
+      "Sorbet",
+      "Cheesecake",
+      "Tiramisu",
+      "Granola",
+      "Dumplings",
+      "Pierogi",
+      "Gnocchi",
+      "Risotto",
+      "Paella",
+      "Pho",
+      "Bibimbap",
+      "Teriyaki",
+      "Tempura",
+      "Sashimi",
+      "Guac",
+      "Queso",
+      "Cheddar",
+      "Mozzarella",
+      "Parmesan",
+      "Brie",
+      "Feta",
+      "Whipcream",
+      "Sprinkles",
+      "Frosting",
+      "Caramel",
+      "Toffee",
+      "Fudge",
+      "Licorice",
+      "Gummies",
+      "Jellybeans",
+      "Candycane",
+      "Chewinggum",
+      "Bubblegum",
+      "Cottoncandy",
+      "Funnelcake",
+      "Churro",
+      "Eclair",
+      "Macaron",
+      "Scone",
+      "Crumpet",
+      "Danish",
+      "Strudel",
+      "Cobbler",
+      "Tart",
+      "Flan",
+      "Mousse",
+      "Trifle",
+      "Truffle",
+      "Praline",
+      "Bonbon",
+      "Cocoa",
+      "Kombucha",
+      "Eggnog",
+      "Sangria",
+      "Prosecco",
+      "Moonshine",
+      "Bourbon",
+      "Gin",
+      "Brandy",
+      "Sake",
+      "Soju",
+      "Lager",
+      "Stout",
+      "Ale",
+      "Pilsner",
+      "Seltzer",
+      "Tonic",
+      "Kefir",
+      "Oats",
+      "Quinoa",
+      "Couscous",
+      "Barley",
+      "Lentils",
+      "Chickpeas",
+      "Tofu",
+      "Tempeh",
+      "Seitan",
+      "Edamame",
+      "Wasabi",
+      "Soy",
+      "Sriracha",
+      "Tabasco",
+      "Flour",
+      "Yeast",
+      "Baking",
+      "Nutmeg",
+      "Paprika",
+      "Oregano",
+      "Basil",
+      "Parsley",
+      "Cilantro",
+      "Mint",
+      "Thyme",
+      "Rosemary",
+      "Sage",
+      "Dill",
+      "Chives",
+      "Scallion",
+      "Leek",
+      "Shallot",
+      "Parsnip",
+      "Yam",
+      "Cauliflower",
+      "Artichoke",
+      "Okra",
+      "Jalapeno",
+      "Habanero",
+      "Pepperoni",
+      "Salami",
+      "Prosciutto",
+      "Bologna",
+      "Jerky",
+      "Spam",
+      "Venison",
+      "Duck",
+      "Lamb",
+      "Veal",
+      "Oyster",
+      "Clam",
+      "Mussel",
+      "Scallop",
+      "Calamari",
+      "Anchovy",
+      "Sardine",
+      "Trout",
+      "Cod",
+      "Tilapia",
+      "Halibut",
+      "Catfish",
+      "Bass",
+      "Herring",
+      "Eel",
+      "Caviar",
+      "Roe"
     ],
     "countries": [
       "USA",
@@ -1684,7 +2686,56 @@ window.ENIGMA_DATA = {
       "Sydney",
       "Cairo",
       "Moscow",
-      "New York"
+      "New York",
+      "Cuba",
+      "Russia",
+      "Dubai",
+      "Miami",
+      "Boston",
+      "Chicago",
+      "Dallas",
+      "Vegas",
+      "Seattle",
+      "Denver",
+      "Atlanta",
+      "Phoenix",
+      "Houston",
+      "Austin",
+      "Orlando",
+      "Nashville",
+      "Detroit",
+      "Brooklyn",
+      "Texas",
+      "Florida",
+      "California",
+      "Alaska",
+      "Ohio",
+      "Maine",
+      "Jamaica",
+      "Bahamas",
+      "Israel",
+      "Prague",
+      "Toronto",
+      "Montreal",
+      "Mumbai",
+      "Delhi",
+      "Beijing",
+      "Shanghai",
+      "Seoul",
+      "Bangkok",
+      "Havana",
+      "Lima",
+      "Bogota",
+      "Panama",
+      "Costa",
+      "Rica",
+      "Haiti",
+      "Ghana",
+      "Ethiopia",
+      "Wales",
+      "Ukraine",
+      "Romania",
+      "Venezuela"
     ],
     "natural_inhand": [
       "Rock",
@@ -1704,7 +2755,23 @@ window.ENIGMA_DATA = {
       "Bark",
       "Branch",
       "Mushroom",
-      "Sand"
+      "Sand",
+      "Stick",
+      "Seashell",
+      "Petal",
+      "Seed",
+      "Clover",
+      "Moss",
+      "Fern",
+      "Dirt",
+      "Snowflake",
+      "Icicle",
+      "Raindrop",
+      "Berry",
+      "Nut",
+      "Bud",
+      "Thorn",
+      "Root"
     ],
     "natural_big": [
       "Tree",
@@ -1731,7 +2798,29 @@ window.ENIGMA_DATA = {
       "Desert",
       "Forest",
       "Valley",
-      "Cliff"
+      "Cliff",
+      "Beach",
+      "Canyon",
+      "Glacier",
+      "Hill",
+      "Meadow",
+      "Swamp",
+      "Jungle",
+      "Reef",
+      "Pond",
+      "Stream",
+      "Storm",
+      "Tornado",
+      "Hurricane",
+      "Earthquake",
+      "Iceberg",
+      "Dune",
+      "Prairie",
+      "Tundra",
+      "Savanna",
+      "Oasis",
+      "Geyser",
+      "Lagoon"
     ],
     "combo": [
       "Red",
@@ -1777,7 +2866,17 @@ window.ENIGMA_DATA = {
       "September",
       "October",
       "November",
-      "December"
+      "December",
+      "Gray",
+      "Grey",
+      "Teal",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
     ],
     "large_objects": [
       "Chair",
@@ -1984,7 +3083,34 @@ window.ENIGMA_DATA = {
       "Jet",
       "Airliner",
       "Blimp",
-      "Spaceship"
+      "Spaceship",
+      "Tent",
+      "Dumpster",
+      "Streetlamp",
+      "Hydrant",
+      "Windmill",
+      "Arena",
+      "Bleachers",
+      "Jetski",
+      "Raft",
+      "Golfcart",
+      "Limo",
+      "Firetruck",
+      "Jeep",
+      "Carousel",
+      "Ferriswheel",
+      "Rollercoaster",
+      "Swingset",
+      "Jungle",
+      "Gym",
+      "Foosball",
+      "Jukebox",
+      "Arcade",
+      "Pinball",
+      "Vendingmachine",
+      "Atm",
+      "Washer",
+      "Dryer"
     ]
   },
   "database": {
@@ -2009,56 +3135,26 @@ window.ENIGMA_DATA = {
       "Pillbox",
       "Goggles",
       "Satchel",
-      "Watches"
-    ],
-    "all:726001": [
-      "Lighter",
-      "Matches",
-      "Handbag",
-      "Lockbox",
-      "Tumbler",
-      "Handset",
       "Watches",
-      "Waffles",
-      "Lobster",
-      "Ketchup",
-      "Hallway",
-      "Highway",
-      "Hamster",
-      "Turtles"
-    ],
-    "all:726000": [
-      "Lighter",
-      "Matches",
-      "Handbag",
-      "Lockbox",
-      "Tumbler",
-      "Handset",
-      "Candles",
-      "Bottles",
-      "Pillbox",
-      "Goggles",
-      "Satchel",
-      "Watches",
-      "Pitcher",
-      "Dustpan",
-      "Waffles",
-      "Lobster",
-      "Ketchup",
+      "Pushpin",
       "Bathtub",
-      "Bunkbed",
-      "Hallway",
-      "Highway",
-      "Hamster",
-      "Panther",
-      "Dolphin",
-      "Turtles"
+      "Sandbox",
+      "Dishrag",
+      "Pitcher"
     ],
     "handheld:420001": [
       "Keys",
       "Fork",
       "Lock",
-      "Mint"
+      "Mint",
+      "Mask",
+      "Wand",
+      "Nest",
+      "Horn",
+      "Tent",
+      "Film",
+      "Harp",
+      "Mitt"
     ],
     "handheld:420000": [
       "Keys",
@@ -2077,101 +3173,30 @@ window.ENIGMA_DATA = {
       "Cash",
       "Pass",
       "Deck",
-      "Rock"
-    ],
-    "all:420001": [
-      "Keys",
-      "Fork",
-      "Lock",
-      "Mint",
-      "Lamp",
-      "Milk",
-      "Mugs",
-      "Wall",
-      "Vest",
-      "Hats",
-      "Fish",
-      "Nuts",
-      "Harp",
-      "Hill",
-      "Wolf",
-      "Hawk",
-      "Wasp",
-      "Moth"
-    ],
-    "all:420000": [
-      "Keys",
-      "Ring",
-      "Comb",
-      "Card",
-      "Fork",
-      "Bell",
-      "Bill",
-      "Pens",
-      "Balm",
-      "Pill",
-      "Lock",
-      "Pads",
-      "Mint",
-      "Cash",
-      "Pass",
-      "Deck",
       "Rock",
-      "Bowl",
-      "Sock",
-      "Belt",
-      "Ball",
-      "Lamp",
-      "Milk",
-      "Salt",
-      "Cups",
-      "Mugs",
-      "Dish",
-      "Pans",
-      "Pots",
-      "Sink",
-      "Desk",
-      "Wall",
-      "Vest",
-      "Hats",
-      "Caps",
-      "Cans",
-      "Jars",
-      "Bags",
-      "Pork",
-      "Fish",
-      "Nuts",
-      "Corn",
-      "Cord",
-      "Bolt",
+      "Doll",
+      "Gift",
+      "Mask",
+      "Wand",
+      "Nest",
+      "Horn",
+      "Pump",
+      "Bulb",
+      "Tent",
+      "Film",
       "Harp",
-      "Barn",
-      "Cars",
-      "Hill",
-      "Dock",
-      "Pony",
-      "Bull",
-      "Wolf",
-      "Hawk",
-      "Duck",
-      "Dogs",
-      "Cats",
-      "Bird",
-      "Cows",
-      "Pigs",
-      "Wasp",
-      "Moth",
-      "Subs",
-      "Bark",
-      "Sand",
-      "Pink",
-      "Gold",
-      "July"
+      "Cast",
+      "Mitt"
     ],
     "handheld:320001": [
       "Key",
       "Mug",
-      "Fob"
+      "Fob",
+      "Wig",
+      "Fan",
+      "Net",
+      "Map",
+      "Keg"
     ],
     "handheld:320000": [
       "Key",
@@ -2182,117 +3207,27 @@ window.ENIGMA_DATA = {
       "Pad",
       "Gum",
       "Fob",
-      "Can"
-    ],
-    "all:320001": [
-      "Key",
-      "Mug",
-      "Fob",
-      "Hat",
-      "Mat",
-      "Mop",
-      "Ham",
-      "Nut",
-      "Van",
-      "Fox",
-      "May"
-    ],
-    "all:320000": [
-      "Key",
-      "Pen",
-      "Cup",
-      "Mug",
-      "Bar",
-      "Pad",
-      "Gum",
-      "Fob",
       "Can",
-      "Saw",
-      "Hat",
-      "Cap",
-      "Bag",
-      "Box",
-      "Pan",
-      "Pot",
-      "Rag",
-      "Bed",
-      "Rug",
-      "Mat",
-      "Bin",
-      "Mop",
-      "Jar",
-      "Ham",
-      "Jug",
-      "Nut",
-      "Car",
-      "Van",
-      "Bus",
-      "Suv",
-      "Jet",
-      "Dog",
-      "Cat",
-      "Rat",
-      "Cow",
-      "Pig",
-      "Fox",
-      "Bat",
-      "Sub",
-      "Jam",
-      "Sun",
-      "Red",
-      "May"
+      "Gel",
+      "Wig",
+      "Fan",
+      "Bow",
+      "Net",
+      "Map",
+      "Keg"
     ],
     "handheld:423003": [
       "Coin",
-      "Soap"
+      "Soap",
+      "Seat"
     ],
     "handheld:423000": [
       "Coin",
       "Soap",
       "Nail",
-      "Juul"
-    ],
-    "all:423003": [
-      "Coin",
-      "Soap",
-      "Coat",
-      "Suit",
-      "Soup",
-      "Seal"
-    ],
-    "all:423000": [
-      "Coin",
-      "Soap",
-      "Nail",
       "Juul",
-      "Book",
-      "Beer",
-      "Door",
-      "Coat",
-      "Suit",
-      "Boot",
-      "Beef",
-      "Soup",
-      "Pear",
-      "Peas",
-      "Pies",
-      "Hook",
-      "Ties",
-      "Roof",
-      "Boat",
-      "Pool",
-      "Road",
-      "Pier",
-      "Goat",
-      "Deer",
-      "Lion",
-      "Bear",
-      "Seal",
-      "Toad",
-      "Bees",
-      "Leaf",
-      "Rain",
-      "Moon"
+      "Gear",
+      "Seat"
     ],
     "handheld:420002": [
       "Ring",
@@ -2304,49 +3239,20 @@ window.ENIGMA_DATA = {
       "Pads",
       "Pass",
       "Deck",
-      "Rock"
-    ],
-    "all:420002": [
-      "Ring",
-      "Bell",
-      "Bill",
-      "Pens",
-      "Balm",
-      "Pill",
-      "Pads",
-      "Pass",
-      "Deck",
       "Rock",
-      "Bowl",
-      "Belt",
-      "Ball",
-      "Dish",
-      "Pans",
-      "Pots",
-      "Desk",
-      "Jars",
-      "Bags",
-      "Pork",
-      "Bolt",
-      "Barn",
-      "Dock",
-      "Pony",
-      "Bull",
-      "Duck",
-      "Dogs",
-      "Bird",
-      "Pigs",
-      "Bark",
-      "Pink",
-      "Gold",
-      "July"
+      "Doll",
+      "Gift",
+      "Pump",
+      "Bulb"
     ],
     "handheld:520001": [
       "Watch",
       "Forks",
       "Match",
       "Torch",
-      "Mints"
+      "Mints",
+      "Teddy",
+      "Vinyl"
     ],
     "handheld:520000": [
       "Watch",
@@ -2358,104 +3264,23 @@ window.ENIGMA_DATA = {
       "Pills",
       "Match",
       "Torch",
-      "Mints"
-    ],
-    "all:520001": [
-      "Watch",
-      "Forks",
-      "Match",
-      "Torch",
       "Mints",
-      "Tongs",
-      "Lamps",
-      "Yacht",
-      "Lobby",
-      "Ferry",
-      "March"
-    ],
-    "all:520000": [
-      "Watch",
-      "Penny",
-      "Cards",
-      "Rings",
-      "Combs",
-      "Forks",
-      "Pills",
-      "Match",
-      "Torch",
-      "Mints",
-      "Tongs",
-      "Bowls",
-      "Lamps",
-      "Bench",
-      "Pants",
-      "Socks",
-      "Curry",
-      "Candy",
-      "Bolts",
-      "Belts",
-      "Yacht",
-      "Porch",
-      "Lobby",
-      "Ferry",
-      "Puppy",
-      "Birds",
-      "Ducks",
-      "Jelly",
-      "March"
+      "Teddy",
+      "Vinyl"
     ],
     "handheld:420003": [
       "Comb",
       "Card",
-      "Cash"
-    ],
-    "all:420003": [
-      "Comb",
-      "Card",
       "Cash",
-      "Sock",
-      "Salt",
-      "Cups",
-      "Sink",
-      "Caps",
-      "Cans",
-      "Corn",
-      "Cord",
-      "Cars",
-      "Cats",
-      "Cows",
-      "Subs",
-      "Sand"
+      "Cast"
     ],
     "handheld:320002": [
       "Pen",
       "Bar",
       "Pad",
-      "Gum"
-    ],
-    "all:320002": [
-      "Pen",
-      "Bar",
-      "Pad",
       "Gum",
-      "Bag",
-      "Box",
-      "Pan",
-      "Pot",
-      "Rag",
-      "Bed",
-      "Rug",
-      "Bin",
-      "Jar",
-      "Jug",
-      "Bus",
-      "Jet",
-      "Dog",
-      "Rat",
-      "Pig",
-      "Bat",
-      "Jam",
-      "Red"
+      "Gel",
+      "Bow"
     ],
     "handheld:625002": [
       "Pencil",
@@ -2464,7 +3289,13 @@ window.ENIGMA_DATA = {
       "Postit",
       "Button",
       "Purses",
-      "Badges"
+      "Badges",
+      "Racket",
+      "Parcel",
+      "Ribbon",
+      "Powder",
+      "Puppet",
+      "Bucket"
     ],
     "handheld:625000": [
       "Pencil",
@@ -2494,154 +3325,23 @@ window.ENIGMA_DATA = {
       "Tampon",
       "Tictac",
       "CarKey",
-      "Keyfob"
-    ],
-    "all:625002": [
-      "Pencil",
-      "Pocket",
-      "Dollar",
-      "Postit",
-      "Button",
-      "Purses",
-      "Badges",
-      "Pillow",
-      "Jacket",
-      "Basket",
-      "Bucket",
-      "Goblet",
-      "Binder",
-      "Duffel",
-      "Butter",
-      "Pepper",
-      "Dishes",
-      "Duster",
-      "Packet",
-      "Burger",
-      "Garlic",
-      "Bowtie",
-      "Rocket",
-      "Pickup",
-      "Rabbit",
-      "Donkey",
-      "Parrot",
-      "Badger",
-      "Pizzas",
-      "Berlin",
-      "Dublin",
-      "Pisces"
-    ],
-    "all:625000": [
-      "Pencil",
-      "Wallet",
-      "Marker",
-      "Mirror",
-      "Pocket",
-      "Locket",
-      "Nickel",
-      "Dollar",
-      "Magnet",
-      "Postit",
-      "Ticket",
-      "Cutter",
-      "Button",
-      "Zipper",
-      "Napkin",
-      "Tissue",
-      "Purses",
-      "Cables",
-      "Tablet",
-      "Badges",
-      "Lenses",
-      "Fidget",
-      "Mitten",
-      "Condom",
-      "Tampon",
-      "Tictac",
-      "CarKey",
       "Keyfob",
-      "Folder",
-      "Laptop",
-      "Pillow",
-      "Hammer",
-      "Jacket",
-      "Basket",
+      "Racket",
+      "Helmet",
+      "Canvas",
+      "Letter",
+      "Parcel",
+      "Ribbon",
+      "Powder",
+      "Puppet",
       "Bucket",
-      "Goblet",
-      "Funnel",
-      "Carpet",
-      "Binder",
-      "Webcam",
-      "Hanger",
-      "Duffel",
-      "Hamper",
-      "Butter",
-      "Coffee",
-      "Pepper",
-      "Dishes",
-      "Socket",
-      "Window",
-      "Curler",
-      "Duster",
-      "Carton",
-      "Packet",
-      "Ladder",
-      "Cactus",
-      "Muffin",
-      "Turkey",
-      "Salmon",
-      "Burger",
-      "Hotdog",
-      "Garlic",
-      "Carrot",
-      "Sundae",
-      "Sandal",
-      "Bowtie",
-      "Subway",
-      "Rocket",
-      "Tunnel",
-      "Hangar",
-      "Harbor",
-      "Camper",
-      "Pickup",
-      "Canyon",
-      "Kitten",
-      "Rabbit",
-      "Donkey",
-      "Monkey",
-      "Falcon",
-      "Parrot",
-      "Walrus",
-      "Horses",
-      "Wolves",
-      "Zebras",
-      "Badger",
-      "Nachos",
-      "Pizzas",
-      "Cashew",
-      "Walnut",
-      "Norway",
-      "London",
-      "Madrid",
-      "Berlin",
-      "Dublin",
-      "Moscow",
-      "Valley",
-      "Yellow",
-      "Silver",
-      "Cancer",
-      "Pisces"
+      "Walker",
+      "Mallet"
     ],
     "handheld:827001": [
       "Matchbox"
     ],
     "handheld:827000": [
-      "Matchbox",
-      "Bobbypin"
-    ],
-    "all:827001": [
-      "Matchbox"
-    ],
-    "all:827000": [
       "Matchbox",
       "Bobbypin"
     ],
@@ -2651,7 +3351,13 @@ window.ENIGMA_DATA = {
       "Charm",
       "Specs",
       "Chips",
-      "Scarf"
+      "Scarf",
+      "Crocs",
+      "Crown",
+      "Sword",
+      "Swing",
+      "Cross",
+      "Sling"
     ],
     "handheld:530000": [
       "Stamp",
@@ -2664,67 +3370,16 @@ window.ENIGMA_DATA = {
       "Drops",
       "Specs",
       "Chips",
-      "Scarf"
-    ],
-    "all:530003": [
-      "Stamp",
-      "Chalk",
-      "Charm",
-      "Specs",
-      "Chips",
       "Scarf",
-      "Clock",
-      "Shirt",
-      "Shelf",
-      "Skirt",
-      "Chest",
-      "Ships",
-      "Cliff",
-      "Chimp",
-      "Sloth",
-      "Skunk",
-      "Shark",
-      "Czech",
-      "Shell"
-    ],
-    "all:530000": [
-      "Stamp",
-      "Glass",
-      "Brush",
-      "Floss",
-      "Flask",
-      "Chalk",
-      "Charm",
-      "Drops",
-      "Specs",
-      "Chips",
-      "Scarf",
-      "Clock",
-      "Drill",
-      "Shirt",
-      "Brick",
-      "Whisk",
-      "Shelf",
-      "Blind",
-      "Skirt",
-      "Dress",
-      "Plant",
-      "Plums",
-      "Truck",
-      "Chest",
-      "Blimp",
-      "Ships",
-      "Cliff",
-      "Chimp",
-      "Sloth",
-      "Skunk",
-      "Shark",
-      "Frogs",
-      "Wraps",
-      "Czech",
-      "Shell",
-      "Black",
-      "Brown"
+      "Blush",
+      "Crocs",
+      "Crown",
+      "Sword",
+      "Swing",
+      "Grill",
+      "Cross",
+      "Sling",
+      "Whisk"
     ],
     "handheld:037001": [
       "Flashlight"
@@ -2732,15 +3387,6 @@ window.ENIGMA_DATA = {
     "handheld:037000": [
       "Flashlight",
       "Chopsticks"
-    ],
-    "all:037001": [
-      "Flashlight"
-    ],
-    "all:037000": [
-      "Flashlight",
-      "Chopsticks",
-      "Blackberry",
-      "Grandpiano"
     ],
     "handheld:625001": [
       "Wallet",
@@ -2759,56 +3405,11 @@ window.ENIGMA_DATA = {
       "Mitten",
       "Tampon",
       "Tictac",
-      "Keyfob"
-    ],
-    "all:625001": [
-      "Wallet",
-      "Marker",
-      "Mirror",
-      "Locket",
-      "Nickel",
-      "Magnet",
-      "Ticket",
-      "Zipper",
-      "Napkin",
-      "Tissue",
-      "Tablet",
-      "Lenses",
-      "Fidget",
-      "Mitten",
-      "Tampon",
-      "Tictac",
       "Keyfob",
-      "Folder",
-      "Laptop",
-      "Hammer",
-      "Funnel",
-      "Webcam",
-      "Hanger",
-      "Hamper",
-      "Window",
-      "Ladder",
-      "Muffin",
-      "Turkey",
-      "Hotdog",
-      "Tunnel",
-      "Hangar",
-      "Harbor",
-      "Kitten",
-      "Monkey",
-      "Falcon",
-      "Walrus",
-      "Horses",
-      "Wolves",
-      "Zebras",
-      "Nachos",
-      "Walnut",
-      "Norway",
-      "London",
-      "Madrid",
-      "Moscow",
-      "Valley",
-      "Yellow"
+      "Helmet",
+      "Letter",
+      "Walker",
+      "Mallet"
     ],
     "handheld:712001": [
       "Earring",
@@ -2820,36 +3421,14 @@ window.ENIGMA_DATA = {
       "Earbuds",
       "Airpods"
     ],
-    "all:712001": [
-      "Earring",
-      "Earbuds",
-      "Airpods",
-      "Airport",
-      "Austria"
-    ],
-    "all:712000": [
-      "Earring",
-      "Earbuds",
-      "Airpods",
-      "Oatmeal",
-      "Airport",
-      "Austria"
-    ],
     "handheld:835002": [
-      "Bracelet"
+      "Bracelet",
+      "Placemat"
     ],
     "handheld:835000": [
-      "Bracelet"
-    ],
-    "all:835002": [
       "Bracelet",
-      "Driveway"
-    ],
-    "all:835000": [
-      "Bracelet",
-      "Credenza",
-      "Driveway",
-      "Flamingo"
+      "Scalepan",
+      "Placemat"
     ],
     "handheld:826001": [
       "Necklace",
@@ -2857,7 +3436,9 @@ window.ENIGMA_DATA = {
       "Lipgloss",
       "Fishhook",
       "Keychain",
-      "Lighters"
+      "Lighters",
+      "Textbook",
+      "Wishbone"
     ],
     "handheld:826000": [
       "Necklace",
@@ -2869,96 +3450,39 @@ window.ENIGMA_DATA = {
       "Penknife",
       "Billfold",
       "Lighters",
-      "Passport"
-    ],
-    "all:826001": [
-      "Necklace",
-      "Lipstick",
-      "Lipgloss",
-      "Fishhook",
-      "Keychain",
-      "Lighters",
-      "Mattress",
-      "Mushroom",
-      "Wardrobe",
-      "Lamppost",
-      "Fortress",
-      "Forklift",
-      "Windmill"
-    ],
-    "all:826000": [
-      "Necklace",
-      "Lipstick",
-      "Lipgloss",
-      "Fishhook",
-      "Cufflink",
-      "Keychain",
-      "Penknife",
-      "Billfold",
-      "Lighters",
       "Passport",
+      "Postcard",
+      "Joystick",
       "Backpack",
-      "Rucksack",
-      "Mattress",
-      "Bodywash",
-      "Sandwich",
-      "Mushroom",
-      "Cocktail",
-      "Wardrobe",
-      "Lamppost",
-      "Fortress",
-      "Forklift",
-      "Windmill",
-      "Dolphins",
-      "Pastries"
+      "Textbook",
+      "Wishbone"
     ],
     "handheld:836003": [
       "Scissors",
       "Chargers",
       "Clippers",
       "Stickers",
-      "Staplers"
+      "Staplers",
+      "Swimsuit"
     ],
     "handheld:836000": [
       "Scissors",
       "Chargers",
       "Clippers",
       "Stickers",
-      "Staplers"
-    ],
-    "all:836003": [
-      "Scissors",
-      "Chargers",
-      "Clippers",
-      "Stickers",
       "Staplers",
-      "Slippers",
-      "Crackers",
-      "Cherries",
-      "Scotland"
-    ],
-    "all:836000": [
-      "Scissors",
-      "Chargers",
-      "Clippers",
-      "Stickers",
-      "Staplers",
-      "Slippers",
-      "Blankets",
-      "Pretzels",
-      "Crackers",
-      "Dressing",
-      "Cherries",
-      "Broccoli",
-      "Brownies",
-      "Scotland"
+      "Swimsuit"
     ],
     "handheld:424001": [
       "Tape",
       "Yo-yo",
       "Lube",
       "Vape",
-      "Wipe"
+      "Wipe",
+      "Lego",
+      "Kite",
+      "Hose",
+      "Tire"
     ],
     "handheld:424000": [
       "Tape",
@@ -2968,64 +3492,19 @@ window.ENIGMA_DATA = {
       "Yo-yo",
       "Lube",
       "Vape",
-      "Wipe"
-    ],
-    "all:424001": [
-      "Tape",
-      "Yo-yo",
-      "Lube",
-      "Vape",
       "Wipe",
-      "Vase",
-      "Wine",
-      "Wire",
-      "Tuna",
-      "Taco",
-      "Mayo",
-      "Lime",
-      "Tote",
-      "Taxi",
-      "Lake",
-      "Mice",
-      "Kiwi",
-      "Fiji"
-    ],
-    "all:424000": [
-      "Tape",
-      "Dice",
-      "Pipe",
-      "Dime",
-      "Yo-yo",
-      "Lube",
-      "Vape",
-      "Wipe",
-      "Vase",
-      "Soda",
-      "Wine",
-      "Wire",
-      "Sofa",
-      "Tuna",
-      "Rice",
-      "Taco",
-      "Mayo",
-      "Lime",
-      "Cake",
-      "Coke",
-      "Tote",
-      "Rope",
-      "Polo",
-      "Taxi",
-      "Gate",
+      "Lego",
       "Bike",
-      "Lake",
-      "Cave",
-      "Mice",
-      "Kiwi",
-      "Peru",
-      "Fiji",
-      "Rome",
-      "Rose",
-      "June"
+      "Kite",
+      "Robe",
+      "Rope",
+      "Cage",
+      "Hose",
+      "Tire",
+      "Cape",
+      "Rake",
+      "Safe",
+      "Cane"
     ],
     "handheld:434002": [
       "Glue"
@@ -3033,161 +3512,61 @@ window.ENIGMA_DATA = {
     "handheld:434000": [
       "Glue"
     ],
-    "all:434002": [
-      "Glue",
-      "Blue"
-    ],
-    "all:434000": [
-      "Glue",
-      "Shoe",
-      "Chai",
-      "Tree",
-      "Blue"
-    ],
     "handheld:923001": [
       "Toothpick",
-      "Hairbrush"
+      "Hairbrush",
+      "Hairspray",
+      "Hourglass",
+      "Teakettle"
     ],
     "handheld:923000": [
       "Toothpick",
       "Coinpurse",
       "Deodorant",
       "Coughdrop",
-      "Hairbrush"
-    ],
-    "all:923001": [
-      "Toothpick",
       "Hairbrush",
-      "Hairdryer",
-      "Mouthwash",
-      "Meatballs"
-    ],
-    "all:923000": [
-      "Toothpick",
-      "Coinpurse",
-      "Deodorant",
-      "Coughdrop",
-      "Hairbrush",
-      "Hairdryer",
-      "Mouthwash",
-      "Bookshelf",
-      "Pooltable",
-      "Meatballs",
-      "Doughnuts"
+      "Hairspray",
+      "Hourglass",
+      "Teakettle"
     ],
     "handheld:524002": [
-      "Razor"
+      "Razor",
+      "Radio",
+      "Pedal",
+      "Ruler",
+      "Gavel"
     ],
     "handheld:524000": [
       "Razor",
       "Cigar",
       "Token",
       "Wipes",
-      "Vapes"
-    ],
-    "all:524002": [
-      "Razor",
-      "Paper",
-      "Ruler",
-      "Duvet",
-      "Bacon",
-      "Boxes",
-      "Bagel",
-      "Donut",
-      "Ramen",
-      "Basin",
-      "Bidet",
-      "Patio",
-      "Buses",
-      "Bikes",
-      "River",
-      "Japan",
-      "Paris"
-    ],
-    "all:524000": [
-      "Razor",
-      "Cigar",
-      "Token",
-      "Wipes",
       "Vapes",
-      "Paper",
-      "Towel",
+      "Visor",
+      "Radio",
+      "Medal",
+      "Pedal",
+      "Kazoo",
+      "Laser",
       "Ruler",
-      "Mixer",
-      "Duvet",
-      "Bacon",
-      "Sugar",
-      "Water",
-      "Novel",
-      "Boxes",
-      "Level",
-      "Bagel",
-      "Donut",
-      "Ramen",
-      "Tacos",
-      "Salad",
-      "Melon",
-      "Lemon",
-      "Limes",
-      "Cakes",
-      "Cider",
-      "Tower",
-      "Hotel",
-      "Futon",
-      "Basin",
-      "Bidet",
-      "Patio",
-      "Foyer",
-      "Cabin",
-      "Canoe",
-      "Kayak",
-      "Sedan",
-      "Moped",
-      "Buses",
-      "Bikes",
-      "River",
-      "Camel",
-      "Tiger",
-      "Lemur",
-      "Foxes",
-      "Honey",
-      "Japan",
-      "Korea",
-      "Paris",
-      "Milan",
-      "Tulip",
-      "Comet"
+      "Quran",
+      "Tarot",
+      "Gavel",
+      "Timer"
     ],
     "handheld:823002": [
-      "Bookmark"
+      "Bookmark",
+      "Raincoat",
+      "Doorbell"
     ],
     "handheld:823000": [
       "Bookmark",
-      "Teaspoon"
-    ],
-    "all:823002": [
-      "Bookmark",
-      "Doorknob",
-      "Doughnut",
-      "Bookcase",
-      "Building"
-    ],
-    "all:823000": [
-      "Bookmark",
       "Teaspoon",
-      "Suitcase",
-      "Mousepad",
-      "Doorknob",
-      "Coasters",
-      "Doughnut",
-      "Sausages",
-      "Bookcase",
-      "Soundbar",
-      "Fountain",
-      "Building",
-      "Sailboat",
-      "Mountain",
-      "Meatball"
+      "Football",
+      "Headband",
+      "Raincoat",
+      "Doorbell",
+      "Cauldron"
     ],
     "handheld:725002": [
       "Padlock",
@@ -3195,7 +3574,10 @@ window.ENIGMA_DATA = {
       "Perfume",
       "Battery",
       "Pencils",
-      "Bandaid"
+      "Bandaid",
+      "Balloon",
+      "Package",
+      "Bandana"
     ],
     "handheld:725000": [
       "Padlock",
@@ -3222,107 +3604,18 @@ window.ENIGMA_DATA = {
       "Condoms",
       "Tampons",
       "Tictacs",
-      "Simcard"
-    ],
-    "all:725002": [
-      "Padlock",
-      "Bandage",
-      "Perfume",
-      "Battery",
-      "Pencils",
-      "Bandaid",
-      "Pancake",
-      "Pillows",
-      "Garbage",
-      "Biscuit",
-      "Burgers",
-      "Burrito",
-      "Popcorn",
-      "Peppers",
-      "Pudding",
-      "Jackets",
-      "Picture",
-      "Balcony",
-      "Rowboat",
-      "Raccoon",
-      "Penguin",
-      "Rabbits",
-      "Germany",
-      "Denmark",
-      "Belgium"
-    ],
-    "all:725000": [
-      "Padlock",
-      "Compass",
-      "Bandage",
-      "Perfume",
-      "Lantern",
-      "Compact",
-      "Lipbalm",
-      "Battery",
-      "Keycard",
-      "Keyring",
-      "Lanyard",
-      "Pencils",
-      "Markers",
-      "Wallets",
-      "Mascara",
-      "Bandaid",
-      "Tablets",
-      "Tickets",
-      "Mittens",
-      "Tissues",
-      "Napkins",
-      "Condoms",
-      "Tampons",
-      "Tictacs",
       "Simcard",
-      "Curtain",
-      "Cushion",
-      "Sandals",
+      "Balloon",
+      "Package",
+      "Bandana",
+      "Console",
+      "Macbook",
+      "Costume",
+      "Hammock",
+      "Canteen",
       "Luggage",
-      "Pancake",
-      "Pillows",
-      "Hangers",
-      "Garbage",
-      "Muffins",
-      "Biscuit",
-      "Burgers",
-      "Hotdogs",
-      "Burrito",
-      "Popcorn",
-      "Mustard",
-      "Carrots",
-      "Lettuce",
-      "Peppers",
-      "Cupcake",
-      "Candies",
-      "Pudding",
-      "Custard",
-      "Hammers",
-      "Jackets",
-      "Picture",
-      "Furnace",
-      "Balcony",
-      "Terrace",
-      "Mansion",
-      "Cottage",
-      "Factory",
-      "Library",
-      "Rowboat",
-      "Volcano",
-      "Raccoon",
-      "Penguin",
-      "Rabbits",
-      "Monkeys",
-      "Mangoes",
-      "Germany",
-      "Finland",
-      "Denmark",
-      "Belgium",
-      "Holland",
-      "Hungary",
-      "New York"
+      "Sundial",
+      "Tankard"
     ],
     "handheld:737001": [
       "Whistle",
@@ -3332,52 +3625,24 @@ window.ENIGMA_DATA = {
       "Whistle",
       "Thimble"
     ],
-    "all:737001": [
-      "Whistle",
-      "Thimble"
-    ],
-    "all:737000": [
-      "Whistle",
-      "Thimble"
-    ],
     "handheld:725003": [
       "Compass",
       "Compact",
       "Condoms",
-      "Simcard"
-    ],
-    "all:725003": [
-      "Compass",
-      "Compact",
-      "Condoms",
       "Simcard",
-      "Curtain",
-      "Cushion",
-      "Sandals",
-      "Carrots",
-      "Cupcake",
-      "Candies",
-      "Custard",
-      "Cottage"
+      "Console",
+      "Costume",
+      "Canteen",
+      "Sundial"
     ],
     "handheld:424002": [
       "Dice",
       "Pipe",
-      "Dime"
-    ],
-    "all:424002": [
-      "Dice",
-      "Pipe",
       "Dime",
-      "Rice",
-      "Rope",
-      "Polo",
-      "Gate",
       "Bike",
-      "Peru",
-      "Rome",
-      "Rose",
-      "June"
+      "Robe",
+      "Rope",
+      "Rake"
     ],
     "handheld:613001": [
       "Eraser",
@@ -3387,18 +3652,6 @@ window.ENIGMA_DATA = {
       "Eraser",
       "Opener",
       "Amulet"
-    ],
-    "all:613001": [
-      "Eraser",
-      "Amulet"
-    ],
-    "all:613000": [
-      "Eraser",
-      "Opener",
-      "Amulet",
-      "Omelet",
-      "Orange",
-      "Onions"
     ],
     "handheld:736003": [
       "Stapler",
@@ -3423,69 +3676,16 @@ window.ENIGMA_DATA = {
       "Spinner",
       "Glasses",
       "Plaster",
-      "Sharpie"
-    ],
-    "all:736003": [
-      "Stapler",
-      "Clipper",
-      "Stopper",
-      "Charger",
-      "Clicker",
-      "Scalpel",
-      "Sticker",
-      "Spinner",
       "Sharpie",
-      "Skillet",
-      "Shampoo",
-      "Chicken",
-      "Slipper",
-      "Scarves",
-      "Chimney",
-      "Scorpio"
-    ],
-    "all:736000": [
-      "Stapler",
-      "Clipper",
-      "Stopper",
-      "Charger",
-      "Clicker",
-      "Scalpel",
-      "Sticker",
-      "Trinket",
-      "Spinner",
-      "Glasses",
-      "Plaster",
-      "Sharpie",
-      "Blanket",
-      "Thermos",
-      "Blender",
-      "Skillet",
-      "Shampoo",
-      "Platter",
-      "Chicken",
-      "Pretzel",
-      "Brownie",
-      "Slipper",
-      "Scarves",
-      "Tractor",
-      "Dresser",
-      "Chimney",
-      "Drumset",
-      "Trolley",
-      "Thunder",
-      "Scorpio"
+      "Frisbee",
+      "Trumpet",
+      "Printer",
+      "Plunger",
+      "Playpen",
+      "Growler"
     ],
     "handheld:423001": [
       "Nail"
-    ],
-    "all:423001": [
-      "Nail",
-      "Hook",
-      "Ties",
-      "Lion",
-      "Toad",
-      "Leaf",
-      "Moon"
     ],
     "handheld:540003": [
       "Screw",
@@ -3495,186 +3695,67 @@ window.ENIGMA_DATA = {
       "Screw",
       "Straw"
     ],
-    "all:540003": [
-      "Screw",
-      "Straw"
-    ],
-    "all:540000": [
-      "Screw",
-      "Straw"
-    ],
     "handheld:534003": [
-      "Spoon"
+      "Spoon",
+      "Spear",
+      "Stein"
     ],
     "handheld:534000": [
-      "Spoon"
-    ],
-    "all:534003": [
       "Spoon",
-      "Chair",
-      "Stool",
-      "Sheet",
-      "Shoes",
-      "Steak",
-      "Chain",
-      "Sheep",
-      "Squid",
-      "Cream",
-      "Spain",
-      "Cloud"
-    ],
-    "all:534000": [
-      "Spoon",
-      "Broom",
-      "Bread",
-      "Chair",
-      "Stool",
-      "Sheet",
-      "Floor",
-      "Shoes",
-      "Steak",
-      "Fries",
-      "Chain",
-      "Train",
-      "Trees",
-      "Sheep",
-      "Squid",
-      "Cream",
-      "Spain",
-      "Cloud",
-      "Green"
+      "Spear",
+      "Wheel",
+      "Stein"
     ],
     "handheld:535001": [
-      "Knife"
+      "Knife",
+      "Flute"
     ],
     "handheld:535000": [
       "Knife",
       "Phone",
       "Blade",
       "Glove",
-      "Stone"
-    ],
-    "all:535001": [
-      "Knife",
-      "Frame",
-      "Hyena",
-      "Whale",
-      "Llama",
-      "White"
-    ],
-    "all:535000": [
-      "Knife",
-      "Phone",
-      "Blade",
-      "Glove",
       "Stone",
-      "Plate",
-      "Stove",
+      "Flute",
+      "Globe",
+      "Slide",
+      "Photo",
       "Scale",
-      "Chili",
-      "Grape",
-      "Frame",
-      "Stage",
-      "Crane",
-      "Plane",
-      "Hyena",
-      "Rhino",
-      "Whale",
-      "Snake",
-      "Llama",
-      "Chile",
-      "China",
-      "White"
+      "Brace"
     ],
     "handheld:320003": [
       "Cup",
       "Can"
     ],
-    "all:320003": [
-      "Cup",
-      "Can",
-      "Saw",
-      "Cap",
-      "Car",
-      "Suv",
-      "Cat",
-      "Cow",
-      "Sub",
-      "Sun"
-    ],
     "handheld:530002": [
       "Glass",
       "Brush",
-      "Drops"
-    ],
-    "all:530002": [
-      "Glass",
-      "Brush",
       "Drops",
-      "Drill",
-      "Brick",
-      "Blind",
-      "Dress",
-      "Plant",
-      "Plums",
-      "Blimp",
-      "Black",
-      "Brown"
+      "Blush",
+      "Grill"
     ],
     "handheld:535002": [
       "Phone",
       "Blade",
-      "Glove"
-    ],
-    "all:535002": [
-      "Phone",
-      "Blade",
       "Glove",
-      "Plate",
-      "Grape",
-      "Plane",
-      "Rhino"
+      "Globe",
+      "Photo",
+      "Brace"
     ],
     "handheld:525002": [
       "Badge",
-      "Purse"
+      "Purse",
+      "Banjo",
+      "Bible"
     ],
     "handheld:525000": [
       "Badge",
       "Cable",
-      "Purse"
-    ],
-    "all:525002": [
-      "Badge",
       "Purse",
-      "Pasta",
-      "Pizza",
-      "Pepsi",
-      "Panda"
-    ],
-    "all:525000": [
-      "Badge",
-      "Cable",
-      "Purse",
-      "Ladle",
-      "Table",
-      "Sushi",
-      "Pasta",
-      "Pizza",
-      "Mango",
-      "Latte",
-      "Pepsi",
-      "Fence",
-      "Villa",
-      "Condo",
-      "Horse",
-      "Panda",
-      "Zebra",
-      "Hippo",
-      "Kenya",
-      "Tokyo",
-      "Virgo",
-      "Libra"
+      "Banjo",
+      "Cello",
+      "Bible",
+      "Ladle"
     ],
     "handheld:626003": [
       "Candle"
@@ -3685,30 +3766,10 @@ window.ENIGMA_DATA = {
       "Bottle",
       "Marble",
       "Pebble",
-      "Dongle"
-    ],
-    "all:626003": [
-      "Candle",
-      "Castle",
-      "Circle"
-    ],
-    "all:626000": [
-      "Candle",
-      "Bangle",
-      "Bottle",
-      "Marble",
-      "Pebble",
       "Dongle",
-      "Kettle",
-      "Waffle",
-      "Handle",
-      "Matcha",
-      "Castle",
-      "Temple",
-      "Jungle",
-      "Turtle",
-      "Purple",
-      "Circle"
+      "Puzzle",
+      "Poncho",
+      "Rattle"
     ],
     "handheld:725001": [
       "Lantern",
@@ -3725,73 +3786,32 @@ window.ENIGMA_DATA = {
       "Tissues",
       "Napkins",
       "Tampons",
-      "Tictacs"
-    ],
-    "all:725001": [
-      "Lantern",
-      "Lipbalm",
-      "Keycard",
-      "Keyring",
-      "Lanyard",
-      "Markers",
-      "Wallets",
-      "Mascara",
-      "Tablets",
-      "Tickets",
-      "Mittens",
-      "Tissues",
-      "Napkins",
-      "Tampons",
       "Tictacs",
+      "Macbook",
+      "Hammock",
       "Luggage",
-      "Hangers",
-      "Muffins",
-      "Hotdogs",
-      "Mustard",
-      "Lettuce",
-      "Hammers",
-      "Furnace",
-      "Terrace",
-      "Mansion",
-      "Factory",
-      "Library",
-      "Volcano",
-      "Monkeys",
-      "Mangoes",
-      "Finland",
-      "Holland",
-      "Hungary",
-      "New York"
+      "Tankard"
     ],
     "handheld:726003": [
       "Candles",
-      "Satchel"
-    ],
-    "all:726003": [
-      "Candles",
-      "Satchel"
+      "Satchel",
+      "Sandbox"
     ],
     "handheld:726002": [
       "Bottles",
       "Pillbox",
-      "Goggles"
-    ],
-    "all:726002": [
-      "Bottles",
-      "Pillbox",
       "Goggles",
-      "Pitcher",
-      "Dustpan",
+      "Pushpin",
       "Bathtub",
-      "Bunkbed",
-      "Panther",
-      "Dolphin"
+      "Dishrag",
+      "Pitcher"
     ],
     "handheld:723001": [
       "Hairpin",
       "Toolbox",
       "Headset",
-      "Hairtie"
+      "Hairtie",
+      "Mailbox"
     ],
     "handheld:723000": [
       "Hairpin",
@@ -3799,213 +3819,93 @@ window.ENIGMA_DATA = {
       "Headset",
       "Hairtie",
       "Quarter",
-      "Coaster"
-    ],
-    "all:723001": [
-      "Hairpin",
-      "Toolbox",
-      "Headset",
-      "Hairtie",
-      "Toaster",
-      "Loafers",
-      "Noodles",
-      "Hoodies",
-      "Mailbox",
-      "Leopard",
-      "Vietnam",
-      "Feather"
-    ],
-    "all:723000": [
-      "Hairpin",
-      "Toolbox",
-      "Headset",
-      "Hairtie",
-      "Quarter",
       "Coaster",
-      "Toaster",
-      "Loafers",
-      "Doormat",
-      "Ceiling",
-      "Bouquet",
-      "Sausage",
-      "Noodles",
-      "Peanuts",
-      "Peaches",
-      "Cookies",
-      "Journal",
-      "Hoodies",
-      "Beanies",
-      "Counter",
       "Mailbox",
-      "Boulder",
-      "Leopard",
-      "Vietnam",
-      "Feather",
-      "Rainbow",
-      "Diamond"
+      "Pointer"
     ],
     "handheld:823001": [
-      "Teaspoon"
-    ],
-    "all:823001": [
       "Teaspoon",
-      "Mousepad",
-      "Fountain",
-      "Mountain",
-      "Meatball"
+      "Football",
+      "Headband"
     ],
     "handheld:634002": [
       "Brooch",
-      "Pliers"
+      "Pliers",
+      "Bleach"
     ],
     "handheld:634000": [
       "Brooch",
       "Pliers",
-      "Spoons"
-    ],
-    "all:634002": [
-      "Brooch",
-      "Pliers",
-      "Blouse",
-      "Greece"
-    ],
-    "all:634000": [
-      "Brooch",
-      "Pliers",
       "Spoons",
-      "Blouse",
-      "Cheese",
-      "Chairs",
-      "Sheets",
-      "Stairs",
-      "Trains",
-      "Greece",
-      "Square"
+      "Cleats",
+      "Bleach",
+      "Shield"
     ],
     "handheld:626002": [
       "Bangle",
       "Bottle",
       "Pebble",
-      "Dongle"
-    ],
-    "all:626002": [
-      "Bangle",
-      "Bottle",
-      "Pebble",
       "Dongle",
-      "Jungle",
-      "Purple"
+      "Puzzle",
+      "Poncho",
+      "Rattle"
     ],
     "handheld:826003": [
       "Cufflink"
     ],
-    "all:826003": [
-      "Cufflink",
-      "Sandwich",
-      "Cocktail"
-    ],
     "handheld:623001": [
       "Tiepin",
-      "Needle"
+      "Needle",
+      "Violin",
+      "Heater",
+      "Toilet",
+      "Loofah",
+      "Keurig"
     ],
     "handheld:623000": [
       "Tiepin",
       "Coupon",
       "Needle",
-      "Beanie"
-    ],
-    "all:623001": [
-      "Tiepin",
-      "Needle",
-      "Teacup",
-      "Teapot",
-      "Hoodie",
-      "Faucet",
-      "Toilet",
-      "Houses",
-      "Vienna",
-      "Taurus"
-    ],
-    "all:623000": [
-      "Tiepin",
-      "Coupon",
-      "Needle",
       "Beanie",
-      "Guitar",
-      "Saucer",
-      "Teacup",
-      "Teapot",
-      "Peeler",
-      "Hoodie",
-      "Faucet",
-      "Cookie",
-      "Cooler",
+      "Violin",
+      "Router",
+      "Heater",
       "Toilet",
-      "Houses",
-      "Beaver",
-      "Beetle",
-      "Peanut",
-      "Vienna",
-      "Taurus"
+      "Loofah",
+      "Beaker",
+      "Diaper",
+      "Seesaw",
+      "Cooler",
+      "Guitar",
+      "Keurig"
     ],
     "handheld:825002": [
       "Barrette",
       "Bandages",
-      "Bandaids"
+      "Bandaids",
+      "Pendulum",
+      "Dentures"
     ],
     "handheld:825000": [
       "Barrette",
       "Bandages",
       "Bandaids",
       "Lollipop",
-      "Contacts"
-    ],
-    "all:825002": [
-      "Barrette",
-      "Bandages",
-      "Bandaids",
-      "Pancakes",
-      "Biscuits",
-      "Recliner",
-      "Penguins",
-      "Burritos",
-      "Portugal"
-    ],
-    "all:825000": [
-      "Barrette",
-      "Bandages",
-      "Bandaids",
-      "Lollipop",
       "Contacts",
-      "Keyboard",
-      "Pancakes",
-      "Curtains",
-      "Biscuits",
-      "Cupcakes",
-      "Recliner",
-      "Cupboard",
-      "Corridor",
-      "Hospital",
-      "Terminal",
-      "Kangaroo",
-      "Penguins",
-      "Tortoise",
-      "Mosquito",
-      "Burritos",
-      "Portugal",
-      "February"
+      "Lipliner",
+      "Leggings",
+      "Nintendo",
+      "Cassette",
+      "Pendulum",
+      "Dentures"
     ],
     "handheld:948003": [
-      "Scrunchie"
+      "Scrunchie",
+      "Sprinkler"
     ],
     "handheld:948000": [
-      "Scrunchie"
-    ],
-    "all:948003": [
-      "Scrunchie"
-    ],
-    "all:948000": [
-      "Scrunchie"
+      "Scrunchie",
+      "Sprinkler"
     ],
     "handheld:813001": [
       "Eyedrops",
@@ -4015,60 +3915,17 @@ window.ENIGMA_DATA = {
       "Eyedrops",
       "Eyeliner"
     ],
-    "all:813001": [
-      "Eyedrops",
-      "Eyeliner",
-      "Icecream",
-      "Elevator",
-      "Elephant",
-      "Ice Cream",
-      "Avocados",
-      "Aquarius"
-    ],
-    "all:813000": [
-      "Eyedrops",
-      "Eyeliner",
-      "Icecream",
-      "Elevator",
-      "Elephant",
-      "Ice Cream",
-      "Avocados",
-      "Aquarius"
-    ],
     "handheld:834001": [
       "Tweezers"
     ],
     "handheld:834000": [
-      "Tweezers"
-    ],
-    "all:834001": [
       "Tweezers",
-      "Trousers",
-      "Thailand",
-      "Triangle"
-    ],
-    "all:834000": [
-      "Tweezers",
-      "Trousers",
-      "Sneakers",
-      "Smoothie",
-      "Sweaters",
-      "Speakers",
-      "Squirrel",
-      "Thailand",
-      "Triangle"
+      "Steering"
     ],
     "handheld:530001": [
       "Floss",
-      "Flask"
-    ],
-    "all:530001": [
-      "Floss",
       "Flask",
-      "Whisk",
-      "Truck",
-      "Frogs",
-      "Wraps"
+      "Whisk"
     ],
     "handheld:624001": [
       "Lotion",
@@ -4076,117 +3933,37 @@ window.ENIGMA_DATA = {
     ],
     "handheld:624000": [
       "Lotion",
-      "Tokens"
-    ],
-    "all:624001": [
-      "Lotion",
       "Tokens",
-      "Vacuum",
-      "Yogurt",
-      "Towels",
-      "Lemons",
-      "Tomato",
-      "Vanity",
-      "Museum",
-      "Forest",
-      "Lizard",
-      "Tigers",
-      "Mexico",
-      "Hawaii",
-      "Venice"
-    ],
-    "all:624000": [
-      "Lotion",
-      "Tokens",
+      "Boxers",
+      "Bikini",
       "Camera",
       "Remote",
-      "Vacuum",
-      "Cereal",
-      "Yogurt",
-      "Towels",
-      "Razors",
-      "Bagels",
-      "Donuts",
-      "Banana",
-      "Lemons",
-      "Tomato",
-      "Potato",
-      "Gelato",
-      "Garage",
-      "Bureau",
-      "Vanity",
-      "Gazebo",
-      "Palace",
-      "Museum",
-      "Cinema",
-      "Forest",
-      "Desert",
-      "Jaguar",
-      "Coyote",
-      "Baboon",
-      "Lizard",
-      "Tigers",
-      "Celery",
-      "Canada",
-      "Mexico",
-      "Poland",
-      "Hawaii",
-      "Venice",
-      "Gemini"
+      "Rosary",
+      "Carafe"
     ],
     "handheld:724003": [
-      "Cologne"
+      "Cologne",
+      "Samovar"
     ],
     "handheld:724000": [
       "Cologne",
       "Notepad",
       "Receipt",
-      "License"
-    ],
-    "all:724003": [
-      "Cologne",
-      "Catalog",
-      "Cabinet"
-    ],
-    "all:724000": [
-      "Cologne",
-      "Notepad",
-      "Receipt",
       "License",
-      "Catalog",
-      "Monitor",
-      "Cabinet",
-      "Bananas",
-      "Jacuzzi",
-      "Veranda",
-      "Minivan",
-      "Giraffe",
-      "Gorilla",
-      "Lasagna",
-      "Vinegar",
-      "Morocco",
-      "Nigeria",
-      "January"
+      "Pajamas",
+      "Gamepad",
+      "Maracas",
+      "Jukebox",
+      "Monocle",
+      "Samovar"
     ],
     "handheld:613003": [
       "Opener"
-    ],
-    "all:613003": [
-      "Opener",
-      "Omelet",
-      "Orange",
-      "Onions"
     ],
     "handheld:928003": [
       "Corkscrew"
     ],
     "handheld:928000": [
-      "Corkscrew"
-    ],
-    "all:928003": [
-      "Corkscrew"
-    ],
-    "all:928000": [
       "Corkscrew"
     ],
     "handheld:716001": [
@@ -4195,137 +3972,44 @@ window.ENIGMA_DATA = {
     "handheld:716000": [
       "Ashtray"
     ],
-    "all:716001": [
-      "Ashtray"
-    ],
-    "all:716000": [
-      "Ashtray"
-    ],
     "handheld:524003": [
-      "Cigar"
-    ],
-    "all:524003": [
       "Cigar",
-      "Sugar",
-      "Salad",
-      "Cakes",
-      "Cider",
-      "Cabin",
-      "Canoe",
-      "Sedan",
-      "Camel",
-      "Comet"
+      "Quran"
     ],
     "handheld:520002": [
       "Penny",
       "Rings",
       "Pills"
     ],
-    "all:520002": [
-      "Penny",
-      "Rings",
-      "Pills",
-      "Bowls",
-      "Bench",
-      "Pants",
-      "Bolts",
-      "Belts",
-      "Porch",
-      "Puppy",
-      "Birds",
-      "Ducks",
-      "Jelly"
-    ],
     "handheld:723003": [
       "Quarter",
       "Coaster"
     ],
-    "all:723003": [
-      "Quarter",
-      "Coaster",
-      "Ceiling",
-      "Sausage",
-      "Cookies",
-      "Counter"
-    ],
     "handheld:524001": [
       "Token",
       "Wipes",
-      "Vapes"
-    ],
-    "all:524001": [
-      "Token",
-      "Wipes",
       "Vapes",
-      "Towel",
-      "Mixer",
-      "Water",
-      "Novel",
-      "Level",
-      "Tacos",
-      "Melon",
-      "Lemon",
-      "Limes",
-      "Tower",
-      "Hotel",
-      "Futon",
-      "Foyer",
-      "Kayak",
-      "Moped",
-      "Tiger",
-      "Lemur",
-      "Foxes",
-      "Honey",
-      "Korea",
-      "Milan",
-      "Tulip"
+      "Visor",
+      "Medal",
+      "Kazoo",
+      "Laser",
+      "Tarot",
+      "Timer"
     ],
     "handheld:430003": [
-      "Chip"
+      "Chip",
+      "Crib"
     ],
     "handheld:430000": [
-      "Chip"
-    ],
-    "all:430003": [
       "Chip",
-      "Crab",
-      "Stew",
-      "Ship",
-      "Crib",
-      "Shed",
-      "Swan",
-      "Snow",
-      "Star"
-    ],
-    "all:430000": [
-      "Chip",
-      "Tray",
-      "Plug",
-      "Crab",
-      "Wrap",
-      "Stew",
-      "Plum",
-      "Ship",
-      "Crib",
-      "Shed",
-      "Tram",
-      "Swan",
-      "Frog",
-      "Twig",
-      "Snow",
-      "Star"
+      "Drum",
+      "Xbox",
+      "Flag",
+      "Whip",
+      "Crib"
     ],
     "handheld:626001": [
       "Marble"
-    ],
-    "all:626001": [
-      "Marble",
-      "Kettle",
-      "Waffle",
-      "Handle",
-      "Matcha",
-      "Temple",
-      "Turtle"
     ],
     "handheld:760003": [
       "Crystal"
@@ -4333,19 +4017,9 @@ window.ENIGMA_DATA = {
     "handheld:760000": [
       "Crystal"
     ],
-    "all:760003": [
-      "Crystal"
-    ],
-    "all:760000": [
-      "Crystal"
-    ],
     "handheld:525003": [
-      "Cable"
-    ],
-    "all:525003": [
       "Cable",
-      "Sushi",
-      "Condo"
+      "Cello"
     ],
     "handheld:650003": [
       "Stylus"
@@ -4353,18 +4027,14 @@ window.ENIGMA_DATA = {
     "handheld:650000": [
       "Stylus"
     ],
-    "all:650003": [
-      "Stylus",
-      "Sydney"
-    ],
-    "all:650000": [
-      "Stylus",
-      "Sydney"
-    ],
     "handheld:635003": [
       "Crayon",
       "Chisel",
-      "Shades"
+      "Shades",
+      "Stereo",
+      "Shower",
+      "Shovel",
+      "Clover"
     ],
     "handheld:635000": [
       "Crayon",
@@ -4372,166 +4042,63 @@ window.ENIGMA_DATA = {
       "Phones",
       "Knives",
       "Gloves",
-      "Shades"
-    ],
-    "all:635003": [
-      "Crayon",
-      "Chisel",
       "Shades",
-      "Statue",
-      "Closet",
-      "Shower",
       "Stereo",
-      "Spider",
-      "Snakes",
-      "Sweden"
-    ],
-    "all:635000": [
-      "Crayon",
-      "Chisel",
-      "Phones",
-      "Knives",
-      "Gloves",
-      "Shades",
-      "Grater",
-      "Tripod",
-      "Blazer",
-      "Plates",
-      "Drawer",
-      "Grapes",
-      "Statue",
-      "Closet",
       "Shower",
-      "Stereo",
-      "Planes",
-      "Spider",
-      "Snakes",
-      "Whales",
-      "Brazil",
-      "Sweden",
-      "Flower",
-      "Planet"
+      "Shovel",
+      "Clover",
+      "Trivet"
     ],
     "handheld:724001": [
       "Notepad",
-      "License"
-    ],
-    "all:724001": [
-      "Notepad",
       "License",
-      "Monitor",
-      "Veranda",
-      "Minivan",
-      "Lasagna",
-      "Vinegar",
-      "Morocco",
-      "Nigeria"
+      "Maracas",
+      "Monocle"
     ],
     "handheld:724002": [
-      "Receipt"
-    ],
-    "all:724002": [
       "Receipt",
-      "Bananas",
-      "Jacuzzi",
-      "Giraffe",
-      "Gorilla",
-      "January"
+      "Pajamas",
+      "Gamepad",
+      "Jukebox"
     ],
     "handheld:623003": [
-      "Coupon"
-    ],
-    "all:623003": [
       "Coupon",
-      "Saucer",
-      "Cookie",
+      "Seesaw",
       "Cooler"
     ],
     "handheld:826002": [
       "Penknife",
       "Billfold",
-      "Passport"
-    ],
-    "all:826002": [
-      "Penknife",
-      "Billfold",
       "Passport",
-      "Backpack",
-      "Rucksack",
-      "Bodywash",
-      "Dolphins",
-      "Pastries"
+      "Postcard",
+      "Joystick",
+      "Backpack"
     ],
     "handheld:625003": [
       "Cutter",
       "Cables",
       "Condom",
-      "CarKey"
-    ],
-    "all:625003": [
-      "Cutter",
-      "Cables",
-      "Condom",
       "CarKey",
-      "Carpet",
-      "Coffee",
-      "Socket",
-      "Curler",
-      "Carton",
-      "Cactus",
-      "Salmon",
-      "Carrot",
-      "Sundae",
-      "Sandal",
-      "Subway",
-      "Camper",
-      "Canyon",
-      "Cashew",
-      "Silver",
-      "Cancer"
+      "Canvas"
     ],
     "handheld:630001": [
-      "Wrench"
+      "Wrench",
+      "Trophy",
+      "Floppy"
     ],
     "handheld:630000": [
       "Wrench",
       "Clutch",
-      "Stamps"
-    ],
-    "all:630001": [
-      "Wrench",
-      "Trucks"
-    ],
-    "all:630000": [
-      "Wrench",
-      "Clutch",
       "Stamps",
-      "Shorts",
-      "Switch",
-      "Blinds",
-      "Shirts",
-      "Plants",
-      "Crisps",
-      "Cherry",
-      "Church",
-      "Trucks",
-      "Sharks",
-      "Branch"
+      "Trophy",
+      "Floppy"
     ],
     "handheld:645001": [
       "Thread"
     ],
     "handheld:645000": [
-      "Thread"
-    ],
-    "all:645001": [
-      "Thread"
-    ],
-    "all:645000": [
       "Thread",
-      "Screen",
-      "Street",
-      "School"
+      "Screen"
     ],
     "handheld:036003": [
       "Spectacles"
@@ -4539,80 +4106,20 @@ window.ENIGMA_DATA = {
     "handheld:036000": [
       "Spectacles"
     ],
-    "all:036003": [
-      "Spectacles",
-      "Clothespin"
-    ],
-    "all:036000": [
-      "Spectacles",
-      "Thermostat",
-      "Clothespin",
-      "Trampoline"
-    ],
     "handheld:523001": [
       "Loupe",
-      "Mouse"
+      "Mouse",
+      "Vault"
     ],
     "handheld:523000": [
       "Loupe",
       "Pouch",
       "Coins",
-      "Mouse"
-    ],
-    "all:523001": [
-      "Loupe",
       "Mouse",
-      "Toast",
-      "Heels",
-      "Nails",
-      "House",
-      "Moose",
-      "Koala",
-      "Lions",
-      "Heart"
-    ],
-    "all:523000": [
-      "Loupe",
-      "Pouch",
-      "Coins",
-      "Mouse",
-      "Quilt",
-      "Boots",
-      "Toast",
-      "Juice",
-      "Books",
-      "Couch",
-      "Jeans",
-      "Heels",
-      "Nails",
-      "Sauce",
-      "Peach",
-      "Pears",
-      "Beans",
-      "Diary",
-      "Coats",
-      "House",
       "Piano",
-      "Coach",
-      "Boats",
-      "Beach",
-      "Piers",
-      "Moose",
-      "Koala",
-      "Goose",
-      "Goats",
-      "Lions",
-      "Bears",
-      "Geese",
-      "Seals",
-      "Cairo",
-      "Daisy",
-      "Heart"
+      "Vault"
     ],
     "handheld:037003": [
-      "Chopsticks"
-    ],
-    "all:037003": [
       "Chopsticks"
     ],
     "handheld:126001": [
@@ -4628,47 +4135,16 @@ window.ENIGMA_DATA = {
       "Highlighter",
       "Bottleopener"
     ],
-    "all:126001": [
-      "Handkerchief",
-      "Lighterfluid",
-      "Handsanitizer",
-      "Highlighter"
-    ],
-    "all:126000": [
-      "Handkerchief",
-      "Lighterfluid",
-      "Handsanitizer",
-      "Highlighter",
-      "Bottleopener",
-      "Candlestick",
-      "Candleholder"
-    ],
     "handheld:523002": [
-      "Pouch"
-    ],
-    "all:523002": [
       "Pouch",
-      "Boots",
-      "Juice",
-      "Books",
-      "Jeans",
-      "Peach",
-      "Pears",
-      "Beans",
-      "Diary",
-      "Piano",
-      "Boats",
-      "Beach",
-      "Piers",
-      "Goose",
-      "Goats",
-      "Bears",
-      "Geese",
-      "Daisy"
+      "Piano"
     ],
     "handheld:924001": [
       "Moneyclip",
-      "Notebooks"
+      "Notebooks",
+      "Telescope",
+      "Fireworks",
+      "Megaphone"
     ],
     "handheld:924000": [
       "Moneyclip",
@@ -4679,46 +4155,17 @@ window.ENIGMA_DATA = {
       "Pokerchip",
       "Cigarette",
       "Debitcard",
-      "Canopener"
-    ],
-    "all:924001": [
-      "Moneyclip",
-      "Notebooks",
-      "Fireplace",
-      "Warehouse",
-      "Waterfall"
-    ],
-    "all:924000": [
-      "Moneyclip",
-      "Powerbank",
-      "Sanitizer",
-      "Notebooks",
-      "Paperclip",
-      "Pokerchip",
-      "Cigarette",
-      "Debitcard",
       "Canopener",
-      "Pineapple",
-      "Cucumbers",
-      "Sideboard",
-      "Fireplace",
-      "Warehouse",
-      "Waterfall"
+      "Detergent",
+      "Satellite",
+      "Telescope",
+      "Fireworks",
+      "Megaphone",
+      "Barometer"
     ],
     "handheld:630003": [
       "Clutch",
       "Stamps"
-    ],
-    "all:630003": [
-      "Clutch",
-      "Stamps",
-      "Shorts",
-      "Switch",
-      "Shirts",
-      "Crisps",
-      "Cherry",
-      "Church",
-      "Sharks"
     ],
     "handheld:814001": [
       "Envelope"
@@ -4726,21 +4173,10 @@ window.ENIGMA_DATA = {
     "handheld:814000": [
       "Envelope"
     ],
-    "all:814001": [
-      "Envelope"
-    ],
-    "all:814000": [
-      "Envelope"
-    ],
     "handheld:736001": [
-      "Trinket"
-    ],
-    "all:736001": [
       "Trinket",
-      "Thermos",
-      "Tractor",
-      "Trolley",
-      "Thunder"
+      "Frisbee",
+      "Trumpet"
     ],
     "handheld:824001": [
       "Figurine",
@@ -4755,67 +4191,17 @@ window.ENIGMA_DATA = {
       "Notebook",
       "Vitamins",
       "Lozenges",
-      "Notecard"
-    ],
-    "all:824001": [
-      "Figurine",
-      "Notebook",
-      "Vitamins",
-      "Lozenges",
       "Notecard",
-      "Magazine",
-      "Tomatoes",
-      "Lemonade",
-      "Loveseat",
-      "Monument",
-      "Monorail",
-      "Macaroni",
-      "Malaysia",
-      "November"
-    ],
-    "all:824000": [
-      "Figurine",
-      "Receipts",
-      "Notebook",
-      "Vitamins",
-      "Lozenges",
-      "Notecard",
-      "Decanter",
-      "Colander",
-      "Calendar",
-      "Magazine",
-      "Radiator",
-      "Tomatoes",
-      "Potatoes",
-      "Cucumber",
-      "Lemonade",
-      "Loveseat",
-      "Basement",
-      "Sidewalk",
-      "Monument",
-      "Monorail",
-      "Giraffes",
-      "Macaroni",
-      "Colombia",
-      "Malaysia",
-      "Pinecone",
-      "November",
-      "December"
+      "Baseball",
+      "Pacifier",
+      "Polaroid",
+      "Retainer"
     ],
     "handheld:410001": [
       "Eggs"
     ],
     "handheld:410000": [
       "Eggs"
-    ],
-    "all:410001": [
-      "Eggs",
-      "Ants"
-    ],
-    "all:410000": [
-      "Eggs",
-      "Owls",
-      "Ants"
     ],
     "handheld:310001": [
       "Egg"
@@ -4824,41 +4210,12 @@ window.ENIGMA_DATA = {
       "Egg",
       "Usb"
     ],
-    "all:310001": [
-      "Egg",
-      "Elk",
-      "Ant"
-    ],
-    "all:310000": [
-      "Egg",
-      "Usb",
-      "Elk",
-      "Owl",
-      "Ant"
-    ],
     "handheld:523003": [
       "Coins"
-    ],
-    "all:523003": [
-      "Coins",
-      "Quilt",
-      "Couch",
-      "Sauce",
-      "Coats",
-      "Coach",
-      "Seals",
-      "Cairo"
     ],
     "handheld:520003": [
       "Cards",
       "Combs"
-    ],
-    "all:520003": [
-      "Cards",
-      "Combs",
-      "Socks",
-      "Curry",
-      "Candy"
     ],
     "handheld:713001": [
       "Erasers",
@@ -4866,58 +4223,33 @@ window.ENIGMA_DATA = {
     ],
     "handheld:713000": [
       "Erasers",
-      "Adapter"
-    ],
-    "all:713001": [
-      "Erasers",
       "Adapter",
-      "Avocado",
-      "Ireland",
-      "Iceland"
-    ],
-    "all:713000": [
-      "Erasers",
-      "Adapter",
-      "Oranges",
-      "Avocado",
-      "Ireland",
-      "Iceland"
+      "Ukulele"
     ],
     "handheld:923003": [
       "Coinpurse",
       "Coughdrop"
     ],
-    "all:923003": [
-      "Coinpurse",
-      "Coughdrop"
-    ],
     "handheld:937003": [
-      "Chapstick"
+      "Chapstick",
+      "Snowglobe",
+      "Chopstick",
+      "Shotglass"
     ],
     "handheld:937000": [
-      "Chapstick"
-    ],
-    "all:937003": [
       "Chapstick",
-      "Stepstool"
-    ],
-    "all:937000": [
-      "Chapstick",
-      "Stepstool"
+      "Thumbtack",
+      "Snowglobe",
+      "Flipflops",
+      "Flashbulb",
+      "Chopstick",
+      "Shotglass"
     ],
     "handheld:912001": [
       "Earphones"
     ],
     "handheld:912000": [
       "Earphones"
-    ],
-    "all:912001": [
-      "Earphones",
-      "Australia"
-    ],
-    "all:912000": [
-      "Earphones",
-      "Australia"
     ],
     "handheld:023001": [
       "Headphones",
@@ -4929,84 +4261,31 @@ window.ENIGMA_DATA = {
       "Toothpicks",
       "Foundation"
     ],
-    "all:023001": [
-      "Headphones",
-      "Toothpicks",
-      "Foundation",
-      "Toothbrush",
-      "Toothpaste"
-    ],
-    "all:023000": [
-      "Headphones",
-      "Toothpicks",
-      "Foundation",
-      "Toothbrush",
-      "Toothpaste",
-      "Quesadilla"
-    ],
     "handheld:635002": [
       "Phones",
       "Gloves"
     ],
-    "all:635002": [
-      "Phones",
-      "Gloves",
-      "Grater",
-      "Blazer",
-      "Plates",
-      "Drawer",
-      "Grapes",
-      "Planes",
-      "Brazil",
-      "Planet"
-    ],
     "handheld:925002": [
-      "Batteries"
+      "Batteries",
+      "Potholder"
     ],
     "handheld:925000": [
       "Batteries",
       "Magnifier",
       "Concealer",
-      "Multitool"
-    ],
-    "all:925002": [
-      "Batteries",
-      "Dispenser",
-      "Boxcutter",
-      "Butterfly",
-      "Barcelona",
-      "Rectangle"
-    ],
-    "all:925000": [
-      "Batteries",
-      "Magnifier",
-      "Concealer",
       "Multitool",
-      "Dispenser",
-      "Comforter",
-      "Microwave",
-      "Boxcutter",
-      "Submarine",
-      "Cathedral",
-      "Butterfly",
-      "Singapore",
-      "Barcelona",
-      "Rectangle",
-      "Capricorn",
-      "September"
+      "Harmonica",
+      "Horseshoe",
+      "Metronome",
+      "Potholder"
     ],
     "handheld:924002": [
       "Powerbank",
       "Paperclip",
       "Pokerchip",
-      "Debitcard"
-    ],
-    "all:924002": [
-      "Powerbank",
-      "Paperclip",
-      "Pokerchip",
       "Debitcard",
-      "Pineapple"
+      "Detergent",
+      "Barometer"
     ],
     "handheld:038001": [
       "Flashdrive"
@@ -5014,14 +4293,6 @@ window.ENIGMA_DATA = {
     "handheld:038000": [
       "Flashdrive",
       "StickyNote"
-    ],
-    "all:038001": [
-      "Flashdrive"
-    ],
-    "all:038000": [
-      "Flashdrive",
-      "StickyNote",
-      "Smartphone"
     ],
     "handheld:125002": [
       "Pocketknife",
@@ -5033,39 +4304,14 @@ window.ENIGMA_DATA = {
       "Rubberbands",
       "Dentalfloss"
     ],
-    "all:125002": [
-      "Pocketknife",
-      "Rubberbands",
-      "Dentalfloss",
-      "Refrigerator"
-    ],
-    "all:125000": [
-      "Pocketknife",
-      "Rubberbands",
-      "Dentalfloss",
-      "Conditioner",
-      "Refrigerator",
-      "Coffeetable"
-    ],
     "handheld:635001": [
-      "Knives"
-    ],
-    "all:635001": [
       "Knives",
-      "Tripod",
-      "Whales",
-      "Flower"
+      "Trivet"
     ],
     "handheld:634003": [
-      "Spoons"
-    ],
-    "all:634003": [
       "Spoons",
-      "Cheese",
-      "Chairs",
-      "Sheets",
-      "Stairs",
-      "Square"
+      "Cleats",
+      "Shield"
     ],
     "handheld:640003": [
       "Straws",
@@ -5075,111 +4321,47 @@ window.ENIGMA_DATA = {
       "Straws",
       "Sdcard"
     ],
-    "all:640003": [
-      "Straws",
-      "Sdcard",
-      "Screws",
-      "Shrimp"
-    ],
-    "all:640000": [
-      "Straws",
-      "Sdcard",
-      "T-shirt",
-      "Screws",
-      "Shrimp",
-      "Tshirt"
-    ],
     "handheld:123001": [
       "Nailclipper"
     ],
     "handheld:123000": [
       "Nailclipper"
     ],
-    "all:123001": [
-      "Nailclipper"
-    ],
-    "all:123000": [
-      "Nailclipper",
-      "South Africa"
-    ],
     "handheld:714001": [
       "Inhaler",
-      "Aspirin"
+      "Aspirin",
+      "Antenna"
     ],
     "handheld:714000": [
       "Inhaler",
-      "Aspirin"
-    ],
-    "all:714001": [
-      "Inhaler",
       "Aspirin",
-      "Incense",
-      "Almonds",
-      "Armoire"
-    ],
-    "all:714000": [
-      "Inhaler",
-      "Aspirin",
-      "Incense",
-      "Almonds",
-      "Ottoman",
-      "Armoire",
-      "Octopus",
-      "October"
+      "Antenna"
     ],
     "handheld:924003": [
       "Sanitizer",
       "Cigarette",
-      "Canopener"
-    ],
-    "all:924003": [
-      "Sanitizer",
-      "Cigarette",
       "Canopener",
-      "Cucumbers",
-      "Sideboard"
+      "Satellite"
     ],
     "handheld:824002": [
-      "Receipts"
-    ],
-    "all:824002": [
       "Receipts",
-      "Decanter",
-      "Radiator",
-      "Potatoes",
-      "Basement",
-      "Giraffes",
-      "Pinecone",
-      "December"
+      "Baseball",
+      "Pacifier",
+      "Polaroid",
+      "Retainer"
     ],
     "handheld:926002": [
-      "Passports"
+      "Passports",
+      "Dashboard"
     ],
     "handheld:926000": [
       "Passports",
       "Cartridge",
-      "Cufflinks"
-    ],
-    "all:926002": [
-      "Passports",
-      "Backpacks",
-      "Raspberry",
-      "Billboard",
-      "Bulldozer"
-    ],
-    "all:926000": [
-      "Passports",
-      "Cartridge",
       "Cufflinks",
-      "Newspaper",
-      "Backpacks",
-      "Raspberry",
-      "Mushrooms",
-      "Turntable",
-      "Billboard",
-      "Townhouse",
-      "Bulldozer",
-      "Sunflower"
+      "Handlebar",
+      "Dashboard",
+      "Lawnmower",
+      "Handcuffs"
     ],
     "handheld:024002": [
       "Paperclips"
@@ -5187,21 +4369,6 @@ window.ENIGMA_DATA = {
     "handheld:024000": [
       "Paperclips",
       "Cigarettes"
-    ],
-    "all:024002": [
-      "Paperclips",
-      "PaperTowel"
-    ],
-    "all:024000": [
-      "Paperclips",
-      "Cigarettes",
-      "Watermelon",
-      "PaperTowel",
-      "Helicopter",
-      "Motorcycle",
-      "Television",
-      "Locomotive",
-      "Mayonnaise"
     ],
     "handheld:025002": [
       "Rubberband",
@@ -5211,52 +4378,19 @@ window.ENIGMA_DATA = {
       "Rubberband",
       "Binderclip"
     ],
-    "all:025002": [
-      "Rubberband",
-      "Binderclip"
-    ],
-    "all:025000": [
-      "Rubberband",
-      "Binderclip",
-      "Calculator",
-      "Microphone",
-      "Windowsill",
-      "Cantaloupe",
-      "Cappuccino",
-      "Tablespoon",
-      "New Zealand"
-    ],
     "handheld:026003": [
       "Sunglasses"
     ],
     "handheld:026000": [
       "Sunglasses"
     ],
-    "all:026003": [
-      "Sunglasses",
-      "Controller",
-      "Sandwiches"
-    ],
-    "all:026000": [
-      "Sunglasses",
-      "Controller",
-      "Dishwasher",
-      "Sandwiches"
-    ],
     "handheld:736002": [
       "Glasses",
-      "Plaster"
-    ],
-    "all:736002": [
-      "Glasses",
       "Plaster",
-      "Blanket",
-      "Blender",
-      "Platter",
-      "Pretzel",
-      "Brownie",
-      "Dresser",
-      "Drumset"
+      "Printer",
+      "Plunger",
+      "Playpen",
+      "Growler"
     ],
     "handheld:013001": [
       "Eyeglasses"
@@ -5264,52 +4398,26 @@ window.ENIGMA_DATA = {
     "handheld:013000": [
       "Eyeglasses"
     ],
-    "all:013001": [
-      "Eyeglasses"
-    ],
-    "all:013000": [
-      "Eyeglasses",
-      "University"
-    ],
     "handheld:323002": [
       "Die"
     ],
     "handheld:323000": [
-      "Die"
-    ],
-    "all:323002": [
       "Die",
-      "Pie",
-      "Bee"
-    ],
-    "all:323000": [
-      "Die",
-      "Tie",
-      "Tea",
-      "Pie",
-      "Sea",
-      "Bee",
-      "Leo"
+      "Hoe"
     ],
     "handheld:925001": [
       "Magnifier",
-      "Multitool"
-    ],
-    "all:925001": [
-      "Magnifier",
       "Multitool",
-      "Microwave"
+      "Harmonica",
+      "Horseshoe",
+      "Metronome"
     ],
     "handheld:623002": [
-      "Beanie"
-    ],
-    "all:623002": [
       "Beanie",
-      "Guitar",
-      "Peeler",
-      "Beaver",
-      "Beetle",
-      "Peanut"
+      "Router",
+      "Beaker",
+      "Diaper",
+      "Guitar"
     ],
     "handheld:636003": [
       "Sponge"
@@ -5317,92 +4425,30 @@ window.ENIGMA_DATA = {
     "handheld:636000": [
       "Sponge"
     ],
-    "all:636003": [
-      "Sponge"
-    ],
-    "all:636000": [
-      "Sponge",
-      "Fridge",
-      "Bridge",
-      "France"
-    ],
     "handheld:423002": [
-      "Juul"
-    ],
-    "all:423002": [
       "Juul",
-      "Book",
-      "Beer",
-      "Door",
-      "Boot",
-      "Beef",
-      "Pear",
-      "Peas",
-      "Pies",
-      "Roof",
-      "Boat",
-      "Pool",
-      "Road",
-      "Pier",
-      "Goat",
-      "Deer",
-      "Bear",
-      "Bees",
-      "Rain"
+      "Gear"
     ],
     "handheld:926003": [
       "Cartridge",
       "Cufflinks"
     ],
-    "all:926003": [
-      "Cartridge",
-      "Cufflinks",
-      "Sunflower"
-    ],
     "handheld:024003": [
-      "Cigarettes"
-    ],
-    "all:024003": [
       "Cigarettes"
     ],
     "handheld:925003": [
       "Concealer"
     ],
-    "all:925003": [
-      "Concealer",
-      "Comforter",
-      "Submarine",
-      "Cathedral",
-      "Singapore",
-      "Capricorn",
-      "September"
-    ],
     "handheld:923002": [
       "Deodorant"
-    ],
-    "all:923002": [
-      "Deodorant",
-      "Bookshelf",
-      "Pooltable",
-      "Doughnuts"
     ],
     "handheld:927003": [
       "Sunscreen"
     ],
     "handheld:927000": [
-      "Sunscreen"
-    ],
-    "all:927003": [
-      "Sunscreen"
-    ],
-    "all:927000": [
       "Sunscreen",
-      "Dishcloth",
-      "Lampshade",
-      "Lightbulb",
-      "Bedspread",
-      "Jellyfish",
-      "Lightning"
+      "Highchair",
+      "Piggybank"
     ],
     "handheld:812003": [
       "Ointment"
@@ -5410,39 +4456,22 @@ window.ENIGMA_DATA = {
     "handheld:812000": [
       "Ointment",
       "Earphone",
-      "Earrings"
-    ],
-    "all:812003": [
-      "Ointment"
-    ],
-    "all:812000": [
-      "Ointment",
-      "Earphone",
       "Earrings",
-      "Airplane",
-      "Airliner"
+      "Earmuffs"
     ],
     "handheld:514001": [
-      "Advil"
+      "Advil",
+      "Arrow",
+      "Album",
+      "Atlas",
+      "Altar"
     ],
     "handheld:514000": [
-      "Advil"
-    ],
-    "all:514001": [
       "Advil",
-      "Apron",
-      "Attic",
-      "India",
-      "April"
-    ],
-    "all:514000": [
-      "Advil",
-      "Apron",
-      "Organ",
-      "Attic",
-      "Otter",
-      "India",
-      "April"
+      "Arrow",
+      "Album",
+      "Atlas",
+      "Altar"
     ],
     "handheld:746001": [
       "Tylenol"
@@ -5450,70 +4479,33 @@ window.ENIGMA_DATA = {
     "handheld:746000": [
       "Tylenol"
     ],
-    "all:746001": [
-      "Tylenol"
-    ],
-    "all:746000": [
-      "Tylenol",
-      "Pyramid"
-    ],
     "handheld:913001": [
       "Ibuprofen"
     ],
     "handheld:913000": [
       "Ibuprofen"
     ],
-    "all:913001": [
-      "Ibuprofen",
-      "Apartment",
-      "Elephants"
-    ],
-    "all:913000": [
-      "Ibuprofen",
-      "Apartment",
-      "Elephants"
-    ],
     "handheld:825001": [
-      "Lollipop"
-    ],
-    "all:825001": [
       "Lollipop",
-      "Keyboard",
-      "Hospital",
-      "Terminal",
-      "Kangaroo",
-      "Tortoise",
-      "Mosquito",
-      "February"
+      "Lipliner",
+      "Leggings",
+      "Nintendo"
     ],
     "handheld:612001": [
-      "Airpod"
+      "Airpod",
+      "Airbag"
     ],
     "handheld:612000": [
-      "Airpod"
-    ],
-    "all:612001": [
       "Airpod",
-      "August"
-    ],
-    "all:612000": [
-      "Airpod",
-      "August"
+      "Outlet",
+      "Airbag"
     ],
     "handheld:812001": [
       "Earphone",
-      "Earrings"
-    ],
-    "all:812001": [
-      "Earphone",
       "Earrings",
-      "Airplane",
-      "Airliner"
+      "Earmuffs"
     ],
     "handheld:310002": [
-      "Usb"
-    ],
-    "all:310002": [
       "Usb"
     ],
     "handheld:035003": [
@@ -5522,42 +4514,17 @@ window.ENIGMA_DATA = {
     "handheld:035000": [
       "Creditcard"
     ],
-    "all:035003": [
-      "Creditcard",
-      "Skateboard"
-    ],
-    "all:035000": [
-      "Creditcard",
-      "Skateboard",
-      "Phonebooth"
-    ],
     "handheld:210001": [
       "Id"
     ],
     "handheld:210000": [
       "Id"
     ],
-    "all:210001": [
-      "Id"
-    ],
-    "all:210000": [
-      "Id",
-      "UK"
-    ],
     "handheld:825003": [
-      "Contacts"
-    ],
-    "all:825003": [
       "Contacts",
-      "Curtains",
-      "Cupcakes",
-      "Cupboard",
-      "Corridor"
+      "Cassette"
     ],
     "handheld:827002": [
-      "Bobbypin"
-    ],
-    "all:827002": [
       "Bobbypin"
     ],
     "handheld:136003": [
@@ -5566,59 +4533,216 @@ window.ENIGMA_DATA = {
     "handheld:136000": [
       "Swissarmyknife"
     ],
-    "all:136003": [
-      "Swissarmyknife",
-      "Switzerland"
-    ],
-    "all:136000": [
-      "Swissarmyknife",
-      "Switzerland"
-    ],
     "handheld:934002": [
       "Gluestick"
     ],
     "handheld:934000": [
       "Gluestick"
     ],
-    "all:934002": [
-      "Gluestick",
-      "Briefcase",
-      "Blueberry"
-    ],
-    "all:934000": [
-      "Gluestick",
-      "Briefcase",
-      "Croissant",
-      "Blueberry",
-      "Treadmill",
-      "Staircase"
-    ],
     "handheld:038003": [
       "StickyNote"
-    ],
-    "all:038003": [
-      "StickyNote",
-      "Smartphone"
     ],
     "handheld:126002": [
       "Bottleopener"
     ],
-    "all:126002": [
-      "Bottleopener"
-    ],
     "handheld:535003": [
-      "Stone"
-    ],
-    "all:535003": [
       "Stone",
-      "Stove",
-      "Scale",
-      "Chili",
-      "Stage",
-      "Crane",
-      "Snake",
-      "Chile",
-      "China"
+      "Slide",
+      "Scale"
+    ],
+    "handheld:734003": [
+      "Scooter",
+      "Speaker"
+    ],
+    "handheld:734000": [
+      "Scooter",
+      "Speaker"
+    ],
+    "handheld:430002": [
+      "Drum"
+    ],
+    "handheld:713002": [
+      "Ukulele"
+    ],
+    "handheld:735003": [
+      "Crayons",
+      "Chalice"
+    ],
+    "handheld:735000": [
+      "Crayons",
+      "Chalice"
+    ],
+    "handheld:512001": [
+      "Easel"
+    ],
+    "handheld:512000": [
+      "Easel",
+      "Ouija"
+    ],
+    "handheld:936003": [
+      "Clipboard",
+      "Sharpener",
+      "Stopwatch"
+    ],
+    "handheld:936000": [
+      "Clipboard",
+      "Sharpener",
+      "Stopwatch"
+    ],
+    "handheld:937001": [
+      "Thumbtack",
+      "Flipflops",
+      "Flashbulb"
+    ],
+    "handheld:620001": [
+      "Tights"
+    ],
+    "handheld:620000": [
+      "Tights"
+    ],
+    "handheld:914002": [
+      "Underwear"
+    ],
+    "handheld:914000": [
+      "Underwear"
+    ],
+    "handheld:624002": [
+      "Boxers",
+      "Bikini",
+      "Remote",
+      "Rosary"
+    ],
+    "handheld:430001": [
+      "Xbox",
+      "Flag",
+      "Whip"
+    ],
+    "handheld:413001": [
+      "Ipad"
+    ],
+    "handheld:413000": [
+      "Ipad",
+      "Oven"
+    ],
+    "handheld:614001": [
+      "Iphone"
+    ],
+    "handheld:614000": [
+      "Iphone"
+    ],
+    "handheld:612003": [
+      "Outlet"
+    ],
+    "handheld:313001": [
+      "Axe"
+    ],
+    "handheld:313000": [
+      "Axe"
+    ],
+    "handheld:615001": [
+      "Anchor"
+    ],
+    "handheld:615000": [
+      "Anchor"
+    ],
+    "handheld:424003": [
+      "Cage",
+      "Cape",
+      "Safe",
+      "Cane"
+    ],
+    "handheld:534001": [
+      "Wheel"
+    ],
+    "handheld:926001": [
+      "Handlebar",
+      "Lawnmower",
+      "Handcuffs"
+    ],
+    "handheld:834003": [
+      "Steering"
+    ],
+    "handheld:837003": [
+      "Sparkler",
+      "Crutches"
+    ],
+    "handheld:837000": [
+      "Sparkler",
+      "Crutches"
+    ],
+    "handheld:823003": [
+      "Cauldron"
+    ],
+    "handheld:847003": [
+      "Stroller"
+    ],
+    "handheld:847000": [
+      "Stroller"
+    ],
+    "handheld:927001": [
+      "Highchair"
+    ],
+    "handheld:323001": [
+      "Hoe"
+    ],
+    "handheld:624003": [
+      "Camera",
+      "Carafe"
+    ],
+    "handheld:947003": [
+      "Scrapbook"
+    ],
+    "handheld:947000": [
+      "Scrapbook",
+      "Xylophone"
+    ],
+    "handheld:947001": [
+      "Xylophone"
+    ],
+    "handheld:200003": [
+      "Cd"
+    ],
+    "handheld:200000": [
+      "Cd"
+    ],
+    "handheld:300002": [
+      "Dvd"
+    ],
+    "handheld:300000": [
+      "Dvd"
+    ],
+    "handheld:723002": [
+      "Pointer"
+    ],
+    "handheld:935002": [
+      "Projector"
+    ],
+    "handheld:935000": [
+      "Projector"
+    ],
+    "handheld:645003": [
+      "Screen"
+    ],
+    "handheld:512003": [
+      "Ouija"
+    ],
+    "handheld:927002": [
+      "Piggybank"
+    ],
+    "handheld:835003": [
+      "Scalepan"
+    ],
+    "handheld:747003": [
+      "Syringe"
+    ],
+    "handheld:747000": [
+      "Syringe"
+    ],
+    "handheld:525001": [
+      "Ladle"
+    ],
+    "handheld:413003": [
+      "Oven"
     ],
     "everyday:534003": [
       "Spoon",
@@ -5627,7 +4751,11 @@ window.ENIGMA_DATA = {
       "Sheet",
       "Shoes",
       "Steak",
-      "Chain"
+      "Chain",
+      "Spear",
+      "Stein",
+      "Cream",
+      "Stout"
     ],
     "everyday:534000": [
       "Spoon",
@@ -5640,7 +4768,14 @@ window.ENIGMA_DATA = {
       "Shoes",
       "Steak",
       "Fries",
-      "Chain"
+      "Chain",
+      "Spear",
+      "Wheel",
+      "Stein",
+      "Cream",
+      "Stout",
+      "Flour",
+      "Trout"
     ],
     "everyday:420001": [
       "Fork",
@@ -5654,7 +4789,17 @@ window.ENIGMA_DATA = {
       "Hats",
       "Fish",
       "Nuts",
-      "Mint"
+      "Mint",
+      "Mask",
+      "Wand",
+      "Nest",
+      "Horn",
+      "Tent",
+      "Film",
+      "Harp",
+      "Mitt",
+      "Tart",
+      "Lamb"
     ],
     "everyday:420000": [
       "Fork",
@@ -5697,11 +4842,31 @@ window.ENIGMA_DATA = {
       "Mint",
       "Cord",
       "Cash",
-      "Bolt"
+      "Bolt",
+      "Doll",
+      "Gift",
+      "Mask",
+      "Wand",
+      "Nest",
+      "Horn",
+      "Pump",
+      "Bulb",
+      "Tent",
+      "Film",
+      "Harp",
+      "Cast",
+      "Mitt",
+      "Ribs",
+      "Tart",
+      "Dill",
+      "Duck",
+      "Lamb",
+      "Bass"
     ],
     "everyday:535001": [
       "Knife",
-      "Frame"
+      "Frame",
+      "Flute"
     ],
     "everyday:535000": [
       "Knife",
@@ -5713,20 +4878,31 @@ window.ENIGMA_DATA = {
       "Scale",
       "Chili",
       "Grape",
-      "Frame"
+      "Frame",
+      "Flute",
+      "Globe",
+      "Slide",
+      "Photo",
+      "Brace",
+      "Scone"
     ],
     "everyday:535002": [
       "Plate",
       "Phone",
       "Glove",
       "Blade",
-      "Grape"
+      "Grape",
+      "Globe",
+      "Photo",
+      "Brace"
     ],
     "everyday:320003": [
       "Cup",
       "Can",
       "Saw",
-      "Cap"
+      "Cap",
+      "Soy",
+      "Cod"
     ],
     "everyday:320000": [
       "Cup",
@@ -5754,7 +4930,21 @@ window.ENIGMA_DATA = {
       "Pad",
       "Fob",
       "Jug",
-      "Nut"
+      "Nut",
+      "Gel",
+      "Wig",
+      "Fan",
+      "Bow",
+      "Net",
+      "Map",
+      "Keg",
+      "Fig",
+      "Jam",
+      "Rum",
+      "Gin",
+      "Soy",
+      "Yam",
+      "Cod"
     ],
     "everyday:530002": [
       "Glass",
@@ -5765,7 +4955,10 @@ window.ENIGMA_DATA = {
       "Blind",
       "Dress",
       "Plant",
-      "Plums"
+      "Plums",
+      "Blush",
+      "Grill",
+      "Gravy"
     ],
     "everyday:530000": [
       "Glass",
@@ -5789,13 +4982,25 @@ window.ENIGMA_DATA = {
       "Skirt",
       "Dress",
       "Plant",
-      "Plums"
+      "Plums",
+      "Blush",
+      "Crocs",
+      "Crown",
+      "Sword",
+      "Swing",
+      "Grill",
+      "Cross",
+      "Sling",
+      "Gravy"
     ],
     "everyday:626002": [
       "Bottle",
       "Bangle",
       "Pebble",
-      "Dongle"
+      "Dongle",
+      "Puzzle",
+      "Poncho",
+      "Rattle"
     ],
     "everyday:626000": [
       "Bottle",
@@ -5807,7 +5012,10 @@ window.ENIGMA_DATA = {
       "Dongle",
       "Waffle",
       "Handle",
-      "Matcha"
+      "Matcha",
+      "Puzzle",
+      "Poncho",
+      "Rattle"
     ],
     "everyday:420002": [
       "Bowl",
@@ -5827,7 +5035,15 @@ window.ENIGMA_DATA = {
       "Bags",
       "Pork",
       "Pads",
-      "Bolt"
+      "Bolt",
+      "Doll",
+      "Gift",
+      "Pump",
+      "Bulb",
+      "Ribs",
+      "Dill",
+      "Duck",
+      "Bass"
     ],
     "everyday:320001": [
       "Mug",
@@ -5837,7 +5053,14 @@ window.ENIGMA_DATA = {
       "Mop",
       "Ham",
       "Fob",
-      "Nut"
+      "Nut",
+      "Wig",
+      "Fan",
+      "Net",
+      "Map",
+      "Keg",
+      "Fig",
+      "Yam"
     ],
     "everyday:423002": [
       "Book",
@@ -5848,7 +5071,10 @@ window.ENIGMA_DATA = {
       "Pear",
       "Peas",
       "Pies",
-      "Juul"
+      "Juul",
+      "Gear",
+      "Beet",
+      "Guac"
     ],
     "everyday:423000": [
       "Book",
@@ -5867,7 +5093,13 @@ window.ENIGMA_DATA = {
       "Pies",
       "Juul",
       "Hook",
-      "Ties"
+      "Ties",
+      "Gear",
+      "Seat",
+      "Beet",
+      "Guac",
+      "Leek",
+      "Veal"
     ],
     "everyday:824001": [
       "Notebook",
@@ -5876,7 +5108,11 @@ window.ENIGMA_DATA = {
       "Tomatoes",
       "Lemonade",
       "Vitamins",
-      "Lozenges"
+      "Lozenges",
+      "Tiramisu",
+      "Teriyaki",
+      "Licorice",
+      "Habanero"
     ],
     "everyday:824000": [
       "Notebook",
@@ -5892,7 +5128,21 @@ window.ENIGMA_DATA = {
       "Cucumber",
       "Lemonade",
       "Vitamins",
-      "Lozenges"
+      "Lozenges",
+      "Baseball",
+      "Pacifier",
+      "Polaroid",
+      "Retainer",
+      "Gatorade",
+      "Tiramisu",
+      "Bibimbap",
+      "Teriyaki",
+      "Licorice",
+      "Cilantro",
+      "Rosemary",
+      "Jalapeno",
+      "Habanero",
+      "Calamari"
     ],
     "everyday:524002": [
       "Paper",
@@ -5903,7 +5153,12 @@ window.ENIGMA_DATA = {
       "Boxes",
       "Bagel",
       "Donut",
-      "Ramen"
+      "Ramen",
+      "Radio",
+      "Pedal",
+      "Gavel",
+      "Dates",
+      "Basil"
     ],
     "everyday:524000": [
       "Paper",
@@ -5931,7 +5186,25 @@ window.ENIGMA_DATA = {
       "Limes",
       "Cakes",
       "Cider",
-      "Vapes"
+      "Vapes",
+      "Visor",
+      "Radio",
+      "Medal",
+      "Pedal",
+      "Kazoo",
+      "Laser",
+      "Quran",
+      "Tarot",
+      "Gavel",
+      "Timer",
+      "Kebab",
+      "Dates",
+      "Honey",
+      "Cocoa",
+      "Lager",
+      "Tonic",
+      "Kefir",
+      "Basil"
     ],
     "everyday:625001": [
       "Folder",
@@ -5962,7 +5235,18 @@ window.ENIGMA_DATA = {
       "Hotdog",
       "Tampon",
       "Tictac",
-      "Keyfob"
+      "Keyfob",
+      "Helmet",
+      "Letter",
+      "Walker",
+      "Mallet",
+      "Nachos",
+      "Hummus",
+      "Turnip",
+      "Toffee",
+      "Tempeh",
+      "Nutmeg",
+      "Mussel"
     ],
     "everyday:625000": [
       "Folder",
@@ -6029,7 +5313,28 @@ window.ENIGMA_DATA = {
       "CarKey",
       "Keyfob",
       "Sandal",
-      "Bowtie"
+      "Bowtie",
+      "Racket",
+      "Helmet",
+      "Canvas",
+      "Letter",
+      "Parcel",
+      "Ribbon",
+      "Powder",
+      "Puppet",
+      "Walker",
+      "Mallet",
+      "Nachos",
+      "Hummus",
+      "Turnip",
+      "Ginger",
+      "Sorbet",
+      "Toffee",
+      "Bonbon",
+      "Barley",
+      "Tempeh",
+      "Nutmeg",
+      "Mussel"
     ],
     "everyday:736003": [
       "Charger",
@@ -6045,7 +5350,11 @@ window.ENIGMA_DATA = {
       "Chicken",
       "Sharpie",
       "Slipper",
-      "Scarves"
+      "Scarves",
+      "Cheddar",
+      "Crumpet",
+      "Shallot",
+      "Scallop"
     ],
     "everyday:736000": [
       "Charger",
@@ -6070,11 +5379,25 @@ window.ENIGMA_DATA = {
       "Plaster",
       "Sharpie",
       "Slipper",
-      "Scarves"
+      "Scarves",
+      "Frisbee",
+      "Trumpet",
+      "Printer",
+      "Plunger",
+      "Playpen",
+      "Growler",
+      "Whiskey",
+      "Brisket",
+      "Cheddar",
+      "Crumpet",
+      "Shallot",
+      "Scallop"
     ],
     "everyday:525003": [
       "Cable",
-      "Sushi"
+      "Sushi",
+      "Cello",
+      "Salsa"
     ],
     "everyday:525000": [
       "Cable",
@@ -6087,7 +5410,15 @@ window.ENIGMA_DATA = {
       "Pizza",
       "Mango",
       "Latte",
-      "Pepsi"
+      "Pepsi",
+      "Banjo",
+      "Cello",
+      "Bible",
+      "Salsa",
+      "Fanta",
+      "Mocha",
+      "Vodka",
+      "Fudge"
     ],
     "everyday:725002": [
       "Battery",
@@ -6106,7 +5437,13 @@ window.ENIGMA_DATA = {
       "Peppers",
       "Pudding",
       "Jackets",
-      "Picture"
+      "Picture",
+      "Balloon",
+      "Package",
+      "Bandana",
+      "Redbull",
+      "Gummies",
+      "Paprika"
     ],
     "everyday:725000": [
       "Battery",
@@ -6157,14 +5494,38 @@ window.ENIGMA_DATA = {
       "Tictacs",
       "Hammers",
       "Jackets",
-      "Picture"
+      "Picture",
+      "Balloon",
+      "Package",
+      "Bandana",
+      "Console",
+      "Macbook",
+      "Costume",
+      "Hammock",
+      "Canteen",
+      "Sundial",
+      "Tankard",
+      "Cabbage",
+      "Redbull",
+      "Nuggets",
+      "Tenders",
+      "Tempura",
+      "Sashimi",
+      "Gummies",
+      "Lentils",
+      "Paprika",
+      "Sardine",
+      "Catfish",
+      "Herring"
     ],
     "everyday:523001": [
       "Mouse",
       "Loupe",
       "Toast",
       "Heels",
-      "Nails"
+      "Nails",
+      "Vault",
+      "Yeast"
     ],
     "everyday:523000": [
       "Mouse",
@@ -6185,11 +5546,19 @@ window.ENIGMA_DATA = {
       "Pears",
       "Beans",
       "Diary",
-      "Coats"
+      "Coats",
+      "Piano",
+      "Vault",
+      "Queso",
+      "Yeast"
     ],
     "everyday:825001": [
       "Keyboard",
-      "Lollipop"
+      "Lollipop",
+      "Lipliner",
+      "Leggings",
+      "Nintendo",
+      "Kombucha"
     ],
     "everyday:825000": [
       "Keyboard",
@@ -6201,55 +5570,60 @@ window.ENIGMA_DATA = {
       "Cupcakes",
       "Lollipop",
       "Bandaids",
-      "Contacts"
+      "Contacts",
+      "Lipliner",
+      "Leggings",
+      "Nintendo",
+      "Cassette",
+      "Pendulum",
+      "Dentures",
+      "Cinnamon",
+      "Popsicle",
+      "Parmesan",
+      "Kombucha"
     ],
     "everyday:023001": [
       "Headphones",
       "Toothbrush",
       "Toothpaste",
       "Toothpicks",
-      "Foundation"
+      "Foundation",
+      "Nailpolish",
+      "Hearingaid"
     ],
     "everyday:023000": [
       "Headphones",
       "Toothbrush",
       "Toothpaste",
       "Toothpicks",
-      "Foundation"
+      "Foundation",
+      "Paintbrush",
+      "Nailpolish",
+      "Hearingaid",
+      "Quesadilla"
     ],
     "everyday:734003": [
       "Speaker",
       "Sweater",
-      "Sneaker"
+      "Sneaker",
+      "Scooter",
+      "Cheetos"
     ],
     "everyday:734000": [
       "Speaker",
       "Sweater",
       "Freezer",
-      "Sneaker"
-    ],
-    "all:734003": [
-      "Speaker",
-      "Sweater",
       "Sneaker",
       "Scooter",
-      "Cheetah",
-      "Croatia"
-    ],
-    "all:734000": [
-      "Speaker",
-      "Sweater",
-      "Freezer",
-      "Sneaker",
-      "Scooter",
-      "Theater",
-      "Trailer",
-      "Cheetah",
-      "Croatia"
+      "Cheetos"
     ],
     "everyday:624003": [
       "Camera",
-      "Cereal"
+      "Cereal",
+      "Carafe",
+      "Celery",
+      "Salami",
+      "Caviar"
     ],
     "everyday:624000": [
       "Camera",
@@ -6267,15 +5641,20 @@ window.ENIGMA_DATA = {
       "Lemons",
       "Tomato",
       "Potato",
-      "Gelato"
-    ],
-    "all:624003": [
-      "Camera",
-      "Cereal",
-      "Cinema",
-      "Coyote",
+      "Gelato",
+      "Boxers",
+      "Bikini",
+      "Rosary",
+      "Carafe",
+      "Papaya",
       "Celery",
-      "Canada"
+      "Radish",
+      "Mojito",
+      "Danish",
+      "Wasabi",
+      "Baking",
+      "Salami",
+      "Caviar"
     ],
     "everyday:736002": [
       "Glasses",
@@ -6284,7 +5663,12 @@ window.ENIGMA_DATA = {
       "Platter",
       "Pretzel",
       "Brownie",
-      "Plaster"
+      "Plaster",
+      "Printer",
+      "Plunger",
+      "Playpen",
+      "Growler",
+      "Brisket"
     ],
     "everyday:026003": [
       "Sunglasses",
@@ -6312,7 +5696,18 @@ window.ENIGMA_DATA = {
       "Melon",
       "Lemon",
       "Limes",
-      "Vapes"
+      "Vapes",
+      "Visor",
+      "Medal",
+      "Kazoo",
+      "Laser",
+      "Tarot",
+      "Timer",
+      "Kebab",
+      "Honey",
+      "Lager",
+      "Tonic",
+      "Kefir"
     ],
     "everyday:625002": [
       "Pillow",
@@ -6336,7 +5731,15 @@ window.ENIGMA_DATA = {
       "Packet",
       "Burger",
       "Garlic",
-      "Bowtie"
+      "Bowtie",
+      "Racket",
+      "Parcel",
+      "Ribbon",
+      "Powder",
+      "Puppet",
+      "Ginger",
+      "Bonbon",
+      "Barley"
     ],
     "everyday:624002": [
       "Remote",
@@ -6345,25 +5748,14 @@ window.ENIGMA_DATA = {
       "Donuts",
       "Banana",
       "Potato",
-      "Gelato"
-    ],
-    "all:624002": [
-      "Remote",
-      "Razors",
-      "Bagels",
-      "Donuts",
-      "Banana",
-      "Potato",
       "Gelato",
-      "Garage",
-      "Bureau",
-      "Gazebo",
-      "Palace",
-      "Desert",
-      "Jaguar",
-      "Baboon",
-      "Poland",
-      "Gemini"
+      "Boxers",
+      "Bikini",
+      "Rosary",
+      "Papaya",
+      "Radish",
+      "Danish",
+      "Baking"
     ],
     "everyday:530003": [
       "Clock",
@@ -6375,12 +5767,22 @@ window.ENIGMA_DATA = {
       "Specs",
       "Chips",
       "Shelf",
-      "Skirt"
+      "Skirt",
+      "Crocs",
+      "Crown",
+      "Sword",
+      "Swing",
+      "Cross",
+      "Sling"
     ],
     "everyday:623002": [
       "Guitar",
       "Peeler",
-      "Beanie"
+      "Beanie",
+      "Router",
+      "Beaker",
+      "Diaper",
+      "Paella"
     ],
     "everyday:623000": [
       "Guitar",
@@ -6394,10 +5796,26 @@ window.ENIGMA_DATA = {
       "Hoodie",
       "Beanie",
       "Faucet",
-      "Cookie"
+      "Cookie",
+      "Violin",
+      "Router",
+      "Heater",
+      "Toilet",
+      "Loofah",
+      "Beaker",
+      "Diaper",
+      "Seesaw",
+      "Cooler",
+      "Keurig",
+      "Paella",
+      "Mousse",
+      "Quinoa",
+      "Seitan"
     ],
     "everyday:630001": [
-      "Wrench"
+      "Wrench",
+      "Trophy",
+      "Floppy"
     ],
     "everyday:630000": [
       "Wrench",
@@ -6409,7 +5827,10 @@ window.ENIGMA_DATA = {
       "Shirts",
       "Plants",
       "Crisps",
-      "Cherry"
+      "Cherry",
+      "Trophy",
+      "Floppy",
+      "Brandy"
     ],
     "everyday:148003": [
       "Screwdriver",
@@ -6419,18 +5840,11 @@ window.ENIGMA_DATA = {
       "Screwdriver",
       "Screwdrivers"
     ],
-    "all:148003": [
-      "Screwdriver",
-      "Screwdrivers"
-    ],
-    "all:148000": [
-      "Screwdriver",
-      "Screwdrivers"
-    ],
     "everyday:634002": [
       "Pliers",
       "Brooch",
-      "Blouse"
+      "Blouse",
+      "Bleach"
     ],
     "everyday:634000": [
       "Pliers",
@@ -6439,7 +5853,11 @@ window.ENIGMA_DATA = {
       "Spoons",
       "Cheese",
       "Chairs",
-      "Sheets"
+      "Sheets",
+      "Cleats",
+      "Bleach",
+      "Shield",
+      "Squash"
     ],
     "everyday:434003": [
       "Shoe",
@@ -6448,11 +5866,8 @@ window.ENIGMA_DATA = {
     "everyday:434000": [
       "Shoe",
       "Glue",
-      "Chai"
-    ],
-    "all:434003": [
-      "Shoe",
-      "Chai"
+      "Chai",
+      "Brie"
     ],
     "everyday:420003": [
       "Sock",
@@ -6465,34 +5880,26 @@ window.ENIGMA_DATA = {
       "Cans",
       "Corn",
       "Cord",
-      "Cash"
+      "Cash",
+      "Cast"
     ],
     "everyday:323001": [
       "Tie",
-      "Tea"
+      "Tea",
+      "Hoe"
     ],
     "everyday:323000": [
       "Tie",
       "Die",
       "Tea",
-      "Pie"
-    ],
-    "all:323001": [
-      "Tie",
-      "Tea",
-      "Leo"
+      "Pie",
+      "Hoe",
+      "Roe"
     ],
     "everyday:815002": [
       "Umbrella"
     ],
     "everyday:815000": [
-      "Umbrella",
-      "Espresso"
-    ],
-    "all:815002": [
-      "Umbrella"
-    ],
-    "all:815000": [
       "Umbrella",
       "Espresso"
     ],
@@ -6510,7 +5917,12 @@ window.ENIGMA_DATA = {
       "Jar",
       "Gum",
       "Pad",
-      "Jug"
+      "Jug",
+      "Gel",
+      "Bow",
+      "Jam",
+      "Rum",
+      "Gin"
     ],
     "everyday:826002": [
       "Backpack",
@@ -6518,7 +5930,9 @@ window.ENIGMA_DATA = {
       "Billfold",
       "Rucksack",
       "Passport",
-      "Bodywash"
+      "Bodywash",
+      "Postcard",
+      "Joystick"
     ],
     "everyday:826000": [
       "Backpack",
@@ -6537,12 +5951,19 @@ window.ENIGMA_DATA = {
       "Bodywash",
       "Sandwich",
       "Mushroom",
-      "Cocktail"
+      "Cocktail",
+      "Postcard",
+      "Joystick",
+      "Textbook",
+      "Wishbone",
+      "Zucchini"
     ],
     "everyday:823003": [
       "Suitcase",
       "Coasters",
-      "Sausages"
+      "Sausages",
+      "Cauldron",
+      "Couscous"
     ],
     "everyday:823000": [
       "Suitcase",
@@ -6552,14 +5973,14 @@ window.ENIGMA_DATA = {
       "Doorknob",
       "Coasters",
       "Doughnut",
-      "Sausages"
-    ],
-    "all:823003": [
-      "Suitcase",
-      "Coasters",
       "Sausages",
-      "Soundbar",
-      "Sailboat"
+      "Football",
+      "Headband",
+      "Raincoat",
+      "Doorbell",
+      "Cauldron",
+      "Meatloaf",
+      "Couscous"
     ],
     "everyday:814001": [
       "Envelope"
@@ -6587,7 +6008,15 @@ window.ENIGMA_DATA = {
       "Lube",
       "Vape",
       "Wipe",
-      "Tote"
+      "Tote",
+      "Lego",
+      "Kite",
+      "Hose",
+      "Tire",
+      "Kiwi",
+      "Kale",
+      "Feta",
+      "Tofu"
     ],
     "everyday:424000": [
       "Vase",
@@ -6612,16 +6041,29 @@ window.ENIGMA_DATA = {
       "Wipe",
       "Tote",
       "Rope",
-      "Polo"
+      "Polo",
+      "Lego",
+      "Bike",
+      "Kite",
+      "Robe",
+      "Cage",
+      "Hose",
+      "Tire",
+      "Cape",
+      "Rake",
+      "Safe",
+      "Cane",
+      "Kiwi",
+      "Kale",
+      "Feta",
+      "Sake",
+      "Soju",
+      "Tofu",
+      "Sage"
     ],
     "everyday:534002": [
       "Broom",
       "Bread"
-    ],
-    "all:534002": [
-      "Broom",
-      "Bread",
-      "Green"
     ],
     "everyday:726001": [
       "Lighter",
@@ -6633,7 +6075,8 @@ window.ENIGMA_DATA = {
       "Watches",
       "Waffles",
       "Lobster",
-      "Ketchup"
+      "Ketchup",
+      "Monster"
     ],
     "everyday:726000": [
       "Lighter",
@@ -6652,7 +6095,20 @@ window.ENIGMA_DATA = {
       "Watches",
       "Waffles",
       "Lobster",
-      "Ketchup"
+      "Ketchup",
+      "Pushpin",
+      "Bathtub",
+      "Sandbox",
+      "Dishrag",
+      "Pickles",
+      "Pumpkin",
+      "Monster",
+      "Cobbler",
+      "Sangria",
+      "Pilsner",
+      "Seltzer",
+      "Parsley",
+      "Parsnip"
     ],
     "everyday:725001": [
       "Lantern",
@@ -6676,18 +6132,38 @@ window.ENIGMA_DATA = {
       "Lettuce",
       "Tampons",
       "Tictacs",
-      "Hammers"
+      "Hammers",
+      "Macbook",
+      "Hammock",
+      "Tankard",
+      "Nuggets",
+      "Tenders",
+      "Tempura",
+      "Lentils",
+      "Herring"
     ],
     "everyday:726003": [
       "Candles",
-      "Satchel"
+      "Satchel",
+      "Sandbox",
+      "Cobbler",
+      "Sangria",
+      "Seltzer"
     ],
     "everyday:726002": [
       "Bottles",
       "Pillbox",
       "Goggles",
       "Pitcher",
-      "Dustpan"
+      "Dustpan",
+      "Pushpin",
+      "Bathtub",
+      "Dishrag",
+      "Pickles",
+      "Pumpkin",
+      "Pilsner",
+      "Parsley",
+      "Parsnip"
     ],
     "everyday:725003": [
       "Compact",
@@ -6699,7 +6175,15 @@ window.ENIGMA_DATA = {
       "Cupcake",
       "Candies",
       "Custard",
-      "Condoms"
+      "Condoms",
+      "Console",
+      "Costume",
+      "Canteen",
+      "Sundial",
+      "Cabbage",
+      "Sashimi",
+      "Sardine",
+      "Catfish"
     ],
     "everyday:723001": [
       "Hairpin",
@@ -6709,7 +6193,8 @@ window.ENIGMA_DATA = {
       "Toaster",
       "Loafers",
       "Noodles",
-      "Hoodies"
+      "Hoodies",
+      "Mailbox"
     ],
     "everyday:723000": [
       "Hairpin",
@@ -6730,11 +6215,19 @@ window.ENIGMA_DATA = {
       "Cookies",
       "Journal",
       "Hoodies",
-      "Beanies"
+      "Beanies",
+      "Mailbox",
+      "Pointer",
+      "Raisins",
+      "Pierogi",
+      "Bourbon"
     ],
     "everyday:823001": [
       "Teaspoon",
-      "Mousepad"
+      "Mousepad",
+      "Football",
+      "Headband",
+      "Meatloaf"
     ],
     "everyday:826001": [
       "Lipgloss",
@@ -6744,22 +6237,29 @@ window.ENIGMA_DATA = {
       "Keychain",
       "Lighters",
       "Mattress",
-      "Mushroom"
+      "Mushroom",
+      "Textbook",
+      "Wishbone",
+      "Zucchini"
     ],
     "everyday:737001": [
       "Whistle",
-      "Thimble"
+      "Thimble",
+      "Truffle"
     ],
     "everyday:737000": [
       "Whistle",
-      "Thimble"
+      "Thimble",
+      "Gnocchi",
+      "Truffle"
     ],
     "everyday:423003": [
       "Coin",
       "Soap",
       "Coat",
       "Suit",
-      "Soup"
+      "Soup",
+      "Seat"
     ],
     "everyday:520001": [
       "Watch",
@@ -6768,7 +6268,10 @@ window.ENIGMA_DATA = {
       "Match",
       "Torch",
       "Lamps",
-      "Mints"
+      "Mints",
+      "Teddy",
+      "Vinyl",
+      "Wings"
     ],
     "everyday:520000": [
       "Watch",
@@ -6790,7 +6293,12 @@ window.ENIGMA_DATA = {
       "Candy",
       "Mints",
       "Bolts",
-      "Belts"
+      "Belts",
+      "Teddy",
+      "Vinyl",
+      "Jelly",
+      "Wings",
+      "Jerky"
     ],
     "everyday:037001": [
       "Flashlight"
@@ -6798,7 +6306,8 @@ window.ENIGMA_DATA = {
     "everyday:037000": [
       "Flashlight",
       "Chopsticks",
-      "Blackberry"
+      "Blackberry",
+      "Chalkboard"
     ],
     "everyday:712001": [
       "Earring",
@@ -6812,10 +6321,16 @@ window.ENIGMA_DATA = {
       "Oatmeal"
     ],
     "everyday:835002": [
-      "Bracelet"
+      "Bracelet",
+      "Placemat",
+      "Prosecco"
     ],
     "everyday:835000": [
-      "Bracelet"
+      "Bracelet",
+      "Scalepan",
+      "Placemat",
+      "Prosecco",
+      "Sriracha"
     ],
     "everyday:836003": [
       "Scissors",
@@ -6825,7 +6340,10 @@ window.ENIGMA_DATA = {
       "Stickers",
       "Staplers",
       "Crackers",
-      "Cherries"
+      "Cherries",
+      "Swimsuit",
+      "Snickers",
+      "Scallion"
     ],
     "everyday:836000": [
       "Scissors",
@@ -6840,16 +6358,26 @@ window.ENIGMA_DATA = {
       "Dressing",
       "Cherries",
       "Broccoli",
-      "Brownies"
+      "Brownies",
+      "Swimsuit",
+      "Snickers",
+      "Frosting",
+      "Scallion"
     ],
     "everyday:434002": [
-      "Glue"
+      "Glue",
+      "Brie"
     ],
     "everyday:923001": [
       "Toothpick",
       "Hairdryer",
       "Mouthwash",
-      "Hairbrush"
+      "Hairbrush",
+      "Hairspray",
+      "Hourglass",
+      "Teakettle",
+      "Meatballs",
+      "Moonshine"
     ],
     "everyday:923000": [
       "Toothpick",
@@ -6858,12 +6386,20 @@ window.ENIGMA_DATA = {
       "Mouthwash",
       "Deodorant",
       "Coughdrop",
-      "Hairbrush"
+      "Hairbrush",
+      "Hairspray",
+      "Hourglass",
+      "Teakettle",
+      "Meatballs",
+      "Guacamole",
+      "Moonshine"
     ],
     "everyday:823002": [
       "Bookmark",
       "Doorknob",
-      "Doughnut"
+      "Doughnut",
+      "Raincoat",
+      "Doorbell"
     ],
     "everyday:424002": [
       "Dice",
@@ -6871,7 +6407,10 @@ window.ENIGMA_DATA = {
       "Dime",
       "Rice",
       "Rope",
-      "Polo"
+      "Polo",
+      "Bike",
+      "Robe",
+      "Rake"
     ],
     "everyday:613001": [
       "Eraser",
@@ -6883,12 +6422,15 @@ window.ENIGMA_DATA = {
       "Amulet",
       "Omelet",
       "Orange",
-      "Onions"
+      "Onions",
+      "Olives"
     ],
     "everyday:423001": [
       "Nail",
       "Hook",
-      "Ties"
+      "Ties",
+      "Leek",
+      "Veal"
     ],
     "everyday:540003": [
       "Screw",
@@ -6903,7 +6445,9 @@ window.ENIGMA_DATA = {
       "Purse",
       "Pasta",
       "Pizza",
-      "Pepsi"
+      "Pepsi",
+      "Banjo",
+      "Bible"
     ],
     "everyday:826003": [
       "Cufflink",
@@ -6916,20 +6460,34 @@ window.ENIGMA_DATA = {
       "Teacup",
       "Teapot",
       "Hoodie",
-      "Faucet"
+      "Faucet",
+      "Violin",
+      "Heater",
+      "Toilet",
+      "Loofah",
+      "Keurig",
+      "Mousse"
     ],
     "everyday:825002": [
       "Barrette",
       "Bandages",
       "Pancakes",
       "Biscuits",
-      "Bandaids"
+      "Bandaids",
+      "Pendulum",
+      "Dentures",
+      "Popsicle",
+      "Parmesan"
     ],
     "everyday:948003": [
-      "Scrunchie"
+      "Scrunchie",
+      "Sprinkler",
+      "Sprinkles"
     ],
     "everyday:948000": [
-      "Scrunchie"
+      "Scrunchie",
+      "Sprinkler",
+      "Sprinkles"
     ],
     "everyday:813001": [
       "Eyedrops",
@@ -6950,7 +6508,8 @@ window.ENIGMA_DATA = {
       "Trousers",
       "Sneakers",
       "Smoothie",
-      "Sweaters"
+      "Sweaters",
+      "Steering"
     ],
     "everyday:530001": [
       "Floss",
@@ -6964,12 +6523,17 @@ window.ENIGMA_DATA = {
       "Yogurt",
       "Towels",
       "Lemons",
-      "Tomato"
+      "Tomato",
+      "Mojito",
+      "Wasabi"
     ],
     "everyday:724003": [
       "Cologne",
       "Catalog",
-      "Cabinet"
+      "Cabinet",
+      "Samovar",
+      "Coconut",
+      "Caramel"
     ],
     "everyday:724000": [
       "Cologne",
@@ -6979,13 +6543,36 @@ window.ENIGMA_DATA = {
       "Monitor",
       "Cabinet",
       "Bananas",
-      "License"
+      "License",
+      "Pajamas",
+      "Gamepad",
+      "Maracas",
+      "Jukebox",
+      "Monocle",
+      "Samovar",
+      "Lasagna",
+      "Falafel",
+      "Coconut",
+      "Vanilla",
+      "Nutella",
+      "Doritos",
+      "Tequila",
+      "Risotto",
+      "Caramel",
+      "Macaron",
+      "Tabasco",
+      "Vinegar",
+      "Bologna",
+      "Venison",
+      "Tilapia",
+      "Halibut"
     ],
     "everyday:613003": [
       "Opener",
       "Omelet",
       "Orange",
-      "Onions"
+      "Onions",
+      "Olives"
     ],
     "everyday:928003": [
       "Corkscrew"
@@ -7004,7 +6591,9 @@ window.ENIGMA_DATA = {
       "Sugar",
       "Salad",
       "Cakes",
-      "Cider"
+      "Cider",
+      "Quran",
+      "Cocoa"
     ],
     "everyday:520002": [
       "Penny",
@@ -7014,7 +6603,9 @@ window.ENIGMA_DATA = {
       "Bench",
       "Pants",
       "Bolts",
-      "Belts"
+      "Belts",
+      "Jelly",
+      "Jerky"
     ],
     "everyday:723003": [
       "Quarter",
@@ -7026,7 +6617,10 @@ window.ENIGMA_DATA = {
     "everyday:430003": [
       "Chip",
       "Crab",
-      "Stew"
+      "Stew",
+      "Crib",
+      "Spam",
+      "Clam"
     ],
     "everyday:430000": [
       "Chip",
@@ -7035,7 +6629,16 @@ window.ENIGMA_DATA = {
       "Crab",
       "Wrap",
       "Stew",
-      "Plum"
+      "Plum",
+      "Drum",
+      "Xbox",
+      "Flag",
+      "Whip",
+      "Crib",
+      "Twix",
+      "Flan",
+      "Spam",
+      "Clam"
     ],
     "everyday:760003": [
       "Crystal"
@@ -7052,7 +6655,12 @@ window.ENIGMA_DATA = {
     "everyday:635003": [
       "Crayon",
       "Chisel",
-      "Shades"
+      "Shades",
+      "Stereo",
+      "Shower",
+      "Shovel",
+      "Clover",
+      "Chives"
     ],
     "everyday:635000": [
       "Crayon",
@@ -7066,21 +6674,50 @@ window.ENIGMA_DATA = {
       "Plates",
       "Drawer",
       "Grapes",
-      "Shades"
+      "Shades",
+      "Stereo",
+      "Shower",
+      "Shovel",
+      "Clover",
+      "Trivet",
+      "Chives"
     ],
     "everyday:724001": [
       "Notepad",
       "Monitor",
-      "License"
+      "License",
+      "Maracas",
+      "Monocle",
+      "Lasagna",
+      "Falafel",
+      "Vanilla",
+      "Nutella",
+      "Tequila",
+      "Macaron",
+      "Tabasco",
+      "Vinegar",
+      "Venison",
+      "Tilapia",
+      "Halibut"
     ],
     "everyday:724002": [
       "Receipt",
-      "Bananas"
+      "Bananas",
+      "Pajamas",
+      "Gamepad",
+      "Jukebox",
+      "Doritos",
+      "Risotto",
+      "Bologna"
     ],
     "everyday:623003": [
       "Coupon",
       "Saucer",
-      "Cookie"
+      "Cookie",
+      "Seesaw",
+      "Cooler",
+      "Quinoa",
+      "Seitan"
     ],
     "everyday:625003": [
       "Cutter",
@@ -7096,13 +6733,16 @@ window.ENIGMA_DATA = {
       "Sundae",
       "Condom",
       "CarKey",
-      "Sandal"
+      "Sandal",
+      "Canvas",
+      "Sorbet"
     ],
     "everyday:645001": [
       "Thread"
     ],
     "everyday:645000": [
-      "Thread"
+      "Thread",
+      "Screen"
     ],
     "everyday:036003": [
       "Spectacles",
@@ -7111,10 +6751,13 @@ window.ENIGMA_DATA = {
     "everyday:036000": [
       "Spectacles",
       "Thermostat",
-      "Clothespin"
+      "Clothespin",
+      "Protractor",
+      "Prosciutto"
     ],
     "everyday:037003": [
-      "Chopsticks"
+      "Chopsticks",
+      "Chalkboard"
     ],
     "everyday:126001": [
       "Handkerchief",
@@ -7140,11 +6783,15 @@ window.ENIGMA_DATA = {
       "Peach",
       "Pears",
       "Beans",
-      "Diary"
+      "Diary",
+      "Piano"
     ],
     "everyday:924001": [
       "Moneyclip",
-      "Notebooks"
+      "Notebooks",
+      "Telescope",
+      "Fireworks",
+      "Megaphone"
     ],
     "everyday:924000": [
       "Moneyclip",
@@ -7157,7 +6804,13 @@ window.ENIGMA_DATA = {
       "Cucumbers",
       "Cigarette",
       "Debitcard",
-      "Canopener"
+      "Canopener",
+      "Detergent",
+      "Satellite",
+      "Telescope",
+      "Fireworks",
+      "Megaphone",
+      "Barometer"
     ],
     "everyday:630003": [
       "Clutch",
@@ -7170,13 +6823,24 @@ window.ENIGMA_DATA = {
     ],
     "everyday:736001": [
       "Trinket",
-      "Thermos"
+      "Thermos",
+      "Frisbee",
+      "Trumpet",
+      "Whiskey"
     ],
     "everyday:824002": [
       "Decanter",
       "Radiator",
       "Receipts",
-      "Potatoes"
+      "Potatoes",
+      "Baseball",
+      "Pacifier",
+      "Polaroid",
+      "Retainer",
+      "Gatorade",
+      "Bibimbap",
+      "Rosemary",
+      "Jalapeno"
     ],
     "everyday:635002": [
       "Grater",
@@ -7191,86 +6855,67 @@ window.ENIGMA_DATA = {
       "Ladle",
       "Table",
       "Mango",
-      "Latte"
-    ],
-    "all:525001": [
-      "Ladle",
-      "Table",
-      "Mango",
       "Latte",
-      "Fence",
-      "Villa",
-      "Horse",
-      "Zebra",
-      "Hippo",
-      "Kenya",
-      "Tokyo",
-      "Virgo",
-      "Libra"
+      "Fanta",
+      "Mocha",
+      "Vodka",
+      "Fudge"
     ],
     "everyday:735003": [
       "Spatula",
-      "Spinach"
+      "Spinach",
+      "Crayons",
+      "Chalice"
     ],
     "everyday:735000": [
       "Spatula",
       "Flowers",
-      "Spinach"
-    ],
-    "all:735003": [
-      "Spatula",
       "Spinach",
-      "Stadium",
-      "Station",
-      "Spiders"
-    ],
-    "all:735000": [
-      "Spatula",
-      "Flowers",
-      "Spinach",
-      "Stadium",
-      "Station",
-      "Spiders"
+      "Crayons",
+      "Chalice",
+      "Granola",
+      "Praline"
     ],
     "everyday:824003": [
       "Colander",
       "Calendar",
-      "Cucumber"
-    ],
-    "all:824003": [
-      "Colander",
-      "Calendar",
       "Cucumber",
-      "Sidewalk",
-      "Colombia"
+      "Cilantro",
+      "Calamari"
     ],
     "everyday:927002": [
       "Dishcloth",
-      "Bedspread"
+      "Bedspread",
+      "Piggybank"
     ],
     "everyday:927000": [
       "Dishcloth",
       "Lampshade",
       "Lightbulb",
       "Sunscreen",
-      "Bedspread"
-    ],
-    "all:927002": [
-      "Dishcloth",
       "Bedspread",
-      "Jellyfish"
+      "Highchair",
+      "Piggybank",
+      "Cornbread",
+      "Milkshake",
+      "Candycane"
     ],
     "everyday:636003": [
-      "Sponge"
+      "Sponge",
+      "Churro"
     ],
     "everyday:636000": [
       "Sponge",
-      "Fridge"
+      "Fridge",
+      "Churro",
+      "Trifle"
     ],
     "everyday:925002": [
       "Dispenser",
       "Batteries",
-      "Boxcutter"
+      "Boxcutter",
+      "Potholder",
+      "Pepperoni"
     ],
     "everyday:925000": [
       "Dispenser",
@@ -7280,27 +6925,37 @@ window.ENIGMA_DATA = {
       "Microwave",
       "Concealer",
       "Multitool",
-      "Boxcutter"
+      "Boxcutter",
+      "Harmonica",
+      "Horseshoe",
+      "Metronome",
+      "Potholder",
+      "Tangerine",
+      "Margarita",
+      "Pepperoni"
     ],
     "everyday:125003": [
-      "Conditioner"
+      "Conditioner",
+      "Cuttingboard",
+      "Coffeemaker",
+      "Cottoncandy"
     ],
     "everyday:125000": [
       "Conditioner",
       "Pocketknife",
       "Rubberbands",
-      "Dentalfloss"
-    ],
-    "all:125003": [
-      "Conditioner",
-      "Coffeetable"
+      "Dentalfloss",
+      "Cuttingboard",
+      "Coffeemaker",
+      "Cottoncandy"
     ],
     "everyday:523003": [
       "Quilt",
       "Coins",
       "Couch",
       "Sauce",
-      "Coats"
+      "Coats",
+      "Queso"
     ],
     "everyday:925003": [
       "Comforter",
@@ -7308,24 +6963,20 @@ window.ENIGMA_DATA = {
     ],
     "everyday:927001": [
       "Lampshade",
-      "Lightbulb"
-    ],
-    "all:927001": [
-      "Lampshade",
       "Lightbulb",
-      "Lightning"
+      "Highchair",
+      "Milkshake"
     ],
     "everyday:126003": [
       "Candlestick",
       "Candleholder"
     ],
-    "all:126003": [
-      "Candlestick",
-      "Candleholder"
-    ],
     "everyday:926001": [
       "Newspaper",
-      "Mushrooms"
+      "Mushrooms",
+      "Handlebar",
+      "Lawnmower",
+      "Handcuffs"
     ],
     "everyday:926000": [
       "Newspaper",
@@ -7333,18 +6984,19 @@ window.ENIGMA_DATA = {
       "Backpacks",
       "Raspberry",
       "Mushrooms",
-      "Cartridge"
-    ],
-    "all:926001": [
-      "Newspaper",
-      "Mushrooms",
-      "Turntable",
-      "Townhouse"
+      "Cartridge",
+      "Handlebar",
+      "Dashboard",
+      "Lawnmower",
+      "Handcuffs",
+      "Dumplings",
+      "Bubblegum"
     ],
     "everyday:025003": [
       "Calculator",
       "Cantaloupe",
-      "Cappuccino"
+      "Cappuccino",
+      "Soccerball"
     ],
     "everyday:025000": [
       "Calculator",
@@ -7354,12 +7006,16 @@ window.ENIGMA_DATA = {
       "Cantaloupe",
       "Cappuccino",
       "Binderclip",
-      "Tablespoon"
-    ],
-    "all:025003": [
-      "Calculator",
-      "Cantaloupe",
-      "Cappuccino"
+      "Tablespoon",
+      "Basketball",
+      "Soccerball",
+      "Microscope",
+      "Tambourine",
+      "Dictionary",
+      "Tablecloth",
+      "Rollingpin",
+      "Mozzarella",
+      "Funnelcake"
     ],
     "everyday:038003": [
       "Smartphone",
@@ -7373,36 +7029,26 @@ window.ENIGMA_DATA = {
     "everyday:025001": [
       "Microphone",
       "Windowsill",
-      "Tablespoon"
-    ],
-    "all:025001": [
-      "Microphone",
-      "Windowsill",
       "Tablespoon",
-      "New Zealand"
+      "Microscope",
+      "Tambourine",
+      "Tablecloth",
+      "Mozzarella",
+      "Funnelcake"
     ],
     "everyday:635001": [
       "Tripod",
-      "Knives"
+      "Knives",
+      "Trivet"
     ],
     "everyday:036001": [
       "Thermostat"
     ],
-    "all:036001": [
-      "Thermostat",
-      "Trampoline"
-    ],
     "everyday:834003": [
       "Sneakers",
       "Smoothie",
-      "Sweaters"
-    ],
-    "all:834003": [
-      "Sneakers",
-      "Smoothie",
       "Sweaters",
-      "Speakers",
-      "Squirrel"
+      "Steering"
     ],
     "everyday:934002": [
       "Briefcase",
@@ -7421,15 +7067,11 @@ window.ENIGMA_DATA = {
     ],
     "everyday:837000": [
       "Trashcan",
-      "Wrenches"
-    ],
-    "all:837001": [
-      "Trashcan",
-      "Wrenches"
-    ],
-    "all:837000": [
-      "Trashcan",
-      "Wrenches"
+      "Wrenches",
+      "Sparkler",
+      "Crutches",
+      "Skittles",
+      "Pringles"
     ],
     "everyday:410001": [
       "Eggs"
@@ -7453,12 +7095,18 @@ window.ENIGMA_DATA = {
     ],
     "everyday:713001": [
       "Erasers",
-      "Adapter"
+      "Adapter",
+      "Avocado",
+      "Edamame"
     ],
     "everyday:713000": [
       "Erasers",
       "Adapter",
-      "Oranges"
+      "Oranges",
+      "Ukulele",
+      "Avocado",
+      "Edamame",
+      "Oregano"
     ],
     "everyday:923003": [
       "Coinpurse",
@@ -7466,11 +7114,23 @@ window.ENIGMA_DATA = {
     ],
     "everyday:937003": [
       "Chapstick",
-      "Stepstool"
+      "Stepstool",
+      "Snowglobe",
+      "Chopstick",
+      "Shotglass",
+      "Chickpeas"
     ],
     "everyday:937000": [
       "Chapstick",
-      "Stepstool"
+      "Stepstool",
+      "Thumbtack",
+      "Snowglobe",
+      "Flipflops",
+      "Flashbulb",
+      "Chopstick",
+      "Shotglass",
+      "Whipcream",
+      "Chickpeas"
     ],
     "everyday:912001": [
       "Earphones"
@@ -7483,7 +7143,9 @@ window.ENIGMA_DATA = {
       "Paperclip",
       "Pokerchip",
       "Pineapple",
-      "Debitcard"
+      "Debitcard",
+      "Detergent",
+      "Barometer"
     ],
     "everyday:038001": [
       "Flashdrive"
@@ -7497,7 +7159,10 @@ window.ENIGMA_DATA = {
       "Spoons",
       "Cheese",
       "Chairs",
-      "Sheets"
+      "Sheets",
+      "Cleats",
+      "Shield",
+      "Squash"
     ],
     "everyday:640003": [
       "Straws",
@@ -7515,44 +7180,61 @@ window.ENIGMA_DATA = {
       "Nailclipper"
     ],
     "everyday:123000": [
-      "Nailclipper"
+      "Nailclipper",
+      "Peanutbutter",
+      "Cauliflower"
     ],
     "everyday:714001": [
       "Inhaler",
       "Incense",
       "Almonds",
-      "Aspirin"
+      "Aspirin",
+      "Antenna",
+      "Apricot"
     ],
     "everyday:714000": [
       "Inhaler",
       "Incense",
       "Almonds",
-      "Aspirin"
+      "Aspirin",
+      "Antenna",
+      "Apricot"
     ],
     "everyday:924003": [
       "Sanitizer",
       "Cucumbers",
       "Cigarette",
-      "Canopener"
+      "Canopener",
+      "Satellite"
     ],
     "everyday:926002": [
       "Passports",
       "Backpacks",
-      "Raspberry"
+      "Raspberry",
+      "Dashboard",
+      "Dumplings",
+      "Bubblegum"
     ],
     "everyday:024002": [
       "Paperclips",
-      "PaperTowel"
+      "PaperTowel",
+      "Binoculars"
     ],
     "everyday:024000": [
       "Paperclips",
       "Watermelon",
       "Cigarettes",
-      "PaperTowel"
+      "PaperTowel",
+      "Television",
+      "Binoculars",
+      "Marionette"
     ],
     "everyday:025002": [
       "Rubberband",
-      "Binderclip"
+      "Binderclip",
+      "Basketball",
+      "Dictionary",
+      "Rollingpin"
     ],
     "everyday:013001": [
       "Eyeglasses"
@@ -7569,81 +7251,68 @@ window.ENIGMA_DATA = {
     ],
     "everyday:323002": [
       "Die",
-      "Pie"
+      "Pie",
+      "Roe"
     ],
     "everyday:925001": [
       "Magnifier",
       "Microwave",
-      "Multitool"
+      "Multitool",
+      "Harmonica",
+      "Horseshoe",
+      "Metronome",
+      "Tangerine",
+      "Margarita"
     ],
     "everyday:712003": [
-      "Oatmeal"
-    ],
-    "all:712003": [
       "Oatmeal"
     ],
     "everyday:424003": [
       "Soda",
       "Sofa",
       "Cake",
-      "Coke"
-    ],
-    "all:424003": [
-      "Soda",
-      "Sofa",
-      "Cake",
       "Coke",
-      "Cave"
+      "Cage",
+      "Cape",
+      "Safe",
+      "Cane",
+      "Sake",
+      "Soju",
+      "Sage"
     ],
     "everyday:430001": [
       "Tray",
-      "Wrap"
-    ],
-    "all:430001": [
-      "Tray",
       "Wrap",
-      "Tram",
-      "Frog",
-      "Twig"
+      "Xbox",
+      "Flag",
+      "Whip",
+      "Twix",
+      "Flan"
     ],
     "everyday:413003": [
-      "Oven"
+      "Oven",
+      "Oreo"
     ],
     "everyday:413000": [
-      "Oven"
-    ],
-    "all:413003": [
       "Oven",
-      "Oval"
-    ],
-    "all:413000": [
-      "Oven",
-      "Oval"
+      "Ipad",
+      "Oreo"
     ],
     "everyday:535003": [
       "Stove",
       "Scale",
-      "Chili"
+      "Chili",
+      "Slide",
+      "Scone"
     ],
     "everyday:636001": [
-      "Fridge"
-    ],
-    "all:636001": [
       "Fridge",
-      "France"
+      "Trifle"
     ],
     "everyday:734001": [
       "Freezer"
     ],
-    "all:734001": [
-      "Freezer",
-      "Theater",
-      "Trailer"
-    ],
     "everyday:026002": [
-      "Dishwasher"
-    ],
-    "all:026002": [
       "Dishwasher"
     ],
     "everyday:513001": [
@@ -7653,58 +7322,23 @@ window.ENIGMA_DATA = {
       "Alarm",
       "Onion"
     ],
-    "all:513001": [
-      "Alarm",
-      "Arena",
-      "Italy",
-      "Acorn",
-      "Aries"
-    ],
-    "all:513000": [
-      "Alarm",
-      "Onion",
-      "Arena",
-      "Ocean",
-      "Italy",
-      "Acorn",
-      "Aries"
-    ],
     "everyday:430002": [
       "Plug",
-      "Plum"
-    ],
-    "all:430002": [
-      "Plug",
-      "Plum"
+      "Plum",
+      "Drum"
     ],
     "everyday:914001": [
-      "Extension"
+      "Extension",
+      "Asparagus",
+      "Artichoke"
     ],
     "everyday:914000": [
-      "Extension"
-    ],
-    "all:914001": [
       "Extension",
-      "Ambulance",
-      "Escalator",
-      "Alligator",
-      "Argentina"
-    ],
-    "all:914000": [
-      "Extension",
-      "Ambulance",
-      "Escalator",
-      "Alligator",
-      "Argentina"
+      "Underwear",
+      "Asparagus",
+      "Artichoke"
     ],
     "everyday:836002": [
-      "Blankets",
-      "Pretzels",
-      "Dressing",
-      "Broccoli",
-      "Brownies"
-    ],
-    "all:836002": [
       "Blankets",
       "Pretzels",
       "Dressing",
@@ -7714,16 +7348,14 @@ window.ENIGMA_DATA = {
     "everyday:825003": [
       "Curtains",
       "Cupcakes",
-      "Contacts"
+      "Contacts",
+      "Cassette",
+      "Cinnamon"
     ],
     "everyday:630002": [
       "Blinds",
-      "Plants"
-    ],
-    "all:630002": [
-      "Blinds",
       "Plants",
-      "Branch"
+      "Brandy"
     ],
     "everyday:723002": [
       "Doormat",
@@ -7731,34 +7363,20 @@ window.ENIGMA_DATA = {
       "Peanuts",
       "Peaches",
       "Journal",
-      "Beanies"
-    ],
-    "all:723002": [
-      "Doormat",
-      "Bouquet",
-      "Peanuts",
-      "Peaches",
-      "Journal",
       "Beanies",
-      "Boulder",
-      "Rainbow",
-      "Diamond"
+      "Pointer",
+      "Raisins",
+      "Pierogi",
+      "Bourbon"
     ],
     "everyday:534001": [
       "Floor",
-      "Fries"
-    ],
-    "all:534001": [
-      "Floor",
       "Fries",
-      "Train",
-      "Trees"
+      "Wheel",
+      "Flour",
+      "Trout"
     ],
     "everyday:640001": [
-      "T-shirt",
-      "Tshirt"
-    ],
-    "all:640001": [
       "T-shirt",
       "Tshirt"
     ],
@@ -7766,14 +7384,8 @@ window.ENIGMA_DATA = {
       "Umbrellas"
     ],
     "everyday:915000": [
-      "Umbrellas"
-    ],
-    "all:915002": [
-      "Umbrellas"
-    ],
-    "all:915000": [
       "Umbrellas",
-      "Amsterdam"
+      "Enchilada"
     ],
     "everyday:145003": [
       "Straightener"
@@ -7781,75 +7393,38 @@ window.ENIGMA_DATA = {
     "everyday:145000": [
       "Straightener"
     ],
-    "all:145003": [
-      "Straightener",
-      "Streetlight"
-    ],
-    "all:145000": [
-      "Straightener",
-      "Streetlight"
-    ],
     "everyday:935001": [
       "Flowerpot"
     ],
     "everyday:935000": [
       "Flowerpot",
       "Chocolate",
-      "Showergel"
-    ],
-    "all:935001": [
-      "Flowerpot"
-    ],
-    "all:935000": [
-      "Flowerpot",
-      "Chocolate",
       "Showergel",
-      "Projector",
-      "Spaceship",
-      "Chameleon",
-      "Crocodile"
+      "Projector"
     ],
     "everyday:735001": [
-      "Flowers"
-    ],
-    "all:735001": [
       "Flowers"
     ],
     "everyday:934003": [
       "Croissant"
     ],
-    "all:934003": [
-      "Croissant",
-      "Staircase"
-    ],
     "everyday:620002": [
       "Pastry"
     ],
     "everyday:620000": [
-      "Pastry"
-    ],
-    "all:620002": [
       "Pastry",
-      "Pantry"
-    ],
-    "all:620000": [
-      "Pastry",
-      "Pantry"
+      "Tights"
     ],
     "everyday:134003": [
-      "Cheeseburger"
+      "Cheeseburger",
+      "Sleepingbag"
     ],
     "everyday:134000": [
       "Cheeseburger",
-      "Blueberries"
-    ],
-    "all:134003": [
-      "Cheeseburger"
-    ],
-    "all:134000": [
-      "Cheeseburger",
       "Blueberries",
-      "Trainstation"
+      "Wheelbarrow",
+      "Sleepingbag",
+      "Dreamcatcher"
     ],
     "everyday:515001": [
       "Apple"
@@ -7857,40 +7432,25 @@ window.ENIGMA_DATA = {
     "everyday:515000": [
       "Apple"
     ],
-    "all:515001": [
-      "Apple"
-    ],
-    "all:515000": [
-      "Apple"
-    ],
     "everyday:615001": [
-      "Apples"
+      "Apples",
+      "Anchor",
+      "Eggnog"
     ],
     "everyday:615000": [
-      "Apples"
-    ],
-    "all:615001": [
-      "Apples"
-    ],
-    "all:615000": [
-      "Apples"
+      "Apples",
+      "Anchor",
+      "Eggnog",
+      "Oyster"
     ],
     "everyday:713003": [
-      "Oranges"
-    ],
-    "all:713003": [
-      "Oranges"
+      "Oranges",
+      "Oregano"
     ],
     "everyday:047003": [
       "Strawberry"
     ],
     "everyday:047000": [
-      "Strawberry"
-    ],
-    "all:047003": [
-      "Strawberry"
-    ],
-    "all:047000": [
       "Strawberry"
     ],
     "everyday:147003": [
@@ -7899,58 +7459,26 @@ window.ENIGMA_DATA = {
     "everyday:147000": [
       "Strawberries"
     ],
-    "all:147003": [
-      "Strawberries"
-    ],
-    "all:147000": [
-      "Strawberries"
-    ],
     "everyday:134002": [
-      "Blueberries"
-    ],
-    "all:134002": [
-      "Blueberries"
+      "Blueberries",
+      "Dreamcatcher"
     ],
     "everyday:037002": [
       "Blackberry"
     ],
-    "all:037002": [
-      "Blackberry",
-      "Grandpiano"
-    ],
     "everyday:024001": [
-      "Watermelon"
-    ],
-    "all:024001": [
       "Watermelon",
-      "Helicopter",
-      "Motorcycle",
       "Television",
-      "Locomotive",
-      "Mayonnaise"
+      "Marionette"
     ],
     "everyday:513003": [
       "Onion"
-    ],
-    "all:513003": [
-      "Onion",
-      "Ocean"
     ],
     "everyday:935003": [
       "Chocolate",
       "Showergel"
     ],
-    "all:935003": [
-      "Chocolate",
-      "Showergel",
-      "Spaceship",
-      "Chameleon",
-      "Crocodile"
-    ],
     "everyday:815001": [
-      "Espresso"
-    ],
-    "all:815001": [
       "Espresso"
     ],
     "everyday:926003": [
@@ -7960,10 +7488,13 @@ window.ENIGMA_DATA = {
       "Cigarettes"
     ],
     "everyday:923002": [
-      "Deodorant"
+      "Deodorant",
+      "Guacamole"
     ],
     "everyday:927003": [
-      "Sunscreen"
+      "Sunscreen",
+      "Cornbread",
+      "Candycane"
     ],
     "everyday:812003": [
       "Ointment"
@@ -7971,21 +7502,31 @@ window.ENIGMA_DATA = {
     "everyday:812000": [
       "Ointment",
       "Earphone",
-      "Earrings"
+      "Earrings",
+      "Earmuffs"
     ],
     "everyday:514001": [
       "Advil",
-      "Apron"
+      "Apron",
+      "Arrow",
+      "Album",
+      "Atlas",
+      "Altar"
     ],
     "everyday:514000": [
       "Advil",
-      "Apron"
+      "Apron",
+      "Arrow",
+      "Album",
+      "Atlas",
+      "Altar"
     ],
     "everyday:746001": [
       "Tylenol"
     ],
     "everyday:746000": [
-      "Tylenol"
+      "Tylenol",
+      "Strudel"
     ],
     "everyday:913001": [
       "Ibuprofen"
@@ -7994,23 +7535,35 @@ window.ENIGMA_DATA = {
       "Ibuprofen"
     ],
     "everyday:612001": [
-      "Airpod"
+      "Airpod",
+      "Airbag"
     ],
     "everyday:612000": [
-      "Airpod"
+      "Airpod",
+      "Outlet",
+      "Airbag"
     ],
     "everyday:812001": [
       "Earphone",
-      "Earrings"
+      "Earrings",
+      "Earmuffs"
     ],
     "everyday:310002": [
       "Usb"
     ],
     "everyday:035003": [
-      "Creditcard"
+      "Creditcard",
+      "Skateboard",
+      "Clementine",
+      "Chewinggum"
     ],
     "everyday:035000": [
-      "Creditcard"
+      "Creditcard",
+      "Skateboard",
+      "Whiteboard",
+      "Grapefruit",
+      "Clementine",
+      "Chewinggum"
     ],
     "everyday:210001": [
       "Id"
@@ -8027,42 +7580,21 @@ window.ENIGMA_DATA = {
     "everyday:113000": [
       "Utilityknife"
     ],
-    "all:113002": [
-      "Utilityknife"
-    ],
-    "all:113000": [
-      "Utilityknife"
-    ],
     "everyday:124001": [
       "Waterbottle",
-      "TapeMeasure"
+      "TapeMeasure",
+      "Firecracker"
     ],
     "everyday:124000": [
       "Waterbottle",
-      "TapeMeasure"
-    ],
-    "all:124001": [
-      "Waterbottle",
       "TapeMeasure",
-      "Firehydrant"
-    ],
-    "all:124000": [
-      "Waterbottle",
-      "TapeMeasure",
-      "Diningtable",
-      "Firehydrant",
-      "Sagittarius"
+      "Firecracker",
+      "Pomegranate"
     ],
     "everyday:845003": [
       "Strainer"
     ],
     "everyday:845000": [
-      "Strainer"
-    ],
-    "all:845003": [
-      "Strainer"
-    ],
-    "all:845000": [
       "Strainer"
     ],
     "everyday:126002": [
@@ -8074,11 +7606,277 @@ window.ENIGMA_DATA = {
     "everyday:740000": [
       "Tshirts"
     ],
-    "all:740001": [
-      "Tshirts"
+    "everyday:713002": [
+      "Ukulele"
     ],
-    "all:740000": [
-      "Tshirts"
+    "everyday:023002": [
+      "Paintbrush"
+    ],
+    "everyday:512001": [
+      "Easel"
+    ],
+    "everyday:512000": [
+      "Easel",
+      "Ouija"
+    ],
+    "everyday:936003": [
+      "Clipboard",
+      "Sharpener",
+      "Stopwatch",
+      "Spaghetti",
+      "Cranberry",
+      "Starbucks",
+      "Champagne"
+    ],
+    "everyday:936000": [
+      "Clipboard",
+      "Sharpener",
+      "Stopwatch",
+      "Spaghetti",
+      "Cranberry",
+      "Starbucks",
+      "Champagne"
+    ],
+    "everyday:937001": [
+      "Thumbtack",
+      "Flipflops",
+      "Flashbulb",
+      "Whipcream"
+    ],
+    "everyday:620001": [
+      "Tights"
+    ],
+    "everyday:914002": [
+      "Underwear"
+    ],
+    "everyday:137002": [
+      "Playstation"
+    ],
+    "everyday:137000": [
+      "Playstation"
+    ],
+    "everyday:413001": [
+      "Ipad"
+    ],
+    "everyday:614001": [
+      "Iphone",
+      "Eclair"
+    ],
+    "everyday:614000": [
+      "Iphone",
+      "Eclair"
+    ],
+    "everyday:612003": [
+      "Outlet"
+    ],
+    "everyday:313001": [
+      "Axe",
+      "Ale"
+    ],
+    "everyday:313000": [
+      "Axe",
+      "Ale"
+    ],
+    "everyday:028001": [
+      "Matchstick"
+    ],
+    "everyday:028000": [
+      "Matchstick"
+    ],
+    "everyday:837003": [
+      "Sparkler",
+      "Crutches",
+      "Skittles"
+    ],
+    "everyday:034002": [
+      "Broomstick"
+    ],
+    "everyday:034000": [
+      "Broomstick",
+      "Wheelchair",
+      "Cheesecake"
+    ],
+    "everyday:847003": [
+      "Stroller"
+    ],
+    "everyday:847000": [
+      "Stroller"
+    ],
+    "everyday:134001": [
+      "Wheelbarrow"
+    ],
+    "everyday:947003": [
+      "Scrapbook"
+    ],
+    "everyday:947000": [
+      "Scrapbook",
+      "Xylophone"
+    ],
+    "everyday:947001": [
+      "Xylophone"
+    ],
+    "everyday:200003": [
+      "Cd"
+    ],
+    "everyday:200000": [
+      "Cd"
+    ],
+    "everyday:300002": [
+      "Dvd"
+    ],
+    "everyday:300000": [
+      "Dvd"
+    ],
+    "everyday:935002": [
+      "Projector"
+    ],
+    "everyday:645003": [
+      "Screen"
+    ],
+    "everyday:035001": [
+      "Whiteboard"
+    ],
+    "everyday:036002": [
+      "Protractor",
+      "Prosciutto"
+    ],
+    "everyday:512003": [
+      "Ouija"
+    ],
+    "everyday:136001": [
+      "Thermometer",
+      "Frappuccino"
+    ],
+    "everyday:136000": [
+      "Thermometer",
+      "Stethoscope",
+      "Frappuccino"
+    ],
+    "everyday:835003": [
+      "Scalepan",
+      "Sriracha"
+    ],
+    "everyday:747003": [
+      "Syringe"
+    ],
+    "everyday:747000": [
+      "Syringe"
+    ],
+    "everyday:136003": [
+      "Stethoscope"
+    ],
+    "everyday:034001": [
+      "Wheelchair"
+    ],
+    "everyday:114001": [
+      "Apronstrings"
+    ],
+    "everyday:114000": [
+      "Apronstrings"
+    ],
+    "everyday:023003": [
+      "Quesadilla"
+    ],
+    "everyday:915001": [
+      "Enchilada"
+    ],
+    "everyday:124002": [
+      "Pomegranate"
+    ],
+    "everyday:035002": [
+      "Grapefruit"
+    ],
+    "everyday:816001": [
+      "Eggplant"
+    ],
+    "everyday:816000": [
+      "Eggplant"
+    ],
+    "everyday:123002": [
+      "Peanutbutter"
+    ],
+    "everyday:127001": [
+      "Marshmallow"
+    ],
+    "everyday:127000": [
+      "Marshmallow"
+    ],
+    "everyday:837002": [
+      "Pringles"
+    ],
+    "everyday:646003": [
+      "Sprite"
+    ],
+    "everyday:646000": [
+      "Sprite"
+    ],
+    "everyday:034003": [
+      "Cheesecake"
+    ],
+    "everyday:735002": [
+      "Granola",
+      "Praline"
+    ],
+    "everyday:737002": [
+      "Gnocchi"
+    ],
+    "everyday:330002": [
+      "Pho"
+    ],
+    "everyday:330000": [
+      "Pho"
+    ],
+    "everyday:836001": [
+      "Frosting"
+    ],
+    "everyday:027002": [
+      "Jellybeans"
+    ],
+    "everyday:027000": [
+      "Jellybeans"
+    ],
+    "everyday:746003": [
+      "Strudel"
+    ],
+    "everyday:412003": [
+      "Oats"
+    ],
+    "everyday:412000": [
+      "Oats"
+    ],
+    "everyday:312003": [
+      "Oil"
+    ],
+    "everyday:312000": [
+      "Oil",
+      "Eel"
+    ],
+    "everyday:550001": [
+      "Thyme"
+    ],
+    "everyday:550000": [
+      "Thyme"
+    ],
+    "everyday:123003": [
+      "Cauliflower"
+    ],
+    "everyday:414003": [
+      "Okra"
+    ],
+    "everyday:414000": [
+      "Okra"
+    ],
+    "everyday:615003": [
+      "Oyster"
+    ],
+    "everyday:715001": [
+      "Anchovy"
+    ],
+    "everyday:715000": [
+      "Anchovy"
+    ],
+    "everyday:312001": [
+      "Eel"
     ],
     "big_objects:534003": [
       "Chair",
@@ -8107,7 +7905,8 @@ window.ENIGMA_DATA = {
       "Deck",
       "Barn",
       "Rock",
-      "Dock"
+      "Dock",
+      "Raft"
     ],
     "big_objects:420000": [
       "Desk",
@@ -8119,7 +7918,9 @@ window.ENIGMA_DATA = {
       "Cars",
       "Hill",
       "Rock",
-      "Dock"
+      "Dock",
+      "Tent",
+      "Raft"
     ],
     "big_objects:320002": [
       "Bed",
@@ -8157,7 +7958,8 @@ window.ENIGMA_DATA = {
       "Gate",
       "Bike",
       "Lake",
-      "Cave"
+      "Cave",
+      "Limo"
     ],
     "big_objects:423002": [
       "Door",
@@ -8165,7 +7967,8 @@ window.ENIGMA_DATA = {
       "Boat",
       "Pool",
       "Road",
-      "Pier"
+      "Pier",
+      "Jeep"
     ],
     "big_objects:423000": [
       "Door",
@@ -8173,14 +7976,16 @@ window.ENIGMA_DATA = {
       "Boat",
       "Pool",
       "Road",
-      "Pier"
+      "Pier",
+      "Jeep"
     ],
     "big_objects:625001": [
       "Window",
       "Ladder",
       "Tunnel",
       "Hangar",
-      "Harbor"
+      "Harbor",
+      "Washer"
     ],
     "big_objects:625000": [
       "Window",
@@ -8192,12 +7997,14 @@ window.ENIGMA_DATA = {
       "Harbor",
       "Camper",
       "Pickup",
-      "Canyon"
+      "Canyon",
+      "Washer"
     ],
     "big_objects:420001": [
       "Wall",
       "Harp",
-      "Hill"
+      "Hill",
+      "Tent"
     ],
     "big_objects:534001": [
       "Floor",
@@ -8223,9 +8030,6 @@ window.ENIGMA_DATA = {
     "big_objects:636000": [
       "Bridge",
       "Fridge"
-    ],
-    "all:636002": [
-      "Bridge"
     ],
     "big_objects:524001": [
       "Tower",
@@ -8258,7 +8062,8 @@ window.ENIGMA_DATA = {
     "big_objects:626000": [
       "Castle",
       "Temple",
-      "Jungle"
+      "Jungle",
+      "Jetski"
     ],
     "big_objects:523001": [
       "House"
@@ -8289,7 +8094,8 @@ window.ENIGMA_DATA = {
     ],
     "big_objects:424001": [
       "Taxi",
-      "Lake"
+      "Lake",
+      "Limo"
     ],
     "big_objects:625003": [
       "Subway",
@@ -8333,12 +8139,6 @@ window.ENIGMA_DATA = {
     "big_objects:727000": [
       "Bicycle"
     ],
-    "all:727002": [
-      "Bicycle"
-    ],
-    "all:727000": [
-      "Bicycle"
-    ],
     "big_objects:734003": [
       "Scooter"
     ],
@@ -8362,11 +8162,15 @@ window.ENIGMA_DATA = {
       "Piers"
     ],
     "big_objects:125002": [
-      "Refrigerator"
+      "Refrigerator",
+      "Rollercoaster"
     ],
     "big_objects:125000": [
       "Refrigerator",
-      "Coffeetable"
+      "Coffeetable",
+      "Ferriswheel",
+      "Rollercoaster",
+      "Vendingmachine"
     ],
     "big_objects:636001": [
       "Fridge"
@@ -8375,12 +8179,6 @@ window.ENIGMA_DATA = {
       "Tv"
     ],
     "big_objects:200000": [
-      "Tv"
-    ],
-    "all:200001": [
-      "Tv"
-    ],
-    "all:200000": [
       "Tv"
     ],
     "big_objects:923002": [
@@ -8405,7 +8203,8 @@ window.ENIGMA_DATA = {
       "Lamppost",
       "Fortress",
       "Forklift",
-      "Windmill"
+      "Windmill",
+      "Golfcart"
     ],
     "big_objects:724003": [
       "Cabinet"
@@ -8414,7 +8213,8 @@ window.ENIGMA_DATA = {
       "Cabinet",
       "Jacuzzi",
       "Veranda",
-      "Minivan"
+      "Minivan",
+      "Jukebox"
     ],
     "big_objects:535003": [
       "Stove",
@@ -8526,19 +8326,10 @@ window.ENIGMA_DATA = {
     "big_objects:079000": [
       "Skyscraper"
     ],
-    "all:079003": [
-      "Skyscraper"
-    ],
-    "all:079000": [
-      "Skyscraper"
-    ],
     "big_objects:746002": [
       "Pyramid"
     ],
     "big_objects:746000": [
-      "Pyramid"
-    ],
-    "all:746002": [
       "Pyramid"
     ],
     "big_objects:914001": [
@@ -8553,12 +8344,6 @@ window.ENIGMA_DATA = {
       "Armchair"
     ],
     "big_objects:816000": [
-      "Armchair"
-    ],
-    "all:816001": [
-      "Armchair"
-    ],
-    "all:816000": [
       "Armchair"
     ],
     "big_objects:825002": [
@@ -8587,7 +8372,8 @@ window.ENIGMA_DATA = {
       "Basement",
       "Sidewalk",
       "Monument",
-      "Monorail"
+      "Monorail",
+      "Carousel"
     ],
     "big_objects:714003": [
       "Ottoman"
@@ -8596,20 +8382,12 @@ window.ENIGMA_DATA = {
       "Ottoman",
       "Armoire"
     ],
-    "all:714003": [
-      "Ottoman",
-      "Octopus",
-      "October"
-    ],
     "big_objects:124002": [
       "Diningtable"
     ],
     "big_objects:124000": [
       "Diningtable",
       "Firehydrant"
-    ],
-    "all:124002": [
-      "Diningtable"
     ],
     "big_objects:125003": [
       "Coffeetable"
@@ -8618,12 +8396,6 @@ window.ENIGMA_DATA = {
       "Nightstand"
     ],
     "big_objects:028000": [
-      "Nightstand"
-    ],
-    "all:028001": [
-      "Nightstand"
-    ],
-    "all:028000": [
       "Nightstand"
     ],
     "big_objects:723003": [
@@ -8637,20 +8409,12 @@ window.ENIGMA_DATA = {
       "Boulder"
     ],
     "big_objects:614001": [
-      "Island"
+      "Island",
+      "Arcade"
     ],
     "big_objects:614000": [
-      "Island"
-    ],
-    "all:614001": [
       "Island",
-      "Almond",
-      "Athens"
-    ],
-    "all:614000": [
-      "Island",
-      "Almond",
-      "Athens"
+      "Arcade"
     ],
     "big_objects:714001": [
       "Armoire"
@@ -8679,7 +8443,8 @@ window.ENIGMA_DATA = {
       "Fountain",
       "Building",
       "Sailboat",
-      "Mountain"
+      "Mountain",
+      "Foosball"
     ],
     "big_objects:835003": [
       "Credenza"
@@ -8688,9 +8453,6 @@ window.ENIGMA_DATA = {
       "Credenza",
       "Driveway"
     ],
-    "all:835003": [
-      "Credenza"
-    ],
     "big_objects:924003": [
       "Sideboard"
     ],
@@ -8698,7 +8460,8 @@ window.ENIGMA_DATA = {
       "Sideboard",
       "Fireplace",
       "Warehouse",
-      "Waterfall"
+      "Waterfall",
+      "Firetruck"
     ],
     "big_objects:620002": [
       "Pantry"
@@ -8737,7 +8500,8 @@ window.ENIGMA_DATA = {
       "River"
     ],
     "big_objects:724002": [
-      "Jacuzzi"
+      "Jacuzzi",
+      "Jukebox"
     ],
     "big_objects:623001": [
       "Toilet",
@@ -8751,7 +8515,8 @@ window.ENIGMA_DATA = {
     "big_objects:924001": [
       "Fireplace",
       "Warehouse",
-      "Waterfall"
+      "Waterfall",
+      "Firetruck"
     ],
     "big_objects:736003": [
       "Chimney"
@@ -8773,7 +8538,8 @@ window.ENIGMA_DATA = {
       "Factory",
       "Library",
       "Rowboat",
-      "Volcano"
+      "Volcano",
+      "Pinball"
     ],
     "big_objects:824002": [
       "Radiator",
@@ -8797,10 +8563,6 @@ window.ENIGMA_DATA = {
       "Organ",
       "Attic"
     ],
-    "all:514003": [
-      "Organ",
-      "Otter"
-    ],
     "big_objects:935002": [
       "Projector"
     ],
@@ -8808,20 +8570,12 @@ window.ENIGMA_DATA = {
       "Projector",
       "Spaceship"
     ],
-    "all:935002": [
-      "Projector"
-    ],
     "big_objects:645003": [
       "Screen",
       "Street",
       "School"
     ],
     "big_objects:645000": [
-      "Screen",
-      "Street",
-      "School"
-    ],
-    "all:645003": [
       "Screen",
       "Street",
       "School"
@@ -8851,10 +8605,8 @@ window.ENIGMA_DATA = {
     ],
     "big_objects:934000": [
       "Treadmill",
-      "Staircase"
-    ],
-    "all:934001": [
-      "Treadmill"
+      "Staircase",
+      "Bleachers"
     ],
     "big_objects:424002": [
       "Gate",
@@ -8866,15 +8618,10 @@ window.ENIGMA_DATA = {
     "big_objects:850000": [
       "Skylight"
     ],
-    "all:850003": [
-      "Skylight"
-    ],
-    "all:850000": [
-      "Skylight"
-    ],
     "big_objects:725002": [
       "Balcony",
-      "Rowboat"
+      "Rowboat",
+      "Pinball"
     ],
     "big_objects:724001": [
       "Veranda",
@@ -8887,14 +8634,6 @@ window.ENIGMA_DATA = {
       "Greenhouse",
       "Cruiseship"
     ],
-    "all:034002": [
-      "Greenhouse"
-    ],
-    "all:034000": [
-      "Greenhouse",
-      "Cruiseship",
-      "Croissants"
-    ],
     "big_objects:514001": [
       "Attic"
     ],
@@ -8906,7 +8645,8 @@ window.ENIGMA_DATA = {
       "Highway"
     ],
     "big_objects:824003": [
-      "Sidewalk"
+      "Sidewalk",
+      "Carousel"
     ],
     "big_objects:835002": [
       "Driveway"
@@ -8926,27 +8666,19 @@ window.ENIGMA_DATA = {
     "big_objects:035002": [
       "Phonebooth"
     ],
-    "all:035002": [
-      "Phonebooth"
-    ],
     "big_objects:926002": [
       "Billboard",
       "Bulldozer"
     ],
     "big_objects:823001": [
       "Fountain",
-      "Mountain"
+      "Mountain",
+      "Foosball"
     ],
     "big_objects:027001": [
       "Lighthouse"
     ],
     "big_objects:027000": [
-      "Lighthouse"
-    ],
-    "all:027001": [
-      "Lighthouse"
-    ],
-    "all:027000": [
       "Lighthouse"
     ],
     "big_objects:725003": [
@@ -8964,9 +8696,6 @@ window.ENIGMA_DATA = {
       "University"
     ],
     "big_objects:013000": [
-      "University"
-    ],
-    "all:013002": [
       "University"
     ],
     "big_objects:624003": [
@@ -9002,15 +8731,8 @@ window.ENIGMA_DATA = {
     "big_objects:134000": [
       "Trainstation"
     ],
-    "all:134001": [
-      "Trainstation"
-    ],
     "big_objects:034003": [
       "Cruiseship"
-    ],
-    "all:034003": [
-      "Cruiseship",
-      "Croissants"
     ],
     "big_objects:430001": [
       "Tram"
@@ -9028,9 +8750,6 @@ window.ENIGMA_DATA = {
       "Trucks"
     ],
     "big_objects:634001": [
-      "Trains"
-    ],
-    "all:634001": [
       "Trains"
     ],
     "big_objects:635002": [
@@ -9052,11 +8771,9 @@ window.ENIGMA_DATA = {
     "big_objects:323000": [
       "Sea"
     ],
-    "all:323003": [
-      "Sea"
-    ],
     "big_objects:626002": [
-      "Jungle"
+      "Jungle",
+      "Jetski"
     ],
     "big_objects:434001": [
       "Tree"
@@ -9064,11 +8781,60 @@ window.ENIGMA_DATA = {
     "big_objects:434000": [
       "Tree"
     ],
-    "all:434001": [
-      "Tree"
-    ],
     "big_objects:723002": [
       "Boulder"
+    ],
+    "big_objects:827002": [
+      "Dumpster"
+    ],
+    "big_objects:827000": [
+      "Dumpster"
+    ],
+    "big_objects:045003": [
+      "Streetlamp"
+    ],
+    "big_objects:045000": [
+      "Streetlamp"
+    ],
+    "big_objects:750001": [
+      "Hydrant"
+    ],
+    "big_objects:750000": [
+      "Hydrant"
+    ],
+    "big_objects:934002": [
+      "Bleachers"
+    ],
+    "big_objects:826002": [
+      "Golfcart"
+    ],
+    "big_objects:125001": [
+      "Ferriswheel",
+      "Vendingmachine"
+    ],
+    "big_objects:837003": [
+      "Swingset"
+    ],
+    "big_objects:837000": [
+      "Swingset"
+    ],
+    "big_objects:300002": [
+      "Gym"
+    ],
+    "big_objects:300000": [
+      "Gym"
+    ],
+    "big_objects:310001": [
+      "Atm"
+    ],
+    "big_objects:310000": [
+      "Atm"
+    ],
+    "big_objects:540002": [
+      "Dryer"
+    ],
+    "big_objects:540000": [
+      "Dryer"
     ],
     "animals:320002": [
       "Dog",
@@ -9083,7 +8849,9 @@ window.ENIGMA_DATA = {
       "Cow",
       "Pig",
       "Fox",
-      "Bat"
+      "Bat",
+      "Hen",
+      "Hog"
     ],
     "animals:320003": [
       "Cat",
@@ -9092,12 +8860,15 @@ window.ENIGMA_DATA = {
     "animals:520002": [
       "Puppy",
       "Birds",
-      "Ducks"
+      "Ducks",
+      "Bunny"
     ],
     "animals:520000": [
       "Puppy",
       "Birds",
-      "Ducks"
+      "Ducks",
+      "Bunny",
+      "Finch"
     ],
     "animals:625001": [
       "Kitten",
@@ -9106,7 +8877,9 @@ window.ENIGMA_DATA = {
       "Walrus",
       "Horses",
       "Wolves",
-      "Zebras"
+      "Zebras",
+      "Turkey",
+      "Ferret"
     ],
     "animals:625000": [
       "Kitten",
@@ -9119,25 +8892,36 @@ window.ENIGMA_DATA = {
       "Horses",
       "Wolves",
       "Zebras",
-      "Badger"
+      "Badger",
+      "Gerbil",
+      "Budgie",
+      "Turkey",
+      "Gopher",
+      "Ferret",
+      "Condor"
     ],
     "animals:726001": [
       "Hamster",
       "Lobster",
-      "Turtles"
+      "Turtles",
+      "Ladybug"
     ],
     "animals:726000": [
       "Hamster",
       "Panther",
       "Dolphin",
       "Lobster",
-      "Turtles"
+      "Turtles",
+      "Ladybug"
     ],
     "animals:625002": [
       "Rabbit",
       "Donkey",
       "Parrot",
-      "Badger"
+      "Badger",
+      "Gerbil",
+      "Budgie",
+      "Gopher"
     ],
     "animals:523001": [
       "Mouse",
@@ -9165,7 +8949,9 @@ window.ENIGMA_DATA = {
       "Horse",
       "Panda",
       "Zebra",
-      "Hippo"
+      "Hippo",
+      "Gecko",
+      "Cobra"
     ],
     "animals:420002": [
       "Pony",
@@ -9188,21 +8974,27 @@ window.ENIGMA_DATA = {
       "Cows",
       "Pigs",
       "Wasp",
-      "Moth"
+      "Moth",
+      "Lamb",
+      "Worm",
+      "Tick"
     ],
     "animals:534003": [
       "Sheep",
-      "Squid"
+      "Squid",
+      "Snail"
     ],
     "animals:534000": [
       "Sheep",
-      "Squid"
+      "Squid",
+      "Snail"
     ],
     "animals:423002": [
       "Goat",
       "Deer",
       "Bear",
-      "Bees"
+      "Bees",
+      "Boar"
     ],
     "animals:423000": [
       "Goat",
@@ -9211,7 +9003,8 @@ window.ENIGMA_DATA = {
       "Bear",
       "Seal",
       "Toad",
-      "Bees"
+      "Bees",
+      "Boar"
     ],
     "animals:310001": [
       "Elk",
@@ -9229,7 +9022,12 @@ window.ENIGMA_DATA = {
       "Camel",
       "Tiger",
       "Lemur",
-      "Foxes"
+      "Foxes",
+      "Raven",
+      "Bison",
+      "Viper",
+      "Heron",
+      "Robin"
     ],
     "animals:423001": [
       "Lion",
@@ -9238,50 +9036,68 @@ window.ENIGMA_DATA = {
     "animals:524001": [
       "Tiger",
       "Lemur",
-      "Foxes"
+      "Foxes",
+      "Viper",
+      "Heron"
     ],
     "animals:723001": [
-      "Leopard"
+      "Leopard",
+      "Meerkat"
     ],
     "animals:723000": [
-      "Leopard"
+      "Leopard",
+      "Rooster",
+      "Seagull",
+      "Peacock",
+      "Meerkat"
     ],
     "animals:734003": [
       "Cheetah"
     ],
     "animals:734000": [
-      "Cheetah"
+      "Cheetah",
+      "Bluejay"
     ],
     "animals:624002": [
       "Jaguar",
-      "Baboon"
+      "Baboon",
+      "Pigeon"
     ],
     "animals:624000": [
       "Jaguar",
       "Coyote",
       "Baboon",
       "Lizard",
-      "Tigers"
+      "Tigers",
+      "Canary",
+      "Pigeon"
     ],
     "animals:726002": [
       "Panther",
       "Dolphin"
     ],
     "animals:525002": [
-      "Panda"
+      "Panda",
+      "Gecko"
     ],
     "animals:420001": [
       "Wolf",
       "Hawk",
       "Fish",
       "Wasp",
-      "Moth"
+      "Moth",
+      "Lamb",
+      "Worm",
+      "Tick"
     ],
     "animals:320001": [
-      "Fox"
+      "Fox",
+      "Hen",
+      "Hog"
     ],
     "animals:624003": [
-      "Coyote"
+      "Coyote",
+      "Canary"
     ],
     "animals:535001": [
       "Hyena",
@@ -9293,15 +9109,22 @@ window.ENIGMA_DATA = {
       "Rhino",
       "Whale",
       "Snake",
-      "Llama"
+      "Llama",
+      "Crane"
     ],
     "animals:724002": [
       "Giraffe",
-      "Gorilla"
+      "Gorilla",
+      "Piranha",
+      "Pelican"
     ],
     "animals:724000": [
       "Giraffe",
-      "Gorilla"
+      "Gorilla",
+      "Manatee",
+      "Piranha",
+      "Firefly",
+      "Pelican"
     ],
     "animals:813001": [
       "Elephant"
@@ -9316,25 +9139,33 @@ window.ENIGMA_DATA = {
       "Chimp",
       "Sloth",
       "Skunk",
-      "Shark"
+      "Shark",
+      "Chick",
+      "Stork"
     ],
     "animals:530000": [
       "Chimp",
       "Sloth",
       "Skunk",
       "Shark",
-      "Frogs"
+      "Frogs",
+      "Chick",
+      "Stork"
     ],
     "animals:825001": [
       "Kangaroo",
       "Tortoise",
-      "Mosquito"
+      "Mosquito",
+      "Hedgehog"
     ],
     "animals:825000": [
       "Kangaroo",
       "Penguins",
       "Tortoise",
-      "Mosquito"
+      "Mosquito",
+      "Hedgehog",
+      "Cockatoo",
+      "Cardinal"
     ],
     "animals:514003": [
       "Otter"
@@ -9348,18 +9179,24 @@ window.ENIGMA_DATA = {
     ],
     "animals:623000": [
       "Beaver",
-      "Beetle"
+      "Beetle",
+      "Weasel",
+      "Cougar",
+      "Toucan"
     ],
     "animals:725002": [
       "Raccoon",
       "Penguin",
-      "Rabbits"
+      "Rabbits",
+      "Buffalo"
     ],
     "animals:725000": [
       "Raccoon",
       "Penguin",
       "Rabbits",
-      "Monkeys"
+      "Monkeys",
+      "Buffalo",
+      "Vulture"
     ],
     "animals:512001": [
       "Eagle"
@@ -9367,16 +9204,7 @@ window.ENIGMA_DATA = {
     "animals:512000": [
       "Eagle"
     ],
-    "all:512001": [
-      "Eagle"
-    ],
-    "all:512000": [
-      "Eagle"
-    ],
     "animals:310003": [
-      "Owl"
-    ],
-    "all:310003": [
       "Owl"
     ],
     "animals:835001": [
@@ -9385,17 +9213,18 @@ window.ENIGMA_DATA = {
     "animals:835000": [
       "Flamingo"
     ],
-    "all:835001": [
-      "Flamingo"
-    ],
     "animals:430003": [
       "Swan",
-      "Crab"
+      "Crab",
+      "Crow",
+      "Slug"
     ],
     "animals:430000": [
       "Swan",
       "Crab",
-      "Frog"
+      "Frog",
+      "Crow",
+      "Slug"
     ],
     "animals:523002": [
       "Goose",
@@ -9419,7 +9248,8 @@ window.ENIGMA_DATA = {
       "Turtle"
     ],
     "animals:535003": [
-      "Snake"
+      "Snake",
+      "Crane"
     ],
     "animals:624001": [
       "Lizard",
@@ -9434,7 +9264,8 @@ window.ENIGMA_DATA = {
     ],
     "animals:935000": [
       "Chameleon",
-      "Crocodile"
+      "Crocodile",
+      "Dragonfly"
     ],
     "animals:914001": [
       "Alligator"
@@ -9449,32 +9280,47 @@ window.ENIGMA_DATA = {
     "animals:635000": [
       "Spider",
       "Snakes",
-      "Whales"
+      "Whales",
+      "Dragon"
     ],
     "animals:420003": [
       "Cats",
       "Cows"
     ],
     "animals:424001": [
-      "Mice"
+      "Mice",
+      "Mule",
+      "Hare",
+      "Mole",
+      "Kiwi"
     ],
     "animals:424000": [
-      "Mice"
+      "Mice",
+      "Mule",
+      "Hare",
+      "Mole",
+      "Puma",
+      "Dove",
+      "Kiwi"
     ],
     "animals:913001": [
       "Elephants"
     ],
     "animals:913000": [
-      "Elephants"
+      "Elephants",
+      "Orangutan"
     ],
     "animals:824002": [
-      "Giraffes"
+      "Giraffes",
+      "Dinosaur"
     ],
     "animals:824000": [
-      "Giraffes"
+      "Giraffes",
+      "Dinosaur"
     ],
     "animals:725001": [
-      "Monkeys"
+      "Monkeys",
+      "Vulture"
     ],
     "animals:834003": [
       "Squirrel"
@@ -9488,9 +9334,6 @@ window.ENIGMA_DATA = {
     "animals:410000": [
       "Owls",
       "Ants"
-    ],
-    "all:410003": [
-      "Owls"
     ],
     "animals:825002": [
       "Penguins"
@@ -9508,10 +9351,12 @@ window.ENIGMA_DATA = {
       "Whales"
     ],
     "animals:826002": [
-      "Dolphins"
+      "Dolphins",
+      "Goldfish"
     ],
     "animals:826000": [
-      "Dolphins"
+      "Dolphins",
+      "Goldfish"
     ],
     "animals:523003": [
       "Seals"
@@ -9549,11 +9394,183 @@ window.ENIGMA_DATA = {
     "animals:300000": [
       "Fly"
     ],
-    "all:300001": [
-      "Fly"
+    "animals:723002": [
+      "Rooster",
+      "Peacock"
     ],
-    "all:300000": [
-      "Fly"
+    "animals:524002": [
+      "Raven",
+      "Bison",
+      "Robin"
+    ],
+    "animals:723003": [
+      "Seagull"
+    ],
+    "animals:823003": [
+      "Seahorse"
+    ],
+    "animals:823000": [
+      "Seahorse"
+    ],
+    "animals:836003": [
+      "Starfish",
+      "Chipmunk",
+      "Scorpion"
+    ],
+    "animals:836000": [
+      "Starfish",
+      "Chipmunk",
+      "Scorpion"
+    ],
+    "animals:613001": [
+      "Iguana"
+    ],
+    "animals:613000": [
+      "Iguana"
+    ],
+    "animals:736003": [
+      "Cricket",
+      "Sparrow"
+    ],
+    "animals:736000": [
+      "Cricket",
+      "Sparrow"
+    ],
+    "animals:614001": [
+      "Alpaca"
+    ],
+    "animals:614000": [
+      "Alpaca"
+    ],
+    "animals:635002": [
+      "Dragon"
+    ],
+    "animals:713002": [
+      "Unicorn"
+    ],
+    "animals:713000": [
+      "Unicorn"
+    ],
+    "animals:210003": [
+      "Ox"
+    ],
+    "animals:210000": [
+      "Ox"
+    ],
+    "animals:623001": [
+      "Weasel",
+      "Toucan"
+    ],
+    "animals:400001": [
+      "Lynx"
+    ],
+    "animals:400000": [
+      "Lynx"
+    ],
+    "animals:623003": [
+      "Cougar"
+    ],
+    "animals:424002": [
+      "Puma",
+      "Dove"
+    ],
+    "animals:913003": [
+      "Orangutan"
+    ],
+    "animals:724001": [
+      "Manatee",
+      "Firefly"
+    ],
+    "animals:837003": [
+      "Stingray"
+    ],
+    "animals:837000": [
+      "Stingray"
+    ],
+    "animals:937003": [
+      "Clownfish"
+    ],
+    "animals:937000": [
+      "Clownfish"
+    ],
+    "animals:640003": [
+      "Shrimp"
+    ],
+    "animals:640000": [
+      "Shrimp"
+    ],
+    "animals:124003": [
+      "Caterpillar"
+    ],
+    "animals:124000": [
+      "Caterpillar"
+    ],
+    "animals:935002": [
+      "Dragonfly"
+    ],
+    "animals:137002": [
+      "Grasshopper"
+    ],
+    "animals:137000": [
+      "Grasshopper"
+    ],
+    "animals:434001": [
+      "Flea"
+    ],
+    "animals:434000": [
+      "Flea"
+    ],
+    "animals:525003": [
+      "Cobra"
+    ],
+    "animals:650002": [
+      "Python"
+    ],
+    "animals:650000": [
+      "Python"
+    ],
+    "animals:126002": [
+      "Rattlesnake"
+    ],
+    "animals:126000": [
+      "Rattlesnake"
+    ],
+    "animals:625003": [
+      "Condor"
+    ],
+    "animals:825003": [
+      "Cockatoo",
+      "Cardinal"
+    ],
+    "animals:125001": [
+      "Hummingbird"
+    ],
+    "animals:125000": [
+      "Hummingbird"
+    ],
+    "animals:023001": [
+      "Woodpecker"
+    ],
+    "animals:023000": [
+      "Woodpecker"
+    ],
+    "animals:734002": [
+      "Bluejay"
+    ],
+    "animals:520001": [
+      "Finch"
+    ],
+    "animals:715003": [
+      "Ostrich"
+    ],
+    "animals:715000": [
+      "Ostrich"
+    ],
+    "animals:313001": [
+      "Emu"
+    ],
+    "animals:313000": [
+      "Emu"
     ],
     "food:515001": [
       "Apple"
@@ -9566,7 +9583,11 @@ window.ENIGMA_DATA = {
       "Potato",
       "Bagels",
       "Donuts",
-      "Gelato"
+      "Gelato",
+      "Papaya",
+      "Radish",
+      "Danish",
+      "Baking"
     ],
     "food:624000": [
       "Banana",
@@ -9578,24 +9599,35 @@ window.ENIGMA_DATA = {
       "Lemons",
       "Gelato",
       "Cereal",
-      "Celery"
+      "Celery",
+      "Papaya",
+      "Radish",
+      "Mojito",
+      "Danish",
+      "Wasabi",
+      "Baking",
+      "Salami",
+      "Caviar"
     ],
     "food:613003": [
       "Orange",
       "Omelet",
-      "Onions"
+      "Onions",
+      "Olives"
     ],
     "food:613000": [
       "Orange",
       "Omelet",
-      "Onions"
+      "Onions",
+      "Olives"
     ],
     "food:535002": [
       "Grape"
     ],
     "food:535000": [
       "Grape",
-      "Chili"
+      "Chili",
+      "Scone"
     ],
     "food:047003": [
       "Strawberry"
@@ -9624,7 +9656,11 @@ window.ENIGMA_DATA = {
       "Melon",
       "Limes",
       "Water",
-      "Honey"
+      "Honey",
+      "Kebab",
+      "Lager",
+      "Tonic",
+      "Kefir"
     ],
     "food:524000": [
       "Lemon",
@@ -9640,7 +9676,14 @@ window.ENIGMA_DATA = {
       "Water",
       "Cider",
       "Sugar",
-      "Honey"
+      "Honey",
+      "Kebab",
+      "Dates",
+      "Cocoa",
+      "Lager",
+      "Tonic",
+      "Kefir",
+      "Basil"
     ],
     "food:424001": [
       "Lime",
@@ -9648,7 +9691,10 @@ window.ENIGMA_DATA = {
       "Taco",
       "Wine",
       "Tuna",
-      "Mayo"
+      "Mayo",
+      "Kale",
+      "Feta",
+      "Tofu"
     ],
     "food:424000": [
       "Lime",
@@ -9660,7 +9706,13 @@ window.ENIGMA_DATA = {
       "Wine",
       "Tuna",
       "Mayo",
-      "Coke"
+      "Coke",
+      "Kale",
+      "Feta",
+      "Sake",
+      "Soju",
+      "Tofu",
+      "Sage"
     ],
     "food:523002": [
       "Peach",
@@ -9674,11 +9726,17 @@ window.ENIGMA_DATA = {
       "Juice",
       "Sauce",
       "Pears",
-      "Beans"
+      "Beans",
+      "Queso",
+      "Yeast"
     ],
     "food:525001": [
       "Mango",
-      "Latte"
+      "Latte",
+      "Fanta",
+      "Mocha",
+      "Vodka",
+      "Fudge"
     ],
     "food:525000": [
       "Mango",
@@ -9686,7 +9744,12 @@ window.ENIGMA_DATA = {
       "Pasta",
       "Sushi",
       "Latte",
-      "Pepsi"
+      "Pepsi",
+      "Salsa",
+      "Fanta",
+      "Mocha",
+      "Vodka",
+      "Fudge"
     ],
     "food:924002": [
       "Pineapple"
@@ -9701,7 +9764,8 @@ window.ENIGMA_DATA = {
     ],
     "food:630000": [
       "Cherry",
-      "Crisps"
+      "Crisps",
+      "Brandy"
     ],
     "food:430002": [
       "Plum"
@@ -9710,26 +9774,36 @@ window.ENIGMA_DATA = {
       "Plum",
       "Crab",
       "Wrap",
-      "Stew"
+      "Stew",
+      "Twix",
+      "Flan",
+      "Spam",
+      "Clam"
     ],
     "food:713001": [
-      "Avocado"
+      "Avocado",
+      "Edamame"
     ],
     "food:713000": [
       "Avocado",
-      "Oranges"
+      "Oranges",
+      "Edamame",
+      "Oregano"
     ],
     "food:624001": [
       "Tomato",
       "Yogurt",
-      "Lemons"
+      "Lemons",
+      "Mojito",
+      "Wasabi"
     ],
     "food:625003": [
       "Carrot",
       "Coffee",
       "Salmon",
       "Sundae",
-      "Cashew"
+      "Cashew",
+      "Sorbet"
     ],
     "food:625000": [
       "Carrot",
@@ -9746,7 +9820,17 @@ window.ENIGMA_DATA = {
       "Nachos",
       "Pizzas",
       "Cashew",
-      "Walnut"
+      "Walnut",
+      "Hummus",
+      "Turnip",
+      "Ginger",
+      "Sorbet",
+      "Toffee",
+      "Bonbon",
+      "Barley",
+      "Tempeh",
+      "Nutmeg",
+      "Mussel"
     ],
     "food:836002": [
       "Broccoli",
@@ -9760,7 +9844,10 @@ window.ENIGMA_DATA = {
       "Crackers",
       "Dressing",
       "Cherries",
-      "Brownies"
+      "Brownies",
+      "Snickers",
+      "Frosting",
+      "Scallion"
     ],
     "food:525002": [
       "Pizza",
@@ -9772,7 +9859,10 @@ window.ENIGMA_DATA = {
       "Butter",
       "Garlic",
       "Pepper",
-      "Pizzas"
+      "Pizzas",
+      "Ginger",
+      "Bonbon",
+      "Barley"
     ],
     "food:134003": [
       "Cheeseburger"
@@ -9789,7 +9879,8 @@ window.ENIGMA_DATA = {
       "Sandwich",
       "Mushroom",
       "Cocktail",
-      "Pastries"
+      "Pastries",
+      "Zucchini"
     ],
     "food:725002": [
       "Burrito",
@@ -9798,7 +9889,10 @@ window.ENIGMA_DATA = {
       "Burgers",
       "Popcorn",
       "Peppers",
-      "Pudding"
+      "Pudding",
+      "Redbull",
+      "Gummies",
+      "Paprika"
     ],
     "food:725000": [
       "Burrito",
@@ -9816,50 +9910,84 @@ window.ENIGMA_DATA = {
       "Candies",
       "Pudding",
       "Custard",
-      "Mangoes"
+      "Mangoes",
+      "Cabbage",
+      "Redbull",
+      "Nuggets",
+      "Tenders",
+      "Tempura",
+      "Sashimi",
+      "Gummies",
+      "Lentils",
+      "Paprika",
+      "Sardine",
+      "Catfish",
+      "Herring"
     ],
     "food:625001": [
       "Hotdog",
       "Muffin",
       "Turkey",
       "Nachos",
-      "Walnut"
+      "Walnut",
+      "Hummus",
+      "Turnip",
+      "Toffee",
+      "Tempeh",
+      "Nutmeg",
+      "Mussel"
     ],
     "food:534003": [
       "Steak",
-      "Cream"
+      "Cream",
+      "Stout"
     ],
     "food:534000": [
       "Steak",
       "Bread",
       "Fries",
-      "Cream"
+      "Cream",
+      "Stout",
+      "Flour",
+      "Trout"
     ],
     "food:736003": [
-      "Chicken"
+      "Chicken",
+      "Cheddar",
+      "Crumpet",
+      "Shallot",
+      "Scallop"
     ],
     "food:736000": [
       "Chicken",
       "Brownie",
-      "Pretzel"
+      "Pretzel",
+      "Whiskey",
+      "Brisket",
+      "Cheddar",
+      "Crumpet",
+      "Shallot",
+      "Scallop"
     ],
     "food:524002": [
       "Bacon",
       "Bagel",
       "Donut",
-      "Ramen"
+      "Ramen",
+      "Dates",
+      "Basil"
     ],
     "food:936003": [
-      "Spaghetti"
+      "Spaghetti",
+      "Cranberry",
+      "Starbucks",
+      "Champagne"
     ],
     "food:936000": [
-      "Spaghetti"
-    ],
-    "all:936003": [
-      "Spaghetti"
-    ],
-    "all:936000": [
-      "Spaghetti"
+      "Spaghetti",
+      "Cranberry",
+      "Starbucks",
+      "Champagne"
     ],
     "food:723001": [
       "Noodles"
@@ -9869,13 +9997,17 @@ window.ENIGMA_DATA = {
       "Sausage",
       "Peanuts",
       "Peaches",
-      "Cookies"
+      "Cookies",
+      "Raisins",
+      "Pierogi",
+      "Bourbon"
     ],
     "food:424002": [
       "Rice"
     ],
     "food:525003": [
-      "Sushi"
+      "Sushi",
+      "Salsa"
     ],
     "food:423003": [
       "Soup"
@@ -9886,30 +10018,41 @@ window.ENIGMA_DATA = {
       "Beef",
       "Pear",
       "Peas",
-      "Pies"
+      "Pies",
+      "Beet",
+      "Guac",
+      "Leek",
+      "Veal"
     ],
     "food:524003": [
       "Salad",
       "Cakes",
       "Cider",
-      "Sugar"
+      "Sugar",
+      "Cocoa"
     ],
     "food:534002": [
       "Bread"
     ],
     "food:523001": [
-      "Toast"
+      "Toast",
+      "Yeast"
     ],
     "food:634003": [
-      "Cheese"
+      "Cheese",
+      "Squash"
     ],
     "food:634000": [
-      "Cheese"
+      "Cheese",
+      "Squash"
     ],
     "food:420001": [
       "Milk",
       "Fish",
-      "Nuts"
+      "Nuts",
+      "Tart",
+      "Mint",
+      "Lamb"
     ],
     "food:420000": [
       "Milk",
@@ -9918,7 +10061,14 @@ window.ENIGMA_DATA = {
       "Nuts",
       "Corn",
       "Subs",
-      "Salt"
+      "Salt",
+      "Ribs",
+      "Tart",
+      "Mint",
+      "Dill",
+      "Duck",
+      "Lamb",
+      "Bass"
     ],
     "food:310001": [
       "Egg"
@@ -9935,20 +10085,30 @@ window.ENIGMA_DATA = {
       "Matcha"
     ],
     "food:623003": [
-      "Cookie"
+      "Cookie",
+      "Quinoa",
+      "Seitan"
     ],
     "food:623000": [
       "Cookie",
-      "Peanut"
+      "Peanut",
+      "Paella",
+      "Mousse",
+      "Quinoa",
+      "Seitan"
     ],
     "food:424003": [
       "Cake",
       "Soda",
-      "Coke"
+      "Coke",
+      "Sake",
+      "Soju",
+      "Sage"
     ],
     "food:736002": [
       "Brownie",
-      "Pretzel"
+      "Pretzel",
+      "Brisket"
     ],
     "food:935003": [
       "Chocolate"
@@ -9963,7 +10123,9 @@ window.ENIGMA_DATA = {
     "food:520000": [
       "Candy",
       "Curry",
-      "Jelly"
+      "Jelly",
+      "Wings",
+      "Jerky"
     ],
     "food:813001": [
       "Ice Cream",
@@ -9980,14 +10142,17 @@ window.ENIGMA_DATA = {
     ],
     "food:323000": [
       "Tea",
-      "Pie"
+      "Pie",
+      "Roe"
     ],
     "food:423002": [
       "Beer",
       "Beef",
       "Pear",
       "Peas",
-      "Pies"
+      "Pies",
+      "Beet",
+      "Guac"
     ],
     "food:410001": [
       "Eggs"
@@ -9998,24 +10163,40 @@ window.ENIGMA_DATA = {
     "food:825002": [
       "Pancakes",
       "Biscuits",
-      "Burritos"
+      "Burritos",
+      "Popsicle",
+      "Parmesan"
     ],
     "food:825000": [
       "Pancakes",
       "Biscuits",
       "Cupcakes",
       "Lollipop",
-      "Burritos"
+      "Burritos",
+      "Cinnamon",
+      "Popsicle",
+      "Parmesan",
+      "Kombucha"
     ],
     "food:726001": [
       "Waffles",
       "Lobster",
-      "Ketchup"
+      "Ketchup",
+      "Monster"
     ],
     "food:726000": [
       "Waffles",
       "Lobster",
-      "Ketchup"
+      "Ketchup",
+      "Pickles",
+      "Pumpkin",
+      "Monster",
+      "Cobbler",
+      "Sangria",
+      "Pilsner",
+      "Seltzer",
+      "Parsley",
+      "Parsnip"
     ],
     "food:934003": [
       "Croissant"
@@ -10025,7 +10206,12 @@ window.ENIGMA_DATA = {
       "Hotdogs",
       "Mustard",
       "Lettuce",
-      "Mangoes"
+      "Mangoes",
+      "Nuggets",
+      "Tenders",
+      "Tempura",
+      "Lentils",
+      "Herring"
     ],
     "food:823002": [
       "Doughnut"
@@ -10033,7 +10219,9 @@ window.ENIGMA_DATA = {
     "food:823000": [
       "Doughnut",
       "Sausages",
-      "Meatball"
+      "Meatball",
+      "Meatloaf",
+      "Couscous"
     ],
     "food:620002": [
       "Pastry"
@@ -10046,19 +10234,32 @@ window.ENIGMA_DATA = {
       "Cookies"
     ],
     "food:823003": [
-      "Sausages"
+      "Sausages",
+      "Couscous"
     ],
     "food:320001": [
-      "Ham"
+      "Ham",
+      "Fig",
+      "Yam"
     ],
     "food:320000": [
       "Ham",
       "Gum",
       "Sub",
-      "Jam"
+      "Jam",
+      "Fig",
+      "Rum",
+      "Gin",
+      "Soy",
+      "Yam",
+      "Cod"
     ],
     "food:420002": [
-      "Pork"
+      "Pork",
+      "Ribs",
+      "Dill",
+      "Duck",
+      "Bass"
     ],
     "food:640003": [
       "Shrimp"
@@ -10068,7 +10269,9 @@ window.ENIGMA_DATA = {
     ],
     "food:430003": [
       "Crab",
-      "Stew"
+      "Stew",
+      "Spam",
+      "Clam"
     ],
     "food:026003": [
       "Sandwiches"
@@ -10077,10 +10280,14 @@ window.ENIGMA_DATA = {
       "Sandwiches"
     ],
     "food:430001": [
-      "Wrap"
+      "Wrap",
+      "Twix",
+      "Flan"
     ],
     "food:534001": [
-      "Fries"
+      "Fries",
+      "Flour",
+      "Trout"
     ],
     "food:530003": [
       "Chips"
@@ -10088,50 +10295,82 @@ window.ENIGMA_DATA = {
     "food:530000": [
       "Chips",
       "Plums",
-      "Wraps"
+      "Wraps",
+      "Gravy"
     ],
     "food:836003": [
       "Crackers",
-      "Cherries"
+      "Cherries",
+      "Snickers",
+      "Scallion"
     ],
     "food:723002": [
       "Peanuts",
-      "Peaches"
+      "Peaches",
+      "Raisins",
+      "Pierogi",
+      "Bourbon"
     ],
     "food:714001": [
-      "Almonds"
+      "Almonds",
+      "Apricot"
     ],
     "food:714000": [
-      "Almonds"
+      "Almonds",
+      "Apricot"
     ],
     "food:535003": [
-      "Chili"
+      "Chili",
+      "Scone"
     ],
     "food:523003": [
-      "Sauce"
+      "Sauce",
+      "Queso"
     ],
     "food:615001": [
-      "Apples"
+      "Apples",
+      "Eggnog"
     ],
     "food:615000": [
-      "Apples"
+      "Apples",
+      "Eggnog",
+      "Oyster"
     ],
     "food:724002": [
-      "Bananas"
+      "Bananas",
+      "Doritos",
+      "Risotto",
+      "Bologna"
     ],
     "food:724000": [
       "Bananas",
       "Lasagna",
-      "Vinegar"
+      "Vinegar",
+      "Falafel",
+      "Coconut",
+      "Vanilla",
+      "Nutella",
+      "Doritos",
+      "Tequila",
+      "Risotto",
+      "Caramel",
+      "Macaron",
+      "Tabasco",
+      "Bologna",
+      "Venison",
+      "Tilapia",
+      "Halibut"
     ],
     "food:713003": [
-      "Oranges"
+      "Oranges",
+      "Oregano"
     ],
     "food:635002": [
       "Grapes"
     ],
     "food:635000": [
-      "Grapes"
+      "Grapes",
+      "Chives"
     ],
     "food:147003": [
       "Strawberries"
@@ -10143,11 +10382,15 @@ window.ENIGMA_DATA = {
       "Blueberries"
     ],
     "food:926002": [
-      "Raspberry"
+      "Raspberry",
+      "Dumplings",
+      "Bubblegum"
     ],
     "food:926000": [
       "Raspberry",
-      "Mushrooms"
+      "Mushrooms",
+      "Dumplings",
+      "Bubblegum"
     ],
     "food:037002": [
       "Blackberry"
@@ -10161,25 +10404,46 @@ window.ENIGMA_DATA = {
     ],
     "food:025000": [
       "Cantaloupe",
-      "Cappuccino"
+      "Cappuccino",
+      "Mozzarella",
+      "Funnelcake"
     ],
     "food:530002": [
-      "Plums"
+      "Plums",
+      "Gravy"
     ],
     "food:824001": [
       "Tomatoes",
       "Lemonade",
-      "Macaroni"
+      "Macaroni",
+      "Tiramisu",
+      "Teriyaki",
+      "Licorice",
+      "Habanero"
     ],
     "food:824000": [
       "Tomatoes",
       "Potatoes",
       "Cucumber",
       "Lemonade",
-      "Macaroni"
+      "Macaroni",
+      "Gatorade",
+      "Tiramisu",
+      "Bibimbap",
+      "Teriyaki",
+      "Licorice",
+      "Cilantro",
+      "Rosemary",
+      "Jalapeno",
+      "Habanero",
+      "Calamari"
     ],
     "food:824002": [
-      "Potatoes"
+      "Potatoes",
+      "Gatorade",
+      "Bibimbap",
+      "Rosemary",
+      "Jalapeno"
     ],
     "food:513003": [
       "Onion"
@@ -10191,22 +10455,31 @@ window.ENIGMA_DATA = {
       "Carrots",
       "Cupcake",
       "Candies",
-      "Custard"
+      "Custard",
+      "Cabbage",
+      "Sashimi",
+      "Sardine",
+      "Catfish"
     ],
     "food:735003": [
       "Spinach"
     ],
     "food:735000": [
-      "Spinach"
+      "Spinach",
+      "Granola",
+      "Praline"
     ],
     "food:824003": [
-      "Cucumber"
+      "Cucumber",
+      "Cilantro",
+      "Calamari"
     ],
     "food:924003": [
       "Cucumbers"
     ],
     "food:826001": [
-      "Mushroom"
+      "Mushroom",
+      "Zucchini"
     ],
     "food:926001": [
       "Mushrooms"
@@ -10217,17 +10490,22 @@ window.ENIGMA_DATA = {
       "Salt"
     ],
     "food:825003": [
-      "Cupcakes"
+      "Cupcakes",
+      "Cinnamon"
     ],
     "food:323002": [
-      "Pie"
+      "Pie",
+      "Roe"
     ],
     "food:825001": [
-      "Lollipop"
+      "Lollipop",
+      "Kombucha"
     ],
     "food:320002": [
       "Gum",
-      "Jam"
+      "Jam",
+      "Rum",
+      "Gin"
     ],
     "food:815001": [
       "Espresso"
@@ -10239,7 +10517,8 @@ window.ENIGMA_DATA = {
       "Chai"
     ],
     "food:434000": [
-      "Chai"
+      "Chai",
+      "Brie"
     ],
     "food:834003": [
       "Smoothie"
@@ -10248,10 +10527,12 @@ window.ENIGMA_DATA = {
       "Smoothie"
     ],
     "food:034003": [
-      "Croissants"
+      "Croissants",
+      "Cheesecake"
     ],
     "food:034000": [
-      "Croissants"
+      "Croissants",
+      "Cheesecake"
     ],
     "food:712003": [
       "Oatmeal"
@@ -10261,20 +10542,28 @@ window.ENIGMA_DATA = {
     ],
     "food:624003": [
       "Cereal",
-      "Celery"
+      "Celery",
+      "Salami",
+      "Caviar"
     ],
     "food:823001": [
-      "Meatball"
+      "Meatball",
+      "Meatloaf"
     ],
     "food:923001": [
-      "Meatballs"
+      "Meatballs",
+      "Moonshine"
     ],
     "food:923000": [
       "Meatballs",
-      "Doughnuts"
+      "Doughnuts",
+      "Guacamole",
+      "Moonshine"
     ],
     "food:320003": [
-      "Sub"
+      "Sub",
+      "Soy",
+      "Cod"
     ],
     "food:530001": [
       "Wraps"
@@ -10285,53 +10574,326 @@ window.ENIGMA_DATA = {
     "food:023000": [
       "Quesadilla"
     ],
-    "all:023003": [
-      "Quesadilla"
-    ],
     "food:724001": [
       "Lasagna",
-      "Vinegar"
+      "Vinegar",
+      "Falafel",
+      "Vanilla",
+      "Nutella",
+      "Tequila",
+      "Macaron",
+      "Tabasco",
+      "Venison",
+      "Tilapia",
+      "Halibut"
     ],
     "food:923002": [
-      "Doughnuts"
+      "Doughnuts",
+      "Guacamole"
     ],
     "food:826002": [
       "Pastries"
     ],
     "food:623002": [
-      "Peanut"
+      "Peanut",
+      "Paella"
     ],
     "food:614001": [
-      "Almond"
+      "Almond",
+      "Eclair"
     ],
     "food:614000": [
-      "Almond"
+      "Almond",
+      "Eclair"
     ],
     "food:312003": [
       "Oil"
     ],
     "food:312000": [
-      "Oil"
-    ],
-    "all:312003": [
-      "Oil"
-    ],
-    "all:312000": [
-      "Oil"
+      "Oil",
+      "Eel"
     ],
     "food:520002": [
-      "Jelly"
+      "Jelly",
+      "Jerky"
+    ],
+    "food:915001": [
+      "Enchilada"
+    ],
+    "food:915000": [
+      "Enchilada"
+    ],
+    "food:726002": [
+      "Pickles",
+      "Pumpkin",
+      "Pilsner",
+      "Parsley",
+      "Parsnip"
+    ],
+    "food:724003": [
+      "Coconut",
+      "Caramel"
+    ],
+    "food:124002": [
+      "Pomegranate"
+    ],
+    "food:124000": [
+      "Pomegranate"
+    ],
+    "food:035002": [
+      "Grapefruit"
+    ],
+    "food:035000": [
+      "Grapefruit",
+      "Clementine",
+      "Chewinggum"
+    ],
+    "food:925001": [
+      "Tangerine",
+      "Margarita"
+    ],
+    "food:925000": [
+      "Tangerine",
+      "Margarita",
+      "Pepperoni"
+    ],
+    "food:035003": [
+      "Clementine",
+      "Chewinggum"
+    ],
+    "food:816001": [
+      "Eggplant"
+    ],
+    "food:816000": [
+      "Eggplant"
+    ],
+    "food:914001": [
+      "Asparagus",
+      "Artichoke"
+    ],
+    "food:914000": [
+      "Asparagus",
+      "Artichoke"
+    ],
+    "food:123002": [
+      "Peanutbutter"
+    ],
+    "food:123000": [
+      "Peanutbutter",
+      "Cauliflower"
+    ],
+    "food:127001": [
+      "Marshmallow"
+    ],
+    "food:127000": [
+      "Marshmallow"
+    ],
+    "food:837003": [
+      "Skittles"
+    ],
+    "food:837000": [
+      "Skittles",
+      "Pringles"
+    ],
+    "food:413003": [
+      "Oreo"
+    ],
+    "food:413000": [
+      "Oreo"
+    ],
+    "food:734003": [
+      "Cheetos"
+    ],
+    "food:734000": [
+      "Cheetos"
+    ],
+    "food:837002": [
+      "Pringles"
+    ],
+    "food:646003": [
+      "Sprite"
+    ],
+    "food:646000": [
+      "Sprite"
+    ],
+    "food:136001": [
+      "Frappuccino"
+    ],
+    "food:136000": [
+      "Frappuccino"
+    ],
+    "food:736001": [
+      "Whiskey"
+    ],
+    "food:927003": [
+      "Cornbread",
+      "Candycane"
+    ],
+    "food:927000": [
+      "Cornbread",
+      "Milkshake",
+      "Candycane"
+    ],
+    "food:520001": [
+      "Wings"
+    ],
+    "food:927001": [
+      "Milkshake"
+    ],
+    "food:735002": [
+      "Granola",
+      "Praline"
+    ],
+    "food:737002": [
+      "Gnocchi"
+    ],
+    "food:737000": [
+      "Gnocchi",
+      "Truffle"
+    ],
+    "food:330002": [
+      "Pho"
+    ],
+    "food:330000": [
+      "Pho"
+    ],
+    "food:025001": [
+      "Mozzarella",
+      "Funnelcake"
+    ],
+    "food:434002": [
+      "Brie"
+    ],
+    "food:937001": [
+      "Whipcream"
+    ],
+    "food:937000": [
+      "Whipcream",
+      "Chickpeas"
+    ],
+    "food:948003": [
+      "Sprinkles"
+    ],
+    "food:948000": [
+      "Sprinkles"
+    ],
+    "food:836001": [
+      "Frosting"
+    ],
+    "food:027002": [
+      "Jellybeans"
+    ],
+    "food:027000": [
+      "Jellybeans"
+    ],
+    "food:125003": [
+      "Cottoncandy"
+    ],
+    "food:125000": [
+      "Cottoncandy"
+    ],
+    "food:636003": [
+      "Churro"
+    ],
+    "food:636000": [
+      "Churro",
+      "Trifle"
+    ],
+    "food:746003": [
+      "Strudel"
+    ],
+    "food:746000": [
+      "Strudel"
+    ],
+    "food:726003": [
+      "Cobbler",
+      "Sangria",
+      "Seltzer"
+    ],
+    "food:623001": [
+      "Mousse"
+    ],
+    "food:636001": [
+      "Trifle"
+    ],
+    "food:737001": [
+      "Truffle"
+    ],
+    "food:835002": [
+      "Prosecco"
+    ],
+    "food:835000": [
+      "Prosecco",
+      "Sriracha"
+    ],
+    "food:630002": [
+      "Brandy"
+    ],
+    "food:313001": [
+      "Ale"
+    ],
+    "food:313000": [
+      "Ale"
+    ],
+    "food:412003": [
+      "Oats"
+    ],
+    "food:412000": [
+      "Oats"
+    ],
+    "food:937003": [
+      "Chickpeas"
+    ],
+    "food:835003": [
+      "Sriracha"
+    ],
+    "food:550001": [
+      "Thyme"
+    ],
+    "food:550000": [
+      "Thyme"
+    ],
+    "food:635003": [
+      "Chives"
+    ],
+    "food:423001": [
+      "Leek",
+      "Veal"
+    ],
+    "food:123003": [
+      "Cauliflower"
+    ],
+    "food:414003": [
+      "Okra"
+    ],
+    "food:414000": [
+      "Okra"
+    ],
+    "food:925002": [
+      "Pepperoni"
+    ],
+    "food:036002": [
+      "Prosciutto"
+    ],
+    "food:036000": [
+      "Prosciutto"
+    ],
+    "food:615003": [
+      "Oyster"
+    ],
+    "food:715001": [
+      "Anchovy"
+    ],
+    "food:715000": [
+      "Anchovy"
+    ],
+    "food:312001": [
+      "Eel"
     ],
     "countries:313002": [
       "USA"
     ],
     "countries:313000": [
-      "USA"
-    ],
-    "all:313002": [
-      "USA"
-    ],
-    "all:313000": [
       "USA"
     ],
     "countries:624003": [
@@ -10342,19 +10904,25 @@ window.ENIGMA_DATA = {
       "Mexico",
       "Poland",
       "Hawaii",
-      "Venice"
+      "Venice",
+      "Havana",
+      "Bogota",
+      "Panama"
     ],
     "countries:624001": [
       "Mexico",
       "Hawaii",
-      "Venice"
+      "Venice",
+      "Havana"
     ],
     "countries:635002": [
-      "Brazil"
+      "Brazil",
+      "Prague"
     ],
     "countries:635000": [
       "Brazil",
-      "Sweden"
+      "Sweden",
+      "Prague"
     ],
     "countries:914001": [
       "Argentina"
@@ -10368,16 +10936,21 @@ window.ENIGMA_DATA = {
     ],
     "countries:535000": [
       "Chile",
-      "China"
+      "China",
+      "Ghana"
     ],
     "countries:424002": [
       "Peru",
-      "Rome"
+      "Rome",
+      "Rica"
     ],
     "countries:424000": [
       "Peru",
       "Fiji",
-      "Rome"
+      "Rome",
+      "Cuba",
+      "Lima",
+      "Rica"
     ],
     "countries:824003": [
       "Colombia"
@@ -10392,19 +10965,10 @@ window.ENIGMA_DATA = {
     "countries:210000": [
       "UK"
     ],
-    "all:210002": [
-      "UK"
-    ],
     "countries:715001": [
       "England"
     ],
     "countries:715000": [
-      "England"
-    ],
-    "all:715001": [
-      "England"
-    ],
-    "all:715000": [
       "England"
     ],
     "countries:836003": [
@@ -10442,7 +11006,8 @@ window.ENIGMA_DATA = {
     "countries:725002": [
       "Germany",
       "Denmark",
-      "Belgium"
+      "Belgium",
+      "Detroit"
     ],
     "countries:725000": [
       "Germany",
@@ -10451,7 +11016,8 @@ window.ENIGMA_DATA = {
       "Belgium",
       "Holland",
       "Hungary",
-      "New York"
+      "New York",
+      "Detroit"
     ],
     "countries:634002": [
       "Greece"
@@ -10470,7 +11036,8 @@ window.ENIGMA_DATA = {
       "Turkey",
       "London",
       "Madrid",
-      "Moscow"
+      "Moscow",
+      "Mumbai"
     ],
     "countries:625000": [
       "Norway",
@@ -10479,7 +11046,12 @@ window.ENIGMA_DATA = {
       "Madrid",
       "Berlin",
       "Dublin",
-      "Moscow"
+      "Moscow",
+      "Russia",
+      "Boston",
+      "Dallas",
+      "Denver",
+      "Mumbai"
     ],
     "countries:635003": [
       "Sweden"
@@ -10503,7 +11075,9 @@ window.ENIGMA_DATA = {
       "Austria"
     ],
     "countries:624002": [
-      "Poland"
+      "Poland",
+      "Bogota",
+      "Panama"
     ],
     "countries:530003": [
       "Czech"
@@ -10515,7 +11089,8 @@ window.ENIGMA_DATA = {
       "Croatia"
     ],
     "countries:734000": [
-      "Croatia"
+      "Croatia",
+      "Phoenix"
     ],
     "countries:510001": [
       "Egypt"
@@ -10523,19 +11098,18 @@ window.ENIGMA_DATA = {
     "countries:510000": [
       "Egypt"
     ],
-    "all:510001": [
-      "Egypt"
-    ],
-    "all:510000": [
-      "Egypt"
-    ],
     "countries:724001": [
       "Morocco",
-      "Nigeria"
+      "Nigeria",
+      "Toronto"
     ],
     "countries:724000": [
       "Morocco",
-      "Nigeria"
+      "Nigeria",
+      "Jamaica",
+      "Bahamas",
+      "Toronto",
+      "Romania"
     ],
     "countries:525001": [
       "Kenya",
@@ -10543,7 +11117,9 @@ window.ENIGMA_DATA = {
     ],
     "countries:525000": [
       "Kenya",
-      "Tokyo"
+      "Tokyo",
+      "Delhi",
+      "Costa"
     ],
     "countries:123003": [
       "South Africa"
@@ -10551,22 +11127,27 @@ window.ENIGMA_DATA = {
     "countries:123000": [
       "South Africa"
     ],
-    "all:123003": [
-      "South Africa"
-    ],
     "countries:524002": [
       "Japan",
-      "Paris"
+      "Paris",
+      "Dubai"
     ],
     "countries:524000": [
       "Japan",
       "Korea",
       "Paris",
-      "Milan"
+      "Milan",
+      "Dubai",
+      "Vegas",
+      "Texas",
+      "Wales"
     ],
     "countries:524001": [
       "Korea",
-      "Milan"
+      "Milan",
+      "Vegas",
+      "Texas",
+      "Wales"
     ],
     "countries:514001": [
       "India"
@@ -10578,13 +11159,18 @@ window.ENIGMA_DATA = {
       "Thailand"
     ],
     "countries:834000": [
-      "Thailand"
+      "Thailand",
+      "Brooklyn"
     ],
     "countries:723001": [
-      "Vietnam"
+      "Vietnam",
+      "Houston"
     ],
     "countries:723000": [
-      "Vietnam"
+      "Vietnam",
+      "Seattle",
+      "Houston",
+      "Beijing"
     ],
     "countries:925003": [
       "Singapore"
@@ -10609,25 +11195,29 @@ window.ENIGMA_DATA = {
       "New Zealand"
     ],
     "countries:424001": [
-      "Fiji"
+      "Fiji",
+      "Lima"
     ],
     "countries:625002": [
       "Berlin",
-      "Dublin"
+      "Dublin",
+      "Russia",
+      "Boston",
+      "Dallas",
+      "Denver"
     ],
     "countries:614001": [
-      "Athens"
+      "Athens",
+      "Israel"
     ],
     "countries:614000": [
-      "Athens"
+      "Athens",
+      "Israel"
     ],
     "countries:915001": [
       "Amsterdam"
     ],
     "countries:915000": [
-      "Amsterdam"
-    ],
-    "all:915001": [
       "Amsterdam"
     ],
     "countries:623001": [
@@ -10646,19 +11236,146 @@ window.ENIGMA_DATA = {
       "Sydney"
     ],
     "countries:523003": [
-      "Cairo"
+      "Cairo",
+      "Seoul"
     ],
     "countries:523000": [
-      "Cairo"
+      "Cairo",
+      "Miami",
+      "Maine",
+      "Seoul",
+      "Haiti"
+    ],
+    "countries:424003": [
+      "Cuba"
+    ],
+    "countries:523001": [
+      "Miami",
+      "Maine",
+      "Haiti"
+    ],
+    "countries:735003": [
+      "Chicago"
+    ],
+    "countries:735000": [
+      "Chicago",
+      "Florida"
+    ],
+    "countries:723003": [
+      "Seattle"
+    ],
+    "countries:714001": [
+      "Atlanta"
+    ],
+    "countries:714000": [
+      "Atlanta",
+      "Orlando",
+      "Ukraine"
+    ],
+    "countries:734002": [
+      "Phoenix"
+    ],
+    "countries:612001": [
+      "Austin"
+    ],
+    "countries:612000": [
+      "Austin"
+    ],
+    "countries:714003": [
+      "Orlando"
+    ],
+    "countries:926001": [
+      "Nashville"
+    ],
+    "countries:926000": [
+      "Nashville"
+    ],
+    "countries:834002": [
+      "Brooklyn"
+    ],
+    "countries:735001": [
+      "Florida"
+    ],
+    "countries:024003": [
+      "California"
+    ],
+    "countries:024000": [
+      "California"
+    ],
+    "countries:613001": [
+      "Alaska"
+    ],
+    "countries:613000": [
+      "Alaska"
+    ],
+    "countries:413003": [
+      "Ohio"
+    ],
+    "countries:413000": [
+      "Ohio"
+    ],
+    "countries:724002": [
+      "Jamaica",
+      "Bahamas",
+      "Romania"
+    ],
+    "countries:826001": [
+      "Montreal"
+    ],
+    "countries:826000": [
+      "Montreal"
+    ],
+    "countries:525002": [
+      "Delhi"
+    ],
+    "countries:723002": [
+      "Beijing"
+    ],
+    "countries:837003": [
+      "Shanghai"
+    ],
+    "countries:837000": [
+      "Shanghai"
+    ],
+    "countries:726002": [
+      "Bangkok"
+    ],
+    "countries:726000": [
+      "Bangkok"
+    ],
+    "countries:525003": [
+      "Costa"
+    ],
+    "countries:535002": [
+      "Ghana"
+    ],
+    "countries:814001": [
+      "Ethiopia"
+    ],
+    "countries:814000": [
+      "Ethiopia"
+    ],
+    "countries:714002": [
+      "Ukraine"
+    ],
+    "countries:924001": [
+      "Venezuela"
+    ],
+    "countries:924000": [
+      "Venezuela"
     ],
     "natural_inhand:420002": [
       "Rock",
-      "Bark"
+      "Bark",
+      "Dirt"
     ],
     "natural_inhand:420000": [
       "Rock",
       "Bark",
-      "Sand"
+      "Sand",
+      "Moss",
+      "Fern",
+      "Dirt"
     ],
     "natural_inhand:535003": [
       "Stone"
@@ -10673,16 +11390,21 @@ window.ENIGMA_DATA = {
       "Pebble"
     ],
     "natural_inhand:530003": [
-      "Shell"
+      "Shell",
+      "Stick"
     ],
     "natural_inhand:530000": [
-      "Shell"
+      "Shell",
+      "Stick",
+      "Thorn"
     ],
     "natural_inhand:423001": [
       "Leaf"
     ],
     "natural_inhand:423000": [
-      "Leaf"
+      "Leaf",
+      "Seed",
+      "Root"
     ],
     "natural_inhand:723001": [
       "Feather"
@@ -10706,7 +11428,8 @@ window.ENIGMA_DATA = {
       "Flower"
     ],
     "natural_inhand:635000": [
-      "Flower"
+      "Flower",
+      "Clover"
     ],
     "natural_inhand:424002": [
       "Rose"
@@ -10724,7 +11447,8 @@ window.ENIGMA_DATA = {
       "Tulip"
     ],
     "natural_inhand:524000": [
-      "Tulip"
+      "Tulip",
+      "Petal"
     ],
     "natural_inhand:926003": [
       "Sunflower"
@@ -10752,6 +11476,63 @@ window.ENIGMA_DATA = {
     ],
     "natural_inhand:420003": [
       "Sand"
+    ],
+    "natural_inhand:823003": [
+      "Seashell"
+    ],
+    "natural_inhand:823000": [
+      "Seashell",
+      "Raindrop"
+    ],
+    "natural_inhand:524002": [
+      "Petal"
+    ],
+    "natural_inhand:423003": [
+      "Seed"
+    ],
+    "natural_inhand:635003": [
+      "Clover"
+    ],
+    "natural_inhand:420001": [
+      "Moss",
+      "Fern"
+    ],
+    "natural_inhand:937003": [
+      "Snowflake"
+    ],
+    "natural_inhand:937000": [
+      "Snowflake"
+    ],
+    "natural_inhand:613001": [
+      "Icicle"
+    ],
+    "natural_inhand:613000": [
+      "Icicle"
+    ],
+    "natural_inhand:823002": [
+      "Raindrop"
+    ],
+    "natural_inhand:520002": [
+      "Berry"
+    ],
+    "natural_inhand:520000": [
+      "Berry"
+    ],
+    "natural_inhand:320001": [
+      "Nut"
+    ],
+    "natural_inhand:320000": [
+      "Nut",
+      "Bud"
+    ],
+    "natural_inhand:320002": [
+      "Bud"
+    ],
+    "natural_inhand:530001": [
+      "Thorn"
+    ],
+    "natural_inhand:423002": [
+      "Root"
     ],
     "natural_big:434001": [
       "Tree"
@@ -10789,7 +11570,8 @@ window.ENIGMA_DATA = {
     ],
     "natural_big:424000": [
       "Lake",
-      "Cave"
+      "Cave",
+      "Dune"
     ],
     "natural_big:924001": [
       "Waterfall"
@@ -10804,11 +11586,13 @@ window.ENIGMA_DATA = {
       "Cloud"
     ],
     "natural_big:423002": [
-      "Rain"
+      "Rain",
+      "Reef"
     ],
     "natural_big:423000": [
       "Rain",
-      "Moon"
+      "Moon",
+      "Reef"
     ],
     "natural_big:430003": [
       "Snow",
@@ -10855,10 +11639,12 @@ window.ENIGMA_DATA = {
       "Thunder"
     ],
     "natural_big:725001": [
-      "Volcano"
+      "Volcano",
+      "Tornado"
     ],
     "natural_big:725000": [
-      "Volcano"
+      "Volcano",
+      "Tornado"
     ],
     "natural_big:614001": [
       "Island"
@@ -10874,22 +11660,119 @@ window.ENIGMA_DATA = {
     ],
     "natural_big:624000": [
       "Desert",
-      "Forest"
+      "Forest",
+      "Lagoon"
     ],
     "natural_big:624001": [
-      "Forest"
+      "Forest",
+      "Lagoon"
     ],
     "natural_big:625001": [
       "Valley"
     ],
     "natural_big:625000": [
-      "Valley"
+      "Valley",
+      "Canyon",
+      "Geyser"
     ],
     "natural_big:530003": [
-      "Cliff"
+      "Cliff",
+      "Swamp",
+      "Storm"
     ],
     "natural_big:530000": [
-      "Cliff"
+      "Cliff",
+      "Swamp",
+      "Storm"
+    ],
+    "natural_big:523002": [
+      "Beach"
+    ],
+    "natural_big:523000": [
+      "Beach"
+    ],
+    "natural_big:625003": [
+      "Canyon"
+    ],
+    "natural_big:735002": [
+      "Glacier"
+    ],
+    "natural_big:735000": [
+      "Glacier"
+    ],
+    "natural_big:420001": [
+      "Hill"
+    ],
+    "natural_big:420000": [
+      "Hill",
+      "Pond"
+    ],
+    "natural_big:623001": [
+      "Meadow"
+    ],
+    "natural_big:623000": [
+      "Meadow"
+    ],
+    "natural_big:626002": [
+      "Jungle"
+    ],
+    "natural_big:626000": [
+      "Jungle",
+      "Tundra"
+    ],
+    "natural_big:420002": [
+      "Pond"
+    ],
+    "natural_big:645003": [
+      "Stream"
+    ],
+    "natural_big:645000": [
+      "Stream"
+    ],
+    "natural_big:925001": [
+      "Hurricane"
+    ],
+    "natural_big:925000": [
+      "Hurricane"
+    ],
+    "natural_big:012001": [
+      "Earthquake"
+    ],
+    "natural_big:012000": [
+      "Earthquake"
+    ],
+    "natural_big:713001": [
+      "Iceberg"
+    ],
+    "natural_big:713000": [
+      "Iceberg"
+    ],
+    "natural_big:424002": [
+      "Dune"
+    ],
+    "natural_big:734002": [
+      "Prairie"
+    ],
+    "natural_big:734000": [
+      "Prairie"
+    ],
+    "natural_big:626001": [
+      "Tundra"
+    ],
+    "natural_big:724003": [
+      "Savanna"
+    ],
+    "natural_big:724000": [
+      "Savanna"
+    ],
+    "natural_big:512003": [
+      "Oasis"
+    ],
+    "natural_big:512000": [
+      "Oasis"
+    ],
+    "natural_big:625002": [
+      "Geyser"
     ],
     "combo:320002": [
       "Red"
@@ -10911,13 +11794,16 @@ window.ENIGMA_DATA = {
       "Green"
     ],
     "combo:625001": [
-      "Yellow"
+      "Yellow",
+      "Monday"
     ],
     "combo:625000": [
       "Yellow",
       "Silver",
       "Cancer",
-      "Pisces"
+      "Pisces",
+      "Monday",
+      "Sunday"
     ],
     "combo:613003": [
       "Orange"
@@ -10958,7 +11844,8 @@ window.ENIGMA_DATA = {
     ],
     "combo:625003": [
       "Silver",
-      "Cancer"
+      "Cancer",
+      "Sunday"
     ],
     "combo:626003": [
       "Circle"
@@ -10979,7 +11866,8 @@ window.ENIGMA_DATA = {
       "Diamond"
     ],
     "combo:723000": [
-      "Diamond"
+      "Diamond",
+      "Tuesday"
     ],
     "combo:925002": [
       "Rectangle"
@@ -10987,13 +11875,16 @@ window.ENIGMA_DATA = {
     "combo:925000": [
       "Rectangle",
       "Capricorn",
-      "September"
+      "September",
+      "Wednesday"
     ],
     "combo:430003": [
       "Star"
     ],
     "combo:430000": [
-      "Star"
+      "Star",
+      "Gray",
+      "Grey"
     ],
     "combo:523001": [
       "Heart"
@@ -11049,9 +11940,6 @@ window.ENIGMA_DATA = {
       "Sagittarius"
     ],
     "combo:124000": [
-      "Sagittarius"
-    ],
-    "all:124003": [
       "Sagittarius"
     ],
     "combo:925003": [
@@ -11117,10 +12005,42 @@ window.ENIGMA_DATA = {
     ],
     "combo:824000": [
       "November",
-      "December"
+      "December",
+      "Saturday"
     ],
     "combo:824002": [
       "December"
+    ],
+    "combo:430002": [
+      "Gray",
+      "Grey"
+    ],
+    "combo:423001": [
+      "Teal"
+    ],
+    "combo:423000": [
+      "Teal"
+    ],
+    "combo:723001": [
+      "Tuesday"
+    ],
+    "combo:925001": [
+      "Wednesday"
+    ],
+    "combo:837001": [
+      "Thursday"
+    ],
+    "combo:837000": [
+      "Thursday"
+    ],
+    "combo:635001": [
+      "Friday"
+    ],
+    "combo:635000": [
+      "Friday"
+    ],
+    "combo:824003": [
+      "Saturday"
     ],
     "large_objects:534003": [
       "Chair",
@@ -11146,7 +12066,8 @@ window.ENIGMA_DATA = {
     "large_objects:420002": [
       "Desk",
       "Deck",
-      "Barn"
+      "Barn",
+      "Raft"
     ],
     "large_objects:420000": [
       "Desk",
@@ -11154,7 +12075,9 @@ window.ENIGMA_DATA = {
       "Sink",
       "Harp",
       "Deck",
-      "Barn"
+      "Barn",
+      "Tent",
+      "Raft"
     ],
     "large_objects:320002": [
       "Bed",
@@ -11186,7 +12109,8 @@ window.ENIGMA_DATA = {
       "Sofa",
       "Taxi",
       "Gate",
-      "Bike"
+      "Bike",
+      "Limo"
     ],
     "large_objects:423002": [
       "Door",
@@ -11194,7 +12118,8 @@ window.ENIGMA_DATA = {
       "Boat",
       "Pool",
       "Road",
-      "Pier"
+      "Pier",
+      "Jeep"
     ],
     "large_objects:423000": [
       "Door",
@@ -11202,14 +12127,16 @@ window.ENIGMA_DATA = {
       "Boat",
       "Pool",
       "Road",
-      "Pier"
+      "Pier",
+      "Jeep"
     ],
     "large_objects:625001": [
       "Window",
       "Ladder",
       "Tunnel",
       "Hangar",
-      "Harbor"
+      "Harbor",
+      "Washer"
     ],
     "large_objects:625000": [
       "Window",
@@ -11220,11 +12147,13 @@ window.ENIGMA_DATA = {
       "Hangar",
       "Harbor",
       "Camper",
-      "Pickup"
+      "Pickup",
+      "Washer"
     ],
     "large_objects:420001": [
       "Wall",
-      "Harp"
+      "Harp",
+      "Tent"
     ],
     "large_objects:534001": [
       "Floor",
@@ -11276,7 +12205,9 @@ window.ENIGMA_DATA = {
     ],
     "large_objects:626000": [
       "Castle",
-      "Temple"
+      "Temple",
+      "Jetski",
+      "Jungle"
     ],
     "large_objects:523001": [
       "House"
@@ -11304,7 +12235,8 @@ window.ENIGMA_DATA = {
       "Van"
     ],
     "large_objects:424001": [
-      "Taxi"
+      "Taxi",
+      "Limo"
     ],
     "large_objects:625003": [
       "Subway",
@@ -11367,11 +12299,15 @@ window.ENIGMA_DATA = {
       "Piano"
     ],
     "large_objects:125002": [
-      "Refrigerator"
+      "Refrigerator",
+      "Rollercoaster"
     ],
     "large_objects:125000": [
       "Refrigerator",
-      "Coffeetable"
+      "Coffeetable",
+      "Ferriswheel",
+      "Rollercoaster",
+      "Vendingmachine"
     ],
     "large_objects:636001": [
       "Fridge"
@@ -11395,14 +12331,17 @@ window.ENIGMA_DATA = {
       "Mattress",
       "Lamppost",
       "Fortress",
-      "Forklift"
+      "Forklift",
+      "Windmill"
     ],
     "large_objects:826000": [
       "Wardrobe",
       "Mattress",
       "Lamppost",
       "Fortress",
-      "Forklift"
+      "Forklift",
+      "Windmill",
+      "Golfcart"
     ],
     "large_objects:724003": [
       "Cabinet"
@@ -11411,7 +12350,8 @@ window.ENIGMA_DATA = {
       "Cabinet",
       "Jacuzzi",
       "Veranda",
-      "Minivan"
+      "Minivan",
+      "Jukebox"
     ],
     "large_objects:535003": [
       "Stove",
@@ -11564,7 +12504,8 @@ window.ENIGMA_DATA = {
       "Basement",
       "Sidewalk",
       "Monument",
-      "Monorail"
+      "Monorail",
+      "Carousel"
     ],
     "large_objects:714003": [
       "Ottoman"
@@ -11599,10 +12540,12 @@ window.ENIGMA_DATA = {
       "Mailbox"
     ],
     "large_objects:614001": [
-      "Island"
+      "Island",
+      "Arcade"
     ],
     "large_objects:614000": [
-      "Island"
+      "Island",
+      "Arcade"
     ],
     "large_objects:714001": [
       "Armoire"
@@ -11628,7 +12571,8 @@ window.ENIGMA_DATA = {
       "Soundbar",
       "Fountain",
       "Building",
-      "Sailboat"
+      "Sailboat",
+      "Foosball"
     ],
     "large_objects:835003": [
       "Credenza"
@@ -11643,7 +12587,8 @@ window.ENIGMA_DATA = {
     "large_objects:924000": [
       "Sideboard",
       "Fireplace",
-      "Warehouse"
+      "Warehouse",
+      "Firetruck"
     ],
     "large_objects:620002": [
       "Pantry"
@@ -11678,7 +12623,8 @@ window.ENIGMA_DATA = {
       "Patio"
     ],
     "large_objects:724002": [
-      "Jacuzzi"
+      "Jacuzzi",
+      "Jukebox"
     ],
     "large_objects:623001": [
       "Toilet"
@@ -11689,7 +12635,8 @@ window.ENIGMA_DATA = {
     ],
     "large_objects:924001": [
       "Fireplace",
-      "Warehouse"
+      "Warehouse",
+      "Firetruck"
     ],
     "large_objects:736003": [
       "Chimney"
@@ -11709,7 +12656,8 @@ window.ENIGMA_DATA = {
       "Cottage",
       "Factory",
       "Library",
-      "Rowboat"
+      "Rowboat",
+      "Pinball"
     ],
     "large_objects:824002": [
       "Radiator",
@@ -11775,7 +12723,8 @@ window.ENIGMA_DATA = {
     ],
     "large_objects:934000": [
       "Treadmill",
-      "Staircase"
+      "Staircase",
+      "Bleachers"
     ],
     "large_objects:424002": [
       "Gate",
@@ -11789,7 +12738,8 @@ window.ENIGMA_DATA = {
     ],
     "large_objects:725002": [
       "Balcony",
-      "Rowboat"
+      "Rowboat",
+      "Pinball"
     ],
     "large_objects:724001": [
       "Veranda",
@@ -11813,7 +12763,8 @@ window.ENIGMA_DATA = {
       "Highway"
     ],
     "large_objects:824003": [
-      "Sidewalk"
+      "Sidewalk",
+      "Carousel"
     ],
     "large_objects:835002": [
       "Driveway"
@@ -11838,7 +12789,8 @@ window.ENIGMA_DATA = {
       "Bulldozer"
     ],
     "large_objects:823001": [
-      "Fountain"
+      "Fountain",
+      "Foosball"
     ],
     "large_objects:027001": [
       "Lighthouse"
@@ -11909,6 +12861,4614 @@ window.ENIGMA_DATA = {
     ],
     "large_objects:935003": [
       "Spaceship"
+    ],
+    "large_objects:827002": [
+      "Dumpster"
+    ],
+    "large_objects:827000": [
+      "Dumpster"
+    ],
+    "large_objects:045003": [
+      "Streetlamp"
+    ],
+    "large_objects:045000": [
+      "Streetlamp"
+    ],
+    "large_objects:750001": [
+      "Hydrant"
+    ],
+    "large_objects:750000": [
+      "Hydrant"
+    ],
+    "large_objects:513001": [
+      "Arena"
+    ],
+    "large_objects:513000": [
+      "Arena"
+    ],
+    "large_objects:934002": [
+      "Bleachers"
+    ],
+    "large_objects:626002": [
+      "Jetski",
+      "Jungle"
+    ],
+    "large_objects:826002": [
+      "Golfcart"
+    ],
+    "large_objects:125001": [
+      "Ferriswheel",
+      "Vendingmachine"
+    ],
+    "large_objects:837003": [
+      "Swingset"
+    ],
+    "large_objects:837000": [
+      "Swingset"
+    ],
+    "large_objects:300002": [
+      "Gym"
+    ],
+    "large_objects:300000": [
+      "Gym"
+    ],
+    "large_objects:310001": [
+      "Atm"
+    ],
+    "large_objects:310000": [
+      "Atm"
+    ],
+    "large_objects:540002": [
+      "Dryer"
+    ],
+    "large_objects:540000": [
+      "Dryer"
+    ],
+    "all:726001": [
+      "Lighter",
+      "Matches",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Watches",
+      "Waffles",
+      "Lobster",
+      "Ketchup",
+      "Monster",
+      "Hallway",
+      "Highway",
+      "Hamster",
+      "Turtles",
+      "Ladybug"
+    ],
+    "all:726000": [
+      "Lighter",
+      "Matches",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Candles",
+      "Bottles",
+      "Pillbox",
+      "Goggles",
+      "Satchel",
+      "Watches",
+      "Pushpin",
+      "Bathtub",
+      "Sandbox",
+      "Dishrag",
+      "Pitcher",
+      "Dustpan",
+      "Waffles",
+      "Lobster",
+      "Ketchup",
+      "Pickles",
+      "Pumpkin",
+      "Monster",
+      "Cobbler",
+      "Sangria",
+      "Pilsner",
+      "Seltzer",
+      "Parsley",
+      "Parsnip",
+      "Bunkbed",
+      "Hallway",
+      "Highway",
+      "Hamster",
+      "Panther",
+      "Dolphin",
+      "Turtles",
+      "Ladybug",
+      "Bangkok"
+    ],
+    "all:420001": [
+      "Keys",
+      "Fork",
+      "Lock",
+      "Mint",
+      "Mask",
+      "Wand",
+      "Nest",
+      "Horn",
+      "Tent",
+      "Film",
+      "Harp",
+      "Mitt",
+      "Lamp",
+      "Milk",
+      "Mugs",
+      "Wall",
+      "Vest",
+      "Hats",
+      "Fish",
+      "Nuts",
+      "Tart",
+      "Lamb",
+      "Hill",
+      "Wolf",
+      "Hawk",
+      "Wasp",
+      "Moth",
+      "Worm",
+      "Tick",
+      "Moss",
+      "Fern"
+    ],
+    "all:420000": [
+      "Keys",
+      "Ring",
+      "Comb",
+      "Card",
+      "Fork",
+      "Bell",
+      "Bill",
+      "Pens",
+      "Balm",
+      "Pill",
+      "Lock",
+      "Pads",
+      "Mint",
+      "Cash",
+      "Pass",
+      "Deck",
+      "Rock",
+      "Doll",
+      "Gift",
+      "Mask",
+      "Wand",
+      "Nest",
+      "Horn",
+      "Pump",
+      "Bulb",
+      "Tent",
+      "Film",
+      "Harp",
+      "Cast",
+      "Mitt",
+      "Bowl",
+      "Sock",
+      "Belt",
+      "Ball",
+      "Lamp",
+      "Milk",
+      "Salt",
+      "Cups",
+      "Mugs",
+      "Dish",
+      "Pans",
+      "Pots",
+      "Sink",
+      "Desk",
+      "Wall",
+      "Vest",
+      "Hats",
+      "Caps",
+      "Cans",
+      "Jars",
+      "Bags",
+      "Pork",
+      "Fish",
+      "Nuts",
+      "Corn",
+      "Cord",
+      "Bolt",
+      "Ribs",
+      "Tart",
+      "Dill",
+      "Duck",
+      "Lamb",
+      "Bass",
+      "Barn",
+      "Cars",
+      "Hill",
+      "Dock",
+      "Raft",
+      "Pony",
+      "Bull",
+      "Wolf",
+      "Hawk",
+      "Dogs",
+      "Cats",
+      "Bird",
+      "Cows",
+      "Pigs",
+      "Wasp",
+      "Moth",
+      "Worm",
+      "Tick",
+      "Subs",
+      "Bark",
+      "Sand",
+      "Moss",
+      "Fern",
+      "Dirt",
+      "Pond",
+      "Pink",
+      "Gold",
+      "July"
+    ],
+    "all:320001": [
+      "Key",
+      "Mug",
+      "Fob",
+      "Wig",
+      "Fan",
+      "Net",
+      "Map",
+      "Keg",
+      "Hat",
+      "Mat",
+      "Mop",
+      "Ham",
+      "Nut",
+      "Fig",
+      "Yam",
+      "Van",
+      "Fox",
+      "Hen",
+      "Hog",
+      "May"
+    ],
+    "all:320000": [
+      "Key",
+      "Pen",
+      "Cup",
+      "Mug",
+      "Bar",
+      "Pad",
+      "Gum",
+      "Fob",
+      "Can",
+      "Gel",
+      "Wig",
+      "Fan",
+      "Bow",
+      "Net",
+      "Map",
+      "Keg",
+      "Saw",
+      "Hat",
+      "Cap",
+      "Bag",
+      "Box",
+      "Pan",
+      "Pot",
+      "Rag",
+      "Bed",
+      "Rug",
+      "Mat",
+      "Bin",
+      "Mop",
+      "Jar",
+      "Ham",
+      "Jug",
+      "Nut",
+      "Fig",
+      "Jam",
+      "Rum",
+      "Gin",
+      "Soy",
+      "Yam",
+      "Cod",
+      "Car",
+      "Van",
+      "Bus",
+      "Suv",
+      "Jet",
+      "Dog",
+      "Cat",
+      "Rat",
+      "Cow",
+      "Pig",
+      "Fox",
+      "Bat",
+      "Hen",
+      "Hog",
+      "Sub",
+      "Bud",
+      "Sun",
+      "Red",
+      "May"
+    ],
+    "all:423003": [
+      "Coin",
+      "Soap",
+      "Seat",
+      "Coat",
+      "Suit",
+      "Soup",
+      "Seal",
+      "Seed"
+    ],
+    "all:423000": [
+      "Coin",
+      "Soap",
+      "Nail",
+      "Juul",
+      "Gear",
+      "Seat",
+      "Book",
+      "Beer",
+      "Door",
+      "Coat",
+      "Suit",
+      "Boot",
+      "Beef",
+      "Soup",
+      "Pear",
+      "Peas",
+      "Pies",
+      "Hook",
+      "Ties",
+      "Beet",
+      "Guac",
+      "Leek",
+      "Veal",
+      "Roof",
+      "Boat",
+      "Pool",
+      "Road",
+      "Pier",
+      "Jeep",
+      "Goat",
+      "Deer",
+      "Lion",
+      "Bear",
+      "Seal",
+      "Toad",
+      "Bees",
+      "Boar",
+      "Leaf",
+      "Seed",
+      "Root",
+      "Rain",
+      "Moon",
+      "Reef",
+      "Teal"
+    ],
+    "all:420002": [
+      "Ring",
+      "Bell",
+      "Bill",
+      "Pens",
+      "Balm",
+      "Pill",
+      "Pads",
+      "Pass",
+      "Deck",
+      "Rock",
+      "Doll",
+      "Gift",
+      "Pump",
+      "Bulb",
+      "Bowl",
+      "Belt",
+      "Ball",
+      "Dish",
+      "Pans",
+      "Pots",
+      "Desk",
+      "Jars",
+      "Bags",
+      "Pork",
+      "Bolt",
+      "Ribs",
+      "Dill",
+      "Duck",
+      "Bass",
+      "Barn",
+      "Dock",
+      "Raft",
+      "Pony",
+      "Bull",
+      "Dogs",
+      "Bird",
+      "Pigs",
+      "Bark",
+      "Dirt",
+      "Pond",
+      "Pink",
+      "Gold",
+      "July"
+    ],
+    "all:520001": [
+      "Watch",
+      "Forks",
+      "Match",
+      "Torch",
+      "Mints",
+      "Teddy",
+      "Vinyl",
+      "Tongs",
+      "Lamps",
+      "Wings",
+      "Yacht",
+      "Lobby",
+      "Ferry",
+      "Finch",
+      "March"
+    ],
+    "all:520000": [
+      "Watch",
+      "Penny",
+      "Cards",
+      "Rings",
+      "Combs",
+      "Forks",
+      "Pills",
+      "Match",
+      "Torch",
+      "Mints",
+      "Teddy",
+      "Vinyl",
+      "Tongs",
+      "Bowls",
+      "Lamps",
+      "Bench",
+      "Pants",
+      "Socks",
+      "Curry",
+      "Candy",
+      "Bolts",
+      "Belts",
+      "Jelly",
+      "Wings",
+      "Jerky",
+      "Yacht",
+      "Porch",
+      "Lobby",
+      "Ferry",
+      "Puppy",
+      "Birds",
+      "Ducks",
+      "Bunny",
+      "Finch",
+      "Berry",
+      "March"
+    ],
+    "all:420003": [
+      "Comb",
+      "Card",
+      "Cash",
+      "Cast",
+      "Sock",
+      "Salt",
+      "Cups",
+      "Sink",
+      "Caps",
+      "Cans",
+      "Corn",
+      "Cord",
+      "Cars",
+      "Cats",
+      "Cows",
+      "Subs",
+      "Sand"
+    ],
+    "all:320002": [
+      "Pen",
+      "Bar",
+      "Pad",
+      "Gum",
+      "Gel",
+      "Bow",
+      "Bag",
+      "Box",
+      "Pan",
+      "Pot",
+      "Rag",
+      "Bed",
+      "Rug",
+      "Bin",
+      "Jar",
+      "Jug",
+      "Jam",
+      "Rum",
+      "Gin",
+      "Bus",
+      "Jet",
+      "Dog",
+      "Rat",
+      "Pig",
+      "Bat",
+      "Bud",
+      "Red"
+    ],
+    "all:625002": [
+      "Pencil",
+      "Pocket",
+      "Dollar",
+      "Postit",
+      "Button",
+      "Purses",
+      "Badges",
+      "Racket",
+      "Parcel",
+      "Ribbon",
+      "Powder",
+      "Puppet",
+      "Bucket",
+      "Pillow",
+      "Jacket",
+      "Basket",
+      "Goblet",
+      "Binder",
+      "Duffel",
+      "Butter",
+      "Pepper",
+      "Dishes",
+      "Duster",
+      "Packet",
+      "Burger",
+      "Garlic",
+      "Bowtie",
+      "Ginger",
+      "Bonbon",
+      "Barley",
+      "Rocket",
+      "Pickup",
+      "Rabbit",
+      "Donkey",
+      "Parrot",
+      "Badger",
+      "Gerbil",
+      "Budgie",
+      "Gopher",
+      "Pizzas",
+      "Berlin",
+      "Dublin",
+      "Russia",
+      "Boston",
+      "Dallas",
+      "Denver",
+      "Geyser",
+      "Pisces"
+    ],
+    "all:625000": [
+      "Pencil",
+      "Wallet",
+      "Marker",
+      "Mirror",
+      "Pocket",
+      "Locket",
+      "Nickel",
+      "Dollar",
+      "Magnet",
+      "Postit",
+      "Ticket",
+      "Cutter",
+      "Button",
+      "Zipper",
+      "Napkin",
+      "Tissue",
+      "Purses",
+      "Cables",
+      "Tablet",
+      "Badges",
+      "Lenses",
+      "Fidget",
+      "Mitten",
+      "Condom",
+      "Tampon",
+      "Tictac",
+      "CarKey",
+      "Keyfob",
+      "Racket",
+      "Helmet",
+      "Canvas",
+      "Letter",
+      "Parcel",
+      "Ribbon",
+      "Powder",
+      "Puppet",
+      "Bucket",
+      "Walker",
+      "Mallet",
+      "Folder",
+      "Laptop",
+      "Pillow",
+      "Hammer",
+      "Jacket",
+      "Basket",
+      "Goblet",
+      "Funnel",
+      "Carpet",
+      "Binder",
+      "Webcam",
+      "Hanger",
+      "Duffel",
+      "Hamper",
+      "Butter",
+      "Coffee",
+      "Pepper",
+      "Dishes",
+      "Socket",
+      "Window",
+      "Curler",
+      "Duster",
+      "Carton",
+      "Packet",
+      "Ladder",
+      "Cactus",
+      "Muffin",
+      "Turkey",
+      "Salmon",
+      "Burger",
+      "Hotdog",
+      "Garlic",
+      "Carrot",
+      "Sundae",
+      "Sandal",
+      "Bowtie",
+      "Nachos",
+      "Hummus",
+      "Turnip",
+      "Ginger",
+      "Sorbet",
+      "Toffee",
+      "Bonbon",
+      "Barley",
+      "Tempeh",
+      "Nutmeg",
+      "Mussel",
+      "Subway",
+      "Rocket",
+      "Tunnel",
+      "Hangar",
+      "Harbor",
+      "Camper",
+      "Pickup",
+      "Canyon",
+      "Washer",
+      "Kitten",
+      "Rabbit",
+      "Donkey",
+      "Monkey",
+      "Falcon",
+      "Parrot",
+      "Walrus",
+      "Horses",
+      "Wolves",
+      "Zebras",
+      "Badger",
+      "Gerbil",
+      "Budgie",
+      "Gopher",
+      "Ferret",
+      "Condor",
+      "Pizzas",
+      "Cashew",
+      "Walnut",
+      "Norway",
+      "London",
+      "Madrid",
+      "Berlin",
+      "Dublin",
+      "Moscow",
+      "Russia",
+      "Boston",
+      "Dallas",
+      "Denver",
+      "Mumbai",
+      "Valley",
+      "Geyser",
+      "Yellow",
+      "Silver",
+      "Cancer",
+      "Pisces",
+      "Monday",
+      "Sunday"
+    ],
+    "all:827001": [
+      "Matchbox"
+    ],
+    "all:827000": [
+      "Matchbox",
+      "Bobbypin",
+      "Dumpster"
+    ],
+    "all:530003": [
+      "Stamp",
+      "Chalk",
+      "Charm",
+      "Specs",
+      "Chips",
+      "Scarf",
+      "Crocs",
+      "Crown",
+      "Sword",
+      "Swing",
+      "Cross",
+      "Sling",
+      "Clock",
+      "Shirt",
+      "Shelf",
+      "Skirt",
+      "Chest",
+      "Ships",
+      "Cliff",
+      "Chimp",
+      "Sloth",
+      "Skunk",
+      "Shark",
+      "Chick",
+      "Stork",
+      "Czech",
+      "Shell",
+      "Stick",
+      "Swamp",
+      "Storm"
+    ],
+    "all:530000": [
+      "Stamp",
+      "Glass",
+      "Brush",
+      "Floss",
+      "Flask",
+      "Chalk",
+      "Charm",
+      "Drops",
+      "Specs",
+      "Chips",
+      "Scarf",
+      "Blush",
+      "Crocs",
+      "Crown",
+      "Sword",
+      "Swing",
+      "Grill",
+      "Cross",
+      "Sling",
+      "Whisk",
+      "Clock",
+      "Drill",
+      "Shirt",
+      "Brick",
+      "Shelf",
+      "Blind",
+      "Skirt",
+      "Dress",
+      "Plant",
+      "Plums",
+      "Gravy",
+      "Truck",
+      "Chest",
+      "Blimp",
+      "Ships",
+      "Cliff",
+      "Chimp",
+      "Sloth",
+      "Skunk",
+      "Shark",
+      "Frogs",
+      "Chick",
+      "Stork",
+      "Wraps",
+      "Czech",
+      "Shell",
+      "Stick",
+      "Thorn",
+      "Swamp",
+      "Storm",
+      "Black",
+      "Brown"
+    ],
+    "all:037001": [
+      "Flashlight"
+    ],
+    "all:037000": [
+      "Flashlight",
+      "Chopsticks",
+      "Blackberry",
+      "Chalkboard",
+      "Grandpiano"
+    ],
+    "all:625001": [
+      "Wallet",
+      "Marker",
+      "Mirror",
+      "Locket",
+      "Nickel",
+      "Magnet",
+      "Ticket",
+      "Zipper",
+      "Napkin",
+      "Tissue",
+      "Tablet",
+      "Lenses",
+      "Fidget",
+      "Mitten",
+      "Tampon",
+      "Tictac",
+      "Keyfob",
+      "Helmet",
+      "Letter",
+      "Walker",
+      "Mallet",
+      "Folder",
+      "Laptop",
+      "Hammer",
+      "Funnel",
+      "Webcam",
+      "Hanger",
+      "Hamper",
+      "Window",
+      "Ladder",
+      "Muffin",
+      "Turkey",
+      "Hotdog",
+      "Nachos",
+      "Hummus",
+      "Turnip",
+      "Toffee",
+      "Tempeh",
+      "Nutmeg",
+      "Mussel",
+      "Tunnel",
+      "Hangar",
+      "Harbor",
+      "Washer",
+      "Kitten",
+      "Monkey",
+      "Falcon",
+      "Walrus",
+      "Horses",
+      "Wolves",
+      "Zebras",
+      "Ferret",
+      "Walnut",
+      "Norway",
+      "London",
+      "Madrid",
+      "Moscow",
+      "Mumbai",
+      "Valley",
+      "Yellow",
+      "Monday"
+    ],
+    "all:712001": [
+      "Earring",
+      "Earbuds",
+      "Airpods",
+      "Airport",
+      "Austria"
+    ],
+    "all:712000": [
+      "Earring",
+      "Earbuds",
+      "Airpods",
+      "Oatmeal",
+      "Airport",
+      "Austria"
+    ],
+    "all:835002": [
+      "Bracelet",
+      "Placemat",
+      "Prosecco",
+      "Driveway"
+    ],
+    "all:835000": [
+      "Bracelet",
+      "Scalepan",
+      "Placemat",
+      "Prosecco",
+      "Sriracha",
+      "Credenza",
+      "Driveway",
+      "Flamingo"
+    ],
+    "all:826001": [
+      "Necklace",
+      "Lipstick",
+      "Lipgloss",
+      "Fishhook",
+      "Keychain",
+      "Lighters",
+      "Textbook",
+      "Wishbone",
+      "Mattress",
+      "Mushroom",
+      "Zucchini",
+      "Wardrobe",
+      "Lamppost",
+      "Fortress",
+      "Forklift",
+      "Windmill",
+      "Montreal"
+    ],
+    "all:826000": [
+      "Necklace",
+      "Lipstick",
+      "Lipgloss",
+      "Fishhook",
+      "Cufflink",
+      "Keychain",
+      "Penknife",
+      "Billfold",
+      "Lighters",
+      "Passport",
+      "Postcard",
+      "Joystick",
+      "Backpack",
+      "Textbook",
+      "Wishbone",
+      "Rucksack",
+      "Mattress",
+      "Bodywash",
+      "Sandwich",
+      "Mushroom",
+      "Cocktail",
+      "Zucchini",
+      "Wardrobe",
+      "Lamppost",
+      "Fortress",
+      "Forklift",
+      "Windmill",
+      "Golfcart",
+      "Dolphins",
+      "Goldfish",
+      "Pastries",
+      "Montreal"
+    ],
+    "all:836003": [
+      "Scissors",
+      "Chargers",
+      "Clippers",
+      "Stickers",
+      "Staplers",
+      "Swimsuit",
+      "Slippers",
+      "Crackers",
+      "Cherries",
+      "Snickers",
+      "Scallion",
+      "Starfish",
+      "Chipmunk",
+      "Scorpion",
+      "Scotland"
+    ],
+    "all:836000": [
+      "Scissors",
+      "Chargers",
+      "Clippers",
+      "Stickers",
+      "Staplers",
+      "Swimsuit",
+      "Slippers",
+      "Blankets",
+      "Pretzels",
+      "Crackers",
+      "Dressing",
+      "Cherries",
+      "Broccoli",
+      "Brownies",
+      "Snickers",
+      "Frosting",
+      "Scallion",
+      "Starfish",
+      "Chipmunk",
+      "Scorpion",
+      "Scotland"
+    ],
+    "all:424001": [
+      "Tape",
+      "Yo-yo",
+      "Lube",
+      "Vape",
+      "Wipe",
+      "Lego",
+      "Kite",
+      "Hose",
+      "Tire",
+      "Vase",
+      "Wine",
+      "Wire",
+      "Tuna",
+      "Taco",
+      "Mayo",
+      "Lime",
+      "Tote",
+      "Kiwi",
+      "Kale",
+      "Feta",
+      "Tofu",
+      "Taxi",
+      "Lake",
+      "Limo",
+      "Mice",
+      "Mule",
+      "Hare",
+      "Mole",
+      "Fiji",
+      "Lima"
+    ],
+    "all:424000": [
+      "Tape",
+      "Dice",
+      "Pipe",
+      "Dime",
+      "Yo-yo",
+      "Lube",
+      "Vape",
+      "Wipe",
+      "Lego",
+      "Bike",
+      "Kite",
+      "Robe",
+      "Rope",
+      "Cage",
+      "Hose",
+      "Tire",
+      "Cape",
+      "Rake",
+      "Safe",
+      "Cane",
+      "Vase",
+      "Soda",
+      "Wine",
+      "Wire",
+      "Sofa",
+      "Tuna",
+      "Rice",
+      "Taco",
+      "Mayo",
+      "Lime",
+      "Cake",
+      "Coke",
+      "Tote",
+      "Polo",
+      "Kiwi",
+      "Kale",
+      "Feta",
+      "Sake",
+      "Soju",
+      "Tofu",
+      "Sage",
+      "Taxi",
+      "Gate",
+      "Lake",
+      "Cave",
+      "Limo",
+      "Mice",
+      "Mule",
+      "Hare",
+      "Mole",
+      "Puma",
+      "Dove",
+      "Peru",
+      "Fiji",
+      "Rome",
+      "Cuba",
+      "Lima",
+      "Rica",
+      "Rose",
+      "Dune",
+      "June"
+    ],
+    "all:434002": [
+      "Glue",
+      "Brie",
+      "Blue"
+    ],
+    "all:434000": [
+      "Glue",
+      "Shoe",
+      "Chai",
+      "Brie",
+      "Tree",
+      "Flea",
+      "Blue"
+    ],
+    "all:923001": [
+      "Toothpick",
+      "Hairbrush",
+      "Hairspray",
+      "Hourglass",
+      "Teakettle",
+      "Hairdryer",
+      "Mouthwash",
+      "Meatballs",
+      "Moonshine"
+    ],
+    "all:923000": [
+      "Toothpick",
+      "Coinpurse",
+      "Deodorant",
+      "Coughdrop",
+      "Hairbrush",
+      "Hairspray",
+      "Hourglass",
+      "Teakettle",
+      "Hairdryer",
+      "Mouthwash",
+      "Meatballs",
+      "Guacamole",
+      "Moonshine",
+      "Bookshelf",
+      "Pooltable",
+      "Doughnuts"
+    ],
+    "all:524002": [
+      "Razor",
+      "Radio",
+      "Pedal",
+      "Ruler",
+      "Gavel",
+      "Paper",
+      "Duvet",
+      "Bacon",
+      "Boxes",
+      "Bagel",
+      "Donut",
+      "Ramen",
+      "Dates",
+      "Basil",
+      "Basin",
+      "Bidet",
+      "Patio",
+      "Buses",
+      "Bikes",
+      "River",
+      "Raven",
+      "Bison",
+      "Robin",
+      "Japan",
+      "Paris",
+      "Dubai",
+      "Petal"
+    ],
+    "all:524000": [
+      "Razor",
+      "Cigar",
+      "Token",
+      "Wipes",
+      "Vapes",
+      "Visor",
+      "Radio",
+      "Medal",
+      "Pedal",
+      "Kazoo",
+      "Laser",
+      "Ruler",
+      "Quran",
+      "Tarot",
+      "Gavel",
+      "Timer",
+      "Paper",
+      "Towel",
+      "Mixer",
+      "Duvet",
+      "Bacon",
+      "Sugar",
+      "Water",
+      "Novel",
+      "Boxes",
+      "Level",
+      "Bagel",
+      "Donut",
+      "Ramen",
+      "Tacos",
+      "Salad",
+      "Melon",
+      "Lemon",
+      "Limes",
+      "Cakes",
+      "Cider",
+      "Kebab",
+      "Dates",
+      "Honey",
+      "Cocoa",
+      "Lager",
+      "Tonic",
+      "Kefir",
+      "Basil",
+      "Tower",
+      "Hotel",
+      "Futon",
+      "Basin",
+      "Bidet",
+      "Patio",
+      "Foyer",
+      "Cabin",
+      "Canoe",
+      "Kayak",
+      "Sedan",
+      "Moped",
+      "Buses",
+      "Bikes",
+      "River",
+      "Camel",
+      "Tiger",
+      "Lemur",
+      "Foxes",
+      "Raven",
+      "Bison",
+      "Viper",
+      "Heron",
+      "Robin",
+      "Japan",
+      "Korea",
+      "Paris",
+      "Milan",
+      "Dubai",
+      "Vegas",
+      "Texas",
+      "Wales",
+      "Tulip",
+      "Petal",
+      "Comet"
+    ],
+    "all:823002": [
+      "Bookmark",
+      "Raincoat",
+      "Doorbell",
+      "Doorknob",
+      "Doughnut",
+      "Bookcase",
+      "Building",
+      "Raindrop"
+    ],
+    "all:823000": [
+      "Bookmark",
+      "Teaspoon",
+      "Football",
+      "Headband",
+      "Raincoat",
+      "Doorbell",
+      "Cauldron",
+      "Suitcase",
+      "Mousepad",
+      "Doorknob",
+      "Coasters",
+      "Doughnut",
+      "Sausages",
+      "Meatloaf",
+      "Couscous",
+      "Bookcase",
+      "Soundbar",
+      "Fountain",
+      "Building",
+      "Sailboat",
+      "Mountain",
+      "Foosball",
+      "Seahorse",
+      "Meatball",
+      "Seashell",
+      "Raindrop"
+    ],
+    "all:725002": [
+      "Padlock",
+      "Bandage",
+      "Perfume",
+      "Battery",
+      "Pencils",
+      "Bandaid",
+      "Balloon",
+      "Package",
+      "Bandana",
+      "Pancake",
+      "Pillows",
+      "Garbage",
+      "Biscuit",
+      "Burgers",
+      "Burrito",
+      "Popcorn",
+      "Peppers",
+      "Pudding",
+      "Jackets",
+      "Picture",
+      "Redbull",
+      "Gummies",
+      "Paprika",
+      "Balcony",
+      "Rowboat",
+      "Pinball",
+      "Raccoon",
+      "Penguin",
+      "Rabbits",
+      "Buffalo",
+      "Germany",
+      "Denmark",
+      "Belgium",
+      "Detroit"
+    ],
+    "all:725000": [
+      "Padlock",
+      "Compass",
+      "Bandage",
+      "Perfume",
+      "Lantern",
+      "Compact",
+      "Lipbalm",
+      "Battery",
+      "Keycard",
+      "Keyring",
+      "Lanyard",
+      "Pencils",
+      "Markers",
+      "Wallets",
+      "Mascara",
+      "Bandaid",
+      "Tablets",
+      "Tickets",
+      "Mittens",
+      "Tissues",
+      "Napkins",
+      "Condoms",
+      "Tampons",
+      "Tictacs",
+      "Simcard",
+      "Balloon",
+      "Package",
+      "Bandana",
+      "Console",
+      "Macbook",
+      "Costume",
+      "Hammock",
+      "Canteen",
+      "Luggage",
+      "Sundial",
+      "Tankard",
+      "Curtain",
+      "Cushion",
+      "Sandals",
+      "Pancake",
+      "Pillows",
+      "Hangers",
+      "Garbage",
+      "Muffins",
+      "Biscuit",
+      "Burgers",
+      "Hotdogs",
+      "Burrito",
+      "Popcorn",
+      "Mustard",
+      "Carrots",
+      "Lettuce",
+      "Peppers",
+      "Cupcake",
+      "Candies",
+      "Pudding",
+      "Custard",
+      "Hammers",
+      "Jackets",
+      "Picture",
+      "Cabbage",
+      "Redbull",
+      "Nuggets",
+      "Tenders",
+      "Tempura",
+      "Sashimi",
+      "Gummies",
+      "Lentils",
+      "Paprika",
+      "Sardine",
+      "Catfish",
+      "Herring",
+      "Furnace",
+      "Balcony",
+      "Terrace",
+      "Mansion",
+      "Cottage",
+      "Factory",
+      "Library",
+      "Rowboat",
+      "Volcano",
+      "Pinball",
+      "Raccoon",
+      "Penguin",
+      "Rabbits",
+      "Monkeys",
+      "Buffalo",
+      "Vulture",
+      "Mangoes",
+      "Germany",
+      "Finland",
+      "Denmark",
+      "Belgium",
+      "Holland",
+      "Hungary",
+      "New York",
+      "Detroit",
+      "Tornado"
+    ],
+    "all:737001": [
+      "Whistle",
+      "Thimble",
+      "Truffle"
+    ],
+    "all:737000": [
+      "Whistle",
+      "Thimble",
+      "Gnocchi",
+      "Truffle"
+    ],
+    "all:725003": [
+      "Compass",
+      "Compact",
+      "Condoms",
+      "Simcard",
+      "Console",
+      "Costume",
+      "Canteen",
+      "Sundial",
+      "Curtain",
+      "Cushion",
+      "Sandals",
+      "Carrots",
+      "Cupcake",
+      "Candies",
+      "Custard",
+      "Cabbage",
+      "Sashimi",
+      "Sardine",
+      "Catfish",
+      "Cottage"
+    ],
+    "all:424002": [
+      "Dice",
+      "Pipe",
+      "Dime",
+      "Bike",
+      "Robe",
+      "Rope",
+      "Rake",
+      "Rice",
+      "Polo",
+      "Gate",
+      "Puma",
+      "Dove",
+      "Peru",
+      "Rome",
+      "Rica",
+      "Rose",
+      "Dune",
+      "June"
+    ],
+    "all:613001": [
+      "Eraser",
+      "Amulet",
+      "Iguana",
+      "Alaska",
+      "Icicle"
+    ],
+    "all:613000": [
+      "Eraser",
+      "Opener",
+      "Amulet",
+      "Omelet",
+      "Orange",
+      "Onions",
+      "Olives",
+      "Iguana",
+      "Alaska",
+      "Icicle"
+    ],
+    "all:736003": [
+      "Stapler",
+      "Clipper",
+      "Stopper",
+      "Charger",
+      "Clicker",
+      "Scalpel",
+      "Sticker",
+      "Spinner",
+      "Sharpie",
+      "Skillet",
+      "Shampoo",
+      "Chicken",
+      "Slipper",
+      "Scarves",
+      "Cheddar",
+      "Crumpet",
+      "Shallot",
+      "Scallop",
+      "Chimney",
+      "Cricket",
+      "Sparrow",
+      "Scorpio"
+    ],
+    "all:736000": [
+      "Stapler",
+      "Clipper",
+      "Stopper",
+      "Charger",
+      "Clicker",
+      "Scalpel",
+      "Sticker",
+      "Trinket",
+      "Spinner",
+      "Glasses",
+      "Plaster",
+      "Sharpie",
+      "Frisbee",
+      "Trumpet",
+      "Printer",
+      "Plunger",
+      "Playpen",
+      "Growler",
+      "Blanket",
+      "Thermos",
+      "Blender",
+      "Skillet",
+      "Shampoo",
+      "Platter",
+      "Chicken",
+      "Pretzel",
+      "Brownie",
+      "Slipper",
+      "Scarves",
+      "Whiskey",
+      "Brisket",
+      "Cheddar",
+      "Crumpet",
+      "Shallot",
+      "Scallop",
+      "Tractor",
+      "Dresser",
+      "Chimney",
+      "Drumset",
+      "Trolley",
+      "Cricket",
+      "Sparrow",
+      "Thunder",
+      "Scorpio"
+    ],
+    "all:423001": [
+      "Nail",
+      "Hook",
+      "Ties",
+      "Leek",
+      "Veal",
+      "Lion",
+      "Toad",
+      "Leaf",
+      "Moon",
+      "Teal"
+    ],
+    "all:540003": [
+      "Screw",
+      "Straw"
+    ],
+    "all:540000": [
+      "Screw",
+      "Straw",
+      "Dryer"
+    ],
+    "all:534003": [
+      "Spoon",
+      "Spear",
+      "Stein",
+      "Chair",
+      "Stool",
+      "Sheet",
+      "Shoes",
+      "Steak",
+      "Chain",
+      "Cream",
+      "Stout",
+      "Sheep",
+      "Squid",
+      "Snail",
+      "Spain",
+      "Cloud"
+    ],
+    "all:534000": [
+      "Spoon",
+      "Spear",
+      "Wheel",
+      "Stein",
+      "Broom",
+      "Bread",
+      "Chair",
+      "Stool",
+      "Sheet",
+      "Floor",
+      "Shoes",
+      "Steak",
+      "Fries",
+      "Chain",
+      "Cream",
+      "Stout",
+      "Flour",
+      "Trout",
+      "Train",
+      "Trees",
+      "Sheep",
+      "Squid",
+      "Snail",
+      "Spain",
+      "Cloud",
+      "Green"
+    ],
+    "all:535001": [
+      "Knife",
+      "Flute",
+      "Frame",
+      "Hyena",
+      "Whale",
+      "Llama",
+      "White"
+    ],
+    "all:535000": [
+      "Knife",
+      "Phone",
+      "Blade",
+      "Glove",
+      "Stone",
+      "Flute",
+      "Globe",
+      "Slide",
+      "Photo",
+      "Scale",
+      "Brace",
+      "Plate",
+      "Stove",
+      "Chili",
+      "Grape",
+      "Frame",
+      "Scone",
+      "Stage",
+      "Crane",
+      "Plane",
+      "Hyena",
+      "Rhino",
+      "Whale",
+      "Snake",
+      "Llama",
+      "Chile",
+      "China",
+      "Ghana",
+      "White"
+    ],
+    "all:320003": [
+      "Cup",
+      "Can",
+      "Saw",
+      "Cap",
+      "Soy",
+      "Cod",
+      "Car",
+      "Suv",
+      "Cat",
+      "Cow",
+      "Sub",
+      "Sun"
+    ],
+    "all:530002": [
+      "Glass",
+      "Brush",
+      "Drops",
+      "Blush",
+      "Grill",
+      "Drill",
+      "Brick",
+      "Blind",
+      "Dress",
+      "Plant",
+      "Plums",
+      "Gravy",
+      "Blimp",
+      "Black",
+      "Brown"
+    ],
+    "all:535002": [
+      "Phone",
+      "Blade",
+      "Glove",
+      "Globe",
+      "Photo",
+      "Brace",
+      "Plate",
+      "Grape",
+      "Plane",
+      "Rhino",
+      "Ghana"
+    ],
+    "all:525002": [
+      "Badge",
+      "Purse",
+      "Banjo",
+      "Bible",
+      "Pasta",
+      "Pizza",
+      "Pepsi",
+      "Panda",
+      "Gecko",
+      "Delhi"
+    ],
+    "all:525000": [
+      "Badge",
+      "Cable",
+      "Purse",
+      "Banjo",
+      "Cello",
+      "Bible",
+      "Ladle",
+      "Table",
+      "Sushi",
+      "Pasta",
+      "Pizza",
+      "Mango",
+      "Latte",
+      "Pepsi",
+      "Salsa",
+      "Fanta",
+      "Mocha",
+      "Vodka",
+      "Fudge",
+      "Fence",
+      "Villa",
+      "Condo",
+      "Horse",
+      "Panda",
+      "Zebra",
+      "Hippo",
+      "Gecko",
+      "Cobra",
+      "Kenya",
+      "Tokyo",
+      "Delhi",
+      "Costa",
+      "Virgo",
+      "Libra"
+    ],
+    "all:626003": [
+      "Candle",
+      "Castle",
+      "Circle"
+    ],
+    "all:626000": [
+      "Candle",
+      "Bangle",
+      "Bottle",
+      "Marble",
+      "Pebble",
+      "Dongle",
+      "Puzzle",
+      "Poncho",
+      "Rattle",
+      "Kettle",
+      "Waffle",
+      "Handle",
+      "Matcha",
+      "Castle",
+      "Temple",
+      "Jungle",
+      "Jetski",
+      "Turtle",
+      "Tundra",
+      "Purple",
+      "Circle"
+    ],
+    "all:725001": [
+      "Lantern",
+      "Lipbalm",
+      "Keycard",
+      "Keyring",
+      "Lanyard",
+      "Markers",
+      "Wallets",
+      "Mascara",
+      "Tablets",
+      "Tickets",
+      "Mittens",
+      "Tissues",
+      "Napkins",
+      "Tampons",
+      "Tictacs",
+      "Macbook",
+      "Hammock",
+      "Luggage",
+      "Tankard",
+      "Hangers",
+      "Muffins",
+      "Hotdogs",
+      "Mustard",
+      "Lettuce",
+      "Hammers",
+      "Nuggets",
+      "Tenders",
+      "Tempura",
+      "Lentils",
+      "Herring",
+      "Furnace",
+      "Terrace",
+      "Mansion",
+      "Factory",
+      "Library",
+      "Volcano",
+      "Monkeys",
+      "Vulture",
+      "Mangoes",
+      "Finland",
+      "Holland",
+      "Hungary",
+      "New York",
+      "Tornado"
+    ],
+    "all:726003": [
+      "Candles",
+      "Satchel",
+      "Sandbox",
+      "Cobbler",
+      "Sangria",
+      "Seltzer"
+    ],
+    "all:726002": [
+      "Bottles",
+      "Pillbox",
+      "Goggles",
+      "Pushpin",
+      "Bathtub",
+      "Dishrag",
+      "Pitcher",
+      "Dustpan",
+      "Pickles",
+      "Pumpkin",
+      "Pilsner",
+      "Parsley",
+      "Parsnip",
+      "Bunkbed",
+      "Panther",
+      "Dolphin",
+      "Bangkok"
+    ],
+    "all:723001": [
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Hairtie",
+      "Mailbox",
+      "Toaster",
+      "Loafers",
+      "Noodles",
+      "Hoodies",
+      "Leopard",
+      "Meerkat",
+      "Vietnam",
+      "Houston",
+      "Feather",
+      "Tuesday"
+    ],
+    "all:723000": [
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Hairtie",
+      "Quarter",
+      "Coaster",
+      "Mailbox",
+      "Pointer",
+      "Toaster",
+      "Loafers",
+      "Doormat",
+      "Ceiling",
+      "Bouquet",
+      "Sausage",
+      "Noodles",
+      "Peanuts",
+      "Peaches",
+      "Cookies",
+      "Journal",
+      "Hoodies",
+      "Beanies",
+      "Raisins",
+      "Pierogi",
+      "Bourbon",
+      "Counter",
+      "Boulder",
+      "Leopard",
+      "Rooster",
+      "Seagull",
+      "Peacock",
+      "Meerkat",
+      "Vietnam",
+      "Seattle",
+      "Houston",
+      "Beijing",
+      "Feather",
+      "Rainbow",
+      "Diamond",
+      "Tuesday"
+    ],
+    "all:823001": [
+      "Teaspoon",
+      "Football",
+      "Headband",
+      "Mousepad",
+      "Meatloaf",
+      "Fountain",
+      "Mountain",
+      "Foosball",
+      "Meatball"
+    ],
+    "all:634002": [
+      "Brooch",
+      "Pliers",
+      "Bleach",
+      "Blouse",
+      "Greece"
+    ],
+    "all:634000": [
+      "Brooch",
+      "Pliers",
+      "Spoons",
+      "Cleats",
+      "Bleach",
+      "Shield",
+      "Blouse",
+      "Cheese",
+      "Chairs",
+      "Sheets",
+      "Squash",
+      "Stairs",
+      "Trains",
+      "Greece",
+      "Square"
+    ],
+    "all:626002": [
+      "Bangle",
+      "Bottle",
+      "Pebble",
+      "Dongle",
+      "Puzzle",
+      "Poncho",
+      "Rattle",
+      "Jungle",
+      "Jetski",
+      "Purple"
+    ],
+    "all:826003": [
+      "Cufflink",
+      "Sandwich",
+      "Cocktail"
+    ],
+    "all:623001": [
+      "Tiepin",
+      "Needle",
+      "Violin",
+      "Heater",
+      "Toilet",
+      "Loofah",
+      "Keurig",
+      "Teacup",
+      "Teapot",
+      "Hoodie",
+      "Faucet",
+      "Mousse",
+      "Houses",
+      "Weasel",
+      "Toucan",
+      "Vienna",
+      "Meadow",
+      "Taurus"
+    ],
+    "all:623000": [
+      "Tiepin",
+      "Coupon",
+      "Needle",
+      "Beanie",
+      "Violin",
+      "Router",
+      "Heater",
+      "Toilet",
+      "Loofah",
+      "Beaker",
+      "Diaper",
+      "Seesaw",
+      "Cooler",
+      "Guitar",
+      "Keurig",
+      "Saucer",
+      "Teacup",
+      "Teapot",
+      "Peeler",
+      "Hoodie",
+      "Faucet",
+      "Cookie",
+      "Paella",
+      "Mousse",
+      "Quinoa",
+      "Seitan",
+      "Houses",
+      "Beaver",
+      "Beetle",
+      "Weasel",
+      "Cougar",
+      "Toucan",
+      "Peanut",
+      "Vienna",
+      "Meadow",
+      "Taurus"
+    ],
+    "all:825002": [
+      "Barrette",
+      "Bandages",
+      "Bandaids",
+      "Pendulum",
+      "Dentures",
+      "Pancakes",
+      "Biscuits",
+      "Popsicle",
+      "Parmesan",
+      "Recliner",
+      "Penguins",
+      "Burritos",
+      "Portugal"
+    ],
+    "all:825000": [
+      "Barrette",
+      "Bandages",
+      "Bandaids",
+      "Lollipop",
+      "Contacts",
+      "Lipliner",
+      "Leggings",
+      "Nintendo",
+      "Cassette",
+      "Pendulum",
+      "Dentures",
+      "Keyboard",
+      "Pancakes",
+      "Curtains",
+      "Biscuits",
+      "Cupcakes",
+      "Cinnamon",
+      "Popsicle",
+      "Parmesan",
+      "Kombucha",
+      "Recliner",
+      "Cupboard",
+      "Corridor",
+      "Hospital",
+      "Terminal",
+      "Kangaroo",
+      "Penguins",
+      "Tortoise",
+      "Mosquito",
+      "Hedgehog",
+      "Cockatoo",
+      "Cardinal",
+      "Burritos",
+      "Portugal",
+      "February"
+    ],
+    "all:948003": [
+      "Scrunchie",
+      "Sprinkler",
+      "Sprinkles"
+    ],
+    "all:948000": [
+      "Scrunchie",
+      "Sprinkler",
+      "Sprinkles"
+    ],
+    "all:813001": [
+      "Eyedrops",
+      "Eyeliner",
+      "Icecream",
+      "Elevator",
+      "Elephant",
+      "Ice Cream",
+      "Avocados",
+      "Aquarius"
+    ],
+    "all:813000": [
+      "Eyedrops",
+      "Eyeliner",
+      "Icecream",
+      "Elevator",
+      "Elephant",
+      "Ice Cream",
+      "Avocados",
+      "Aquarius"
+    ],
+    "all:834001": [
+      "Tweezers",
+      "Trousers",
+      "Thailand",
+      "Triangle"
+    ],
+    "all:834000": [
+      "Tweezers",
+      "Steering",
+      "Trousers",
+      "Sneakers",
+      "Smoothie",
+      "Sweaters",
+      "Speakers",
+      "Squirrel",
+      "Thailand",
+      "Brooklyn",
+      "Triangle"
+    ],
+    "all:530001": [
+      "Floss",
+      "Flask",
+      "Whisk",
+      "Truck",
+      "Frogs",
+      "Wraps",
+      "Thorn"
+    ],
+    "all:624001": [
+      "Lotion",
+      "Tokens",
+      "Vacuum",
+      "Yogurt",
+      "Towels",
+      "Lemons",
+      "Tomato",
+      "Mojito",
+      "Wasabi",
+      "Vanity",
+      "Museum",
+      "Forest",
+      "Lizard",
+      "Tigers",
+      "Mexico",
+      "Hawaii",
+      "Venice",
+      "Havana",
+      "Lagoon"
+    ],
+    "all:624000": [
+      "Lotion",
+      "Tokens",
+      "Boxers",
+      "Bikini",
+      "Camera",
+      "Remote",
+      "Rosary",
+      "Carafe",
+      "Vacuum",
+      "Cereal",
+      "Yogurt",
+      "Towels",
+      "Razors",
+      "Bagels",
+      "Donuts",
+      "Banana",
+      "Lemons",
+      "Tomato",
+      "Potato",
+      "Gelato",
+      "Papaya",
+      "Celery",
+      "Radish",
+      "Mojito",
+      "Danish",
+      "Wasabi",
+      "Baking",
+      "Salami",
+      "Caviar",
+      "Garage",
+      "Bureau",
+      "Vanity",
+      "Gazebo",
+      "Palace",
+      "Museum",
+      "Cinema",
+      "Forest",
+      "Desert",
+      "Jaguar",
+      "Coyote",
+      "Baboon",
+      "Lizard",
+      "Tigers",
+      "Canary",
+      "Pigeon",
+      "Canada",
+      "Mexico",
+      "Poland",
+      "Hawaii",
+      "Venice",
+      "Havana",
+      "Bogota",
+      "Panama",
+      "Lagoon",
+      "Gemini"
+    ],
+    "all:724003": [
+      "Cologne",
+      "Samovar",
+      "Catalog",
+      "Cabinet",
+      "Coconut",
+      "Caramel",
+      "Savanna"
+    ],
+    "all:724000": [
+      "Cologne",
+      "Notepad",
+      "Receipt",
+      "License",
+      "Pajamas",
+      "Gamepad",
+      "Maracas",
+      "Jukebox",
+      "Monocle",
+      "Samovar",
+      "Catalog",
+      "Monitor",
+      "Cabinet",
+      "Bananas",
+      "Lasagna",
+      "Falafel",
+      "Coconut",
+      "Vanilla",
+      "Nutella",
+      "Doritos",
+      "Tequila",
+      "Risotto",
+      "Caramel",
+      "Macaron",
+      "Tabasco",
+      "Vinegar",
+      "Bologna",
+      "Venison",
+      "Tilapia",
+      "Halibut",
+      "Jacuzzi",
+      "Veranda",
+      "Minivan",
+      "Giraffe",
+      "Gorilla",
+      "Manatee",
+      "Piranha",
+      "Firefly",
+      "Pelican",
+      "Morocco",
+      "Nigeria",
+      "Jamaica",
+      "Bahamas",
+      "Toronto",
+      "Romania",
+      "Savanna",
+      "January"
+    ],
+    "all:613003": [
+      "Opener",
+      "Omelet",
+      "Orange",
+      "Onions",
+      "Olives"
+    ],
+    "all:928003": [
+      "Corkscrew"
+    ],
+    "all:928000": [
+      "Corkscrew"
+    ],
+    "all:716001": [
+      "Ashtray"
+    ],
+    "all:716000": [
+      "Ashtray"
+    ],
+    "all:524003": [
+      "Cigar",
+      "Quran",
+      "Sugar",
+      "Salad",
+      "Cakes",
+      "Cider",
+      "Cocoa",
+      "Cabin",
+      "Canoe",
+      "Sedan",
+      "Camel",
+      "Comet"
+    ],
+    "all:520002": [
+      "Penny",
+      "Rings",
+      "Pills",
+      "Bowls",
+      "Bench",
+      "Pants",
+      "Bolts",
+      "Belts",
+      "Jelly",
+      "Jerky",
+      "Porch",
+      "Puppy",
+      "Birds",
+      "Ducks",
+      "Bunny",
+      "Berry"
+    ],
+    "all:723003": [
+      "Quarter",
+      "Coaster",
+      "Ceiling",
+      "Sausage",
+      "Cookies",
+      "Counter",
+      "Seagull",
+      "Seattle"
+    ],
+    "all:524001": [
+      "Token",
+      "Wipes",
+      "Vapes",
+      "Visor",
+      "Medal",
+      "Kazoo",
+      "Laser",
+      "Tarot",
+      "Timer",
+      "Towel",
+      "Mixer",
+      "Water",
+      "Novel",
+      "Level",
+      "Tacos",
+      "Melon",
+      "Lemon",
+      "Limes",
+      "Kebab",
+      "Honey",
+      "Lager",
+      "Tonic",
+      "Kefir",
+      "Tower",
+      "Hotel",
+      "Futon",
+      "Foyer",
+      "Kayak",
+      "Moped",
+      "Tiger",
+      "Lemur",
+      "Foxes",
+      "Viper",
+      "Heron",
+      "Korea",
+      "Milan",
+      "Vegas",
+      "Texas",
+      "Wales",
+      "Tulip"
+    ],
+    "all:430003": [
+      "Chip",
+      "Crib",
+      "Crab",
+      "Stew",
+      "Spam",
+      "Clam",
+      "Ship",
+      "Shed",
+      "Swan",
+      "Crow",
+      "Slug",
+      "Snow",
+      "Star"
+    ],
+    "all:430000": [
+      "Chip",
+      "Drum",
+      "Xbox",
+      "Flag",
+      "Whip",
+      "Crib",
+      "Tray",
+      "Plug",
+      "Crab",
+      "Wrap",
+      "Stew",
+      "Plum",
+      "Twix",
+      "Flan",
+      "Spam",
+      "Clam",
+      "Ship",
+      "Shed",
+      "Tram",
+      "Swan",
+      "Frog",
+      "Crow",
+      "Slug",
+      "Twig",
+      "Snow",
+      "Star",
+      "Gray",
+      "Grey"
+    ],
+    "all:626001": [
+      "Marble",
+      "Kettle",
+      "Waffle",
+      "Handle",
+      "Matcha",
+      "Temple",
+      "Turtle",
+      "Tundra"
+    ],
+    "all:760003": [
+      "Crystal"
+    ],
+    "all:760000": [
+      "Crystal"
+    ],
+    "all:525003": [
+      "Cable",
+      "Cello",
+      "Sushi",
+      "Salsa",
+      "Condo",
+      "Cobra",
+      "Costa"
+    ],
+    "all:650003": [
+      "Stylus",
+      "Sydney"
+    ],
+    "all:650000": [
+      "Stylus",
+      "Python",
+      "Sydney"
+    ],
+    "all:635003": [
+      "Crayon",
+      "Chisel",
+      "Shades",
+      "Stereo",
+      "Shower",
+      "Shovel",
+      "Clover",
+      "Chives",
+      "Statue",
+      "Closet",
+      "Spider",
+      "Snakes",
+      "Sweden"
+    ],
+    "all:635000": [
+      "Crayon",
+      "Chisel",
+      "Phones",
+      "Knives",
+      "Gloves",
+      "Shades",
+      "Stereo",
+      "Shower",
+      "Shovel",
+      "Clover",
+      "Trivet",
+      "Grater",
+      "Tripod",
+      "Blazer",
+      "Plates",
+      "Drawer",
+      "Grapes",
+      "Chives",
+      "Statue",
+      "Closet",
+      "Planes",
+      "Spider",
+      "Snakes",
+      "Whales",
+      "Dragon",
+      "Brazil",
+      "Sweden",
+      "Prague",
+      "Flower",
+      "Planet",
+      "Friday"
+    ],
+    "all:724001": [
+      "Notepad",
+      "License",
+      "Maracas",
+      "Monocle",
+      "Monitor",
+      "Lasagna",
+      "Falafel",
+      "Vanilla",
+      "Nutella",
+      "Tequila",
+      "Macaron",
+      "Tabasco",
+      "Vinegar",
+      "Venison",
+      "Tilapia",
+      "Halibut",
+      "Veranda",
+      "Minivan",
+      "Manatee",
+      "Firefly",
+      "Morocco",
+      "Nigeria",
+      "Toronto"
+    ],
+    "all:724002": [
+      "Receipt",
+      "Pajamas",
+      "Gamepad",
+      "Jukebox",
+      "Bananas",
+      "Doritos",
+      "Risotto",
+      "Bologna",
+      "Jacuzzi",
+      "Giraffe",
+      "Gorilla",
+      "Piranha",
+      "Pelican",
+      "Jamaica",
+      "Bahamas",
+      "Romania",
+      "January"
+    ],
+    "all:623003": [
+      "Coupon",
+      "Seesaw",
+      "Cooler",
+      "Saucer",
+      "Cookie",
+      "Quinoa",
+      "Seitan",
+      "Cougar"
+    ],
+    "all:826002": [
+      "Penknife",
+      "Billfold",
+      "Passport",
+      "Postcard",
+      "Joystick",
+      "Backpack",
+      "Rucksack",
+      "Bodywash",
+      "Golfcart",
+      "Dolphins",
+      "Goldfish",
+      "Pastries"
+    ],
+    "all:625003": [
+      "Cutter",
+      "Cables",
+      "Condom",
+      "CarKey",
+      "Canvas",
+      "Carpet",
+      "Coffee",
+      "Socket",
+      "Curler",
+      "Carton",
+      "Cactus",
+      "Salmon",
+      "Carrot",
+      "Sundae",
+      "Sandal",
+      "Sorbet",
+      "Subway",
+      "Camper",
+      "Canyon",
+      "Condor",
+      "Cashew",
+      "Silver",
+      "Cancer",
+      "Sunday"
+    ],
+    "all:630001": [
+      "Wrench",
+      "Trophy",
+      "Floppy",
+      "Trucks"
+    ],
+    "all:630000": [
+      "Wrench",
+      "Clutch",
+      "Stamps",
+      "Trophy",
+      "Floppy",
+      "Shorts",
+      "Switch",
+      "Blinds",
+      "Shirts",
+      "Plants",
+      "Crisps",
+      "Cherry",
+      "Brandy",
+      "Church",
+      "Trucks",
+      "Sharks",
+      "Branch"
+    ],
+    "all:645001": [
+      "Thread"
+    ],
+    "all:645000": [
+      "Thread",
+      "Screen",
+      "Street",
+      "School",
+      "Stream"
+    ],
+    "all:036003": [
+      "Spectacles",
+      "Clothespin"
+    ],
+    "all:036000": [
+      "Spectacles",
+      "Thermostat",
+      "Clothespin",
+      "Protractor",
+      "Prosciutto",
+      "Trampoline"
+    ],
+    "all:523001": [
+      "Loupe",
+      "Mouse",
+      "Vault",
+      "Toast",
+      "Heels",
+      "Nails",
+      "Yeast",
+      "House",
+      "Moose",
+      "Koala",
+      "Lions",
+      "Miami",
+      "Maine",
+      "Haiti",
+      "Heart"
+    ],
+    "all:523000": [
+      "Loupe",
+      "Pouch",
+      "Coins",
+      "Mouse",
+      "Piano",
+      "Vault",
+      "Quilt",
+      "Boots",
+      "Toast",
+      "Juice",
+      "Books",
+      "Couch",
+      "Jeans",
+      "Heels",
+      "Nails",
+      "Sauce",
+      "Peach",
+      "Pears",
+      "Beans",
+      "Diary",
+      "Coats",
+      "Queso",
+      "Yeast",
+      "House",
+      "Coach",
+      "Boats",
+      "Beach",
+      "Piers",
+      "Moose",
+      "Koala",
+      "Goose",
+      "Goats",
+      "Lions",
+      "Bears",
+      "Geese",
+      "Seals",
+      "Cairo",
+      "Miami",
+      "Maine",
+      "Seoul",
+      "Haiti",
+      "Daisy",
+      "Heart"
+    ],
+    "all:037003": [
+      "Chopsticks",
+      "Chalkboard"
+    ],
+    "all:126001": [
+      "Handkerchief",
+      "Lighterfluid",
+      "Handsanitizer",
+      "Highlighter"
+    ],
+    "all:126000": [
+      "Handkerchief",
+      "Lighterfluid",
+      "Handsanitizer",
+      "Highlighter",
+      "Bottleopener",
+      "Candlestick",
+      "Candleholder",
+      "Rattlesnake"
+    ],
+    "all:523002": [
+      "Pouch",
+      "Piano",
+      "Boots",
+      "Juice",
+      "Books",
+      "Jeans",
+      "Peach",
+      "Pears",
+      "Beans",
+      "Diary",
+      "Boats",
+      "Beach",
+      "Piers",
+      "Goose",
+      "Goats",
+      "Bears",
+      "Geese",
+      "Daisy"
+    ],
+    "all:924001": [
+      "Moneyclip",
+      "Notebooks",
+      "Telescope",
+      "Fireworks",
+      "Megaphone",
+      "Fireplace",
+      "Warehouse",
+      "Waterfall",
+      "Firetruck",
+      "Venezuela"
+    ],
+    "all:924000": [
+      "Moneyclip",
+      "Powerbank",
+      "Sanitizer",
+      "Notebooks",
+      "Paperclip",
+      "Pokerchip",
+      "Cigarette",
+      "Debitcard",
+      "Canopener",
+      "Detergent",
+      "Satellite",
+      "Telescope",
+      "Fireworks",
+      "Megaphone",
+      "Barometer",
+      "Pineapple",
+      "Cucumbers",
+      "Sideboard",
+      "Fireplace",
+      "Warehouse",
+      "Waterfall",
+      "Firetruck",
+      "Venezuela"
+    ],
+    "all:630003": [
+      "Clutch",
+      "Stamps",
+      "Shorts",
+      "Switch",
+      "Shirts",
+      "Crisps",
+      "Cherry",
+      "Church",
+      "Sharks"
+    ],
+    "all:814001": [
+      "Envelope",
+      "Ethiopia"
+    ],
+    "all:814000": [
+      "Envelope",
+      "Ethiopia"
+    ],
+    "all:736001": [
+      "Trinket",
+      "Frisbee",
+      "Trumpet",
+      "Thermos",
+      "Whiskey",
+      "Tractor",
+      "Trolley",
+      "Thunder"
+    ],
+    "all:824001": [
+      "Figurine",
+      "Notebook",
+      "Vitamins",
+      "Lozenges",
+      "Notecard",
+      "Magazine",
+      "Tomatoes",
+      "Lemonade",
+      "Tiramisu",
+      "Teriyaki",
+      "Licorice",
+      "Habanero",
+      "Loveseat",
+      "Monument",
+      "Monorail",
+      "Macaroni",
+      "Malaysia",
+      "November"
+    ],
+    "all:824000": [
+      "Figurine",
+      "Receipts",
+      "Notebook",
+      "Vitamins",
+      "Lozenges",
+      "Notecard",
+      "Baseball",
+      "Pacifier",
+      "Polaroid",
+      "Retainer",
+      "Decanter",
+      "Colander",
+      "Calendar",
+      "Magazine",
+      "Radiator",
+      "Tomatoes",
+      "Potatoes",
+      "Cucumber",
+      "Lemonade",
+      "Gatorade",
+      "Tiramisu",
+      "Bibimbap",
+      "Teriyaki",
+      "Licorice",
+      "Cilantro",
+      "Rosemary",
+      "Jalapeno",
+      "Habanero",
+      "Calamari",
+      "Loveseat",
+      "Basement",
+      "Sidewalk",
+      "Monument",
+      "Monorail",
+      "Carousel",
+      "Giraffes",
+      "Dinosaur",
+      "Macaroni",
+      "Colombia",
+      "Malaysia",
+      "Pinecone",
+      "November",
+      "December",
+      "Saturday"
+    ],
+    "all:410001": [
+      "Eggs",
+      "Ants"
+    ],
+    "all:410000": [
+      "Eggs",
+      "Owls",
+      "Ants"
+    ],
+    "all:310001": [
+      "Egg",
+      "Atm",
+      "Elk",
+      "Ant"
+    ],
+    "all:310000": [
+      "Egg",
+      "Usb",
+      "Atm",
+      "Elk",
+      "Owl",
+      "Ant"
+    ],
+    "all:523003": [
+      "Coins",
+      "Quilt",
+      "Couch",
+      "Sauce",
+      "Coats",
+      "Queso",
+      "Coach",
+      "Seals",
+      "Cairo",
+      "Seoul"
+    ],
+    "all:520003": [
+      "Cards",
+      "Combs",
+      "Socks",
+      "Curry",
+      "Candy"
+    ],
+    "all:713001": [
+      "Erasers",
+      "Adapter",
+      "Avocado",
+      "Edamame",
+      "Ireland",
+      "Iceland",
+      "Iceberg"
+    ],
+    "all:713000": [
+      "Erasers",
+      "Adapter",
+      "Ukulele",
+      "Oranges",
+      "Avocado",
+      "Edamame",
+      "Oregano",
+      "Unicorn",
+      "Ireland",
+      "Iceland",
+      "Iceberg"
+    ],
+    "all:923003": [
+      "Coinpurse",
+      "Coughdrop"
+    ],
+    "all:937003": [
+      "Chapstick",
+      "Snowglobe",
+      "Chopstick",
+      "Shotglass",
+      "Stepstool",
+      "Chickpeas",
+      "Clownfish",
+      "Snowflake"
+    ],
+    "all:937000": [
+      "Chapstick",
+      "Thumbtack",
+      "Snowglobe",
+      "Flipflops",
+      "Flashbulb",
+      "Chopstick",
+      "Shotglass",
+      "Stepstool",
+      "Whipcream",
+      "Chickpeas",
+      "Clownfish",
+      "Snowflake"
+    ],
+    "all:912001": [
+      "Earphones",
+      "Australia"
+    ],
+    "all:912000": [
+      "Earphones",
+      "Australia"
+    ],
+    "all:023001": [
+      "Headphones",
+      "Toothpicks",
+      "Foundation",
+      "Toothbrush",
+      "Toothpaste",
+      "Nailpolish",
+      "Hearingaid",
+      "Woodpecker"
+    ],
+    "all:023000": [
+      "Headphones",
+      "Toothpicks",
+      "Foundation",
+      "Toothbrush",
+      "Toothpaste",
+      "Paintbrush",
+      "Nailpolish",
+      "Hearingaid",
+      "Quesadilla",
+      "Woodpecker"
+    ],
+    "all:635002": [
+      "Phones",
+      "Gloves",
+      "Grater",
+      "Blazer",
+      "Plates",
+      "Drawer",
+      "Grapes",
+      "Planes",
+      "Dragon",
+      "Brazil",
+      "Prague",
+      "Planet"
+    ],
+    "all:925002": [
+      "Batteries",
+      "Potholder",
+      "Dispenser",
+      "Boxcutter",
+      "Pepperoni",
+      "Butterfly",
+      "Barcelona",
+      "Rectangle"
+    ],
+    "all:925000": [
+      "Batteries",
+      "Magnifier",
+      "Concealer",
+      "Multitool",
+      "Harmonica",
+      "Horseshoe",
+      "Metronome",
+      "Potholder",
+      "Dispenser",
+      "Comforter",
+      "Microwave",
+      "Boxcutter",
+      "Tangerine",
+      "Margarita",
+      "Pepperoni",
+      "Submarine",
+      "Cathedral",
+      "Butterfly",
+      "Singapore",
+      "Barcelona",
+      "Hurricane",
+      "Rectangle",
+      "Capricorn",
+      "September",
+      "Wednesday"
+    ],
+    "all:924002": [
+      "Powerbank",
+      "Paperclip",
+      "Pokerchip",
+      "Debitcard",
+      "Detergent",
+      "Barometer",
+      "Pineapple"
+    ],
+    "all:038001": [
+      "Flashdrive"
+    ],
+    "all:038000": [
+      "Flashdrive",
+      "StickyNote",
+      "Smartphone"
+    ],
+    "all:125002": [
+      "Pocketknife",
+      "Rubberbands",
+      "Dentalfloss",
+      "Refrigerator",
+      "Rollercoaster"
+    ],
+    "all:125000": [
+      "Pocketknife",
+      "Rubberbands",
+      "Dentalfloss",
+      "Conditioner",
+      "Cuttingboard",
+      "Coffeemaker",
+      "Cottoncandy",
+      "Refrigerator",
+      "Coffeetable",
+      "Ferriswheel",
+      "Rollercoaster",
+      "Vendingmachine",
+      "Hummingbird"
+    ],
+    "all:635001": [
+      "Knives",
+      "Trivet",
+      "Tripod",
+      "Whales",
+      "Flower",
+      "Friday"
+    ],
+    "all:634003": [
+      "Spoons",
+      "Cleats",
+      "Shield",
+      "Cheese",
+      "Chairs",
+      "Sheets",
+      "Squash",
+      "Stairs",
+      "Square"
+    ],
+    "all:640003": [
+      "Straws",
+      "Sdcard",
+      "Screws",
+      "Shrimp"
+    ],
+    "all:640000": [
+      "Straws",
+      "Sdcard",
+      "T-shirt",
+      "Screws",
+      "Shrimp",
+      "Tshirt"
+    ],
+    "all:123001": [
+      "Nailclipper"
+    ],
+    "all:123000": [
+      "Nailclipper",
+      "Peanutbutter",
+      "Cauliflower",
+      "South Africa"
+    ],
+    "all:714001": [
+      "Inhaler",
+      "Aspirin",
+      "Antenna",
+      "Incense",
+      "Almonds",
+      "Apricot",
+      "Armoire",
+      "Atlanta"
+    ],
+    "all:714000": [
+      "Inhaler",
+      "Aspirin",
+      "Antenna",
+      "Incense",
+      "Almonds",
+      "Apricot",
+      "Ottoman",
+      "Armoire",
+      "Octopus",
+      "Atlanta",
+      "Orlando",
+      "Ukraine",
+      "October"
+    ],
+    "all:924003": [
+      "Sanitizer",
+      "Cigarette",
+      "Canopener",
+      "Satellite",
+      "Cucumbers",
+      "Sideboard"
+    ],
+    "all:824002": [
+      "Receipts",
+      "Baseball",
+      "Pacifier",
+      "Polaroid",
+      "Retainer",
+      "Decanter",
+      "Radiator",
+      "Potatoes",
+      "Gatorade",
+      "Bibimbap",
+      "Rosemary",
+      "Jalapeno",
+      "Basement",
+      "Giraffes",
+      "Dinosaur",
+      "Pinecone",
+      "December"
+    ],
+    "all:926002": [
+      "Passports",
+      "Dashboard",
+      "Backpacks",
+      "Raspberry",
+      "Dumplings",
+      "Bubblegum",
+      "Billboard",
+      "Bulldozer"
+    ],
+    "all:926000": [
+      "Passports",
+      "Cartridge",
+      "Cufflinks",
+      "Handlebar",
+      "Dashboard",
+      "Lawnmower",
+      "Handcuffs",
+      "Newspaper",
+      "Backpacks",
+      "Raspberry",
+      "Mushrooms",
+      "Dumplings",
+      "Bubblegum",
+      "Turntable",
+      "Billboard",
+      "Townhouse",
+      "Bulldozer",
+      "Nashville",
+      "Sunflower"
+    ],
+    "all:024002": [
+      "Paperclips",
+      "PaperTowel",
+      "Binoculars"
+    ],
+    "all:024000": [
+      "Paperclips",
+      "Cigarettes",
+      "Watermelon",
+      "PaperTowel",
+      "Television",
+      "Binoculars",
+      "Marionette",
+      "Helicopter",
+      "Motorcycle",
+      "Locomotive",
+      "Mayonnaise",
+      "California"
+    ],
+    "all:025002": [
+      "Rubberband",
+      "Binderclip",
+      "Basketball",
+      "Dictionary",
+      "Rollingpin"
+    ],
+    "all:025000": [
+      "Rubberband",
+      "Binderclip",
+      "Calculator",
+      "Microphone",
+      "Windowsill",
+      "Cantaloupe",
+      "Cappuccino",
+      "Tablespoon",
+      "Basketball",
+      "Soccerball",
+      "Microscope",
+      "Tambourine",
+      "Dictionary",
+      "Tablecloth",
+      "Rollingpin",
+      "Mozzarella",
+      "Funnelcake",
+      "New Zealand"
+    ],
+    "all:026003": [
+      "Sunglasses",
+      "Controller",
+      "Sandwiches"
+    ],
+    "all:026000": [
+      "Sunglasses",
+      "Controller",
+      "Dishwasher",
+      "Sandwiches"
+    ],
+    "all:736002": [
+      "Glasses",
+      "Plaster",
+      "Printer",
+      "Plunger",
+      "Playpen",
+      "Growler",
+      "Blanket",
+      "Blender",
+      "Platter",
+      "Pretzel",
+      "Brownie",
+      "Brisket",
+      "Dresser",
+      "Drumset"
+    ],
+    "all:013001": [
+      "Eyeglasses"
+    ],
+    "all:013000": [
+      "Eyeglasses",
+      "University"
+    ],
+    "all:323002": [
+      "Die",
+      "Pie",
+      "Roe",
+      "Bee"
+    ],
+    "all:323000": [
+      "Die",
+      "Hoe",
+      "Tie",
+      "Tea",
+      "Pie",
+      "Roe",
+      "Sea",
+      "Bee",
+      "Leo"
+    ],
+    "all:925001": [
+      "Magnifier",
+      "Multitool",
+      "Harmonica",
+      "Horseshoe",
+      "Metronome",
+      "Microwave",
+      "Tangerine",
+      "Margarita",
+      "Hurricane",
+      "Wednesday"
+    ],
+    "all:623002": [
+      "Beanie",
+      "Router",
+      "Beaker",
+      "Diaper",
+      "Guitar",
+      "Peeler",
+      "Paella",
+      "Beaver",
+      "Beetle",
+      "Peanut"
+    ],
+    "all:636003": [
+      "Sponge",
+      "Churro"
+    ],
+    "all:636000": [
+      "Sponge",
+      "Fridge",
+      "Churro",
+      "Trifle",
+      "Bridge",
+      "France"
+    ],
+    "all:423002": [
+      "Juul",
+      "Gear",
+      "Book",
+      "Beer",
+      "Door",
+      "Boot",
+      "Beef",
+      "Pear",
+      "Peas",
+      "Pies",
+      "Beet",
+      "Guac",
+      "Roof",
+      "Boat",
+      "Pool",
+      "Road",
+      "Pier",
+      "Jeep",
+      "Goat",
+      "Deer",
+      "Bear",
+      "Bees",
+      "Boar",
+      "Root",
+      "Rain",
+      "Reef"
+    ],
+    "all:926003": [
+      "Cartridge",
+      "Cufflinks",
+      "Sunflower"
+    ],
+    "all:024003": [
+      "Cigarettes",
+      "California"
+    ],
+    "all:925003": [
+      "Concealer",
+      "Comforter",
+      "Submarine",
+      "Cathedral",
+      "Singapore",
+      "Capricorn",
+      "September"
+    ],
+    "all:923002": [
+      "Deodorant",
+      "Guacamole",
+      "Bookshelf",
+      "Pooltable",
+      "Doughnuts"
+    ],
+    "all:927003": [
+      "Sunscreen",
+      "Cornbread",
+      "Candycane"
+    ],
+    "all:927000": [
+      "Sunscreen",
+      "Highchair",
+      "Piggybank",
+      "Dishcloth",
+      "Lampshade",
+      "Lightbulb",
+      "Bedspread",
+      "Cornbread",
+      "Milkshake",
+      "Candycane",
+      "Jellyfish",
+      "Lightning"
+    ],
+    "all:812003": [
+      "Ointment"
+    ],
+    "all:812000": [
+      "Ointment",
+      "Earphone",
+      "Earrings",
+      "Earmuffs",
+      "Airplane",
+      "Airliner"
+    ],
+    "all:514001": [
+      "Advil",
+      "Arrow",
+      "Album",
+      "Atlas",
+      "Altar",
+      "Apron",
+      "Attic",
+      "India",
+      "April"
+    ],
+    "all:514000": [
+      "Advil",
+      "Arrow",
+      "Album",
+      "Atlas",
+      "Altar",
+      "Apron",
+      "Organ",
+      "Attic",
+      "Otter",
+      "India",
+      "April"
+    ],
+    "all:746001": [
+      "Tylenol"
+    ],
+    "all:746000": [
+      "Tylenol",
+      "Strudel",
+      "Pyramid"
+    ],
+    "all:913001": [
+      "Ibuprofen",
+      "Apartment",
+      "Elephants"
+    ],
+    "all:913000": [
+      "Ibuprofen",
+      "Apartment",
+      "Elephants",
+      "Orangutan"
+    ],
+    "all:825001": [
+      "Lollipop",
+      "Lipliner",
+      "Leggings",
+      "Nintendo",
+      "Keyboard",
+      "Kombucha",
+      "Hospital",
+      "Terminal",
+      "Kangaroo",
+      "Tortoise",
+      "Mosquito",
+      "Hedgehog",
+      "February"
+    ],
+    "all:612001": [
+      "Airpod",
+      "Airbag",
+      "Austin",
+      "August"
+    ],
+    "all:612000": [
+      "Airpod",
+      "Outlet",
+      "Airbag",
+      "Austin",
+      "August"
+    ],
+    "all:812001": [
+      "Earphone",
+      "Earrings",
+      "Earmuffs",
+      "Airplane",
+      "Airliner"
+    ],
+    "all:310002": [
+      "Usb"
+    ],
+    "all:035003": [
+      "Creditcard",
+      "Skateboard",
+      "Clementine",
+      "Chewinggum"
+    ],
+    "all:035000": [
+      "Creditcard",
+      "Skateboard",
+      "Whiteboard",
+      "Grapefruit",
+      "Clementine",
+      "Chewinggum",
+      "Phonebooth"
+    ],
+    "all:210001": [
+      "Id"
+    ],
+    "all:210000": [
+      "Id",
+      "Ox",
+      "UK"
+    ],
+    "all:825003": [
+      "Contacts",
+      "Cassette",
+      "Curtains",
+      "Cupcakes",
+      "Cinnamon",
+      "Cupboard",
+      "Corridor",
+      "Cockatoo",
+      "Cardinal"
+    ],
+    "all:827002": [
+      "Bobbypin",
+      "Dumpster"
+    ],
+    "all:136003": [
+      "Swissarmyknife",
+      "Stethoscope",
+      "Switzerland"
+    ],
+    "all:136000": [
+      "Swissarmyknife",
+      "Thermometer",
+      "Stethoscope",
+      "Frappuccino",
+      "Switzerland"
+    ],
+    "all:934002": [
+      "Gluestick",
+      "Briefcase",
+      "Blueberry",
+      "Bleachers"
+    ],
+    "all:934000": [
+      "Gluestick",
+      "Briefcase",
+      "Croissant",
+      "Blueberry",
+      "Treadmill",
+      "Staircase",
+      "Bleachers"
+    ],
+    "all:038003": [
+      "StickyNote",
+      "Smartphone"
+    ],
+    "all:126002": [
+      "Bottleopener",
+      "Rattlesnake"
+    ],
+    "all:535003": [
+      "Stone",
+      "Slide",
+      "Scale",
+      "Stove",
+      "Chili",
+      "Scone",
+      "Stage",
+      "Crane",
+      "Snake",
+      "Chile",
+      "China"
+    ],
+    "all:734003": [
+      "Scooter",
+      "Speaker",
+      "Sweater",
+      "Sneaker",
+      "Cheetos",
+      "Cheetah",
+      "Croatia"
+    ],
+    "all:734000": [
+      "Scooter",
+      "Speaker",
+      "Sweater",
+      "Freezer",
+      "Sneaker",
+      "Cheetos",
+      "Theater",
+      "Trailer",
+      "Cheetah",
+      "Bluejay",
+      "Croatia",
+      "Phoenix",
+      "Prairie"
+    ],
+    "all:430002": [
+      "Drum",
+      "Plug",
+      "Plum",
+      "Gray",
+      "Grey"
+    ],
+    "all:713002": [
+      "Ukulele",
+      "Unicorn"
+    ],
+    "all:735003": [
+      "Crayons",
+      "Chalice",
+      "Spatula",
+      "Spinach",
+      "Stadium",
+      "Station",
+      "Spiders",
+      "Chicago"
+    ],
+    "all:735000": [
+      "Crayons",
+      "Chalice",
+      "Spatula",
+      "Flowers",
+      "Spinach",
+      "Granola",
+      "Praline",
+      "Stadium",
+      "Station",
+      "Spiders",
+      "Chicago",
+      "Florida",
+      "Glacier"
+    ],
+    "all:512001": [
+      "Easel",
+      "Eagle"
+    ],
+    "all:512000": [
+      "Easel",
+      "Ouija",
+      "Eagle",
+      "Oasis"
+    ],
+    "all:936003": [
+      "Clipboard",
+      "Sharpener",
+      "Stopwatch",
+      "Spaghetti",
+      "Cranberry",
+      "Starbucks",
+      "Champagne"
+    ],
+    "all:936000": [
+      "Clipboard",
+      "Sharpener",
+      "Stopwatch",
+      "Spaghetti",
+      "Cranberry",
+      "Starbucks",
+      "Champagne"
+    ],
+    "all:937001": [
+      "Thumbtack",
+      "Flipflops",
+      "Flashbulb",
+      "Whipcream"
+    ],
+    "all:620001": [
+      "Tights"
+    ],
+    "all:620000": [
+      "Tights",
+      "Pastry",
+      "Pantry"
+    ],
+    "all:914002": [
+      "Underwear"
+    ],
+    "all:914000": [
+      "Underwear",
+      "Extension",
+      "Asparagus",
+      "Artichoke",
+      "Ambulance",
+      "Escalator",
+      "Alligator",
+      "Argentina"
+    ],
+    "all:624002": [
+      "Boxers",
+      "Bikini",
+      "Remote",
+      "Rosary",
+      "Razors",
+      "Bagels",
+      "Donuts",
+      "Banana",
+      "Potato",
+      "Gelato",
+      "Papaya",
+      "Radish",
+      "Danish",
+      "Baking",
+      "Garage",
+      "Bureau",
+      "Gazebo",
+      "Palace",
+      "Desert",
+      "Jaguar",
+      "Baboon",
+      "Pigeon",
+      "Poland",
+      "Bogota",
+      "Panama",
+      "Gemini"
+    ],
+    "all:430001": [
+      "Xbox",
+      "Flag",
+      "Whip",
+      "Tray",
+      "Wrap",
+      "Twix",
+      "Flan",
+      "Tram",
+      "Frog",
+      "Twig"
+    ],
+    "all:413001": [
+      "Ipad"
+    ],
+    "all:413000": [
+      "Ipad",
+      "Oven",
+      "Oreo",
+      "Ohio",
+      "Oval"
+    ],
+    "all:614001": [
+      "Iphone",
+      "Eclair",
+      "Island",
+      "Arcade",
+      "Alpaca",
+      "Almond",
+      "Athens",
+      "Israel"
+    ],
+    "all:614000": [
+      "Iphone",
+      "Eclair",
+      "Island",
+      "Arcade",
+      "Alpaca",
+      "Almond",
+      "Athens",
+      "Israel"
+    ],
+    "all:612003": [
+      "Outlet"
+    ],
+    "all:313001": [
+      "Axe",
+      "Ale",
+      "Emu"
+    ],
+    "all:313000": [
+      "Axe",
+      "Ale",
+      "Emu",
+      "USA"
+    ],
+    "all:615001": [
+      "Anchor",
+      "Apples",
+      "Eggnog"
+    ],
+    "all:615000": [
+      "Anchor",
+      "Apples",
+      "Eggnog",
+      "Oyster"
+    ],
+    "all:424003": [
+      "Cage",
+      "Cape",
+      "Safe",
+      "Cane",
+      "Soda",
+      "Sofa",
+      "Cake",
+      "Coke",
+      "Sake",
+      "Soju",
+      "Sage",
+      "Cave",
+      "Cuba"
+    ],
+    "all:534001": [
+      "Wheel",
+      "Floor",
+      "Fries",
+      "Flour",
+      "Trout",
+      "Train",
+      "Trees"
+    ],
+    "all:926001": [
+      "Handlebar",
+      "Lawnmower",
+      "Handcuffs",
+      "Newspaper",
+      "Mushrooms",
+      "Turntable",
+      "Townhouse",
+      "Nashville"
+    ],
+    "all:834003": [
+      "Steering",
+      "Sneakers",
+      "Smoothie",
+      "Sweaters",
+      "Speakers",
+      "Squirrel"
+    ],
+    "all:837003": [
+      "Sparkler",
+      "Crutches",
+      "Skittles",
+      "Swingset",
+      "Stingray",
+      "Shanghai"
+    ],
+    "all:837000": [
+      "Sparkler",
+      "Crutches",
+      "Trashcan",
+      "Wrenches",
+      "Skittles",
+      "Pringles",
+      "Swingset",
+      "Stingray",
+      "Shanghai",
+      "Thursday"
+    ],
+    "all:823003": [
+      "Cauldron",
+      "Suitcase",
+      "Coasters",
+      "Sausages",
+      "Couscous",
+      "Soundbar",
+      "Sailboat",
+      "Seahorse",
+      "Seashell"
+    ],
+    "all:847003": [
+      "Stroller"
+    ],
+    "all:847000": [
+      "Stroller"
+    ],
+    "all:927001": [
+      "Highchair",
+      "Lampshade",
+      "Lightbulb",
+      "Milkshake",
+      "Lightning"
+    ],
+    "all:323001": [
+      "Hoe",
+      "Tie",
+      "Tea",
+      "Leo"
+    ],
+    "all:624003": [
+      "Camera",
+      "Carafe",
+      "Cereal",
+      "Celery",
+      "Salami",
+      "Caviar",
+      "Cinema",
+      "Coyote",
+      "Canary",
+      "Canada"
+    ],
+    "all:947003": [
+      "Scrapbook"
+    ],
+    "all:947000": [
+      "Scrapbook",
+      "Xylophone"
+    ],
+    "all:947001": [
+      "Xylophone"
+    ],
+    "all:200003": [
+      "Cd"
+    ],
+    "all:200000": [
+      "Cd",
+      "Tv"
+    ],
+    "all:300002": [
+      "Dvd",
+      "Gym"
+    ],
+    "all:300000": [
+      "Dvd",
+      "Gym",
+      "Fly"
+    ],
+    "all:723002": [
+      "Pointer",
+      "Doormat",
+      "Bouquet",
+      "Peanuts",
+      "Peaches",
+      "Journal",
+      "Beanies",
+      "Raisins",
+      "Pierogi",
+      "Bourbon",
+      "Boulder",
+      "Rooster",
+      "Peacock",
+      "Beijing",
+      "Rainbow",
+      "Diamond"
+    ],
+    "all:935002": [
+      "Projector",
+      "Dragonfly"
+    ],
+    "all:935000": [
+      "Projector",
+      "Flowerpot",
+      "Chocolate",
+      "Showergel",
+      "Spaceship",
+      "Chameleon",
+      "Crocodile",
+      "Dragonfly"
+    ],
+    "all:645003": [
+      "Screen",
+      "Street",
+      "School",
+      "Stream"
+    ],
+    "all:512003": [
+      "Ouija",
+      "Oasis"
+    ],
+    "all:927002": [
+      "Piggybank",
+      "Dishcloth",
+      "Bedspread",
+      "Jellyfish"
+    ],
+    "all:835003": [
+      "Scalepan",
+      "Sriracha",
+      "Credenza"
+    ],
+    "all:747003": [
+      "Syringe"
+    ],
+    "all:747000": [
+      "Syringe"
+    ],
+    "all:525001": [
+      "Ladle",
+      "Table",
+      "Mango",
+      "Latte",
+      "Fanta",
+      "Mocha",
+      "Vodka",
+      "Fudge",
+      "Fence",
+      "Villa",
+      "Horse",
+      "Zebra",
+      "Hippo",
+      "Kenya",
+      "Tokyo",
+      "Virgo",
+      "Libra"
+    ],
+    "all:413003": [
+      "Oven",
+      "Oreo",
+      "Ohio",
+      "Oval"
+    ],
+    "all:148003": [
+      "Screwdriver",
+      "Screwdrivers"
+    ],
+    "all:148000": [
+      "Screwdriver",
+      "Screwdrivers"
+    ],
+    "all:434003": [
+      "Shoe",
+      "Chai"
+    ],
+    "all:815002": [
+      "Umbrella"
+    ],
+    "all:815000": [
+      "Umbrella",
+      "Espresso"
+    ],
+    "all:534002": [
+      "Broom",
+      "Bread",
+      "Green"
+    ],
+    "all:824003": [
+      "Colander",
+      "Calendar",
+      "Cucumber",
+      "Cilantro",
+      "Calamari",
+      "Sidewalk",
+      "Carousel",
+      "Colombia",
+      "Saturday"
+    ],
+    "all:125003": [
+      "Conditioner",
+      "Cuttingboard",
+      "Coffeemaker",
+      "Cottoncandy",
+      "Coffeetable"
+    ],
+    "all:126003": [
+      "Candlestick",
+      "Candleholder"
+    ],
+    "all:025003": [
+      "Calculator",
+      "Cantaloupe",
+      "Cappuccino",
+      "Soccerball"
+    ],
+    "all:025001": [
+      "Microphone",
+      "Windowsill",
+      "Tablespoon",
+      "Microscope",
+      "Tambourine",
+      "Tablecloth",
+      "Mozzarella",
+      "Funnelcake",
+      "New Zealand"
+    ],
+    "all:036001": [
+      "Thermostat",
+      "Trampoline"
+    ],
+    "all:837001": [
+      "Trashcan",
+      "Wrenches",
+      "Thursday"
+    ],
+    "all:712003": [
+      "Oatmeal"
+    ],
+    "all:636001": [
+      "Fridge",
+      "Trifle",
+      "France"
+    ],
+    "all:734001": [
+      "Freezer",
+      "Theater",
+      "Trailer"
+    ],
+    "all:026002": [
+      "Dishwasher"
+    ],
+    "all:513001": [
+      "Alarm",
+      "Arena",
+      "Italy",
+      "Acorn",
+      "Aries"
+    ],
+    "all:513000": [
+      "Alarm",
+      "Onion",
+      "Arena",
+      "Ocean",
+      "Italy",
+      "Acorn",
+      "Aries"
+    ],
+    "all:914001": [
+      "Extension",
+      "Asparagus",
+      "Artichoke",
+      "Ambulance",
+      "Escalator",
+      "Alligator",
+      "Argentina"
+    ],
+    "all:836002": [
+      "Blankets",
+      "Pretzels",
+      "Dressing",
+      "Broccoli",
+      "Brownies"
+    ],
+    "all:630002": [
+      "Blinds",
+      "Plants",
+      "Brandy",
+      "Branch"
+    ],
+    "all:640001": [
+      "T-shirt",
+      "Tshirt"
+    ],
+    "all:915002": [
+      "Umbrellas"
+    ],
+    "all:915000": [
+      "Umbrellas",
+      "Enchilada",
+      "Amsterdam"
+    ],
+    "all:145003": [
+      "Straightener",
+      "Streetlight"
+    ],
+    "all:145000": [
+      "Straightener",
+      "Streetlight"
+    ],
+    "all:935001": [
+      "Flowerpot"
+    ],
+    "all:735001": [
+      "Flowers",
+      "Florida"
+    ],
+    "all:934003": [
+      "Croissant",
+      "Staircase"
+    ],
+    "all:620002": [
+      "Pastry",
+      "Pantry"
+    ],
+    "all:134003": [
+      "Cheeseburger",
+      "Sleepingbag"
+    ],
+    "all:134000": [
+      "Cheeseburger",
+      "Blueberries",
+      "Wheelbarrow",
+      "Sleepingbag",
+      "Dreamcatcher",
+      "Trainstation"
+    ],
+    "all:515001": [
+      "Apple"
+    ],
+    "all:515000": [
+      "Apple"
+    ],
+    "all:713003": [
+      "Oranges",
+      "Oregano"
+    ],
+    "all:047003": [
+      "Strawberry"
+    ],
+    "all:047000": [
+      "Strawberry"
+    ],
+    "all:147003": [
+      "Strawberries"
+    ],
+    "all:147000": [
+      "Strawberries"
+    ],
+    "all:134002": [
+      "Blueberries",
+      "Dreamcatcher"
+    ],
+    "all:037002": [
+      "Blackberry",
+      "Grandpiano"
+    ],
+    "all:024001": [
+      "Watermelon",
+      "Television",
+      "Marionette",
+      "Helicopter",
+      "Motorcycle",
+      "Locomotive",
+      "Mayonnaise"
+    ],
+    "all:513003": [
+      "Onion",
+      "Ocean"
+    ],
+    "all:935003": [
+      "Chocolate",
+      "Showergel",
+      "Spaceship",
+      "Chameleon",
+      "Crocodile"
+    ],
+    "all:815001": [
+      "Espresso"
+    ],
+    "all:113002": [
+      "Utilityknife"
+    ],
+    "all:113000": [
+      "Utilityknife"
+    ],
+    "all:124001": [
+      "Waterbottle",
+      "TapeMeasure",
+      "Firecracker",
+      "Firehydrant"
+    ],
+    "all:124000": [
+      "Waterbottle",
+      "TapeMeasure",
+      "Firecracker",
+      "Pomegranate",
+      "Diningtable",
+      "Firehydrant",
+      "Caterpillar",
+      "Sagittarius"
+    ],
+    "all:845003": [
+      "Strainer"
+    ],
+    "all:845000": [
+      "Strainer"
+    ],
+    "all:740001": [
+      "Tshirts"
+    ],
+    "all:740000": [
+      "Tshirts"
+    ],
+    "all:023002": [
+      "Paintbrush"
+    ],
+    "all:137002": [
+      "Playstation",
+      "Grasshopper"
+    ],
+    "all:137000": [
+      "Playstation",
+      "Grasshopper"
+    ],
+    "all:028001": [
+      "Matchstick",
+      "Nightstand"
+    ],
+    "all:028000": [
+      "Matchstick",
+      "Nightstand"
+    ],
+    "all:034002": [
+      "Broomstick",
+      "Greenhouse"
+    ],
+    "all:034000": [
+      "Broomstick",
+      "Wheelchair",
+      "Cheesecake",
+      "Greenhouse",
+      "Cruiseship",
+      "Croissants"
+    ],
+    "all:134001": [
+      "Wheelbarrow",
+      "Trainstation"
+    ],
+    "all:035001": [
+      "Whiteboard"
+    ],
+    "all:036002": [
+      "Protractor",
+      "Prosciutto"
+    ],
+    "all:136001": [
+      "Thermometer",
+      "Frappuccino"
+    ],
+    "all:034001": [
+      "Wheelchair"
+    ],
+    "all:114001": [
+      "Apronstrings"
+    ],
+    "all:114000": [
+      "Apronstrings"
+    ],
+    "all:023003": [
+      "Quesadilla"
+    ],
+    "all:915001": [
+      "Enchilada",
+      "Amsterdam"
+    ],
+    "all:124002": [
+      "Pomegranate",
+      "Diningtable"
+    ],
+    "all:035002": [
+      "Grapefruit",
+      "Phonebooth"
+    ],
+    "all:816001": [
+      "Eggplant",
+      "Armchair"
+    ],
+    "all:816000": [
+      "Eggplant",
+      "Armchair"
+    ],
+    "all:123002": [
+      "Peanutbutter"
+    ],
+    "all:127001": [
+      "Marshmallow"
+    ],
+    "all:127000": [
+      "Marshmallow"
+    ],
+    "all:837002": [
+      "Pringles"
+    ],
+    "all:646003": [
+      "Sprite"
+    ],
+    "all:646000": [
+      "Sprite"
+    ],
+    "all:034003": [
+      "Cheesecake",
+      "Cruiseship",
+      "Croissants"
+    ],
+    "all:735002": [
+      "Granola",
+      "Praline",
+      "Glacier"
+    ],
+    "all:737002": [
+      "Gnocchi"
+    ],
+    "all:330002": [
+      "Pho"
+    ],
+    "all:330000": [
+      "Pho"
+    ],
+    "all:836001": [
+      "Frosting"
+    ],
+    "all:027002": [
+      "Jellybeans"
+    ],
+    "all:027000": [
+      "Jellybeans",
+      "Lighthouse"
+    ],
+    "all:746003": [
+      "Strudel"
+    ],
+    "all:412003": [
+      "Oats"
+    ],
+    "all:412000": [
+      "Oats"
+    ],
+    "all:312003": [
+      "Oil"
+    ],
+    "all:312000": [
+      "Oil",
+      "Eel"
+    ],
+    "all:550001": [
+      "Thyme"
+    ],
+    "all:550000": [
+      "Thyme"
+    ],
+    "all:123003": [
+      "Cauliflower",
+      "South Africa"
+    ],
+    "all:414003": [
+      "Okra"
+    ],
+    "all:414000": [
+      "Okra"
+    ],
+    "all:615003": [
+      "Oyster"
+    ],
+    "all:715001": [
+      "Anchovy",
+      "England"
+    ],
+    "all:715000": [
+      "Anchovy",
+      "Ostrich",
+      "England"
+    ],
+    "all:312001": [
+      "Eel"
+    ],
+    "all:636002": [
+      "Bridge"
+    ],
+    "all:727002": [
+      "Bicycle"
+    ],
+    "all:727000": [
+      "Bicycle"
+    ],
+    "all:200001": [
+      "Tv"
+    ],
+    "all:079003": [
+      "Skyscraper"
+    ],
+    "all:079000": [
+      "Skyscraper"
+    ],
+    "all:746002": [
+      "Pyramid"
+    ],
+    "all:714003": [
+      "Ottoman",
+      "Octopus",
+      "Orlando",
+      "October"
+    ],
+    "all:514003": [
+      "Organ",
+      "Otter"
+    ],
+    "all:934001": [
+      "Treadmill"
+    ],
+    "all:850003": [
+      "Skylight"
+    ],
+    "all:850000": [
+      "Skylight"
+    ],
+    "all:027001": [
+      "Lighthouse"
+    ],
+    "all:013002": [
+      "University"
+    ],
+    "all:634001": [
+      "Trains"
+    ],
+    "all:323003": [
+      "Sea"
+    ],
+    "all:434001": [
+      "Tree",
+      "Flea"
+    ],
+    "all:045003": [
+      "Streetlamp"
+    ],
+    "all:045000": [
+      "Streetlamp"
+    ],
+    "all:750001": [
+      "Hydrant"
+    ],
+    "all:750000": [
+      "Hydrant"
+    ],
+    "all:125001": [
+      "Ferriswheel",
+      "Vendingmachine",
+      "Hummingbird"
+    ],
+    "all:540002": [
+      "Dryer"
+    ],
+    "all:310003": [
+      "Owl"
+    ],
+    "all:835001": [
+      "Flamingo"
+    ],
+    "all:410003": [
+      "Owls"
+    ],
+    "all:300001": [
+      "Fly"
+    ],
+    "all:210003": [
+      "Ox"
+    ],
+    "all:400001": [
+      "Lynx"
+    ],
+    "all:400000": [
+      "Lynx"
+    ],
+    "all:913003": [
+      "Orangutan"
+    ],
+    "all:124003": [
+      "Caterpillar",
+      "Sagittarius"
+    ],
+    "all:650002": [
+      "Python"
+    ],
+    "all:734002": [
+      "Bluejay",
+      "Phoenix",
+      "Prairie"
+    ],
+    "all:715003": [
+      "Ostrich"
+    ],
+    "all:313002": [
+      "USA"
+    ],
+    "all:210002": [
+      "UK"
+    ],
+    "all:510001": [
+      "Egypt"
+    ],
+    "all:510000": [
+      "Egypt"
+    ],
+    "all:834002": [
+      "Brooklyn"
+    ],
+    "all:714002": [
+      "Ukraine"
+    ],
+    "all:012001": [
+      "Earthquake"
+    ],
+    "all:012000": [
+      "Earthquake"
     ]
   }
 };

@@ -932,7 +932,6 @@
     </div>
 
     <div class="g-menu" id="googleModeMenu"></div>
-    <div class="g-pill-zone" id="googlePillZone">google.com</div>
   </div>
 
   
@@ -2430,7 +2429,7 @@
         d.className = "g-menu-i";
         d.innerHTML = '<span></span><span class="ck">' + (on ? "\u2713" : "") + '</span>';
         d.firstChild.textContent = label;
-        d.addEventListener("click", (e) => { e.stopPropagation(); fn(); buildModeMenu(); });
+        d.addEventListener("click", (e) => { e.stopPropagation(); fn(); toggleModeMenu(false); });
         m.appendChild(d);
       };
       const head = (t) => { const h = document.createElement("div"); h.className = "g-menu-h"; h.textContent = t; m.appendChild(h); };
@@ -2464,7 +2463,7 @@
         e.stopPropagation();
         openInRealSafari("https://icontrol-magic.onrender.com");
       });
-      document.getElementById("googleBtnPlus").addEventListener("click", (e) => { e.stopPropagation(); toggleGoogleHints(); gInput().focus(); });
+      document.getElementById("googleBtnPlus").addEventListener("click", (e) => { e.stopPropagation(); toggleModeMenu(false); setGoogleNumMode(!googleNumMode); });
 
       // Tapping anywhere on the page keeps the native keyboard up
       document.getElementById("googleView").addEventListener("click", () => { if (document.activeElement !== input) input.focus(); });
@@ -2519,20 +2518,6 @@
         window.visualViewport.addEventListener("scroll", positionPillZone);
       }
 
-      // google.com pill zone: single tap = native numeric keypad, double tap = cycle category
-      let taps = 0, tapTimer = null, lastTouchAt = 0;
-      function pillTap() {
-        taps++;
-        if (taps === 1) {
-          tapTimer = setTimeout(() => { taps = 0; setGoogleNumMode(!googleNumMode); }, 250);
-        } else {
-          clearTimeout(tapTimer); taps = 0; cycleActiveCategory();
-        }
-      }
-      zone.addEventListener("touchstart", (e) => { e.preventDefault(); }, { passive: false });
-      zone.addEventListener("touchend", (e) => { e.preventDefault(); lastTouchAt = Date.now(); pillTap(); }, { passive: false });
-      zone.addEventListener("mousedown", (e) => e.preventDefault());
-      zone.addEventListener("click", () => { if (Date.now() - lastTouchAt > 600) pillTap(); });
     }
 
     function initGoogleView() {
