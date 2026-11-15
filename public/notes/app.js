@@ -228,6 +228,11 @@
   function liveEnd() {}
   function syncOut() {}
 
+  // 0.5s Single-Finger Hold-to-Peek
+  let holdTimer = null;
+  let didHoldPeek = false;
+  let holdStartPos = null;
+
   base.addEventListener('pointerdown', (e) => {
     closePopovers();
     if (morph) { morphTapStart = { id: e.pointerId, x: e.clientX, y: e.clientY, t: e.timeStamp }; return; }
@@ -236,6 +241,22 @@
     try { base.setPointerCapture(e.pointerId); } catch (_) {}
     const p = pointFromEvent(e);
     const t = tools[current];
+
+    // Hold 0.5s to trigger Noteify overlay peek
+    holdStartPos = { x: p.x, y: p.y };
+    didHoldPeek = false;
+    clearTimeout(holdTimer);
+    holdTimer = setTimeout(() => {
+      didHoldPeek = true;
+      if (typeof window.showNoteifyPeek === 'function') {
+        window.showNoteifyPeek();
+      }
+      if (active && active.type === 'draw') {
+        active = null;
+        lctx.setTransform(1, 0, 0, 1, 0, 0);
+        lctx.clearRect(0, 0, live.width, live.height);
+      }
+    }, 500);
 
     if (current === 'lasso') {
       if (selection && pointInPolygon(p, selection.poly)) {
@@ -277,7 +298,15 @@
 
   function handleMove(e) {
     const p = pointFromEvent(e);
-    if (active.type === 'draw') {
+    if (holdTimer && holdStartPos) {
+      const dist = Math.hypot(p.x - holdStartPos.x, p.y - holdStartPos.y);
+      if (dist > 8) {
+        clearTimeout(holdTimer);
+        holdTimer = null;
+      }
+    }
+
+    if (active && active.type === 'draw') {
       const s = active.stroke;
       const pts = s.points;
       const prev = pts[pts.length - 1];
@@ -302,6 +331,16 @@
   }
 
   function endPointer(e) {
+    clearTimeout(holdTimer);
+    holdTimer = null;
+    if (didHoldPeek) {
+      didHoldPeek = false;
+      if (typeof window.hideNoteifyPeek === 'function') {
+        window.hideNoteifyPeek();
+      }
+      return;
+    }
+
     if (!active || e.pointerId !== active.id) return;
     const a = active;
     active = null;

@@ -1087,13 +1087,8 @@
     function evaluatePasscode(code) {
       const db = window.ENIGMA_DATA ? window.ENIGMA_DATA.database : {};
 
+      // Exact shape match only - do not skip first letter shape
       let matches = db[`${activeCategory}:${code}`] || db[`all:${code}`];
-
-      // Shape skip fallback (Christian Grace 0-shape)
-      if ((!matches || matches.length === 0) && code.length === 6 && code[5] !== "0") {
-        const skipCode = code.slice(0, 5) + "0";
-        matches = db[`${activeCategory}:${skipCode}`] || db[`all:${skipCode}`];
-      }
 
       if (matches && matches.length > 0) {
         localStorage.setItem("enigma_last_words", JSON.stringify(matches));
