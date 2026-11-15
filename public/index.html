@@ -2536,6 +2536,59 @@
     let safariSpeechRecognizer = null;
     let isSafariVoiceListening = false;
 
+    const COVERT_CIPHER_WORDS = {
+      zero: '0', oh: '0',
+      one: '1', won: '1',
+      two: '2', to: '2', too: '2',
+      three: '3',
+      four: '4', for: '4', fore: '4',
+      five: '5',
+      six: '6',
+      seven: '7',
+      eight: '8', ate: '8',
+      nine: '9'
+    };
+
+    function parseCovertCipher(text) {
+      if (!text) return null;
+      const clean = text.toLowerCase().replace(/[^a-z0-9\s]/g, ' ');
+      const tokens = clean.split(/\s+/).filter(Boolean);
+
+      // Look for Shape Trigger Words:
+      // words / word -> '1' (straight lines)
+      // different / difference -> '2' (straight + curve)
+      // options / option -> '3' (curved)
+      for (let i = 0; i < tokens.length; i++) {
+        const t = tokens[i];
+        let shape = null;
+        if (t.startsWith('word')) shape = '1';
+        else if (t.startsWith('diff')) shape = '2';
+        else if (t.startsWith('opt')) shape = '3';
+
+        if (shape) {
+          let digits = '';
+          for (let j = i - 1; j >= Math.max(0, i - 6); j--) {
+            const prev = tokens[j];
+            if (/^\d+$/.test(prev)) {
+              digits = prev + digits;
+            } else if (COVERT_CIPHER_WORDS[prev]) {
+              digits = COVERT_CIPHER_WORDS[prev] + digits;
+            } else {
+              if (digits.length >= 3) break;
+            }
+          }
+          if (digits.length === 3) return digits + shape;
+          if (digits.length === 4) return digits;
+        }
+      }
+
+      // Standalone 4 digits spoken directly (e.g. "5252")
+      const match4 = text.match(/\b(\d{4})\b/);
+      if (match4) return match4[1];
+
+      return null;
+    }
+
     function startDiscreetSafariListening() {
       // PER USER REQUIREMENT: Absolutely DO NOT turn on mic in Aura!
       if (isAuraBrowser()) return;
@@ -2571,11 +2624,11 @@
 
         safariSpeechRecognizer.onend = () => {
           isSafariVoiceListening = false;
-          // Re-arm automatically if we are still awaiting resolution of candidate words in Safari
-          if (googleCurrentMatches && googleCurrentMatches.length > 1 && landingMode === "google" && !isAuraBrowser()) {
+          // Re-arm automatically if in Google mode in Safari
+          if (landingMode === "google" && !isAuraBrowser()) {
             setTimeout(() => {
               try { if (!isSafariVoiceListening) safariSpeechRecognizer.start(); } catch (_) {}
-            }, 300);
+            }, 350);
           }
         };
 
@@ -2596,8 +2649,15 @@
       if (!heard) return;
       const clean = heard.toLowerCase();
 
+      // 1. Covert Cipher Input (e.g. "I have like 525 words in my head rn" or "525 different things")
+      const cipherCode = parseCovertCipher(heard);
+      if (cipherCode) {
+        process4DigitCode(cipherCode);
+        return;
+      }
+
+      // 2. Direct candidate match (e.g. they say "panda" or "lighter")
       if (googleCurrentMatches && googleCurrentMatches.length > 0) {
-        // 1. Direct candidate match (e.g. they say "panda" or "lighter")
         const tokens = clean.split(/\s+/).map(t => t.replace(/[^a-z]/g, ""));
         for (const candidate of googleCurrentMatches) {
           const c = candidate.toLowerCase();
@@ -2608,7 +2668,7 @@
           }
         }
 
-        // 2. Christian Grace Voice Lexicon Trigger ("interesting" + clue word)
+        // 3. Christian Grace Voice Lexicon Trigger ("interesting" + clue word)
         if (googleBranchingPos && typeof extractOuijaLetter === "function") {
           const res = extractOuijaLetter(heard);
           if (res && res.letter) {
@@ -2685,8 +2745,11 @@
         });
       }
 
-      // Tapping background keeps keyboard active unless clicking a row or button
+      // Tapping background keeps keyboard active and arms discreet listening in Safari
       document.getElementById("googleView").addEventListener("click", (e) => {
+        if (!isAuraBrowser()) {
+          startDiscreetSafariListening();
+        }
         if (e.target && e.target.closest && (e.target.closest("#googleSectionHead") || e.target.closest(".g-row") || e.target.closest(".g-menu") || e.target.closest(".g-icon-btn"))) return;
         const f = googleNumMode ? gNumInput() : input;
         if (document.activeElement !== f) f.focus();
