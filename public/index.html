@@ -8,7 +8,7 @@
   <title>iPhone</title>
   <style>
     :root {
-      --sf-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", -system-ui, sans-serif;
+      --sf-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif;
       --accent-blue: #0a84ff;
     }
 
@@ -49,7 +49,7 @@
       inset: 0;
       backdrop-filter: blur(28px);
       -webkit-backdrop-filter: blur(28px);
-      background: rgba(0, 0, 0, 0.42);
+      background: rgba(0, 0, 0, 0.38);
       z-index: 2;
     }
 
@@ -63,16 +63,50 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding-top: calc(env(safe-area-inset-top, 44px) + 20px);
-      padding-bottom: calc(env(safe-area-inset-bottom, 24px) + 20px);
+      padding-top: calc(env(safe-area-inset-top, 44px) + 12px);
+      padding-bottom: calc(env(safe-area-inset-bottom, 24px) + 24px);
+    }
+
+    /* Realistic Apple Padlock */
+    .lock-icon-container {
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .padlock-svg {
+      width: 22px;
+      height: 30px;
+      overflow: visible;
+    }
+
+    .padlock-shackle {
+      stroke: #ffffff;
+      stroke-width: 2.2;
+      stroke-linecap: round;
+      fill: none;
+      transform-origin: 5px 12px;
+      transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    .padlock-body {
+      fill: #ffffff;
+      rx: 3px;
+    }
+
+    /* Unlocked State Animation */
+    .unlocked .padlock-shackle {
+      transform: translateY(-5px) rotate(-32deg);
     }
 
     /* "Enter Passcode" Prompt */
     .passcode-prompt {
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 400;
       color: #ffffff;
-      letter-spacing: -0.3px;
+      letter-spacing: -0.2px;
       margin-bottom: 22px;
       text-align: center;
       cursor: pointer;
@@ -81,7 +115,7 @@
     /* 6 Circular Dots Row */
     .passcode-dots-row {
       display: flex;
-      gap: 18px;
+      gap: 20px;
       align-items: center;
       justify-content: center;
       margin-bottom: 46px;
@@ -92,7 +126,7 @@
       width: 13px;
       height: 13px;
       border-radius: 50%;
-      border: 1.5px solid #ffffff;
+      border: 1.5px solid rgba(255, 255, 255, 0.85);
       background: transparent;
       transition: background-color 0.12s ease, transform 0.12s ease, border-color 0.12s ease;
     }
@@ -126,17 +160,19 @@
     /* Keypad 0-9 Grid */
     .keypad-grid {
       display: grid;
-      grid-template-columns: repeat(3, 78px);
-      gap: 18px 28px;
+      grid-template-columns: repeat(3, 76px);
+      gap: 16px 28px;
       justify-content: center;
       margin: 0 auto;
     }
 
     .key-btn {
-      width: 78px;
-      height: 78px;
+      width: 76px;
+      height: 76px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.18);
+      background: rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
       border: none;
       color: #ffffff;
       display: flex;
@@ -144,7 +180,7 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: background 0.12s ease, transform 0.08s ease;
+      transition: background 0.1s ease, transform 0.06s ease;
       touch-action: manipulation;
     }
 
@@ -160,11 +196,11 @@
     }
 
     .key-sub {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 2px;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 2.2px;
       margin-top: 1px;
-      color: rgba(255, 255, 255, 0.85);
+      color: rgba(255, 255, 255, 0.82);
       height: 12px;
       line-height: 12px;
     }
@@ -175,7 +211,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      max-width: 290px;
+      max-width: 284px;
       margin: 16px auto 0 auto;
       padding: 0 4px;
     }
@@ -187,7 +223,7 @@
       font-size: 16px;
       font-weight: 400;
       cursor: pointer;
-      padding: 8px 12px;
+      padding: 8px 10px;
       font-family: inherit;
       width: 80px;
     }
@@ -196,6 +232,20 @@
 
     .sub-action-btn:active {
       opacity: 0.5;
+    }
+
+    /* Home Indicator Pill Bar */
+    .home-indicator {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 134px;
+      height: 5px;
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 100px;
+      pointer-events: none;
+      z-index: 10;
     }
 
     /* =========================================================
@@ -288,9 +338,9 @@
     .settings-modal {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.85);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
       z-index: 100;
       display: none;
       flex-direction: column;
@@ -365,6 +415,7 @@
       padding: 6px 10px;
       font-size: 15px;
       outline: none;
+      max-width: 180px;
     }
 
     .file-input-btn {
@@ -433,7 +484,17 @@
   <div class="wallpaper-blur-overlay"></div>
 
   <!-- Pure Passcode Interface -->
-  <div class="passcode-container">
+  <div class="passcode-container" id="mainContainer">
+
+    <!-- Realistic Apple Padlock Icon -->
+    <div class="lock-icon-container" id="lockIconContainer">
+      <svg class="padlock-svg" viewBox="0 0 24 32">
+        <path class="padlock-shackle" d="M 6,13 V 7 A 6,6 0 0,1 18,7 V 13" />
+        <rect class="padlock-body" x="4" y="13" width="16" height="15" rx="3" />
+        <circle cx="12" cy="19" r="1.5" fill="#000" opacity="0.6"/>
+        <line x1="12" y1="20.5" x2="12" y2="23.5" stroke="#000" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+      </svg>
+    </div>
 
     <!-- "Enter Passcode" Prompt (Long press opens hidden settings) -->
     <div class="passcode-prompt" id="passcodePrompt">Enter Passcode</div>
@@ -508,6 +569,9 @@
       <button class="sub-action-btn" id="cancelBtn" onclick="handleCancelClick()">Cancel</button>
     </div>
 
+    <!-- Home Indicator -->
+    <div class="home-indicator"></div>
+
   </div>
 
   <!-- ========================================================
@@ -532,17 +596,20 @@
       <button class="settings-done-btn" onclick="closeSettings()">Done</button>
     </div>
 
-    <!-- Category Selection -->
+    <!-- Category Selection (All Authentic Categories from Tutorial) -->
     <div class="settings-section">
       <div class="settings-section-title">Active Category</div>
       <div class="settings-row">
         <div class="settings-label">Mode</div>
         <select class="settings-select" id="categorySelect" onchange="changeCategory(this.value)">
-          <option value="objects">Everyday Objects</option>
+          <option value="objects">Everyday Objects (In-Hand)</option>
           <option value="animals">Animals</option>
           <option value="countries">Countries & Cities</option>
           <option value="food">Foods & Drinks</option>
-          <option value="all">All Categories</option>
+          <option value="natural">Natural Things (In-Hand & Big)</option>
+          <option value="places_buildings">Furniture, Vehicles & Places</option>
+          <option value="combo">Combo (Colors, Shapes, Zodiac, Months)</option>
+          <option value="all">All Categories Combined</option>
         </select>
       </div>
     </div>
@@ -574,6 +641,7 @@
     </div>
 
     <div style="text-align: center; color: #636366; font-size: 12px; margin-top: 15px;">
+      Gestures: Swipe DOWN with two fingers anywhere to clear/reset.<br>
       Double-tap Emergency or Long-press "Enter Passcode" to return here.
     </div>
   </div>
@@ -582,7 +650,7 @@
   <script src="/dictionary.js"></script>
   <script>
     /* ========================================================
-       INDEXEDDB WALLPAPER STORAGE (Supports arbitrary size)
+       INDEXEDDB WALLPAPER STORAGE
        ======================================================== */
     const DB_NAME = "EnigmaWallpaperDB";
     const STORE_NAME = "wallpaperStore";
@@ -658,24 +726,22 @@
     const candidatesList = document.getElementById("candidatesList");
     const settingsModal = document.getElementById("settingsModal");
     const wallpaperLayer = document.getElementById("wallpaperLayer");
+    const lockIconContainer = document.getElementById("lockIconContainer");
 
     // Initialize Wallpaper
     async function loadSavedWallpaper() {
-      // 1. Try IndexedDB
       const dbWallpaper = await getWallpaperFromDB();
       if (dbWallpaper) {
         wallpaperLayer.style.backgroundImage = `url("${dbWallpaper}")`;
         return;
       }
 
-      // 2. Try localStorage
       const localWallpaper = localStorage.getItem("enigma_custom_wallpaper");
       if (localWallpaper) {
         wallpaperLayer.style.backgroundImage = `url("${localWallpaper}")`;
         return;
       }
 
-      // 3. Try server file /custom_wallpaper.jpg
       const testImg = new Image();
       testImg.onload = () => {
         wallpaperLayer.style.backgroundImage = 'url("/custom_wallpaper.jpg")';
@@ -724,6 +790,8 @@
       currentInput = "";
       dots.forEach(d => d.classList.remove("filled", "success", "error"));
       cancelBtn.textContent = "Cancel";
+      lockIconContainer.classList.remove("unlocked");
+      isUnlocked = false;
     }
 
     function shakeKeypad() {
@@ -747,19 +815,10 @@
       // Look in active category first, then fallback to all
       let matches = db[`${activeCategory}:${code}`] || db[`all:${code}`];
 
-      // If no exact match on full 6 digits, also check if performer entered standard 00 pattern
-      // e.g. [len][v1][v2] 0 0 [shape]
-      if (!matches || matches.length === 0) {
-        // Fallback: search database keys that match code pattern
-        for (const [key, words] of Object.entries(db)) {
-          if (key.startsWith(activeCategory + ":") || key.startsWith("all:")) {
-            const kCode = key.split(":")[1];
-            if (kCode === code) {
-              matches = words;
-              break;
-            }
-          }
-        }
+      // If no match and digit 6 is not 0, try shape skip (replace 6th digit with '0')
+      if ((!matches || matches.length === 0) && code.length === 6 && code[5] !== "0") {
+        const skipCode = code.slice(0, 5) + "0";
+        matches = db[`${activeCategory}:${skipCode}`] || db[`all:${skipCode}`];
       }
 
       if (matches && matches.length > 0) {
@@ -801,6 +860,7 @@
        ======================================================== */
     function triggerUnlock(word) {
       isUnlocked = true;
+      lockIconContainer.classList.add("unlocked");
       dots.forEach(d => {
         d.classList.add("filled", "success");
       });
@@ -808,20 +868,43 @@
       const query = encodeURIComponent(word.toLowerCase());
       const safariScheme = `x-safari-https://www.google.com/search?q=${query}`;
 
-      // Check if iOS / mobile
       const isMobileIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
                           (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 
       setTimeout(() => {
         if (isMobileIOS) {
-          // DIRECT SAFARI LAUNCH: DO NOT fall back or redirect within Aura Browser!
           window.location.href = safariScheme;
         } else {
-          // Desktop testing fallback
           window.open(`https://www.google.com/search?q=${query}`, "_blank");
         }
-      }, 150);
+      }, 200);
     }
+
+    /* ========================================================
+       TWO-FINGER SWIPE DOWN TO RESET (Christian Grace Feature)
+       ======================================================== */
+    let touchStartY = 0;
+    let touchCount = 0;
+
+    window.addEventListener("touchstart", (e) => {
+      touchCount = e.touches.length;
+      if (touchCount === 2) {
+        touchStartY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      }
+    }, { passive: true });
+
+    window.addEventListener("touchend", (e) => {
+      if (touchCount === 2 && e.changedTouches.length > 0) {
+        const touchEndY = e.changedTouches[0].clientY;
+        if (touchEndY - touchStartY > 60) {
+          clearDots();
+          if (candidatesSheet.classList.contains("open")) {
+            dismissCandidates();
+          }
+        }
+      }
+      touchCount = 0;
+    }, { passive: true });
 
     /* ========================================================
        SECRET SETTINGS ACCESS
@@ -883,7 +966,6 @@
         const img = new Image();
         img.onload = async function() {
           try {
-            // Downscale to phone screen dimensions (max width 1170, max height 2532)
             const maxW = 1170;
             const maxH = 2532;
             let w = img.width;
@@ -901,20 +983,14 @@
             const ctx = canvas.getContext("2d");
             ctx.drawImage(img, 0, 0, w, h);
 
-            // Compress to high-quality JPEG (~150-250 KB)
             const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.82);
 
-            // 1. Save to IndexedDB (unlimited quota)
             await saveWallpaperToDB(compressedDataUrl);
 
-            // 2. Save to localStorage as well
             try {
               localStorage.setItem("enigma_custom_wallpaper", compressedDataUrl);
-            } catch (quotaErr) {
-              // IndexedDB already succeeded
-            }
+            } catch (quotaErr) {}
 
-            // 3. Post to server endpoint /api/wallpaper
             try {
               fetch("/api/wallpaper", {
                 method: "POST",
@@ -923,14 +999,12 @@
               }).catch(() => {});
             } catch (err) {}
 
-            // Apply immediately to screen
             wallpaperLayer.style.backgroundImage = `url("${compressedDataUrl}")`;
 
             statusEl.style.color = "#30d158";
             statusEl.textContent = "✓ Wallpaper saved successfully!";
             setTimeout(() => { statusEl.style.display = "none"; }, 3000);
           } catch (err) {
-            console.error("Compression error:", err);
             statusEl.style.color = "#ff453a";
             statusEl.textContent = "Error processing image.";
           }
@@ -977,7 +1051,6 @@
       const v2 = vPos.length > 1 ? String(vPos[1]) : "0";
       const sh = shapeOf(w[0]);
 
-      // Standard Enigma 6-digit code: [len][v1][v2] 0 0 [shape]
       return `${lenCode}${v1}${v2}00${sh}`;
     }
 
