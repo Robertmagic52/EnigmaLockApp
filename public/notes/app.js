@@ -216,18 +216,28 @@
     return prev.w + (target - prev.w) * 0.35;
   }
 
+  // Hold-to-peek state
+  let peekTimer = null;
+  let didPeek = false;
+  let downPos = { x: 0, y: 0 };
+
   base.addEventListener('pointerdown', (e) => {
     closePopovers();
     if (morph) { morphTapStart = { id: e.pointerId, x: e.clientX, y: e.clientY, t: e.timeStamp }; return; }
-    if (!active) {
-      tapStart = { id: e.pointerId, x: e.clientX, y: e.clientY, t: e.timeStamp,
-        strokesBefore: strokes, undoLen: undoStack.length, redoBefore: redoStack };
-    }
     if (viewMode || active) return;
     if (e.button !== undefined && e.button > 0) return;
     try { base.setPointerCapture(e.pointerId); } catch (_) {}
     const p = pointFromEvent(e);
     const t = tools[current];
+
+    // Trigger hold-to-peek if held stationary for > 350ms
+    downPos = { x: e.clientX, y: e.clientY };
+    clearTimeout(peekTimer);
+    didPeek = false;
+    peekTimer = setTimeout(() => {
+      didPeek = true;
+      if (typeof window.showNoteifyPeek === 'function') window.showNoteifyPeek();
+    }, 350);
 
     if (current === 'lasso') {
       if (selection && pointInPolygon(p, selection.poly)) {
@@ -249,7 +259,7 @@
     const stroke = {
       kind: 'stroke',
       tool: current,
-      color: t.color || '#000',
+      color: t.color || '#FFFFFF',
       opacity: t.opacity ?? 1,
       width: t.width,
       points: [{ x: p.x, y: p.y, w: current === 'pen' ? t.width : undefined, t: e.timeStamp }],
@@ -263,6 +273,10 @@
 
   base.addEventListener('pointermove', (e) => {
     if (!active || e.pointerId !== active.id) return;
+    if (peekTimer && Math.hypot(e.clientX - downPos.x, e.clientY - downPos.y) > 8) {
+      clearTimeout(peekTimer);
+      peekTimer = null;
+    }
     const events = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
     for (const ev of (events.length ? events : [e])) handleMove(ev);
   });
@@ -294,9 +308,23 @@
   }
 
   function endPointer(e) {
+    clearTimeout(peekTimer);
+    peekTimer = null;
+    if (typeof window.hideNoteifyPeek === 'function') window.hideNoteifyPeek();
+
     if (!active || e.pointerId !== active.id) return;
     const a = active;
     active = null;
+
+    if (didPeek) {
+      didPeek = false;
+      lctx.setTransform(1, 0, 0, 1, 0, 0);
+      lctx.clearRect(0, 0, live.width, live.height);
+      renderLive();
+      return;
+    }
+    didPeek = false;
+
     if (a.type === 'draw') {
       liveFlush();
       const s = a.stroke;
@@ -319,37 +347,6 @@
   }
   base.addEventListener('pointerup', endPointer);
   base.addEventListener('pointercancel', endPointer);
-  base.addEventListener('pointerup', handleTapUp);
-  base.addEventListener('pointercancel', () => { tapStart = null; morphTapStart = null; });
-
-  // ---------- Double tap ----------
-  let tapStart = null, lastTap = null, morphTapStart = null;
-  const isTap = (s, e) => s && s.id === e.pointerId && e.timeStamp - s.t < 300 &&
-    Math.hypot(e.clientX - s.x, e.clientY - s.y) < 12;
-
-  function handleTapUp(e) {
-    if (morph) {
-      if (isTap(morphTapStart, e)) advanceMorph();
-      morphTapStart = null;
-      return;
-    }
-    const s = tapStart;
-    tapStart = null;
-    if (!isTap(s, e)) { lastTap = null; return; }
-    if (lastTap && e.timeStamp - lastTap.t < 400 && Math.hypot(e.clientX - lastTap.x, e.clientY - lastTap.y) < 40) {
-      // Annule les deux points laissés par les taps, puis lance la transformation.
-      strokes = lastTap.strokesBefore;
-      undoStack.length = Math.min(undoStack.length, lastTap.undoLen);
-      redoStack = lastTap.redoBefore;
-      lastTap = null;
-      clearSelection();
-      renderAll(); save();
-      startMorph();
-    } else {
-      lastTap = { t: e.timeStamp, x: e.clientX, y: e.clientY,
-        strokesBefore: s.strokesBefore, undoLen: s.undoLen, redoBefore: s.redoBefore };
-    }
-  }
 
   const r1 = (n) => Math.round(n * 10) / 10;
 

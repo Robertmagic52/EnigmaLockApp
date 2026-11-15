@@ -196,124 +196,60 @@
     <input type="file" id="file" accept="image/*" hidden />
   </div>
 
-  <!-- Discreet Mentalism Peek Overlay (Hold to view) -->
-  <div id="enigma-peek-overlay" class="peek-overlay">
-    <div class="peek-content">
-      <div class="peek-category-badge" id="peek-category-badge">OBJECT (IN HAND)</div>
-      <div class="peek-words-container" id="peek-words-container"></div>
-      <div class="peek-hint">Release finger to hide</div>
-    </div>
+  <!-- Noteify-Style Discreet Prediction Overlay (Pure text at top, matching Pro Illusion) -->
+  <div id="noteifyPeekOverlay" class="noteify-peek-overlay">
+    <div class="noteify-peek-title">Prediction</div>
+    <div class="noteify-peek-body" id="noteifyPeekBody">I am anticipating that you will choose Spoon!</div>
   </div>
 
   <script src="app.js"></script>
   <script>
     (() => {
       'use strict';
-      const peekOverlay = document.getElementById('enigma-peek-overlay');
-      const peekBadge = document.getElementById('peek-category-badge');
-      const peekWordsContainer = document.getElementById('peek-words-container');
+      const peekOverlay = document.getElementById('noteifyPeekOverlay');
+      const peekBody = document.getElementById('noteifyPeekBody');
       const topPeekZone = document.getElementById('top-peek-zone');
 
       function updatePeekContent() {
         let words = [];
-        let cat = "EVERYDAY";
         try {
           const rawWords = localStorage.getItem("enigma_last_words");
           if (rawWords) words = JSON.parse(rawWords);
-          const rawCat = localStorage.getItem("enigma_last_category") || localStorage.getItem("enigma_category");
-          if (rawCat) cat = rawCat.replace(/_/g, ' ').toUpperCase();
         } catch (e) {}
 
         if (!words || !words.length) {
           words = ["Spoon"];
         }
 
-        peekBadge.textContent = cat;
-        peekWordsContainer.innerHTML = '';
-
         if (words.length === 1) {
-          const wEl = document.createElement('div');
-          wEl.className = 'peek-word-single';
-          wEl.textContent = words[0];
-          peekWordsContainer.appendChild(wEl);
+          peekBody.innerHTML = `I am anticipating that you will choose <strong>${words[0]}</strong>!`;
         } else {
-          words.forEach(w => {
-            const chip = document.createElement('div');
-            chip.className = 'peek-word-chip';
-            chip.innerHTML = `<span class="first-letter">${w[0]}</span>${w.slice(1)}`;
-            peekWordsContainer.appendChild(chip);
-          });
+          peekBody.innerHTML = `I am anticipating: <strong>${words.join(" &bull; ")}</strong>`;
         }
       }
 
-      let isPeeking = false;
-      function showPeek() {
-        if (isPeeking) return;
-        isPeeking = true;
+      window.showNoteifyPeek = function() {
         updatePeekContent();
         peekOverlay.classList.add('visible');
-        if (navigator.vibrate) navigator.vibrate(15);
-      }
+        if (navigator.vibrate) navigator.vibrate(12);
+      };
 
-      function hidePeek() {
-        if (!isPeeking) return;
-        isPeeking = false;
+      window.hideNoteifyPeek = function() {
         peekOverlay.classList.remove('visible');
-      }
+      };
 
-      // 1. Direct hold on top peek zone (invisible strip at top between buttons)
+      // Top discreet touch zone between Back and More buttons
       if (topPeekZone) {
-        topPeekZone.addEventListener('touchstart', (e) => { e.preventDefault(); showPeek(); }, { passive: false });
-        topPeekZone.addEventListener('touchend', hidePeek);
-        topPeekZone.addEventListener('touchcancel', hidePeek);
-        topPeekZone.addEventListener('mousedown', showPeek);
-        topPeekZone.addEventListener('mouseup', hidePeek);
-        topPeekZone.addEventListener('mouseleave', hidePeek);
+        topPeekZone.addEventListener('pointerdown', (e) => {
+          e.preventDefault();
+          window.showNoteifyPeek();
+        });
+        topPeekZone.addEventListener('pointerup', window.hideNoteifyPeek);
+        topPeekZone.addEventListener('pointercancel', window.hideNoteifyPeek);
+        topPeekZone.addEventListener('pointerleave', window.hideNoteifyPeek);
       }
 
-      // 2. Global canvas long-press hold (> 420ms without dragging)
-      let holdTimer = null;
-      let startX = 0, startY = 0;
-
-      window.addEventListener('touchstart', (e) => {
-        if (e.touches.length === 1) {
-          const t = e.touches[0];
-          startX = t.clientX;
-          startY = t.clientY;
-          holdTimer = setTimeout(() => {
-            showPeek();
-          }, 420);
-        } else if (e.touches.length >= 2) {
-          // 2-finger touch instantly reveals peek
-          showPeek();
-        }
-      }, { passive: true });
-
-      window.addEventListener('touchmove', (e) => {
-        if (holdTimer && e.touches.length === 1) {
-          const t = e.touches[0];
-          const dx = Math.abs(t.clientX - startX);
-          const dy = Math.abs(t.clientY - startY);
-          if (dx > 12 || dy > 12) {
-            clearTimeout(holdTimer);
-            holdTimer = null;
-          }
-        }
-      }, { passive: true });
-
-      window.addEventListener('touchend', () => {
-        clearTimeout(holdTimer);
-        holdTimer = null;
-        hidePeek();
-      }, { passive: true });
-
-      window.addEventListener('touchcancel', () => {
-        clearTimeout(holdTimer);
-        holdTimer = null;
-        hidePeek();
-      }, { passive: true });
-
-      // 3. Back button returns to lockscreen / main app
+      // Back button returns to lockscreen / parent app
       document.getElementById('btn-back')?.addEventListener('click', () => {
         if (window.parent && window.parent !== window && window.parent.closeNotes) {
           window.parent.closeNotes();

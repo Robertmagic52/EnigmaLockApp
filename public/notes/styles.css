@@ -262,97 +262,57 @@ body.view-mode #toolbar { transform: translateY(calc(340 * var(--u))); opacity: 
 .menu svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .menu .sep { height: 7px; background: rgba(0,0,0,.25); margin: 6px 0; }
 
-/* ---------- Discreet Mentalism Peek Overlay ---------- */
-.peek-overlay {
+/* ---------- Noteify Style Discreet Prediction Overlay ---------- */
+.noteify-peek-overlay {
   position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.78);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-  z-index: 9999;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.12s ease;
+  top: max(env(safe-area-inset-top, 24px) + 26px, 52px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 360px;
+  text-align: center;
+  z-index: 999;
   pointer-events: none;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
 }
 
-.peek-overlay.visible {
-  display: flex;
+.noteify-peek-overlay.visible {
   opacity: 1;
 }
 
-.peek-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  max-width: 90vw;
-}
-
-.peek-category-badge {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffd60a;
-  margin-bottom: 14px;
-  background: rgba(255, 214, 10, 0.12);
-  border: 1px solid rgba(255, 214, 10, 0.25);
-  padding: 5px 16px;
-  border-radius: 20px;
-}
-
-.peek-words-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 14px 18px;
-  margin-bottom: 16px;
-}
-
-.peek-word-single {
-  font-size: 42px;
-  font-weight: 800;
-  color: #ffffff;
-  letter-spacing: -0.5px;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 255, 255, 0.2);
-}
-
-.peek-word-chip {
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  padding: 10px 18px;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
-}
-
-.peek-word-chip .first-letter {
-  color: #ffd60a;
-  font-weight: 900;
-}
-
-.peek-hint {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
+.noteify-peek-title {
+  font-size: 15px;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: -0.15px;
+  margin-bottom: 5px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.noteify-peek-body {
+  font-size: 19px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.95), 0 2px 14px rgba(0, 0, 0, 0.95);
+}
+
+.noteify-peek-body strong {
+  font-weight: 700;
+  color: #ffffff;
 }
 
 /* Discreet touch zone between top buttons */
 #top-peek-zone {
   position: absolute;
   top: 0;
-  left: 25%;
-  right: 25%;
-  height: 60px;
+  left: 20%;
+  right: 20%;
+  height: 70px;
   z-index: 50;
   background: transparent;
+  touch-action: none;
 }
