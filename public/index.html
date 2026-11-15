@@ -84,17 +84,18 @@
     }
 
     /* =========================================================
-       AUTHENTIC iOS TOP ROW APPS (4 ICONS) & OUIJA YELLOW DOT
+       AUTHENTIC iOS BOTTOM APP DOCK (4 ICONS) & OUIJA YELLOW DOT
        ========================================================= */
-    .homescreen-top-apps-row {
+    .homescreen-dock-row {
       position: absolute;
-      top: calc(env(safe-area-inset-top, 44px) + 55px);
-      left: 12px;
-      right: 12px;
+      bottom: calc(env(safe-area-inset-bottom, 20px) + 14px);
+      left: 14px;
+      right: 14px;
+      height: 72px;
       display: flex;
       justify-content: space-around;
-      align-items: flex-start;
-      z-index: 15;
+      align-items: center;
+      z-index: 25;
       pointer-events: auto;
     }
 
@@ -102,9 +103,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 68px;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
       cursor: pointer;
       touch-action: manipulation;
+      position: relative;
     }
 
     .home-app-icon {
@@ -115,26 +119,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-      transition: transform 0.12s ease;
-    }
-
-    .home-app-slot:active .home-app-icon {
-      transform: scale(0.92);
-    }
-
-    .home-app-label {
-      margin-top: 6px;
-      font-size: 11.5px;
-      color: #ffffff;
-      font-weight: 500;
-      letter-spacing: -0.1px;
-      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95);
-      text-align: center;
-      width: 72px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
     }
 
     /* Ouija Yellow Dot indicator */
@@ -147,9 +131,9 @@
       border-radius: 50%;
       background: #FFD60A; /* iOS System Yellow */
       border: 1.5px solid #000000;
-      box-shadow: 0 0 10px rgba(255, 214, 10, 0.95), 0 0 3px #ffffff;
+      box-shadow: 0 0 10px rgba(255, 214, 10, 0.95), 0 0 4px #ffffff;
       display: none;
-      z-index: 25;
+      z-index: 35;
       animation: pulseOuija 1.6s infinite ease-in-out;
     }
 
@@ -162,7 +146,7 @@
       50% { transform: scale(1.25); opacity: 1; }
     }
 
-    /* When user has custom wallpaper, hide icon artwork so only the yellow dot floats over their real screenshot apps */
+    /* When user has custom wallpaper, hide icon artwork so only the yellow dot floats over their real screenshot dock apps */
     .homescreen-view.has-custom-wallpaper .home-app-icon {
       background: transparent !important;
       box-shadow: none !important;
@@ -244,7 +228,7 @@
     /* Homescreen Discreet Bottom Letter Strip (CLEAN WHITE TEXT, NO PILLS) */
     .bottom-letters-strip {
       position: absolute;
-      bottom: calc(env(safe-area-inset-bottom, 24px) + 72px);
+      bottom: calc(env(safe-area-inset-bottom, 20px) + 98px);
       left: 20px;
       right: 20px;
       z-index: 20;
@@ -707,38 +691,31 @@
       <!-- Word chips injected dynamically -->
     </div>
 
-    <!-- Authentic iOS Top Row of 4 Apps with Dynamic Ouija Dot Indicator -->
-    <div class="homescreen-top-apps-row" id="topAppsRow">
+    <!-- Authentic iOS Bottom App Dock (4 Apps) with Dynamic Ouija Dot Indicator -->
+    <div class="homescreen-dock-row" id="dockAppsRow">
       <div class="home-app-slot" id="appSlot1" onclick="handleAppSlotClick(1)">
-        <div class="home-app-icon icon-facetime">
+        <div class="home-app-icon icon-dock-1">
           <svg viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#30D158"/><path d="M16 22 H32 C34 22 35 23 35 25 V35 C35 37 34 38 32 38 H16 C14 38 13 37 13 35 V25 C13 23 14 22 16 22 Z M37 26 L45 21 C46 20 47 21 47 22 V38 C47 39 46 40 45 39 L37 34 Z" fill="#fff"/></svg>
           <div class="ouija-yellow-dot" id="ouijaDot1"></div>
         </div>
-        <div class="home-app-label">FaceTime</div>
       </div>
       <div class="home-app-slot" id="appSlot2" onclick="handleAppSlotClick(2)">
-        <div class="home-app-icon icon-calendar">
-          <div class="cal-icon-card">
-            <div class="cal-day-name" id="calDayName">SAT</div>
-            <div class="cal-day-num" id="calDayNum">14</div>
-          </div>
+        <div class="home-app-icon icon-dock-2">
+          <svg viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#007AFF"/><path d="M16 16 H44 V44 H16 Z" fill="#fff"/></svg>
           <div class="ouija-yellow-dot" id="ouijaDot2"></div>
         </div>
-        <div class="home-app-label">Calendar</div>
       </div>
       <div class="home-app-slot" id="appSlot3" onclick="handleAppSlotClick(3)">
-        <div class="home-app-icon icon-photos">
-          <svg viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#ffffff"/><circle cx="30" cy="22" r="6" fill="#FF9500"/><circle cx="38" cy="26" r="6" fill="#FF2D55"/><circle cx="38" cy="34" r="6" fill="#AF52DE"/><circle cx="30" cy="38" r="6" fill="#5856D6"/><circle cx="22" cy="34" r="6" fill="#007AFF"/><circle cx="22" cy="26" r="6" fill="#34C759"/><circle cx="30" cy="30" r="4.5" fill="#FFCC00"/></svg>
+        <div class="home-app-icon icon-dock-3">
+          <svg viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#34C759"/><path d="M22 16 C18 16 16 20 18 24 L24 36 C26 40 30 42 34 40 L40 36 C42 34 42 30 40 28 L34 22 C32 20 28 20 26 22 Z" fill="#fff"/></svg>
           <div class="ouija-yellow-dot" id="ouijaDot3"></div>
         </div>
-        <div class="home-app-label">Photos</div>
       </div>
       <div class="home-app-slot" id="appSlot4" onclick="handleAppSlotClick(4)">
-        <div class="home-app-icon icon-camera">
-          <svg viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#8E8E93"/><path d="M22 19 L25 16 H35 L38 19 H43 C45 19 47 21 47 23 V39 C47 41 45 43 43 43 H17 C15 43 13 41 13 39 V23 C13 21 15 19 17 19 Z M30 38 C34 38 37 35 37 31 C37 27 34 24 30 24 C26 24 23 27 23 31 C23 35 26 38 30 38 Z" fill="#fff"/></svg>
+        <div class="home-app-icon icon-dock-4">
+          <svg viewBox="0 0 60 60"><rect width="60" height="60" rx="14" fill="#007AFF"/><circle cx="30" cy="30" r="16" fill="none" stroke="#fff" stroke-width="3"/><polygon points="30,18 35,30 30,26 25,30" fill="#FF3B30"/><polygon points="30,42 35,30 30,34 25,30" fill="#fff"/></svg>
           <div class="ouija-yellow-dot" id="ouijaDot4"></div>
         </div>
-        <div class="home-app-label">Camera</div>
       </div>
     </div>
 
