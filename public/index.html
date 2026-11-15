@@ -1203,6 +1203,7 @@
       activeLetterFilter = null;
       clearOuijaDots();
       currentOuijaTargetPos = null;
+      stopCluePolling();
       closeCategorySheet();
       closeSettings();
 
@@ -1321,8 +1322,10 @@
         // Trigger Ouija branching dot if multiple words match
         if (matches.length > 1) {
           updateOuijaBranching(matches);
+          startCluePolling();
         } else {
           clearOuijaDots();
+          stopCluePolling();
         }
 
         // Start Lexicon voice listening
@@ -2054,6 +2057,45 @@
     }
     document.addEventListener("pointerdown", userInteractionStartVoice, { once: true });
     document.addEventListener("touchstart", userInteractionStartVoice, { once: true });
+
+    /* ========================================================
+       APPLE SHORTCUTS INSTANT CLUE INPUT POLLING
+       Allows instant, latency-free clue input via Apple Shortcuts!
+       Shortcut can send GET /api/clue?word=gun OR POST /api/clue
+       ======================================================== */
+    let lastSeenClueTimestamp = Date.now();
+    let cluePollingInterval = null;
+
+    function startCluePolling() {
+      if (cluePollingInterval) return;
+      lastSeenClueTimestamp = Date.now();
+
+      cluePollingInterval = setInterval(async () => {
+        if (!currentCandidateWords || currentCandidateWords.length <= 1) {
+          stopCluePolling();
+          return;
+        }
+
+        try {
+          const res = await fetch(`/api/clue?since=${lastSeenClueTimestamp}`);
+          if (res.ok) {
+            const data = await res.json();
+            if (data && data.clue && data.clue.timestamp > lastSeenClueTimestamp) {
+              lastSeenClueTimestamp = data.clue.timestamp;
+              console.log("Shortcut clue received:", data.clue);
+              applyOuijaLetterFilter(data.clue.letter, data.clue.word);
+            }
+          }
+        } catch (e) {}
+      }, 300);
+    }
+
+    function stopCluePolling() {
+      if (cluePollingInterval) {
+        clearInterval(cluePollingInterval);
+        cluePollingInterval = null;
+      }
+    }
 
     /* ========================================================
        SECRET SETTINGS & GESTURES

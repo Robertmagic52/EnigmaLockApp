@@ -133,6 +133,64 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // Handle Shortcuts Instant Clue Input Endpoint
+  // Supports: GET /api/clue?word=gun OR POST /api/clue with { "word": "gun" }
+  let latestClue = global._enigmaClue || { word: null, letter: null, timestamp: 0 };
+  global._enigmaClue = latestClue;
+
+  if (pathname === "/api/clue") {
+    if (req.method === "GET") {
+      const wordParam = parsedUrl.searchParams.get("word") || parsedUrl.searchParams.get("text") || parsedUrl.searchParams.get("w");
+      if (wordParam) {
+        const clean = wordParam.trim();
+        const firstLetter = clean[0].toUpperCase();
+        global._enigmaClue = { word: clean, letter: firstLetter, timestamp: Date.now() };
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ ok: true, word: clean, letter: firstLetter }));
+        return;
+      }
+
+      const since = parseInt(parsedUrl.searchParams.get("since") || "0", 10);
+      if (global._enigmaClue.timestamp > since) {
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ ok: true, clue: global._enigmaClue }));
+      } else {
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ ok: true, clue: null }));
+      }
+      return;
+    }
+
+    if (req.method === "POST") {
+      let body = [];
+      req.on("data", chunk => body.push(chunk));
+      req.on("end", () => {
+        const raw = Buffer.concat(body).toString().trim();
+        let word = "";
+        try {
+          const parsed = JSON.parse(raw);
+          word = parsed.word || parsed.text || parsed.clue || "";
+        } catch (e) {
+          word = raw;
+        }
+
+        if (!word) {
+          res.writeHead(400, { "Content-Type": "application/json" });
+          res.end(JSON.stringify({ ok: false, error: "Missing word" }));
+          return;
+        }
+
+        const clean = word.trim();
+        const firstLetter = clean[0].toUpperCase();
+        global._enigmaClue = { word: clean, letter: firstLetter, timestamp: Date.now() };
+
+        res.writeHead(200, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ ok: true, word: clean, letter: firstLetter }));
+      });
+      return;
+    }
+  }
+
   if (pathname === "/") pathname = "/index.html";
 
   const filePath = path.join(PUBLIC_DIR, pathname);
