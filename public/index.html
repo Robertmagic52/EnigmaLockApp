@@ -1385,9 +1385,9 @@
         topCandidatesBar.style.display = "flex";
 
         if (words.length > 1) {
+          updateOuijaBranching(words);
           renderBottomLetters(words);
           bottomLettersStrip.style.display = "flex";
-          updateOuijaBranching(words);
         } else {
           bottomLettersStrip.style.display = "none";
           clearOuijaDots();
@@ -1410,6 +1410,10 @@
 
     function renderBottomLetters(words) {
       bottomLettersStrip.innerHTML = "";
+      if (!words || words.length <= 1) {
+        bottomLettersStrip.style.display = "none";
+        return;
+      }
 
       const allBtn = document.createElement("button");
       allBtn.className = "letter-chip all-chip active";
@@ -1422,7 +1426,8 @@
       };
       bottomLettersStrip.appendChild(allBtn);
 
-      const letters = Array.from(new Set(words.map(w => w[0].toUpperCase()))).sort();
+      const pos = currentOuijaTargetPos || 1;
+      const letters = Array.from(new Set(words.map(w => getLetterAtPos(w, pos)).filter(Boolean))).sort();
       letters.forEach(letter => {
         const chip = document.createElement("button");
         chip.className = "letter-chip";
@@ -1432,12 +1437,7 @@
           document.querySelectorAll(".letter-chip").forEach(c => c.classList.remove("active"));
           chip.classList.add("active");
 
-          const filtered = currentCandidateWords.filter(w => w[0].toUpperCase() === letter);
-          renderTopCandidates(filtered);
-
-          if (window.navigator && window.navigator.vibrate) {
-            window.navigator.vibrate(10);
-          }
+          applyOuijaLetterFilter(letter);
         };
         bottomLettersStrip.appendChild(chip);
       });

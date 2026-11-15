@@ -1,1 +1,10838 @@
-window.ENIGMA_DATA = {"categories":{"handheld":["Lighter","Keys","Key","Coin","Ring","Watch","Comb","Pen","Pencil","Card","Matches","Matchbox","Stamp","Flashlight","Wallet","Earring","Bracelet","Necklace","Lipstick","Scissors","Soap","Tape","Glue","Toothpick","Razor","Bookmark","Padlock","Whistle","Compass","Dice","Bandage","Eraser","Marker","Stapler","Nail","Screw","Spoon","Fork","Knife","Cup","Mug","Glass","Phone","Badge","Mirror","Candle","Perfume","Brush","Bell","Handbag","Lockbox","Tumbler","Handset","Lantern","Candles","Bottles","Pillbox","Goggles","Compact","Hairpin","Toolbox","Headset","Teaspoon","Lipgloss","Fishhook","Pocket","Locket","Brooch","Bangle","Cufflink","Tiepin","Hairtie","Barrette","Scrunchie","Eyedrops","Tweezers","Clipper","Floss","Lipbalm","Lotion","Cologne","Flask","Bottle","Opener","Corkscrew","Stopper","Ashtray","Cigar","Pipe","Penny","Nickel","Dime","Quarter","Dollar","Token","Chip","Marble","Pebble","Crystal","Magnet","Battery","Charger","Cable","Earbuds","Airpods","Stylus","Crayon","Chalk","Notepad","Postit","Receipt","Ticket","Coupon","Bill","Keycard","Keychain","Keyring","Clicker","Lanyard","Blade","Penknife","Scalpel","Cutter","Pliers","Wrench","Chisel","Needle","Thread","Thimble","Button","Zipper","Spectacles","Loupe","Chopsticks","Straw","Coaster","Napkin","Tissue","Handkerchief","Pouch","Purse","Billfold","Moneyclip","Clutch","Satchel","Envelope","Sticker","Trinket","Amulet","Charm","Figurine","Spinner"],"everyday":["Spoon","Fork","Knife","Plate","Cup","Glass","Bottle","Can","Bowl","Mug","Book","Notebook","Paper","Folder","Phone","Charger","Cable","Battery","Laptop","Mouse","Keyboard","Headphones","Speaker","Camera","Glasses","Sunglasses","Candle","Mirror","Brush","Toothbrush","Towel","Pillow","Blanket","Remote","Controller","Clock","Guitar","Bell","Hammer","Wrench","Screwdriver","Drill","Saw","Pliers","Shoe","Sock","Glove","Hat","Cap","Scarf","Belt","Tie","Shirt","Jacket","Umbrella","Bag","Backpack","Suitcase","Box","Basket","Brick","Ball","Envelope","Ticket","Perfume","Kettle","Vase","Broom","Bucket","Ruler","Lamp","Lighter","Matches","Handbag","Lockbox","Tumbler","Handset","Lantern","Candles","Bottles","Pillbox","Goggles","Bandage","Compact","Hairpin","Toolbox","Headset","Teaspoon","Lipgloss","Fishhook","Padlock","Whistle","Compass","Pocket","Wallet","Coin","Ring","Watch","Comb","Pen","Pencil","Card","Stamp","Flashlight","Earring","Bracelet","Necklace","Lipstick","Scissors","Soap","Tape","Glue","Toothpick","Razor","Bookmark","Dice","Eraser","Marker","Stapler","Nail","Screw","Badge","Locket","Brooch","Bangle","Cufflink","Tiepin","Hairtie","Barrette","Scrunchie","Eyedrops","Tweezers","Clipper","Floss","Lipbalm","Lotion","Cologne","Flask","Opener","Corkscrew","Stopper","Ashtray","Cigar","Pipe","Penny","Nickel","Dime","Quarter","Dollar","Token","Chip","Marble","Pebble","Crystal","Magnet","Earbuds","Airpods","Stylus","Crayon","Chalk","Notepad","Postit","Receipt","Coupon","Bill","Keycard","Keychain","Keyring","Clicker","Lanyard","Blade","Penknife","Scalpel","Cutter","Chisel","Needle","Thread","Thimble","Button","Zipper","Spectacles","Loupe","Chopsticks","Straw","Coaster","Napkin","Tissue","Handkerchief","Pouch","Purse","Billfold","Moneyclip","Clutch","Satchel","Sticker","Trinket","Amulet","Charm","Figurine","Spinner","Saucer","Teacup","Goblet","Pitcher","Decanter","Thermos","Teapot","Blender","Toaster","Mixer","Grater","Peeler","Whisk","Ladle","Spatula","Tongs","Colander","Funnel","Skillet","Dishcloth","Sponge","Dispenser","Shampoo","Conditioner","Toothpaste","Hairdryer","Curtain","Cushion","Quilt","Comforter","Duvet","Carpet","Lampshade","Candlestick","Calendar","Magazine","Newspaper","Catalog","Binder","Calculator","Smartphone","Tablet","Monitor","Mousepad","Microphone","Webcam","Tripod","Radiator","Thermostat","Doorknob","Hanger","Blazer","Sweater","Hoodie","Blouse","Trousers","Shorts","Mittens","Beanie","Boots","Sneakers","Loafers","Slippers","Sandals","Rucksack","Briefcase","Duffel","Luggage","Hamper","Trashcan","Dustpan","Vacuum"],"big_objects":["Chair","Table","Desk","Bed","Couch","Sofa","Door","Window","Wall","Floor","Roof","Stairs","Elevator","Bridge","Tower","Castle","House","Apartment","Hotel","Car","Truck","Van","Bus","Taxi","Train","Subway","Airplane","Helicopter","Boat","Ship","Bicycle","Motorcycle","Scooter","Skateboard","Piano","Refrigerator","Fridge","Television","Tv","Bookshelf","Wardrobe","Cabinet","Stove","Oven","Bathtub","Sink","Pool","Tractor","Yacht","Submarine","Rocket","Trampoline","Statue","Stage","Garage","Skyscraper","Pyramid","Ambulance","Armchair","Recliner","Stool","Bench","Loveseat","Futon","Ottoman","Diningtable","Coffeetable","Nightstand","Counter","Island","Mattress","Bunkbed","Crib","Closet","Armoire","Dresser","Bureau","Chest","Cupboard","Bookcase","Shelf","Credenza","Sideboard","Pantry","Freezer","Cooler","Microwave","Dishwasher","Basin","Jacuzzi","Shower","Toilet","Bidet","Vanity","Fireplace","Chimney","Furnace","Radiator","Grandpiano","Keyboard","Organ","Drumset","Harp","Projector","Screen","Soundbar","Speakers","Stereo","Turntable","Treadmill","Pooltable","Gate","Skylight","Balcony","Porch","Patio","Deck","Veranda","Terrace","Gazebo","Shed","Barn","Greenhouse","Fence","Ceiling","Attic","Basement","Staircase","Ladder","Escalator","Hallway","Corridor","Lobby","Foyer","Tunnel","Highway","Road","Street","Sidewalk","Driveway","Lamppost","Streetlight","Firehydrant","Mailbox","Phonebooth","Billboard","Monument","Fountain","Lighthouse","Palace","Fortress","Mansion","Villa","Cottage","Cabin","Condo","Townhouse","Building","Warehouse","Factory","Hospital","School","University","Library","Museum","Theater","Cinema","Stadium","Church","Cathedral","Temple","Airport","Terminal","Hangar","Trainstation","Station","Harbor","Pier","Rowboat","Canoe","Kayak","Sailboat","Ferry","Cruiseship","Sedan","Suv","Minivan","Camper","Pickup","Trailer","Bulldozer","Crane","Forklift","Coach","Trolley","Tram","Locomotive","Monorail","Bike","Moped","Plane","Jet","Airliner","Blimp","Spaceship"],"animals":["Dog","Cat","Puppy","Kitten","Hamster","Rabbit","Mouse","Rat","Horse","Pony","Cow","Bull","Pig","Sheep","Goat","Donkey","Deer","Elk","Moose","Camel","Lion","Tiger","Leopard","Cheetah","Jaguar","Panther","Bear","Panda","Koala","Wolf","Fox","Coyote","Hyena","Zebra","Giraffe","Elephant","Hippo","Rhino","Gorilla","Monkey","Chimp","Baboon","Lemur","Sloth","Kangaroo","Otter","Beaver","Raccoon","Skunk","Eagle","Hawk","Falcon","Owl","Parrot","Flamingo","Penguin","Swan","Duck","Goose","Shark","Whale","Dolphin","Seal","Walrus","Octopus","Squid","Crab","Lobster","Turtle","Snake","Lizard","Frog","Toad","Chameleon","Crocodile","Alligator","Bat","Spider"],"food":["Apple","Banana","Orange","Grape","Strawberry","Blueberry","Watermelon","Lemon","Lime","Peach","Mango","Pineapple","Cherry","Plum","Kiwi","Avocado","Tomato","Potato","Carrot","Broccoli","Pizza","Burger","Cheeseburger","Sandwich","Taco","Burrito","Hotdog","Steak","Chicken","Bacon","Pasta","Spaghetti","Noodles","Rice","Sushi","Soup","Salad","Bread","Toast","Bagel","Cheese","Butter","Yogurt","Milk","Egg","Pancake","Waffle","Cookie","Cake","Donut","Brownie","Chocolate","Candy","Ice Cream","Coffee","Tea","Soda","Juice","Beer","Wine"],"countries":["USA","Canada","Mexico","Brazil","Argentina","Chile","Peru","Colombia","UK","England","Scotland","Ireland","France","Spain","Italy","Germany","Greece","Portugal","Norway","Sweden","Finland","Denmark","Iceland","Switzerland","Austria","Belgium","Holland","Poland","Czech","Hungary","Croatia","Turkey","Egypt","Morocco","Kenya","Nigeria","South Africa","Japan","China","Korea","India","Thailand","Vietnam","Singapore","Malaysia","Australia","New Zealand","Fiji","Hawaii","Paris","London","Tokyo","Rome","Madrid","Berlin","Venice","Milan","Athens","Dublin","Amsterdam","Vienna","Barcelona","Sydney","Cairo","Moscow","New York"],"natural_inhand":["Rock","Stone","Pebble","Shell","Leaf","Feather","Acorn","Twig","Flower","Rose","Daisy","Tulip","Sunflower","Pinecone","Bark","Branch","Mushroom","Sand"],"natural_big":["Tree","Mountain","River","Ocean","Sea","Lake","Waterfall","Cloud","Rain","Snow","Rainbow","Sun","Moon","Star","Planet","Comet","Lightning","Thunder","Volcano","Island","Cave","Desert","Forest","Valley","Cliff"],"combo":["Red","Blue","Green","Yellow","Orange","Purple","Pink","Black","White","Brown","Gold","Silver","Circle","Square","Triangle","Diamond","Rectangle","Star","Heart","Oval","Aries","Taurus","Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces","January","February","March","April","May","June","July","August","September","October","November","December"],"large_objects":["Chair","Table","Desk","Bed","Couch","Sofa","Door","Window","Wall","Floor","Roof","Stairs","Elevator","Bridge","Tower","Castle","House","Apartment","Hotel","Car","Truck","Van","Bus","Taxi","Train","Subway","Airplane","Helicopter","Boat","Ship","Bicycle","Motorcycle","Scooter","Skateboard","Piano","Refrigerator","Fridge","Television","Tv","Bookshelf","Wardrobe","Cabinet","Stove","Oven","Bathtub","Sink","Pool","Tractor","Yacht","Submarine","Rocket","Trampoline","Statue","Stage","Garage","Skyscraper","Pyramid","Ambulance","Armchair","Recliner","Stool","Bench","Loveseat","Futon","Ottoman","Diningtable","Coffeetable","Nightstand","Counter","Island","Mattress","Bunkbed","Crib","Closet","Armoire","Dresser","Bureau","Chest","Cupboard","Bookcase","Shelf","Credenza","Sideboard","Pantry","Freezer","Cooler","Microwave","Dishwasher","Basin","Jacuzzi","Shower","Toilet","Bidet","Vanity","Fireplace","Chimney","Furnace","Radiator","Grandpiano","Keyboard","Organ","Drumset","Harp","Projector","Screen","Soundbar","Speakers","Stereo","Turntable","Treadmill","Pooltable","Gate","Skylight","Balcony","Porch","Patio","Deck","Veranda","Terrace","Gazebo","Shed","Barn","Greenhouse","Fence","Ceiling","Attic","Basement","Staircase","Ladder","Escalator","Hallway","Corridor","Lobby","Foyer","Tunnel","Highway","Road","Street","Sidewalk","Driveway","Lamppost","Streetlight","Firehydrant","Mailbox","Phonebooth","Billboard","Monument","Fountain","Lighthouse","Palace","Fortress","Mansion","Villa","Cottage","Cabin","Condo","Townhouse","Building","Warehouse","Factory","Hospital","School","University","Library","Museum","Theater","Cinema","Stadium","Church","Cathedral","Temple","Airport","Terminal","Hangar","Trainstation","Station","Harbor","Pier","Rowboat","Canoe","Kayak","Sailboat","Ferry","Cruiseship","Sedan","Suv","Minivan","Camper","Pickup","Trailer","Bulldozer","Crane","Forklift","Coach","Trolley","Tram","Locomotive","Monorail","Bike","Moped","Plane","Jet","Airliner","Blimp","Spaceship"]},"database":{"handheld:726001":["Lighter","Matches","Handbag","Lockbox","Tumbler","Handset"],"handheld:726000":["Lighter","Matches","Handbag","Lockbox","Tumbler","Handset","Candles","Bottles","Pillbox","Goggles","Satchel"],"all:726001":["Lighter","Matches","Handbag","Lockbox","Tumbler","Handset","Hallway","Highway","Hamster","Lobster"],"all:726000":["Lighter","Matches","Handbag","Lockbox","Tumbler","Handset","Candles","Bottles","Pillbox","Goggles","Satchel","Pitcher","Dustpan","Bathtub","Bunkbed","Hallway","Highway","Hamster","Panther","Dolphin","Lobster"],"handheld:420001":["Keys","Fork"],"handheld:420000":["Keys","Ring","Comb","Card","Fork","Bell","Bill"],"all:420001":["Keys","Fork","Lamp","Wall","Harp","Wolf","Hawk","Milk"],"all:420000":["Keys","Ring","Comb","Card","Fork","Bell","Bill","Bowl","Sock","Belt","Ball","Lamp","Desk","Wall","Sink","Harp","Deck","Barn","Pony","Bull","Wolf","Hawk","Duck","Milk","Rock","Bark","Sand","Pink","Gold","July"],"handheld:320001":["Key","Mug"],"handheld:320000":["Key","Pen","Cup","Mug"],"all:320001":["Key","Mug","Hat","Van","Fox","May"],"all:320000":["Key","Pen","Cup","Mug","Can","Saw","Hat","Cap","Bag","Box","Bed","Car","Van","Bus","Suv","Jet","Dog","Cat","Rat","Cow","Pig","Fox","Bat","Sun","Red","May"],"handheld:423003":["Coin","Soap"],"handheld:423000":["Coin","Soap","Nail"],"all:423003":["Coin","Soap","Seal","Soup"],"all:423000":["Coin","Soap","Nail","Book","Door","Roof","Boat","Pool","Road","Pier","Goat","Deer","Lion","Bear","Seal","Toad","Soup","Beer","Leaf","Rain","Moon"],"handheld:420002":["Ring","Bell","Bill"],"all:420002":["Ring","Bell","Bill","Bowl","Belt","Ball","Desk","Deck","Barn","Pony","Bull","Duck","Rock","Bark","Pink","Gold","July"],"handheld:520001":["Watch"],"handheld:520000":["Watch","Penny"],"all:520001":["Watch","Tongs","Yacht","Lobby","Ferry","March"],"all:520000":["Watch","Penny","Tongs","Yacht","Bench","Porch","Lobby","Ferry","Puppy","Candy","March"],"handheld:420003":["Comb","Card"],"all:420003":["Comb","Card","Sock","Sink","Sand"],"handheld:320002":["Pen"],"all:320002":["Pen","Bag","Box","Bed","Bus","Jet","Dog","Rat","Pig","Bat","Red"],"handheld:625002":["Pencil","Pocket","Dollar","Postit","Button"],"handheld:625000":["Pencil","Wallet","Marker","Mirror","Pocket","Locket","Nickel","Dollar","Magnet","Postit","Ticket","Cutter","Button","Zipper","Napkin","Tissue"],"all:625002":["Pencil","Pocket","Dollar","Postit","Button","Pillow","Jacket","Basket","Bucket","Goblet","Binder","Duffel","Rocket","Pickup","Rabbit","Donkey","Parrot","Burger","Butter","Berlin","Dublin","Pisces"],"all:625000":["Pencil","Wallet","Marker","Mirror","Pocket","Locket","Nickel","Dollar","Magnet","Postit","Ticket","Cutter","Button","Zipper","Napkin","Tissue","Folder","Laptop","Pillow","Hammer","Jacket","Basket","Bucket","Goblet","Funnel","Carpet","Binder","Tablet","Webcam","Hanger","Duffel","Hamper","Window","Subway","Rocket","Ladder","Tunnel","Hangar","Harbor","Camper","Pickup","Kitten","Rabbit","Donkey","Monkey","Falcon","Parrot","Walrus","Carrot","Burger","Hotdog","Butter","Coffee","Norway","Turkey","London","Madrid","Berlin","Dublin","Moscow","Valley","Yellow","Silver","Cancer","Pisces"],"handheld:827001":["Matchbox"],"handheld:827000":["Matchbox"],"all:827001":["Matchbox"],"all:827000":["Matchbox"],"handheld:530003":["Stamp","Chalk","Charm"],"handheld:530000":["Stamp","Glass","Brush","Floss","Flask","Chalk","Charm"],"all:530003":["Stamp","Chalk","Charm","Clock","Scarf","Shirt","Chest","Shelf","Chimp","Sloth","Skunk","Shark","Czech","Shell","Cliff"],"all:530000":["Stamp","Glass","Brush","Floss","Flask","Chalk","Charm","Clock","Drill","Scarf","Shirt","Brick","Whisk","Truck","Chest","Shelf","Blimp","Chimp","Sloth","Skunk","Shark","Czech","Shell","Cliff","Black","Brown"],"handheld:037001":["Flashlight"],"handheld:037000":["Flashlight","Chopsticks"],"all:037001":["Flashlight"],"all:037000":["Flashlight","Chopsticks","Grandpiano"],"handheld:625001":["Wallet","Marker","Mirror","Locket","Nickel","Magnet","Ticket","Zipper","Napkin","Tissue"],"all:625001":["Wallet","Marker","Mirror","Locket","Nickel","Magnet","Ticket","Zipper","Napkin","Tissue","Folder","Laptop","Hammer","Funnel","Tablet","Webcam","Hanger","Hamper","Window","Ladder","Tunnel","Hangar","Harbor","Kitten","Monkey","Falcon","Walrus","Hotdog","Norway","Turkey","London","Madrid","Moscow","Valley","Yellow"],"handheld:712001":["Earring","Earbuds","Airpods"],"handheld:712000":["Earring","Earbuds","Airpods"],"all:712001":["Earring","Earbuds","Airpods","Airport","Austria"],"all:712000":["Earring","Earbuds","Airpods","Airport","Austria"],"handheld:835002":["Bracelet"],"handheld:835000":["Bracelet"],"all:835002":["Bracelet","Driveway"],"all:835000":["Bracelet","Credenza","Driveway","Flamingo"],"handheld:826001":["Necklace","Lipstick","Lipgloss","Fishhook","Keychain"],"handheld:826000":["Necklace","Lipstick","Lipgloss","Fishhook","Cufflink","Keychain","Penknife","Billfold"],"all:826001":["Necklace","Lipstick","Lipgloss","Fishhook","Keychain","Wardrobe","Mattress","Lamppost","Fortress","Forklift","Mushroom"],"all:826000":["Necklace","Lipstick","Lipgloss","Fishhook","Cufflink","Keychain","Penknife","Billfold","Backpack","Rucksack","Wardrobe","Mattress","Lamppost","Fortress","Forklift","Sandwich","Mushroom"],"handheld:836003":["Scissors"],"handheld:836000":["Scissors"],"all:836003":["Scissors","Slippers","Scotland"],"all:836000":["Scissors","Slippers","Broccoli","Scotland"],"handheld:424001":["Tape"],"handheld:424000":["Tape","Dice","Pipe","Dime"],"all:424001":["Tape","Vase","Taxi","Lime","Kiwi","Taco","Wine","Fiji","Lake"],"all:424000":["Tape","Dice","Pipe","Dime","Vase","Sofa","Taxi","Gate","Bike","Lime","Kiwi","Taco","Rice","Cake","Soda","Wine","Peru","Fiji","Rome","Rose","Lake","Cave","June"],"handheld:434002":["Glue"],"handheld:434000":["Glue"],"all:434002":["Glue","Blue"],"all:434000":["Glue","Shoe","Tree","Blue"],"handheld:923001":["Toothpick"],"handheld:923000":["Toothpick"],"all:923001":["Toothpick","Hairdryer"],"all:923000":["Toothpick","Hairdryer","Bookshelf","Pooltable"],"handheld:524002":["Razor"],"handheld:524000":["Razor","Cigar","Token"],"all:524002":["Razor","Paper","Ruler","Duvet","Basin","Bidet","Patio","Bacon","Bagel","Donut","Japan","Paris","River"],"all:524000":["Razor","Cigar","Token","Paper","Towel","Ruler","Mixer","Duvet","Tower","Hotel","Futon","Basin","Bidet","Patio","Foyer","Cabin","Canoe","Kayak","Sedan","Moped","Camel","Tiger","Lemur","Lemon","Bacon","Salad","Bagel","Donut","Japan","Korea","Paris","Milan","Tulip","River","Comet"],"handheld:823002":["Bookmark"],"handheld:823000":["Bookmark","Teaspoon"],"all:823002":["Bookmark","Doorknob","Bookcase","Building"],"all:823000":["Bookmark","Teaspoon","Suitcase","Mousepad","Doorknob","Bookcase","Soundbar","Fountain","Building","Sailboat","Mountain"],"handheld:725002":["Padlock","Bandage","Perfume","Battery"],"handheld:725000":["Padlock","Compass","Bandage","Perfume","Lantern","Compact","Lipbalm","Battery","Keycard","Keyring","Lanyard"],"all:725002":["Padlock","Bandage","Perfume","Battery","Balcony","Rowboat","Raccoon","Penguin","Burrito","Pancake","Germany","Denmark","Belgium"],"all:725000":["Padlock","Compass","Bandage","Perfume","Lantern","Compact","Lipbalm","Battery","Keycard","Keyring","Lanyard","Curtain","Cushion","Mittens","Sandals","Luggage","Furnace","Balcony","Terrace","Mansion","Cottage","Factory","Library","Rowboat","Raccoon","Penguin","Burrito","Pancake","Germany","Finland","Denmark","Belgium","Holland","Hungary","New York","Volcano"],"handheld:737001":["Whistle","Thimble"],"handheld:737000":["Whistle","Thimble"],"all:737001":["Whistle","Thimble"],"all:737000":["Whistle","Thimble"],"handheld:725003":["Compass","Compact"],"all:725003":["Compass","Compact","Curtain","Cushion","Sandals","Cottage"],"handheld:424002":["Dice","Pipe","Dime"],"all:424002":["Dice","Pipe","Dime","Gate","Bike","Rice","Peru","Rome","Rose","June"],"handheld:613001":["Eraser","Amulet"],"handheld:613000":["Eraser","Opener","Amulet"],"all:613001":["Eraser","Amulet"],"all:613000":["Eraser","Opener","Amulet","Orange"],"handheld:736003":["Stapler","Clipper","Stopper","Charger","Clicker","Scalpel","Sticker","Spinner"],"handheld:736000":["Stapler","Clipper","Stopper","Charger","Clicker","Scalpel","Sticker","Trinket","Spinner"],"all:736003":["Stapler","Clipper","Stopper","Charger","Clicker","Scalpel","Sticker","Spinner","Skillet","Shampoo","Chimney","Chicken","Scorpio"],"all:736000":["Stapler","Clipper","Stopper","Charger","Clicker","Scalpel","Sticker","Trinket","Spinner","Glasses","Blanket","Thermos","Blender","Skillet","Shampoo","Tractor","Dresser","Chimney","Drumset","Trolley","Chicken","Brownie","Thunder","Scorpio"],"handheld:423001":["Nail"],"all:423001":["Nail","Lion","Toad","Leaf","Moon"],"handheld:540003":["Screw","Straw"],"handheld:540000":["Screw","Straw"],"all:540003":["Screw","Straw"],"all:540000":["Screw","Straw"],"handheld:534003":["Spoon"],"handheld:534000":["Spoon"],"all:534003":["Spoon","Chair","Stool","Sheep","Squid","Steak","Spain","Cloud"],"all:534000":["Spoon","Broom","Chair","Floor","Train","Stool","Sheep","Squid","Steak","Bread","Spain","Cloud","Green"],"handheld:535001":["Knife"],"handheld:535000":["Knife","Phone","Blade"],"all:535001":["Knife","Hyena","Whale","White"],"all:535000":["Knife","Phone","Blade","Plate","Glove","Stove","Stage","Crane","Plane","Hyena","Rhino","Whale","Snake","Grape","Chile","China","Stone","White"],"handheld:320003":["Cup"],"all:320003":["Cup","Can","Saw","Cap","Car","Suv","Cat","Cow","Sun"],"handheld:530002":["Glass","Brush"],"all:530002":["Glass","Brush","Drill","Brick","Blimp","Black","Brown"],"handheld:535002":["Phone","Blade"],"all:535002":["Phone","Blade","Plate","Glove","Plane","Rhino","Grape"],"handheld:525002":["Badge","Purse"],"handheld:525000":["Badge","Cable","Purse"],"all:525002":["Badge","Purse","Panda","Pizza","Pasta"],"all:525000":["Badge","Cable","Purse","Ladle","Table","Fence","Villa","Condo","Horse","Panda","Zebra","Hippo","Mango","Pizza","Pasta","Sushi","Kenya","Tokyo","Virgo","Libra"],"handheld:626003":["Candle"],"handheld:626000":["Candle","Bangle","Bottle","Marble","Pebble"],"all:626003":["Candle","Castle","Circle"],"all:626000":["Candle","Bangle","Bottle","Marble","Pebble","Kettle","Castle","Temple","Turtle","Waffle","Purple","Circle"],"handheld:725001":["Lantern","Lipbalm","Keycard","Keyring","Lanyard"],"all:725001":["Lantern","Lipbalm","Keycard","Keyring","Lanyard","Mittens","Luggage","Furnace","Terrace","Mansion","Factory","Library","Finland","Holland","Hungary","New York","Volcano"],"handheld:726003":["Candles","Satchel"],"all:726003":["Candles","Satchel"],"handheld:726002":["Bottles","Pillbox","Goggles"],"all:726002":["Bottles","Pillbox","Goggles","Pitcher","Dustpan","Bathtub","Bunkbed","Panther","Dolphin"],"handheld:723001":["Hairpin","Toolbox","Headset","Hairtie"],"handheld:723000":["Hairpin","Toolbox","Headset","Hairtie","Quarter","Coaster"],"all:723001":["Hairpin","Toolbox","Headset","Hairtie","Toaster","Loafers","Mailbox","Leopard","Noodles","Vietnam","Feather"],"all:723000":["Hairpin","Toolbox","Headset","Hairtie","Quarter","Coaster","Toaster","Loafers","Counter","Ceiling","Mailbox","Leopard","Noodles","Vietnam","Feather","Rainbow","Diamond"],"handheld:823001":["Teaspoon"],"all:823001":["Teaspoon","Mousepad","Fountain","Mountain"],"handheld:634002":["Brooch","Pliers"],"handheld:634000":["Brooch","Pliers"],"all:634002":["Brooch","Pliers","Blouse","Greece"],"all:634000":["Brooch","Pliers","Blouse","Stairs","Cheese","Greece","Square"],"handheld:626002":["Bangle","Bottle","Pebble"],"all:626002":["Bangle","Bottle","Pebble","Purple"],"handheld:826003":["Cufflink"],"all:826003":["Cufflink","Sandwich"],"handheld:623001":["Tiepin","Needle"],"handheld:623000":["Tiepin","Coupon","Needle"],"all:623001":["Tiepin","Needle","Teacup","Teapot","Hoodie","Toilet","Vienna","Taurus"],"all:623000":["Tiepin","Coupon","Needle","Guitar","Saucer","Teacup","Teapot","Peeler","Hoodie","Beanie","Cooler","Toilet","Beaver","Cookie","Vienna","Taurus"],"handheld:825002":["Barrette"],"handheld:825000":["Barrette"],"all:825002":["Barrette","Recliner","Portugal"],"all:825000":["Barrette","Keyboard","Recliner","Cupboard","Corridor","Hospital","Terminal","Kangaroo","Portugal","February"],"handheld:948003":["Scrunchie"],"handheld:948000":["Scrunchie"],"all:948003":["Scrunchie"],"all:948000":["Scrunchie"],"handheld:813001":["Eyedrops"],"handheld:813000":["Eyedrops"],"all:813001":["Eyedrops","Elevator","Elephant","Ice Cream","Aquarius"],"all:813000":["Eyedrops","Elevator","Elephant","Ice Cream","Aquarius"],"handheld:834001":["Tweezers"],"handheld:834000":["Tweezers"],"all:834001":["Tweezers","Trousers","Thailand","Triangle"],"all:834000":["Tweezers","Trousers","Sneakers","Speakers","Thailand","Triangle"],"handheld:530001":["Floss","Flask"],"all:530001":["Floss","Flask","Whisk","Truck"],"handheld:624001":["Lotion"],"handheld:624000":["Lotion"],"all:624001":["Lotion","Vacuum","Vanity","Museum","Lizard","Tomato","Yogurt","Mexico","Hawaii","Venice","Forest"],"all:624000":["Lotion","Camera","Remote","Vacuum","Garage","Bureau","Vanity","Gazebo","Palace","Museum","Cinema","Jaguar","Coyote","Baboon","Lizard","Banana","Tomato","Potato","Yogurt","Canada","Mexico","Poland","Hawaii","Venice","Desert","Forest","Gemini"],"handheld:724003":["Cologne"],"handheld:724000":["Cologne","Notepad","Receipt"],"all:724003":["Cologne","Catalog","Cabinet"],"all:724000":["Cologne","Notepad","Receipt","Catalog","Monitor","Cabinet","Jacuzzi","Veranda","Minivan","Giraffe","Gorilla","Morocco","Nigeria","January"],"handheld:613003":["Opener"],"all:613003":["Opener","Orange"],"handheld:928003":["Corkscrew"],"handheld:928000":["Corkscrew"],"all:928003":["Corkscrew"],"all:928000":["Corkscrew"],"handheld:716001":["Ashtray"],"handheld:716000":["Ashtray"],"all:716001":["Ashtray"],"all:716000":["Ashtray"],"handheld:524003":["Cigar"],"all:524003":["Cigar","Cabin","Canoe","Sedan","Camel","Salad","Comet"],"handheld:520002":["Penny"],"all:520002":["Penny","Bench","Porch","Puppy"],"handheld:723003":["Quarter","Coaster"],"all:723003":["Quarter","Coaster","Counter","Ceiling"],"handheld:524001":["Token"],"all:524001":["Token","Towel","Mixer","Tower","Hotel","Futon","Foyer","Kayak","Moped","Tiger","Lemur","Lemon","Korea","Milan","Tulip"],"handheld:430003":["Chip"],"handheld:430000":["Chip"],"all:430003":["Chip","Ship","Crib","Shed","Swan","Crab","Snow","Star"],"all:430000":["Chip","Ship","Crib","Shed","Tram","Swan","Crab","Frog","Plum","Twig","Snow","Star"],"handheld:626001":["Marble"],"all:626001":["Marble","Kettle","Temple","Turtle","Waffle"],"handheld:760003":["Crystal"],"handheld:760000":["Crystal"],"all:760003":["Crystal"],"all:760000":["Crystal"],"handheld:525003":["Cable"],"all:525003":["Cable","Condo","Sushi"],"handheld:650003":["Stylus"],"handheld:650000":["Stylus"],"all:650003":["Stylus","Sydney"],"all:650000":["Stylus","Sydney"],"handheld:635003":["Crayon","Chisel"],"handheld:635000":["Crayon","Chisel"],"all:635003":["Crayon","Chisel","Statue","Closet","Shower","Stereo","Spider","Sweden"],"all:635000":["Crayon","Chisel","Grater","Tripod","Blazer","Statue","Closet","Shower","Stereo","Spider","Brazil","Sweden","Flower","Planet"],"handheld:724001":["Notepad"],"all:724001":["Notepad","Monitor","Veranda","Minivan","Morocco","Nigeria"],"handheld:724002":["Receipt"],"all:724002":["Receipt","Jacuzzi","Giraffe","Gorilla","January"],"handheld:623003":["Coupon"],"all:623003":["Coupon","Saucer","Cooler","Cookie"],"handheld:826002":["Penknife","Billfold"],"all:826002":["Penknife","Billfold","Backpack","Rucksack"],"handheld:625003":["Cutter"],"all:625003":["Cutter","Carpet","Subway","Camper","Carrot","Coffee","Silver","Cancer"],"handheld:630001":["Wrench"],"handheld:630000":["Wrench","Clutch"],"all:630001":["Wrench"],"all:630000":["Wrench","Clutch","Shorts","Church","Cherry","Branch"],"handheld:645001":["Thread"],"handheld:645000":["Thread"],"all:645001":["Thread"],"all:645000":["Thread","Screen","Street","School"],"handheld:036003":["Spectacles"],"handheld:036000":["Spectacles"],"all:036003":["Spectacles"],"all:036000":["Spectacles","Thermostat","Trampoline"],"handheld:523001":["Loupe"],"handheld:523000":["Loupe","Pouch"],"all:523001":["Loupe","Mouse","House","Moose","Koala","Toast","Heart"],"all:523000":["Loupe","Pouch","Mouse","Quilt","Boots","Couch","House","Piano","Coach","Moose","Koala","Goose","Peach","Toast","Juice","Cairo","Daisy","Heart"],"handheld:037003":["Chopsticks"],"all:037003":["Chopsticks"],"handheld:126001":["Handkerchief"],"handheld:126000":["Handkerchief"],"all:126001":["Handkerchief"],"all:126000":["Handkerchief","Candlestick"],"handheld:523002":["Pouch"],"all:523002":["Pouch","Boots","Piano","Goose","Peach","Juice","Daisy"],"handheld:924001":["Moneyclip"],"handheld:924000":["Moneyclip"],"all:924001":["Moneyclip","Fireplace","Warehouse","Waterfall"],"all:924000":["Moneyclip","Sideboard","Fireplace","Warehouse","Pineapple","Waterfall"],"handheld:630003":["Clutch"],"all:630003":["Clutch","Shorts","Church","Cherry"],"handheld:814001":["Envelope"],"handheld:814000":["Envelope"],"all:814001":["Envelope"],"all:814000":["Envelope"],"handheld:736001":["Trinket"],"all:736001":["Trinket","Thermos","Tractor","Trolley","Thunder"],"handheld:824001":["Figurine"],"handheld:824000":["Figurine"],"all:824001":["Figurine","Notebook","Magazine","Loveseat","Monument","Monorail","Malaysia","November"],"all:824000":["Figurine","Notebook","Decanter","Colander","Calendar","Magazine","Radiator","Loveseat","Basement","Sidewalk","Monument","Monorail","Colombia","Malaysia","Pinecone","November","December"],"everyday:534003":["Spoon"],"everyday:534000":["Spoon","Broom"],"everyday:420001":["Fork","Lamp"],"everyday:420000":["Fork","Bowl","Bell","Sock","Belt","Ball","Lamp","Ring","Comb","Card","Bill"],"everyday:535001":["Knife"],"everyday:535000":["Knife","Plate","Phone","Glove","Blade"],"everyday:535002":["Plate","Phone","Glove","Blade"],"everyday:320003":["Cup","Can","Saw","Cap"],"everyday:320000":["Cup","Can","Mug","Saw","Hat","Cap","Bag","Box","Pen"],"everyday:530002":["Glass","Brush","Drill","Brick"],"everyday:530000":["Glass","Brush","Clock","Drill","Scarf","Shirt","Brick","Stamp","Floss","Flask","Chalk","Charm","Whisk"],"everyday:626002":["Bottle","Bangle","Pebble"],"everyday:626000":["Bottle","Candle","Kettle","Bangle","Marble","Pebble"],"everyday:420002":["Bowl","Bell","Belt","Ball","Ring","Bill"],"everyday:320001":["Mug","Hat"],"everyday:423002":["Book"],"everyday:423000":["Book","Coin","Soap","Nail"],"all:423002":["Book","Door","Roof","Boat","Pool","Road","Pier","Goat","Deer","Bear","Beer","Rain"],"everyday:824001":["Notebook","Figurine","Magazine"],"everyday:824000":["Notebook","Figurine","Decanter","Colander","Calendar","Magazine","Radiator"],"everyday:524002":["Paper","Ruler","Razor","Duvet"],"everyday:524000":["Paper","Towel","Ruler","Razor","Cigar","Token","Mixer","Duvet"],"everyday:625001":["Folder","Laptop","Mirror","Hammer","Ticket","Wallet","Marker","Locket","Nickel","Magnet","Zipper","Napkin","Tissue","Funnel","Tablet","Webcam","Hanger","Hamper"],"everyday:625000":["Folder","Laptop","Mirror","Pillow","Hammer","Jacket","Basket","Ticket","Bucket","Pocket","Wallet","Pencil","Marker","Locket","Nickel","Dollar","Magnet","Postit","Cutter","Button","Zipper","Napkin","Tissue","Goblet","Funnel","Carpet","Binder","Tablet","Webcam","Hanger","Duffel","Hamper"],"everyday:736003":["Charger","Stapler","Clipper","Stopper","Clicker","Scalpel","Sticker","Spinner","Skillet","Shampoo"],"everyday:736000":["Charger","Glasses","Blanket","Stapler","Clipper","Stopper","Clicker","Scalpel","Sticker","Trinket","Spinner","Thermos","Blender","Skillet","Shampoo"],"everyday:525003":["Cable"],"everyday:525000":["Cable","Badge","Purse","Ladle"],"everyday:725002":["Battery","Perfume","Bandage","Padlock"],"everyday:725000":["Battery","Perfume","Lantern","Bandage","Compact","Padlock","Compass","Lipbalm","Keycard","Keyring","Lanyard","Curtain","Cushion","Mittens","Sandals","Luggage"],"everyday:523001":["Mouse","Loupe"],"everyday:523000":["Mouse","Loupe","Pouch","Quilt","Boots"],"everyday:825001":["Keyboard"],"everyday:825000":["Keyboard","Barrette"],"all:825001":["Keyboard","Hospital","Terminal","Kangaroo","February"],"everyday:023001":["Headphones","Toothbrush","Toothpaste"],"everyday:023000":["Headphones","Toothbrush","Toothpaste"],"all:023001":["Headphones","Toothbrush","Toothpaste"],"all:023000":["Headphones","Toothbrush","Toothpaste"],"everyday:734003":["Speaker","Sweater"],"everyday:734000":["Speaker","Sweater"],"all:734003":["Speaker","Sweater","Scooter","Cheetah","Croatia"],"all:734000":["Speaker","Sweater","Scooter","Freezer","Theater","Trailer","Cheetah","Croatia"],"everyday:624003":["Camera"],"everyday:624000":["Camera","Remote","Lotion","Vacuum"],"all:624003":["Camera","Cinema","Coyote","Canada"],"everyday:736002":["Glasses","Blanket","Blender"],"all:736002":["Glasses","Blanket","Blender","Dresser","Drumset","Brownie"],"everyday:026003":["Sunglasses","Controller"],"everyday:026000":["Sunglasses","Controller"],"all:026003":["Sunglasses","Controller"],"all:026000":["Sunglasses","Controller","Dishwasher"],"everyday:626003":["Candle"],"everyday:524001":["Towel","Token","Mixer"],"everyday:625002":["Pillow","Jacket","Basket","Bucket","Pocket","Pencil","Dollar","Postit","Button","Goblet","Binder","Duffel"],"everyday:624002":["Remote"],"all:624002":["Remote","Garage","Bureau","Gazebo","Palace","Jaguar","Baboon","Banana","Potato","Poland","Desert","Gemini"],"everyday:530003":["Clock","Scarf","Shirt","Stamp","Chalk","Charm"],"everyday:623002":["Guitar","Peeler","Beanie"],"everyday:623000":["Guitar","Tiepin","Coupon","Needle","Saucer","Teacup","Teapot","Peeler","Hoodie","Beanie"],"all:623002":["Guitar","Peeler","Beanie","Beaver"],"everyday:630001":["Wrench"],"everyday:630000":["Wrench","Clutch","Shorts"],"everyday:148003":["Screwdriver"],"everyday:148000":["Screwdriver"],"all:148003":["Screwdriver"],"all:148000":["Screwdriver"],"everyday:634002":["Pliers","Brooch","Blouse"],"everyday:634000":["Pliers","Brooch","Blouse"],"everyday:434003":["Shoe"],"everyday:434000":["Shoe","Glue"],"all:434003":["Shoe"],"everyday:420003":["Sock","Comb","Card"],"everyday:323001":["Tie"],"everyday:323000":["Tie"],"all:323001":["Tie","Tea","Leo"],"all:323000":["Tie","Tea","Sea","Leo"],"everyday:815002":["Umbrella"],"everyday:815000":["Umbrella"],"all:815002":["Umbrella"],"all:815000":["Umbrella"],"everyday:320002":["Bag","Box","Pen"],"everyday:826002":["Backpack","Penknife","Billfold","Rucksack"],"everyday:826000":["Backpack","Lipgloss","Fishhook","Necklace","Lipstick","Cufflink","Keychain","Penknife","Billfold","Rucksack"],"everyday:823003":["Suitcase"],"everyday:823000":["Suitcase","Teaspoon","Bookmark","Mousepad","Doorknob"],"all:823003":["Suitcase","Soundbar","Sailboat"],"everyday:814001":["Envelope"],"everyday:814000":["Envelope"],"everyday:626001":["Kettle","Marble"],"everyday:424001":["Vase","Tape"],"everyday:424000":["Vase","Tape","Dice","Pipe","Dime"],"everyday:534002":["Broom"],"all:534002":["Broom","Bread","Green"],"everyday:726001":["Lighter","Matches","Handbag","Lockbox","Tumbler","Handset"],"everyday:726000":["Lighter","Matches","Handbag","Lockbox","Tumbler","Handset","Candles","Bottles","Pillbox","Goggles","Satchel","Pitcher","Dustpan"],"everyday:725001":["Lantern","Lipbalm","Keycard","Keyring","Lanyard","Mittens","Luggage"],"everyday:726003":["Candles","Satchel"],"everyday:726002":["Bottles","Pillbox","Goggles","Pitcher","Dustpan"],"everyday:725003":["Compact","Compass","Curtain","Cushion","Sandals"],"everyday:723001":["Hairpin","Toolbox","Headset","Hairtie","Toaster","Loafers"],"everyday:723000":["Hairpin","Toolbox","Headset","Hairtie","Quarter","Coaster","Toaster","Loafers"],"everyday:823001":["Teaspoon","Mousepad"],"everyday:826001":["Lipgloss","Fishhook","Necklace","Lipstick","Keychain"],"everyday:737001":["Whistle","Thimble"],"everyday:737000":["Whistle","Thimble"],"everyday:423003":["Coin","Soap"],"everyday:520001":["Watch","Tongs"],"everyday:520000":["Watch","Penny","Tongs"],"everyday:037001":["Flashlight"],"everyday:037000":["Flashlight","Chopsticks"],"everyday:712001":["Earring","Earbuds","Airpods"],"everyday:712000":["Earring","Earbuds","Airpods"],"everyday:835002":["Bracelet"],"everyday:835000":["Bracelet"],"everyday:836003":["Scissors","Slippers"],"everyday:836000":["Scissors","Slippers"],"everyday:434002":["Glue"],"everyday:923001":["Toothpick","Hairdryer"],"everyday:923000":["Toothpick","Hairdryer"],"everyday:823002":["Bookmark","Doorknob"],"everyday:424002":["Dice","Pipe","Dime"],"everyday:613001":["Eraser","Amulet"],"everyday:613000":["Eraser","Opener","Amulet"],"everyday:423001":["Nail"],"everyday:540003":["Screw","Straw"],"everyday:540000":["Screw","Straw"],"everyday:525002":["Badge","Purse"],"everyday:826003":["Cufflink"],"everyday:623001":["Tiepin","Needle","Teacup","Teapot","Hoodie"],"everyday:825002":["Barrette"],"everyday:948003":["Scrunchie"],"everyday:948000":["Scrunchie"],"everyday:813001":["Eyedrops"],"everyday:813000":["Eyedrops"],"everyday:834001":["Tweezers","Trousers"],"everyday:834000":["Tweezers","Trousers","Sneakers"],"everyday:530001":["Floss","Flask","Whisk"],"everyday:624001":["Lotion","Vacuum"],"everyday:724003":["Cologne","Catalog"],"everyday:724000":["Cologne","Notepad","Receipt","Catalog","Monitor"],"everyday:613003":["Opener"],"everyday:928003":["Corkscrew"],"everyday:928000":["Corkscrew"],"everyday:716001":["Ashtray"],"everyday:716000":["Ashtray"],"everyday:524003":["Cigar"],"everyday:520002":["Penny"],"everyday:723003":["Quarter","Coaster"],"everyday:430003":["Chip"],"everyday:430000":["Chip"],"everyday:760003":["Crystal"],"everyday:760000":["Crystal"],"everyday:650003":["Stylus"],"everyday:650000":["Stylus"],"everyday:635003":["Crayon","Chisel"],"everyday:635000":["Crayon","Chisel","Grater","Tripod","Blazer"],"everyday:724001":["Notepad","Monitor"],"everyday:724002":["Receipt"],"everyday:623003":["Coupon","Saucer"],"everyday:625003":["Cutter","Carpet"],"everyday:645001":["Thread"],"everyday:645000":["Thread"],"everyday:036003":["Spectacles"],"everyday:036000":["Spectacles","Thermostat"],"everyday:037003":["Chopsticks"],"everyday:126001":["Handkerchief"],"everyday:126000":["Handkerchief","Candlestick"],"everyday:523002":["Pouch","Boots"],"everyday:924001":["Moneyclip"],"everyday:924000":["Moneyclip"],"everyday:630003":["Clutch","Shorts"],"everyday:736001":["Trinket","Thermos"],"everyday:824002":["Decanter","Radiator"],"all:824002":["Decanter","Radiator","Basement","Pinecone","December"],"everyday:635002":["Grater","Blazer"],"all:635002":["Grater","Blazer","Brazil","Planet"],"everyday:525001":["Ladle"],"all:525001":["Ladle","Table","Fence","Villa","Horse","Zebra","Hippo","Mango","Kenya","Tokyo","Virgo","Libra"],"everyday:735003":["Spatula"],"everyday:735000":["Spatula"],"all:735003":["Spatula","Stadium","Station"],"all:735000":["Spatula","Stadium","Station"],"everyday:824003":["Colander","Calendar"],"all:824003":["Colander","Calendar","Sidewalk","Colombia"],"everyday:927002":["Dishcloth"],"everyday:927000":["Dishcloth","Lampshade"],"all:927002":["Dishcloth"],"all:927000":["Dishcloth","Lampshade","Lightning"],"everyday:636003":["Sponge"],"everyday:636000":["Sponge"],"all:636003":["Sponge"],"all:636000":["Sponge","Bridge","Fridge","France"],"everyday:925002":["Dispenser"],"everyday:925000":["Dispenser","Comforter"],"all:925002":["Dispenser","Barcelona","Rectangle"],"all:925000":["Dispenser","Comforter","Submarine","Microwave","Cathedral","Singapore","Barcelona","Rectangle","Capricorn","September"],"everyday:125003":["Conditioner"],"everyday:125000":["Conditioner"],"all:125003":["Conditioner","Coffeetable"],"all:125000":["Conditioner","Refrigerator","Coffeetable"],"everyday:523003":["Quilt"],"all:523003":["Quilt","Couch","Coach","Cairo"],"everyday:925003":["Comforter"],"all:925003":["Comforter","Submarine","Cathedral","Singapore","Capricorn","September"],"everyday:927001":["Lampshade"],"all:927001":["Lampshade","Lightning"],"everyday:126003":["Candlestick"],"all:126003":["Candlestick"],"everyday:926001":["Newspaper"],"everyday:926000":["Newspaper"],"all:926001":["Newspaper","Turntable","Townhouse"],"all:926000":["Newspaper","Turntable","Billboard","Townhouse","Bulldozer","Sunflower"],"everyday:025003":["Calculator"],"everyday:025000":["Calculator","Microphone"],"all:025003":["Calculator"],"all:025000":["Calculator","Microphone","New Zealand"],"everyday:038003":["Smartphone"],"everyday:038000":["Smartphone"],"all:038003":["Smartphone"],"all:038000":["Smartphone"],"everyday:025001":["Microphone"],"all:025001":["Microphone","New Zealand"],"everyday:635001":["Tripod"],"all:635001":["Tripod","Flower"],"everyday:036001":["Thermostat"],"all:036001":["Thermostat","Trampoline"],"everyday:834003":["Sneakers"],"all:834003":["Sneakers","Speakers"],"everyday:934002":["Briefcase"],"everyday:934000":["Briefcase"],"all:934002":["Briefcase","Blueberry"],"all:934000":["Briefcase","Treadmill","Staircase","Blueberry"],"everyday:837001":["Trashcan"],"everyday:837000":["Trashcan"],"all:837001":["Trashcan"],"all:837000":["Trashcan"],"big_objects:534003":["Chair","Stool"],"big_objects:534000":["Chair","Floor","Train","Stool"],"big_objects:525001":["Table","Fence","Villa"],"big_objects:525000":["Table","Fence","Villa","Condo"],"big_objects:420002":["Desk","Deck","Barn"],"big_objects:420000":["Desk","Wall","Sink","Harp","Deck","Barn"],"big_objects:320002":["Bed","Bus","Jet"],"big_objects:320000":["Bed","Car","Van","Bus","Suv","Jet"],"big_objects:523003":["Couch","Coach"],"big_objects:523000":["Couch","House","Piano","Coach"],"big_objects:424003":["Sofa"],"big_objects:424000":["Sofa","Taxi","Gate","Bike"],"all:424003":["Sofa","Cake","Soda","Cave"],"big_objects:423002":["Door","Roof","Boat","Pool","Road","Pier"],"big_objects:423000":["Door","Roof","Boat","Pool","Road","Pier"],"big_objects:625001":["Window","Ladder","Tunnel","Hangar","Harbor"],"big_objects:625000":["Window","Subway","Rocket","Ladder","Tunnel","Hangar","Harbor","Camper","Pickup"],"big_objects:420001":["Wall","Harp"],"big_objects:534001":["Floor","Train"],"all:534001":["Floor","Train"],"big_objects:634003":["Stairs"],"big_objects:634000":["Stairs"],"all:634003":["Stairs","Cheese","Square"],"big_objects:813001":["Elevator"],"big_objects:813000":["Elevator"],"big_objects:636002":["Bridge"],"big_objects:636000":["Bridge","Fridge"],"all:636002":["Bridge"],"big_objects:524001":["Tower","Hotel","Futon","Foyer","Kayak","Moped"],"big_objects:524000":["Tower","Hotel","Futon","Basin","Bidet","Patio","Foyer","Cabin","Canoe","Kayak","Sedan","Moped"],"big_objects:626003":["Castle"],"big_objects:626000":["Castle","Temple"],"big_objects:523001":["House"],"big_objects:913001":["Apartment"],"big_objects:913000":["Apartment"],"all:913001":["Apartment"],"all:913000":["Apartment"],"big_objects:320003":["Car","Suv"],"big_objects:530001":["Truck"],"big_objects:530000":["Truck","Chest","Shelf","Blimp"],"big_objects:320001":["Van"],"big_objects:424001":["Taxi"],"big_objects:625003":["Subway","Camper"],"big_objects:812001":["Airplane","Airliner"],"big_objects:812000":["Airplane","Airliner"],"all:812001":["Airplane","Airliner"],"all:812000":["Airplane","Airliner"],"big_objects:024001":["Helicopter","Motorcycle","Television","Locomotive"],"big_objects:024000":["Helicopter","Motorcycle","Television","Locomotive"],"all:024001":["Helicopter","Motorcycle","Television","Locomotive","Watermelon"],"all:024000":["Helicopter","Motorcycle","Television","Locomotive","Watermelon"],"big_objects:430003":["Ship","Crib","Shed"],"big_objects:430000":["Ship","Crib","Shed","Tram"],"big_objects:727002":["Bicycle"],"big_objects:727000":["Bicycle"],"all:727002":["Bicycle"],"all:727000":["Bicycle"],"big_objects:734003":["Scooter"],"big_objects:734000":["Scooter","Freezer","Theater","Trailer"],"big_objects:035003":["Skateboard"],"big_objects:035000":["Skateboard","Phonebooth"],"all:035003":["Skateboard"],"all:035000":["Skateboard","Phonebooth"],"big_objects:523002":["Piano"],"big_objects:125002":["Refrigerator"],"big_objects:125000":["Refrigerator","Coffeetable"],"all:125002":["Refrigerator"],"big_objects:636001":["Fridge"],"all:636001":["Fridge","France"],"big_objects:200001":["Tv"],"big_objects:200000":["Tv"],"all:200001":["Tv"],"all:200000":["Tv"],"big_objects:923002":["Bookshelf","Pooltable"],"big_objects:923000":["Bookshelf","Pooltable"],"all:923002":["Bookshelf","Pooltable"],"big_objects:826001":["Wardrobe","Mattress","Lamppost","Fortress","Forklift"],"big_objects:826000":["Wardrobe","Mattress","Lamppost","Fortress","Forklift"],"big_objects:724003":["Cabinet"],"big_objects:724000":["Cabinet","Jacuzzi","Veranda","Minivan"],"big_objects:535003":["Stove","Stage","Crane"],"big_objects:535000":["Stove","Stage","Crane","Plane"],"all:535003":["Stove","Stage","Crane","Snake","Chile","China","Stone"],"big_objects:413003":["Oven"],"big_objects:413000":["Oven"],"all:413003":["Oven","Oval"],"all:413000":["Oven","Oval"],"big_objects:726002":["Bathtub","Bunkbed"],"big_objects:726000":["Bathtub","Bunkbed","Hallway","Highway"],"big_objects:420003":["Sink"],"big_objects:736001":["Tractor","Trolley"],"big_objects:736000":["Tractor","Dresser","Chimney","Drumset","Trolley"],"big_objects:520001":["Yacht","Lobby","Ferry"],"big_objects:520000":["Yacht","Bench","Porch","Lobby","Ferry"],"big_objects:925003":["Submarine","Cathedral"],"big_objects:925000":["Submarine","Microwave","Cathedral"],"big_objects:625002":["Rocket","Pickup"],"big_objects:036001":["Trampoline"],"big_objects:036000":["Trampoline"],"big_objects:635003":["Statue","Closet","Shower","Stereo"],"big_objects:635000":["Statue","Closet","Shower","Stereo"],"big_objects:624002":["Garage","Bureau","Gazebo","Palace"],"big_objects:624000":["Garage","Bureau","Vanity","Gazebo","Palace","Museum","Cinema"],"big_objects:079003":["Skyscraper"],"big_objects:079000":["Skyscraper"],"all:079003":["Skyscraper"],"all:079000":["Skyscraper"],"big_objects:746002":["Pyramid"],"big_objects:746000":["Pyramid"],"all:746002":["Pyramid"],"all:746000":["Pyramid"],"big_objects:914001":["Ambulance","Escalator"],"big_objects:914000":["Ambulance","Escalator"],"all:914001":["Ambulance","Escalator","Alligator","Argentina"],"all:914000":["Ambulance","Escalator","Alligator","Argentina"],"big_objects:816001":["Armchair"],"big_objects:816000":["Armchair"],"all:816001":["Armchair"],"all:816000":["Armchair"],"big_objects:825002":["Recliner"],"big_objects:825000":["Recliner","Cupboard","Keyboard","Corridor","Hospital","Terminal"],"big_objects:520002":["Bench","Porch"],"big_objects:824001":["Loveseat","Monument","Monorail"],"big_objects:824000":["Loveseat","Radiator","Basement","Sidewalk","Monument","Monorail"],"big_objects:714003":["Ottoman"],"big_objects:714000":["Ottoman","Armoire"],"all:714003":["Ottoman","Octopus","October"],"all:714000":["Ottoman","Armoire","Octopus","October"],"big_objects:124002":["Diningtable"],"big_objects:124000":["Diningtable","Firehydrant"],"all:124002":["Diningtable"],"all:124000":["Diningtable","Firehydrant","Sagittarius"],"big_objects:125003":["Coffeetable"],"big_objects:028001":["Nightstand"],"big_objects:028000":["Nightstand"],"all:028001":["Nightstand"],"all:028000":["Nightstand"],"big_objects:723003":["Counter","Ceiling"],"big_objects:723000":["Counter","Ceiling","Mailbox"],"big_objects:614001":["Island"],"big_objects:614000":["Island"],"all:614001":["Island","Athens"],"all:614000":["Island","Athens"],"big_objects:714001":["Armoire"],"all:714001":["Armoire"],"big_objects:736002":["Dresser","Drumset"],"big_objects:530003":["Chest","Shelf"],"big_objects:825003":["Cupboard","Corridor"],"all:825003":["Cupboard","Corridor"],"big_objects:823002":["Bookcase","Building"],"big_objects:823000":["Bookcase","Soundbar","Fountain","Building","Sailboat"],"big_objects:835003":["Credenza"],"big_objects:835000":["Credenza","Driveway"],"all:835003":["Credenza"],"big_objects:924003":["Sideboard"],"big_objects:924000":["Sideboard","Fireplace","Warehouse"],"all:924003":["Sideboard"],"big_objects:620002":["Pantry"],"big_objects:620000":["Pantry"],"all:620002":["Pantry"],"all:620000":["Pantry"],"big_objects:734001":["Freezer","Theater","Trailer"],"all:734001":["Freezer","Theater","Trailer"],"big_objects:623003":["Cooler"],"big_objects:623000":["Cooler","Toilet"],"big_objects:925001":["Microwave"],"all:925001":["Microwave"],"big_objects:026002":["Dishwasher"],"big_objects:026000":["Dishwasher"],"all:026002":["Dishwasher"],"big_objects:524002":["Basin","Bidet","Patio"],"big_objects:724002":["Jacuzzi"],"big_objects:623001":["Toilet"],"big_objects:624001":["Vanity","Museum"],"big_objects:924001":["Fireplace","Warehouse"],"big_objects:736003":["Chimney"],"big_objects:725001":["Furnace","Terrace","Mansion","Factory","Library"],"big_objects:725000":["Furnace","Balcony","Terrace","Mansion","Cottage","Factory","Library","Rowboat"],"big_objects:824002":["Radiator","Basement"],"big_objects:037002":["Grandpiano"],"big_objects:037000":["Grandpiano"],"all:037002":["Grandpiano"],"big_objects:825001":["Keyboard","Hospital","Terminal"],"big_objects:514003":["Organ"],"big_objects:514000":["Organ","Attic"],"all:514003":["Organ","Otter"],"all:514000":["Organ","Attic","Otter","India","April"],"big_objects:935002":["Projector"],"big_objects:935000":["Projector","Spaceship"],"all:935002":["Projector"],"all:935000":["Projector","Spaceship","Chameleon","Crocodile","Chocolate"],"big_objects:645003":["Screen","Street","School"],"big_objects:645000":["Screen","Street","School"],"all:645003":["Screen","Street","School"],"big_objects:823003":["Soundbar","Sailboat"],"big_objects:834003":["Speakers"],"big_objects:834000":["Speakers"],"big_objects:926001":["Turntable","Townhouse"],"big_objects:926000":["Turntable","Billboard","Townhouse","Bulldozer"],"big_objects:934001":["Treadmill"],"big_objects:934000":["Treadmill","Staircase"],"all:934001":["Treadmill"],"big_objects:424002":["Gate","Bike"],"big_objects:850003":["Skylight"],"big_objects:850000":["Skylight"],"all:850003":["Skylight"],"all:850000":["Skylight"],"big_objects:725002":["Balcony","Rowboat"],"big_objects:724001":["Veranda","Minivan"],"big_objects:034002":["Greenhouse"],"big_objects:034000":["Greenhouse","Cruiseship"],"all:034002":["Greenhouse"],"all:034000":["Greenhouse","Cruiseship"],"big_objects:514001":["Attic"],"all:514001":["Attic","India","April"],"big_objects:934003":["Staircase"],"all:934003":["Staircase"],"big_objects:726001":["Hallway","Highway"],"big_objects:824003":["Sidewalk"],"big_objects:835002":["Driveway"],"big_objects:145003":["Streetlight"],"big_objects:145000":["Streetlight"],"all:145003":["Streetlight"],"all:145000":["Streetlight"],"big_objects:124001":["Firehydrant"],"all:124001":["Firehydrant"],"big_objects:723001":["Mailbox"],"big_objects:035002":["Phonebooth"],"all:035002":["Phonebooth"],"big_objects:926002":["Billboard","Bulldozer"],"all:926002":["Billboard","Bulldozer"],"big_objects:823001":["Fountain"],"big_objects:027001":["Lighthouse"],"big_objects:027000":["Lighthouse"],"all:027001":["Lighthouse"],"all:027000":["Lighthouse"],"big_objects:725003":["Cottage"],"big_objects:524003":["Cabin","Canoe","Sedan"],"big_objects:525003":["Condo"],"big_objects:013002":["University"],"big_objects:013000":["University"],"all:013002":["University"],"all:013000":["University"],"big_objects:624003":["Cinema"],"big_objects:735003":["Stadium","Station"],"big_objects:735000":["Stadium","Station"],"big_objects:630003":["Church"],"big_objects:630000":["Church"],"big_objects:626001":["Temple"],"big_objects:712001":["Airport"],"big_objects:712000":["Airport"],"big_objects:134001":["Trainstation"],"big_objects:134000":["Trainstation"],"all:134001":["Trainstation"],"all:134000":["Trainstation","Cheeseburger"],"big_objects:034003":["Cruiseship"],"all:034003":["Cruiseship"],"big_objects:430001":["Tram"],"all:430001":["Tram","Frog","Twig"],"big_objects:535002":["Plane"],"big_objects:530002":["Blimp"],"big_objects:935003":["Spaceship"],"all:935003":["Spaceship","Chameleon","Crocodile","Chocolate"],"animals:320002":["Dog","Rat","Pig","Bat"],"animals:320000":["Dog","Cat","Rat","Cow","Pig","Fox","Bat"],"animals:320003":["Cat","Cow"],"animals:520002":["Puppy"],"animals:520000":["Puppy"],"animals:625001":["Kitten","Monkey","Falcon","Walrus"],"animals:625000":["Kitten","Rabbit","Donkey","Monkey","Falcon","Parrot","Walrus"],"animals:726001":["Hamster","Lobster"],"animals:726000":["Hamster","Panther","Dolphin","Lobster"],"animals:625002":["Rabbit","Donkey","Parrot"],"animals:523001":["Mouse","Moose","Koala"],"animals:523000":["Mouse","Moose","Koala","Goose"],"animals:525001":["Horse","Zebra","Hippo"],"animals:525000":["Horse","Panda","Zebra","Hippo"],"animals:420002":["Pony","Bull","Duck"],"animals:420000":["Pony","Bull","Wolf","Hawk","Duck"],"animals:534003":["Sheep","Squid"],"animals:534000":["Sheep","Squid"],"animals:423002":["Goat","Deer","Bear"],"animals:423000":["Goat","Deer","Lion","Bear","Seal","Toad"],"animals:310001":["Elk"],"animals:310000":["Elk","Owl"],"all:310001":["Elk","Egg"],"all:310000":["Elk","Owl","Egg"],"animals:524003":["Camel"],"animals:524000":["Camel","Tiger","Lemur"],"animals:423001":["Lion","Toad"],"animals:524001":["Tiger","Lemur"],"animals:723001":["Leopard"],"animals:723000":["Leopard"],"animals:734003":["Cheetah"],"animals:734000":["Cheetah"],"animals:624002":["Jaguar","Baboon"],"animals:624000":["Jaguar","Coyote","Baboon","Lizard"],"animals:726002":["Panther","Dolphin"],"animals:525002":["Panda"],"animals:420001":["Wolf","Hawk"],"animals:320001":["Fox"],"animals:624003":["Coyote"],"animals:535001":["Hyena","Whale"],"animals:535000":["Hyena","Rhino","Whale","Snake"],"animals:724002":["Giraffe","Gorilla"],"animals:724000":["Giraffe","Gorilla"],"animals:813001":["Elephant"],"animals:813000":["Elephant"],"animals:535002":["Rhino"],"animals:530003":["Chimp","Sloth","Skunk","Shark"],"animals:530000":["Chimp","Sloth","Skunk","Shark"],"animals:825001":["Kangaroo"],"animals:825000":["Kangaroo"],"animals:514003":["Otter"],"animals:514000":["Otter"],"animals:623002":["Beaver"],"animals:623000":["Beaver"],"animals:725002":["Raccoon","Penguin"],"animals:725000":["Raccoon","Penguin"],"animals:512001":["Eagle"],"animals:512000":["Eagle"],"all:512001":["Eagle"],"all:512000":["Eagle"],"animals:310003":["Owl"],"all:310003":["Owl"],"animals:835001":["Flamingo"],"animals:835000":["Flamingo"],"all:835001":["Flamingo"],"animals:430003":["Swan","Crab"],"animals:430000":["Swan","Crab","Frog"],"animals:523002":["Goose"],"animals:423003":["Seal"],"animals:714003":["Octopus"],"animals:714000":["Octopus"],"animals:626001":["Turtle"],"animals:626000":["Turtle"],"animals:535003":["Snake"],"animals:624001":["Lizard"],"animals:430001":["Frog"],"animals:935003":["Chameleon","Crocodile"],"animals:935000":["Chameleon","Crocodile"],"animals:914001":["Alligator"],"animals:914000":["Alligator"],"animals:635003":["Spider"],"animals:635000":["Spider"],"food:515001":["Apple"],"food:515000":["Apple"],"all:515001":["Apple"],"all:515000":["Apple"],"food:624002":["Banana","Potato"],"food:624000":["Banana","Tomato","Potato","Yogurt"],"food:613003":["Orange"],"food:613000":["Orange"],"food:535002":["Grape"],"food:535000":["Grape"],"food:047003":["Strawberry"],"food:047000":["Strawberry"],"all:047003":["Strawberry"],"all:047000":["Strawberry"],"food:934002":["Blueberry"],"food:934000":["Blueberry"],"food:024001":["Watermelon"],"food:024000":["Watermelon"],"food:524001":["Lemon"],"food:524000":["Lemon","Bacon","Salad","Bagel","Donut"],"food:424001":["Lime","Kiwi","Taco","Wine"],"food:424000":["Lime","Kiwi","Taco","Rice","Cake","Soda","Wine"],"food:523002":["Peach","Juice"],"food:523000":["Peach","Toast","Juice"],"food:525001":["Mango"],"food:525000":["Mango","Pizza","Pasta","Sushi"],"food:924002":["Pineapple"],"food:924000":["Pineapple"],"all:924002":["Pineapple"],"food:630003":["Cherry"],"food:630000":["Cherry"],"food:430002":["Plum"],"food:430000":["Plum"],"all:430002":["Plum"],"food:713001":["Avocado"],"food:713000":["Avocado"],"all:713001":["Avocado","Ireland","Iceland"],"all:713000":["Avocado","Ireland","Iceland"],"food:624001":["Tomato","Yogurt"],"food:625003":["Carrot","Coffee"],"food:625000":["Carrot","Burger","Hotdog","Butter","Coffee"],"food:836002":["Broccoli"],"food:836000":["Broccoli"],"all:836002":["Broccoli"],"food:525002":["Pizza","Pasta"],"food:625002":["Burger","Butter"],"food:134003":["Cheeseburger"],"food:134000":["Cheeseburger"],"all:134003":["Cheeseburger"],"food:826003":["Sandwich"],"food:826000":["Sandwich"],"food:725002":["Burrito","Pancake"],"food:725000":["Burrito","Pancake"],"food:625001":["Hotdog"],"food:534003":["Steak"],"food:534000":["Steak","Bread"],"food:736003":["Chicken"],"food:736000":["Chicken","Brownie"],"food:524002":["Bacon","Bagel","Donut"],"food:936003":["Spaghetti"],"food:936000":["Spaghetti"],"all:936003":["Spaghetti"],"all:936000":["Spaghetti"],"food:723001":["Noodles"],"food:723000":["Noodles"],"food:424002":["Rice"],"food:525003":["Sushi"],"food:423003":["Soup"],"food:423000":["Soup","Beer"],"food:524003":["Salad"],"food:534002":["Bread"],"food:523001":["Toast"],"food:634003":["Cheese"],"food:634000":["Cheese"],"food:420001":["Milk"],"food:420000":["Milk"],"food:310001":["Egg"],"food:310000":["Egg"],"food:626001":["Waffle"],"food:626000":["Waffle"],"food:623003":["Cookie"],"food:623000":["Cookie"],"food:424003":["Cake","Soda"],"food:736002":["Brownie"],"food:935003":["Chocolate"],"food:935000":["Chocolate"],"food:520003":["Candy"],"food:520000":["Candy"],"all:520003":["Candy"],"food:813001":["Ice Cream"],"food:813000":["Ice Cream"],"food:323001":["Tea"],"food:323000":["Tea"],"food:423002":["Beer"],"countries:313002":["USA"],"countries:313000":["USA"],"all:313002":["USA"],"all:313000":["USA"],"countries:624003":["Canada"],"countries:624000":["Canada","Mexico","Poland","Hawaii","Venice"],"countries:624001":["Mexico","Hawaii","Venice"],"countries:635002":["Brazil"],"countries:635000":["Brazil","Sweden"],"countries:914001":["Argentina"],"countries:914000":["Argentina"],"countries:535003":["Chile","China"],"countries:535000":["Chile","China"],"countries:424002":["Peru","Rome"],"countries:424000":["Peru","Fiji","Rome"],"countries:824003":["Colombia"],"countries:824000":["Colombia","Malaysia"],"countries:210002":["UK"],"countries:210000":["UK"],"all:210002":["UK"],"all:210000":["UK"],"countries:715001":["England"],"countries:715000":["England"],"all:715001":["England"],"all:715000":["England"],"countries:836003":["Scotland"],"countries:836000":["Scotland"],"countries:713001":["Ireland","Iceland"],"countries:713000":["Ireland","Iceland"],"countries:636001":["France"],"countries:636000":["France"],"countries:534003":["Spain"],"countries:534000":["Spain"],"countries:513001":["Italy"],"countries:513000":["Italy"],"all:513001":["Italy","Acorn","Aries"],"all:513000":["Italy","Acorn","Ocean","Aries"],"countries:725002":["Germany","Denmark","Belgium"],"countries:725000":["Germany","Finland","Denmark","Belgium","Holland","Hungary","New York"],"countries:634002":["Greece"],"countries:634000":["Greece"],"countries:825002":["Portugal"],"countries:825000":["Portugal"],"countries:625001":["Norway","Turkey","London","Madrid","Moscow"],"countries:625000":["Norway","Turkey","London","Madrid","Berlin","Dublin","Moscow"],"countries:635003":["Sweden"],"countries:725001":["Finland","Holland","Hungary","New York"],"countries:136003":["Switzerland"],"countries:136000":["Switzerland"],"all:136003":["Switzerland"],"all:136000":["Switzerland"],"countries:712001":["Austria"],"countries:712000":["Austria"],"countries:624002":["Poland"],"countries:530003":["Czech"],"countries:530000":["Czech"],"countries:734003":["Croatia"],"countries:734000":["Croatia"],"countries:510001":["Egypt"],"countries:510000":["Egypt"],"all:510001":["Egypt"],"all:510000":["Egypt"],"countries:724001":["Morocco","Nigeria"],"countries:724000":["Morocco","Nigeria"],"countries:525001":["Kenya","Tokyo"],"countries:525000":["Kenya","Tokyo"],"countries:123003":["South Africa"],"countries:123000":["South Africa"],"all:123003":["South Africa"],"all:123000":["South Africa"],"countries:524002":["Japan","Paris"],"countries:524000":["Japan","Korea","Paris","Milan"],"countries:524001":["Korea","Milan"],"countries:514001":["India"],"countries:514000":["India"],"countries:834001":["Thailand"],"countries:834000":["Thailand"],"countries:723001":["Vietnam"],"countries:723000":["Vietnam"],"countries:925003":["Singapore"],"countries:925000":["Singapore","Barcelona"],"countries:824001":["Malaysia"],"countries:912001":["Australia"],"countries:912000":["Australia"],"all:912001":["Australia"],"all:912000":["Australia"],"countries:025001":["New Zealand"],"countries:025000":["New Zealand"],"countries:424001":["Fiji"],"countries:625002":["Berlin","Dublin"],"countries:614001":["Athens"],"countries:614000":["Athens"],"countries:915001":["Amsterdam"],"countries:915000":["Amsterdam"],"all:915001":["Amsterdam"],"all:915000":["Amsterdam"],"countries:623001":["Vienna"],"countries:623000":["Vienna"],"countries:925002":["Barcelona"],"countries:650003":["Sydney"],"countries:650000":["Sydney"],"countries:523003":["Cairo"],"countries:523000":["Cairo"],"natural_inhand:420002":["Rock","Bark"],"natural_inhand:420000":["Rock","Bark","Sand"],"natural_inhand:535003":["Stone"],"natural_inhand:535000":["Stone"],"natural_inhand:626002":["Pebble"],"natural_inhand:626000":["Pebble"],"natural_inhand:530003":["Shell"],"natural_inhand:530000":["Shell"],"natural_inhand:423001":["Leaf"],"natural_inhand:423000":["Leaf"],"natural_inhand:723001":["Feather"],"natural_inhand:723000":["Feather"],"natural_inhand:513001":["Acorn"],"natural_inhand:513000":["Acorn"],"natural_inhand:430001":["Twig"],"natural_inhand:430000":["Twig"],"natural_inhand:635001":["Flower"],"natural_inhand:635000":["Flower"],"natural_inhand:424002":["Rose"],"natural_inhand:424000":["Rose"],"natural_inhand:523002":["Daisy"],"natural_inhand:523000":["Daisy"],"natural_inhand:524001":["Tulip"],"natural_inhand:524000":["Tulip"],"natural_inhand:926003":["Sunflower"],"natural_inhand:926000":["Sunflower"],"all:926003":["Sunflower"],"natural_inhand:824002":["Pinecone"],"natural_inhand:824000":["Pinecone"],"natural_inhand:630002":["Branch"],"natural_inhand:630000":["Branch"],"all:630002":["Branch"],"natural_inhand:826001":["Mushroom"],"natural_inhand:826000":["Mushroom"],"natural_inhand:420003":["Sand"],"natural_big:434001":["Tree"],"natural_big:434000":["Tree"],"all:434001":["Tree"],"natural_big:823001":["Mountain"],"natural_big:823000":["Mountain"],"natural_big:524002":["River"],"natural_big:524000":["River","Comet"],"natural_big:513003":["Ocean"],"natural_big:513000":["Ocean"],"all:513003":["Ocean"],"natural_big:323003":["Sea"],"natural_big:323000":["Sea"],"all:323003":["Sea"],"natural_big:424001":["Lake"],"natural_big:424000":["Lake","Cave"],"natural_big:924001":["Waterfall"],"natural_big:924000":["Waterfall"],"natural_big:534003":["Cloud"],"natural_big:534000":["Cloud"],"natural_big:423002":["Rain"],"natural_big:423000":["Rain","Moon"],"natural_big:430003":["Snow","Star"],"natural_big:430000":["Snow","Star"],"natural_big:723002":["Rainbow"],"natural_big:723000":["Rainbow"],"all:723002":["Rainbow","Diamond"],"natural_big:320003":["Sun"],"natural_big:320000":["Sun"],"natural_big:423001":["Moon"],"natural_big:635002":["Planet"],"natural_big:635000":["Planet"],"natural_big:524003":["Comet"],"natural_big:927001":["Lightning"],"natural_big:927000":["Lightning"],"natural_big:736001":["Thunder"],"natural_big:736000":["Thunder"],"natural_big:725001":["Volcano"],"natural_big:725000":["Volcano"],"natural_big:614001":["Island"],"natural_big:614000":["Island"],"natural_big:424003":["Cave"],"natural_big:624002":["Desert"],"natural_big:624000":["Desert","Forest"],"natural_big:624001":["Forest"],"natural_big:625001":["Valley"],"natural_big:625000":["Valley"],"natural_big:530003":["Cliff"],"natural_big:530000":["Cliff"],"combo:320002":["Red"],"combo:320000":["Red","May"],"combo:434002":["Blue"],"combo:434000":["Blue"],"combo:534002":["Green"],"combo:534000":["Green"],"combo:625001":["Yellow"],"combo:625000":["Yellow","Silver","Cancer","Pisces"],"combo:613003":["Orange"],"combo:613000":["Orange"],"combo:626002":["Purple"],"combo:626000":["Purple","Circle"],"combo:420002":["Pink","Gold","July"],"combo:420000":["Pink","Gold","July"],"combo:530002":["Black","Brown"],"combo:530000":["Black","Brown"],"combo:535001":["White"],"combo:535000":["White"],"combo:625003":["Silver","Cancer"],"combo:626003":["Circle"],"combo:634003":["Square"],"combo:634000":["Square"],"combo:834001":["Triangle"],"combo:834000":["Triangle"],"combo:723002":["Diamond"],"combo:723000":["Diamond"],"combo:925002":["Rectangle"],"combo:925000":["Rectangle","Capricorn","September"],"combo:430003":["Star"],"combo:430000":["Star"],"combo:523001":["Heart"],"combo:523000":["Heart"],"combo:413003":["Oval"],"combo:413000":["Oval"],"combo:513001":["Aries"],"combo:513000":["Aries"],"combo:623001":["Taurus"],"combo:623000":["Taurus"],"combo:624002":["Gemini"],"combo:624000":["Gemini"],"combo:323001":["Leo"],"combo:323000":["Leo"],"combo:525001":["Virgo","Libra"],"combo:525000":["Virgo","Libra"],"combo:736003":["Scorpio"],"combo:736000":["Scorpio"],"combo:124003":["Sagittarius"],"combo:124000":["Sagittarius"],"all:124003":["Sagittarius"],"combo:925003":["Capricorn","September"],"combo:813001":["Aquarius"],"combo:813000":["Aquarius"],"combo:625002":["Pisces"],"combo:724002":["January"],"combo:724000":["January"],"combo:825001":["February"],"combo:825000":["February"],"combo:520001":["March"],"combo:520000":["March"],"combo:514001":["April"],"combo:514000":["April"],"combo:320001":["May"],"combo:424002":["June"],"combo:424000":["June"],"combo:612001":["August"],"combo:612000":["August"],"all:612001":["August"],"all:612000":["August"],"combo:714003":["October"],"combo:714000":["October"],"combo:824001":["November"],"combo:824000":["November","December"],"combo:824002":["December"],"large_objects:534003":["Chair","Stool"],"large_objects:534000":["Chair","Floor","Train","Stool"],"large_objects:525001":["Table","Fence","Villa"],"large_objects:525000":["Table","Fence","Villa","Condo"],"large_objects:420002":["Desk","Deck","Barn"],"large_objects:420000":["Desk","Wall","Sink","Harp","Deck","Barn"],"large_objects:320002":["Bed","Bus","Jet"],"large_objects:320000":["Bed","Car","Van","Bus","Suv","Jet"],"large_objects:523003":["Couch","Coach"],"large_objects:523000":["Couch","House","Piano","Coach"],"large_objects:424003":["Sofa"],"large_objects:424000":["Sofa","Taxi","Gate","Bike"],"large_objects:423002":["Door","Roof","Boat","Pool","Road","Pier"],"large_objects:423000":["Door","Roof","Boat","Pool","Road","Pier"],"large_objects:625001":["Window","Ladder","Tunnel","Hangar","Harbor"],"large_objects:625000":["Window","Subway","Rocket","Ladder","Tunnel","Hangar","Harbor","Camper","Pickup"],"large_objects:420001":["Wall","Harp"],"large_objects:534001":["Floor","Train"],"large_objects:634003":["Stairs"],"large_objects:634000":["Stairs"],"large_objects:813001":["Elevator"],"large_objects:813000":["Elevator"],"large_objects:636002":["Bridge"],"large_objects:636000":["Bridge","Fridge"],"large_objects:524001":["Tower","Hotel","Futon","Foyer","Kayak","Moped"],"large_objects:524000":["Tower","Hotel","Futon","Basin","Bidet","Patio","Foyer","Cabin","Canoe","Kayak","Sedan","Moped"],"large_objects:626003":["Castle"],"large_objects:626000":["Castle","Temple"],"large_objects:523001":["House"],"large_objects:913001":["Apartment"],"large_objects:913000":["Apartment"],"large_objects:320003":["Car","Suv"],"large_objects:530001":["Truck"],"large_objects:530000":["Truck","Chest","Shelf","Blimp"],"large_objects:320001":["Van"],"large_objects:424001":["Taxi"],"large_objects:625003":["Subway","Camper"],"large_objects:812001":["Airplane","Airliner"],"large_objects:812000":["Airplane","Airliner"],"large_objects:024001":["Helicopter","Motorcycle","Television","Locomotive"],"large_objects:024000":["Helicopter","Motorcycle","Television","Locomotive"],"large_objects:430003":["Ship","Crib","Shed"],"large_objects:430000":["Ship","Crib","Shed","Tram"],"large_objects:727002":["Bicycle"],"large_objects:727000":["Bicycle"],"large_objects:734003":["Scooter"],"large_objects:734000":["Scooter","Freezer","Theater","Trailer"],"large_objects:035003":["Skateboard"],"large_objects:035000":["Skateboard","Phonebooth"],"large_objects:523002":["Piano"],"large_objects:125002":["Refrigerator"],"large_objects:125000":["Refrigerator","Coffeetable"],"large_objects:636001":["Fridge"],"large_objects:200001":["Tv"],"large_objects:200000":["Tv"],"large_objects:923002":["Bookshelf","Pooltable"],"large_objects:923000":["Bookshelf","Pooltable"],"large_objects:826001":["Wardrobe","Mattress","Lamppost","Fortress","Forklift"],"large_objects:826000":["Wardrobe","Mattress","Lamppost","Fortress","Forklift"],"large_objects:724003":["Cabinet"],"large_objects:724000":["Cabinet","Jacuzzi","Veranda","Minivan"],"large_objects:535003":["Stove","Stage","Crane"],"large_objects:535000":["Stove","Stage","Crane","Plane"],"large_objects:413003":["Oven"],"large_objects:413000":["Oven"],"large_objects:726002":["Bathtub","Bunkbed"],"large_objects:726000":["Bathtub","Bunkbed","Hallway","Highway"],"large_objects:420003":["Sink"],"large_objects:736001":["Tractor","Trolley"],"large_objects:736000":["Tractor","Dresser","Chimney","Drumset","Trolley"],"large_objects:520001":["Yacht","Lobby","Ferry"],"large_objects:520000":["Yacht","Bench","Porch","Lobby","Ferry"],"large_objects:925003":["Submarine","Cathedral"],"large_objects:925000":["Submarine","Microwave","Cathedral"],"large_objects:625002":["Rocket","Pickup"],"large_objects:036001":["Trampoline"],"large_objects:036000":["Trampoline"],"large_objects:635003":["Statue","Closet","Shower","Stereo"],"large_objects:635000":["Statue","Closet","Shower","Stereo"],"large_objects:624002":["Garage","Bureau","Gazebo","Palace"],"large_objects:624000":["Garage","Bureau","Vanity","Gazebo","Palace","Museum","Cinema"],"large_objects:079003":["Skyscraper"],"large_objects:079000":["Skyscraper"],"large_objects:746002":["Pyramid"],"large_objects:746000":["Pyramid"],"large_objects:914001":["Ambulance","Escalator"],"large_objects:914000":["Ambulance","Escalator"],"large_objects:816001":["Armchair"],"large_objects:816000":["Armchair"],"large_objects:825002":["Recliner"],"large_objects:825000":["Recliner","Cupboard","Keyboard","Corridor","Hospital","Terminal"],"large_objects:520002":["Bench","Porch"],"large_objects:824001":["Loveseat","Monument","Monorail"],"large_objects:824000":["Loveseat","Radiator","Basement","Sidewalk","Monument","Monorail"],"large_objects:714003":["Ottoman"],"large_objects:714000":["Ottoman","Armoire"],"large_objects:124002":["Diningtable"],"large_objects:124000":["Diningtable","Firehydrant"],"large_objects:125003":["Coffeetable"],"large_objects:028001":["Nightstand"],"large_objects:028000":["Nightstand"],"large_objects:723003":["Counter","Ceiling"],"large_objects:723000":["Counter","Ceiling","Mailbox"],"large_objects:614001":["Island"],"large_objects:614000":["Island"],"large_objects:714001":["Armoire"],"large_objects:736002":["Dresser","Drumset"],"large_objects:530003":["Chest","Shelf"],"large_objects:825003":["Cupboard","Corridor"],"large_objects:823002":["Bookcase","Building"],"large_objects:823000":["Bookcase","Soundbar","Fountain","Building","Sailboat"],"large_objects:835003":["Credenza"],"large_objects:835000":["Credenza","Driveway"],"large_objects:924003":["Sideboard"],"large_objects:924000":["Sideboard","Fireplace","Warehouse"],"large_objects:620002":["Pantry"],"large_objects:620000":["Pantry"],"large_objects:734001":["Freezer","Theater","Trailer"],"large_objects:623003":["Cooler"],"large_objects:623000":["Cooler","Toilet"],"large_objects:925001":["Microwave"],"large_objects:026002":["Dishwasher"],"large_objects:026000":["Dishwasher"],"large_objects:524002":["Basin","Bidet","Patio"],"large_objects:724002":["Jacuzzi"],"large_objects:623001":["Toilet"],"large_objects:624001":["Vanity","Museum"],"large_objects:924001":["Fireplace","Warehouse"],"large_objects:736003":["Chimney"],"large_objects:725001":["Furnace","Terrace","Mansion","Factory","Library"],"large_objects:725000":["Furnace","Balcony","Terrace","Mansion","Cottage","Factory","Library","Rowboat"],"large_objects:824002":["Radiator","Basement"],"large_objects:037002":["Grandpiano"],"large_objects:037000":["Grandpiano"],"large_objects:825001":["Keyboard","Hospital","Terminal"],"large_objects:514003":["Organ"],"large_objects:514000":["Organ","Attic"],"large_objects:935002":["Projector"],"large_objects:935000":["Projector","Spaceship"],"large_objects:645003":["Screen","Street","School"],"large_objects:645000":["Screen","Street","School"],"large_objects:823003":["Soundbar","Sailboat"],"large_objects:834003":["Speakers"],"large_objects:834000":["Speakers"],"large_objects:926001":["Turntable","Townhouse"],"large_objects:926000":["Turntable","Billboard","Townhouse","Bulldozer"],"large_objects:934001":["Treadmill"],"large_objects:934000":["Treadmill","Staircase"],"large_objects:424002":["Gate","Bike"],"large_objects:850003":["Skylight"],"large_objects:850000":["Skylight"],"large_objects:725002":["Balcony","Rowboat"],"large_objects:724001":["Veranda","Minivan"],"large_objects:034002":["Greenhouse"],"large_objects:034000":["Greenhouse","Cruiseship"],"large_objects:514001":["Attic"],"large_objects:934003":["Staircase"],"large_objects:726001":["Hallway","Highway"],"large_objects:824003":["Sidewalk"],"large_objects:835002":["Driveway"],"large_objects:145003":["Streetlight"],"large_objects:145000":["Streetlight"],"large_objects:124001":["Firehydrant"],"large_objects:723001":["Mailbox"],"large_objects:035002":["Phonebooth"],"large_objects:926002":["Billboard","Bulldozer"],"large_objects:823001":["Fountain"],"large_objects:027001":["Lighthouse"],"large_objects:027000":["Lighthouse"],"large_objects:725003":["Cottage"],"large_objects:524003":["Cabin","Canoe","Sedan"],"large_objects:525003":["Condo"],"large_objects:013002":["University"],"large_objects:013000":["University"],"large_objects:624003":["Cinema"],"large_objects:735003":["Stadium","Station"],"large_objects:735000":["Stadium","Station"],"large_objects:630003":["Church"],"large_objects:630000":["Church"],"large_objects:626001":["Temple"],"large_objects:712001":["Airport"],"large_objects:712000":["Airport"],"large_objects:134001":["Trainstation"],"large_objects:134000":["Trainstation"],"large_objects:034003":["Cruiseship"],"large_objects:430001":["Tram"],"large_objects:535002":["Plane"],"large_objects:530002":["Blimp"],"large_objects:935003":["Spaceship"]}};
+/**
+ * Enigma Mentalism Dictionary & Lookup Table
+ * Auto-generated comprehensive database
+ */
+window.ENIGMA_DATA = {
+  "categories": {
+    "handheld": [
+      "Lighter",
+      "Keys",
+      "Key",
+      "Coin",
+      "Ring",
+      "Watch",
+      "Comb",
+      "Pen",
+      "Pencil",
+      "Card",
+      "Matches",
+      "Matchbox",
+      "Stamp",
+      "Flashlight",
+      "Wallet",
+      "Earring",
+      "Bracelet",
+      "Necklace",
+      "Lipstick",
+      "Scissors",
+      "Soap",
+      "Tape",
+      "Glue",
+      "Toothpick",
+      "Razor",
+      "Bookmark",
+      "Padlock",
+      "Whistle",
+      "Compass",
+      "Dice",
+      "Bandage",
+      "Eraser",
+      "Marker",
+      "Stapler",
+      "Nail",
+      "Screw",
+      "Spoon",
+      "Fork",
+      "Knife",
+      "Cup",
+      "Mug",
+      "Glass",
+      "Phone",
+      "Badge",
+      "Mirror",
+      "Candle",
+      "Perfume",
+      "Brush",
+      "Bell",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Lantern",
+      "Candles",
+      "Bottles",
+      "Pillbox",
+      "Goggles",
+      "Compact",
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Teaspoon",
+      "Lipgloss",
+      "Fishhook",
+      "Pocket",
+      "Locket",
+      "Brooch",
+      "Bangle",
+      "Cufflink",
+      "Tiepin",
+      "Hairtie",
+      "Barrette",
+      "Scrunchie",
+      "Eyedrops",
+      "Tweezers",
+      "Clipper",
+      "Floss",
+      "Lipbalm",
+      "Lotion",
+      "Cologne",
+      "Flask",
+      "Bottle",
+      "Opener",
+      "Corkscrew",
+      "Stopper",
+      "Ashtray",
+      "Cigar",
+      "Pipe",
+      "Penny",
+      "Nickel",
+      "Dime",
+      "Quarter",
+      "Dollar",
+      "Token",
+      "Chip",
+      "Marble",
+      "Pebble",
+      "Crystal",
+      "Magnet",
+      "Battery",
+      "Charger",
+      "Cable",
+      "Earbuds",
+      "Airpods",
+      "Stylus",
+      "Crayon",
+      "Chalk",
+      "Notepad",
+      "Postit",
+      "Receipt",
+      "Ticket",
+      "Coupon",
+      "Bill",
+      "Keycard",
+      "Keychain",
+      "Keyring",
+      "Clicker",
+      "Lanyard",
+      "Blade",
+      "Penknife",
+      "Scalpel",
+      "Cutter",
+      "Pliers",
+      "Wrench",
+      "Chisel",
+      "Needle",
+      "Thread",
+      "Thimble",
+      "Button",
+      "Zipper",
+      "Spectacles",
+      "Loupe",
+      "Chopsticks",
+      "Straw",
+      "Coaster",
+      "Napkin",
+      "Tissue",
+      "Handkerchief",
+      "Pouch",
+      "Purse",
+      "Billfold",
+      "Moneyclip",
+      "Clutch",
+      "Satchel",
+      "Envelope",
+      "Sticker",
+      "Trinket",
+      "Amulet",
+      "Charm",
+      "Figurine",
+      "Spinner",
+      "Eggs",
+      "Egg",
+      "Coins",
+      "Cards",
+      "Rings",
+      "Watches",
+      "Lighters",
+      "Combs",
+      "Pens",
+      "Pencils",
+      "Markers",
+      "Erasers",
+      "Coinpurse",
+      "Wallets",
+      "Purses",
+      "Chapstick",
+      "Balm",
+      "Mascara",
+      "Eyeliner",
+      "Earphones",
+      "Headphones",
+      "Phones",
+      "Chargers",
+      "Cables",
+      "Batteries",
+      "Powerbank",
+      "Flashdrive",
+      "Dongle",
+      "Adapter",
+      "Mouse",
+      "Pocketknife",
+      "Knives",
+      "Spoons",
+      "Forks",
+      "Straws",
+      "Toothpicks",
+      "Nailclipper",
+      "Clippers",
+      "Bandages",
+      "Bandaid",
+      "Pill",
+      "Pills",
+      "Tablet",
+      "Tablets",
+      "Inhaler",
+      "Drops",
+      "Sanitizer",
+      "Receipts",
+      "Tickets",
+      "Passport",
+      "Passports",
+      "Badges",
+      "Stamps",
+      "Stickers",
+      "Notebook",
+      "Notebooks",
+      "Paperclip",
+      "Paperclips",
+      "Staplers",
+      "Rubberband",
+      "Rubberbands",
+      "Sunglasses",
+      "Glasses",
+      "Specs",
+      "Lenses",
+      "Eyeglasses",
+      "Match",
+      "Lighterfluid",
+      "Die",
+      "Tokens",
+      "Pokerchip",
+      "Chips",
+      "Yo-yo",
+      "Fidget",
+      "Magnifier",
+      "Torch",
+      "Lock",
+      "Glove",
+      "Gloves",
+      "Mitten",
+      "Mittens",
+      "Beanie",
+      "Scarf",
+      "Tissues",
+      "Napkins",
+      "Wipes",
+      "Sponge",
+      "Bar"
+    ],
+    "everyday": [
+      "Spoon",
+      "Fork",
+      "Knife",
+      "Plate",
+      "Cup",
+      "Glass",
+      "Bottle",
+      "Can",
+      "Bowl",
+      "Mug",
+      "Book",
+      "Notebook",
+      "Paper",
+      "Folder",
+      "Phone",
+      "Charger",
+      "Cable",
+      "Battery",
+      "Laptop",
+      "Mouse",
+      "Keyboard",
+      "Headphones",
+      "Speaker",
+      "Camera",
+      "Glasses",
+      "Sunglasses",
+      "Candle",
+      "Mirror",
+      "Brush",
+      "Toothbrush",
+      "Towel",
+      "Pillow",
+      "Blanket",
+      "Remote",
+      "Controller",
+      "Clock",
+      "Guitar",
+      "Bell",
+      "Hammer",
+      "Wrench",
+      "Screwdriver",
+      "Drill",
+      "Saw",
+      "Pliers",
+      "Shoe",
+      "Sock",
+      "Glove",
+      "Hat",
+      "Cap",
+      "Scarf",
+      "Belt",
+      "Tie",
+      "Shirt",
+      "Jacket",
+      "Umbrella",
+      "Bag",
+      "Backpack",
+      "Suitcase",
+      "Box",
+      "Basket",
+      "Brick",
+      "Ball",
+      "Envelope",
+      "Ticket",
+      "Perfume",
+      "Kettle",
+      "Vase",
+      "Broom",
+      "Bucket",
+      "Ruler",
+      "Lamp",
+      "Lighter",
+      "Matches",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Lantern",
+      "Candles",
+      "Bottles",
+      "Pillbox",
+      "Goggles",
+      "Bandage",
+      "Compact",
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Teaspoon",
+      "Lipgloss",
+      "Fishhook",
+      "Padlock",
+      "Whistle",
+      "Compass",
+      "Pocket",
+      "Wallet",
+      "Coin",
+      "Ring",
+      "Watch",
+      "Comb",
+      "Pen",
+      "Pencil",
+      "Card",
+      "Stamp",
+      "Flashlight",
+      "Earring",
+      "Bracelet",
+      "Necklace",
+      "Lipstick",
+      "Scissors",
+      "Soap",
+      "Tape",
+      "Glue",
+      "Toothpick",
+      "Razor",
+      "Bookmark",
+      "Dice",
+      "Eraser",
+      "Marker",
+      "Stapler",
+      "Nail",
+      "Screw",
+      "Badge",
+      "Locket",
+      "Brooch",
+      "Bangle",
+      "Cufflink",
+      "Tiepin",
+      "Hairtie",
+      "Barrette",
+      "Scrunchie",
+      "Eyedrops",
+      "Tweezers",
+      "Clipper",
+      "Floss",
+      "Lipbalm",
+      "Lotion",
+      "Cologne",
+      "Flask",
+      "Opener",
+      "Corkscrew",
+      "Stopper",
+      "Ashtray",
+      "Cigar",
+      "Pipe",
+      "Penny",
+      "Nickel",
+      "Dime",
+      "Quarter",
+      "Dollar",
+      "Token",
+      "Chip",
+      "Marble",
+      "Pebble",
+      "Crystal",
+      "Magnet",
+      "Earbuds",
+      "Airpods",
+      "Stylus",
+      "Crayon",
+      "Chalk",
+      "Notepad",
+      "Postit",
+      "Receipt",
+      "Coupon",
+      "Bill",
+      "Keycard",
+      "Keychain",
+      "Keyring",
+      "Clicker",
+      "Lanyard",
+      "Blade",
+      "Penknife",
+      "Scalpel",
+      "Cutter",
+      "Chisel",
+      "Needle",
+      "Thread",
+      "Thimble",
+      "Button",
+      "Zipper",
+      "Spectacles",
+      "Loupe",
+      "Chopsticks",
+      "Straw",
+      "Coaster",
+      "Napkin",
+      "Tissue",
+      "Handkerchief",
+      "Pouch",
+      "Purse",
+      "Billfold",
+      "Moneyclip",
+      "Clutch",
+      "Satchel",
+      "Sticker",
+      "Trinket",
+      "Amulet",
+      "Charm",
+      "Figurine",
+      "Spinner",
+      "Saucer",
+      "Teacup",
+      "Goblet",
+      "Pitcher",
+      "Decanter",
+      "Thermos",
+      "Teapot",
+      "Blender",
+      "Toaster",
+      "Mixer",
+      "Grater",
+      "Peeler",
+      "Whisk",
+      "Ladle",
+      "Spatula",
+      "Tongs",
+      "Colander",
+      "Funnel",
+      "Skillet",
+      "Dishcloth",
+      "Sponge",
+      "Dispenser",
+      "Shampoo",
+      "Conditioner",
+      "Toothpaste",
+      "Hairdryer",
+      "Curtain",
+      "Cushion",
+      "Quilt",
+      "Comforter",
+      "Duvet",
+      "Carpet",
+      "Lampshade",
+      "Candlestick",
+      "Calendar",
+      "Magazine",
+      "Newspaper",
+      "Catalog",
+      "Binder",
+      "Calculator",
+      "Smartphone",
+      "Tablet",
+      "Monitor",
+      "Mousepad",
+      "Microphone",
+      "Webcam",
+      "Tripod",
+      "Radiator",
+      "Thermostat",
+      "Doorknob",
+      "Hanger",
+      "Blazer",
+      "Sweater",
+      "Hoodie",
+      "Blouse",
+      "Trousers",
+      "Shorts",
+      "Mittens",
+      "Beanie",
+      "Boots",
+      "Sneakers",
+      "Loafers",
+      "Slippers",
+      "Sandals",
+      "Rucksack",
+      "Briefcase",
+      "Duffel",
+      "Luggage",
+      "Hamper",
+      "Trashcan",
+      "Dustpan",
+      "Vacuum",
+      "Eggs",
+      "Egg",
+      "Keys",
+      "Key",
+      "Coins",
+      "Cards",
+      "Rings",
+      "Watches",
+      "Lighters",
+      "Combs",
+      "Pens",
+      "Pencils",
+      "Markers",
+      "Erasers",
+      "Coinpurse",
+      "Wallets",
+      "Purses",
+      "Chapstick",
+      "Balm",
+      "Mascara",
+      "Eyeliner",
+      "Earphones",
+      "Phones",
+      "Chargers",
+      "Cables",
+      "Batteries",
+      "Powerbank",
+      "Flashdrive",
+      "Dongle",
+      "Adapter",
+      "Pocketknife",
+      "Knives",
+      "Spoons",
+      "Forks",
+      "Straws",
+      "Toothpicks",
+      "Nailclipper",
+      "Clippers",
+      "Bandages",
+      "Bandaid",
+      "Pill",
+      "Pills",
+      "Tablets",
+      "Inhaler",
+      "Drops",
+      "Sanitizer",
+      "Receipts",
+      "Tickets",
+      "Passport",
+      "Passports",
+      "Badges",
+      "Stamps",
+      "Stickers",
+      "Notebooks",
+      "Paperclip",
+      "Paperclips",
+      "Staplers",
+      "Rubberband",
+      "Rubberbands",
+      "Specs",
+      "Lenses",
+      "Eyeglasses",
+      "Matchbox",
+      "Match",
+      "Lighterfluid",
+      "Die",
+      "Tokens",
+      "Pokerchip",
+      "Chips",
+      "Yo-yo",
+      "Fidget",
+      "Magnifier",
+      "Torch",
+      "Lock",
+      "Gloves",
+      "Mitten",
+      "Tissues",
+      "Napkins",
+      "Wipes",
+      "Bar",
+      "Toast",
+      "Bread",
+      "Butter",
+      "Cheese",
+      "Bacon",
+      "Waffle",
+      "Waffles",
+      "Pancake",
+      "Pancakes",
+      "Cereal",
+      "Oatmeal",
+      "Yogurt",
+      "Milk",
+      "Coffee",
+      "Tea",
+      "Sugar",
+      "Salt",
+      "Pepper",
+      "Water",
+      "Juice",
+      "Soda",
+      "Beer",
+      "Wine",
+      "Cups",
+      "Mugs",
+      "Plates",
+      "Bowls",
+      "Dish",
+      "Dishes",
+      "Platter",
+      "Tray",
+      "Pan",
+      "Pans",
+      "Pot",
+      "Pots",
+      "Microwave",
+      "Oven",
+      "Stove",
+      "Fridge",
+      "Freezer",
+      "Sink",
+      "Faucet",
+      "Dishwasher",
+      "Towels",
+      "Rag",
+      "Books",
+      "Novel",
+      "Alarm",
+      "Lamps",
+      "Lightbulb",
+      "Switch",
+      "Socket",
+      "Plug",
+      "Extension",
+      "Wire",
+      "Couch",
+      "Sofa",
+      "Chair",
+      "Chairs",
+      "Stool",
+      "Bench",
+      "Table",
+      "Desk",
+      "Shelf",
+      "Cabinet",
+      "Drawer",
+      "Bed",
+      "Pillows",
+      "Blankets",
+      "Sheet",
+      "Sheets",
+      "Mattress",
+      "Curtains",
+      "Blind",
+      "Blinds",
+      "Rug",
+      "Mat",
+      "Doormat",
+      "Door",
+      "Handle",
+      "Window",
+      "Windowsill",
+      "Wall",
+      "Ceiling",
+      "Floor",
+      "Shirts",
+      "T-shirt",
+      "Coat",
+      "Vest",
+      "Pants",
+      "Jeans",
+      "Skirt",
+      "Dress",
+      "Suit",
+      "Socks",
+      "Shoes",
+      "Boot",
+      "Heels",
+      "Hats",
+      "Caps",
+      "Umbrellas",
+      "Mouthwash",
+      "Bodywash",
+      "Razors",
+      "Straightener",
+      "Curler",
+      "Scale",
+      "Hangers",
+      "Bin",
+      "Garbage",
+      "Mop",
+      "Duster",
+      "Cans",
+      "Jar",
+      "Jars",
+      "Boxes",
+      "Carton",
+      "Packet",
+      "Bags",
+      "Backpacks",
+      "Nails",
+      "Screws",
+      "Level",
+      "Ladder",
+      "Stepstool",
+      "Plant",
+      "Plants",
+      "Flowerpot",
+      "Flowers",
+      "Cactus",
+      "Bouquet",
+      "Candleholder",
+      "Incense",
+      "Coasters",
+      "Omelet",
+      "Bagel",
+      "Bagels",
+      "Croissant",
+      "Muffin",
+      "Muffins",
+      "Donut",
+      "Donuts",
+      "Doughnut",
+      "Pastry",
+      "Biscuit",
+      "Biscuits",
+      "Sausage",
+      "Sausages",
+      "Ham",
+      "Steak",
+      "Chicken",
+      "Turkey",
+      "Beef",
+      "Pork",
+      "Fish",
+      "Salmon",
+      "Tuna",
+      "Shrimp",
+      "Crab",
+      "Lobster",
+      "Sushi",
+      "Rice",
+      "Pasta",
+      "Noodles",
+      "Ramen",
+      "Pizza",
+      "Burger",
+      "Burgers",
+      "Cheeseburger",
+      "Hotdog",
+      "Hotdogs",
+      "Sandwich",
+      "Sandwiches",
+      "Wrap",
+      "Taco",
+      "Tacos",
+      "Burrito",
+      "Fries",
+      "Crisps",
+      "Pretzel",
+      "Pretzels",
+      "Popcorn",
+      "Crackers",
+      "Nuts",
+      "Peanuts",
+      "Almonds",
+      "Salad",
+      "Soup",
+      "Stew",
+      "Curry",
+      "Chili",
+      "Sauce",
+      "Ketchup",
+      "Mustard",
+      "Mayo",
+      "Dressing",
+      "Apple",
+      "Apples",
+      "Banana",
+      "Bananas",
+      "Orange",
+      "Oranges",
+      "Grape",
+      "Grapes",
+      "Strawberry",
+      "Strawberries",
+      "Blueberry",
+      "Blueberries",
+      "Raspberry",
+      "Blackberry",
+      "Watermelon",
+      "Melon",
+      "Cantaloupe",
+      "Pineapple",
+      "Mango",
+      "Peach",
+      "Peaches",
+      "Plum",
+      "Plums",
+      "Pear",
+      "Pears",
+      "Cherry",
+      "Cherries",
+      "Lemon",
+      "Lemons",
+      "Lime",
+      "Limes",
+      "Tomato",
+      "Tomatoes",
+      "Potato",
+      "Potatoes",
+      "Onion",
+      "Onions",
+      "Garlic",
+      "Carrot",
+      "Carrots",
+      "Broccoli",
+      "Lettuce",
+      "Spinach",
+      "Cucumber",
+      "Cucumbers",
+      "Peppers",
+      "Mushroom",
+      "Mushrooms",
+      "Corn",
+      "Peas",
+      "Beans",
+      "Cookie",
+      "Cookies",
+      "Cake",
+      "Cakes",
+      "Cupcake",
+      "Cupcakes",
+      "Pie",
+      "Pies",
+      "Brownie",
+      "Brownies",
+      "Chocolate",
+      "Candy",
+      "Candies",
+      "Lollipop",
+      "Gum",
+      "Icecream",
+      "Gelato",
+      "Pudding",
+      "Custard",
+      "Sundae",
+      "Espresso",
+      "Latte",
+      "Cappuccino",
+      "Chai",
+      "Matcha",
+      "Coke",
+      "Pepsi",
+      "Lemonade",
+      "Smoothie",
+      "Cocktail",
+      "Cider"
+    ],
+    "big_objects": [
+      "Chair",
+      "Table",
+      "Desk",
+      "Bed",
+      "Couch",
+      "Sofa",
+      "Door",
+      "Window",
+      "Wall",
+      "Floor",
+      "Roof",
+      "Stairs",
+      "Elevator",
+      "Bridge",
+      "Tower",
+      "Castle",
+      "House",
+      "Apartment",
+      "Hotel",
+      "Car",
+      "Truck",
+      "Van",
+      "Bus",
+      "Taxi",
+      "Train",
+      "Subway",
+      "Airplane",
+      "Helicopter",
+      "Boat",
+      "Ship",
+      "Bicycle",
+      "Motorcycle",
+      "Scooter",
+      "Skateboard",
+      "Piano",
+      "Refrigerator",
+      "Fridge",
+      "Television",
+      "Tv",
+      "Bookshelf",
+      "Wardrobe",
+      "Cabinet",
+      "Stove",
+      "Oven",
+      "Bathtub",
+      "Sink",
+      "Pool",
+      "Tractor",
+      "Yacht",
+      "Submarine",
+      "Rocket",
+      "Trampoline",
+      "Statue",
+      "Stage",
+      "Garage",
+      "Skyscraper",
+      "Pyramid",
+      "Ambulance",
+      "Armchair",
+      "Recliner",
+      "Stool",
+      "Bench",
+      "Loveseat",
+      "Futon",
+      "Ottoman",
+      "Diningtable",
+      "Coffeetable",
+      "Nightstand",
+      "Counter",
+      "Island",
+      "Mattress",
+      "Bunkbed",
+      "Crib",
+      "Closet",
+      "Armoire",
+      "Dresser",
+      "Bureau",
+      "Chest",
+      "Cupboard",
+      "Bookcase",
+      "Shelf",
+      "Credenza",
+      "Sideboard",
+      "Pantry",
+      "Freezer",
+      "Cooler",
+      "Microwave",
+      "Dishwasher",
+      "Basin",
+      "Jacuzzi",
+      "Shower",
+      "Toilet",
+      "Bidet",
+      "Vanity",
+      "Fireplace",
+      "Chimney",
+      "Furnace",
+      "Radiator",
+      "Grandpiano",
+      "Keyboard",
+      "Organ",
+      "Drumset",
+      "Harp",
+      "Projector",
+      "Screen",
+      "Soundbar",
+      "Speakers",
+      "Stereo",
+      "Turntable",
+      "Treadmill",
+      "Pooltable",
+      "Gate",
+      "Skylight",
+      "Balcony",
+      "Porch",
+      "Patio",
+      "Deck",
+      "Veranda",
+      "Terrace",
+      "Gazebo",
+      "Shed",
+      "Barn",
+      "Greenhouse",
+      "Fence",
+      "Ceiling",
+      "Attic",
+      "Basement",
+      "Staircase",
+      "Ladder",
+      "Escalator",
+      "Hallway",
+      "Corridor",
+      "Lobby",
+      "Foyer",
+      "Tunnel",
+      "Highway",
+      "Road",
+      "Street",
+      "Sidewalk",
+      "Driveway",
+      "Lamppost",
+      "Streetlight",
+      "Firehydrant",
+      "Mailbox",
+      "Phonebooth",
+      "Billboard",
+      "Monument",
+      "Fountain",
+      "Lighthouse",
+      "Palace",
+      "Fortress",
+      "Mansion",
+      "Villa",
+      "Cottage",
+      "Cabin",
+      "Condo",
+      "Townhouse",
+      "Building",
+      "Warehouse",
+      "Factory",
+      "Hospital",
+      "School",
+      "University",
+      "Library",
+      "Museum",
+      "Theater",
+      "Cinema",
+      "Stadium",
+      "Church",
+      "Cathedral",
+      "Temple",
+      "Airport",
+      "Terminal",
+      "Hangar",
+      "Trainstation",
+      "Station",
+      "Harbor",
+      "Pier",
+      "Rowboat",
+      "Canoe",
+      "Kayak",
+      "Sailboat",
+      "Ferry",
+      "Cruiseship",
+      "Sedan",
+      "Suv",
+      "Minivan",
+      "Camper",
+      "Pickup",
+      "Trailer",
+      "Bulldozer",
+      "Crane",
+      "Forklift",
+      "Coach",
+      "Trolley",
+      "Tram",
+      "Locomotive",
+      "Monorail",
+      "Bike",
+      "Moped",
+      "Plane",
+      "Jet",
+      "Airliner",
+      "Blimp",
+      "Spaceship",
+      "Cars",
+      "Trucks",
+      "Buses",
+      "Trains",
+      "Bikes",
+      "Boats",
+      "Ships",
+      "Planes",
+      "Houses",
+      "Arena",
+      "Mountain",
+      "Hill",
+      "Volcano",
+      "River",
+      "Lake",
+      "Ocean",
+      "Sea",
+      "Beach",
+      "Forest",
+      "Jungle",
+      "Desert",
+      "Tree",
+      "Trees",
+      "Boulder",
+      "Rock",
+      "Cliff",
+      "Cave",
+      "Waterfall",
+      "Canyon",
+      "Windmill",
+      "Piers",
+      "Dock"
+    ],
+    "animals": [
+      "Dog",
+      "Cat",
+      "Puppy",
+      "Kitten",
+      "Hamster",
+      "Rabbit",
+      "Mouse",
+      "Rat",
+      "Horse",
+      "Pony",
+      "Cow",
+      "Bull",
+      "Pig",
+      "Sheep",
+      "Goat",
+      "Donkey",
+      "Deer",
+      "Elk",
+      "Moose",
+      "Camel",
+      "Lion",
+      "Tiger",
+      "Leopard",
+      "Cheetah",
+      "Jaguar",
+      "Panther",
+      "Bear",
+      "Panda",
+      "Koala",
+      "Wolf",
+      "Fox",
+      "Coyote",
+      "Hyena",
+      "Zebra",
+      "Giraffe",
+      "Elephant",
+      "Hippo",
+      "Rhino",
+      "Gorilla",
+      "Monkey",
+      "Chimp",
+      "Baboon",
+      "Lemur",
+      "Sloth",
+      "Kangaroo",
+      "Otter",
+      "Beaver",
+      "Raccoon",
+      "Skunk",
+      "Eagle",
+      "Hawk",
+      "Falcon",
+      "Owl",
+      "Parrot",
+      "Flamingo",
+      "Penguin",
+      "Swan",
+      "Duck",
+      "Goose",
+      "Shark",
+      "Whale",
+      "Dolphin",
+      "Seal",
+      "Walrus",
+      "Octopus",
+      "Squid",
+      "Crab",
+      "Lobster",
+      "Turtle",
+      "Snake",
+      "Lizard",
+      "Frog",
+      "Toad",
+      "Chameleon",
+      "Crocodile",
+      "Alligator",
+      "Bat",
+      "Spider",
+      "Dogs",
+      "Cats",
+      "Bird",
+      "Birds",
+      "Fish",
+      "Rabbits",
+      "Mice",
+      "Horses",
+      "Cows",
+      "Pigs",
+      "Goats",
+      "Lions",
+      "Tigers",
+      "Bears",
+      "Wolves",
+      "Foxes",
+      "Elephants",
+      "Giraffes",
+      "Zebras",
+      "Monkeys",
+      "Llama",
+      "Badger",
+      "Squirrel",
+      "Owls",
+      "Penguins",
+      "Ducks",
+      "Geese",
+      "Snakes",
+      "Frogs",
+      "Turtles",
+      "Tortoise",
+      "Sharks",
+      "Whales",
+      "Dolphins",
+      "Seals",
+      "Jellyfish",
+      "Bee",
+      "Bees",
+      "Wasp",
+      "Ant",
+      "Ants",
+      "Spiders",
+      "Butterfly",
+      "Moth",
+      "Beetle",
+      "Fly",
+      "Mosquito"
+    ],
+    "food": [
+      "Apple",
+      "Banana",
+      "Orange",
+      "Grape",
+      "Strawberry",
+      "Blueberry",
+      "Watermelon",
+      "Lemon",
+      "Lime",
+      "Peach",
+      "Mango",
+      "Pineapple",
+      "Cherry",
+      "Plum",
+      "Kiwi",
+      "Avocado",
+      "Tomato",
+      "Potato",
+      "Carrot",
+      "Broccoli",
+      "Pizza",
+      "Burger",
+      "Cheeseburger",
+      "Sandwich",
+      "Taco",
+      "Burrito",
+      "Hotdog",
+      "Steak",
+      "Chicken",
+      "Bacon",
+      "Pasta",
+      "Spaghetti",
+      "Noodles",
+      "Rice",
+      "Sushi",
+      "Soup",
+      "Salad",
+      "Bread",
+      "Toast",
+      "Bagel",
+      "Cheese",
+      "Butter",
+      "Yogurt",
+      "Milk",
+      "Egg",
+      "Pancake",
+      "Waffle",
+      "Cookie",
+      "Cake",
+      "Donut",
+      "Brownie",
+      "Chocolate",
+      "Candy",
+      "Ice Cream",
+      "Coffee",
+      "Tea",
+      "Soda",
+      "Juice",
+      "Beer",
+      "Wine",
+      "Eggs",
+      "Omelet",
+      "Pancakes",
+      "Waffles",
+      "Bagels",
+      "Croissant",
+      "Muffin",
+      "Muffins",
+      "Donuts",
+      "Doughnut",
+      "Pastry",
+      "Biscuit",
+      "Biscuits",
+      "Sausage",
+      "Sausages",
+      "Ham",
+      "Turkey",
+      "Beef",
+      "Pork",
+      "Fish",
+      "Salmon",
+      "Tuna",
+      "Shrimp",
+      "Crab",
+      "Lobster",
+      "Ramen",
+      "Burgers",
+      "Hotdogs",
+      "Sandwiches",
+      "Wrap",
+      "Tacos",
+      "Fries",
+      "Chips",
+      "Crisps",
+      "Pretzel",
+      "Pretzels",
+      "Popcorn",
+      "Crackers",
+      "Nuts",
+      "Peanuts",
+      "Almonds",
+      "Stew",
+      "Curry",
+      "Chili",
+      "Sauce",
+      "Ketchup",
+      "Mustard",
+      "Mayo",
+      "Dressing",
+      "Apples",
+      "Bananas",
+      "Oranges",
+      "Grapes",
+      "Strawberries",
+      "Blueberries",
+      "Raspberry",
+      "Blackberry",
+      "Melon",
+      "Cantaloupe",
+      "Peaches",
+      "Plums",
+      "Pear",
+      "Pears",
+      "Cherries",
+      "Lemons",
+      "Limes",
+      "Tomatoes",
+      "Potatoes",
+      "Onion",
+      "Onions",
+      "Garlic",
+      "Carrots",
+      "Lettuce",
+      "Spinach",
+      "Cucumber",
+      "Cucumbers",
+      "Pepper",
+      "Peppers",
+      "Mushroom",
+      "Mushrooms",
+      "Corn",
+      "Peas",
+      "Beans",
+      "Cookies",
+      "Cakes",
+      "Cupcake",
+      "Cupcakes",
+      "Pie",
+      "Pies",
+      "Brownies",
+      "Candies",
+      "Lollipop",
+      "Gum",
+      "Icecream",
+      "Gelato",
+      "Pudding",
+      "Custard",
+      "Sundae",
+      "Espresso",
+      "Latte",
+      "Cappuccino",
+      "Chai",
+      "Matcha",
+      "Water",
+      "Coke",
+      "Pepsi",
+      "Lemonade",
+      "Smoothie",
+      "Cocktail",
+      "Cider"
+    ],
+    "countries": [
+      "USA",
+      "Canada",
+      "Mexico",
+      "Brazil",
+      "Argentina",
+      "Chile",
+      "Peru",
+      "Colombia",
+      "UK",
+      "England",
+      "Scotland",
+      "Ireland",
+      "France",
+      "Spain",
+      "Italy",
+      "Germany",
+      "Greece",
+      "Portugal",
+      "Norway",
+      "Sweden",
+      "Finland",
+      "Denmark",
+      "Iceland",
+      "Switzerland",
+      "Austria",
+      "Belgium",
+      "Holland",
+      "Poland",
+      "Czech",
+      "Hungary",
+      "Croatia",
+      "Turkey",
+      "Egypt",
+      "Morocco",
+      "Kenya",
+      "Nigeria",
+      "South Africa",
+      "Japan",
+      "China",
+      "Korea",
+      "India",
+      "Thailand",
+      "Vietnam",
+      "Singapore",
+      "Malaysia",
+      "Australia",
+      "New Zealand",
+      "Fiji",
+      "Hawaii",
+      "Paris",
+      "London",
+      "Tokyo",
+      "Rome",
+      "Madrid",
+      "Berlin",
+      "Venice",
+      "Milan",
+      "Athens",
+      "Dublin",
+      "Amsterdam",
+      "Vienna",
+      "Barcelona",
+      "Sydney",
+      "Cairo",
+      "Moscow",
+      "New York"
+    ],
+    "natural_inhand": [
+      "Rock",
+      "Stone",
+      "Pebble",
+      "Shell",
+      "Leaf",
+      "Feather",
+      "Acorn",
+      "Twig",
+      "Flower",
+      "Rose",
+      "Daisy",
+      "Tulip",
+      "Sunflower",
+      "Pinecone",
+      "Bark",
+      "Branch",
+      "Mushroom",
+      "Sand"
+    ],
+    "natural_big": [
+      "Tree",
+      "Mountain",
+      "River",
+      "Ocean",
+      "Sea",
+      "Lake",
+      "Waterfall",
+      "Cloud",
+      "Rain",
+      "Snow",
+      "Rainbow",
+      "Sun",
+      "Moon",
+      "Star",
+      "Planet",
+      "Comet",
+      "Lightning",
+      "Thunder",
+      "Volcano",
+      "Island",
+      "Cave",
+      "Desert",
+      "Forest",
+      "Valley",
+      "Cliff"
+    ],
+    "combo": [
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow",
+      "Orange",
+      "Purple",
+      "Pink",
+      "Black",
+      "White",
+      "Brown",
+      "Gold",
+      "Silver",
+      "Circle",
+      "Square",
+      "Triangle",
+      "Diamond",
+      "Rectangle",
+      "Star",
+      "Heart",
+      "Oval",
+      "Aries",
+      "Taurus",
+      "Gemini",
+      "Cancer",
+      "Leo",
+      "Virgo",
+      "Libra",
+      "Scorpio",
+      "Sagittarius",
+      "Capricorn",
+      "Aquarius",
+      "Pisces",
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ],
+    "large_objects": [
+      "Chair",
+      "Table",
+      "Desk",
+      "Bed",
+      "Couch",
+      "Sofa",
+      "Door",
+      "Window",
+      "Wall",
+      "Floor",
+      "Roof",
+      "Stairs",
+      "Elevator",
+      "Bridge",
+      "Tower",
+      "Castle",
+      "House",
+      "Apartment",
+      "Hotel",
+      "Car",
+      "Truck",
+      "Van",
+      "Bus",
+      "Taxi",
+      "Train",
+      "Subway",
+      "Airplane",
+      "Helicopter",
+      "Boat",
+      "Ship",
+      "Bicycle",
+      "Motorcycle",
+      "Scooter",
+      "Skateboard",
+      "Piano",
+      "Refrigerator",
+      "Fridge",
+      "Television",
+      "Tv",
+      "Bookshelf",
+      "Wardrobe",
+      "Cabinet",
+      "Stove",
+      "Oven",
+      "Bathtub",
+      "Sink",
+      "Pool",
+      "Tractor",
+      "Yacht",
+      "Submarine",
+      "Rocket",
+      "Trampoline",
+      "Statue",
+      "Stage",
+      "Garage",
+      "Skyscraper",
+      "Pyramid",
+      "Ambulance",
+      "Armchair",
+      "Recliner",
+      "Stool",
+      "Bench",
+      "Loveseat",
+      "Futon",
+      "Ottoman",
+      "Diningtable",
+      "Coffeetable",
+      "Nightstand",
+      "Counter",
+      "Island",
+      "Mattress",
+      "Bunkbed",
+      "Crib",
+      "Closet",
+      "Armoire",
+      "Dresser",
+      "Bureau",
+      "Chest",
+      "Cupboard",
+      "Bookcase",
+      "Shelf",
+      "Credenza",
+      "Sideboard",
+      "Pantry",
+      "Freezer",
+      "Cooler",
+      "Microwave",
+      "Dishwasher",
+      "Basin",
+      "Jacuzzi",
+      "Shower",
+      "Toilet",
+      "Bidet",
+      "Vanity",
+      "Fireplace",
+      "Chimney",
+      "Furnace",
+      "Radiator",
+      "Grandpiano",
+      "Keyboard",
+      "Organ",
+      "Drumset",
+      "Harp",
+      "Projector",
+      "Screen",
+      "Soundbar",
+      "Speakers",
+      "Stereo",
+      "Turntable",
+      "Treadmill",
+      "Pooltable",
+      "Gate",
+      "Skylight",
+      "Balcony",
+      "Porch",
+      "Patio",
+      "Deck",
+      "Veranda",
+      "Terrace",
+      "Gazebo",
+      "Shed",
+      "Barn",
+      "Greenhouse",
+      "Fence",
+      "Ceiling",
+      "Attic",
+      "Basement",
+      "Staircase",
+      "Ladder",
+      "Escalator",
+      "Hallway",
+      "Corridor",
+      "Lobby",
+      "Foyer",
+      "Tunnel",
+      "Highway",
+      "Road",
+      "Street",
+      "Sidewalk",
+      "Driveway",
+      "Lamppost",
+      "Streetlight",
+      "Firehydrant",
+      "Mailbox",
+      "Phonebooth",
+      "Billboard",
+      "Monument",
+      "Fountain",
+      "Lighthouse",
+      "Palace",
+      "Fortress",
+      "Mansion",
+      "Villa",
+      "Cottage",
+      "Cabin",
+      "Condo",
+      "Townhouse",
+      "Building",
+      "Warehouse",
+      "Factory",
+      "Hospital",
+      "School",
+      "University",
+      "Library",
+      "Museum",
+      "Theater",
+      "Cinema",
+      "Stadium",
+      "Church",
+      "Cathedral",
+      "Temple",
+      "Airport",
+      "Terminal",
+      "Hangar",
+      "Trainstation",
+      "Station",
+      "Harbor",
+      "Pier",
+      "Rowboat",
+      "Canoe",
+      "Kayak",
+      "Sailboat",
+      "Ferry",
+      "Cruiseship",
+      "Sedan",
+      "Suv",
+      "Minivan",
+      "Camper",
+      "Pickup",
+      "Trailer",
+      "Bulldozer",
+      "Crane",
+      "Forklift",
+      "Coach",
+      "Trolley",
+      "Tram",
+      "Locomotive",
+      "Monorail",
+      "Bike",
+      "Moped",
+      "Plane",
+      "Jet",
+      "Airliner",
+      "Blimp",
+      "Spaceship"
+    ]
+  },
+  "database": {
+    "handheld:726001": [
+      "Lighter",
+      "Matches",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Watches"
+    ],
+    "handheld:726000": [
+      "Lighter",
+      "Matches",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Candles",
+      "Bottles",
+      "Pillbox",
+      "Goggles",
+      "Satchel",
+      "Watches"
+    ],
+    "all:726001": [
+      "Lighter",
+      "Matches",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Hallway",
+      "Highway",
+      "Hamster",
+      "Lobster",
+      "Watches",
+      "Waffles",
+      "Ketchup",
+      "Turtles"
+    ],
+    "all:726000": [
+      "Lighter",
+      "Matches",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Candles",
+      "Bottles",
+      "Pillbox",
+      "Goggles",
+      "Satchel",
+      "Pitcher",
+      "Dustpan",
+      "Bathtub",
+      "Bunkbed",
+      "Hallway",
+      "Highway",
+      "Hamster",
+      "Panther",
+      "Dolphin",
+      "Lobster",
+      "Watches",
+      "Waffles",
+      "Ketchup",
+      "Turtles"
+    ],
+    "handheld:420001": [
+      "Keys",
+      "Fork",
+      "Lock"
+    ],
+    "handheld:420000": [
+      "Keys",
+      "Ring",
+      "Comb",
+      "Card",
+      "Fork",
+      "Bell",
+      "Bill",
+      "Pens",
+      "Balm",
+      "Pill",
+      "Lock"
+    ],
+    "all:420001": [
+      "Keys",
+      "Fork",
+      "Lamp",
+      "Wall",
+      "Harp",
+      "Wolf",
+      "Hawk",
+      "Milk",
+      "Lock",
+      "Mugs",
+      "Vest",
+      "Hats",
+      "Fish",
+      "Nuts",
+      "Hill",
+      "Wasp",
+      "Moth"
+    ],
+    "all:420000": [
+      "Keys",
+      "Ring",
+      "Comb",
+      "Card",
+      "Fork",
+      "Bell",
+      "Bill",
+      "Bowl",
+      "Sock",
+      "Belt",
+      "Ball",
+      "Lamp",
+      "Desk",
+      "Wall",
+      "Sink",
+      "Harp",
+      "Deck",
+      "Barn",
+      "Pony",
+      "Bull",
+      "Wolf",
+      "Hawk",
+      "Duck",
+      "Milk",
+      "Rock",
+      "Bark",
+      "Sand",
+      "Pink",
+      "Gold",
+      "July",
+      "Pens",
+      "Balm",
+      "Pill",
+      "Lock",
+      "Salt",
+      "Cups",
+      "Mugs",
+      "Dish",
+      "Pans",
+      "Pots",
+      "Vest",
+      "Hats",
+      "Caps",
+      "Cans",
+      "Jars",
+      "Bags",
+      "Pork",
+      "Fish",
+      "Nuts",
+      "Corn",
+      "Cars",
+      "Hill",
+      "Dock",
+      "Dogs",
+      "Cats",
+      "Bird",
+      "Cows",
+      "Pigs",
+      "Wasp",
+      "Moth"
+    ],
+    "handheld:320001": [
+      "Key",
+      "Mug"
+    ],
+    "handheld:320000": [
+      "Key",
+      "Pen",
+      "Cup",
+      "Mug",
+      "Bar"
+    ],
+    "all:320001": [
+      "Key",
+      "Mug",
+      "Hat",
+      "Van",
+      "Fox",
+      "May",
+      "Mat",
+      "Mop",
+      "Ham"
+    ],
+    "all:320000": [
+      "Key",
+      "Pen",
+      "Cup",
+      "Mug",
+      "Can",
+      "Saw",
+      "Hat",
+      "Cap",
+      "Bag",
+      "Box",
+      "Bed",
+      "Car",
+      "Van",
+      "Bus",
+      "Suv",
+      "Jet",
+      "Dog",
+      "Cat",
+      "Rat",
+      "Cow",
+      "Pig",
+      "Fox",
+      "Bat",
+      "Sun",
+      "Red",
+      "May",
+      "Bar",
+      "Pan",
+      "Pot",
+      "Rag",
+      "Rug",
+      "Mat",
+      "Bin",
+      "Mop",
+      "Jar",
+      "Ham",
+      "Gum"
+    ],
+    "handheld:423003": [
+      "Coin",
+      "Soap"
+    ],
+    "handheld:423000": [
+      "Coin",
+      "Soap",
+      "Nail"
+    ],
+    "all:423003": [
+      "Coin",
+      "Soap",
+      "Seal",
+      "Soup",
+      "Coat",
+      "Suit"
+    ],
+    "all:423000": [
+      "Coin",
+      "Soap",
+      "Nail",
+      "Book",
+      "Door",
+      "Roof",
+      "Boat",
+      "Pool",
+      "Road",
+      "Pier",
+      "Goat",
+      "Deer",
+      "Lion",
+      "Bear",
+      "Seal",
+      "Toad",
+      "Soup",
+      "Beer",
+      "Leaf",
+      "Rain",
+      "Moon",
+      "Coat",
+      "Suit",
+      "Boot",
+      "Beef",
+      "Pear",
+      "Peas",
+      "Pies",
+      "Bees"
+    ],
+    "handheld:420002": [
+      "Ring",
+      "Bell",
+      "Bill",
+      "Pens",
+      "Balm",
+      "Pill"
+    ],
+    "all:420002": [
+      "Ring",
+      "Bell",
+      "Bill",
+      "Bowl",
+      "Belt",
+      "Ball",
+      "Desk",
+      "Deck",
+      "Barn",
+      "Pony",
+      "Bull",
+      "Duck",
+      "Rock",
+      "Bark",
+      "Pink",
+      "Gold",
+      "July",
+      "Pens",
+      "Balm",
+      "Pill",
+      "Dish",
+      "Pans",
+      "Pots",
+      "Jars",
+      "Bags",
+      "Pork",
+      "Dock",
+      "Dogs",
+      "Bird",
+      "Pigs"
+    ],
+    "handheld:520001": [
+      "Watch",
+      "Forks",
+      "Match",
+      "Torch"
+    ],
+    "handheld:520000": [
+      "Watch",
+      "Penny",
+      "Cards",
+      "Rings",
+      "Combs",
+      "Forks",
+      "Pills",
+      "Match",
+      "Torch"
+    ],
+    "all:520001": [
+      "Watch",
+      "Tongs",
+      "Yacht",
+      "Lobby",
+      "Ferry",
+      "March",
+      "Forks",
+      "Match",
+      "Torch",
+      "Lamps"
+    ],
+    "all:520000": [
+      "Watch",
+      "Penny",
+      "Tongs",
+      "Yacht",
+      "Bench",
+      "Porch",
+      "Lobby",
+      "Ferry",
+      "Puppy",
+      "Candy",
+      "March",
+      "Cards",
+      "Rings",
+      "Combs",
+      "Forks",
+      "Pills",
+      "Match",
+      "Torch",
+      "Bowls",
+      "Lamps",
+      "Pants",
+      "Socks",
+      "Curry",
+      "Birds",
+      "Ducks"
+    ],
+    "handheld:420003": [
+      "Comb",
+      "Card"
+    ],
+    "all:420003": [
+      "Comb",
+      "Card",
+      "Sock",
+      "Sink",
+      "Sand",
+      "Salt",
+      "Cups",
+      "Caps",
+      "Cans",
+      "Corn",
+      "Cars",
+      "Cats",
+      "Cows"
+    ],
+    "handheld:320002": [
+      "Pen",
+      "Bar"
+    ],
+    "all:320002": [
+      "Pen",
+      "Bag",
+      "Box",
+      "Bed",
+      "Bus",
+      "Jet",
+      "Dog",
+      "Rat",
+      "Pig",
+      "Bat",
+      "Red",
+      "Bar",
+      "Pan",
+      "Pot",
+      "Rag",
+      "Rug",
+      "Bin",
+      "Jar",
+      "Gum"
+    ],
+    "handheld:625002": [
+      "Pencil",
+      "Pocket",
+      "Dollar",
+      "Postit",
+      "Button",
+      "Purses",
+      "Badges"
+    ],
+    "handheld:625000": [
+      "Pencil",
+      "Wallet",
+      "Marker",
+      "Mirror",
+      "Pocket",
+      "Locket",
+      "Nickel",
+      "Dollar",
+      "Magnet",
+      "Postit",
+      "Ticket",
+      "Cutter",
+      "Button",
+      "Zipper",
+      "Napkin",
+      "Tissue",
+      "Purses",
+      "Cables",
+      "Tablet",
+      "Badges",
+      "Lenses",
+      "Fidget",
+      "Mitten"
+    ],
+    "all:625002": [
+      "Pencil",
+      "Pocket",
+      "Dollar",
+      "Postit",
+      "Button",
+      "Pillow",
+      "Jacket",
+      "Basket",
+      "Bucket",
+      "Goblet",
+      "Binder",
+      "Duffel",
+      "Rocket",
+      "Pickup",
+      "Rabbit",
+      "Donkey",
+      "Parrot",
+      "Burger",
+      "Butter",
+      "Berlin",
+      "Dublin",
+      "Pisces",
+      "Purses",
+      "Badges",
+      "Pepper",
+      "Dishes",
+      "Duster",
+      "Packet",
+      "Garlic",
+      "Badger"
+    ],
+    "all:625000": [
+      "Pencil",
+      "Wallet",
+      "Marker",
+      "Mirror",
+      "Pocket",
+      "Locket",
+      "Nickel",
+      "Dollar",
+      "Magnet",
+      "Postit",
+      "Ticket",
+      "Cutter",
+      "Button",
+      "Zipper",
+      "Napkin",
+      "Tissue",
+      "Folder",
+      "Laptop",
+      "Pillow",
+      "Hammer",
+      "Jacket",
+      "Basket",
+      "Bucket",
+      "Goblet",
+      "Funnel",
+      "Carpet",
+      "Binder",
+      "Tablet",
+      "Webcam",
+      "Hanger",
+      "Duffel",
+      "Hamper",
+      "Window",
+      "Subway",
+      "Rocket",
+      "Ladder",
+      "Tunnel",
+      "Hangar",
+      "Harbor",
+      "Camper",
+      "Pickup",
+      "Kitten",
+      "Rabbit",
+      "Donkey",
+      "Monkey",
+      "Falcon",
+      "Parrot",
+      "Walrus",
+      "Carrot",
+      "Burger",
+      "Hotdog",
+      "Butter",
+      "Coffee",
+      "Norway",
+      "Turkey",
+      "London",
+      "Madrid",
+      "Berlin",
+      "Dublin",
+      "Moscow",
+      "Valley",
+      "Yellow",
+      "Silver",
+      "Cancer",
+      "Pisces",
+      "Purses",
+      "Cables",
+      "Badges",
+      "Lenses",
+      "Fidget",
+      "Mitten",
+      "Pepper",
+      "Dishes",
+      "Socket",
+      "Curler",
+      "Duster",
+      "Carton",
+      "Packet",
+      "Cactus",
+      "Muffin",
+      "Salmon",
+      "Garlic",
+      "Sundae",
+      "Canyon",
+      "Horses",
+      "Wolves",
+      "Zebras",
+      "Badger"
+    ],
+    "handheld:827001": [
+      "Matchbox"
+    ],
+    "handheld:827000": [
+      "Matchbox"
+    ],
+    "all:827001": [
+      "Matchbox"
+    ],
+    "all:827000": [
+      "Matchbox"
+    ],
+    "handheld:530003": [
+      "Stamp",
+      "Chalk",
+      "Charm",
+      "Specs",
+      "Chips",
+      "Scarf"
+    ],
+    "handheld:530000": [
+      "Stamp",
+      "Glass",
+      "Brush",
+      "Floss",
+      "Flask",
+      "Chalk",
+      "Charm",
+      "Drops",
+      "Specs",
+      "Chips",
+      "Scarf"
+    ],
+    "all:530003": [
+      "Stamp",
+      "Chalk",
+      "Charm",
+      "Clock",
+      "Scarf",
+      "Shirt",
+      "Chest",
+      "Shelf",
+      "Chimp",
+      "Sloth",
+      "Skunk",
+      "Shark",
+      "Czech",
+      "Shell",
+      "Cliff",
+      "Specs",
+      "Chips",
+      "Skirt",
+      "Ships"
+    ],
+    "all:530000": [
+      "Stamp",
+      "Glass",
+      "Brush",
+      "Floss",
+      "Flask",
+      "Chalk",
+      "Charm",
+      "Clock",
+      "Drill",
+      "Scarf",
+      "Shirt",
+      "Brick",
+      "Whisk",
+      "Truck",
+      "Chest",
+      "Shelf",
+      "Blimp",
+      "Chimp",
+      "Sloth",
+      "Skunk",
+      "Shark",
+      "Czech",
+      "Shell",
+      "Cliff",
+      "Black",
+      "Brown",
+      "Drops",
+      "Specs",
+      "Chips",
+      "Blind",
+      "Skirt",
+      "Dress",
+      "Plant",
+      "Plums",
+      "Ships",
+      "Frogs"
+    ],
+    "handheld:037001": [
+      "Flashlight"
+    ],
+    "handheld:037000": [
+      "Flashlight",
+      "Chopsticks"
+    ],
+    "all:037001": [
+      "Flashlight"
+    ],
+    "all:037000": [
+      "Flashlight",
+      "Chopsticks",
+      "Grandpiano",
+      "Blackberry"
+    ],
+    "handheld:625001": [
+      "Wallet",
+      "Marker",
+      "Mirror",
+      "Locket",
+      "Nickel",
+      "Magnet",
+      "Ticket",
+      "Zipper",
+      "Napkin",
+      "Tissue",
+      "Tablet",
+      "Lenses",
+      "Fidget",
+      "Mitten"
+    ],
+    "all:625001": [
+      "Wallet",
+      "Marker",
+      "Mirror",
+      "Locket",
+      "Nickel",
+      "Magnet",
+      "Ticket",
+      "Zipper",
+      "Napkin",
+      "Tissue",
+      "Folder",
+      "Laptop",
+      "Hammer",
+      "Funnel",
+      "Tablet",
+      "Webcam",
+      "Hanger",
+      "Hamper",
+      "Window",
+      "Ladder",
+      "Tunnel",
+      "Hangar",
+      "Harbor",
+      "Kitten",
+      "Monkey",
+      "Falcon",
+      "Walrus",
+      "Hotdog",
+      "Norway",
+      "Turkey",
+      "London",
+      "Madrid",
+      "Moscow",
+      "Valley",
+      "Yellow",
+      "Lenses",
+      "Fidget",
+      "Mitten",
+      "Muffin",
+      "Horses",
+      "Wolves",
+      "Zebras"
+    ],
+    "handheld:712001": [
+      "Earring",
+      "Earbuds",
+      "Airpods"
+    ],
+    "handheld:712000": [
+      "Earring",
+      "Earbuds",
+      "Airpods"
+    ],
+    "all:712001": [
+      "Earring",
+      "Earbuds",
+      "Airpods",
+      "Airport",
+      "Austria"
+    ],
+    "all:712000": [
+      "Earring",
+      "Earbuds",
+      "Airpods",
+      "Airport",
+      "Austria",
+      "Oatmeal"
+    ],
+    "handheld:835002": [
+      "Bracelet"
+    ],
+    "handheld:835000": [
+      "Bracelet"
+    ],
+    "all:835002": [
+      "Bracelet",
+      "Driveway"
+    ],
+    "all:835000": [
+      "Bracelet",
+      "Credenza",
+      "Driveway",
+      "Flamingo"
+    ],
+    "handheld:826001": [
+      "Necklace",
+      "Lipstick",
+      "Lipgloss",
+      "Fishhook",
+      "Keychain",
+      "Lighters"
+    ],
+    "handheld:826000": [
+      "Necklace",
+      "Lipstick",
+      "Lipgloss",
+      "Fishhook",
+      "Cufflink",
+      "Keychain",
+      "Penknife",
+      "Billfold",
+      "Lighters",
+      "Passport"
+    ],
+    "all:826001": [
+      "Necklace",
+      "Lipstick",
+      "Lipgloss",
+      "Fishhook",
+      "Keychain",
+      "Wardrobe",
+      "Mattress",
+      "Lamppost",
+      "Fortress",
+      "Forklift",
+      "Mushroom",
+      "Lighters",
+      "Windmill"
+    ],
+    "all:826000": [
+      "Necklace",
+      "Lipstick",
+      "Lipgloss",
+      "Fishhook",
+      "Cufflink",
+      "Keychain",
+      "Penknife",
+      "Billfold",
+      "Backpack",
+      "Rucksack",
+      "Wardrobe",
+      "Mattress",
+      "Lamppost",
+      "Fortress",
+      "Forklift",
+      "Sandwich",
+      "Mushroom",
+      "Lighters",
+      "Passport",
+      "Bodywash",
+      "Cocktail",
+      "Windmill",
+      "Dolphins"
+    ],
+    "handheld:836003": [
+      "Scissors",
+      "Chargers",
+      "Clippers",
+      "Stickers",
+      "Staplers"
+    ],
+    "handheld:836000": [
+      "Scissors",
+      "Chargers",
+      "Clippers",
+      "Stickers",
+      "Staplers"
+    ],
+    "all:836003": [
+      "Scissors",
+      "Slippers",
+      "Scotland",
+      "Chargers",
+      "Clippers",
+      "Stickers",
+      "Staplers",
+      "Crackers",
+      "Cherries"
+    ],
+    "all:836000": [
+      "Scissors",
+      "Slippers",
+      "Broccoli",
+      "Scotland",
+      "Chargers",
+      "Clippers",
+      "Stickers",
+      "Staplers",
+      "Blankets",
+      "Pretzels",
+      "Crackers",
+      "Dressing",
+      "Cherries",
+      "Brownies"
+    ],
+    "handheld:424001": [
+      "Tape",
+      "Yo-yo"
+    ],
+    "handheld:424000": [
+      "Tape",
+      "Dice",
+      "Pipe",
+      "Dime",
+      "Yo-yo"
+    ],
+    "all:424001": [
+      "Tape",
+      "Vase",
+      "Taxi",
+      "Lime",
+      "Kiwi",
+      "Taco",
+      "Wine",
+      "Fiji",
+      "Lake",
+      "Yo-yo",
+      "Wire",
+      "Tuna",
+      "Mayo",
+      "Mice"
+    ],
+    "all:424000": [
+      "Tape",
+      "Dice",
+      "Pipe",
+      "Dime",
+      "Vase",
+      "Sofa",
+      "Taxi",
+      "Gate",
+      "Bike",
+      "Lime",
+      "Kiwi",
+      "Taco",
+      "Rice",
+      "Cake",
+      "Soda",
+      "Wine",
+      "Peru",
+      "Fiji",
+      "Rome",
+      "Rose",
+      "Lake",
+      "Cave",
+      "June",
+      "Yo-yo",
+      "Wire",
+      "Tuna",
+      "Mayo",
+      "Coke",
+      "Mice"
+    ],
+    "handheld:434002": [
+      "Glue"
+    ],
+    "handheld:434000": [
+      "Glue"
+    ],
+    "all:434002": [
+      "Glue",
+      "Blue"
+    ],
+    "all:434000": [
+      "Glue",
+      "Shoe",
+      "Tree",
+      "Blue",
+      "Chai"
+    ],
+    "handheld:923001": [
+      "Toothpick"
+    ],
+    "handheld:923000": [
+      "Toothpick",
+      "Coinpurse"
+    ],
+    "all:923001": [
+      "Toothpick",
+      "Hairdryer",
+      "Mouthwash"
+    ],
+    "all:923000": [
+      "Toothpick",
+      "Hairdryer",
+      "Bookshelf",
+      "Pooltable",
+      "Coinpurse",
+      "Mouthwash"
+    ],
+    "handheld:524002": [
+      "Razor"
+    ],
+    "handheld:524000": [
+      "Razor",
+      "Cigar",
+      "Token",
+      "Wipes"
+    ],
+    "all:524002": [
+      "Razor",
+      "Paper",
+      "Ruler",
+      "Duvet",
+      "Basin",
+      "Bidet",
+      "Patio",
+      "Bacon",
+      "Bagel",
+      "Donut",
+      "Japan",
+      "Paris",
+      "River",
+      "Boxes",
+      "Ramen",
+      "Buses",
+      "Bikes"
+    ],
+    "all:524000": [
+      "Razor",
+      "Cigar",
+      "Token",
+      "Paper",
+      "Towel",
+      "Ruler",
+      "Mixer",
+      "Duvet",
+      "Tower",
+      "Hotel",
+      "Futon",
+      "Basin",
+      "Bidet",
+      "Patio",
+      "Foyer",
+      "Cabin",
+      "Canoe",
+      "Kayak",
+      "Sedan",
+      "Moped",
+      "Camel",
+      "Tiger",
+      "Lemur",
+      "Lemon",
+      "Bacon",
+      "Salad",
+      "Bagel",
+      "Donut",
+      "Japan",
+      "Korea",
+      "Paris",
+      "Milan",
+      "Tulip",
+      "River",
+      "Comet",
+      "Wipes",
+      "Sugar",
+      "Water",
+      "Novel",
+      "Boxes",
+      "Level",
+      "Ramen",
+      "Tacos",
+      "Melon",
+      "Limes",
+      "Cakes",
+      "Cider",
+      "Buses",
+      "Bikes",
+      "Foxes"
+    ],
+    "handheld:823002": [
+      "Bookmark"
+    ],
+    "handheld:823000": [
+      "Bookmark",
+      "Teaspoon"
+    ],
+    "all:823002": [
+      "Bookmark",
+      "Doorknob",
+      "Bookcase",
+      "Building",
+      "Doughnut"
+    ],
+    "all:823000": [
+      "Bookmark",
+      "Teaspoon",
+      "Suitcase",
+      "Mousepad",
+      "Doorknob",
+      "Bookcase",
+      "Soundbar",
+      "Fountain",
+      "Building",
+      "Sailboat",
+      "Mountain",
+      "Coasters",
+      "Doughnut",
+      "Sausages"
+    ],
+    "handheld:725002": [
+      "Padlock",
+      "Bandage",
+      "Perfume",
+      "Battery",
+      "Pencils",
+      "Bandaid"
+    ],
+    "handheld:725000": [
+      "Padlock",
+      "Compass",
+      "Bandage",
+      "Perfume",
+      "Lantern",
+      "Compact",
+      "Lipbalm",
+      "Battery",
+      "Keycard",
+      "Keyring",
+      "Lanyard",
+      "Pencils",
+      "Markers",
+      "Wallets",
+      "Mascara",
+      "Bandaid",
+      "Tablets",
+      "Tickets",
+      "Mittens",
+      "Tissues",
+      "Napkins"
+    ],
+    "all:725002": [
+      "Padlock",
+      "Bandage",
+      "Perfume",
+      "Battery",
+      "Balcony",
+      "Rowboat",
+      "Raccoon",
+      "Penguin",
+      "Burrito",
+      "Pancake",
+      "Germany",
+      "Denmark",
+      "Belgium",
+      "Pencils",
+      "Bandaid",
+      "Pillows",
+      "Garbage",
+      "Biscuit",
+      "Burgers",
+      "Popcorn",
+      "Peppers",
+      "Pudding",
+      "Rabbits"
+    ],
+    "all:725000": [
+      "Padlock",
+      "Compass",
+      "Bandage",
+      "Perfume",
+      "Lantern",
+      "Compact",
+      "Lipbalm",
+      "Battery",
+      "Keycard",
+      "Keyring",
+      "Lanyard",
+      "Curtain",
+      "Cushion",
+      "Mittens",
+      "Sandals",
+      "Luggage",
+      "Furnace",
+      "Balcony",
+      "Terrace",
+      "Mansion",
+      "Cottage",
+      "Factory",
+      "Library",
+      "Rowboat",
+      "Raccoon",
+      "Penguin",
+      "Burrito",
+      "Pancake",
+      "Germany",
+      "Finland",
+      "Denmark",
+      "Belgium",
+      "Holland",
+      "Hungary",
+      "New York",
+      "Volcano",
+      "Pencils",
+      "Markers",
+      "Wallets",
+      "Mascara",
+      "Bandaid",
+      "Tablets",
+      "Tickets",
+      "Tissues",
+      "Napkins",
+      "Pillows",
+      "Hangers",
+      "Garbage",
+      "Muffins",
+      "Biscuit",
+      "Burgers",
+      "Hotdogs",
+      "Popcorn",
+      "Mustard",
+      "Carrots",
+      "Lettuce",
+      "Peppers",
+      "Cupcake",
+      "Candies",
+      "Pudding",
+      "Custard",
+      "Rabbits",
+      "Monkeys"
+    ],
+    "handheld:737001": [
+      "Whistle",
+      "Thimble"
+    ],
+    "handheld:737000": [
+      "Whistle",
+      "Thimble"
+    ],
+    "all:737001": [
+      "Whistle",
+      "Thimble"
+    ],
+    "all:737000": [
+      "Whistle",
+      "Thimble"
+    ],
+    "handheld:725003": [
+      "Compass",
+      "Compact"
+    ],
+    "all:725003": [
+      "Compass",
+      "Compact",
+      "Curtain",
+      "Cushion",
+      "Sandals",
+      "Cottage",
+      "Carrots",
+      "Cupcake",
+      "Candies",
+      "Custard"
+    ],
+    "handheld:424002": [
+      "Dice",
+      "Pipe",
+      "Dime"
+    ],
+    "all:424002": [
+      "Dice",
+      "Pipe",
+      "Dime",
+      "Gate",
+      "Bike",
+      "Rice",
+      "Peru",
+      "Rome",
+      "Rose",
+      "June"
+    ],
+    "handheld:613001": [
+      "Eraser",
+      "Amulet"
+    ],
+    "handheld:613000": [
+      "Eraser",
+      "Opener",
+      "Amulet"
+    ],
+    "all:613001": [
+      "Eraser",
+      "Amulet"
+    ],
+    "all:613000": [
+      "Eraser",
+      "Opener",
+      "Amulet",
+      "Orange",
+      "Omelet",
+      "Onions"
+    ],
+    "handheld:736003": [
+      "Stapler",
+      "Clipper",
+      "Stopper",
+      "Charger",
+      "Clicker",
+      "Scalpel",
+      "Sticker",
+      "Spinner"
+    ],
+    "handheld:736000": [
+      "Stapler",
+      "Clipper",
+      "Stopper",
+      "Charger",
+      "Clicker",
+      "Scalpel",
+      "Sticker",
+      "Trinket",
+      "Spinner",
+      "Glasses"
+    ],
+    "all:736003": [
+      "Stapler",
+      "Clipper",
+      "Stopper",
+      "Charger",
+      "Clicker",
+      "Scalpel",
+      "Sticker",
+      "Spinner",
+      "Skillet",
+      "Shampoo",
+      "Chimney",
+      "Chicken",
+      "Scorpio"
+    ],
+    "all:736000": [
+      "Stapler",
+      "Clipper",
+      "Stopper",
+      "Charger",
+      "Clicker",
+      "Scalpel",
+      "Sticker",
+      "Trinket",
+      "Spinner",
+      "Glasses",
+      "Blanket",
+      "Thermos",
+      "Blender",
+      "Skillet",
+      "Shampoo",
+      "Tractor",
+      "Dresser",
+      "Chimney",
+      "Drumset",
+      "Trolley",
+      "Chicken",
+      "Brownie",
+      "Thunder",
+      "Scorpio",
+      "Platter",
+      "Pretzel"
+    ],
+    "handheld:423001": [
+      "Nail"
+    ],
+    "all:423001": [
+      "Nail",
+      "Lion",
+      "Toad",
+      "Leaf",
+      "Moon"
+    ],
+    "handheld:540003": [
+      "Screw",
+      "Straw"
+    ],
+    "handheld:540000": [
+      "Screw",
+      "Straw"
+    ],
+    "all:540003": [
+      "Screw",
+      "Straw"
+    ],
+    "all:540000": [
+      "Screw",
+      "Straw"
+    ],
+    "handheld:534003": [
+      "Spoon"
+    ],
+    "handheld:534000": [
+      "Spoon"
+    ],
+    "all:534003": [
+      "Spoon",
+      "Chair",
+      "Stool",
+      "Sheep",
+      "Squid",
+      "Steak",
+      "Spain",
+      "Cloud",
+      "Sheet",
+      "Shoes"
+    ],
+    "all:534000": [
+      "Spoon",
+      "Broom",
+      "Chair",
+      "Floor",
+      "Train",
+      "Stool",
+      "Sheep",
+      "Squid",
+      "Steak",
+      "Bread",
+      "Spain",
+      "Cloud",
+      "Green",
+      "Sheet",
+      "Shoes",
+      "Fries",
+      "Trees"
+    ],
+    "handheld:535001": [
+      "Knife"
+    ],
+    "handheld:535000": [
+      "Knife",
+      "Phone",
+      "Blade",
+      "Glove"
+    ],
+    "all:535001": [
+      "Knife",
+      "Hyena",
+      "Whale",
+      "White",
+      "Llama"
+    ],
+    "all:535000": [
+      "Knife",
+      "Phone",
+      "Blade",
+      "Plate",
+      "Glove",
+      "Stove",
+      "Stage",
+      "Crane",
+      "Plane",
+      "Hyena",
+      "Rhino",
+      "Whale",
+      "Snake",
+      "Grape",
+      "Chile",
+      "China",
+      "Stone",
+      "White",
+      "Scale",
+      "Chili",
+      "Llama"
+    ],
+    "handheld:320003": [
+      "Cup"
+    ],
+    "all:320003": [
+      "Cup",
+      "Can",
+      "Saw",
+      "Cap",
+      "Car",
+      "Suv",
+      "Cat",
+      "Cow",
+      "Sun"
+    ],
+    "handheld:530002": [
+      "Glass",
+      "Brush",
+      "Drops"
+    ],
+    "all:530002": [
+      "Glass",
+      "Brush",
+      "Drill",
+      "Brick",
+      "Blimp",
+      "Black",
+      "Brown",
+      "Drops",
+      "Blind",
+      "Dress",
+      "Plant",
+      "Plums"
+    ],
+    "handheld:535002": [
+      "Phone",
+      "Blade",
+      "Glove"
+    ],
+    "all:535002": [
+      "Phone",
+      "Blade",
+      "Plate",
+      "Glove",
+      "Plane",
+      "Rhino",
+      "Grape"
+    ],
+    "handheld:525002": [
+      "Badge",
+      "Purse"
+    ],
+    "handheld:525000": [
+      "Badge",
+      "Cable",
+      "Purse"
+    ],
+    "all:525002": [
+      "Badge",
+      "Purse",
+      "Panda",
+      "Pizza",
+      "Pasta",
+      "Pepsi"
+    ],
+    "all:525000": [
+      "Badge",
+      "Cable",
+      "Purse",
+      "Ladle",
+      "Table",
+      "Fence",
+      "Villa",
+      "Condo",
+      "Horse",
+      "Panda",
+      "Zebra",
+      "Hippo",
+      "Mango",
+      "Pizza",
+      "Pasta",
+      "Sushi",
+      "Kenya",
+      "Tokyo",
+      "Virgo",
+      "Libra",
+      "Latte",
+      "Pepsi"
+    ],
+    "handheld:626003": [
+      "Candle"
+    ],
+    "handheld:626000": [
+      "Candle",
+      "Bangle",
+      "Bottle",
+      "Marble",
+      "Pebble",
+      "Dongle"
+    ],
+    "all:626003": [
+      "Candle",
+      "Castle",
+      "Circle"
+    ],
+    "all:626000": [
+      "Candle",
+      "Bangle",
+      "Bottle",
+      "Marble",
+      "Pebble",
+      "Kettle",
+      "Castle",
+      "Temple",
+      "Turtle",
+      "Waffle",
+      "Purple",
+      "Circle",
+      "Dongle",
+      "Handle",
+      "Matcha",
+      "Jungle"
+    ],
+    "handheld:725001": [
+      "Lantern",
+      "Lipbalm",
+      "Keycard",
+      "Keyring",
+      "Lanyard",
+      "Markers",
+      "Wallets",
+      "Mascara",
+      "Tablets",
+      "Tickets",
+      "Mittens",
+      "Tissues",
+      "Napkins"
+    ],
+    "all:725001": [
+      "Lantern",
+      "Lipbalm",
+      "Keycard",
+      "Keyring",
+      "Lanyard",
+      "Mittens",
+      "Luggage",
+      "Furnace",
+      "Terrace",
+      "Mansion",
+      "Factory",
+      "Library",
+      "Finland",
+      "Holland",
+      "Hungary",
+      "New York",
+      "Volcano",
+      "Markers",
+      "Wallets",
+      "Mascara",
+      "Tablets",
+      "Tickets",
+      "Tissues",
+      "Napkins",
+      "Hangers",
+      "Muffins",
+      "Hotdogs",
+      "Mustard",
+      "Lettuce",
+      "Monkeys"
+    ],
+    "handheld:726003": [
+      "Candles",
+      "Satchel"
+    ],
+    "all:726003": [
+      "Candles",
+      "Satchel"
+    ],
+    "handheld:726002": [
+      "Bottles",
+      "Pillbox",
+      "Goggles"
+    ],
+    "all:726002": [
+      "Bottles",
+      "Pillbox",
+      "Goggles",
+      "Pitcher",
+      "Dustpan",
+      "Bathtub",
+      "Bunkbed",
+      "Panther",
+      "Dolphin"
+    ],
+    "handheld:723001": [
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Hairtie"
+    ],
+    "handheld:723000": [
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Hairtie",
+      "Quarter",
+      "Coaster"
+    ],
+    "all:723001": [
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Hairtie",
+      "Toaster",
+      "Loafers",
+      "Mailbox",
+      "Leopard",
+      "Noodles",
+      "Vietnam",
+      "Feather"
+    ],
+    "all:723000": [
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Hairtie",
+      "Quarter",
+      "Coaster",
+      "Toaster",
+      "Loafers",
+      "Counter",
+      "Ceiling",
+      "Mailbox",
+      "Leopard",
+      "Noodles",
+      "Vietnam",
+      "Feather",
+      "Rainbow",
+      "Diamond",
+      "Doormat",
+      "Bouquet",
+      "Sausage",
+      "Peanuts",
+      "Peaches",
+      "Cookies",
+      "Boulder"
+    ],
+    "handheld:823001": [
+      "Teaspoon"
+    ],
+    "all:823001": [
+      "Teaspoon",
+      "Mousepad",
+      "Fountain",
+      "Mountain"
+    ],
+    "handheld:634002": [
+      "Brooch",
+      "Pliers"
+    ],
+    "handheld:634000": [
+      "Brooch",
+      "Pliers",
+      "Spoons"
+    ],
+    "all:634002": [
+      "Brooch",
+      "Pliers",
+      "Blouse",
+      "Greece"
+    ],
+    "all:634000": [
+      "Brooch",
+      "Pliers",
+      "Blouse",
+      "Stairs",
+      "Cheese",
+      "Greece",
+      "Square",
+      "Spoons",
+      "Chairs",
+      "Sheets",
+      "Trains"
+    ],
+    "handheld:626002": [
+      "Bangle",
+      "Bottle",
+      "Pebble",
+      "Dongle"
+    ],
+    "all:626002": [
+      "Bangle",
+      "Bottle",
+      "Pebble",
+      "Purple",
+      "Dongle",
+      "Jungle"
+    ],
+    "handheld:826003": [
+      "Cufflink"
+    ],
+    "all:826003": [
+      "Cufflink",
+      "Sandwich",
+      "Cocktail"
+    ],
+    "handheld:623001": [
+      "Tiepin",
+      "Needle"
+    ],
+    "handheld:623000": [
+      "Tiepin",
+      "Coupon",
+      "Needle",
+      "Beanie"
+    ],
+    "all:623001": [
+      "Tiepin",
+      "Needle",
+      "Teacup",
+      "Teapot",
+      "Hoodie",
+      "Toilet",
+      "Vienna",
+      "Taurus",
+      "Faucet",
+      "Houses"
+    ],
+    "all:623000": [
+      "Tiepin",
+      "Coupon",
+      "Needle",
+      "Guitar",
+      "Saucer",
+      "Teacup",
+      "Teapot",
+      "Peeler",
+      "Hoodie",
+      "Beanie",
+      "Cooler",
+      "Toilet",
+      "Beaver",
+      "Cookie",
+      "Vienna",
+      "Taurus",
+      "Faucet",
+      "Houses",
+      "Beetle"
+    ],
+    "handheld:825002": [
+      "Barrette",
+      "Bandages"
+    ],
+    "handheld:825000": [
+      "Barrette",
+      "Bandages"
+    ],
+    "all:825002": [
+      "Barrette",
+      "Recliner",
+      "Portugal",
+      "Bandages",
+      "Pancakes",
+      "Biscuits",
+      "Penguins"
+    ],
+    "all:825000": [
+      "Barrette",
+      "Keyboard",
+      "Recliner",
+      "Cupboard",
+      "Corridor",
+      "Hospital",
+      "Terminal",
+      "Kangaroo",
+      "Portugal",
+      "February",
+      "Bandages",
+      "Pancakes",
+      "Curtains",
+      "Biscuits",
+      "Cupcakes",
+      "Lollipop",
+      "Penguins",
+      "Tortoise",
+      "Mosquito"
+    ],
+    "handheld:948003": [
+      "Scrunchie"
+    ],
+    "handheld:948000": [
+      "Scrunchie"
+    ],
+    "all:948003": [
+      "Scrunchie"
+    ],
+    "all:948000": [
+      "Scrunchie"
+    ],
+    "handheld:813001": [
+      "Eyedrops",
+      "Eyeliner"
+    ],
+    "handheld:813000": [
+      "Eyedrops",
+      "Eyeliner"
+    ],
+    "all:813001": [
+      "Eyedrops",
+      "Elevator",
+      "Elephant",
+      "Ice Cream",
+      "Aquarius",
+      "Eyeliner",
+      "Icecream"
+    ],
+    "all:813000": [
+      "Eyedrops",
+      "Elevator",
+      "Elephant",
+      "Ice Cream",
+      "Aquarius",
+      "Eyeliner",
+      "Icecream"
+    ],
+    "handheld:834001": [
+      "Tweezers"
+    ],
+    "handheld:834000": [
+      "Tweezers"
+    ],
+    "all:834001": [
+      "Tweezers",
+      "Trousers",
+      "Thailand",
+      "Triangle"
+    ],
+    "all:834000": [
+      "Tweezers",
+      "Trousers",
+      "Sneakers",
+      "Speakers",
+      "Thailand",
+      "Triangle",
+      "Smoothie",
+      "Squirrel"
+    ],
+    "handheld:530001": [
+      "Floss",
+      "Flask"
+    ],
+    "all:530001": [
+      "Floss",
+      "Flask",
+      "Whisk",
+      "Truck",
+      "Frogs"
+    ],
+    "handheld:624001": [
+      "Lotion",
+      "Tokens"
+    ],
+    "handheld:624000": [
+      "Lotion",
+      "Tokens"
+    ],
+    "all:624001": [
+      "Lotion",
+      "Vacuum",
+      "Vanity",
+      "Museum",
+      "Lizard",
+      "Tomato",
+      "Yogurt",
+      "Mexico",
+      "Hawaii",
+      "Venice",
+      "Forest",
+      "Tokens",
+      "Towels",
+      "Lemons",
+      "Tigers"
+    ],
+    "all:624000": [
+      "Lotion",
+      "Camera",
+      "Remote",
+      "Vacuum",
+      "Garage",
+      "Bureau",
+      "Vanity",
+      "Gazebo",
+      "Palace",
+      "Museum",
+      "Cinema",
+      "Jaguar",
+      "Coyote",
+      "Baboon",
+      "Lizard",
+      "Banana",
+      "Tomato",
+      "Potato",
+      "Yogurt",
+      "Canada",
+      "Mexico",
+      "Poland",
+      "Hawaii",
+      "Venice",
+      "Desert",
+      "Forest",
+      "Gemini",
+      "Tokens",
+      "Cereal",
+      "Towels",
+      "Razors",
+      "Bagels",
+      "Donuts",
+      "Lemons",
+      "Gelato",
+      "Tigers"
+    ],
+    "handheld:724003": [
+      "Cologne"
+    ],
+    "handheld:724000": [
+      "Cologne",
+      "Notepad",
+      "Receipt"
+    ],
+    "all:724003": [
+      "Cologne",
+      "Catalog",
+      "Cabinet"
+    ],
+    "all:724000": [
+      "Cologne",
+      "Notepad",
+      "Receipt",
+      "Catalog",
+      "Monitor",
+      "Cabinet",
+      "Jacuzzi",
+      "Veranda",
+      "Minivan",
+      "Giraffe",
+      "Gorilla",
+      "Morocco",
+      "Nigeria",
+      "January",
+      "Bananas"
+    ],
+    "handheld:613003": [
+      "Opener"
+    ],
+    "all:613003": [
+      "Opener",
+      "Orange",
+      "Omelet",
+      "Onions"
+    ],
+    "handheld:928003": [
+      "Corkscrew"
+    ],
+    "handheld:928000": [
+      "Corkscrew"
+    ],
+    "all:928003": [
+      "Corkscrew"
+    ],
+    "all:928000": [
+      "Corkscrew"
+    ],
+    "handheld:716001": [
+      "Ashtray"
+    ],
+    "handheld:716000": [
+      "Ashtray"
+    ],
+    "all:716001": [
+      "Ashtray"
+    ],
+    "all:716000": [
+      "Ashtray"
+    ],
+    "handheld:524003": [
+      "Cigar"
+    ],
+    "all:524003": [
+      "Cigar",
+      "Cabin",
+      "Canoe",
+      "Sedan",
+      "Camel",
+      "Salad",
+      "Comet",
+      "Sugar",
+      "Cakes",
+      "Cider"
+    ],
+    "handheld:520002": [
+      "Penny",
+      "Rings",
+      "Pills"
+    ],
+    "all:520002": [
+      "Penny",
+      "Bench",
+      "Porch",
+      "Puppy",
+      "Rings",
+      "Pills",
+      "Bowls",
+      "Pants",
+      "Birds",
+      "Ducks"
+    ],
+    "handheld:723003": [
+      "Quarter",
+      "Coaster"
+    ],
+    "all:723003": [
+      "Quarter",
+      "Coaster",
+      "Counter",
+      "Ceiling",
+      "Sausage",
+      "Cookies"
+    ],
+    "handheld:524001": [
+      "Token",
+      "Wipes"
+    ],
+    "all:524001": [
+      "Token",
+      "Towel",
+      "Mixer",
+      "Tower",
+      "Hotel",
+      "Futon",
+      "Foyer",
+      "Kayak",
+      "Moped",
+      "Tiger",
+      "Lemur",
+      "Lemon",
+      "Korea",
+      "Milan",
+      "Tulip",
+      "Wipes",
+      "Water",
+      "Novel",
+      "Level",
+      "Tacos",
+      "Melon",
+      "Limes",
+      "Foxes"
+    ],
+    "handheld:430003": [
+      "Chip"
+    ],
+    "handheld:430000": [
+      "Chip"
+    ],
+    "all:430003": [
+      "Chip",
+      "Ship",
+      "Crib",
+      "Shed",
+      "Swan",
+      "Crab",
+      "Snow",
+      "Star",
+      "Stew"
+    ],
+    "all:430000": [
+      "Chip",
+      "Ship",
+      "Crib",
+      "Shed",
+      "Tram",
+      "Swan",
+      "Crab",
+      "Frog",
+      "Plum",
+      "Twig",
+      "Snow",
+      "Star",
+      "Tray",
+      "Plug",
+      "Wrap",
+      "Stew"
+    ],
+    "handheld:626001": [
+      "Marble"
+    ],
+    "all:626001": [
+      "Marble",
+      "Kettle",
+      "Temple",
+      "Turtle",
+      "Waffle",
+      "Handle",
+      "Matcha"
+    ],
+    "handheld:760003": [
+      "Crystal"
+    ],
+    "handheld:760000": [
+      "Crystal"
+    ],
+    "all:760003": [
+      "Crystal"
+    ],
+    "all:760000": [
+      "Crystal"
+    ],
+    "handheld:525003": [
+      "Cable"
+    ],
+    "all:525003": [
+      "Cable",
+      "Condo",
+      "Sushi"
+    ],
+    "handheld:650003": [
+      "Stylus"
+    ],
+    "handheld:650000": [
+      "Stylus"
+    ],
+    "all:650003": [
+      "Stylus",
+      "Sydney"
+    ],
+    "all:650000": [
+      "Stylus",
+      "Sydney"
+    ],
+    "handheld:635003": [
+      "Crayon",
+      "Chisel"
+    ],
+    "handheld:635000": [
+      "Crayon",
+      "Chisel",
+      "Phones",
+      "Knives",
+      "Gloves"
+    ],
+    "all:635003": [
+      "Crayon",
+      "Chisel",
+      "Statue",
+      "Closet",
+      "Shower",
+      "Stereo",
+      "Spider",
+      "Sweden",
+      "Snakes"
+    ],
+    "all:635000": [
+      "Crayon",
+      "Chisel",
+      "Grater",
+      "Tripod",
+      "Blazer",
+      "Statue",
+      "Closet",
+      "Shower",
+      "Stereo",
+      "Spider",
+      "Brazil",
+      "Sweden",
+      "Flower",
+      "Planet",
+      "Phones",
+      "Knives",
+      "Gloves",
+      "Plates",
+      "Drawer",
+      "Grapes",
+      "Planes",
+      "Snakes",
+      "Whales"
+    ],
+    "handheld:724001": [
+      "Notepad"
+    ],
+    "all:724001": [
+      "Notepad",
+      "Monitor",
+      "Veranda",
+      "Minivan",
+      "Morocco",
+      "Nigeria"
+    ],
+    "handheld:724002": [
+      "Receipt"
+    ],
+    "all:724002": [
+      "Receipt",
+      "Jacuzzi",
+      "Giraffe",
+      "Gorilla",
+      "January",
+      "Bananas"
+    ],
+    "handheld:623003": [
+      "Coupon"
+    ],
+    "all:623003": [
+      "Coupon",
+      "Saucer",
+      "Cooler",
+      "Cookie"
+    ],
+    "handheld:826002": [
+      "Penknife",
+      "Billfold",
+      "Passport"
+    ],
+    "all:826002": [
+      "Penknife",
+      "Billfold",
+      "Backpack",
+      "Rucksack",
+      "Passport",
+      "Bodywash",
+      "Dolphins"
+    ],
+    "handheld:625003": [
+      "Cutter",
+      "Cables"
+    ],
+    "all:625003": [
+      "Cutter",
+      "Carpet",
+      "Subway",
+      "Camper",
+      "Carrot",
+      "Coffee",
+      "Silver",
+      "Cancer",
+      "Cables",
+      "Socket",
+      "Curler",
+      "Carton",
+      "Cactus",
+      "Salmon",
+      "Sundae",
+      "Canyon"
+    ],
+    "handheld:630001": [
+      "Wrench"
+    ],
+    "handheld:630000": [
+      "Wrench",
+      "Clutch",
+      "Stamps"
+    ],
+    "all:630001": [
+      "Wrench",
+      "Trucks"
+    ],
+    "all:630000": [
+      "Wrench",
+      "Clutch",
+      "Shorts",
+      "Church",
+      "Cherry",
+      "Branch",
+      "Stamps",
+      "Switch",
+      "Blinds",
+      "Shirts",
+      "Plants",
+      "Crisps",
+      "Trucks",
+      "Sharks"
+    ],
+    "handheld:645001": [
+      "Thread"
+    ],
+    "handheld:645000": [
+      "Thread"
+    ],
+    "all:645001": [
+      "Thread"
+    ],
+    "all:645000": [
+      "Thread",
+      "Screen",
+      "Street",
+      "School"
+    ],
+    "handheld:036003": [
+      "Spectacles"
+    ],
+    "handheld:036000": [
+      "Spectacles"
+    ],
+    "all:036003": [
+      "Spectacles"
+    ],
+    "all:036000": [
+      "Spectacles",
+      "Thermostat",
+      "Trampoline"
+    ],
+    "handheld:523001": [
+      "Loupe",
+      "Mouse"
+    ],
+    "handheld:523000": [
+      "Loupe",
+      "Pouch",
+      "Coins",
+      "Mouse"
+    ],
+    "all:523001": [
+      "Loupe",
+      "Mouse",
+      "House",
+      "Moose",
+      "Koala",
+      "Toast",
+      "Heart",
+      "Heels",
+      "Nails",
+      "Lions"
+    ],
+    "all:523000": [
+      "Loupe",
+      "Pouch",
+      "Mouse",
+      "Quilt",
+      "Boots",
+      "Couch",
+      "House",
+      "Piano",
+      "Coach",
+      "Moose",
+      "Koala",
+      "Goose",
+      "Peach",
+      "Toast",
+      "Juice",
+      "Cairo",
+      "Daisy",
+      "Heart",
+      "Coins",
+      "Books",
+      "Jeans",
+      "Heels",
+      "Nails",
+      "Sauce",
+      "Pears",
+      "Beans",
+      "Boats",
+      "Beach",
+      "Piers",
+      "Goats",
+      "Lions",
+      "Bears",
+      "Geese",
+      "Seals"
+    ],
+    "handheld:037003": [
+      "Chopsticks"
+    ],
+    "all:037003": [
+      "Chopsticks"
+    ],
+    "handheld:126001": [
+      "Handkerchief",
+      "Lighterfluid"
+    ],
+    "handheld:126000": [
+      "Handkerchief",
+      "Lighterfluid"
+    ],
+    "all:126001": [
+      "Handkerchief",
+      "Lighterfluid"
+    ],
+    "all:126000": [
+      "Handkerchief",
+      "Candlestick",
+      "Lighterfluid",
+      "Candleholder"
+    ],
+    "handheld:523002": [
+      "Pouch"
+    ],
+    "all:523002": [
+      "Pouch",
+      "Boots",
+      "Piano",
+      "Goose",
+      "Peach",
+      "Juice",
+      "Daisy",
+      "Books",
+      "Jeans",
+      "Pears",
+      "Beans",
+      "Boats",
+      "Beach",
+      "Piers",
+      "Goats",
+      "Bears",
+      "Geese"
+    ],
+    "handheld:924001": [
+      "Moneyclip",
+      "Notebooks"
+    ],
+    "handheld:924000": [
+      "Moneyclip",
+      "Powerbank",
+      "Sanitizer",
+      "Notebooks",
+      "Paperclip",
+      "Pokerchip"
+    ],
+    "all:924001": [
+      "Moneyclip",
+      "Fireplace",
+      "Warehouse",
+      "Waterfall",
+      "Notebooks"
+    ],
+    "all:924000": [
+      "Moneyclip",
+      "Sideboard",
+      "Fireplace",
+      "Warehouse",
+      "Pineapple",
+      "Waterfall",
+      "Powerbank",
+      "Sanitizer",
+      "Notebooks",
+      "Paperclip",
+      "Pokerchip",
+      "Cucumbers"
+    ],
+    "handheld:630003": [
+      "Clutch",
+      "Stamps"
+    ],
+    "all:630003": [
+      "Clutch",
+      "Shorts",
+      "Church",
+      "Cherry",
+      "Stamps",
+      "Switch",
+      "Shirts",
+      "Crisps",
+      "Sharks"
+    ],
+    "handheld:814001": [
+      "Envelope"
+    ],
+    "handheld:814000": [
+      "Envelope"
+    ],
+    "all:814001": [
+      "Envelope"
+    ],
+    "all:814000": [
+      "Envelope"
+    ],
+    "handheld:736001": [
+      "Trinket"
+    ],
+    "all:736001": [
+      "Trinket",
+      "Thermos",
+      "Tractor",
+      "Trolley",
+      "Thunder"
+    ],
+    "handheld:824001": [
+      "Figurine",
+      "Notebook"
+    ],
+    "handheld:824000": [
+      "Figurine",
+      "Receipts",
+      "Notebook"
+    ],
+    "all:824001": [
+      "Figurine",
+      "Notebook",
+      "Magazine",
+      "Loveseat",
+      "Monument",
+      "Monorail",
+      "Malaysia",
+      "November",
+      "Tomatoes",
+      "Lemonade"
+    ],
+    "all:824000": [
+      "Figurine",
+      "Notebook",
+      "Decanter",
+      "Colander",
+      "Calendar",
+      "Magazine",
+      "Radiator",
+      "Loveseat",
+      "Basement",
+      "Sidewalk",
+      "Monument",
+      "Monorail",
+      "Colombia",
+      "Malaysia",
+      "Pinecone",
+      "November",
+      "December",
+      "Receipts",
+      "Tomatoes",
+      "Potatoes",
+      "Cucumber",
+      "Lemonade",
+      "Giraffes"
+    ],
+    "everyday:534003": [
+      "Spoon",
+      "Chair",
+      "Stool",
+      "Sheet",
+      "Shoes",
+      "Steak"
+    ],
+    "everyday:534000": [
+      "Spoon",
+      "Broom",
+      "Bread",
+      "Chair",
+      "Stool",
+      "Sheet",
+      "Floor",
+      "Shoes",
+      "Steak",
+      "Fries"
+    ],
+    "everyday:420001": [
+      "Fork",
+      "Lamp",
+      "Keys",
+      "Lock",
+      "Milk",
+      "Mugs",
+      "Wall",
+      "Vest",
+      "Hats",
+      "Fish",
+      "Nuts"
+    ],
+    "everyday:420000": [
+      "Fork",
+      "Bowl",
+      "Bell",
+      "Sock",
+      "Belt",
+      "Ball",
+      "Lamp",
+      "Ring",
+      "Comb",
+      "Card",
+      "Bill",
+      "Keys",
+      "Pens",
+      "Balm",
+      "Pill",
+      "Lock",
+      "Milk",
+      "Salt",
+      "Cups",
+      "Mugs",
+      "Dish",
+      "Pans",
+      "Pots",
+      "Sink",
+      "Desk",
+      "Wall",
+      "Vest",
+      "Hats",
+      "Caps",
+      "Cans",
+      "Jars",
+      "Bags",
+      "Pork",
+      "Fish",
+      "Nuts",
+      "Corn"
+    ],
+    "everyday:535001": [
+      "Knife"
+    ],
+    "everyday:535000": [
+      "Knife",
+      "Plate",
+      "Phone",
+      "Glove",
+      "Blade",
+      "Stove",
+      "Scale",
+      "Chili",
+      "Grape"
+    ],
+    "everyday:535002": [
+      "Plate",
+      "Phone",
+      "Glove",
+      "Blade",
+      "Grape"
+    ],
+    "everyday:320003": [
+      "Cup",
+      "Can",
+      "Saw",
+      "Cap"
+    ],
+    "everyday:320000": [
+      "Cup",
+      "Can",
+      "Mug",
+      "Saw",
+      "Hat",
+      "Cap",
+      "Bag",
+      "Box",
+      "Pen",
+      "Key",
+      "Bar",
+      "Pan",
+      "Pot",
+      "Rag",
+      "Bed",
+      "Rug",
+      "Mat",
+      "Bin",
+      "Mop",
+      "Jar",
+      "Ham",
+      "Gum"
+    ],
+    "everyday:530002": [
+      "Glass",
+      "Brush",
+      "Drill",
+      "Brick",
+      "Drops",
+      "Blind",
+      "Dress",
+      "Plant",
+      "Plums"
+    ],
+    "everyday:530000": [
+      "Glass",
+      "Brush",
+      "Clock",
+      "Drill",
+      "Scarf",
+      "Shirt",
+      "Brick",
+      "Stamp",
+      "Floss",
+      "Flask",
+      "Chalk",
+      "Charm",
+      "Whisk",
+      "Drops",
+      "Specs",
+      "Chips",
+      "Shelf",
+      "Blind",
+      "Skirt",
+      "Dress",
+      "Plant",
+      "Plums"
+    ],
+    "everyday:626002": [
+      "Bottle",
+      "Bangle",
+      "Pebble",
+      "Dongle"
+    ],
+    "everyday:626000": [
+      "Bottle",
+      "Candle",
+      "Kettle",
+      "Bangle",
+      "Marble",
+      "Pebble",
+      "Dongle",
+      "Waffle",
+      "Handle",
+      "Matcha"
+    ],
+    "everyday:420002": [
+      "Bowl",
+      "Bell",
+      "Belt",
+      "Ball",
+      "Ring",
+      "Bill",
+      "Pens",
+      "Balm",
+      "Pill",
+      "Dish",
+      "Pans",
+      "Pots",
+      "Desk",
+      "Jars",
+      "Bags",
+      "Pork"
+    ],
+    "everyday:320001": [
+      "Mug",
+      "Hat",
+      "Key",
+      "Mat",
+      "Mop",
+      "Ham"
+    ],
+    "everyday:423002": [
+      "Book",
+      "Beer",
+      "Door",
+      "Boot",
+      "Beef",
+      "Pear",
+      "Peas",
+      "Pies"
+    ],
+    "everyday:423000": [
+      "Book",
+      "Coin",
+      "Soap",
+      "Nail",
+      "Beer",
+      "Door",
+      "Coat",
+      "Suit",
+      "Boot",
+      "Beef",
+      "Soup",
+      "Pear",
+      "Peas",
+      "Pies"
+    ],
+    "all:423002": [
+      "Book",
+      "Door",
+      "Roof",
+      "Boat",
+      "Pool",
+      "Road",
+      "Pier",
+      "Goat",
+      "Deer",
+      "Bear",
+      "Beer",
+      "Rain",
+      "Boot",
+      "Beef",
+      "Pear",
+      "Peas",
+      "Pies",
+      "Bees"
+    ],
+    "everyday:824001": [
+      "Notebook",
+      "Figurine",
+      "Magazine",
+      "Tomatoes",
+      "Lemonade"
+    ],
+    "everyday:824000": [
+      "Notebook",
+      "Figurine",
+      "Decanter",
+      "Colander",
+      "Calendar",
+      "Magazine",
+      "Radiator",
+      "Receipts",
+      "Tomatoes",
+      "Potatoes",
+      "Cucumber",
+      "Lemonade"
+    ],
+    "everyday:524002": [
+      "Paper",
+      "Ruler",
+      "Razor",
+      "Duvet",
+      "Bacon",
+      "Boxes",
+      "Bagel",
+      "Donut",
+      "Ramen"
+    ],
+    "everyday:524000": [
+      "Paper",
+      "Towel",
+      "Ruler",
+      "Razor",
+      "Cigar",
+      "Token",
+      "Mixer",
+      "Duvet",
+      "Wipes",
+      "Bacon",
+      "Sugar",
+      "Water",
+      "Novel",
+      "Boxes",
+      "Level",
+      "Bagel",
+      "Donut",
+      "Ramen",
+      "Tacos",
+      "Salad",
+      "Melon",
+      "Lemon",
+      "Limes",
+      "Cakes",
+      "Cider"
+    ],
+    "everyday:625001": [
+      "Folder",
+      "Laptop",
+      "Mirror",
+      "Hammer",
+      "Ticket",
+      "Wallet",
+      "Marker",
+      "Locket",
+      "Nickel",
+      "Magnet",
+      "Zipper",
+      "Napkin",
+      "Tissue",
+      "Funnel",
+      "Tablet",
+      "Webcam",
+      "Hanger",
+      "Hamper",
+      "Lenses",
+      "Fidget",
+      "Mitten",
+      "Window",
+      "Ladder",
+      "Muffin",
+      "Turkey",
+      "Hotdog"
+    ],
+    "everyday:625000": [
+      "Folder",
+      "Laptop",
+      "Mirror",
+      "Pillow",
+      "Hammer",
+      "Jacket",
+      "Basket",
+      "Ticket",
+      "Bucket",
+      "Pocket",
+      "Wallet",
+      "Pencil",
+      "Marker",
+      "Locket",
+      "Nickel",
+      "Dollar",
+      "Magnet",
+      "Postit",
+      "Cutter",
+      "Button",
+      "Zipper",
+      "Napkin",
+      "Tissue",
+      "Goblet",
+      "Funnel",
+      "Carpet",
+      "Binder",
+      "Tablet",
+      "Webcam",
+      "Hanger",
+      "Duffel",
+      "Hamper",
+      "Purses",
+      "Cables",
+      "Badges",
+      "Lenses",
+      "Fidget",
+      "Mitten",
+      "Butter",
+      "Coffee",
+      "Pepper",
+      "Dishes",
+      "Socket",
+      "Window",
+      "Curler",
+      "Duster",
+      "Carton",
+      "Packet",
+      "Ladder",
+      "Cactus",
+      "Muffin",
+      "Turkey",
+      "Salmon",
+      "Burger",
+      "Hotdog",
+      "Garlic",
+      "Carrot",
+      "Sundae"
+    ],
+    "everyday:736003": [
+      "Charger",
+      "Stapler",
+      "Clipper",
+      "Stopper",
+      "Clicker",
+      "Scalpel",
+      "Sticker",
+      "Spinner",
+      "Skillet",
+      "Shampoo",
+      "Chicken"
+    ],
+    "everyday:736000": [
+      "Charger",
+      "Glasses",
+      "Blanket",
+      "Stapler",
+      "Clipper",
+      "Stopper",
+      "Clicker",
+      "Scalpel",
+      "Sticker",
+      "Trinket",
+      "Spinner",
+      "Thermos",
+      "Blender",
+      "Skillet",
+      "Shampoo",
+      "Platter",
+      "Chicken",
+      "Pretzel",
+      "Brownie"
+    ],
+    "everyday:525003": [
+      "Cable",
+      "Sushi"
+    ],
+    "everyday:525000": [
+      "Cable",
+      "Badge",
+      "Purse",
+      "Ladle",
+      "Table",
+      "Sushi",
+      "Pasta",
+      "Pizza",
+      "Mango",
+      "Latte",
+      "Pepsi"
+    ],
+    "everyday:725002": [
+      "Battery",
+      "Perfume",
+      "Bandage",
+      "Padlock",
+      "Pencils",
+      "Bandaid",
+      "Pancake",
+      "Pillows",
+      "Garbage",
+      "Biscuit",
+      "Burgers",
+      "Burrito",
+      "Popcorn",
+      "Peppers",
+      "Pudding"
+    ],
+    "everyday:725000": [
+      "Battery",
+      "Perfume",
+      "Lantern",
+      "Bandage",
+      "Compact",
+      "Padlock",
+      "Compass",
+      "Lipbalm",
+      "Keycard",
+      "Keyring",
+      "Lanyard",
+      "Curtain",
+      "Cushion",
+      "Mittens",
+      "Sandals",
+      "Luggage",
+      "Pencils",
+      "Markers",
+      "Wallets",
+      "Mascara",
+      "Bandaid",
+      "Tablets",
+      "Tickets",
+      "Tissues",
+      "Napkins",
+      "Pancake",
+      "Pillows",
+      "Hangers",
+      "Garbage",
+      "Muffins",
+      "Biscuit",
+      "Burgers",
+      "Hotdogs",
+      "Burrito",
+      "Popcorn",
+      "Mustard",
+      "Carrots",
+      "Lettuce",
+      "Peppers",
+      "Cupcake",
+      "Candies",
+      "Pudding",
+      "Custard"
+    ],
+    "everyday:523001": [
+      "Mouse",
+      "Loupe",
+      "Toast",
+      "Heels",
+      "Nails"
+    ],
+    "everyday:523000": [
+      "Mouse",
+      "Loupe",
+      "Pouch",
+      "Quilt",
+      "Boots",
+      "Coins",
+      "Toast",
+      "Juice",
+      "Books",
+      "Couch",
+      "Jeans",
+      "Heels",
+      "Nails",
+      "Sauce",
+      "Peach",
+      "Pears",
+      "Beans"
+    ],
+    "everyday:825001": [
+      "Keyboard",
+      "Lollipop"
+    ],
+    "everyday:825000": [
+      "Keyboard",
+      "Barrette",
+      "Bandages",
+      "Pancakes",
+      "Curtains",
+      "Biscuits",
+      "Cupcakes",
+      "Lollipop"
+    ],
+    "all:825001": [
+      "Keyboard",
+      "Hospital",
+      "Terminal",
+      "Kangaroo",
+      "February",
+      "Lollipop",
+      "Tortoise",
+      "Mosquito"
+    ],
+    "everyday:023001": [
+      "Headphones",
+      "Toothbrush",
+      "Toothpaste",
+      "Toothpicks"
+    ],
+    "everyday:023000": [
+      "Headphones",
+      "Toothbrush",
+      "Toothpaste",
+      "Toothpicks"
+    ],
+    "all:023001": [
+      "Headphones",
+      "Toothbrush",
+      "Toothpaste",
+      "Toothpicks"
+    ],
+    "all:023000": [
+      "Headphones",
+      "Toothbrush",
+      "Toothpaste",
+      "Toothpicks"
+    ],
+    "everyday:734003": [
+      "Speaker",
+      "Sweater"
+    ],
+    "everyday:734000": [
+      "Speaker",
+      "Sweater",
+      "Freezer"
+    ],
+    "all:734003": [
+      "Speaker",
+      "Sweater",
+      "Scooter",
+      "Cheetah",
+      "Croatia"
+    ],
+    "all:734000": [
+      "Speaker",
+      "Sweater",
+      "Scooter",
+      "Freezer",
+      "Theater",
+      "Trailer",
+      "Cheetah",
+      "Croatia"
+    ],
+    "everyday:624003": [
+      "Camera",
+      "Cereal"
+    ],
+    "everyday:624000": [
+      "Camera",
+      "Remote",
+      "Lotion",
+      "Vacuum",
+      "Tokens",
+      "Cereal",
+      "Yogurt",
+      "Towels",
+      "Razors",
+      "Bagels",
+      "Donuts",
+      "Banana",
+      "Lemons",
+      "Tomato",
+      "Potato",
+      "Gelato"
+    ],
+    "all:624003": [
+      "Camera",
+      "Cinema",
+      "Coyote",
+      "Canada",
+      "Cereal"
+    ],
+    "everyday:736002": [
+      "Glasses",
+      "Blanket",
+      "Blender",
+      "Platter",
+      "Pretzel",
+      "Brownie"
+    ],
+    "all:736002": [
+      "Glasses",
+      "Blanket",
+      "Blender",
+      "Dresser",
+      "Drumset",
+      "Brownie",
+      "Platter",
+      "Pretzel"
+    ],
+    "everyday:026003": [
+      "Sunglasses",
+      "Controller",
+      "Sandwiches"
+    ],
+    "everyday:026000": [
+      "Sunglasses",
+      "Controller",
+      "Dishwasher",
+      "Sandwiches"
+    ],
+    "all:026003": [
+      "Sunglasses",
+      "Controller",
+      "Sandwiches"
+    ],
+    "all:026000": [
+      "Sunglasses",
+      "Controller",
+      "Dishwasher",
+      "Sandwiches"
+    ],
+    "everyday:626003": [
+      "Candle"
+    ],
+    "everyday:524001": [
+      "Towel",
+      "Token",
+      "Mixer",
+      "Wipes",
+      "Water",
+      "Novel",
+      "Level",
+      "Tacos",
+      "Melon",
+      "Lemon",
+      "Limes"
+    ],
+    "everyday:625002": [
+      "Pillow",
+      "Jacket",
+      "Basket",
+      "Bucket",
+      "Pocket",
+      "Pencil",
+      "Dollar",
+      "Postit",
+      "Button",
+      "Goblet",
+      "Binder",
+      "Duffel",
+      "Purses",
+      "Badges",
+      "Butter",
+      "Pepper",
+      "Dishes",
+      "Duster",
+      "Packet",
+      "Burger",
+      "Garlic"
+    ],
+    "everyday:624002": [
+      "Remote",
+      "Razors",
+      "Bagels",
+      "Donuts",
+      "Banana",
+      "Potato",
+      "Gelato"
+    ],
+    "all:624002": [
+      "Remote",
+      "Garage",
+      "Bureau",
+      "Gazebo",
+      "Palace",
+      "Jaguar",
+      "Baboon",
+      "Banana",
+      "Potato",
+      "Poland",
+      "Desert",
+      "Gemini",
+      "Razors",
+      "Bagels",
+      "Donuts",
+      "Gelato"
+    ],
+    "everyday:530003": [
+      "Clock",
+      "Scarf",
+      "Shirt",
+      "Stamp",
+      "Chalk",
+      "Charm",
+      "Specs",
+      "Chips",
+      "Shelf",
+      "Skirt"
+    ],
+    "everyday:623002": [
+      "Guitar",
+      "Peeler",
+      "Beanie"
+    ],
+    "everyday:623000": [
+      "Guitar",
+      "Tiepin",
+      "Coupon",
+      "Needle",
+      "Saucer",
+      "Teacup",
+      "Teapot",
+      "Peeler",
+      "Hoodie",
+      "Beanie",
+      "Faucet",
+      "Cookie"
+    ],
+    "all:623002": [
+      "Guitar",
+      "Peeler",
+      "Beanie",
+      "Beaver",
+      "Beetle"
+    ],
+    "everyday:630001": [
+      "Wrench"
+    ],
+    "everyday:630000": [
+      "Wrench",
+      "Clutch",
+      "Shorts",
+      "Stamps",
+      "Switch",
+      "Blinds",
+      "Shirts",
+      "Plants",
+      "Crisps",
+      "Cherry"
+    ],
+    "everyday:148003": [
+      "Screwdriver"
+    ],
+    "everyday:148000": [
+      "Screwdriver"
+    ],
+    "all:148003": [
+      "Screwdriver"
+    ],
+    "all:148000": [
+      "Screwdriver"
+    ],
+    "everyday:634002": [
+      "Pliers",
+      "Brooch",
+      "Blouse"
+    ],
+    "everyday:634000": [
+      "Pliers",
+      "Brooch",
+      "Blouse",
+      "Spoons",
+      "Cheese",
+      "Chairs",
+      "Sheets"
+    ],
+    "everyday:434003": [
+      "Shoe",
+      "Chai"
+    ],
+    "everyday:434000": [
+      "Shoe",
+      "Glue",
+      "Chai"
+    ],
+    "all:434003": [
+      "Shoe",
+      "Chai"
+    ],
+    "everyday:420003": [
+      "Sock",
+      "Comb",
+      "Card",
+      "Salt",
+      "Cups",
+      "Sink",
+      "Caps",
+      "Cans",
+      "Corn"
+    ],
+    "everyday:323001": [
+      "Tie",
+      "Tea"
+    ],
+    "everyday:323000": [
+      "Tie",
+      "Die",
+      "Tea",
+      "Pie"
+    ],
+    "all:323001": [
+      "Tie",
+      "Tea",
+      "Leo"
+    ],
+    "all:323000": [
+      "Tie",
+      "Tea",
+      "Sea",
+      "Leo",
+      "Die",
+      "Pie",
+      "Bee"
+    ],
+    "everyday:815002": [
+      "Umbrella"
+    ],
+    "everyday:815000": [
+      "Umbrella",
+      "Espresso"
+    ],
+    "all:815002": [
+      "Umbrella"
+    ],
+    "all:815000": [
+      "Umbrella",
+      "Espresso"
+    ],
+    "everyday:320002": [
+      "Bag",
+      "Box",
+      "Pen",
+      "Bar",
+      "Pan",
+      "Pot",
+      "Rag",
+      "Bed",
+      "Rug",
+      "Bin",
+      "Jar",
+      "Gum"
+    ],
+    "everyday:826002": [
+      "Backpack",
+      "Penknife",
+      "Billfold",
+      "Rucksack",
+      "Passport",
+      "Bodywash"
+    ],
+    "everyday:826000": [
+      "Backpack",
+      "Lipgloss",
+      "Fishhook",
+      "Necklace",
+      "Lipstick",
+      "Cufflink",
+      "Keychain",
+      "Penknife",
+      "Billfold",
+      "Rucksack",
+      "Lighters",
+      "Passport",
+      "Mattress",
+      "Bodywash",
+      "Sandwich",
+      "Mushroom",
+      "Cocktail"
+    ],
+    "everyday:823003": [
+      "Suitcase",
+      "Coasters",
+      "Sausages"
+    ],
+    "everyday:823000": [
+      "Suitcase",
+      "Teaspoon",
+      "Bookmark",
+      "Mousepad",
+      "Doorknob",
+      "Coasters",
+      "Doughnut",
+      "Sausages"
+    ],
+    "all:823003": [
+      "Suitcase",
+      "Soundbar",
+      "Sailboat",
+      "Coasters",
+      "Sausages"
+    ],
+    "everyday:814001": [
+      "Envelope"
+    ],
+    "everyday:814000": [
+      "Envelope"
+    ],
+    "everyday:626001": [
+      "Kettle",
+      "Marble",
+      "Waffle",
+      "Handle",
+      "Matcha"
+    ],
+    "everyday:424001": [
+      "Vase",
+      "Tape",
+      "Yo-yo",
+      "Wine",
+      "Wire",
+      "Tuna",
+      "Taco",
+      "Mayo",
+      "Lime"
+    ],
+    "everyday:424000": [
+      "Vase",
+      "Tape",
+      "Dice",
+      "Pipe",
+      "Dime",
+      "Yo-yo",
+      "Soda",
+      "Wine",
+      "Wire",
+      "Sofa",
+      "Tuna",
+      "Rice",
+      "Taco",
+      "Mayo",
+      "Lime",
+      "Cake",
+      "Coke"
+    ],
+    "everyday:534002": [
+      "Broom",
+      "Bread"
+    ],
+    "all:534002": [
+      "Broom",
+      "Bread",
+      "Green"
+    ],
+    "everyday:726001": [
+      "Lighter",
+      "Matches",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Watches",
+      "Waffles",
+      "Lobster",
+      "Ketchup"
+    ],
+    "everyday:726000": [
+      "Lighter",
+      "Matches",
+      "Handbag",
+      "Lockbox",
+      "Tumbler",
+      "Handset",
+      "Candles",
+      "Bottles",
+      "Pillbox",
+      "Goggles",
+      "Satchel",
+      "Pitcher",
+      "Dustpan",
+      "Watches",
+      "Waffles",
+      "Lobster",
+      "Ketchup"
+    ],
+    "everyday:725001": [
+      "Lantern",
+      "Lipbalm",
+      "Keycard",
+      "Keyring",
+      "Lanyard",
+      "Mittens",
+      "Luggage",
+      "Markers",
+      "Wallets",
+      "Mascara",
+      "Tablets",
+      "Tickets",
+      "Tissues",
+      "Napkins",
+      "Hangers",
+      "Muffins",
+      "Hotdogs",
+      "Mustard",
+      "Lettuce"
+    ],
+    "everyday:726003": [
+      "Candles",
+      "Satchel"
+    ],
+    "everyday:726002": [
+      "Bottles",
+      "Pillbox",
+      "Goggles",
+      "Pitcher",
+      "Dustpan"
+    ],
+    "everyday:725003": [
+      "Compact",
+      "Compass",
+      "Curtain",
+      "Cushion",
+      "Sandals",
+      "Carrots",
+      "Cupcake",
+      "Candies",
+      "Custard"
+    ],
+    "everyday:723001": [
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Hairtie",
+      "Toaster",
+      "Loafers",
+      "Noodles"
+    ],
+    "everyday:723000": [
+      "Hairpin",
+      "Toolbox",
+      "Headset",
+      "Hairtie",
+      "Quarter",
+      "Coaster",
+      "Toaster",
+      "Loafers",
+      "Doormat",
+      "Ceiling",
+      "Bouquet",
+      "Sausage",
+      "Noodles",
+      "Peanuts",
+      "Peaches",
+      "Cookies"
+    ],
+    "everyday:823001": [
+      "Teaspoon",
+      "Mousepad"
+    ],
+    "everyday:826001": [
+      "Lipgloss",
+      "Fishhook",
+      "Necklace",
+      "Lipstick",
+      "Keychain",
+      "Lighters",
+      "Mattress",
+      "Mushroom"
+    ],
+    "everyday:737001": [
+      "Whistle",
+      "Thimble"
+    ],
+    "everyday:737000": [
+      "Whistle",
+      "Thimble"
+    ],
+    "everyday:423003": [
+      "Coin",
+      "Soap",
+      "Coat",
+      "Suit",
+      "Soup"
+    ],
+    "everyday:520001": [
+      "Watch",
+      "Tongs",
+      "Forks",
+      "Match",
+      "Torch",
+      "Lamps"
+    ],
+    "everyday:520000": [
+      "Watch",
+      "Penny",
+      "Tongs",
+      "Cards",
+      "Rings",
+      "Combs",
+      "Forks",
+      "Pills",
+      "Match",
+      "Torch",
+      "Bowls",
+      "Lamps",
+      "Bench",
+      "Pants",
+      "Socks",
+      "Curry",
+      "Candy"
+    ],
+    "everyday:037001": [
+      "Flashlight"
+    ],
+    "everyday:037000": [
+      "Flashlight",
+      "Chopsticks",
+      "Blackberry"
+    ],
+    "everyday:712001": [
+      "Earring",
+      "Earbuds",
+      "Airpods"
+    ],
+    "everyday:712000": [
+      "Earring",
+      "Earbuds",
+      "Airpods",
+      "Oatmeal"
+    ],
+    "everyday:835002": [
+      "Bracelet"
+    ],
+    "everyday:835000": [
+      "Bracelet"
+    ],
+    "everyday:836003": [
+      "Scissors",
+      "Slippers",
+      "Chargers",
+      "Clippers",
+      "Stickers",
+      "Staplers",
+      "Crackers",
+      "Cherries"
+    ],
+    "everyday:836000": [
+      "Scissors",
+      "Slippers",
+      "Chargers",
+      "Clippers",
+      "Stickers",
+      "Staplers",
+      "Blankets",
+      "Pretzels",
+      "Crackers",
+      "Dressing",
+      "Cherries",
+      "Broccoli",
+      "Brownies"
+    ],
+    "everyday:434002": [
+      "Glue"
+    ],
+    "everyday:923001": [
+      "Toothpick",
+      "Hairdryer",
+      "Mouthwash"
+    ],
+    "everyday:923000": [
+      "Toothpick",
+      "Hairdryer",
+      "Coinpurse",
+      "Mouthwash"
+    ],
+    "everyday:823002": [
+      "Bookmark",
+      "Doorknob",
+      "Doughnut"
+    ],
+    "everyday:424002": [
+      "Dice",
+      "Pipe",
+      "Dime",
+      "Rice"
+    ],
+    "everyday:613001": [
+      "Eraser",
+      "Amulet"
+    ],
+    "everyday:613000": [
+      "Eraser",
+      "Opener",
+      "Amulet",
+      "Omelet",
+      "Orange",
+      "Onions"
+    ],
+    "everyday:423001": [
+      "Nail"
+    ],
+    "everyday:540003": [
+      "Screw",
+      "Straw"
+    ],
+    "everyday:540000": [
+      "Screw",
+      "Straw"
+    ],
+    "everyday:525002": [
+      "Badge",
+      "Purse",
+      "Pasta",
+      "Pizza",
+      "Pepsi"
+    ],
+    "everyday:826003": [
+      "Cufflink",
+      "Sandwich",
+      "Cocktail"
+    ],
+    "everyday:623001": [
+      "Tiepin",
+      "Needle",
+      "Teacup",
+      "Teapot",
+      "Hoodie",
+      "Faucet"
+    ],
+    "everyday:825002": [
+      "Barrette",
+      "Bandages",
+      "Pancakes",
+      "Biscuits"
+    ],
+    "everyday:948003": [
+      "Scrunchie"
+    ],
+    "everyday:948000": [
+      "Scrunchie"
+    ],
+    "everyday:813001": [
+      "Eyedrops",
+      "Eyeliner",
+      "Icecream"
+    ],
+    "everyday:813000": [
+      "Eyedrops",
+      "Eyeliner",
+      "Icecream"
+    ],
+    "everyday:834001": [
+      "Tweezers",
+      "Trousers"
+    ],
+    "everyday:834000": [
+      "Tweezers",
+      "Trousers",
+      "Sneakers",
+      "Smoothie"
+    ],
+    "everyday:530001": [
+      "Floss",
+      "Flask",
+      "Whisk"
+    ],
+    "everyday:624001": [
+      "Lotion",
+      "Vacuum",
+      "Tokens",
+      "Yogurt",
+      "Towels",
+      "Lemons",
+      "Tomato"
+    ],
+    "everyday:724003": [
+      "Cologne",
+      "Catalog",
+      "Cabinet"
+    ],
+    "everyday:724000": [
+      "Cologne",
+      "Notepad",
+      "Receipt",
+      "Catalog",
+      "Monitor",
+      "Cabinet",
+      "Bananas"
+    ],
+    "everyday:613003": [
+      "Opener",
+      "Omelet",
+      "Orange",
+      "Onions"
+    ],
+    "everyday:928003": [
+      "Corkscrew"
+    ],
+    "everyday:928000": [
+      "Corkscrew"
+    ],
+    "everyday:716001": [
+      "Ashtray"
+    ],
+    "everyday:716000": [
+      "Ashtray"
+    ],
+    "everyday:524003": [
+      "Cigar",
+      "Sugar",
+      "Salad",
+      "Cakes",
+      "Cider"
+    ],
+    "everyday:520002": [
+      "Penny",
+      "Rings",
+      "Pills",
+      "Bowls",
+      "Bench",
+      "Pants"
+    ],
+    "everyday:723003": [
+      "Quarter",
+      "Coaster",
+      "Ceiling",
+      "Sausage",
+      "Cookies"
+    ],
+    "everyday:430003": [
+      "Chip",
+      "Crab",
+      "Stew"
+    ],
+    "everyday:430000": [
+      "Chip",
+      "Tray",
+      "Plug",
+      "Crab",
+      "Wrap",
+      "Stew",
+      "Plum"
+    ],
+    "everyday:760003": [
+      "Crystal"
+    ],
+    "everyday:760000": [
+      "Crystal"
+    ],
+    "everyday:650003": [
+      "Stylus"
+    ],
+    "everyday:650000": [
+      "Stylus"
+    ],
+    "everyday:635003": [
+      "Crayon",
+      "Chisel"
+    ],
+    "everyday:635000": [
+      "Crayon",
+      "Chisel",
+      "Grater",
+      "Tripod",
+      "Blazer",
+      "Phones",
+      "Knives",
+      "Gloves",
+      "Plates",
+      "Drawer",
+      "Grapes"
+    ],
+    "everyday:724001": [
+      "Notepad",
+      "Monitor"
+    ],
+    "everyday:724002": [
+      "Receipt",
+      "Bananas"
+    ],
+    "everyday:623003": [
+      "Coupon",
+      "Saucer",
+      "Cookie"
+    ],
+    "everyday:625003": [
+      "Cutter",
+      "Carpet",
+      "Cables",
+      "Coffee",
+      "Socket",
+      "Curler",
+      "Carton",
+      "Cactus",
+      "Salmon",
+      "Carrot",
+      "Sundae"
+    ],
+    "everyday:645001": [
+      "Thread"
+    ],
+    "everyday:645000": [
+      "Thread"
+    ],
+    "everyday:036003": [
+      "Spectacles"
+    ],
+    "everyday:036000": [
+      "Spectacles",
+      "Thermostat"
+    ],
+    "everyday:037003": [
+      "Chopsticks"
+    ],
+    "everyday:126001": [
+      "Handkerchief",
+      "Lighterfluid"
+    ],
+    "everyday:126000": [
+      "Handkerchief",
+      "Candlestick",
+      "Lighterfluid",
+      "Candleholder"
+    ],
+    "everyday:523002": [
+      "Pouch",
+      "Boots",
+      "Juice",
+      "Books",
+      "Jeans",
+      "Peach",
+      "Pears",
+      "Beans"
+    ],
+    "everyday:924001": [
+      "Moneyclip",
+      "Notebooks"
+    ],
+    "everyday:924000": [
+      "Moneyclip",
+      "Powerbank",
+      "Sanitizer",
+      "Notebooks",
+      "Paperclip",
+      "Pokerchip",
+      "Pineapple",
+      "Cucumbers"
+    ],
+    "everyday:630003": [
+      "Clutch",
+      "Shorts",
+      "Stamps",
+      "Switch",
+      "Shirts",
+      "Crisps",
+      "Cherry"
+    ],
+    "everyday:736001": [
+      "Trinket",
+      "Thermos"
+    ],
+    "everyday:824002": [
+      "Decanter",
+      "Radiator",
+      "Receipts",
+      "Potatoes"
+    ],
+    "all:824002": [
+      "Decanter",
+      "Radiator",
+      "Basement",
+      "Pinecone",
+      "December",
+      "Receipts",
+      "Potatoes",
+      "Giraffes"
+    ],
+    "everyday:635002": [
+      "Grater",
+      "Blazer",
+      "Phones",
+      "Gloves",
+      "Plates",
+      "Drawer",
+      "Grapes"
+    ],
+    "all:635002": [
+      "Grater",
+      "Blazer",
+      "Brazil",
+      "Planet",
+      "Phones",
+      "Gloves",
+      "Plates",
+      "Drawer",
+      "Grapes",
+      "Planes"
+    ],
+    "everyday:525001": [
+      "Ladle",
+      "Table",
+      "Mango",
+      "Latte"
+    ],
+    "all:525001": [
+      "Ladle",
+      "Table",
+      "Fence",
+      "Villa",
+      "Horse",
+      "Zebra",
+      "Hippo",
+      "Mango",
+      "Kenya",
+      "Tokyo",
+      "Virgo",
+      "Libra",
+      "Latte"
+    ],
+    "everyday:735003": [
+      "Spatula",
+      "Spinach"
+    ],
+    "everyday:735000": [
+      "Spatula",
+      "Flowers",
+      "Spinach"
+    ],
+    "all:735003": [
+      "Spatula",
+      "Stadium",
+      "Station",
+      "Spinach",
+      "Spiders"
+    ],
+    "all:735000": [
+      "Spatula",
+      "Stadium",
+      "Station",
+      "Flowers",
+      "Spinach",
+      "Spiders"
+    ],
+    "everyday:824003": [
+      "Colander",
+      "Calendar",
+      "Cucumber"
+    ],
+    "all:824003": [
+      "Colander",
+      "Calendar",
+      "Sidewalk",
+      "Colombia",
+      "Cucumber"
+    ],
+    "everyday:927002": [
+      "Dishcloth"
+    ],
+    "everyday:927000": [
+      "Dishcloth",
+      "Lampshade",
+      "Lightbulb"
+    ],
+    "all:927002": [
+      "Dishcloth",
+      "Jellyfish"
+    ],
+    "all:927000": [
+      "Dishcloth",
+      "Lampshade",
+      "Lightning",
+      "Lightbulb",
+      "Jellyfish"
+    ],
+    "everyday:636003": [
+      "Sponge"
+    ],
+    "everyday:636000": [
+      "Sponge",
+      "Fridge"
+    ],
+    "all:636003": [
+      "Sponge"
+    ],
+    "all:636000": [
+      "Sponge",
+      "Bridge",
+      "Fridge",
+      "France"
+    ],
+    "everyday:925002": [
+      "Dispenser",
+      "Batteries"
+    ],
+    "everyday:925000": [
+      "Dispenser",
+      "Comforter",
+      "Batteries",
+      "Magnifier",
+      "Microwave"
+    ],
+    "all:925002": [
+      "Dispenser",
+      "Barcelona",
+      "Rectangle",
+      "Batteries",
+      "Butterfly"
+    ],
+    "all:925000": [
+      "Dispenser",
+      "Comforter",
+      "Submarine",
+      "Microwave",
+      "Cathedral",
+      "Singapore",
+      "Barcelona",
+      "Rectangle",
+      "Capricorn",
+      "September",
+      "Batteries",
+      "Magnifier",
+      "Butterfly"
+    ],
+    "everyday:125003": [
+      "Conditioner"
+    ],
+    "everyday:125000": [
+      "Conditioner",
+      "Pocketknife",
+      "Rubberbands"
+    ],
+    "all:125003": [
+      "Conditioner",
+      "Coffeetable"
+    ],
+    "all:125000": [
+      "Conditioner",
+      "Refrigerator",
+      "Coffeetable",
+      "Pocketknife",
+      "Rubberbands"
+    ],
+    "everyday:523003": [
+      "Quilt",
+      "Coins",
+      "Couch",
+      "Sauce"
+    ],
+    "all:523003": [
+      "Quilt",
+      "Couch",
+      "Coach",
+      "Cairo",
+      "Coins",
+      "Sauce",
+      "Seals"
+    ],
+    "everyday:925003": [
+      "Comforter"
+    ],
+    "all:925003": [
+      "Comforter",
+      "Submarine",
+      "Cathedral",
+      "Singapore",
+      "Capricorn",
+      "September"
+    ],
+    "everyday:927001": [
+      "Lampshade",
+      "Lightbulb"
+    ],
+    "all:927001": [
+      "Lampshade",
+      "Lightning",
+      "Lightbulb"
+    ],
+    "everyday:126003": [
+      "Candlestick",
+      "Candleholder"
+    ],
+    "all:126003": [
+      "Candlestick",
+      "Candleholder"
+    ],
+    "everyday:926001": [
+      "Newspaper",
+      "Mushrooms"
+    ],
+    "everyday:926000": [
+      "Newspaper",
+      "Passports",
+      "Backpacks",
+      "Raspberry",
+      "Mushrooms"
+    ],
+    "all:926001": [
+      "Newspaper",
+      "Turntable",
+      "Townhouse",
+      "Mushrooms"
+    ],
+    "all:926000": [
+      "Newspaper",
+      "Turntable",
+      "Billboard",
+      "Townhouse",
+      "Bulldozer",
+      "Sunflower",
+      "Passports",
+      "Backpacks",
+      "Raspberry",
+      "Mushrooms"
+    ],
+    "everyday:025003": [
+      "Calculator",
+      "Cantaloupe",
+      "Cappuccino"
+    ],
+    "everyday:025000": [
+      "Calculator",
+      "Microphone",
+      "Rubberband",
+      "Windowsill",
+      "Cantaloupe",
+      "Cappuccino"
+    ],
+    "all:025003": [
+      "Calculator",
+      "Cantaloupe",
+      "Cappuccino"
+    ],
+    "all:025000": [
+      "Calculator",
+      "Microphone",
+      "New Zealand",
+      "Rubberband",
+      "Windowsill",
+      "Cantaloupe",
+      "Cappuccino"
+    ],
+    "everyday:038003": [
+      "Smartphone"
+    ],
+    "everyday:038000": [
+      "Smartphone",
+      "Flashdrive"
+    ],
+    "all:038003": [
+      "Smartphone"
+    ],
+    "all:038000": [
+      "Smartphone",
+      "Flashdrive"
+    ],
+    "everyday:025001": [
+      "Microphone",
+      "Windowsill"
+    ],
+    "all:025001": [
+      "Microphone",
+      "New Zealand",
+      "Windowsill"
+    ],
+    "everyday:635001": [
+      "Tripod",
+      "Knives"
+    ],
+    "all:635001": [
+      "Tripod",
+      "Flower",
+      "Knives",
+      "Whales"
+    ],
+    "everyday:036001": [
+      "Thermostat"
+    ],
+    "all:036001": [
+      "Thermostat",
+      "Trampoline"
+    ],
+    "everyday:834003": [
+      "Sneakers",
+      "Smoothie"
+    ],
+    "all:834003": [
+      "Sneakers",
+      "Speakers",
+      "Smoothie",
+      "Squirrel"
+    ],
+    "everyday:934002": [
+      "Briefcase",
+      "Blueberry"
+    ],
+    "everyday:934000": [
+      "Briefcase",
+      "Croissant",
+      "Blueberry"
+    ],
+    "all:934002": [
+      "Briefcase",
+      "Blueberry"
+    ],
+    "all:934000": [
+      "Briefcase",
+      "Treadmill",
+      "Staircase",
+      "Blueberry",
+      "Croissant"
+    ],
+    "everyday:837001": [
+      "Trashcan"
+    ],
+    "everyday:837000": [
+      "Trashcan"
+    ],
+    "all:837001": [
+      "Trashcan"
+    ],
+    "all:837000": [
+      "Trashcan"
+    ],
+    "big_objects:534003": [
+      "Chair",
+      "Stool"
+    ],
+    "big_objects:534000": [
+      "Chair",
+      "Floor",
+      "Train",
+      "Stool",
+      "Trees"
+    ],
+    "big_objects:525001": [
+      "Table",
+      "Fence",
+      "Villa"
+    ],
+    "big_objects:525000": [
+      "Table",
+      "Fence",
+      "Villa",
+      "Condo"
+    ],
+    "big_objects:420002": [
+      "Desk",
+      "Deck",
+      "Barn",
+      "Rock",
+      "Dock"
+    ],
+    "big_objects:420000": [
+      "Desk",
+      "Wall",
+      "Sink",
+      "Harp",
+      "Deck",
+      "Barn",
+      "Cars",
+      "Hill",
+      "Rock",
+      "Dock"
+    ],
+    "big_objects:320002": [
+      "Bed",
+      "Bus",
+      "Jet"
+    ],
+    "big_objects:320000": [
+      "Bed",
+      "Car",
+      "Van",
+      "Bus",
+      "Suv",
+      "Jet"
+    ],
+    "big_objects:523003": [
+      "Couch",
+      "Coach"
+    ],
+    "big_objects:523000": [
+      "Couch",
+      "House",
+      "Piano",
+      "Coach",
+      "Boats",
+      "Beach",
+      "Piers"
+    ],
+    "big_objects:424003": [
+      "Sofa",
+      "Cave"
+    ],
+    "big_objects:424000": [
+      "Sofa",
+      "Taxi",
+      "Gate",
+      "Bike",
+      "Lake",
+      "Cave"
+    ],
+    "all:424003": [
+      "Sofa",
+      "Cake",
+      "Soda",
+      "Cave",
+      "Coke"
+    ],
+    "big_objects:423002": [
+      "Door",
+      "Roof",
+      "Boat",
+      "Pool",
+      "Road",
+      "Pier"
+    ],
+    "big_objects:423000": [
+      "Door",
+      "Roof",
+      "Boat",
+      "Pool",
+      "Road",
+      "Pier"
+    ],
+    "big_objects:625001": [
+      "Window",
+      "Ladder",
+      "Tunnel",
+      "Hangar",
+      "Harbor"
+    ],
+    "big_objects:625000": [
+      "Window",
+      "Subway",
+      "Rocket",
+      "Ladder",
+      "Tunnel",
+      "Hangar",
+      "Harbor",
+      "Camper",
+      "Pickup",
+      "Canyon"
+    ],
+    "big_objects:420001": [
+      "Wall",
+      "Harp",
+      "Hill"
+    ],
+    "big_objects:534001": [
+      "Floor",
+      "Train",
+      "Trees"
+    ],
+    "all:534001": [
+      "Floor",
+      "Train",
+      "Fries",
+      "Trees"
+    ],
+    "big_objects:634003": [
+      "Stairs"
+    ],
+    "big_objects:634000": [
+      "Stairs",
+      "Trains"
+    ],
+    "all:634003": [
+      "Stairs",
+      "Cheese",
+      "Square",
+      "Spoons",
+      "Chairs",
+      "Sheets"
+    ],
+    "big_objects:813001": [
+      "Elevator"
+    ],
+    "big_objects:813000": [
+      "Elevator"
+    ],
+    "big_objects:636002": [
+      "Bridge"
+    ],
+    "big_objects:636000": [
+      "Bridge",
+      "Fridge"
+    ],
+    "all:636002": [
+      "Bridge"
+    ],
+    "big_objects:524001": [
+      "Tower",
+      "Hotel",
+      "Futon",
+      "Foyer",
+      "Kayak",
+      "Moped"
+    ],
+    "big_objects:524000": [
+      "Tower",
+      "Hotel",
+      "Futon",
+      "Basin",
+      "Bidet",
+      "Patio",
+      "Foyer",
+      "Cabin",
+      "Canoe",
+      "Kayak",
+      "Sedan",
+      "Moped",
+      "Buses",
+      "Bikes",
+      "River"
+    ],
+    "big_objects:626003": [
+      "Castle"
+    ],
+    "big_objects:626000": [
+      "Castle",
+      "Temple",
+      "Jungle"
+    ],
+    "big_objects:523001": [
+      "House"
+    ],
+    "big_objects:913001": [
+      "Apartment"
+    ],
+    "big_objects:913000": [
+      "Apartment"
+    ],
+    "all:913001": [
+      "Apartment",
+      "Elephants"
+    ],
+    "all:913000": [
+      "Apartment",
+      "Elephants"
+    ],
+    "big_objects:320003": [
+      "Car",
+      "Suv"
+    ],
+    "big_objects:530001": [
+      "Truck"
+    ],
+    "big_objects:530000": [
+      "Truck",
+      "Chest",
+      "Shelf",
+      "Blimp",
+      "Ships",
+      "Cliff"
+    ],
+    "big_objects:320001": [
+      "Van"
+    ],
+    "big_objects:424001": [
+      "Taxi",
+      "Lake"
+    ],
+    "big_objects:625003": [
+      "Subway",
+      "Camper",
+      "Canyon"
+    ],
+    "big_objects:812001": [
+      "Airplane",
+      "Airliner"
+    ],
+    "big_objects:812000": [
+      "Airplane",
+      "Airliner"
+    ],
+    "all:812001": [
+      "Airplane",
+      "Airliner"
+    ],
+    "all:812000": [
+      "Airplane",
+      "Airliner"
+    ],
+    "big_objects:024001": [
+      "Helicopter",
+      "Motorcycle",
+      "Television",
+      "Locomotive"
+    ],
+    "big_objects:024000": [
+      "Helicopter",
+      "Motorcycle",
+      "Television",
+      "Locomotive"
+    ],
+    "all:024001": [
+      "Helicopter",
+      "Motorcycle",
+      "Television",
+      "Locomotive",
+      "Watermelon"
+    ],
+    "all:024000": [
+      "Helicopter",
+      "Motorcycle",
+      "Television",
+      "Locomotive",
+      "Watermelon",
+      "Paperclips"
+    ],
+    "big_objects:430003": [
+      "Ship",
+      "Crib",
+      "Shed"
+    ],
+    "big_objects:430000": [
+      "Ship",
+      "Crib",
+      "Shed",
+      "Tram"
+    ],
+    "big_objects:727002": [
+      "Bicycle"
+    ],
+    "big_objects:727000": [
+      "Bicycle"
+    ],
+    "all:727002": [
+      "Bicycle"
+    ],
+    "all:727000": [
+      "Bicycle"
+    ],
+    "big_objects:734003": [
+      "Scooter"
+    ],
+    "big_objects:734000": [
+      "Scooter",
+      "Freezer",
+      "Theater",
+      "Trailer"
+    ],
+    "big_objects:035003": [
+      "Skateboard"
+    ],
+    "big_objects:035000": [
+      "Skateboard",
+      "Phonebooth"
+    ],
+    "all:035003": [
+      "Skateboard"
+    ],
+    "all:035000": [
+      "Skateboard",
+      "Phonebooth"
+    ],
+    "big_objects:523002": [
+      "Piano",
+      "Boats",
+      "Beach",
+      "Piers"
+    ],
+    "big_objects:125002": [
+      "Refrigerator"
+    ],
+    "big_objects:125000": [
+      "Refrigerator",
+      "Coffeetable"
+    ],
+    "all:125002": [
+      "Refrigerator",
+      "Pocketknife",
+      "Rubberbands"
+    ],
+    "big_objects:636001": [
+      "Fridge"
+    ],
+    "all:636001": [
+      "Fridge",
+      "France"
+    ],
+    "big_objects:200001": [
+      "Tv"
+    ],
+    "big_objects:200000": [
+      "Tv"
+    ],
+    "all:200001": [
+      "Tv"
+    ],
+    "all:200000": [
+      "Tv"
+    ],
+    "big_objects:923002": [
+      "Bookshelf",
+      "Pooltable"
+    ],
+    "big_objects:923000": [
+      "Bookshelf",
+      "Pooltable"
+    ],
+    "all:923002": [
+      "Bookshelf",
+      "Pooltable"
+    ],
+    "big_objects:826001": [
+      "Wardrobe",
+      "Mattress",
+      "Lamppost",
+      "Fortress",
+      "Forklift",
+      "Windmill"
+    ],
+    "big_objects:826000": [
+      "Wardrobe",
+      "Mattress",
+      "Lamppost",
+      "Fortress",
+      "Forklift",
+      "Windmill"
+    ],
+    "big_objects:724003": [
+      "Cabinet"
+    ],
+    "big_objects:724000": [
+      "Cabinet",
+      "Jacuzzi",
+      "Veranda",
+      "Minivan"
+    ],
+    "big_objects:535003": [
+      "Stove",
+      "Stage",
+      "Crane"
+    ],
+    "big_objects:535000": [
+      "Stove",
+      "Stage",
+      "Crane",
+      "Plane"
+    ],
+    "all:535003": [
+      "Stove",
+      "Stage",
+      "Crane",
+      "Snake",
+      "Chile",
+      "China",
+      "Stone",
+      "Scale",
+      "Chili"
+    ],
+    "big_objects:413003": [
+      "Oven"
+    ],
+    "big_objects:413000": [
+      "Oven"
+    ],
+    "all:413003": [
+      "Oven",
+      "Oval"
+    ],
+    "all:413000": [
+      "Oven",
+      "Oval"
+    ],
+    "big_objects:726002": [
+      "Bathtub",
+      "Bunkbed"
+    ],
+    "big_objects:726000": [
+      "Bathtub",
+      "Bunkbed",
+      "Hallway",
+      "Highway"
+    ],
+    "big_objects:420003": [
+      "Sink",
+      "Cars"
+    ],
+    "big_objects:736001": [
+      "Tractor",
+      "Trolley"
+    ],
+    "big_objects:736000": [
+      "Tractor",
+      "Dresser",
+      "Chimney",
+      "Drumset",
+      "Trolley"
+    ],
+    "big_objects:520001": [
+      "Yacht",
+      "Lobby",
+      "Ferry"
+    ],
+    "big_objects:520000": [
+      "Yacht",
+      "Bench",
+      "Porch",
+      "Lobby",
+      "Ferry"
+    ],
+    "big_objects:925003": [
+      "Submarine",
+      "Cathedral"
+    ],
+    "big_objects:925000": [
+      "Submarine",
+      "Microwave",
+      "Cathedral"
+    ],
+    "big_objects:625002": [
+      "Rocket",
+      "Pickup"
+    ],
+    "big_objects:036001": [
+      "Trampoline"
+    ],
+    "big_objects:036000": [
+      "Trampoline"
+    ],
+    "big_objects:635003": [
+      "Statue",
+      "Closet",
+      "Shower",
+      "Stereo"
+    ],
+    "big_objects:635000": [
+      "Statue",
+      "Closet",
+      "Shower",
+      "Stereo",
+      "Planes"
+    ],
+    "big_objects:624002": [
+      "Garage",
+      "Bureau",
+      "Gazebo",
+      "Palace",
+      "Desert"
+    ],
+    "big_objects:624000": [
+      "Garage",
+      "Bureau",
+      "Vanity",
+      "Gazebo",
+      "Palace",
+      "Museum",
+      "Cinema",
+      "Forest",
+      "Desert"
+    ],
+    "big_objects:079003": [
+      "Skyscraper"
+    ],
+    "big_objects:079000": [
+      "Skyscraper"
+    ],
+    "all:079003": [
+      "Skyscraper"
+    ],
+    "all:079000": [
+      "Skyscraper"
+    ],
+    "big_objects:746002": [
+      "Pyramid"
+    ],
+    "big_objects:746000": [
+      "Pyramid"
+    ],
+    "all:746002": [
+      "Pyramid"
+    ],
+    "all:746000": [
+      "Pyramid"
+    ],
+    "big_objects:914001": [
+      "Ambulance",
+      "Escalator"
+    ],
+    "big_objects:914000": [
+      "Ambulance",
+      "Escalator"
+    ],
+    "all:914001": [
+      "Ambulance",
+      "Escalator",
+      "Alligator",
+      "Argentina",
+      "Extension"
+    ],
+    "all:914000": [
+      "Ambulance",
+      "Escalator",
+      "Alligator",
+      "Argentina",
+      "Extension"
+    ],
+    "big_objects:816001": [
+      "Armchair"
+    ],
+    "big_objects:816000": [
+      "Armchair"
+    ],
+    "all:816001": [
+      "Armchair"
+    ],
+    "all:816000": [
+      "Armchair"
+    ],
+    "big_objects:825002": [
+      "Recliner"
+    ],
+    "big_objects:825000": [
+      "Recliner",
+      "Cupboard",
+      "Keyboard",
+      "Corridor",
+      "Hospital",
+      "Terminal"
+    ],
+    "big_objects:520002": [
+      "Bench",
+      "Porch"
+    ],
+    "big_objects:824001": [
+      "Loveseat",
+      "Monument",
+      "Monorail"
+    ],
+    "big_objects:824000": [
+      "Loveseat",
+      "Radiator",
+      "Basement",
+      "Sidewalk",
+      "Monument",
+      "Monorail"
+    ],
+    "big_objects:714003": [
+      "Ottoman"
+    ],
+    "big_objects:714000": [
+      "Ottoman",
+      "Armoire"
+    ],
+    "all:714003": [
+      "Ottoman",
+      "Octopus",
+      "October"
+    ],
+    "all:714000": [
+      "Ottoman",
+      "Armoire",
+      "Octopus",
+      "October",
+      "Inhaler",
+      "Incense",
+      "Almonds"
+    ],
+    "big_objects:124002": [
+      "Diningtable"
+    ],
+    "big_objects:124000": [
+      "Diningtable",
+      "Firehydrant"
+    ],
+    "all:124002": [
+      "Diningtable"
+    ],
+    "all:124000": [
+      "Diningtable",
+      "Firehydrant",
+      "Sagittarius"
+    ],
+    "big_objects:125003": [
+      "Coffeetable"
+    ],
+    "big_objects:028001": [
+      "Nightstand"
+    ],
+    "big_objects:028000": [
+      "Nightstand"
+    ],
+    "all:028001": [
+      "Nightstand"
+    ],
+    "all:028000": [
+      "Nightstand"
+    ],
+    "big_objects:723003": [
+      "Counter",
+      "Ceiling"
+    ],
+    "big_objects:723000": [
+      "Counter",
+      "Ceiling",
+      "Mailbox",
+      "Boulder"
+    ],
+    "big_objects:614001": [
+      "Island"
+    ],
+    "big_objects:614000": [
+      "Island"
+    ],
+    "all:614001": [
+      "Island",
+      "Athens"
+    ],
+    "all:614000": [
+      "Island",
+      "Athens"
+    ],
+    "big_objects:714001": [
+      "Armoire"
+    ],
+    "all:714001": [
+      "Armoire",
+      "Inhaler",
+      "Incense",
+      "Almonds"
+    ],
+    "big_objects:736002": [
+      "Dresser",
+      "Drumset"
+    ],
+    "big_objects:530003": [
+      "Chest",
+      "Shelf",
+      "Ships",
+      "Cliff"
+    ],
+    "big_objects:825003": [
+      "Cupboard",
+      "Corridor"
+    ],
+    "all:825003": [
+      "Cupboard",
+      "Corridor",
+      "Curtains",
+      "Cupcakes"
+    ],
+    "big_objects:823002": [
+      "Bookcase",
+      "Building"
+    ],
+    "big_objects:823000": [
+      "Bookcase",
+      "Soundbar",
+      "Fountain",
+      "Building",
+      "Sailboat",
+      "Mountain"
+    ],
+    "big_objects:835003": [
+      "Credenza"
+    ],
+    "big_objects:835000": [
+      "Credenza",
+      "Driveway"
+    ],
+    "all:835003": [
+      "Credenza"
+    ],
+    "big_objects:924003": [
+      "Sideboard"
+    ],
+    "big_objects:924000": [
+      "Sideboard",
+      "Fireplace",
+      "Warehouse",
+      "Waterfall"
+    ],
+    "all:924003": [
+      "Sideboard",
+      "Sanitizer",
+      "Cucumbers"
+    ],
+    "big_objects:620002": [
+      "Pantry"
+    ],
+    "big_objects:620000": [
+      "Pantry"
+    ],
+    "all:620002": [
+      "Pantry",
+      "Pastry"
+    ],
+    "all:620000": [
+      "Pantry",
+      "Pastry"
+    ],
+    "big_objects:734001": [
+      "Freezer",
+      "Theater",
+      "Trailer"
+    ],
+    "all:734001": [
+      "Freezer",
+      "Theater",
+      "Trailer"
+    ],
+    "big_objects:623003": [
+      "Cooler"
+    ],
+    "big_objects:623000": [
+      "Cooler",
+      "Toilet",
+      "Houses"
+    ],
+    "big_objects:925001": [
+      "Microwave"
+    ],
+    "all:925001": [
+      "Microwave",
+      "Magnifier"
+    ],
+    "big_objects:026002": [
+      "Dishwasher"
+    ],
+    "big_objects:026000": [
+      "Dishwasher"
+    ],
+    "all:026002": [
+      "Dishwasher"
+    ],
+    "big_objects:524002": [
+      "Basin",
+      "Bidet",
+      "Patio",
+      "Buses",
+      "Bikes",
+      "River"
+    ],
+    "big_objects:724002": [
+      "Jacuzzi"
+    ],
+    "big_objects:623001": [
+      "Toilet",
+      "Houses"
+    ],
+    "big_objects:624001": [
+      "Vanity",
+      "Museum",
+      "Forest"
+    ],
+    "big_objects:924001": [
+      "Fireplace",
+      "Warehouse",
+      "Waterfall"
+    ],
+    "big_objects:736003": [
+      "Chimney"
+    ],
+    "big_objects:725001": [
+      "Furnace",
+      "Terrace",
+      "Mansion",
+      "Factory",
+      "Library",
+      "Volcano"
+    ],
+    "big_objects:725000": [
+      "Furnace",
+      "Balcony",
+      "Terrace",
+      "Mansion",
+      "Cottage",
+      "Factory",
+      "Library",
+      "Rowboat",
+      "Volcano"
+    ],
+    "big_objects:824002": [
+      "Radiator",
+      "Basement"
+    ],
+    "big_objects:037002": [
+      "Grandpiano"
+    ],
+    "big_objects:037000": [
+      "Grandpiano"
+    ],
+    "all:037002": [
+      "Grandpiano",
+      "Blackberry"
+    ],
+    "big_objects:825001": [
+      "Keyboard",
+      "Hospital",
+      "Terminal"
+    ],
+    "big_objects:514003": [
+      "Organ"
+    ],
+    "big_objects:514000": [
+      "Organ",
+      "Attic"
+    ],
+    "all:514003": [
+      "Organ",
+      "Otter"
+    ],
+    "all:514000": [
+      "Organ",
+      "Attic",
+      "Otter",
+      "India",
+      "April"
+    ],
+    "big_objects:935002": [
+      "Projector"
+    ],
+    "big_objects:935000": [
+      "Projector",
+      "Spaceship"
+    ],
+    "all:935002": [
+      "Projector"
+    ],
+    "all:935000": [
+      "Projector",
+      "Spaceship",
+      "Chameleon",
+      "Crocodile",
+      "Chocolate",
+      "Flowerpot"
+    ],
+    "big_objects:645003": [
+      "Screen",
+      "Street",
+      "School"
+    ],
+    "big_objects:645000": [
+      "Screen",
+      "Street",
+      "School"
+    ],
+    "all:645003": [
+      "Screen",
+      "Street",
+      "School"
+    ],
+    "big_objects:823003": [
+      "Soundbar",
+      "Sailboat"
+    ],
+    "big_objects:834003": [
+      "Speakers"
+    ],
+    "big_objects:834000": [
+      "Speakers"
+    ],
+    "big_objects:926001": [
+      "Turntable",
+      "Townhouse"
+    ],
+    "big_objects:926000": [
+      "Turntable",
+      "Billboard",
+      "Townhouse",
+      "Bulldozer"
+    ],
+    "big_objects:934001": [
+      "Treadmill"
+    ],
+    "big_objects:934000": [
+      "Treadmill",
+      "Staircase"
+    ],
+    "all:934001": [
+      "Treadmill"
+    ],
+    "big_objects:424002": [
+      "Gate",
+      "Bike"
+    ],
+    "big_objects:850003": [
+      "Skylight"
+    ],
+    "big_objects:850000": [
+      "Skylight"
+    ],
+    "all:850003": [
+      "Skylight"
+    ],
+    "all:850000": [
+      "Skylight"
+    ],
+    "big_objects:725002": [
+      "Balcony",
+      "Rowboat"
+    ],
+    "big_objects:724001": [
+      "Veranda",
+      "Minivan"
+    ],
+    "big_objects:034002": [
+      "Greenhouse"
+    ],
+    "big_objects:034000": [
+      "Greenhouse",
+      "Cruiseship"
+    ],
+    "all:034002": [
+      "Greenhouse"
+    ],
+    "all:034000": [
+      "Greenhouse",
+      "Cruiseship"
+    ],
+    "big_objects:514001": [
+      "Attic"
+    ],
+    "all:514001": [
+      "Attic",
+      "India",
+      "April"
+    ],
+    "big_objects:934003": [
+      "Staircase"
+    ],
+    "all:934003": [
+      "Staircase",
+      "Croissant"
+    ],
+    "big_objects:726001": [
+      "Hallway",
+      "Highway"
+    ],
+    "big_objects:824003": [
+      "Sidewalk"
+    ],
+    "big_objects:835002": [
+      "Driveway"
+    ],
+    "big_objects:145003": [
+      "Streetlight"
+    ],
+    "big_objects:145000": [
+      "Streetlight"
+    ],
+    "all:145003": [
+      "Streetlight",
+      "Straightener"
+    ],
+    "all:145000": [
+      "Streetlight",
+      "Straightener"
+    ],
+    "big_objects:124001": [
+      "Firehydrant"
+    ],
+    "all:124001": [
+      "Firehydrant"
+    ],
+    "big_objects:723001": [
+      "Mailbox"
+    ],
+    "big_objects:035002": [
+      "Phonebooth"
+    ],
+    "all:035002": [
+      "Phonebooth"
+    ],
+    "big_objects:926002": [
+      "Billboard",
+      "Bulldozer"
+    ],
+    "all:926002": [
+      "Billboard",
+      "Bulldozer",
+      "Passports",
+      "Backpacks",
+      "Raspberry"
+    ],
+    "big_objects:823001": [
+      "Fountain",
+      "Mountain"
+    ],
+    "big_objects:027001": [
+      "Lighthouse"
+    ],
+    "big_objects:027000": [
+      "Lighthouse"
+    ],
+    "all:027001": [
+      "Lighthouse"
+    ],
+    "all:027000": [
+      "Lighthouse"
+    ],
+    "big_objects:725003": [
+      "Cottage"
+    ],
+    "big_objects:524003": [
+      "Cabin",
+      "Canoe",
+      "Sedan"
+    ],
+    "big_objects:525003": [
+      "Condo"
+    ],
+    "big_objects:013002": [
+      "University"
+    ],
+    "big_objects:013000": [
+      "University"
+    ],
+    "all:013002": [
+      "University"
+    ],
+    "all:013000": [
+      "University",
+      "Eyeglasses"
+    ],
+    "big_objects:624003": [
+      "Cinema"
+    ],
+    "big_objects:735003": [
+      "Stadium",
+      "Station"
+    ],
+    "big_objects:735000": [
+      "Stadium",
+      "Station"
+    ],
+    "big_objects:630003": [
+      "Church"
+    ],
+    "big_objects:630000": [
+      "Church",
+      "Trucks"
+    ],
+    "big_objects:626001": [
+      "Temple"
+    ],
+    "big_objects:712001": [
+      "Airport"
+    ],
+    "big_objects:712000": [
+      "Airport"
+    ],
+    "big_objects:134001": [
+      "Trainstation"
+    ],
+    "big_objects:134000": [
+      "Trainstation"
+    ],
+    "all:134001": [
+      "Trainstation"
+    ],
+    "all:134000": [
+      "Trainstation",
+      "Cheeseburger",
+      "Blueberries"
+    ],
+    "big_objects:034003": [
+      "Cruiseship"
+    ],
+    "all:034003": [
+      "Cruiseship"
+    ],
+    "big_objects:430001": [
+      "Tram"
+    ],
+    "all:430001": [
+      "Tram",
+      "Frog",
+      "Twig",
+      "Tray",
+      "Wrap"
+    ],
+    "big_objects:535002": [
+      "Plane"
+    ],
+    "big_objects:530002": [
+      "Blimp"
+    ],
+    "big_objects:935003": [
+      "Spaceship"
+    ],
+    "all:935003": [
+      "Spaceship",
+      "Chameleon",
+      "Crocodile",
+      "Chocolate"
+    ],
+    "animals:320002": [
+      "Dog",
+      "Rat",
+      "Pig",
+      "Bat"
+    ],
+    "animals:320000": [
+      "Dog",
+      "Cat",
+      "Rat",
+      "Cow",
+      "Pig",
+      "Fox",
+      "Bat"
+    ],
+    "animals:320003": [
+      "Cat",
+      "Cow"
+    ],
+    "animals:520002": [
+      "Puppy",
+      "Birds",
+      "Ducks"
+    ],
+    "animals:520000": [
+      "Puppy",
+      "Birds",
+      "Ducks"
+    ],
+    "animals:625001": [
+      "Kitten",
+      "Monkey",
+      "Falcon",
+      "Walrus",
+      "Horses",
+      "Wolves",
+      "Zebras"
+    ],
+    "animals:625000": [
+      "Kitten",
+      "Rabbit",
+      "Donkey",
+      "Monkey",
+      "Falcon",
+      "Parrot",
+      "Walrus",
+      "Horses",
+      "Wolves",
+      "Zebras",
+      "Badger"
+    ],
+    "animals:726001": [
+      "Hamster",
+      "Lobster",
+      "Turtles"
+    ],
+    "animals:726000": [
+      "Hamster",
+      "Panther",
+      "Dolphin",
+      "Lobster",
+      "Turtles"
+    ],
+    "animals:625002": [
+      "Rabbit",
+      "Donkey",
+      "Parrot",
+      "Badger"
+    ],
+    "animals:523001": [
+      "Mouse",
+      "Moose",
+      "Koala",
+      "Lions"
+    ],
+    "animals:523000": [
+      "Mouse",
+      "Moose",
+      "Koala",
+      "Goose",
+      "Goats",
+      "Lions",
+      "Bears",
+      "Geese",
+      "Seals"
+    ],
+    "animals:525001": [
+      "Horse",
+      "Zebra",
+      "Hippo"
+    ],
+    "animals:525000": [
+      "Horse",
+      "Panda",
+      "Zebra",
+      "Hippo"
+    ],
+    "animals:420002": [
+      "Pony",
+      "Bull",
+      "Duck",
+      "Dogs",
+      "Bird",
+      "Pigs"
+    ],
+    "animals:420000": [
+      "Pony",
+      "Bull",
+      "Wolf",
+      "Hawk",
+      "Duck",
+      "Dogs",
+      "Cats",
+      "Bird",
+      "Fish",
+      "Cows",
+      "Pigs",
+      "Wasp",
+      "Moth"
+    ],
+    "animals:534003": [
+      "Sheep",
+      "Squid"
+    ],
+    "animals:534000": [
+      "Sheep",
+      "Squid"
+    ],
+    "animals:423002": [
+      "Goat",
+      "Deer",
+      "Bear",
+      "Bees"
+    ],
+    "animals:423000": [
+      "Goat",
+      "Deer",
+      "Lion",
+      "Bear",
+      "Seal",
+      "Toad",
+      "Bees"
+    ],
+    "animals:310001": [
+      "Elk",
+      "Ant"
+    ],
+    "animals:310000": [
+      "Elk",
+      "Owl",
+      "Ant"
+    ],
+    "all:310001": [
+      "Elk",
+      "Egg",
+      "Ant"
+    ],
+    "all:310000": [
+      "Elk",
+      "Owl",
+      "Egg",
+      "Ant"
+    ],
+    "animals:524003": [
+      "Camel"
+    ],
+    "animals:524000": [
+      "Camel",
+      "Tiger",
+      "Lemur",
+      "Foxes"
+    ],
+    "animals:423001": [
+      "Lion",
+      "Toad"
+    ],
+    "animals:524001": [
+      "Tiger",
+      "Lemur",
+      "Foxes"
+    ],
+    "animals:723001": [
+      "Leopard"
+    ],
+    "animals:723000": [
+      "Leopard"
+    ],
+    "animals:734003": [
+      "Cheetah"
+    ],
+    "animals:734000": [
+      "Cheetah"
+    ],
+    "animals:624002": [
+      "Jaguar",
+      "Baboon"
+    ],
+    "animals:624000": [
+      "Jaguar",
+      "Coyote",
+      "Baboon",
+      "Lizard",
+      "Tigers"
+    ],
+    "animals:726002": [
+      "Panther",
+      "Dolphin"
+    ],
+    "animals:525002": [
+      "Panda"
+    ],
+    "animals:420001": [
+      "Wolf",
+      "Hawk",
+      "Fish",
+      "Wasp",
+      "Moth"
+    ],
+    "animals:320001": [
+      "Fox"
+    ],
+    "animals:624003": [
+      "Coyote"
+    ],
+    "animals:535001": [
+      "Hyena",
+      "Whale",
+      "Llama"
+    ],
+    "animals:535000": [
+      "Hyena",
+      "Rhino",
+      "Whale",
+      "Snake",
+      "Llama"
+    ],
+    "animals:724002": [
+      "Giraffe",
+      "Gorilla"
+    ],
+    "animals:724000": [
+      "Giraffe",
+      "Gorilla"
+    ],
+    "animals:813001": [
+      "Elephant"
+    ],
+    "animals:813000": [
+      "Elephant"
+    ],
+    "animals:535002": [
+      "Rhino"
+    ],
+    "animals:530003": [
+      "Chimp",
+      "Sloth",
+      "Skunk",
+      "Shark"
+    ],
+    "animals:530000": [
+      "Chimp",
+      "Sloth",
+      "Skunk",
+      "Shark",
+      "Frogs"
+    ],
+    "animals:825001": [
+      "Kangaroo",
+      "Tortoise",
+      "Mosquito"
+    ],
+    "animals:825000": [
+      "Kangaroo",
+      "Penguins",
+      "Tortoise",
+      "Mosquito"
+    ],
+    "animals:514003": [
+      "Otter"
+    ],
+    "animals:514000": [
+      "Otter"
+    ],
+    "animals:623002": [
+      "Beaver",
+      "Beetle"
+    ],
+    "animals:623000": [
+      "Beaver",
+      "Beetle"
+    ],
+    "animals:725002": [
+      "Raccoon",
+      "Penguin",
+      "Rabbits"
+    ],
+    "animals:725000": [
+      "Raccoon",
+      "Penguin",
+      "Rabbits",
+      "Monkeys"
+    ],
+    "animals:512001": [
+      "Eagle"
+    ],
+    "animals:512000": [
+      "Eagle"
+    ],
+    "all:512001": [
+      "Eagle"
+    ],
+    "all:512000": [
+      "Eagle"
+    ],
+    "animals:310003": [
+      "Owl"
+    ],
+    "all:310003": [
+      "Owl"
+    ],
+    "animals:835001": [
+      "Flamingo"
+    ],
+    "animals:835000": [
+      "Flamingo"
+    ],
+    "all:835001": [
+      "Flamingo"
+    ],
+    "animals:430003": [
+      "Swan",
+      "Crab"
+    ],
+    "animals:430000": [
+      "Swan",
+      "Crab",
+      "Frog"
+    ],
+    "animals:523002": [
+      "Goose",
+      "Goats",
+      "Bears",
+      "Geese"
+    ],
+    "animals:423003": [
+      "Seal"
+    ],
+    "animals:714003": [
+      "Octopus"
+    ],
+    "animals:714000": [
+      "Octopus"
+    ],
+    "animals:626001": [
+      "Turtle"
+    ],
+    "animals:626000": [
+      "Turtle"
+    ],
+    "animals:535003": [
+      "Snake"
+    ],
+    "animals:624001": [
+      "Lizard",
+      "Tigers"
+    ],
+    "animals:430001": [
+      "Frog"
+    ],
+    "animals:935003": [
+      "Chameleon",
+      "Crocodile"
+    ],
+    "animals:935000": [
+      "Chameleon",
+      "Crocodile"
+    ],
+    "animals:914001": [
+      "Alligator"
+    ],
+    "animals:914000": [
+      "Alligator"
+    ],
+    "animals:635003": [
+      "Spider",
+      "Snakes"
+    ],
+    "animals:635000": [
+      "Spider",
+      "Snakes",
+      "Whales"
+    ],
+    "food:515001": [
+      "Apple"
+    ],
+    "food:515000": [
+      "Apple"
+    ],
+    "all:515001": [
+      "Apple"
+    ],
+    "all:515000": [
+      "Apple"
+    ],
+    "food:624002": [
+      "Banana",
+      "Potato",
+      "Bagels",
+      "Donuts",
+      "Gelato"
+    ],
+    "food:624000": [
+      "Banana",
+      "Tomato",
+      "Potato",
+      "Yogurt",
+      "Bagels",
+      "Donuts",
+      "Lemons",
+      "Gelato"
+    ],
+    "food:613003": [
+      "Orange",
+      "Omelet",
+      "Onions"
+    ],
+    "food:613000": [
+      "Orange",
+      "Omelet",
+      "Onions"
+    ],
+    "food:535002": [
+      "Grape"
+    ],
+    "food:535000": [
+      "Grape",
+      "Chili"
+    ],
+    "food:047003": [
+      "Strawberry"
+    ],
+    "food:047000": [
+      "Strawberry"
+    ],
+    "all:047003": [
+      "Strawberry"
+    ],
+    "all:047000": [
+      "Strawberry"
+    ],
+    "food:934002": [
+      "Blueberry"
+    ],
+    "food:934000": [
+      "Blueberry",
+      "Croissant"
+    ],
+    "food:024001": [
+      "Watermelon"
+    ],
+    "food:024000": [
+      "Watermelon"
+    ],
+    "food:524001": [
+      "Lemon",
+      "Tacos",
+      "Melon",
+      "Limes",
+      "Water"
+    ],
+    "food:524000": [
+      "Lemon",
+      "Bacon",
+      "Salad",
+      "Bagel",
+      "Donut",
+      "Ramen",
+      "Tacos",
+      "Melon",
+      "Limes",
+      "Cakes",
+      "Water",
+      "Cider"
+    ],
+    "food:424001": [
+      "Lime",
+      "Kiwi",
+      "Taco",
+      "Wine",
+      "Tuna",
+      "Mayo"
+    ],
+    "food:424000": [
+      "Lime",
+      "Kiwi",
+      "Taco",
+      "Rice",
+      "Cake",
+      "Soda",
+      "Wine",
+      "Tuna",
+      "Mayo",
+      "Coke"
+    ],
+    "food:523002": [
+      "Peach",
+      "Juice",
+      "Pears",
+      "Beans"
+    ],
+    "food:523000": [
+      "Peach",
+      "Toast",
+      "Juice",
+      "Sauce",
+      "Pears",
+      "Beans"
+    ],
+    "food:525001": [
+      "Mango",
+      "Latte"
+    ],
+    "food:525000": [
+      "Mango",
+      "Pizza",
+      "Pasta",
+      "Sushi",
+      "Latte",
+      "Pepsi"
+    ],
+    "food:924002": [
+      "Pineapple"
+    ],
+    "food:924000": [
+      "Pineapple",
+      "Cucumbers"
+    ],
+    "all:924002": [
+      "Pineapple",
+      "Powerbank",
+      "Paperclip",
+      "Pokerchip"
+    ],
+    "food:630003": [
+      "Cherry",
+      "Crisps"
+    ],
+    "food:630000": [
+      "Cherry",
+      "Crisps"
+    ],
+    "food:430002": [
+      "Plum"
+    ],
+    "food:430000": [
+      "Plum",
+      "Crab",
+      "Wrap",
+      "Stew"
+    ],
+    "all:430002": [
+      "Plum",
+      "Plug"
+    ],
+    "food:713001": [
+      "Avocado"
+    ],
+    "food:713000": [
+      "Avocado",
+      "Oranges"
+    ],
+    "all:713001": [
+      "Avocado",
+      "Ireland",
+      "Iceland",
+      "Erasers",
+      "Adapter"
+    ],
+    "all:713000": [
+      "Avocado",
+      "Ireland",
+      "Iceland",
+      "Erasers",
+      "Adapter",
+      "Oranges"
+    ],
+    "food:624001": [
+      "Tomato",
+      "Yogurt",
+      "Lemons"
+    ],
+    "food:625003": [
+      "Carrot",
+      "Coffee",
+      "Salmon",
+      "Sundae"
+    ],
+    "food:625000": [
+      "Carrot",
+      "Burger",
+      "Hotdog",
+      "Butter",
+      "Coffee",
+      "Muffin",
+      "Turkey",
+      "Salmon",
+      "Garlic",
+      "Pepper",
+      "Sundae"
+    ],
+    "food:836002": [
+      "Broccoli",
+      "Pretzels",
+      "Dressing",
+      "Brownies"
+    ],
+    "food:836000": [
+      "Broccoli",
+      "Pretzels",
+      "Crackers",
+      "Dressing",
+      "Cherries",
+      "Brownies"
+    ],
+    "all:836002": [
+      "Broccoli",
+      "Blankets",
+      "Pretzels",
+      "Dressing",
+      "Brownies"
+    ],
+    "food:525002": [
+      "Pizza",
+      "Pasta",
+      "Pepsi"
+    ],
+    "food:625002": [
+      "Burger",
+      "Butter",
+      "Garlic",
+      "Pepper"
+    ],
+    "food:134003": [
+      "Cheeseburger"
+    ],
+    "food:134000": [
+      "Cheeseburger",
+      "Blueberries"
+    ],
+    "all:134003": [
+      "Cheeseburger"
+    ],
+    "food:826003": [
+      "Sandwich",
+      "Cocktail"
+    ],
+    "food:826000": [
+      "Sandwich",
+      "Mushroom",
+      "Cocktail"
+    ],
+    "food:725002": [
+      "Burrito",
+      "Pancake",
+      "Biscuit",
+      "Burgers",
+      "Popcorn",
+      "Peppers",
+      "Pudding"
+    ],
+    "food:725000": [
+      "Burrito",
+      "Pancake",
+      "Muffins",
+      "Biscuit",
+      "Burgers",
+      "Hotdogs",
+      "Popcorn",
+      "Mustard",
+      "Carrots",
+      "Lettuce",
+      "Peppers",
+      "Cupcake",
+      "Candies",
+      "Pudding",
+      "Custard"
+    ],
+    "food:625001": [
+      "Hotdog",
+      "Muffin",
+      "Turkey"
+    ],
+    "food:534003": [
+      "Steak"
+    ],
+    "food:534000": [
+      "Steak",
+      "Bread",
+      "Fries"
+    ],
+    "food:736003": [
+      "Chicken"
+    ],
+    "food:736000": [
+      "Chicken",
+      "Brownie",
+      "Pretzel"
+    ],
+    "food:524002": [
+      "Bacon",
+      "Bagel",
+      "Donut",
+      "Ramen"
+    ],
+    "food:936003": [
+      "Spaghetti"
+    ],
+    "food:936000": [
+      "Spaghetti"
+    ],
+    "all:936003": [
+      "Spaghetti"
+    ],
+    "all:936000": [
+      "Spaghetti"
+    ],
+    "food:723001": [
+      "Noodles"
+    ],
+    "food:723000": [
+      "Noodles",
+      "Sausage",
+      "Peanuts",
+      "Peaches",
+      "Cookies"
+    ],
+    "food:424002": [
+      "Rice"
+    ],
+    "food:525003": [
+      "Sushi"
+    ],
+    "food:423003": [
+      "Soup"
+    ],
+    "food:423000": [
+      "Soup",
+      "Beer",
+      "Beef",
+      "Pear",
+      "Peas",
+      "Pies"
+    ],
+    "food:524003": [
+      "Salad",
+      "Cakes",
+      "Cider"
+    ],
+    "food:534002": [
+      "Bread"
+    ],
+    "food:523001": [
+      "Toast"
+    ],
+    "food:634003": [
+      "Cheese"
+    ],
+    "food:634000": [
+      "Cheese"
+    ],
+    "food:420001": [
+      "Milk",
+      "Fish",
+      "Nuts"
+    ],
+    "food:420000": [
+      "Milk",
+      "Pork",
+      "Fish",
+      "Nuts",
+      "Corn"
+    ],
+    "food:310001": [
+      "Egg"
+    ],
+    "food:310000": [
+      "Egg"
+    ],
+    "food:626001": [
+      "Waffle",
+      "Matcha"
+    ],
+    "food:626000": [
+      "Waffle",
+      "Matcha"
+    ],
+    "food:623003": [
+      "Cookie"
+    ],
+    "food:623000": [
+      "Cookie"
+    ],
+    "food:424003": [
+      "Cake",
+      "Soda",
+      "Coke"
+    ],
+    "food:736002": [
+      "Brownie",
+      "Pretzel"
+    ],
+    "food:935003": [
+      "Chocolate"
+    ],
+    "food:935000": [
+      "Chocolate"
+    ],
+    "food:520003": [
+      "Candy",
+      "Curry"
+    ],
+    "food:520000": [
+      "Candy",
+      "Curry"
+    ],
+    "all:520003": [
+      "Candy",
+      "Cards",
+      "Combs",
+      "Socks",
+      "Curry"
+    ],
+    "food:813001": [
+      "Ice Cream",
+      "Icecream"
+    ],
+    "food:813000": [
+      "Ice Cream",
+      "Icecream"
+    ],
+    "food:323001": [
+      "Tea"
+    ],
+    "food:323000": [
+      "Tea",
+      "Pie"
+    ],
+    "food:423002": [
+      "Beer",
+      "Beef",
+      "Pear",
+      "Peas",
+      "Pies"
+    ],
+    "countries:313002": [
+      "USA"
+    ],
+    "countries:313000": [
+      "USA"
+    ],
+    "all:313002": [
+      "USA"
+    ],
+    "all:313000": [
+      "USA"
+    ],
+    "countries:624003": [
+      "Canada"
+    ],
+    "countries:624000": [
+      "Canada",
+      "Mexico",
+      "Poland",
+      "Hawaii",
+      "Venice"
+    ],
+    "countries:624001": [
+      "Mexico",
+      "Hawaii",
+      "Venice"
+    ],
+    "countries:635002": [
+      "Brazil"
+    ],
+    "countries:635000": [
+      "Brazil",
+      "Sweden"
+    ],
+    "countries:914001": [
+      "Argentina"
+    ],
+    "countries:914000": [
+      "Argentina"
+    ],
+    "countries:535003": [
+      "Chile",
+      "China"
+    ],
+    "countries:535000": [
+      "Chile",
+      "China"
+    ],
+    "countries:424002": [
+      "Peru",
+      "Rome"
+    ],
+    "countries:424000": [
+      "Peru",
+      "Fiji",
+      "Rome"
+    ],
+    "countries:824003": [
+      "Colombia"
+    ],
+    "countries:824000": [
+      "Colombia",
+      "Malaysia"
+    ],
+    "countries:210002": [
+      "UK"
+    ],
+    "countries:210000": [
+      "UK"
+    ],
+    "all:210002": [
+      "UK"
+    ],
+    "all:210000": [
+      "UK"
+    ],
+    "countries:715001": [
+      "England"
+    ],
+    "countries:715000": [
+      "England"
+    ],
+    "all:715001": [
+      "England"
+    ],
+    "all:715000": [
+      "England"
+    ],
+    "countries:836003": [
+      "Scotland"
+    ],
+    "countries:836000": [
+      "Scotland"
+    ],
+    "countries:713001": [
+      "Ireland",
+      "Iceland"
+    ],
+    "countries:713000": [
+      "Ireland",
+      "Iceland"
+    ],
+    "countries:636001": [
+      "France"
+    ],
+    "countries:636000": [
+      "France"
+    ],
+    "countries:534003": [
+      "Spain"
+    ],
+    "countries:534000": [
+      "Spain"
+    ],
+    "countries:513001": [
+      "Italy"
+    ],
+    "countries:513000": [
+      "Italy"
+    ],
+    "all:513001": [
+      "Italy",
+      "Acorn",
+      "Aries",
+      "Alarm",
+      "Arena"
+    ],
+    "all:513000": [
+      "Italy",
+      "Acorn",
+      "Ocean",
+      "Aries",
+      "Alarm",
+      "Onion",
+      "Arena"
+    ],
+    "countries:725002": [
+      "Germany",
+      "Denmark",
+      "Belgium"
+    ],
+    "countries:725000": [
+      "Germany",
+      "Finland",
+      "Denmark",
+      "Belgium",
+      "Holland",
+      "Hungary",
+      "New York"
+    ],
+    "countries:634002": [
+      "Greece"
+    ],
+    "countries:634000": [
+      "Greece"
+    ],
+    "countries:825002": [
+      "Portugal"
+    ],
+    "countries:825000": [
+      "Portugal"
+    ],
+    "countries:625001": [
+      "Norway",
+      "Turkey",
+      "London",
+      "Madrid",
+      "Moscow"
+    ],
+    "countries:625000": [
+      "Norway",
+      "Turkey",
+      "London",
+      "Madrid",
+      "Berlin",
+      "Dublin",
+      "Moscow"
+    ],
+    "countries:635003": [
+      "Sweden"
+    ],
+    "countries:725001": [
+      "Finland",
+      "Holland",
+      "Hungary",
+      "New York"
+    ],
+    "countries:136003": [
+      "Switzerland"
+    ],
+    "countries:136000": [
+      "Switzerland"
+    ],
+    "all:136003": [
+      "Switzerland"
+    ],
+    "all:136000": [
+      "Switzerland"
+    ],
+    "countries:712001": [
+      "Austria"
+    ],
+    "countries:712000": [
+      "Austria"
+    ],
+    "countries:624002": [
+      "Poland"
+    ],
+    "countries:530003": [
+      "Czech"
+    ],
+    "countries:530000": [
+      "Czech"
+    ],
+    "countries:734003": [
+      "Croatia"
+    ],
+    "countries:734000": [
+      "Croatia"
+    ],
+    "countries:510001": [
+      "Egypt"
+    ],
+    "countries:510000": [
+      "Egypt"
+    ],
+    "all:510001": [
+      "Egypt"
+    ],
+    "all:510000": [
+      "Egypt"
+    ],
+    "countries:724001": [
+      "Morocco",
+      "Nigeria"
+    ],
+    "countries:724000": [
+      "Morocco",
+      "Nigeria"
+    ],
+    "countries:525001": [
+      "Kenya",
+      "Tokyo"
+    ],
+    "countries:525000": [
+      "Kenya",
+      "Tokyo"
+    ],
+    "countries:123003": [
+      "South Africa"
+    ],
+    "countries:123000": [
+      "South Africa"
+    ],
+    "all:123003": [
+      "South Africa"
+    ],
+    "all:123000": [
+      "South Africa",
+      "Nailclipper"
+    ],
+    "countries:524002": [
+      "Japan",
+      "Paris"
+    ],
+    "countries:524000": [
+      "Japan",
+      "Korea",
+      "Paris",
+      "Milan"
+    ],
+    "countries:524001": [
+      "Korea",
+      "Milan"
+    ],
+    "countries:514001": [
+      "India"
+    ],
+    "countries:514000": [
+      "India"
+    ],
+    "countries:834001": [
+      "Thailand"
+    ],
+    "countries:834000": [
+      "Thailand"
+    ],
+    "countries:723001": [
+      "Vietnam"
+    ],
+    "countries:723000": [
+      "Vietnam"
+    ],
+    "countries:925003": [
+      "Singapore"
+    ],
+    "countries:925000": [
+      "Singapore",
+      "Barcelona"
+    ],
+    "countries:824001": [
+      "Malaysia"
+    ],
+    "countries:912001": [
+      "Australia"
+    ],
+    "countries:912000": [
+      "Australia"
+    ],
+    "all:912001": [
+      "Australia",
+      "Earphones"
+    ],
+    "all:912000": [
+      "Australia",
+      "Earphones"
+    ],
+    "countries:025001": [
+      "New Zealand"
+    ],
+    "countries:025000": [
+      "New Zealand"
+    ],
+    "countries:424001": [
+      "Fiji"
+    ],
+    "countries:625002": [
+      "Berlin",
+      "Dublin"
+    ],
+    "countries:614001": [
+      "Athens"
+    ],
+    "countries:614000": [
+      "Athens"
+    ],
+    "countries:915001": [
+      "Amsterdam"
+    ],
+    "countries:915000": [
+      "Amsterdam"
+    ],
+    "all:915001": [
+      "Amsterdam"
+    ],
+    "all:915000": [
+      "Amsterdam",
+      "Umbrellas"
+    ],
+    "countries:623001": [
+      "Vienna"
+    ],
+    "countries:623000": [
+      "Vienna"
+    ],
+    "countries:925002": [
+      "Barcelona"
+    ],
+    "countries:650003": [
+      "Sydney"
+    ],
+    "countries:650000": [
+      "Sydney"
+    ],
+    "countries:523003": [
+      "Cairo"
+    ],
+    "countries:523000": [
+      "Cairo"
+    ],
+    "natural_inhand:420002": [
+      "Rock",
+      "Bark"
+    ],
+    "natural_inhand:420000": [
+      "Rock",
+      "Bark",
+      "Sand"
+    ],
+    "natural_inhand:535003": [
+      "Stone"
+    ],
+    "natural_inhand:535000": [
+      "Stone"
+    ],
+    "natural_inhand:626002": [
+      "Pebble"
+    ],
+    "natural_inhand:626000": [
+      "Pebble"
+    ],
+    "natural_inhand:530003": [
+      "Shell"
+    ],
+    "natural_inhand:530000": [
+      "Shell"
+    ],
+    "natural_inhand:423001": [
+      "Leaf"
+    ],
+    "natural_inhand:423000": [
+      "Leaf"
+    ],
+    "natural_inhand:723001": [
+      "Feather"
+    ],
+    "natural_inhand:723000": [
+      "Feather"
+    ],
+    "natural_inhand:513001": [
+      "Acorn"
+    ],
+    "natural_inhand:513000": [
+      "Acorn"
+    ],
+    "natural_inhand:430001": [
+      "Twig"
+    ],
+    "natural_inhand:430000": [
+      "Twig"
+    ],
+    "natural_inhand:635001": [
+      "Flower"
+    ],
+    "natural_inhand:635000": [
+      "Flower"
+    ],
+    "natural_inhand:424002": [
+      "Rose"
+    ],
+    "natural_inhand:424000": [
+      "Rose"
+    ],
+    "natural_inhand:523002": [
+      "Daisy"
+    ],
+    "natural_inhand:523000": [
+      "Daisy"
+    ],
+    "natural_inhand:524001": [
+      "Tulip"
+    ],
+    "natural_inhand:524000": [
+      "Tulip"
+    ],
+    "natural_inhand:926003": [
+      "Sunflower"
+    ],
+    "natural_inhand:926000": [
+      "Sunflower"
+    ],
+    "all:926003": [
+      "Sunflower"
+    ],
+    "natural_inhand:824002": [
+      "Pinecone"
+    ],
+    "natural_inhand:824000": [
+      "Pinecone"
+    ],
+    "natural_inhand:630002": [
+      "Branch"
+    ],
+    "natural_inhand:630000": [
+      "Branch"
+    ],
+    "all:630002": [
+      "Branch",
+      "Blinds",
+      "Plants"
+    ],
+    "natural_inhand:826001": [
+      "Mushroom"
+    ],
+    "natural_inhand:826000": [
+      "Mushroom"
+    ],
+    "natural_inhand:420003": [
+      "Sand"
+    ],
+    "natural_big:434001": [
+      "Tree"
+    ],
+    "natural_big:434000": [
+      "Tree"
+    ],
+    "all:434001": [
+      "Tree"
+    ],
+    "natural_big:823001": [
+      "Mountain"
+    ],
+    "natural_big:823000": [
+      "Mountain"
+    ],
+    "natural_big:524002": [
+      "River"
+    ],
+    "natural_big:524000": [
+      "River",
+      "Comet"
+    ],
+    "natural_big:513003": [
+      "Ocean"
+    ],
+    "natural_big:513000": [
+      "Ocean"
+    ],
+    "all:513003": [
+      "Ocean",
+      "Onion"
+    ],
+    "natural_big:323003": [
+      "Sea"
+    ],
+    "natural_big:323000": [
+      "Sea"
+    ],
+    "all:323003": [
+      "Sea"
+    ],
+    "natural_big:424001": [
+      "Lake"
+    ],
+    "natural_big:424000": [
+      "Lake",
+      "Cave"
+    ],
+    "natural_big:924001": [
+      "Waterfall"
+    ],
+    "natural_big:924000": [
+      "Waterfall"
+    ],
+    "natural_big:534003": [
+      "Cloud"
+    ],
+    "natural_big:534000": [
+      "Cloud"
+    ],
+    "natural_big:423002": [
+      "Rain"
+    ],
+    "natural_big:423000": [
+      "Rain",
+      "Moon"
+    ],
+    "natural_big:430003": [
+      "Snow",
+      "Star"
+    ],
+    "natural_big:430000": [
+      "Snow",
+      "Star"
+    ],
+    "natural_big:723002": [
+      "Rainbow"
+    ],
+    "natural_big:723000": [
+      "Rainbow"
+    ],
+    "all:723002": [
+      "Rainbow",
+      "Diamond",
+      "Doormat",
+      "Bouquet",
+      "Peanuts",
+      "Peaches",
+      "Boulder"
+    ],
+    "natural_big:320003": [
+      "Sun"
+    ],
+    "natural_big:320000": [
+      "Sun"
+    ],
+    "natural_big:423001": [
+      "Moon"
+    ],
+    "natural_big:635002": [
+      "Planet"
+    ],
+    "natural_big:635000": [
+      "Planet"
+    ],
+    "natural_big:524003": [
+      "Comet"
+    ],
+    "natural_big:927001": [
+      "Lightning"
+    ],
+    "natural_big:927000": [
+      "Lightning"
+    ],
+    "natural_big:736001": [
+      "Thunder"
+    ],
+    "natural_big:736000": [
+      "Thunder"
+    ],
+    "natural_big:725001": [
+      "Volcano"
+    ],
+    "natural_big:725000": [
+      "Volcano"
+    ],
+    "natural_big:614001": [
+      "Island"
+    ],
+    "natural_big:614000": [
+      "Island"
+    ],
+    "natural_big:424003": [
+      "Cave"
+    ],
+    "natural_big:624002": [
+      "Desert"
+    ],
+    "natural_big:624000": [
+      "Desert",
+      "Forest"
+    ],
+    "natural_big:624001": [
+      "Forest"
+    ],
+    "natural_big:625001": [
+      "Valley"
+    ],
+    "natural_big:625000": [
+      "Valley"
+    ],
+    "natural_big:530003": [
+      "Cliff"
+    ],
+    "natural_big:530000": [
+      "Cliff"
+    ],
+    "combo:320002": [
+      "Red"
+    ],
+    "combo:320000": [
+      "Red",
+      "May"
+    ],
+    "combo:434002": [
+      "Blue"
+    ],
+    "combo:434000": [
+      "Blue"
+    ],
+    "combo:534002": [
+      "Green"
+    ],
+    "combo:534000": [
+      "Green"
+    ],
+    "combo:625001": [
+      "Yellow"
+    ],
+    "combo:625000": [
+      "Yellow",
+      "Silver",
+      "Cancer",
+      "Pisces"
+    ],
+    "combo:613003": [
+      "Orange"
+    ],
+    "combo:613000": [
+      "Orange"
+    ],
+    "combo:626002": [
+      "Purple"
+    ],
+    "combo:626000": [
+      "Purple",
+      "Circle"
+    ],
+    "combo:420002": [
+      "Pink",
+      "Gold",
+      "July"
+    ],
+    "combo:420000": [
+      "Pink",
+      "Gold",
+      "July"
+    ],
+    "combo:530002": [
+      "Black",
+      "Brown"
+    ],
+    "combo:530000": [
+      "Black",
+      "Brown"
+    ],
+    "combo:535001": [
+      "White"
+    ],
+    "combo:535000": [
+      "White"
+    ],
+    "combo:625003": [
+      "Silver",
+      "Cancer"
+    ],
+    "combo:626003": [
+      "Circle"
+    ],
+    "combo:634003": [
+      "Square"
+    ],
+    "combo:634000": [
+      "Square"
+    ],
+    "combo:834001": [
+      "Triangle"
+    ],
+    "combo:834000": [
+      "Triangle"
+    ],
+    "combo:723002": [
+      "Diamond"
+    ],
+    "combo:723000": [
+      "Diamond"
+    ],
+    "combo:925002": [
+      "Rectangle"
+    ],
+    "combo:925000": [
+      "Rectangle",
+      "Capricorn",
+      "September"
+    ],
+    "combo:430003": [
+      "Star"
+    ],
+    "combo:430000": [
+      "Star"
+    ],
+    "combo:523001": [
+      "Heart"
+    ],
+    "combo:523000": [
+      "Heart"
+    ],
+    "combo:413003": [
+      "Oval"
+    ],
+    "combo:413000": [
+      "Oval"
+    ],
+    "combo:513001": [
+      "Aries"
+    ],
+    "combo:513000": [
+      "Aries"
+    ],
+    "combo:623001": [
+      "Taurus"
+    ],
+    "combo:623000": [
+      "Taurus"
+    ],
+    "combo:624002": [
+      "Gemini"
+    ],
+    "combo:624000": [
+      "Gemini"
+    ],
+    "combo:323001": [
+      "Leo"
+    ],
+    "combo:323000": [
+      "Leo"
+    ],
+    "combo:525001": [
+      "Virgo",
+      "Libra"
+    ],
+    "combo:525000": [
+      "Virgo",
+      "Libra"
+    ],
+    "combo:736003": [
+      "Scorpio"
+    ],
+    "combo:736000": [
+      "Scorpio"
+    ],
+    "combo:124003": [
+      "Sagittarius"
+    ],
+    "combo:124000": [
+      "Sagittarius"
+    ],
+    "all:124003": [
+      "Sagittarius"
+    ],
+    "combo:925003": [
+      "Capricorn",
+      "September"
+    ],
+    "combo:813001": [
+      "Aquarius"
+    ],
+    "combo:813000": [
+      "Aquarius"
+    ],
+    "combo:625002": [
+      "Pisces"
+    ],
+    "combo:724002": [
+      "January"
+    ],
+    "combo:724000": [
+      "January"
+    ],
+    "combo:825001": [
+      "February"
+    ],
+    "combo:825000": [
+      "February"
+    ],
+    "combo:520001": [
+      "March"
+    ],
+    "combo:520000": [
+      "March"
+    ],
+    "combo:514001": [
+      "April"
+    ],
+    "combo:514000": [
+      "April"
+    ],
+    "combo:320001": [
+      "May"
+    ],
+    "combo:424002": [
+      "June"
+    ],
+    "combo:424000": [
+      "June"
+    ],
+    "combo:612001": [
+      "August"
+    ],
+    "combo:612000": [
+      "August"
+    ],
+    "all:612001": [
+      "August"
+    ],
+    "all:612000": [
+      "August"
+    ],
+    "combo:714003": [
+      "October"
+    ],
+    "combo:714000": [
+      "October"
+    ],
+    "combo:824001": [
+      "November"
+    ],
+    "combo:824000": [
+      "November",
+      "December"
+    ],
+    "combo:824002": [
+      "December"
+    ],
+    "large_objects:534003": [
+      "Chair",
+      "Stool"
+    ],
+    "large_objects:534000": [
+      "Chair",
+      "Floor",
+      "Train",
+      "Stool"
+    ],
+    "large_objects:525001": [
+      "Table",
+      "Fence",
+      "Villa"
+    ],
+    "large_objects:525000": [
+      "Table",
+      "Fence",
+      "Villa",
+      "Condo"
+    ],
+    "large_objects:420002": [
+      "Desk",
+      "Deck",
+      "Barn"
+    ],
+    "large_objects:420000": [
+      "Desk",
+      "Wall",
+      "Sink",
+      "Harp",
+      "Deck",
+      "Barn"
+    ],
+    "large_objects:320002": [
+      "Bed",
+      "Bus",
+      "Jet"
+    ],
+    "large_objects:320000": [
+      "Bed",
+      "Car",
+      "Van",
+      "Bus",
+      "Suv",
+      "Jet"
+    ],
+    "large_objects:523003": [
+      "Couch",
+      "Coach"
+    ],
+    "large_objects:523000": [
+      "Couch",
+      "House",
+      "Piano",
+      "Coach"
+    ],
+    "large_objects:424003": [
+      "Sofa"
+    ],
+    "large_objects:424000": [
+      "Sofa",
+      "Taxi",
+      "Gate",
+      "Bike"
+    ],
+    "large_objects:423002": [
+      "Door",
+      "Roof",
+      "Boat",
+      "Pool",
+      "Road",
+      "Pier"
+    ],
+    "large_objects:423000": [
+      "Door",
+      "Roof",
+      "Boat",
+      "Pool",
+      "Road",
+      "Pier"
+    ],
+    "large_objects:625001": [
+      "Window",
+      "Ladder",
+      "Tunnel",
+      "Hangar",
+      "Harbor"
+    ],
+    "large_objects:625000": [
+      "Window",
+      "Subway",
+      "Rocket",
+      "Ladder",
+      "Tunnel",
+      "Hangar",
+      "Harbor",
+      "Camper",
+      "Pickup"
+    ],
+    "large_objects:420001": [
+      "Wall",
+      "Harp"
+    ],
+    "large_objects:534001": [
+      "Floor",
+      "Train"
+    ],
+    "large_objects:634003": [
+      "Stairs"
+    ],
+    "large_objects:634000": [
+      "Stairs"
+    ],
+    "large_objects:813001": [
+      "Elevator"
+    ],
+    "large_objects:813000": [
+      "Elevator"
+    ],
+    "large_objects:636002": [
+      "Bridge"
+    ],
+    "large_objects:636000": [
+      "Bridge",
+      "Fridge"
+    ],
+    "large_objects:524001": [
+      "Tower",
+      "Hotel",
+      "Futon",
+      "Foyer",
+      "Kayak",
+      "Moped"
+    ],
+    "large_objects:524000": [
+      "Tower",
+      "Hotel",
+      "Futon",
+      "Basin",
+      "Bidet",
+      "Patio",
+      "Foyer",
+      "Cabin",
+      "Canoe",
+      "Kayak",
+      "Sedan",
+      "Moped"
+    ],
+    "large_objects:626003": [
+      "Castle"
+    ],
+    "large_objects:626000": [
+      "Castle",
+      "Temple"
+    ],
+    "large_objects:523001": [
+      "House"
+    ],
+    "large_objects:913001": [
+      "Apartment"
+    ],
+    "large_objects:913000": [
+      "Apartment"
+    ],
+    "large_objects:320003": [
+      "Car",
+      "Suv"
+    ],
+    "large_objects:530001": [
+      "Truck"
+    ],
+    "large_objects:530000": [
+      "Truck",
+      "Chest",
+      "Shelf",
+      "Blimp"
+    ],
+    "large_objects:320001": [
+      "Van"
+    ],
+    "large_objects:424001": [
+      "Taxi"
+    ],
+    "large_objects:625003": [
+      "Subway",
+      "Camper"
+    ],
+    "large_objects:812001": [
+      "Airplane",
+      "Airliner"
+    ],
+    "large_objects:812000": [
+      "Airplane",
+      "Airliner"
+    ],
+    "large_objects:024001": [
+      "Helicopter",
+      "Motorcycle",
+      "Television",
+      "Locomotive"
+    ],
+    "large_objects:024000": [
+      "Helicopter",
+      "Motorcycle",
+      "Television",
+      "Locomotive"
+    ],
+    "large_objects:430003": [
+      "Ship",
+      "Crib",
+      "Shed"
+    ],
+    "large_objects:430000": [
+      "Ship",
+      "Crib",
+      "Shed",
+      "Tram"
+    ],
+    "large_objects:727002": [
+      "Bicycle"
+    ],
+    "large_objects:727000": [
+      "Bicycle"
+    ],
+    "large_objects:734003": [
+      "Scooter"
+    ],
+    "large_objects:734000": [
+      "Scooter",
+      "Freezer",
+      "Theater",
+      "Trailer"
+    ],
+    "large_objects:035003": [
+      "Skateboard"
+    ],
+    "large_objects:035000": [
+      "Skateboard",
+      "Phonebooth"
+    ],
+    "large_objects:523002": [
+      "Piano"
+    ],
+    "large_objects:125002": [
+      "Refrigerator"
+    ],
+    "large_objects:125000": [
+      "Refrigerator",
+      "Coffeetable"
+    ],
+    "large_objects:636001": [
+      "Fridge"
+    ],
+    "large_objects:200001": [
+      "Tv"
+    ],
+    "large_objects:200000": [
+      "Tv"
+    ],
+    "large_objects:923002": [
+      "Bookshelf",
+      "Pooltable"
+    ],
+    "large_objects:923000": [
+      "Bookshelf",
+      "Pooltable"
+    ],
+    "large_objects:826001": [
+      "Wardrobe",
+      "Mattress",
+      "Lamppost",
+      "Fortress",
+      "Forklift"
+    ],
+    "large_objects:826000": [
+      "Wardrobe",
+      "Mattress",
+      "Lamppost",
+      "Fortress",
+      "Forklift"
+    ],
+    "large_objects:724003": [
+      "Cabinet"
+    ],
+    "large_objects:724000": [
+      "Cabinet",
+      "Jacuzzi",
+      "Veranda",
+      "Minivan"
+    ],
+    "large_objects:535003": [
+      "Stove",
+      "Stage",
+      "Crane"
+    ],
+    "large_objects:535000": [
+      "Stove",
+      "Stage",
+      "Crane",
+      "Plane"
+    ],
+    "large_objects:413003": [
+      "Oven"
+    ],
+    "large_objects:413000": [
+      "Oven"
+    ],
+    "large_objects:726002": [
+      "Bathtub",
+      "Bunkbed"
+    ],
+    "large_objects:726000": [
+      "Bathtub",
+      "Bunkbed",
+      "Hallway",
+      "Highway"
+    ],
+    "large_objects:420003": [
+      "Sink"
+    ],
+    "large_objects:736001": [
+      "Tractor",
+      "Trolley"
+    ],
+    "large_objects:736000": [
+      "Tractor",
+      "Dresser",
+      "Chimney",
+      "Drumset",
+      "Trolley"
+    ],
+    "large_objects:520001": [
+      "Yacht",
+      "Lobby",
+      "Ferry"
+    ],
+    "large_objects:520000": [
+      "Yacht",
+      "Bench",
+      "Porch",
+      "Lobby",
+      "Ferry"
+    ],
+    "large_objects:925003": [
+      "Submarine",
+      "Cathedral"
+    ],
+    "large_objects:925000": [
+      "Submarine",
+      "Microwave",
+      "Cathedral"
+    ],
+    "large_objects:625002": [
+      "Rocket",
+      "Pickup"
+    ],
+    "large_objects:036001": [
+      "Trampoline"
+    ],
+    "large_objects:036000": [
+      "Trampoline"
+    ],
+    "large_objects:635003": [
+      "Statue",
+      "Closet",
+      "Shower",
+      "Stereo"
+    ],
+    "large_objects:635000": [
+      "Statue",
+      "Closet",
+      "Shower",
+      "Stereo"
+    ],
+    "large_objects:624002": [
+      "Garage",
+      "Bureau",
+      "Gazebo",
+      "Palace"
+    ],
+    "large_objects:624000": [
+      "Garage",
+      "Bureau",
+      "Vanity",
+      "Gazebo",
+      "Palace",
+      "Museum",
+      "Cinema"
+    ],
+    "large_objects:079003": [
+      "Skyscraper"
+    ],
+    "large_objects:079000": [
+      "Skyscraper"
+    ],
+    "large_objects:746002": [
+      "Pyramid"
+    ],
+    "large_objects:746000": [
+      "Pyramid"
+    ],
+    "large_objects:914001": [
+      "Ambulance",
+      "Escalator"
+    ],
+    "large_objects:914000": [
+      "Ambulance",
+      "Escalator"
+    ],
+    "large_objects:816001": [
+      "Armchair"
+    ],
+    "large_objects:816000": [
+      "Armchair"
+    ],
+    "large_objects:825002": [
+      "Recliner"
+    ],
+    "large_objects:825000": [
+      "Recliner",
+      "Cupboard",
+      "Keyboard",
+      "Corridor",
+      "Hospital",
+      "Terminal"
+    ],
+    "large_objects:520002": [
+      "Bench",
+      "Porch"
+    ],
+    "large_objects:824001": [
+      "Loveseat",
+      "Monument",
+      "Monorail"
+    ],
+    "large_objects:824000": [
+      "Loveseat",
+      "Radiator",
+      "Basement",
+      "Sidewalk",
+      "Monument",
+      "Monorail"
+    ],
+    "large_objects:714003": [
+      "Ottoman"
+    ],
+    "large_objects:714000": [
+      "Ottoman",
+      "Armoire"
+    ],
+    "large_objects:124002": [
+      "Diningtable"
+    ],
+    "large_objects:124000": [
+      "Diningtable",
+      "Firehydrant"
+    ],
+    "large_objects:125003": [
+      "Coffeetable"
+    ],
+    "large_objects:028001": [
+      "Nightstand"
+    ],
+    "large_objects:028000": [
+      "Nightstand"
+    ],
+    "large_objects:723003": [
+      "Counter",
+      "Ceiling"
+    ],
+    "large_objects:723000": [
+      "Counter",
+      "Ceiling",
+      "Mailbox"
+    ],
+    "large_objects:614001": [
+      "Island"
+    ],
+    "large_objects:614000": [
+      "Island"
+    ],
+    "large_objects:714001": [
+      "Armoire"
+    ],
+    "large_objects:736002": [
+      "Dresser",
+      "Drumset"
+    ],
+    "large_objects:530003": [
+      "Chest",
+      "Shelf"
+    ],
+    "large_objects:825003": [
+      "Cupboard",
+      "Corridor"
+    ],
+    "large_objects:823002": [
+      "Bookcase",
+      "Building"
+    ],
+    "large_objects:823000": [
+      "Bookcase",
+      "Soundbar",
+      "Fountain",
+      "Building",
+      "Sailboat"
+    ],
+    "large_objects:835003": [
+      "Credenza"
+    ],
+    "large_objects:835000": [
+      "Credenza",
+      "Driveway"
+    ],
+    "large_objects:924003": [
+      "Sideboard"
+    ],
+    "large_objects:924000": [
+      "Sideboard",
+      "Fireplace",
+      "Warehouse"
+    ],
+    "large_objects:620002": [
+      "Pantry"
+    ],
+    "large_objects:620000": [
+      "Pantry"
+    ],
+    "large_objects:734001": [
+      "Freezer",
+      "Theater",
+      "Trailer"
+    ],
+    "large_objects:623003": [
+      "Cooler"
+    ],
+    "large_objects:623000": [
+      "Cooler",
+      "Toilet"
+    ],
+    "large_objects:925001": [
+      "Microwave"
+    ],
+    "large_objects:026002": [
+      "Dishwasher"
+    ],
+    "large_objects:026000": [
+      "Dishwasher"
+    ],
+    "large_objects:524002": [
+      "Basin",
+      "Bidet",
+      "Patio"
+    ],
+    "large_objects:724002": [
+      "Jacuzzi"
+    ],
+    "large_objects:623001": [
+      "Toilet"
+    ],
+    "large_objects:624001": [
+      "Vanity",
+      "Museum"
+    ],
+    "large_objects:924001": [
+      "Fireplace",
+      "Warehouse"
+    ],
+    "large_objects:736003": [
+      "Chimney"
+    ],
+    "large_objects:725001": [
+      "Furnace",
+      "Terrace",
+      "Mansion",
+      "Factory",
+      "Library"
+    ],
+    "large_objects:725000": [
+      "Furnace",
+      "Balcony",
+      "Terrace",
+      "Mansion",
+      "Cottage",
+      "Factory",
+      "Library",
+      "Rowboat"
+    ],
+    "large_objects:824002": [
+      "Radiator",
+      "Basement"
+    ],
+    "large_objects:037002": [
+      "Grandpiano"
+    ],
+    "large_objects:037000": [
+      "Grandpiano"
+    ],
+    "large_objects:825001": [
+      "Keyboard",
+      "Hospital",
+      "Terminal"
+    ],
+    "large_objects:514003": [
+      "Organ"
+    ],
+    "large_objects:514000": [
+      "Organ",
+      "Attic"
+    ],
+    "large_objects:935002": [
+      "Projector"
+    ],
+    "large_objects:935000": [
+      "Projector",
+      "Spaceship"
+    ],
+    "large_objects:645003": [
+      "Screen",
+      "Street",
+      "School"
+    ],
+    "large_objects:645000": [
+      "Screen",
+      "Street",
+      "School"
+    ],
+    "large_objects:823003": [
+      "Soundbar",
+      "Sailboat"
+    ],
+    "large_objects:834003": [
+      "Speakers"
+    ],
+    "large_objects:834000": [
+      "Speakers"
+    ],
+    "large_objects:926001": [
+      "Turntable",
+      "Townhouse"
+    ],
+    "large_objects:926000": [
+      "Turntable",
+      "Billboard",
+      "Townhouse",
+      "Bulldozer"
+    ],
+    "large_objects:934001": [
+      "Treadmill"
+    ],
+    "large_objects:934000": [
+      "Treadmill",
+      "Staircase"
+    ],
+    "large_objects:424002": [
+      "Gate",
+      "Bike"
+    ],
+    "large_objects:850003": [
+      "Skylight"
+    ],
+    "large_objects:850000": [
+      "Skylight"
+    ],
+    "large_objects:725002": [
+      "Balcony",
+      "Rowboat"
+    ],
+    "large_objects:724001": [
+      "Veranda",
+      "Minivan"
+    ],
+    "large_objects:034002": [
+      "Greenhouse"
+    ],
+    "large_objects:034000": [
+      "Greenhouse",
+      "Cruiseship"
+    ],
+    "large_objects:514001": [
+      "Attic"
+    ],
+    "large_objects:934003": [
+      "Staircase"
+    ],
+    "large_objects:726001": [
+      "Hallway",
+      "Highway"
+    ],
+    "large_objects:824003": [
+      "Sidewalk"
+    ],
+    "large_objects:835002": [
+      "Driveway"
+    ],
+    "large_objects:145003": [
+      "Streetlight"
+    ],
+    "large_objects:145000": [
+      "Streetlight"
+    ],
+    "large_objects:124001": [
+      "Firehydrant"
+    ],
+    "large_objects:723001": [
+      "Mailbox"
+    ],
+    "large_objects:035002": [
+      "Phonebooth"
+    ],
+    "large_objects:926002": [
+      "Billboard",
+      "Bulldozer"
+    ],
+    "large_objects:823001": [
+      "Fountain"
+    ],
+    "large_objects:027001": [
+      "Lighthouse"
+    ],
+    "large_objects:027000": [
+      "Lighthouse"
+    ],
+    "large_objects:725003": [
+      "Cottage"
+    ],
+    "large_objects:524003": [
+      "Cabin",
+      "Canoe",
+      "Sedan"
+    ],
+    "large_objects:525003": [
+      "Condo"
+    ],
+    "large_objects:013002": [
+      "University"
+    ],
+    "large_objects:013000": [
+      "University"
+    ],
+    "large_objects:624003": [
+      "Cinema"
+    ],
+    "large_objects:735003": [
+      "Stadium",
+      "Station"
+    ],
+    "large_objects:735000": [
+      "Stadium",
+      "Station"
+    ],
+    "large_objects:630003": [
+      "Church"
+    ],
+    "large_objects:630000": [
+      "Church"
+    ],
+    "large_objects:626001": [
+      "Temple"
+    ],
+    "large_objects:712001": [
+      "Airport"
+    ],
+    "large_objects:712000": [
+      "Airport"
+    ],
+    "large_objects:134001": [
+      "Trainstation"
+    ],
+    "large_objects:134000": [
+      "Trainstation"
+    ],
+    "large_objects:034003": [
+      "Cruiseship"
+    ],
+    "large_objects:430001": [
+      "Tram"
+    ],
+    "large_objects:535002": [
+      "Plane"
+    ],
+    "large_objects:530002": [
+      "Blimp"
+    ],
+    "large_objects:935003": [
+      "Spaceship"
+    ],
+    "handheld:410001": [
+      "Eggs"
+    ],
+    "handheld:410000": [
+      "Eggs"
+    ],
+    "everyday:410001": [
+      "Eggs"
+    ],
+    "everyday:410000": [
+      "Eggs"
+    ],
+    "all:410001": [
+      "Eggs",
+      "Ants"
+    ],
+    "all:410000": [
+      "Eggs",
+      "Owls",
+      "Ants"
+    ],
+    "handheld:310001": [
+      "Egg"
+    ],
+    "handheld:310000": [
+      "Egg"
+    ],
+    "everyday:310001": [
+      "Egg"
+    ],
+    "everyday:310000": [
+      "Egg"
+    ],
+    "handheld:523003": [
+      "Coins"
+    ],
+    "handheld:520003": [
+      "Cards",
+      "Combs"
+    ],
+    "everyday:520003": [
+      "Cards",
+      "Combs",
+      "Socks",
+      "Curry",
+      "Candy"
+    ],
+    "handheld:713001": [
+      "Erasers",
+      "Adapter"
+    ],
+    "handheld:713000": [
+      "Erasers",
+      "Adapter"
+    ],
+    "everyday:713001": [
+      "Erasers",
+      "Adapter"
+    ],
+    "everyday:713000": [
+      "Erasers",
+      "Adapter",
+      "Oranges"
+    ],
+    "handheld:923003": [
+      "Coinpurse"
+    ],
+    "everyday:923003": [
+      "Coinpurse"
+    ],
+    "all:923003": [
+      "Coinpurse"
+    ],
+    "handheld:937003": [
+      "Chapstick"
+    ],
+    "handheld:937000": [
+      "Chapstick"
+    ],
+    "everyday:937003": [
+      "Chapstick",
+      "Stepstool"
+    ],
+    "everyday:937000": [
+      "Chapstick",
+      "Stepstool"
+    ],
+    "all:937003": [
+      "Chapstick",
+      "Stepstool"
+    ],
+    "all:937000": [
+      "Chapstick",
+      "Stepstool"
+    ],
+    "handheld:912001": [
+      "Earphones"
+    ],
+    "handheld:912000": [
+      "Earphones"
+    ],
+    "everyday:912001": [
+      "Earphones"
+    ],
+    "everyday:912000": [
+      "Earphones"
+    ],
+    "handheld:023001": [
+      "Headphones",
+      "Toothpicks"
+    ],
+    "handheld:023000": [
+      "Headphones",
+      "Toothpicks"
+    ],
+    "handheld:635002": [
+      "Phones",
+      "Gloves"
+    ],
+    "handheld:925002": [
+      "Batteries"
+    ],
+    "handheld:925000": [
+      "Batteries",
+      "Magnifier"
+    ],
+    "handheld:924002": [
+      "Powerbank",
+      "Paperclip",
+      "Pokerchip"
+    ],
+    "everyday:924002": [
+      "Powerbank",
+      "Paperclip",
+      "Pokerchip",
+      "Pineapple"
+    ],
+    "handheld:038001": [
+      "Flashdrive"
+    ],
+    "handheld:038000": [
+      "Flashdrive"
+    ],
+    "everyday:038001": [
+      "Flashdrive"
+    ],
+    "all:038001": [
+      "Flashdrive"
+    ],
+    "handheld:125002": [
+      "Pocketknife",
+      "Rubberbands"
+    ],
+    "handheld:125000": [
+      "Pocketknife",
+      "Rubberbands"
+    ],
+    "everyday:125002": [
+      "Pocketknife",
+      "Rubberbands"
+    ],
+    "handheld:635001": [
+      "Knives"
+    ],
+    "handheld:634003": [
+      "Spoons"
+    ],
+    "everyday:634003": [
+      "Spoons",
+      "Cheese",
+      "Chairs",
+      "Sheets"
+    ],
+    "handheld:640003": [
+      "Straws"
+    ],
+    "handheld:640000": [
+      "Straws"
+    ],
+    "everyday:640003": [
+      "Straws",
+      "Screws",
+      "Shrimp"
+    ],
+    "everyday:640000": [
+      "Straws",
+      "T-shirt",
+      "Screws",
+      "Shrimp"
+    ],
+    "all:640003": [
+      "Straws",
+      "Screws",
+      "Shrimp"
+    ],
+    "all:640000": [
+      "Straws",
+      "T-shirt",
+      "Screws",
+      "Shrimp"
+    ],
+    "handheld:123001": [
+      "Nailclipper"
+    ],
+    "handheld:123000": [
+      "Nailclipper"
+    ],
+    "everyday:123001": [
+      "Nailclipper"
+    ],
+    "everyday:123000": [
+      "Nailclipper"
+    ],
+    "all:123001": [
+      "Nailclipper"
+    ],
+    "handheld:714001": [
+      "Inhaler"
+    ],
+    "handheld:714000": [
+      "Inhaler"
+    ],
+    "everyday:714001": [
+      "Inhaler",
+      "Incense",
+      "Almonds"
+    ],
+    "everyday:714000": [
+      "Inhaler",
+      "Incense",
+      "Almonds"
+    ],
+    "handheld:924003": [
+      "Sanitizer"
+    ],
+    "everyday:924003": [
+      "Sanitizer",
+      "Cucumbers"
+    ],
+    "handheld:824002": [
+      "Receipts"
+    ],
+    "handheld:926002": [
+      "Passports"
+    ],
+    "handheld:926000": [
+      "Passports"
+    ],
+    "everyday:926002": [
+      "Passports",
+      "Backpacks",
+      "Raspberry"
+    ],
+    "handheld:024002": [
+      "Paperclips"
+    ],
+    "handheld:024000": [
+      "Paperclips"
+    ],
+    "everyday:024002": [
+      "Paperclips"
+    ],
+    "everyday:024000": [
+      "Paperclips",
+      "Watermelon"
+    ],
+    "all:024002": [
+      "Paperclips"
+    ],
+    "handheld:025002": [
+      "Rubberband"
+    ],
+    "handheld:025000": [
+      "Rubberband"
+    ],
+    "everyday:025002": [
+      "Rubberband"
+    ],
+    "all:025002": [
+      "Rubberband"
+    ],
+    "handheld:026003": [
+      "Sunglasses"
+    ],
+    "handheld:026000": [
+      "Sunglasses"
+    ],
+    "handheld:736002": [
+      "Glasses"
+    ],
+    "handheld:013001": [
+      "Eyeglasses"
+    ],
+    "handheld:013000": [
+      "Eyeglasses"
+    ],
+    "everyday:013001": [
+      "Eyeglasses"
+    ],
+    "everyday:013000": [
+      "Eyeglasses"
+    ],
+    "all:013001": [
+      "Eyeglasses"
+    ],
+    "everyday:827001": [
+      "Matchbox"
+    ],
+    "everyday:827000": [
+      "Matchbox"
+    ],
+    "handheld:323002": [
+      "Die"
+    ],
+    "handheld:323000": [
+      "Die"
+    ],
+    "everyday:323002": [
+      "Die",
+      "Pie"
+    ],
+    "all:323002": [
+      "Die",
+      "Pie",
+      "Bee"
+    ],
+    "handheld:925001": [
+      "Magnifier"
+    ],
+    "everyday:925001": [
+      "Magnifier",
+      "Microwave"
+    ],
+    "handheld:623002": [
+      "Beanie"
+    ],
+    "handheld:636003": [
+      "Sponge"
+    ],
+    "handheld:636000": [
+      "Sponge"
+    ],
+    "everyday:712003": [
+      "Oatmeal"
+    ],
+    "all:712003": [
+      "Oatmeal"
+    ],
+    "everyday:424003": [
+      "Soda",
+      "Sofa",
+      "Cake",
+      "Coke"
+    ],
+    "everyday:430001": [
+      "Tray",
+      "Wrap"
+    ],
+    "everyday:413003": [
+      "Oven"
+    ],
+    "everyday:413000": [
+      "Oven"
+    ],
+    "everyday:535003": [
+      "Stove",
+      "Scale",
+      "Chili"
+    ],
+    "everyday:636001": [
+      "Fridge"
+    ],
+    "everyday:734001": [
+      "Freezer"
+    ],
+    "everyday:026002": [
+      "Dishwasher"
+    ],
+    "everyday:513001": [
+      "Alarm"
+    ],
+    "everyday:513000": [
+      "Alarm",
+      "Onion"
+    ],
+    "everyday:430002": [
+      "Plug",
+      "Plum"
+    ],
+    "everyday:914001": [
+      "Extension"
+    ],
+    "everyday:914000": [
+      "Extension"
+    ],
+    "everyday:836002": [
+      "Blankets",
+      "Pretzels",
+      "Dressing",
+      "Broccoli",
+      "Brownies"
+    ],
+    "everyday:825003": [
+      "Curtains",
+      "Cupcakes"
+    ],
+    "everyday:630002": [
+      "Blinds",
+      "Plants"
+    ],
+    "everyday:723002": [
+      "Doormat",
+      "Bouquet",
+      "Peanuts",
+      "Peaches"
+    ],
+    "everyday:534001": [
+      "Floor",
+      "Fries"
+    ],
+    "everyday:640001": [
+      "T-shirt"
+    ],
+    "all:640001": [
+      "T-shirt"
+    ],
+    "everyday:915002": [
+      "Umbrellas"
+    ],
+    "everyday:915000": [
+      "Umbrellas"
+    ],
+    "all:915002": [
+      "Umbrellas"
+    ],
+    "everyday:145003": [
+      "Straightener"
+    ],
+    "everyday:145000": [
+      "Straightener"
+    ],
+    "everyday:935001": [
+      "Flowerpot"
+    ],
+    "everyday:935000": [
+      "Flowerpot",
+      "Chocolate"
+    ],
+    "all:935001": [
+      "Flowerpot"
+    ],
+    "everyday:735001": [
+      "Flowers"
+    ],
+    "all:735001": [
+      "Flowers"
+    ],
+    "food:410001": [
+      "Eggs"
+    ],
+    "food:410000": [
+      "Eggs"
+    ],
+    "food:825002": [
+      "Pancakes",
+      "Biscuits"
+    ],
+    "food:825000": [
+      "Pancakes",
+      "Biscuits",
+      "Cupcakes",
+      "Lollipop"
+    ],
+    "food:726001": [
+      "Waffles",
+      "Lobster",
+      "Ketchup"
+    ],
+    "food:726000": [
+      "Waffles",
+      "Lobster",
+      "Ketchup"
+    ],
+    "food:934003": [
+      "Croissant"
+    ],
+    "everyday:934003": [
+      "Croissant"
+    ],
+    "food:725001": [
+      "Muffins",
+      "Hotdogs",
+      "Mustard",
+      "Lettuce"
+    ],
+    "food:823002": [
+      "Doughnut"
+    ],
+    "food:823000": [
+      "Doughnut",
+      "Sausages"
+    ],
+    "food:620002": [
+      "Pastry"
+    ],
+    "food:620000": [
+      "Pastry"
+    ],
+    "everyday:620002": [
+      "Pastry"
+    ],
+    "everyday:620000": [
+      "Pastry"
+    ],
+    "food:723003": [
+      "Sausage",
+      "Cookies"
+    ],
+    "food:823003": [
+      "Sausages"
+    ],
+    "food:320001": [
+      "Ham"
+    ],
+    "food:320000": [
+      "Ham",
+      "Gum"
+    ],
+    "food:420002": [
+      "Pork"
+    ],
+    "food:640003": [
+      "Shrimp"
+    ],
+    "food:640000": [
+      "Shrimp"
+    ],
+    "food:430003": [
+      "Crab",
+      "Stew"
+    ],
+    "everyday:134003": [
+      "Cheeseburger"
+    ],
+    "everyday:134000": [
+      "Cheeseburger",
+      "Blueberries"
+    ],
+    "food:026003": [
+      "Sandwiches"
+    ],
+    "food:026000": [
+      "Sandwiches"
+    ],
+    "food:430001": [
+      "Wrap"
+    ],
+    "food:534001": [
+      "Fries"
+    ],
+    "food:530003": [
+      "Chips"
+    ],
+    "food:530000": [
+      "Chips",
+      "Plums"
+    ],
+    "food:836003": [
+      "Crackers",
+      "Cherries"
+    ],
+    "food:723002": [
+      "Peanuts",
+      "Peaches"
+    ],
+    "food:714001": [
+      "Almonds"
+    ],
+    "food:714000": [
+      "Almonds"
+    ],
+    "food:535003": [
+      "Chili"
+    ],
+    "food:523003": [
+      "Sauce"
+    ],
+    "everyday:515001": [
+      "Apple"
+    ],
+    "everyday:515000": [
+      "Apple"
+    ],
+    "food:615001": [
+      "Apples"
+    ],
+    "food:615000": [
+      "Apples"
+    ],
+    "everyday:615001": [
+      "Apples"
+    ],
+    "everyday:615000": [
+      "Apples"
+    ],
+    "all:615001": [
+      "Apples"
+    ],
+    "all:615000": [
+      "Apples"
+    ],
+    "food:724002": [
+      "Bananas"
+    ],
+    "food:724000": [
+      "Bananas"
+    ],
+    "food:713003": [
+      "Oranges"
+    ],
+    "everyday:713003": [
+      "Oranges"
+    ],
+    "all:713003": [
+      "Oranges"
+    ],
+    "food:635002": [
+      "Grapes"
+    ],
+    "food:635000": [
+      "Grapes"
+    ],
+    "everyday:047003": [
+      "Strawberry"
+    ],
+    "everyday:047000": [
+      "Strawberry"
+    ],
+    "food:147003": [
+      "Strawberries"
+    ],
+    "food:147000": [
+      "Strawberries"
+    ],
+    "everyday:147003": [
+      "Strawberries"
+    ],
+    "everyday:147000": [
+      "Strawberries"
+    ],
+    "all:147003": [
+      "Strawberries"
+    ],
+    "all:147000": [
+      "Strawberries"
+    ],
+    "food:134002": [
+      "Blueberries"
+    ],
+    "everyday:134002": [
+      "Blueberries"
+    ],
+    "all:134002": [
+      "Blueberries"
+    ],
+    "food:926002": [
+      "Raspberry"
+    ],
+    "food:926000": [
+      "Raspberry",
+      "Mushrooms"
+    ],
+    "food:037002": [
+      "Blackberry"
+    ],
+    "food:037000": [
+      "Blackberry"
+    ],
+    "everyday:037002": [
+      "Blackberry"
+    ],
+    "everyday:024001": [
+      "Watermelon"
+    ],
+    "food:025003": [
+      "Cantaloupe",
+      "Cappuccino"
+    ],
+    "food:025000": [
+      "Cantaloupe",
+      "Cappuccino"
+    ],
+    "food:530002": [
+      "Plums"
+    ],
+    "food:824001": [
+      "Tomatoes",
+      "Lemonade"
+    ],
+    "food:824000": [
+      "Tomatoes",
+      "Potatoes",
+      "Cucumber",
+      "Lemonade"
+    ],
+    "food:824002": [
+      "Potatoes"
+    ],
+    "food:513003": [
+      "Onion"
+    ],
+    "food:513000": [
+      "Onion"
+    ],
+    "everyday:513003": [
+      "Onion"
+    ],
+    "food:725003": [
+      "Carrots",
+      "Cupcake",
+      "Candies",
+      "Custard"
+    ],
+    "food:735003": [
+      "Spinach"
+    ],
+    "food:735000": [
+      "Spinach"
+    ],
+    "food:824003": [
+      "Cucumber"
+    ],
+    "food:924003": [
+      "Cucumbers"
+    ],
+    "food:826001": [
+      "Mushroom"
+    ],
+    "food:926001": [
+      "Mushrooms"
+    ],
+    "food:420003": [
+      "Corn"
+    ],
+    "food:825003": [
+      "Cupcakes"
+    ],
+    "food:323002": [
+      "Pie"
+    ],
+    "everyday:935003": [
+      "Chocolate"
+    ],
+    "food:825001": [
+      "Lollipop"
+    ],
+    "food:320002": [
+      "Gum"
+    ],
+    "food:815001": [
+      "Espresso"
+    ],
+    "food:815000": [
+      "Espresso"
+    ],
+    "everyday:815001": [
+      "Espresso"
+    ],
+    "all:815001": [
+      "Espresso"
+    ],
+    "food:434003": [
+      "Chai"
+    ],
+    "food:434000": [
+      "Chai"
+    ],
+    "food:834003": [
+      "Smoothie"
+    ],
+    "food:834000": [
+      "Smoothie"
+    ],
+    "big_objects:630001": [
+      "Trucks"
+    ],
+    "big_objects:634001": [
+      "Trains"
+    ],
+    "all:634001": [
+      "Trains"
+    ],
+    "big_objects:635002": [
+      "Planes"
+    ],
+    "big_objects:513001": [
+      "Arena"
+    ],
+    "big_objects:513000": [
+      "Arena",
+      "Ocean"
+    ],
+    "big_objects:513003": [
+      "Ocean"
+    ],
+    "big_objects:323003": [
+      "Sea"
+    ],
+    "big_objects:323000": [
+      "Sea"
+    ],
+    "big_objects:626002": [
+      "Jungle"
+    ],
+    "big_objects:434001": [
+      "Tree"
+    ],
+    "big_objects:434000": [
+      "Tree"
+    ],
+    "big_objects:723002": [
+      "Boulder"
+    ],
+    "animals:420003": [
+      "Cats",
+      "Cows"
+    ],
+    "animals:424001": [
+      "Mice"
+    ],
+    "animals:424000": [
+      "Mice"
+    ],
+    "animals:913001": [
+      "Elephants"
+    ],
+    "animals:913000": [
+      "Elephants"
+    ],
+    "animals:824002": [
+      "Giraffes"
+    ],
+    "animals:824000": [
+      "Giraffes"
+    ],
+    "animals:725001": [
+      "Monkeys"
+    ],
+    "animals:834003": [
+      "Squirrel"
+    ],
+    "animals:834000": [
+      "Squirrel"
+    ],
+    "animals:410003": [
+      "Owls"
+    ],
+    "animals:410000": [
+      "Owls",
+      "Ants"
+    ],
+    "all:410003": [
+      "Owls"
+    ],
+    "animals:825002": [
+      "Penguins"
+    ],
+    "animals:530001": [
+      "Frogs"
+    ],
+    "animals:630003": [
+      "Sharks"
+    ],
+    "animals:630000": [
+      "Sharks"
+    ],
+    "animals:635001": [
+      "Whales"
+    ],
+    "animals:826002": [
+      "Dolphins"
+    ],
+    "animals:826000": [
+      "Dolphins"
+    ],
+    "animals:523003": [
+      "Seals"
+    ],
+    "animals:927002": [
+      "Jellyfish"
+    ],
+    "animals:927000": [
+      "Jellyfish"
+    ],
+    "animals:323002": [
+      "Bee"
+    ],
+    "animals:323000": [
+      "Bee"
+    ],
+    "animals:410001": [
+      "Ants"
+    ],
+    "animals:735003": [
+      "Spiders"
+    ],
+    "animals:735000": [
+      "Spiders"
+    ],
+    "animals:925002": [
+      "Butterfly"
+    ],
+    "animals:925000": [
+      "Butterfly"
+    ],
+    "animals:300001": [
+      "Fly"
+    ],
+    "animals:300000": [
+      "Fly"
+    ],
+    "all:300001": [
+      "Fly"
+    ],
+    "all:300000": [
+      "Fly"
+    ]
+  }
+};
