@@ -751,7 +751,7 @@
     }
 
     /* =========================================================
-       SPECTATOR APP CLIP: PIXEL-PERFECT GOOGLE SEARCH VIEW
+       SPECTATOR APP CLIP: GOOGLE SEARCH VIEW (NATIVE iOS KEYBOARD)
        ========================================================= */
     .google-view {
       position: fixed;
@@ -759,440 +759,70 @@
       z-index: 90;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       overflow: hidden;
-      font-family: -apple-system, BlinkMacSystemFont, "Google Sans", "SF Pro Text", Roboto, Helvetica, Arial, sans-serif;
-      transition: background-color 0.2s ease, color 0.2s ease;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-user-select: text;
+      user-select: text;
     }
+    .google-view.theme-dark { background: #202124; color: #e8eaed; --g-icon: #e8eaed; --g-sub: #9aa0a6; --g-text: #bdc1c6; --g-line: #3c4043; --g-caret: #8ab4f8; }
+    .google-view.theme-light { background: #ffffff; color: #202124; --g-icon: #3c4043; --g-sub: #70757a; --g-text: #202124; --g-line: #dadce0; --g-caret: #1a73e8; }
 
-    /* THEMES: Dark vs Light */
-    .google-view.theme-dark {
-      background-color: #171717;
-      color: #e8eaed;
-    }
-    .google-view.theme-light {
-      background-color: #ffffff;
-      color: #202124;
-    }
-
-    .google-safe-top {
-      height: env(safe-area-inset-top, 44px);
+    .g-header {
       flex-shrink: 0;
+      padding: calc(env(safe-area-inset-top, 47px) + 6px) 11px 0 11px;
     }
-
-    /* Header Bar containing the Google Search Bar */
-    .google-header-bar {
-      padding: 6px 14px 10px 14px;
-      flex-shrink: 0;
-    }
-
-    .google-search-pill {
+    .g-searchrow {
       height: 52px;
-      border-radius: 26px;
       display: flex;
       align-items: center;
-      padding: 0 12px;
-      gap: 10px;
-      transition: background 0.2s ease, border-color 0.2s ease;
+      gap: 4px;
+      border-bottom: 1px solid var(--g-line);
+      padding-bottom: 0;
+      box-sizing: content-box;
     }
-    .google-view.theme-dark .google-search-pill {
-      background: #282a2d;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-    }
-    .google-view.theme-light .google-search-pill {
-      background: #f1f3f4;
-      border: 1px solid #dfe1e5;
-    }
-
-    /* Search Bar Icons */
-    .google-btn-icon {
-      background: none;
-      border: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      border-radius: 50%;
-      cursor: pointer;
-      color: #9aa0a6;
-      flex-shrink: 0;
+    .g-icon-btn {
+      width: 46px; height: 46px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: none; border: none; padding: 0;
+      color: var(--g-icon);
       touch-action: manipulation;
     }
-    .google-view.theme-light .google-btn-icon {
-      color: #5f6368;
+    .g-icon-btn svg { width: 28px; height: 28px; }
+    .g-icon-btn:active { opacity: .55; }
+    .g-input {
+      flex: 1; min-width: 0;
+      height: 46px;
+      background: transparent; border: none; outline: none;
+      font-size: 20px; font-family: inherit;
+      color: var(--g-icon);
+      caret-color: var(--g-caret);
+      -webkit-user-select: text; user-select: text;
+      border-radius: 0; -webkit-appearance: none; appearance: none;
+      padding: 0 4px;
     }
-    .google-btn-icon svg {
-      width: 22px;
-      height: 22px;
-    }
-    .google-btn-icon:active {
-      opacity: 0.6;
-    }
+    .g-input::placeholder { color: var(--g-sub); opacity: 1; }
+    .g-input.num-mode { color: transparent; -webkit-text-fill-color: transparent; }
 
-    /* Search input / display area */
-    .google-input-display {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      font-size: 17px;
-      overflow: hidden;
-      white-space: nowrap;
-      cursor: text;
-    }
-    .google-cursor {
-      width: 2px;
-      height: 22px;
-      background: #1a73e8;
-      margin-right: 4px;
-      animation: googleBlink 1s infinite;
-      display: inline-block;
-    }
-    @keyframes googleBlink {
-      0%, 49% { opacity: 1; }
-      50%, 100% { opacity: 0; }
-    }
-    .google-placeholder {
-      color: #9aa0a6;
-      font-weight: 400;
-    }
-    .google-view.theme-light .google-placeholder {
-      color: #70757a;
-    }
+    .g-scroll { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 9px 11px 20px 11px; }
+    .g-section-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 6px 8px 6px; }
+    .g-section-title { font-size: 20px; font-weight: 500; color: var(--g-icon); }
+    .g-section-head svg { width: 22px; height: 22px; color: var(--g-icon); }
 
-    /* Content Area: Trending Searches & Candidate Hints */
-    .google-content-scroll {
-      flex: 1;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-      padding: 12px 16px 20px 16px;
-    }
+    .g-row { display: flex; align-items: center; height: 54px; padding: 0 2px; touch-action: manipulation; }
+    .g-row:active { opacity: .55; }
+    .g-row.trend { border-bottom: 1px solid var(--g-line); }
+    .g-row .g-lead { width: 44px; display: flex; align-items: center; justify-content: flex-start; padding-left: 8px; color: var(--g-sub); flex-shrink: 0; }
+    .g-row .g-lead svg { width: 24px; height: 24px; }
+    .g-row .g-label { flex: 1; font-size: 18px; font-weight: 600; color: var(--g-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .g-row.trend .g-label { font-weight: 400; color: var(--g-icon); }
+    .g-row .g-trail { width: 40px; display: flex; justify-content: center; color: var(--g-sub); }
+    .g-row .g-trail svg { width: 22px; height: 22px; }
 
-    .google-trending-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-bottom: 12px;
-    }
-    .google-trending-title {
-      font-size: 18px;
-      font-weight: 500;
-      letter-spacing: -0.2px;
-    }
-    .google-trending-more {
-      color: #9aa0a6;
-      display: flex;
-      align-items: center;
-    }
-    .google-view.theme-light .google-trending-more {
-      color: #70757a;
-    }
-
-    /* Trending list rows */
-    .google-trending-row {
-      display: flex;
-      align-items: center;
-      padding: 13px 4px;
-      cursor: pointer;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      touch-action: manipulation;
-      transition: background 0.1s ease;
-    }
-    .google-view.theme-light .google-trending-row {
-      border-bottom: 1px solid #dadce0;
-    }
-    .google-trending-row:active {
-      opacity: 0.6;
-    }
-    .google-trending-arrow {
-      width: 20px;
-      height: 20px;
-      color: #9aa0a6;
-      margin-right: 18px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .google-view.theme-light .google-trending-arrow {
-      color: #5f6368;
-    }
-    .google-trending-arrow svg {
-      width: 18px;
-      height: 18px;
-    }
-    .google-trending-text {
-      font-size: 16px;
-      font-weight: 400;
-      letter-spacing: -0.1px;
-      flex: 1;
-    }
-
-    /* Hints Dropdown List (Christian Grace style) */
-    .google-hints-list {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-    .google-hint-row {
-      display: flex;
-      align-items: center;
-      padding: 12px 4px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      cursor: pointer;
-      touch-action: manipulation;
-    }
-    .google-view.theme-light .google-hint-row {
-      border-bottom: 1px solid #dadce0;
-    }
-    .google-hint-row:active {
-      opacity: 0.6;
-    }
-    .google-hint-icon {
-      width: 20px;
-      height: 20px;
-      color: #9aa0a6;
-      margin-right: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .google-hint-word {
-      font-size: 16px;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      color: #ffffff;
-    }
-    .google-view.theme-light .google-hint-word {
-      color: #202124;
-    }
-
-    /* Bottom Keyboard & Accessory Dock */
-    .google-keyboard-dock {
-      flex-shrink: 0;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: #1c1c1e;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .google-view.theme-light .google-keyboard-dock {
-      background: #d1d3d9;
-      border-top: 1px solid #c8c9cc;
-    }
-
-    /* Floating google.com pill */
-    .google-pill-wrapper {
-      position: absolute;
-      top: -38px;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      pointer-events: none;
-    }
-    .google-domain-pill {
-      pointer-events: auto;
-      background: #3c4043;
-      color: #ffffff;
-      padding: 5px 16px;
-      border-radius: 9999px;
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: -0.1px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
-      cursor: pointer;
-      touch-action: manipulation;
-      transition: transform 0.1s ease, opacity 0.1s ease;
-    }
-    .google-view.theme-light .google-domain-pill {
-      background: #e8eaed;
-      color: #3c4043;
-      border: 1px solid #dadce0;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    }
-    .google-domain-pill:active {
-      transform: scale(0.95);
-      opacity: 0.8;
-    }
-
-    /* iOS Keyboard Accessory Bar */
-    .google-accessory-bar {
-      width: 100%;
-      height: 42px;
-      background: #2c2c2e;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 14px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-    .google-view.theme-light .google-accessory-bar {
-      background: #e4e5e9;
-      border-bottom: 1px solid #d2d4dc;
-    }
-    .google-accessory-nav {
-      display: flex;
-      gap: 14px;
-    }
-    .acc-chevron {
-      background: none;
-      border: none;
-      color: #8e8e93;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-    .acc-chevron svg {
-      width: 20px;
-      height: 20px;
-    }
-    .google-accessory-done {
-      color: #ffffff;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-    }
-    .google-view.theme-light .google-accessory-done {
-      color: #007aff;
-    }
-    .google-accessory-done svg {
-      width: 20px;
-      height: 20px;
-    }
-
-    /* iOS QWERTY Keyboard */
-    .ios-keyboard-qwerty {
-      width: 100%;
-      padding: 6px 3px calc(env(safe-area-inset-bottom, 20px) + 2px) 3px;
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-    }
-    .kb-row {
-      display: flex;
-      justify-content: center;
-      gap: 5px;
-      width: 100%;
-    }
-    .kb-key {
-      background: #444446;
-      border: none;
-      border-radius: 5px;
-      color: #ffffff;
-      font-size: 21px;
-      font-weight: 400;
-      height: 42px;
-      flex: 1;
-      max-width: 34px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
-      cursor: pointer;
-      touch-action: manipulation;
-      font-family: inherit;
-    }
-    .google-view.theme-light .kb-key {
-      background: #ffffff;
-      color: #000000;
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-    }
-    .kb-key:active {
-      opacity: 0.65;
-    }
-    .kb-special {
-      background: #2c2c2e;
-      max-width: 42px;
-    }
-    .google-view.theme-light .kb-special {
-      background: #b4b7c0;
-    }
-    .kb-special svg {
-      width: 18px;
-      height: 18px;
-    }
-    .kb-space {
-      flex: 4.8;
-      max-width: 180px;
-      font-size: 15px;
-      color: rgba(255, 255, 255, 0.7);
-    }
-    .google-view.theme-light .kb-space {
-      color: rgba(0, 0, 0, 0.7);
-    }
-    .kb-blue-search {
-      background: #007aff;
-      color: #ffffff;
-      flex: 1.8;
-      max-width: 68px;
-    }
-    .kb-blue-search svg {
-      width: 18px;
-      height: 18px;
-    }
-    .kb-bottom-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 2px 18px 4px 18px;
-      color: #8e8e93;
-    }
-    .kb-bottom-row svg {
-      width: 22px;
-      height: 22px;
-    }
-
-    /* iOS 4-Digit Numeric Keypad */
-    .ios-keypad-num {
-      width: 100%;
-      padding: 8px 12px calc(env(safe-area-inset-bottom, 20px) + 8px) 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .num-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .num-key {
-      background: #444446;
-      border: none;
-      border-radius: 6px;
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: 400;
-      height: 48px;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
-      cursor: pointer;
-      touch-action: manipulation;
-    }
-    .google-view.theme-light .num-key {
-      background: #ffffff;
-      color: #000000;
-      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-    }
-    .num-key:active {
-      opacity: 0.65;
-    }
-    .num-special {
-      background: #2c2c2e;
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .google-view.theme-light .num-special {
-      background: #b4b7c0;
-    }
-    .num-special svg {
-      width: 22px;
-      height: 22px;
-    }
+    /* Invisible tap zone laid over the native "google.com" pill above the keyboard */
+    .g-pill-zone { position: fixed; left: 50%; width: 230px; margin-left: -115px; height: 90px; z-index: 95; background: transparent; display: none; -webkit-tap-highlight-color: transparent; }
+    @keyframes numShake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }
+    .g-input.shake { animation: numShake .3s; }
+  
   </style>
 </head>
 <body>
@@ -1266,149 +896,38 @@
   </div>
 
   <!-- ========================================================
-       LAYER 3: SPECTATOR APP CLIP - AUTHENTIC GOOGLE SEARCH VIEW
+       LAYER 3: SPECTATOR APP CLIP - GOOGLE SEARCH (NATIVE iOS KEYBOARD)
        ======================================================== -->
   <div class="google-view theme-dark" id="googleView" style="display:none;">
-    <!-- Top Safe Area Spacer -->
-    <div class="google-safe-top"></div>
-
-    <!-- Google Search Box Header -->
-    <div class="google-header-bar">
-      <div class="google-search-pill" id="googleSearchPill">
-        <button class="google-btn-icon" id="googleBtnPlus" aria-label="Add hint" title="Show Hints">
-          <svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="currentColor"/></svg>
+    <div class="g-header">
+      <div class="g-searchrow">
+        <button class="g-icon-btn" id="googleBtnPlus" aria-label="Add">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 4.5v15M4.5 12h15"/></svg>
         </button>
-
-        <div class="google-input-display" id="googleInputDisplay">
-          <span class="google-cursor" id="googleCursor"></span>
-          <span class="google-placeholder" id="googlePlaceholder">Ask Google</span>
-        </div>
-
-        <button class="google-btn-icon" id="googleBtnMic" aria-label="Voice Search" title="Toggle Theme">
-          <svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="currentColor"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="currentColor"/></svg>
+        <input class="g-input" id="googleInput" type="text" placeholder="Ask Google" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="search" inputmode="text">
+        <button class="g-icon-btn" id="googleBtnMic" aria-label="Voice search">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 14.5a3.5 3.5 0 0 0 3.5-3.5V5.5a3.5 3.5 0 0 0-7 0V11a3.5 3.5 0 0 0 3.5 3.5z"/><path d="M18 11a6 6 0 0 1-12 0H4.5a7.5 7.5 0 0 0 6.75 7.46V21h1.5v-2.54A7.5 7.5 0 0 0 19.5 11z"/></svg>
         </button>
-
-        <button class="google-btn-icon" id="googleBtnLens" aria-label="Google Lens" title="iControl">
-          <svg viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="currentColor"/><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z" fill="currentColor"/></svg>
+        <button class="g-icon-btn" id="googleBtnLens" aria-label="Search with your camera">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8V6.5a3 3 0 0 1 3-3H8M16 3.5h1.5a3 3 0 0 1 3 3V8M20.5 16v1.5a3 3 0 0 1-3 3H16M8 20.5H6.5a3 3 0 0 1-3-3V16"/><circle cx="12" cy="12" r="3.6"/></svg>
         </button>
       </div>
     </div>
 
-    <!-- Main Scrollable Content: Trending Searches or Candidate Hints -->
-    <div class="google-content-scroll" id="googleContentScroll">
-      <div class="google-trending-header">
-        <div class="google-trending-title" id="googleSectionTitle">Trending searches</div>
-        <div class="google-trending-more" id="googleSectionMore">
-          <svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="5" r="2" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="currentColor"/><circle cx="12" cy="19" r="2" fill="currentColor"/></svg>
-        </div>
+    <div class="g-scroll" id="googleScroll">
+      <div class="g-section-head" id="googleSectionHead">
+        <div class="g-section-title" id="googleSectionTitle">Trending searches</div>
+        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/></svg>
       </div>
-
-      <!-- Trending list items -->
-      <div class="google-trending-list" id="googleTrendingList">
-        <!-- injected dynamically -->
-      </div>
-
-      <!-- Candidate hints list (hidden until '+' button or letter selection) -->
-      <div class="google-hints-list" id="googleHintsList" style="display:none;">
-        <!-- candidate words injected dynamically -->
-      </div>
+      <div id="googleTrendingList"></div>
+      <div id="googleHintsList" style="display:none;"></div>
     </div>
 
-    <!-- Floating Accessory Bar & google.com Pill -->
-    <div class="google-keyboard-dock" id="googleKeyboardDock">
-      <!-- Floating google.com pill right above accessory bar -->
-      <div class="google-pill-wrapper">
-        <div class="google-domain-pill" id="googleDomainPill">
-          <span>google.com</span>
-        </div>
-      </div>
-
-      <!-- Keyboard Accessory Bar -->
-      <div class="google-accessory-bar" id="googleAccessoryBar">
-        <div class="google-accessory-nav">
-          <button class="acc-chevron acc-up"><svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" fill="currentColor"/></svg></button>
-          <button class="acc-chevron acc-down"><svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" fill="currentColor"/></svg></button>
-        </div>
-        <div class="google-accessory-done" id="googleAccessoryDone">
-          <svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/></svg>
-        </div>
-      </div>
-
-      <!-- iOS QWERTY Keyboard -->
-      <div class="ios-keyboard-qwerty" id="iosQwertyKeyboard">
-        <div class="kb-row">
-          <button class="kb-key" data-key="q">q</button>
-          <button class="kb-key" data-key="w">w</button>
-          <button class="kb-key" data-key="e">e</button>
-          <button class="kb-key" data-key="r">r</button>
-          <button class="kb-key" data-key="t">t</button>
-          <button class="kb-key" data-key="y">y</button>
-          <button class="kb-key" data-key="u">u</button>
-          <button class="kb-key" data-key="i">i</button>
-          <button class="kb-key" data-key="o">o</button>
-          <button class="kb-key" data-key="p">p</button>
-        </div>
-        <div class="kb-row kb-row-2">
-          <button class="kb-key" data-key="a">a</button>
-          <button class="kb-key" data-key="s">s</button>
-          <button class="kb-key" data-key="d">d</button>
-          <button class="kb-key" data-key="f">f</button>
-          <button class="kb-key" data-key="g">g</button>
-          <button class="kb-key" data-key="h">h</button>
-          <button class="kb-key" data-key="j">j</button>
-          <button class="kb-key" data-key="k">k</button>
-          <button class="kb-key" data-key="l">l</button>
-        </div>
-        <div class="kb-row kb-row-3">
-          <button class="kb-key kb-special kb-shift"><svg viewBox="0 0 24 24"><path d="M12 4l-6.5 7.5h4v8.5h5V11.5h4z" fill="currentColor"/></svg></button>
-          <button class="kb-key" data-key="z">z</button>
-          <button class="kb-key" data-key="x">x</button>
-          <button class="kb-key" data-key="c">c</button>
-          <button class="kb-key" data-key="v">v</button>
-          <button class="kb-key" data-key="b">b</button>
-          <button class="kb-key" data-key="n">n</button>
-          <button class="kb-key" data-key="m">m</button>
-          <button class="kb-key kb-special kb-del"><svg viewBox="0 0 24 24"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z" fill="currentColor"/></svg></button>
-        </div>
-        <div class="kb-row kb-row-4">
-          <button class="kb-key kb-special kb-123">123</button>
-          <button class="kb-key kb-special kb-emoji">😊</button>
-          <button class="kb-key kb-space" data-key=" ">space</button>
-          <button class="kb-key kb-blue-search" id="kbSearchBtn"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#fff"/></svg></button>
-        </div>
-        <div class="kb-bottom-row">
-          <div class="kb-globe"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="4.5" ry="10" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <div class="kb-mic"><svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="currentColor"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="currentColor"/></svg></div>
-        </div>
-      </div>
-
-      <!-- iOS 4-Digit Numeric Keypad (Hidden until pill is tapped) -->
-      <div class="ios-keypad-num" id="iosNumKeypad" style="display:none;">
-        <div class="num-row">
-          <button class="num-key" data-digit="1">1</button>
-          <button class="num-key" data-digit="2">2</button>
-          <button class="num-key" data-digit="3">3</button>
-        </div>
-        <div class="num-row">
-          <button class="num-key" data-digit="4">4</button>
-          <button class="num-key" data-digit="5">5</button>
-          <button class="num-key" data-digit="6">6</button>
-        </div>
-        <div class="num-row">
-          <button class="num-key" data-digit="7">7</button>
-          <button class="num-key" data-digit="8">8</button>
-          <button class="num-key" data-digit="9">9</button>
-        </div>
-        <div class="num-row">
-          <button class="num-key num-special" id="numCancelBtn">Cancel</button>
-          <button class="num-key" data-digit="0">0</button>
-          <button class="num-key num-special" id="numBackBtn"><svg viewBox="0 0 24 24"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z" fill="currentColor"/></svg></button>
-        </div>
-      </div>
-    </div>
+    <div class="g-pill-zone" id="googlePillZone"></div>
   </div>
 
-  <!-- ========================================================
+  
+<!-- ========================================================
        LAYER 2: AUTHENTIC GENUINE iOS PASSCODE SCREEN
        ======================================================== -->
   <div class="lockscreen-wrapper" id="lockscreenWrapper">
@@ -2685,7 +2204,7 @@
     }
 
     /* ========================================================
-       SPECTATOR APP CLIP: PIXEL-PERFECT GOOGLE SEARCH SYSTEM
+       SPECTATOR APP CLIP: GOOGLE SEARCH (NATIVE iOS KEYBOARD)
        ======================================================== */
     let landingMode = localStorage.getItem("enigma_landing_mode") || "google";
     let googleTheme = localStorage.getItem("enigma_google_theme") ||
@@ -2694,436 +2213,269 @@
     let googleSecretDigits = "";
     let googleCurrentMatches = [];
     let googleBranchingPos = null;
-    let googleBranchingLetters = [];
     let googleHintsVisible = false;
+    let googleNumMode = false;
 
-    const YEAR_CUES = {
-      1: "top songs 2021",
-      2: "best albums 2022",
-      3: "top music 2023",
-      4: "top hits 2024"
-    };
+    const YEAR_CUES = { 1: "top songs 2021", 2: "best albums 2022", 3: "top music 2023", 4: "top hits 2024" };
 
     const TRENDING_LEXICON_QUERIES = {
-      A: "apple watch ultra 2",
-      B: "boston celtics score",
-      C: "chicago bulls schedule",
-      D: "dallas cowboys news",
-      E: "eagles game today",
-      F: "formula 1 standings",
-      G: "golden state warriors",
-      H: "houston rockets roster",
-      I: "indiana pacers score",
-      J: "jordan release dates",
-      K: "kansas city chiefs score",
-      L: "lakers vs warriors",
-      M: "miami heat schedule",
-      N: "nba scores today",
-      O: "okc thunder score",
-      P: "packers news live",
-      Q: "queens park rangers",
-      R: "real madrid highlights",
-      S: "spurs vs suns",
-      T: "timberwolves roster",
-      U: "ufc 300 fight card",
-      V: "vegas golden knights",
-      W: "warriors game score",
-      X: "xbox series x updates",
-      Y: "yankees trade rumors",
-      Z: "zodiac compatibility 2024"
+      A: "apple watch ultra 2", B: "boston celtics score", C: "chicago bulls schedule", D: "dallas cowboys news",
+      E: "eagles game today", F: "formula 1 standings", G: "golden state warriors", H: "houston rockets roster",
+      I: "indiana pacers score", J: "jordan release dates", K: "kansas city chiefs score", L: "lakers vs warriors",
+      M: "miami heat schedule", N: "nba scores today", O: "okc thunder score", P: "packers news live",
+      Q: "queens park rangers", R: "real madrid highlights", S: "spurs vs suns", T: "timberwolves roster",
+      U: "ufc 300 fight card", V: "vegas golden knights", W: "warriors game score", X: "xbox series x updates",
+      Y: "yankees trade rumors", Z: "zodiac compatibility 2024"
     };
 
     const DEFAULT_TRENDING_QUERIES = [
-      "lakers vs kings",
-      "mavericks vs spurs",
-      "76ers vs pistons",
-      "bulls vs knicks",
-      "outback steakhouse location closures list",
-      "edp445",
-      "timberwolves vs rockets"
+      "lakers vs kings", "mavericks vs spurs", "76ers vs pistons", "bulls vs knicks",
+      "outback steakhouse location closures list", "edp445", "timberwolves vs rockets"
     ];
+
+    const G_ICON_TREND = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>';
+    const G_ICON_SEARCH = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>';
+
+    function gInput() { return document.getElementById("googleInput"); }
 
     function applyLandingMode(mode) {
       landingMode = mode;
       localStorage.setItem("enigma_landing_mode", mode);
-
-      const googleView = document.getElementById("googleView");
-      const lockscreenWrapper = document.getElementById("lockscreenWrapper");
-      const modeBtnGoogle = document.getElementById("modeBtnGoogle");
-      const modeBtnLockscreen = document.getElementById("modeBtnLockscreen");
-
+      const gv = document.getElementById("googleView");
+      const lw = document.getElementById("lockscreenWrapper");
+      const bg = document.getElementById("modeBtnGoogle");
+      const bl = document.getElementById("modeBtnLockscreen");
       if (mode === "google") {
-        if (googleView) googleView.style.display = "flex";
-        if (lockscreenWrapper) lockscreenWrapper.style.display = "none";
-        if (modeBtnGoogle) modeBtnGoogle.classList.add("active");
-        if (modeBtnLockscreen) modeBtnLockscreen.classList.remove("active");
+        if (gv) gv.style.display = "flex";
+        if (lw) lw.style.display = "none";
         document.body.classList.remove("in-notes");
+        if (bg) bg.classList.add("active");
+        if (bl) bl.classList.remove("active");
       } else {
-        if (googleView) googleView.style.display = "none";
-        if (lockscreenWrapper) lockscreenWrapper.style.display = "block";
-        if (modeBtnGoogle) modeBtnGoogle.classList.remove("active");
-        if (modeBtnLockscreen) modeBtnLockscreen.classList.add("active");
+        if (gv) gv.style.display = "none";
+        if (lw) lw.style.display = "block";
+        const i = gInput(); if (i) i.blur();
+        if (bg) bg.classList.remove("active");
+        if (bl) bl.classList.add("active");
       }
+      positionPillZone();
     }
 
-    function setLandingMode(mode) {
-      applyLandingMode(mode);
-      closeSettings();
-    }
+    function setLandingMode(mode) { applyLandingMode(mode); closeSettings(); }
 
     function applyGoogleTheme(theme) {
       googleTheme = theme;
       localStorage.setItem("enigma_google_theme", theme);
-      const googleView = document.getElementById("googleView");
-      if (googleView) {
-        googleView.classList.toggle("theme-dark", theme === "dark");
-        googleView.classList.toggle("theme-light", theme === "light");
+      const gv = document.getElementById("googleView");
+      if (gv) {
+        gv.classList.toggle("theme-dark", theme === "dark");
+        gv.classList.toggle("theme-light", theme === "light");
       }
     }
 
-    function toggleGoogleTheme() {
-      const nextTheme = (googleTheme === "dark") ? "light" : "dark";
-      applyGoogleTheme(nextTheme);
-      if (window.Aura && window.Aura.haptic) {
-        try { Aura.haptic('selection'); } catch(_) {}
-      } else if (navigator.vibrate) {
-        navigator.vibrate(25);
-      }
+    function gHaptic(kind) {
+      if (window.Aura && window.Aura.haptic) { try { Aura.haptic(kind || 'selection'); } catch (_) {} }
+      else if (navigator.vibrate) navigator.vibrate(25);
     }
 
-    function renderGoogleTrending(queries, yearQuery) {
-      const listEl = document.getElementById("googleTrendingList");
-      if (!listEl) return;
-      listEl.innerHTML = "";
+    function toggleGoogleTheme() { applyGoogleTheme(googleTheme === "dark" ? "light" : "dark"); gHaptic(); }
 
-      // If a year query is present (indicating letter position), render it as row 1!
-      if (yearQuery) {
-        const yearRow = createTrendingRow(yearQuery, true);
-        listEl.appendChild(yearRow);
-      }
-
-      queries.forEach(q => {
-        const row = createTrendingRow(q, false);
-        listEl.appendChild(row);
-      });
+    function openInRealSafari(url) {
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+                    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if (isIOS) window.location.href = "x-safari-" + url;
+      else window.open(url, "_blank");
     }
 
-    function createTrendingRow(text, isYearRow) {
+    function makeRow(text, kind, onTap) {
       const row = document.createElement("div");
-      row.className = "google-trending-row";
-      row.innerHTML = `
-        <div class="google-trending-arrow">
-          <svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" fill="currentColor"/></svg>
-        </div>
-        <div class="google-trending-text">${text}</div>
-      `;
-
-      row.onclick = () => {
-        handleTrendingClick(text, isYearRow);
-      };
+      row.className = "g-row" + (kind === "trend" ? " trend" : "");
+      const lead = kind === "trend" ? G_ICON_TREND : G_ICON_SEARCH;
+      row.innerHTML = '<div class="g-lead">' + lead + '</div><div class="g-label"></div>';
+      row.querySelector(".g-label").textContent = text;
+      row.addEventListener("click", (e) => { e.stopPropagation(); onTap(); });
       return row;
     }
 
-    function handleTrendingClick(text, isYearRow) {
-      if (isYearRow) {
-        // Tapping the year search shows candidate hints
-        toggleGoogleHints(true);
-        return;
-      }
+    function renderGoogleTrending(queries, yearQuery) {
+      const list = document.getElementById("googleTrendingList");
+      if (!list) return;
+      list.innerHTML = "";
+      if (yearQuery) list.appendChild(makeRow(yearQuery, "trend", () => toggleGoogleHints(true)));
+      queries.forEach(q => list.appendChild(makeRow(q, "trend", () => handleTrendingClick(q))));
+    }
 
-      // Check if we have active matches from a 4-digit code
-      if (googleCurrentMatches && googleCurrentMatches.length > 0 && googleBranchingPos) {
-        const firstLetter = text.trim()[0].toUpperCase();
-        const matched = googleCurrentMatches.filter(w => getLetterAtPos(w, googleBranchingPos) === firstLetter);
-        if (matched.length === 1) {
-          launchSafariForWord(matched[0]);
-          return;
-        } else if (matched.length > 1) {
-          googleCurrentMatches = matched;
-          renderGoogleHints(matched);
-          toggleGoogleHints(true);
-          return;
-        }
+    function handleTrendingClick(text) {
+      if (googleCurrentMatches.length > 0 && googleBranchingPos) {
+        const letter = text.trim()[0].toUpperCase();
+        const matched = googleCurrentMatches.filter(w => getLetterAtPos(w, googleBranchingPos) === letter);
+        if (matched.length === 1) { launchSafariForWord(matched[0]); return; }
+        if (matched.length > 1) { renderGoogleHints(matched); toggleGoogleHints(true); return; }
       }
-
-      // Default: If normal query, open in real Safari
       launchSafariForWord(text);
     }
 
     function renderGoogleHints(words) {
-      const hintsEl = document.getElementById("googleHintsList");
-      if (!hintsEl) return;
-      hintsEl.innerHTML = "";
-
-      words.forEach(w => {
-        const row = document.createElement("div");
-        row.className = "google-hint-row";
-        row.innerHTML = `
-          <div class="google-hint-icon">
-            <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 14z" fill="currentColor"/></svg>
-          </div>
-          <div class="google-hint-word">${w.toUpperCase()}</div>
-        `;
-        row.onclick = () => {
-          launchSafariForWord(w);
-        };
-        hintsEl.appendChild(row);
-      });
+      const el = document.getElementById("googleHintsList");
+      if (!el) return;
+      el.innerHTML = "";
+      words.forEach(w => el.appendChild(makeRow(w.toLowerCase(), "hint", () => launchSafariForWord(w))));
     }
 
     function toggleGoogleHints(forceShow) {
-      googleHintsVisible = (typeof forceShow === 'boolean') ? forceShow : !googleHintsVisible;
-      const trendingEl = document.getElementById("googleTrendingList");
-      const hintsEl = document.getElementById("googleHintsList");
-      const titleEl = document.getElementById("googleSectionTitle");
-
-      if (googleHintsVisible) {
-        if (trendingEl) trendingEl.style.display = "none";
-        if (hintsEl) hintsEl.style.display = "flex";
-        if (titleEl) titleEl.textContent = "Search suggestions";
-      } else {
-        if (trendingEl) trendingEl.style.display = "block";
-        if (hintsEl) hintsEl.style.display = "none";
-        if (titleEl) titleEl.textContent = "Trending searches";
-      }
-
-      if (window.Aura && window.Aura.haptic) {
-        try { Aura.haptic('selection'); } catch(_) {}
-      }
+      googleHintsVisible = (typeof forceShow === "boolean") ? forceShow : !googleHintsVisible;
+      const t = document.getElementById("googleTrendingList");
+      const h = document.getElementById("googleHintsList");
+      const head = document.getElementById("googleSectionHead");
+      if (googleHintsVisible && googleCurrentMatches.length === 0) { googleHintsVisible = false; }
+      if (t) t.style.display = googleHintsVisible ? "none" : "block";
+      if (h) h.style.display = googleHintsVisible ? "block" : "none";
+      if (head) head.style.display = googleHintsVisible ? "none" : "flex";
+      gHaptic();
     }
 
-    function toggleKeypadMode(forceNum) {
-      const qwerty = document.getElementById("iosQwertyKeyboard");
-      const numpad = document.getElementById("iosNumKeypad");
-      if (!qwerty || !numpad) return;
-
-      const isCurrentlyNum = (numpad.style.display !== "none");
-      const showNum = (typeof forceNum === 'boolean') ? forceNum : !isCurrentlyNum;
-
-      if (showNum) {
-        // Switch to Numeric Keypad
-        qwerty.style.display = "none";
-        numpad.style.display = "flex";
-        googleSecretDigits = "";
-      } else {
-        // Switch to QWERTY
-        numpad.style.display = "none";
-        qwerty.style.display = "flex";
-      }
-
-      if (window.Aura && window.Aura.haptic) {
-        try { Aura.haptic('selection'); } catch(_) {}
-      }
+    function setGoogleNumMode(on) {
+      googleNumMode = on;
+      googleSecretDigits = "";
+      const i = gInput();
+      if (!i) return;
+      i.setAttribute("inputmode", on ? "numeric" : "text");
+      i.classList.toggle("num-mode", on);
+      i.value = "";
+      i.blur();
+      i.focus();
+      gHaptic();
     }
 
-    function handleGoogleNumDigit(digit) {
-      googleSecretDigits += digit;
-
-      if (window.Aura && window.Aura.haptic) {
-        try { Aura.haptic('selection'); } catch(_) {}
-      } else if (navigator.vibrate) {
-        navigator.vibrate(15);
+    function handleGoogleNumDigit(d) {
+      googleSecretDigits += d;
+      if (googleSecretDigits.length < 4) return;
+      const code = googleSecretDigits;
+      googleSecretDigits = "";
+      if (code === "0000") {
+        setGoogleNumMode(false);
+        const i = gInput(); if (i) i.blur();
+        openSettings();
+        return;
       }
-
-      if (googleSecretDigits.length === 4) {
-        const code = googleSecretDigits;
-        googleSecretDigits = "";
-
-        if (code === "0000") {
-          // Open Settings modal!
-          toggleKeypadMode(false);
-          openSettings();
-          return;
-        }
-
-        // Process 4-digit word passcode
-        process4DigitCode(code);
-      }
+      process4DigitCode(code);
     }
 
     function process4DigitCode(code4) {
       const db = window.ENIGMA_DATA ? window.ENIGMA_DATA.database : {};
       const code6 = code4[0] + code4[1] + code4[2] + "00" + code4[3];
-      const matches = db[`${activeCategory}:${code6}`] || db[`all:${code6}`] || [];
-
-      if (matches && matches.length > 0) {
-        googleCurrentMatches = [...matches];
-        renderGoogleHints(matches);
-
-        if (matches.length === 1) {
-          // Exactly 1 word: put it in the trending list
-          const singleWord = matches[0];
-          renderGoogleTrending([singleWord.toLowerCase(), ...DEFAULT_TRENDING_QUERIES]);
-        } else {
-          // Multiple words: calculate best branching position
-          const pos = findBestOuijaPosition(matches);
-          googleBranchingPos = pos;
-          const yearQuery = YEAR_CUES[pos] || "top music 2023";
-
-          const letters = Array.from(new Set(matches.map(w => getLetterAtPos(w, pos)).filter(Boolean))).sort();
-          googleBranchingLetters = letters;
-
-          const trendingList = letters.map(l => TRENDING_LEXICON_QUERIES[l] || (l.toLowerCase() + " news today"));
-          // Add 2-3 filler items
-          DEFAULT_TRENDING_QUERIES.slice(0, 3).forEach(q => {
-            if (!trendingList.includes(q)) trendingList.push(q);
-          });
-
-          renderGoogleTrending(trendingList, yearQuery);
-        }
-
-        // Switch back to QWERTY keyboard view
-        toggleKeypadMode(false);
-
-        // Performer haptic confirmation buzz
-        if (window.Aura && window.Aura.haptic) {
-          try { Aura.haptic('notification', { style: 'success' }); } catch(_) {}
-          try { Aura.haptic('impact', { style: 'heavy' }); } catch(_) {}
-        } else if (navigator.vibrate) {
-          navigator.vibrate([100, 60, 140]);
-        }
-      } else {
-        // No match: light shake on keypad
-        const numPad = document.getElementById("iosNumKeypad");
-        if (numPad) {
-          numPad.classList.add("shake");
-          setTimeout(() => numPad.classList.remove("shake"), 380);
-        }
+      const matches = db[activeCategory + ":" + code6] || db["all:" + code6] || [];
+      if (matches.length === 0) {
+        const i = gInput();
+        if (i) { i.classList.add("shake"); setTimeout(() => i.classList.remove("shake"), 320); }
         if (navigator.vibrate) navigator.vibrate([30, 40, 30]);
+        return;
       }
+      googleCurrentMatches = [...matches];
+      googleBranchingPos = null;
+      renderGoogleHints(matches);
+      if (matches.length === 1) {
+        renderGoogleTrending([matches[0].toLowerCase(), ...DEFAULT_TRENDING_QUERIES]);
+      } else {
+        const pos = findBestOuijaPosition(matches);
+        googleBranchingPos = pos;
+        const letters = Array.from(new Set(matches.map(w => getLetterAtPos(w, pos)).filter(Boolean))).sort();
+        const list = letters.map(l => TRENDING_LEXICON_QUERIES[l] || (l.toLowerCase() + " news today"));
+        DEFAULT_TRENDING_QUERIES.slice(0, 3).forEach(q => { if (!list.includes(q)) list.push(q); });
+        renderGoogleTrending(list, YEAR_CUES[pos]);
+      }
+      toggleGoogleHints(false);
+      setGoogleNumMode(false);
+      if (window.Aura && window.Aura.haptic) {
+        try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
+        try { Aura.haptic('impact', { style: 'heavy' }); } catch (_) {}
+      } else if (navigator.vibrate) navigator.vibrate([100, 60, 140]);
     }
 
     function cycleActiveCategory() {
-      const cats = ["everyday", "supermarket", "handheld"];
-      const currentIdx = cats.indexOf(activeCategory);
-      activeCategory = cats[(currentIdx + 1) % cats.length];
-      localStorage.setItem("enigma_last_category", activeCategory);
+      const cats = ["everyday", "handheld", "large_objects", "animals", "food"];
+      const idx = cats.indexOf(activeCategory);
+      activeCategory = cats[(idx + 1) % cats.length];
+      localStorage.setItem("enigma_category", activeCategory);
+      gHaptic();
+    }
 
-      // Confirm category switch with haptic buzz
-      if (window.Aura && window.Aura.haptic) {
-        try { Aura.haptic('selection'); } catch(_) {}
-      } else if (navigator.vibrate) {
-        navigator.vibrate(30);
-      }
+    /* Invisible tap zone over the native google.com pill */
+    function positionPillZone() {
+      const z = document.getElementById("googlePillZone");
+      if (!z) return;
+      const focused = document.activeElement === gInput() && landingMode === "google";
+      z.style.display = focused ? "block" : "none";
+      if (!focused) return;
+      const vv = window.visualViewport;
+      const bottom = vv ? (vv.offsetTop + vv.height) : window.innerHeight;
+      z.style.top = Math.max(0, bottom - 100) + "px";
     }
 
     function setupGoogleEventListeners() {
-      // 1. Mic button -> Toggle Light/Dark mode
-      const btnMic = document.getElementById("googleBtnMic");
-      if (btnMic) {
-        btnMic.onclick = (e) => {
-          e.stopPropagation();
-          toggleGoogleTheme();
-        };
-      }
+      const input = gInput();
+      const zone = document.getElementById("googlePillZone");
 
-      // 2. Camera / Lens button -> Redirect in new tab to https://icontrol-magic.onrender.com
-      const btnLens = document.getElementById("googleBtnLens");
-      if (btnLens) {
-        btnLens.onclick = (e) => {
-          e.stopPropagation();
-          window.open("https://icontrol-magic.onrender.com", "_blank");
-        };
-      }
+      document.getElementById("googleBtnMic").addEventListener("click", (e) => { e.stopPropagation(); toggleGoogleTheme(); gInput().focus(); });
+      document.getElementById("googleBtnLens").addEventListener("click", (e) => {
+        e.stopPropagation();
+        openInRealSafari("https://icontrol-magic.onrender.com");
+      });
+      document.getElementById("googleBtnPlus").addEventListener("click", (e) => { e.stopPropagation(); toggleGoogleHints(); gInput().focus(); });
 
-      // 3. Plus button -> Toggle all candidate hints
-      const btnPlus = document.getElementById("googleBtnPlus");
-      if (btnPlus) {
-        btnPlus.onclick = (e) => {
-          e.stopPropagation();
-          toggleGoogleHints();
-        };
-      }
+      // Tapping anywhere on the page keeps the native keyboard up
+      document.getElementById("googleView").addEventListener("click", () => { if (document.activeElement !== input) input.focus(); });
 
-      // 4. Double click on input text field -> Also toggles Light/Dark mode
-      const inputDisplay = document.getElementById("googleInputDisplay");
-      if (inputDisplay) {
-        let inputClicks = 0;
-        let inputTimer = null;
-        inputDisplay.addEventListener("click", () => {
-          inputClicks++;
-          if (inputClicks === 1) {
-            inputTimer = setTimeout(() => { inputClicks = 0; }, 260);
-          } else if (inputClicks === 2) {
-            clearTimeout(inputTimer);
-            inputClicks = 0;
-            toggleGoogleTheme();
-          }
-        });
-      }
-
-      // 5. google.com Pill: Single click = Keypad toggle, Double click = Cycle category
-      const pill = document.getElementById("googleDomainPill");
-      if (pill) {
-        let pillClicks = 0;
-        let pillTimer = null;
-        pill.addEventListener("click", (e) => {
-          e.stopPropagation();
-          pillClicks++;
-          if (pillClicks === 1) {
-            pillTimer = setTimeout(() => {
-              pillClicks = 0;
-              toggleKeypadMode();
-            }, 240);
-          } else if (pillClicks === 2) {
-            clearTimeout(pillTimer);
-            pillClicks = 0;
-            cycleActiveCategory();
-          }
-        });
-      }
-
-      // 6. Numeric Keypad Digits
-      document.querySelectorAll(".num-key[data-digit]").forEach(btn => {
-        btn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          const digit = btn.getAttribute("data-digit");
-          handleGoogleNumDigit(digit);
-        });
+      // Double-tap on the text field toggles theme
+      let lastTap = 0;
+      input.addEventListener("touchend", () => {
+        const now = Date.now();
+        if (now - lastTap < 300) { toggleGoogleTheme(); lastTap = 0; } else lastTap = now;
       });
 
-      // 7. Numeric Keypad Cancel & Back
-      const numCancel = document.getElementById("numCancelBtn");
-      if (numCancel) {
-        numCancel.onclick = (e) => {
-          e.stopPropagation();
-          toggleKeypadMode(false);
-        };
-      }
-
-      const numBack = document.getElementById("numBackBtn");
-      if (numBack) {
-        numBack.onclick = (e) => {
-          e.stopPropagation();
-          googleSecretDigits = googleSecretDigits.slice(0, -1);
-          if (window.Aura && window.Aura.haptic) {
-            try { Aura.haptic('selection'); } catch(_) {}
-          }
-        };
-      }
-
-      // 8. QWERTY Keyboard Keys & Spacebar
-      document.querySelectorAll(".kb-key").forEach(key => {
-        key.addEventListener("click", (e) => {
-          e.stopPropagation();
-          const char = key.getAttribute("data-key");
-          if (char === " ") {
-            // Spacebar toggles candidate hints!
-            toggleGoogleHints();
-          }
-          if (window.Aura && window.Aura.haptic) {
-            try { Aura.haptic('selection'); } catch(_) {}
-          }
-        });
+      input.addEventListener("input", () => {
+        if (googleNumMode) {
+          const digits = input.value.replace(/\D/g, "");
+          input.value = "";
+          for (const d of digits) handleGoogleNumDigit(d);
+          return;
+        }
+        // Space typed on an empty field reveals the hints
+        if (input.value.length > 0 && input.value.trim() === "") {
+          input.value = "";
+          toggleGoogleHints();
+        }
       });
 
-      const kbSearch = document.getElementById("kbSearchBtn");
-      if (kbSearch) {
-        kbSearch.onclick = (e) => {
-          e.stopPropagation();
-          toggleGoogleHints();
-        };
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && !googleNumMode) {
+          e.preventDefault();
+          const q = input.value.trim();
+          if (q) launchSafariForWord(q);
+        }
+      });
+
+      input.addEventListener("focus", positionPillZone);
+      input.addEventListener("blur", () => setTimeout(positionPillZone, 50));
+      if (window.visualViewport) {
+        window.visualViewport.addEventListener("resize", positionPillZone);
+        window.visualViewport.addEventListener("scroll", positionPillZone);
       }
+
+      // google.com pill zone: single tap = native numeric keypad, double tap = cycle category
+      let taps = 0, tapTimer = null, lastTouchAt = 0;
+      function pillTap() {
+        taps++;
+        if (taps === 1) {
+          tapTimer = setTimeout(() => { taps = 0; setGoogleNumMode(!googleNumMode); }, 250);
+        } else {
+          clearTimeout(tapTimer); taps = 0; cycleActiveCategory();
+        }
+      }
+      zone.addEventListener("touchstart", (e) => { e.preventDefault(); }, { passive: false });
+      zone.addEventListener("touchend", (e) => { e.preventDefault(); lastTouchAt = Date.now(); pillTap(); }, { passive: false });
+      zone.addEventListener("mousedown", (e) => e.preventDefault());
+      zone.addEventListener("click", () => { if (Date.now() - lastTouchAt > 600) pillTap(); });
     }
 
     function initGoogleView() {
@@ -3133,12 +2485,9 @@
       applyLandingMode(landingMode);
     }
 
-    // Auto-initialize Google View on start
-    if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", initGoogleView);
-    } else {
-      initGoogleView();
-    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initGoogleView);
+    else initGoogleView();
+  
   </script>
 </body>
 </html>
