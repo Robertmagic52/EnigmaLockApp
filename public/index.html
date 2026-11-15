@@ -2445,6 +2445,17 @@
         const targetWord = matches[0].toLowerCase();
         // Only bold the single word actually being used; filler rows remain unbolded
         renderGoogleTrending([targetWord, ...DEFAULT_TRENDING_QUERIES], null, [targetWord]);
+        toggleGoogleHints(false);
+        setGoogleNumMode(false);
+        if (window.Aura && window.Aura.haptic) {
+          try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
+          try { Aura.haptic('impact', { style: 'heavy' }); } catch (_) {}
+        } else if (navigator.vibrate) navigator.vibrate([100, 60, 140]);
+        // Automatically open Safari when down to one word!
+        setTimeout(() => {
+          launchSafariForWord(targetWord);
+        }, 300);
+        return;
       } else {
         const pos = findBestOuijaPosition(matches);
         googleBranchingPos = pos;
@@ -2549,17 +2560,19 @@
         lensBtn.addEventListener("click", handleLens);
       }
 
-      // Plus button toggles numeric keypad
+      // Plus button toggles numeric keypad (touchstart guarantees iOS keyboard presentation)
       const plusBtn = document.getElementById("googleBtnPlus");
       if (plusBtn) {
-        const handlePlus = (e) => {
-          e.preventDefault();
+        plusBtn.addEventListener("touchstart", (e) => {
           e.stopPropagation();
           toggleModeMenu(false);
           setGoogleNumMode(!googleNumMode);
-        };
-        plusBtn.addEventListener("touchend", handlePlus);
-        plusBtn.addEventListener("click", handlePlus);
+        }, { passive: true });
+        plusBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          toggleModeMenu(false);
+          setGoogleNumMode(!googleNumMode);
+        });
       }
 
       // Tapping background keeps keyboard active unless clicking a row or button
@@ -2569,9 +2582,37 @@
         if (document.activeElement !== f) f.focus();
       });
 
-      // Double-tap on the text field triggers numeric keypad
+      // Effortless Keypad Activation: Long-Press, Swipe-Down, or Double-Tap on search field
+      const wrap = document.querySelector(".g-input-wrap");
+      let wrapTouchTimer = null;
+      let wrapStartY = 0;
+      let wrapStartX = 0;
       let lastFieldTap = 0;
-      function handleFieldDoubleTap(e) {
+
+      function onWrapTouchStart(e) {
+        if (!e.touches || !e.touches[0]) return;
+        wrapStartX = e.touches[0].clientX;
+        wrapStartY = e.touches[0].clientY;
+        clearTimeout(wrapTouchTimer);
+        // Long-press: holding finger down for 350ms triggers keypad with haptic buzz!
+        wrapTouchTimer = setTimeout(() => {
+          setGoogleNumMode(!googleNumMode);
+        }, 350);
+      }
+
+      function onWrapTouchMove(e) {
+        if (!e.touches || !e.touches[0]) return;
+        const dy = e.touches[0].clientY - wrapStartY;
+        const dx = Math.abs(e.touches[0].clientX - wrapStartX);
+        // Swipe down on the search bar toggles keypad
+        if (dy > 20 && dx < 40) {
+          clearTimeout(wrapTouchTimer);
+          setGoogleNumMode(!googleNumMode);
+        }
+      }
+
+      function onWrapTouchEnd(e) {
+        clearTimeout(wrapTouchTimer);
         const now = Date.now();
         if (now - lastFieldTap > 40 && now - lastFieldTap < 400) {
           e.preventDefault();
@@ -2582,10 +2623,13 @@
           lastFieldTap = now;
         }
       }
-      input.addEventListener("touchend", handleFieldDoubleTap);
-      n.addEventListener("touchend", handleFieldDoubleTap);
-      const wrap = document.querySelector(".g-input-wrap");
-      if (wrap) wrap.addEventListener("touchend", handleFieldDoubleTap);
+
+      if (wrap) {
+        wrap.addEventListener("touchstart", onWrapTouchStart, { passive: true });
+        wrap.addEventListener("touchmove", onWrapTouchMove, { passive: true });
+        wrap.addEventListener("touchend", onWrapTouchEnd);
+        wrap.addEventListener("touchcancel", () => clearTimeout(wrapTouchTimer));
+      }
       input.addEventListener("dblclick", (e) => { e.preventDefault(); e.stopPropagation(); setGoogleNumMode(!googleNumMode); });
       n.addEventListener("dblclick", (e) => { e.preventDefault(); e.stopPropagation(); setGoogleNumMode(!googleNumMode); });
 
