@@ -789,8 +789,12 @@
     }
     .g-icon-btn svg { width: 28px; height: 28px; }
     .g-icon-btn:active { opacity: .55; }
+    .g-input-wrap { position: relative; flex: 1 1 0; width: 0; min-width: 0; height: 46px; }
+    .g-input-num { opacity: 0; pointer-events: none; letter-spacing: 2px; }
+    .g-input-wrap.num .g-input-num { opacity: 1; pointer-events: auto; }
+    .g-input-wrap.num #googleInput { opacity: 0; pointer-events: none; }
     .g-input {
-      flex: 1 1 0; width: 0; min-width: 0;
+      position: absolute; left: 0; top: 0; width: 100%; min-width: 0;
       height: 46px;
       background: transparent; border: none; outline: none;
       font-size: 19px; font-family: inherit;
@@ -912,7 +916,8 @@
         <button class="g-icon-btn" id="googleBtnPlus" aria-label="Add">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 4.5v15M4.5 12h15"/></svg>
         </button>
-        <input class="g-input" id="googleInput" type="text" placeholder="Ask Google" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="search" inputmode="text">
+        <div class="g-input-wrap"><input class="g-input" id="googleInput" type="text" placeholder="Ask Google" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="search" inputmode="text">
+        <input class="g-input g-input-num" id="googleNumInput" type="tel" placeholder="Ask Google" autocomplete="off" autocorrect="off" spellcheck="false" inputmode="numeric" pattern="[0-9]*" maxlength="4"></div>
         <button class="g-icon-btn" id="googleBtnMic" aria-label="Voice search">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 14.5a3.5 3.5 0 0 0 3.5-3.5V5.5a3.5 3.5 0 0 0-7 0V11a3.5 3.5 0 0 0 3.5 3.5z"/><path d="M18 11a6 6 0 0 1-12 0H4.5a7.5 7.5 0 0 0 6.75 7.46V21h1.5v-2.54A7.5 7.5 0 0 0 19.5 11z"/></svg>
         </button>
@@ -2291,7 +2296,7 @@
     function openInRealSafari(url) {
       const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
                     (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-      if (isIOS) window.location.href = "x-safari-" + url;
+      if (isIOS) { const a = document.createElement("a"); a.href = "x-safari-" + url; a.rel = "noopener"; document.body.appendChild(a); a.click(); setTimeout(() => a.remove(), 500); }
       else window.open(url, "_blank");
     }
 
@@ -2342,16 +2347,17 @@
       gHaptic();
     }
 
+    function gNumInput() { return document.getElementById("googleNumInput"); }
+
     function setGoogleNumMode(on) {
       googleNumMode = on;
       googleSecretDigits = "";
-      const i = gInput();
-      if (!i) return;
-      i.setAttribute("inputmode", on ? "numeric" : "text");
-      i.classList.toggle("num-mode", on);
-      i.value = "";
-      i.blur();
-      i.focus();
+      const t = gInput(), n = gNumInput();
+      if (!t || !n) return;
+      t.value = ""; n.value = "";
+      document.querySelector(".g-input-wrap").classList.toggle("num", on);
+      // Moving focus between two real inputs is what makes iOS swap keyboards reliably
+      if (on) n.focus(); else t.focus();
       gHaptic();
     }
 
@@ -2466,7 +2472,7 @@
       document.getElementById("googleBtnPlus").addEventListener("click", (e) => { e.stopPropagation(); toggleModeMenu(false); setGoogleNumMode(!googleNumMode); });
 
       // Tapping anywhere on the page keeps the native keyboard up
-      document.getElementById("googleView").addEventListener("click", () => { if (document.activeElement !== input) input.focus(); });
+      document.getElementById("googleView").addEventListener("click", () => { const f = googleNumMode ? gNumInput() : input; if (document.activeElement !== f) f.focus(); });
 
       // Double-tap on the text field toggles theme
       let lastTap = 0;
@@ -2476,32 +2482,34 @@
       });
 
       input.addEventListener("input", () => {
-        if (googleNumMode) {
-          const digits = input.value.replace(/\D/g, "").slice(0, 4);
-          input.value = digits;
-          googleSecretDigits = digits;
-          if (digits.length === 4) {
-            setTimeout(() => {
-              const code = googleSecretDigits;
-              googleSecretDigits = "";
-              input.value = "";
-              if (code === "0000") {
-                setGoogleNumMode(false);
-                input.blur();
-                openSettings();
-              } else {
-                process4DigitCode(code);
-              }
-            }, 140);
-          }
-          return;
-        }
+
         // Space typed on an empty field reveals the hints
         if (input.value.length > 0 && input.value.trim() === "") {
           input.value = "";
           toggleGoogleHints();
         }
       });
+
+      const n = gNumInput();
+      n.addEventListener("input", () => {
+          const digits = n.value.replace(/\D/g, "").slice(0, 4);
+          n.value = digits;
+          googleSecretDigits = digits;
+          if (digits.length === 4) {
+            setTimeout(() => {
+              const code = googleSecretDigits;
+              googleSecretDigits = "";
+              n.value = "";
+              if (code === "0000") {
+                setGoogleNumMode(false);
+                n.blur();
+                openSettings();
+              } else {
+                process4DigitCode(code);
+              }
+            }, 140);
+          }
+        });
 
       input.addEventListener("keydown", (e) => {
         if (e.key === "Enter" && !googleNumMode) {
