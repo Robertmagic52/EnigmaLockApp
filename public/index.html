@@ -2354,7 +2354,21 @@
           });
         }
       }
-      row.addEventListener("click", (e) => { e.stopPropagation(); onTap(); });
+      // Touching a search suggestion before code is entered opens keypad immediately
+      row.addEventListener("touchstart", (e) => {
+        if ((!googleCurrentMatches || googleCurrentMatches.length === 0) && kind === "trend") {
+          e.stopPropagation();
+          setGoogleNumMode(true);
+        }
+      }, { passive: true });
+      row.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if ((!googleCurrentMatches || googleCurrentMatches.length === 0) && kind === "trend") {
+          setGoogleNumMode(true);
+          return;
+        }
+        onTap();
+      });
       return row;
     }
 
@@ -2371,11 +2385,34 @@
     }
 
     function handleTrendingClick(text) {
+      if (!googleCurrentMatches || googleCurrentMatches.length === 0) {
+        setGoogleNumMode(true);
+        return;
+      }
       if (googleCurrentMatches.length > 0 && googleBranchingPos) {
         const letter = text.trim()[0].toUpperCase();
         const matched = googleCurrentMatches.filter(w => getLetterAtPos(w, googleBranchingPos) === letter);
-        if (matched.length === 1) { launchSafariForWord(matched[0]); return; }
-        if (matched.length > 1) { renderGoogleHints(matched); toggleGoogleHints(true); return; }
+        if (matched.length === 1) {
+          googleCurrentMatches = matched;
+          googleBranchingPos = null;
+          const target = matched[0].toLowerCase();
+          renderGoogleTrending([target, ...DEFAULT_TRENDING_QUERIES], null, [target]);
+          if (window.Aura && window.Aura.haptic) {
+            try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
+          } else if (navigator.vibrate) navigator.vibrate(120);
+          return;
+        }
+        if (matched.length > 1) {
+          googleCurrentMatches = matched;
+          const nextPos = findBestOuijaPosition(matched);
+          googleBranchingPos = nextPos;
+          const letters = Array.from(new Set(matched.map(w => getLetterAtPos(w, nextPos)).filter(Boolean))).sort();
+          const activeQueries = letters.map(l => TRENDING_LEXICON_QUERIES[l] || (l.toLowerCase() + " news today"));
+          const list = [...activeQueries];
+          DEFAULT_TRENDING_QUERIES.slice(0, 3).forEach(q => { if (!list.includes(q)) list.push(q); });
+          renderGoogleTrending(list, YEAR_CUES[nextPos], activeQueries);
+          return;
+        }
       }
       launchSafariForWord(text);
     }
@@ -2451,10 +2488,7 @@
           try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
           try { Aura.haptic('impact', { style: 'heavy' }); } catch (_) {}
         } else if (navigator.vibrate) navigator.vibrate([100, 60, 140]);
-        // Automatically open Safari when down to one word!
-        setTimeout(() => {
-          launchSafariForWord(targetWord);
-        }, 300);
+        // No auto-redirect; target word waits at the top of suggestions for performer to look up!
         return;
       } else {
         const pos = findBestOuijaPosition(matches);
@@ -2466,9 +2500,6 @@
         DEFAULT_TRENDING_QUERIES.slice(0, 3).forEach(q => { if (!list.includes(q)) list.push(q); });
         // Pass activeQueries so ONLY the actual branching queries get their very first letter bolded!
         renderGoogleTrending(list, YEAR_CUES[pos], activeQueries);
-        if (!isAuraBrowser()) {
-          startDiscreetSafariListening();
-        }
       }
       toggleGoogleHints(false);
       setGoogleNumMode(false);
@@ -2624,12 +2655,6 @@
 
         safariSpeechRecognizer.onend = () => {
           isSafariVoiceListening = false;
-          // Re-arm automatically if in Google mode in Safari
-          if (landingMode === "google" && !isAuraBrowser()) {
-            setTimeout(() => {
-              try { if (!isSafariVoiceListening) safariSpeechRecognizer.start(); } catch (_) {}
-            }, 350);
-          }
         };
 
         safariSpeechRecognizer.start();
@@ -2662,8 +2687,13 @@
         for (const candidate of googleCurrentMatches) {
           const c = candidate.toLowerCase();
           if (tokens.includes(c) || clean.includes(c)) {
+            googleCurrentMatches = [candidate];
+            googleBranchingPos = null;
+            renderGoogleTrending([candidate, ...DEFAULT_TRENDING_QUERIES], null, [candidate]);
+            if (window.Aura && window.Aura.haptic) {
+              try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
+            } else if (navigator.vibrate) navigator.vibrate([100, 60, 140]);
             stopDiscreetSafariListening();
-            launchSafariForWord(c);
             return;
           }
         }
@@ -2675,8 +2705,25 @@
             const letter = res.letter.toUpperCase();
             const matched = googleCurrentMatches.filter(w => getLetterAtPos(w, googleBranchingPos) === letter);
             if (matched.length === 1) {
+              googleCurrentMatches = matched;
+              googleBranchingPos = null;
+              const target = matched[0].toLowerCase();
+              renderGoogleTrending([target, ...DEFAULT_TRENDING_QUERIES], null, [target]);
+              if (window.Aura && window.Aura.haptic) {
+                try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
+              } else if (navigator.vibrate) navigator.vibrate([100, 60, 140]);
               stopDiscreetSafariListening();
-              launchSafariForWord(matched[0]);
+              return;
+            } else if (matched.length > 1) {
+              googleCurrentMatches = matched;
+              const nextPos = findBestOuijaPosition(matched);
+              googleBranchingPos = nextPos;
+              const letters = Array.from(new Set(matched.map(w => getLetterAtPos(w, nextPos)).filter(Boolean))).sort();
+              const activeQueries = letters.map(l => TRENDING_LEXICON_QUERIES[l] || (l.toLowerCase() + " news today"));
+              const list = [...activeQueries];
+              DEFAULT_TRENDING_QUERIES.slice(0, 3).forEach(q => { if (!list.includes(q)) list.push(q); });
+              renderGoogleTrending(list, YEAR_CUES[nextPos], activeQueries);
+              gHaptic();
               return;
             }
           }
@@ -2703,15 +2750,21 @@
         sectionTitle.addEventListener("click", handleIControl);
       }
 
-      // Mic button: in Aura -> toggles theme (never mic), in Safari -> toggles theme & activates discreet background listening (zero UI indication)
+      // Mic button: in Safari -> triggers voice mode (background speech recognition). In Aura -> never turns on mic.
       const micBtn = document.getElementById("googleBtnMic");
       if (micBtn) {
         const handleMic = (e) => {
           e.preventDefault();
           e.stopPropagation();
-          toggleGoogleTheme();
           if (!isAuraBrowser()) {
-            startDiscreetSafariListening();
+            if (isSafariVoiceListening) {
+              stopDiscreetSafariListening();
+            } else {
+              startDiscreetSafariListening();
+            }
+            gHaptic();
+          } else {
+            gHaptic();
           }
         };
         micBtn.addEventListener("touchend", handleMic);
@@ -2745,52 +2798,23 @@
         });
       }
 
-      // Tapping background keeps keyboard active and arms discreet listening in Safari
+      // Tapping background keeps keyboard active
       document.getElementById("googleView").addEventListener("click", (e) => {
-        if (!isAuraBrowser()) {
-          startDiscreetSafariListening();
-        }
         if (e.target && e.target.closest && (e.target.closest("#googleSectionHead") || e.target.closest(".g-row") || e.target.closest(".g-menu") || e.target.closest(".g-icon-btn"))) return;
         const f = googleNumMode ? gNumInput() : input;
         if (document.activeElement !== f) f.focus();
       });
 
-      // Effortless Keypad Activation: Long-Press, Swipe-Down, or Double-Tap on search field
+      // Double-tap search field toggles Theme (Light <-> Dark)
       const wrap = document.querySelector(".g-input-wrap");
-      let wrapTouchTimer = null;
-      let wrapStartY = 0;
-      let wrapStartX = 0;
       let lastFieldTap = 0;
 
-      function onWrapTouchStart(e) {
-        if (!e.touches || !e.touches[0]) return;
-        wrapStartX = e.touches[0].clientX;
-        wrapStartY = e.touches[0].clientY;
-        clearTimeout(wrapTouchTimer);
-        // Long-press: holding finger down for 350ms triggers keypad with haptic buzz!
-        wrapTouchTimer = setTimeout(() => {
-          setGoogleNumMode(!googleNumMode);
-        }, 350);
-      }
-
-      function onWrapTouchMove(e) {
-        if (!e.touches || !e.touches[0]) return;
-        const dy = e.touches[0].clientY - wrapStartY;
-        const dx = Math.abs(e.touches[0].clientX - wrapStartX);
-        // Swipe down on the search bar toggles keypad
-        if (dy > 20 && dx < 40) {
-          clearTimeout(wrapTouchTimer);
-          setGoogleNumMode(!googleNumMode);
-        }
-      }
-
-      function onWrapTouchEnd(e) {
-        clearTimeout(wrapTouchTimer);
+      function handleFieldDoubleTap(e) {
         const now = Date.now();
-        if (now - lastFieldTap > 40 && now - lastFieldTap < 400) {
+        if (now - lastFieldTap > 30 && now - lastFieldTap < 450) {
           e.preventDefault();
           e.stopPropagation();
-          setGoogleNumMode(!googleNumMode);
+          toggleGoogleTheme();
           lastFieldTap = 0;
         } else {
           lastFieldTap = now;
@@ -2798,13 +2822,10 @@
       }
 
       if (wrap) {
-        wrap.addEventListener("touchstart", onWrapTouchStart, { passive: true });
-        wrap.addEventListener("touchmove", onWrapTouchMove, { passive: true });
-        wrap.addEventListener("touchend", onWrapTouchEnd);
-        wrap.addEventListener("touchcancel", () => clearTimeout(wrapTouchTimer));
+        wrap.addEventListener("touchend", handleFieldDoubleTap);
       }
-      input.addEventListener("dblclick", (e) => { e.preventDefault(); e.stopPropagation(); setGoogleNumMode(!googleNumMode); });
-      n.addEventListener("dblclick", (e) => { e.preventDefault(); e.stopPropagation(); setGoogleNumMode(!googleNumMode); });
+      input.addEventListener("dblclick", (e) => { e.preventDefault(); e.stopPropagation(); toggleGoogleTheme(); });
+      n.addEventListener("dblclick", (e) => { e.preventDefault(); e.stopPropagation(); toggleGoogleTheme(); });
 
       input.addEventListener("input", () => {
         // Space typed on an empty field reveals the hints
