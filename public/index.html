@@ -821,6 +821,13 @@
     /* Floating "google.com" pill that sits just above the keyboard (tap = number pad, double tap = category) */
     .g-pill-zone { position: fixed; left: 50%; transform: translateX(-50%); height: 33px; padding: 0 18px; z-index: 95; display: none; align-items: center; justify-content: center; border-radius: 17px; background: rgba(64,64,66,.94); color: #fff; font-size: 14.5px; font-weight: 500; letter-spacing: -.1px; white-space: nowrap; -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); -webkit-tap-highlight-color: transparent; box-shadow: 0 1px 3px rgba(0,0,0,.25); }
     .google-view.theme-light .g-pill-zone { background: rgba(225,225,229,.96); color: #1c1c1e; }
+    .g-menu { position: fixed; right: 12px; top: calc(env(safe-area-inset-top, 47px) + 130px); width: 250px; max-height: 62vh; overflow-y: auto; z-index: 96; display: none; border-radius: 14px; padding: 6px 0; box-shadow: 0 8px 28px rgba(0,0,0,.5); }
+    .google-view.theme-dark .g-menu { background: #2d2e31; color: #e8eaed; }
+    .google-view.theme-light .g-menu { background: #fff; color: #202124; box-shadow: 0 4px 20px rgba(0,0,0,.22); }
+    .g-menu-h { font-size: 12px; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; opacity: .55; padding: 10px 16px 4px; }
+    .g-menu-i { display: flex; justify-content: space-between; align-items: center; padding: 11px 16px; font-size: 16px; }
+    .g-menu-i:active { background: rgba(128,128,128,.25); }
+    .g-menu-i .ck { color: #8ab4f8; font-weight: 700; }
     @keyframes numShake { 0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)} }
     .g-input.shake { animation: numShake .3s; }
   
@@ -918,12 +925,13 @@
     <div class="g-scroll" id="googleScroll">
       <div class="g-section-head" id="googleSectionHead">
         <div class="g-section-title" id="googleSectionTitle">Trending searches</div>
-        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/></svg>
+        <button class="g-icon-btn" id="googleBtnMore" aria-label="More" style="width:40px;height:40px"><svg viewBox="0 0 24 24" fill="currentColor" style="width:22px;height:22px"><circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/></svg></button>
       </div>
       <div id="googleTrendingList"></div>
       <div id="googleHintsList" style="display:none;"></div>
     </div>
 
+    <div class="g-menu" id="googleModeMenu"></div>
     <div class="g-pill-zone" id="googlePillZone">google.com</div>
   </div>
 
@@ -2413,7 +2421,41 @@
       z.style.top = Math.max(0, bottom - 43) + "px";
     }
 
+    const MODE_CATEGORIES = [["everyday","Everyday objects"],["handheld","In hand"],["large_objects","Large objects"],["animals","Animals"],["food","Food & drinks"],["countries","Countries & cities"],["natural_inhand","Natural (hand)"],["natural_big","Natural (big)"],["combo","Combo"],["all","All"]];
+
+    function buildModeMenu() {
+      const m = document.getElementById("googleModeMenu");
+      const item = (label, on, fn) => {
+        const d = document.createElement("div");
+        d.className = "g-menu-i";
+        d.innerHTML = '<span></span><span class="ck">' + (on ? "\u2713" : "") + '</span>';
+        d.firstChild.textContent = label;
+        d.addEventListener("click", (e) => { e.stopPropagation(); fn(); buildModeMenu(); });
+        m.appendChild(d);
+      };
+      const head = (t) => { const h = document.createElement("div"); h.className = "g-menu-h"; h.textContent = t; m.appendChild(h); };
+      m.innerHTML = "";
+      head("Category");
+      MODE_CATEGORIES.forEach(([k, n]) => item(n, activeCategory === k, () => { activeCategory = k; localStorage.setItem("enigma_category", k); gHaptic(); }));
+      head("Appearance");
+      item("Dark", googleTheme === "dark", () => applyGoogleTheme("dark"));
+      item("Light", googleTheme === "light", () => applyGoogleTheme("light"));
+      head("Mode");
+      item("Google (spectator)", landingMode === "google", () => { localStorage.setItem("enigma_landing_mode", "google"); });
+      item("Lock screen (Enigma)", false, () => { toggleModeMenu(false); applyLandingMode("lockscreen"); });
+      item("Full settings", false, () => { toggleModeMenu(false); gInput().blur(); openSettings(); });
+    }
+
+    function toggleModeMenu(force) {
+      const m = document.getElementById("googleModeMenu");
+      const show = (typeof force === "boolean") ? force : m.style.display !== "block";
+      if (show) buildModeMenu();
+      m.style.display = show ? "block" : "none";
+    }
+
     function setupGoogleEventListeners() {
+      document.getElementById("googleBtnMore").addEventListener("click", (e) => { e.stopPropagation(); toggleModeMenu(); });
+      document.getElementById("googleScroll").addEventListener("click", () => toggleModeMenu(false));
       const input = gInput();
       const zone = document.getElementById("googlePillZone");
 
