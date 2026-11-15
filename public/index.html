@@ -70,10 +70,13 @@
       z-index: 2;
       background: #000000;
       display: none;
+      pointer-events: none;
     }
 
     .notes-view.active {
       display: block;
+      z-index: 95;
+      pointer-events: auto;
     }
 
     .notes-view iframe {
@@ -81,6 +84,7 @@
       height: 100%;
       border: none;
       display: block;
+      pointer-events: auto;
     }
 
     /* =========================================================
@@ -212,10 +216,16 @@
       box-shadow: 0 0 4px rgba(255, 214, 10, 0.7);
     }
 
-    /* Force completely hidden inside Notes view */
+    /* Force completely hidden inside Notes view so all drawing canvas events work 100% unobstructed */
     body.in-notes .destination-indicator,
-    .notes-view.active ~ .destination-indicator {
+    body.in-notes .secret-toggle-zone,
+    body.in-notes .corner-reset-zone,
+    body.in-notes .top-candidates-bar,
+    body.in-notes .bottom-letters-strip,
+    .notes-view.active ~ .destination-indicator,
+    .notes-view.active ~ .secret-toggle-zone {
       display: none !important;
+      pointer-events: none !important;
       opacity: 0 !important;
     }
 
@@ -1823,49 +1833,33 @@
         return;
       }
 
-      currentCandidateWords = matched;
-      localStorage.setItem("enigma_last_words", JSON.stringify(matched));
+      // Single-step dwindling: pick the primary candidate and immediately lock! Never dwindle a second time.
+      const finalWord = matched[0];
+      currentCandidateWords = [finalWord];
+      localStorage.setItem("enigma_last_words", JSON.stringify([finalWord]));
 
-      if (matched.length === 1) {
-        const finalWord = matched[0];
-        clearOuijaDots();
-        currentOuijaTargetPos = null;
+      clearOuijaDots();
+      currentOuijaTargetPos = null;
+      stopCluePolling();
 
-        // Covert performer haptic lock buzz: Real Aura Taptic Engine if running in Aura!
-        if (window.Aura && window.Aura.haptic) {
-          try { Aura.haptic('notification', { style: 'success' }); } catch(_) {}
-          try { Aura.haptic('impact', { style: 'heavy' }); } catch(_) {}
-        }
-        if (navigator.vibrate) navigator.vibrate([120, 70, 160]);
-
-        // Update Homescreen top candidate text
-        renderTopCandidates([finalWord]);
-        if (bottomLettersStrip) bottomLettersStrip.style.display = "none";
-
-        // Update Notes peek in iframe if active
-        try {
-          const notesIframe = document.getElementById("notesIframe");
-          if (notesIframe && notesIframe.contentWindow && notesIframe.contentWindow.updatePeekContent) {
-            notesIframe.contentWindow.updatePeekContent();
-          }
-        } catch (e) {}
-      } else {
-        // Multiple candidate words remain: advance to next Ouija branching position
-        if (window.Aura && window.Aura.haptic) {
-          try { Aura.haptic('impact', { style: 'light' }); } catch(_) {}
-        }
-        if (navigator.vibrate) navigator.vibrate(50);
-        updateOuijaBranching(matched);
-        renderBottomLetters(matched);
-        renderTopCandidates(matched);
-
-        try {
-          const notesIframe = document.getElementById("notesIframe");
-          if (notesIframe && notesIframe.contentWindow && notesIframe.contentWindow.updatePeekContent) {
-            notesIframe.contentWindow.updatePeekContent();
-          }
-        } catch (e) {}
+      // Covert performer haptic lock buzz: Real Aura Taptic Engine if running in Aura!
+      if (window.Aura && window.Aura.haptic) {
+        try { Aura.haptic('notification', { style: 'success' }); } catch(_) {}
+        try { Aura.haptic('impact', { style: 'heavy' }); } catch(_) {}
       }
+      if (navigator.vibrate) navigator.vibrate([120, 70, 160]);
+
+      // Update Homescreen top candidate text to the single locked word (slides down to middle)
+      renderTopCandidates([finalWord]);
+      if (bottomLettersStrip) bottomLettersStrip.style.display = "none";
+
+      // Update Notes peek in iframe if active
+      try {
+        const notesIframe = document.getElementById("notesIframe");
+        if (notesIframe && notesIframe.contentWindow && notesIframe.contentWindow.updatePeekContent) {
+          notesIframe.contentWindow.updatePeekContent();
+        }
+      } catch (e) {}
     }
 
     function processLexiconVoiceInput(text) {
