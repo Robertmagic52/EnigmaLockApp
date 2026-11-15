@@ -63,6 +63,26 @@
       overflow: hidden;
     }
 
+    /* LAYER 1.5: AUTHENTIC DARK iOS NOTES APP VIEW */
+    .notes-view {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: #000000;
+      display: none;
+    }
+
+    .notes-view.active {
+      display: block;
+    }
+
+    .notes-view iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
     /* Homescreen Discreet Candidate Words (CLEAN WHITE TEXT, NO GRAY PILLS) */
     .top-candidates-bar {
       position: absolute;
@@ -573,6 +593,13 @@
   </div>
 
   <!-- ========================================================
+       LAYER 1.5: AUTHENTIC DARK iOS NOTES APP VIEW
+       ======================================================== -->
+  <div class="notes-view" id="notesView">
+    <iframe id="notesIframe" src="/notes/index.html" frameborder="0"></iframe>
+  </div>
+
+  <!-- ========================================================
        LAYER 2: AUTHENTIC GENUINE iOS PASSCODE SCREEN
        ======================================================== -->
   <div class="lockscreen-wrapper" id="lockscreenWrapper">
@@ -720,6 +747,19 @@
       </div>
     </div>
 
+    <!-- Unlock Destination Section -->
+    <div class="settings-section">
+      <div class="settings-section-title">Unlock Destination</div>
+      <p style="font-size: 13px; color: #8e8e93; line-height: 1.4; margin-bottom: 8px;">
+        Choose what happens when the 6-digit passcode is entered:
+      </p>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="cat-pill-btn" id="modeBtnNotes" onclick="setUnlockMode('notes')">Notes App (Hold to Peek)</button>
+        <button class="cat-pill-btn" id="modeBtnHomescreen" onclick="setUnlockMode('homescreen')">Fake Homescreen</button>
+        <button class="cat-pill-btn" id="modeBtnSafari" onclick="setUnlockMode('safari')">Safari Search</button>
+      </div>
+    </div>
+
     <!-- Wallpaper Uploads (Lockscreen & Homescreen) -->
     <div class="settings-section">
       <div class="settings-section-title">1. Lock Screen Wallpaper</div>
@@ -821,6 +861,7 @@
     let currentInput = "";
     let isUnlocked = false;
     let activeCategory = localStorage.getItem("enigma_category") || "handheld";
+    let unlockMode = localStorage.getItem("enigma_unlock_mode") || "notes";
     let currentCandidateWords = [];
     let activeLetterFilter = null;
 
@@ -869,8 +910,24 @@
       }
 
       updateCategoryPills();
+      updateUnlockModeUI();
     }
     loadSavedImages();
+
+    function setUnlockMode(mode) {
+      unlockMode = mode;
+      localStorage.setItem("enigma_unlock_mode", mode);
+      updateUnlockModeUI();
+    }
+
+    function updateUnlockModeUI() {
+      const btnNotes = document.getElementById("modeBtnNotes");
+      const btnHomescreen = document.getElementById("modeBtnHomescreen");
+      const btnSafari = document.getElementById("modeBtnSafari");
+      if (btnNotes) btnNotes.classList.toggle("selected", unlockMode === "notes");
+      if (btnHomescreen) btnHomescreen.classList.toggle("selected", unlockMode === "homescreen");
+      if (btnSafari) btnSafari.classList.toggle("selected", unlockMode === "safari");
+    }
 
     // Passcode header text is clean authentic "Enter Passcode"
     function setPasscodeTitle(text) {
@@ -914,6 +971,8 @@
 
     function triggerFullReset() {
       lockscreenWrapper.classList.remove("unlocked-up");
+      const notesView = document.getElementById("notesView");
+      if (notesView) notesView.classList.remove("active");
       topCandidatesBar.style.display = "none";
       bottomLettersStrip.style.display = "none";
       currentInput = "";
@@ -929,6 +988,7 @@
         window.navigator.vibrate([30, 40, 30]);
       }
     }
+    window.closeNotes = triggerFullReset;
 
     /* ========================================================
        DISCREET CATEGORY SELECTION
@@ -1035,7 +1095,13 @@
       }
 
       if (matches && matches.length > 0) {
-        if (matches.length === 1) {
+        localStorage.setItem("enigma_last_words", JSON.stringify(matches));
+        localStorage.setItem("enigma_last_category", activeCategory);
+        localStorage.setItem("enigma_last_code", code);
+
+        if (unlockMode === "notes") {
+          unlockToNotes(matches);
+        } else if (matches.length === 1 && unlockMode === "safari") {
           unlockSingleWord(matches[0]);
         } else {
           unlockToHomescreen(matches);
@@ -1043,6 +1109,28 @@
       } else {
         shakeKeypad();
       }
+    }
+
+    /* ========================================================
+       UNLOCK TO NOTES APP (DARK DRAWING CANVAS + HOLD PEEK)
+       ======================================================== */
+    function unlockToNotes(words) {
+      isUnlocked = true;
+      dots.forEach(d => d.classList.add("filled"));
+
+      const notesView = document.getElementById("notesView");
+      const notesIframe = document.getElementById("notesIframe");
+      if (notesView) notesView.classList.add("active");
+
+      try {
+        if (notesIframe && notesIframe.contentWindow) {
+          notesIframe.contentWindow.location.reload();
+        }
+      } catch (e) {}
+
+      setTimeout(() => {
+        lockscreenWrapper.classList.add("unlocked-up");
+      }, 150);
     }
 
     /* ========================================================

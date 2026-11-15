@@ -85,6 +85,15 @@ const server = http.createServer((req, res) => {
   }
 
   fs.stat(filePath, (err, stats) => {
+    if (!err && stats.isDirectory()) {
+      const indexFile = path.join(filePath, "index.html");
+      if (fs.existsSync(indexFile)) {
+        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-cache" });
+        fs.createReadStream(indexFile).pipe(res);
+        return;
+      }
+    }
+
     if (err || !stats.isFile()) {
       res.writeHead(404, { "Content-Type": "text/plain" });
       res.end("404 Not Found");
