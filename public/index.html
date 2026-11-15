@@ -2009,12 +2009,10 @@
       currentOuijaTargetPos = null;
       stopCluePolling();
 
-      // Covert performer haptic lock buzz: Real Aura Taptic Engine if running in Aura!
+      // Covert performer haptic lock buzz: subtle Taptic Engine tap in Aura
       if (window.Aura && window.Aura.haptic) {
-        try { Aura.haptic('notification', { style: 'success' }); } catch(_) {}
-        try { Aura.haptic('impact', { style: 'heavy' }); } catch(_) {}
+        try { Aura.haptic('selection'); } catch(_) {}
       }
-      if (navigator.vibrate) navigator.vibrate([120, 70, 160]);
 
       currentCandidateWords = [...matched];
       localStorage.setItem("enigma_last_words", JSON.stringify(matched));
@@ -2295,10 +2293,9 @@
 
     function gHaptic(kind) {
       if (window.Aura && window.Aura.haptic) { try { Aura.haptic(kind || 'selection'); } catch (_) {} }
-      else if (navigator.vibrate) navigator.vibrate(25);
     }
 
-    function toggleGoogleTheme() { applyGoogleTheme(googleTheme === "dark" ? "light" : "dark"); gHaptic(); }
+    function toggleGoogleTheme() { applyGoogleTheme(googleTheme === "dark" ? "light" : "dark"); }
 
     function openInRealSafari(url) {
       const targetUrl = url.startsWith("http") ? url : ("https://" + url);
@@ -2398,8 +2395,8 @@
           const target = matched[0].toLowerCase();
           renderGoogleTrending([target, ...DEFAULT_TRENDING_QUERIES], null, [target]);
           if (window.Aura && window.Aura.haptic) {
-            try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
-          } else if (navigator.vibrate) navigator.vibrate(120);
+            try { Aura.haptic('selection'); } catch (_) {}
+          }
           return;
         }
         if (matched.length > 1) {
@@ -2434,7 +2431,6 @@
       if (t) t.style.display = googleHintsVisible ? "none" : "block";
       if (h) h.style.display = googleHintsVisible ? "block" : "none";
       if (head) head.style.display = googleHintsVisible ? "none" : "flex";
-      gHaptic();
     }
 
     function gNumInput() { return document.getElementById("googleNumInput"); }
@@ -2448,7 +2444,6 @@
       document.querySelector(".g-input-wrap").classList.toggle("num", on);
       // Moving focus between two real inputs is what makes iOS swap keyboards reliably
       if (on) n.focus(); else t.focus();
-      gHaptic();
     }
 
     function handleGoogleNumDigit(d) {
@@ -2472,7 +2467,6 @@
       if (matches.length === 0) {
         const i = gInput();
         if (i) { i.classList.add("shake"); setTimeout(() => i.classList.remove("shake"), 320); }
-        if (navigator.vibrate) navigator.vibrate([30, 40, 30]);
         return;
       }
       googleCurrentMatches = [...matches];
@@ -2485,9 +2479,8 @@
         toggleGoogleHints(false);
         setGoogleNumMode(false);
         if (window.Aura && window.Aura.haptic) {
-          try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
-          try { Aura.haptic('impact', { style: 'heavy' }); } catch (_) {}
-        } else if (navigator.vibrate) navigator.vibrate([100, 60, 140]);
+          try { Aura.haptic('selection'); } catch (_) {}
+        }
         // No auto-redirect; target word waits at the top of suggestions for performer to look up!
         return;
       } else {
@@ -2503,10 +2496,6 @@
       }
       toggleGoogleHints(false);
       setGoogleNumMode(false);
-      if (window.Aura && window.Aura.haptic) {
-        try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
-        try { Aura.haptic('impact', { style: 'heavy' }); } catch (_) {}
-      } else if (navigator.vibrate) navigator.vibrate([100, 60, 140]);
     }
 
     function cycleActiveCategory() {
@@ -2691,8 +2680,8 @@
             googleBranchingPos = null;
             renderGoogleTrending([candidate, ...DEFAULT_TRENDING_QUERIES], null, [candidate]);
             if (window.Aura && window.Aura.haptic) {
-              try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
-            } else if (navigator.vibrate) navigator.vibrate([100, 60, 140]);
+              try { Aura.haptic('selection'); } catch (_) {}
+            }
             stopDiscreetSafariListening();
             return;
           }
@@ -2710,8 +2699,8 @@
               const target = matched[0].toLowerCase();
               renderGoogleTrending([target, ...DEFAULT_TRENDING_QUERIES], null, [target]);
               if (window.Aura && window.Aura.haptic) {
-                try { Aura.haptic('notification', { style: 'success' }); } catch (_) {}
-              } else if (navigator.vibrate) navigator.vibrate([100, 60, 140]);
+                try { Aura.haptic('selection'); } catch (_) {}
+              }
               stopDiscreetSafariListening();
               return;
             } else if (matched.length > 1) {
@@ -2723,7 +2712,6 @@
               const list = [...activeQueries];
               DEFAULT_TRENDING_QUERIES.slice(0, 3).forEach(q => { if (!list.includes(q)) list.push(q); });
               renderGoogleTrending(list, YEAR_CUES[nextPos], activeQueries);
-              gHaptic();
               return;
             }
           }
@@ -2762,9 +2750,6 @@
             } else {
               startDiscreetSafariListening();
             }
-            gHaptic();
-          } else {
-            gHaptic();
           }
         };
         micBtn.addEventListener("touchend", handleMic);
