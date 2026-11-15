@@ -31,8 +31,163 @@
       color: #ffffff;
     }
 
-    /* Full-screen Wallpaper Layer */
-    .wallpaper-bg {
+    /* =========================================================
+       VIEW 1: FAKE HOMESCREEN (Underneath Lockscreen)
+       ========================================================= */
+    .homescreen-view {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(180deg, #1c2331 0%, #10141f 50%, #080a10 100%);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    /* Homescreen Discreet Top Words Bar */
+    .top-candidates-bar {
+      position: absolute;
+      top: calc(env(safe-area-inset-top, 44px) + 8px);
+      left: 12px;
+      right: 12px;
+      z-index: 20;
+      display: flex;
+      gap: 8px;
+      padding: 8px 10px;
+      background: rgba(22, 22, 24, 0.78);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border-radius: 18px;
+      border: 0.5px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .top-candidates-bar::-webkit-scrollbar { display: none; }
+
+    .candidate-word-chip {
+      flex: 0 0 auto;
+      background: rgba(255, 255, 255, 0.16);
+      border: 0.5px solid rgba(255, 255, 255, 0.22);
+      border-radius: 14px;
+      padding: 7px 16px;
+      font-size: 17px;
+      font-weight: 500;
+      color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.15s ease, transform 0.1s ease;
+      touch-action: manipulation;
+    }
+
+    .candidate-word-chip:active {
+      background: rgba(255, 255, 255, 0.4);
+      transform: scale(0.96);
+    }
+
+    .word-arrow {
+      font-size: 13px;
+      opacity: 0.6;
+    }
+
+    /* Homescreen Discreet Bottom Letter Strip */
+    .bottom-letters-strip {
+      position: absolute;
+      bottom: calc(env(safe-area-inset-bottom, 24px) + 72px);
+      left: 16px;
+      right: 16px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background: rgba(22, 22, 24, 0.82);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      border-radius: 20px;
+      border: 0.5px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .bottom-letters-strip::-webkit-scrollbar { display: none; }
+
+    .letter-chip {
+      width: 38px;
+      height: 38px;
+      flex: 0 0 38px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.12);
+      border: 0.5px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      touch-action: manipulation;
+    }
+
+    .letter-chip.active {
+      background: var(--accent-blue);
+      border-color: var(--accent-blue);
+      transform: scale(1.08);
+      box-shadow: 0 0 12px rgba(10, 132, 255, 0.5);
+    }
+
+    .letter-chip:active {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    .letter-chip.all-chip {
+      width: auto;
+      padding: 0 12px;
+      border-radius: 19px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Homescreen Hint to Lock Back */
+    .homescreen-lock-hint {
+      position: absolute;
+      bottom: calc(env(safe-area-inset-bottom, 24px) + 26px);
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.45);
+      z-index: 20;
+      pointer-events: none;
+    }
+
+    /* =========================================================
+       VIEW 2: LOCKSCREEN & KEYPAD (Slides up on unlock)
+       ========================================================= */
+    .lockscreen-wrapper {
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      overflow: hidden;
+      transform: translateY(0);
+      transition: transform 0.42s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .lockscreen-wrapper.unlocked-up {
+      transform: translateY(-100%);
+    }
+
+    /* Wallpaper Layer with Authentic Gaussian Scrim */
+    .lock-wallpaper-bg {
       position: absolute;
       inset: 0;
       background-size: cover;
@@ -43,17 +198,16 @@
       transition: background-image 0.25s ease;
     }
 
-    /* Subtle blurred overlay over the wallpaper */
-    .wallpaper-blur-overlay {
+    .lock-wallpaper-blur {
       position: absolute;
       inset: 0;
-      backdrop-filter: blur(28px);
-      -webkit-backdrop-filter: blur(28px);
-      background: rgba(0, 0, 0, 0.38);
+      backdrop-filter: blur(36px) saturate(160%);
+      -webkit-backdrop-filter: blur(36px) saturate(160%);
+      background: rgba(0, 0, 0, 0.36);
       z-index: 2;
     }
 
-    /* Main Container (Vertically Centered Pure Passcode Interface) */
+    /* Passcode Container: Anchored realistically to bottom */
     .passcode-container {
       position: relative;
       width: 100%;
@@ -61,13 +215,12 @@
       z-index: 5;
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
       align-items: center;
-      justify-content: center;
-      padding-top: calc(env(safe-area-inset-top, 44px) + 12px);
-      padding-bottom: calc(env(safe-area-inset-bottom, 24px) + 24px);
+      padding-bottom: calc(env(safe-area-inset-bottom, 24px) + 28px);
     }
 
-    /* Realistic Apple Padlock */
+    /* Top Lock Icon */
     .lock-icon-container {
       margin-bottom: 12px;
       display: flex;
@@ -96,7 +249,6 @@
       rx: 3px;
     }
 
-    /* Unlocked State Animation */
     .unlocked .padlock-shackle {
       transform: translateY(-5px) rotate(-32deg);
     }
@@ -107,7 +259,7 @@
       font-weight: 400;
       color: #ffffff;
       letter-spacing: -0.2px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       text-align: center;
       cursor: pointer;
     }
@@ -115,10 +267,10 @@
     /* 6 Circular Dots Row */
     .passcode-dots-row {
       display: flex;
-      gap: 20px;
+      gap: 19px;
       align-items: center;
       justify-content: center;
-      margin-bottom: 46px;
+      margin-bottom: 42px;
       height: 18px;
     }
 
@@ -146,7 +298,6 @@
       border-color: #ff453a !important;
     }
 
-    /* Shake Animation */
     @keyframes shakeKeypad {
       0%, 100% { transform: translateX(0); }
       20%, 60% { transform: translateX(-14px); }
@@ -161,7 +312,7 @@
     .keypad-grid {
       display: grid;
       grid-template-columns: repeat(3, 76px);
-      gap: 16px 28px;
+      gap: 15px 26px;
       justify-content: center;
       margin: 0 auto;
     }
@@ -211,8 +362,8 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      max-width: 284px;
-      margin: 16px auto 0 auto;
+      max-width: 280px;
+      margin: 15px auto 0 auto;
       padding: 0 4px;
     }
 
@@ -234,7 +385,7 @@
       opacity: 0.5;
     }
 
-    /* Home Indicator Pill Bar */
+    /* Home Indicator */
     .home-indicator {
       position: absolute;
       bottom: 8px;
@@ -249,38 +400,38 @@
     }
 
     /* =========================================================
-       MULTIPLE CANDIDATES SELECTION SHEET (SPOTLIGHT STYLE)
+       DISCREET CATEGORY SELECTION SHEET (Christian Grace Style)
        ========================================================= */
-    .candidates-sheet {
+    .discreet-category-sheet {
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(28, 28, 30, 0.96);
+      background: rgba(28, 28, 30, 0.95);
       backdrop-filter: blur(35px);
       -webkit-backdrop-filter: blur(35px);
-      border-bottom-left-radius: 28px;
-      border-bottom-right-radius: 28px;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      padding: calc(env(safe-area-inset-top, 40px) + 16px) 20px 24px 20px;
-      z-index: 50;
-      transform: translateY(-115%);
-      transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1);
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 -12px 35px rgba(0, 0, 0, 0.75);
+      padding: 16px 18px calc(env(safe-area-inset-bottom, 24px) + 16px) 18px;
+      z-index: 80;
+      transform: translateY(115%);
+      transition: transform 0.28s cubic-bezier(0.2, 0.9, 0.3, 1);
     }
 
-    .candidates-sheet.open {
+    .discreet-category-sheet.open {
       transform: translateY(0);
     }
 
-    .sheet-pill-header {
+    .cat-sheet-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 14px;
     }
 
-    .sheet-title {
+    .cat-sheet-title {
       font-size: 13px;
       font-weight: 700;
       color: #8e8e93;
@@ -288,48 +439,47 @@
       letter-spacing: 0.8px;
     }
 
-    .sheet-close-btn {
+    .cat-sheet-close {
       background: #3a3a3c;
       color: #ffffff;
       border: none;
-      border-radius: 14px;
+      border-radius: 12px;
       padding: 4px 12px;
       font-size: 13px;
       font-weight: 600;
       cursor: pointer;
     }
 
-    .candidates-list {
-      display: flex;
-      flex-direction: column;
+    .category-grid-pills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
-      max-height: 280px;
-      overflow-y: auto;
     }
 
-    .candidate-card-btn {
-      width: 100%;
+    .cat-pill-btn {
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 14px;
-      padding: 14px 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: #ffffff;
-      font-size: 19px;
+      padding: 12px 14px;
+      font-size: 15px;
       font-weight: 500;
+      color: #ffffff;
+      text-align: left;
       cursor: pointer;
-      transition: background 0.15s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.12s ease;
     }
 
-    .candidate-card-btn:active {
+    .cat-pill-btn.selected {
+      background: rgba(10, 132, 255, 0.25);
+      border-color: var(--accent-blue);
+      color: #ffffff;
+    }
+
+    .cat-pill-btn:active {
       background: rgba(255, 255, 255, 0.25);
-    }
-
-    .candidate-arrow {
-      color: #8e8e93;
-      font-size: 17px;
     }
 
     /* =========================================================
@@ -391,33 +541,6 @@
       margin-bottom: 12px;
     }
 
-    .settings-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .settings-row:last-child {
-      border-bottom: none;
-    }
-
-    .settings-label {
-      font-size: 16px;
-      font-weight: 500;
-    }
-
-    .settings-select {
-      background: rgba(255, 255, 255, 0.15);
-      color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      padding: 6px 10px;
-      font-size: 15px;
-      outline: none;
-      max-width: 180px;
-    }
-
     .file-input-btn {
       display: inline-block;
       background: rgba(255, 255, 255, 0.16);
@@ -469,7 +592,7 @@
       margin-top: 10px;
     }
 
-    #wallpaperStatus {
+    .status-msg {
       font-size: 13px;
       color: #30d158;
       margin-top: 8px;
@@ -479,116 +602,147 @@
 </head>
 <body>
 
-  <!-- Full-screen Wallpaper Layer -->
-  <div class="wallpaper-bg" id="wallpaperLayer"></div>
-  <div class="wallpaper-blur-overlay"></div>
-
-  <!-- Pure Passcode Interface -->
-  <div class="passcode-container" id="mainContainer">
-
-    <!-- Realistic Apple Padlock Icon -->
-    <div class="lock-icon-container" id="lockIconContainer">
-      <svg class="padlock-svg" viewBox="0 0 24 32">
-        <path class="padlock-shackle" d="M 6,13 V 7 A 6,6 0 0,1 18,7 V 13" />
-        <rect class="padlock-body" x="4" y="13" width="16" height="15" rx="3" />
-        <circle cx="12" cy="19" r="1.5" fill="#000" opacity="0.6"/>
-        <line x1="12" y1="20.5" x2="12" y2="23.5" stroke="#000" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
-      </svg>
-    </div>
-
-    <!-- "Enter Passcode" Prompt (Long press opens hidden settings) -->
-    <div class="passcode-prompt" id="passcodePrompt">Enter Passcode</div>
-
-    <!-- 6 Dots Row (iOS standard 6-digit passcode) -->
-    <div class="passcode-dots-row" id="dotsRow">
-      <div class="dot" id="dot0"></div>
-      <div class="dot" id="dot1"></div>
-      <div class="dot" id="dot2"></div>
-      <div class="dot" id="dot3"></div>
-      <div class="dot" id="dot4"></div>
-      <div class="dot" id="dot5"></div>
-    </div>
-
-    <!-- 10 Circular Keys (1-9) -->
-    <div class="keypad-grid">
-      <!-- 1 -->
-      <button class="key-btn" onclick="pressDigit('1')">
-        <div class="key-num">1</div>
-        <div class="key-sub">&nbsp;</div>
-      </button>
-      <!-- 2 -->
-      <button class="key-btn" onclick="pressDigit('2')">
-        <div class="key-num">2</div>
-        <div class="key-sub">ABC</div>
-      </button>
-      <!-- 3 -->
-      <button class="key-btn" onclick="pressDigit('3')">
-        <div class="key-num">3</div>
-        <div class="key-sub">DEF</div>
-      </button>
-      <!-- 4 -->
-      <button class="key-btn" onclick="pressDigit('4')">
-        <div class="key-num">4</div>
-        <div class="key-sub">GHI</div>
-      </button>
-      <!-- 5 -->
-      <button class="key-btn" onclick="pressDigit('5')">
-        <div class="key-num">5</div>
-        <div class="key-sub">JKL</div>
-      </button>
-      <!-- 6 -->
-      <button class="key-btn" onclick="pressDigit('6')">
-        <div class="key-num">6</div>
-        <div class="key-sub">MNO</div>
-      </button>
-      <!-- 7 -->
-      <button class="key-btn" onclick="pressDigit('7')">
-        <div class="key-num">7</div>
-        <div class="key-sub">PQRS</div>
-      </button>
-      <!-- 8 -->
-      <button class="key-btn" onclick="pressDigit('8')">
-        <div class="key-num">8</div>
-        <div class="key-sub">TUV</div>
-      </button>
-      <!-- 9 -->
-      <button class="key-btn" onclick="pressDigit('9')">
-        <div class="key-num">9</div>
-        <div class="key-sub">WXYZ</div>
-      </button>
-    </div>
-
-    <!-- Keypad Bottom Row: Emergency, 0, Cancel/Delete -->
-    <div class="bottom-row-actions">
-      <button class="sub-action-btn" id="emergencyBtn" onclick="handleEmergencyClick()">Emergency</button>
-      <!-- 0 -->
-      <button class="key-btn" onclick="pressDigit('0')">
-        <div class="key-num">0</div>
-        <div class="key-sub" style="font-size:12px;letter-spacing:0;">+</div>
-      </button>
-      <button class="sub-action-btn" id="cancelBtn" onclick="handleCancelClick()">Cancel</button>
-    </div>
-
-    <!-- Home Indicator -->
-    <div class="home-indicator"></div>
-
-  </div>
-
   <!-- ========================================================
-       MULTIPLE MATCHES CANDIDATES SHEET
+       LAYER 1: FAKE HOMESCREEN VIEW
        ======================================================== -->
-  <div class="candidates-sheet" id="candidatesSheet">
-    <div class="sheet-pill-header">
-      <div class="sheet-title">Candidate Words</div>
-      <button class="sheet-close-btn" onclick="dismissCandidates()">Cancel</button>
+  <div class="homescreen-view" id="homescreenView">
+
+    <!-- Top Discreet Candidate Words Bar -->
+    <div class="top-candidates-bar" id="topCandidatesBar" style="display:none;">
+      <!-- Word chips injected dynamically -->
     </div>
-    <div class="candidates-list" id="candidatesList">
-      <!-- Injected dynamically -->
+
+    <!-- Bottom Discreet First-Letters Strip -->
+    <div class="bottom-letters-strip" id="bottomLettersStrip" style="display:none;">
+      <!-- Letter chips injected dynamically -->
+    </div>
+
+    <div class="homescreen-lock-hint" id="homescreenLockHint" style="display:none;">
+      Swipe down to lock
+    </div>
+
+  </div>
+
+  <!-- ========================================================
+       LAYER 2: AUTHENTIC REALISTIC LOCKSCREEN
+       ======================================================== -->
+  <div class="lockscreen-wrapper" id="lockscreenWrapper">
+    <!-- Full-screen Wallpaper Layer -->
+    <div class="lock-wallpaper-bg" id="lockWallpaperLayer"></div>
+    <div class="lock-wallpaper-blur"></div>
+
+    <!-- Keypad Passcode Interface -->
+    <div class="passcode-container" id="passcodeContainer">
+
+      <!-- Apple Padlock Icon -->
+      <div class="lock-icon-container" id="lockIconContainer" onclick="toggleCategorySheet()">
+        <svg class="padlock-svg" viewBox="0 0 24 32">
+          <path class="padlock-shackle" d="M 6,13 V 7 A 6,6 0 0,1 18,7 V 13" />
+          <rect class="padlock-body" x="4" y="13" width="16" height="15" rx="3" />
+          <circle cx="12" cy="19" r="1.5" fill="#000" opacity="0.6"/>
+          <line x1="12" y1="20.5" x2="12" y2="23.5" stroke="#000" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+      </div>
+
+      <!-- "Enter Passcode" Prompt (Long press opens settings) -->
+      <div class="passcode-prompt" id="passcodePrompt">Enter Passcode</div>
+
+      <!-- 6 Dots Row -->
+      <div class="passcode-dots-row" id="dotsRow">
+        <div class="dot" id="dot0"></div>
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+        <div class="dot" id="dot4"></div>
+        <div class="dot" id="dot5"></div>
+      </div>
+
+      <!-- 10 Circular Keys (1-9) -->
+      <div class="keypad-grid">
+        <!-- 1 -->
+        <button class="key-btn" onclick="pressDigit('1')">
+          <div class="key-num">1</div>
+          <div class="key-sub">&nbsp;</div>
+        </button>
+        <!-- 2 -->
+        <button class="key-btn" onclick="pressDigit('2')">
+          <div class="key-num">2</div>
+          <div class="key-sub">ABC</div>
+        </button>
+        <!-- 3 -->
+        <button class="key-btn" onclick="pressDigit('3')">
+          <div class="key-num">3</div>
+          <div class="key-sub">DEF</div>
+        </button>
+        <!-- 4 -->
+        <button class="key-btn" onclick="pressDigit('4')">
+          <div class="key-num">4</div>
+          <div class="key-sub">GHI</div>
+        </button>
+        <!-- 5 -->
+        <button class="key-btn" onclick="pressDigit('5')">
+          <div class="key-num">5</div>
+          <div class="key-sub">JKL</div>
+        </button>
+        <!-- 6 -->
+        <button class="key-btn" onclick="pressDigit('6')">
+          <div class="key-num">6</div>
+          <div class="key-sub">MNO</div>
+        </button>
+        <!-- 7 -->
+        <button class="key-btn" onclick="pressDigit('7')">
+          <div class="key-num">7</div>
+          <div class="key-sub">PQRS</div>
+        </button>
+        <!-- 8 -->
+        <button class="key-btn" onclick="pressDigit('8')">
+          <div class="key-num">8</div>
+          <div class="key-sub">TUV</div>
+        </button>
+        <!-- 9 -->
+        <button class="key-btn" onclick="pressDigit('9')">
+          <div class="key-num">9</div>
+          <div class="key-sub">WXYZ</div>
+        </button>
+      </div>
+
+      <!-- Keypad Bottom Row: Emergency, 0, Cancel/Delete -->
+      <div class="bottom-row-actions">
+        <button class="sub-action-btn" id="emergencyBtn" onclick="handleEmergencyClick()">Emergency</button>
+        <!-- 0 -->
+        <button class="key-btn" onclick="pressDigit('0')">
+          <div class="key-num">0</div>
+          <div class="key-sub" style="font-size:12px;letter-spacing:0;">+</div>
+        </button>
+        <button class="sub-action-btn" id="cancelBtn" onclick="handleCancelClick()">Cancel</button>
+      </div>
+
+      <!-- Home Indicator -->
+      <div class="home-indicator"></div>
+
+    </div>
+
+    <!-- Discreet Category Selector Sheet -->
+    <div class="discreet-category-sheet" id="categorySheet">
+      <div class="cat-sheet-header">
+        <div class="cat-sheet-title">Select Active Category</div>
+        <button class="cat-sheet-close" onclick="closeCategorySheet()">Done</button>
+      </div>
+      <div class="category-grid-pills" id="categoryPillsGrid">
+        <button class="cat-pill-btn" data-cat="objects" onclick="selectCategory('objects')">Everyday Objects</button>
+        <button class="cat-pill-btn" data-cat="animals" onclick="selectCategory('animals')">Animals</button>
+        <button class="cat-pill-btn" data-cat="countries" onclick="selectCategory('countries')">Countries & Cities</button>
+        <button class="cat-pill-btn" data-cat="food" onclick="selectCategory('food')">Foods & Drinks</button>
+        <button class="cat-pill-btn" data-cat="natural" onclick="selectCategory('natural')">Natural Things</button>
+        <button class="cat-pill-btn" data-cat="places_buildings" onclick="selectCategory('places_buildings')">Places & Vehicles</button>
+        <button class="cat-pill-btn" data-cat="combo" onclick="selectCategory('combo')">Combo (Zodiac/Color)</button>
+        <button class="cat-pill-btn" data-cat="all" onclick="selectCategory('all')">All Categories</button>
+      </div>
     </div>
   </div>
 
   <!-- ========================================================
-       SECRET SETTINGS MODAL
+       LAYER 3: SECRET SETTINGS MODAL
        ======================================================== -->
   <div class="settings-modal" id="settingsModal">
     <div class="settings-header">
@@ -596,53 +750,47 @@
       <button class="settings-done-btn" onclick="closeSettings()">Done</button>
     </div>
 
-    <!-- Category Selection (All Authentic Categories from Tutorial) -->
+    <!-- Wallpaper Uploads (Lockscreen & Homescreen) -->
     <div class="settings-section">
-      <div class="settings-section-title">Active Category</div>
-      <div class="settings-row">
-        <div class="settings-label">Mode</div>
-        <select class="settings-select" id="categorySelect" onchange="changeCategory(this.value)">
-          <option value="objects">Everyday Objects (In-Hand)</option>
-          <option value="animals">Animals</option>
-          <option value="countries">Countries & Cities</option>
-          <option value="food">Foods & Drinks</option>
-          <option value="natural">Natural Things (In-Hand & Big)</option>
-          <option value="places_buildings">Furniture, Vehicles & Places</option>
-          <option value="combo">Combo (Colors, Shapes, Zodiac, Months)</option>
-          <option value="all">All Categories Combined</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- Custom Wallpaper Upload with Canvas Downscaler & IndexedDB -->
-    <div class="settings-section">
-      <div class="settings-section-title">Lock Screen Wallpaper</div>
+      <div class="settings-section-title">1. Lock Screen Wallpaper</div>
       <p style="font-size: 13px; color: #8e8e93; line-height: 1.4; margin-bottom: 8px;">
-        Choose any screenshot or photo. Images of any size are automatically optimized and compressed to load instantly without errors.
+        Screenshot or photo for your locked passcode screen:
       </p>
       <div style="display: flex; flex-wrap: wrap;">
         <label class="file-input-btn">
-          Select Screenshot / Photo
-          <input type="file" id="wallpaperInput" accept="image/*" style="display:none;" onchange="handleWallpaperUpload(this)">
+          Select Lockscreen Image
+          <input type="file" accept="image/*" style="display:none;" onchange="handleImageUpload(this, 'wallpaper')">
         </label>
-        <button class="reset-btn" onclick="resetWallpaper()">Reset to Default</button>
+        <button class="reset-btn" onclick="resetWallpaper('wallpaper')">Reset</button>
       </div>
-      <div id="wallpaperStatus">Wallpaper updated!</div>
+      <div class="status-msg" id="lockStatus">Saved!</div>
+    </div>
+
+    <div class="settings-section">
+      <div class="settings-section-title">2. Fake Home Screen Screenshot</div>
+      <p style="font-size: 13px; color: #8e8e93; line-height: 1.4; margin-bottom: 8px;">
+        Screenshot of your real iPhone home screen (with your app icons). When unlocked to reveal multiple words, this screen appears with words at the top:
+      </p>
+      <div style="display: flex; flex-wrap: wrap;">
+        <label class="file-input-btn">
+          Select Homescreen Image
+          <input type="file" accept="image/*" style="display:none;" onchange="handleImageUpload(this, 'homescreen')">
+        </label>
+        <button class="reset-btn" onclick="resetWallpaper('homescreen')">Reset</button>
+      </div>
+      <div class="status-msg" id="homeStatus">Saved!</div>
     </div>
 
     <!-- 6-Digit Word Code Calculator / Crib -->
     <div class="settings-section">
       <div class="settings-section-title">6-Digit Code Calculator</div>
-      <p style="font-size: 13px; color: #8e8e93; line-height: 1.4;">
-        Type any word to verify its Enigma 6-digit passcode:
-      </p>
       <input type="text" class="calc-input" id="calcInput" placeholder="e.g. Spoon, Lighter, Apple..." oninput="updateCalculator(this.value)">
       <div class="calc-result" id="calcResult">Code: —</div>
     </div>
 
     <div style="text-align: center; color: #636366; font-size: 12px; margin-top: 15px;">
-      Gestures: Swipe DOWN with two fingers anywhere to clear/reset.<br>
-      Double-tap Emergency or Long-press "Enter Passcode" to return here.
+      Double-tap Emergency to open Category Picker.<br>
+      Long-press "Enter Passcode" to return here.
     </div>
   </div>
 
@@ -652,12 +800,12 @@
     /* ========================================================
        INDEXEDDB WALLPAPER STORAGE
        ======================================================== */
-    const DB_NAME = "EnigmaWallpaperDB";
-    const STORE_NAME = "wallpaperStore";
+    const DB_NAME = "EnigmaStorageDB";
+    const STORE_NAME = "imagesStore";
 
-    function openWallpaperDB() {
+    function openDB() {
       return new Promise((resolve, reject) => {
-        const req = indexedDB.open(DB_NAME, 1);
+        const req = indexedDB.open(DB_NAME, 2);
         req.onupgradeneeded = (e) => {
           const db = e.target.result;
           if (!db.objectStoreNames.contains(STORE_NAME)) {
@@ -669,11 +817,11 @@
       });
     }
 
-    async function saveWallpaperToDB(dataUrl) {
+    async function saveImageToDB(key, dataUrl) {
       try {
-        const db = await openWallpaperDB();
+        const db = await openDB();
         const tx = db.transaction(STORE_NAME, "readwrite");
-        tx.objectStore(STORE_NAME).put(dataUrl, "custom_wallpaper");
+        tx.objectStore(STORE_NAME).put(dataUrl, key);
         return new Promise((resolve) => {
           tx.oncomplete = () => resolve(true);
           tx.onerror = () => resolve(false);
@@ -683,11 +831,11 @@
       }
     }
 
-    async function getWallpaperFromDB() {
+    async function getImageFromDB(key) {
       try {
-        const db = await openWallpaperDB();
+        const db = await openDB();
         const tx = db.transaction(STORE_NAME, "readonly");
-        const req = tx.objectStore(STORE_NAME).get("custom_wallpaper");
+        const req = tx.objectStore(STORE_NAME).get(key);
         return new Promise((resolve) => {
           req.onsuccess = () => resolve(req.result);
           req.onerror = () => resolve(null);
@@ -697,20 +845,26 @@
       }
     }
 
-    async function deleteWallpaperFromDB() {
-      try {
-        const db = await openWallpaperDB();
-        const tx = db.transaction(STORE_NAME, "readwrite");
-        tx.objectStore(STORE_NAME).delete("custom_wallpaper");
-      } catch (e) {}
-    }
-
     /* ========================================================
-       APPLICATION STATE & DOM
-       ======================================================= */
+       APPLICATION STATE
+       ======================================================== */
     let currentInput = "";
     let isUnlocked = false;
     let activeCategory = localStorage.getItem("enigma_category") || "objects";
+    let currentCandidateWords = [];
+    let activeLetterFilter = null;
+
+    // DOM Elements
+    const lockscreenWrapper = document.getElementById("lockscreenWrapper");
+    const lockWallpaperLayer = document.getElementById("lockWallpaperLayer");
+    const homescreenView = document.getElementById("homescreenView");
+    const topCandidatesBar = document.getElementById("topCandidatesBar");
+    const bottomLettersStrip = document.getElementById("bottomLettersStrip");
+    const homescreenLockHint = document.getElementById("homescreenLockHint");
+    const lockIconContainer = document.getElementById("lockIconContainer");
+    const cancelBtn = document.getElementById("cancelBtn");
+    const categorySheet = document.getElementById("categorySheet");
+    const settingsModal = document.getElementById("settingsModal");
 
     const dots = [
       document.getElementById("dot0"),
@@ -721,37 +875,67 @@
       document.getElementById("dot5")
     ];
     const dotsRow = document.getElementById("dotsRow");
-    const cancelBtn = document.getElementById("cancelBtn");
-    const candidatesSheet = document.getElementById("candidatesSheet");
-    const candidatesList = document.getElementById("candidatesList");
-    const settingsModal = document.getElementById("settingsModal");
-    const wallpaperLayer = document.getElementById("wallpaperLayer");
-    const lockIconContainer = document.getElementById("lockIconContainer");
 
-    // Initialize Wallpaper
-    async function loadSavedWallpaper() {
-      const dbWallpaper = await getWallpaperFromDB();
-      if (dbWallpaper) {
-        wallpaperLayer.style.backgroundImage = `url("${dbWallpaper}")`;
-        return;
+    // Load saved images
+    async function loadSavedImages() {
+      // 1. Lockscreen
+      const lockData = await getImageFromDB("lockscreen_wallpaper") || localStorage.getItem("enigma_custom_wallpaper");
+      if (lockData) {
+        lockWallpaperLayer.style.backgroundImage = `url("${lockData}")`;
+      } else {
+        const testImg = new Image();
+        testImg.onload = () => { lockWallpaperLayer.style.backgroundImage = 'url("/custom_wallpaper.jpg")'; };
+        testImg.src = "/custom_wallpaper.jpg";
       }
 
-      const localWallpaper = localStorage.getItem("enigma_custom_wallpaper");
-      if (localWallpaper) {
-        wallpaperLayer.style.backgroundImage = `url("${localWallpaper}")`;
-        return;
+      // 2. Homescreen
+      const homeData = await getImageFromDB("homescreen_wallpaper") || localStorage.getItem("enigma_homescreen_wallpaper");
+      if (homeData) {
+        homescreenView.style.backgroundImage = `url("${homeData}")`;
+      } else {
+        const testHome = new Image();
+        testHome.onload = () => { homescreenView.style.backgroundImage = 'url("/custom_homescreen.jpg")'; };
+        testHome.src = "/custom_homescreen.jpg";
       }
 
-      const testImg = new Image();
-      testImg.onload = () => {
-        wallpaperLayer.style.backgroundImage = 'url("/custom_wallpaper.jpg")';
-      };
-      testImg.src = "/custom_wallpaper.jpg";
+      updateCategoryPills();
     }
-    loadSavedWallpaper();
+    loadSavedImages();
 
     /* ========================================================
-       KEYPAD LOGIC (6-Digit Enigma Input)
+       DISCREET CATEGORY SELECTION
+       ======================================================== */
+    function toggleCategorySheet() {
+      categorySheet.classList.toggle("open");
+      updateCategoryPills();
+    }
+
+    function closeCategorySheet() {
+      categorySheet.classList.remove("open");
+    }
+
+    function selectCategory(cat) {
+      activeCategory = cat;
+      localStorage.setItem("enigma_category", cat);
+      updateCategoryPills();
+      if (window.navigator && window.navigator.vibrate) {
+        window.navigator.vibrate(20);
+      }
+      setTimeout(closeCategorySheet, 200);
+    }
+
+    function updateCategoryPills() {
+      document.querySelectorAll(".cat-pill-btn").forEach(btn => {
+        if (btn.getAttribute("data-cat") === activeCategory) {
+          btn.classList.add("selected");
+        } else {
+          btn.classList.remove("selected");
+        }
+      });
+    }
+
+    /* ========================================================
+       KEYPAD LOGIC (6-Digit Passcode)
        ======================================================== */
     function pressDigit(digit) {
       if (isUnlocked || currentInput.length >= 6) return;
@@ -807,15 +991,14 @@
     }
 
     /* ========================================================
-       EVALUATE 6-DIGIT PASSCODE
+       EVALUATE PASSCODE
        ======================================================== */
     function evaluatePasscode(code) {
       const db = window.ENIGMA_DATA ? window.ENIGMA_DATA.database : {};
 
-      // Look in active category first, then fallback to all
       let matches = db[`${activeCategory}:${code}`] || db[`all:${code}`];
 
-      // If no match and digit 6 is not 0, try shape skip (replace 6th digit with '0')
+      // Shape skip fallback
       if ((!matches || matches.length === 0) && code.length === 6 && code[5] !== "0") {
         const skipCode = code.slice(0, 5) + "0";
         matches = db[`${activeCategory}:${skipCode}`] || db[`all:${skipCode}`];
@@ -823,9 +1006,11 @@
 
       if (matches && matches.length > 0) {
         if (matches.length === 1) {
-          triggerUnlock(matches[0]);
+          // Direct 1-word unlock to Safari
+          unlockSingleWord(matches[0]);
         } else {
-          showCandidates(matches);
+          // Unlock to Fake Homescreen with multiple candidate words
+          unlockToHomescreen(matches);
         }
       } else {
         shakeKeypad();
@@ -833,37 +1018,12 @@
     }
 
     /* ========================================================
-       MULTIPLE CANDIDATES SELECTION
+       SINGLE MATCH: UNLOCK DIRECTLY TO SAFARI
        ======================================================== */
-    function showCandidates(words) {
-      candidatesList.innerHTML = "";
-      words.forEach(word => {
-        const btn = document.createElement("button");
-        btn.className = "candidate-card-btn";
-        btn.innerHTML = `<span>${word}</span><span class="candidate-arrow">&#8250;</span>`;
-        btn.onclick = () => {
-          dismissCandidates();
-          triggerUnlock(word);
-        };
-        candidatesList.appendChild(btn);
-      });
-      candidatesSheet.classList.add("open");
-    }
-
-    function dismissCandidates() {
-      candidatesSheet.classList.remove("open");
-      clearDots();
-    }
-
-    /* ========================================================
-       REAL SAFARI HANDOFF VIA x-safari-https (NO BROWSER FALLBACK)
-       ======================================================== */
-    function triggerUnlock(word) {
+    function unlockSingleWord(word) {
       isUnlocked = true;
       lockIconContainer.classList.add("unlocked");
-      dots.forEach(d => {
-        d.classList.add("filled", "success");
-      });
+      dots.forEach(d => d.classList.add("filled", "success"));
 
       const query = encodeURIComponent(word.toLowerCase());
       const safariScheme = `x-safari-https://www.google.com/search?q=${query}`;
@@ -881,33 +1041,124 @@
     }
 
     /* ========================================================
-       TWO-FINGER SWIPE DOWN TO RESET (Christian Grace Feature)
+       MULTIPLE MATCHES: UNLOCK TO FAKE HOMESCREEN WITH PEEK
        ======================================================== */
-    let touchStartY = 0;
-    let touchCount = 0;
+    function unlockToHomescreen(words) {
+      isUnlocked = true;
+      lockIconContainer.classList.add("unlocked");
+      dots.forEach(d => d.classList.add("filled", "success"));
 
-    window.addEventListener("touchstart", (e) => {
-      touchCount = e.touches.length;
-      if (touchCount === 2) {
-        touchStartY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-      }
-    }, { passive: true });
+      currentCandidateWords = words;
+      activeLetterFilter = null;
 
-    window.addEventListener("touchend", (e) => {
-      if (touchCount === 2 && e.changedTouches.length > 0) {
-        const touchEndY = e.changedTouches[0].clientY;
-        if (touchEndY - touchStartY > 60) {
-          clearDots();
-          if (candidatesSheet.classList.contains("open")) {
-            dismissCandidates();
+      setTimeout(() => {
+        // Slide up lockscreen to reveal homescreen
+        lockscreenWrapper.classList.add("unlocked-up");
+
+        // Render candidate words at top
+        renderTopCandidates(words);
+        topCandidatesBar.style.display = "flex";
+
+        // Render first-letters strip at bottom
+        renderBottomLetters(words);
+        bottomLettersStrip.style.display = "flex";
+
+        homescreenLockHint.style.display = "block";
+      }, 200);
+    }
+
+    function renderTopCandidates(words) {
+      topCandidatesBar.innerHTML = "";
+      words.forEach(word => {
+        const chip = document.createElement("button");
+        chip.className = "candidate-word-chip";
+        chip.innerHTML = `<span>${word}</span><span class="word-arrow">&#8250;</span>`;
+        chip.onclick = () => {
+          launchSafariForWord(word);
+        };
+        topCandidatesBar.appendChild(chip);
+      });
+    }
+
+    function renderBottomLetters(words) {
+      bottomLettersStrip.innerHTML = "";
+
+      // All button
+      const allBtn = document.createElement("button");
+      allBtn.className = "letter-chip all-chip active";
+      allBtn.textContent = "All";
+      allBtn.onclick = () => {
+        activeLetterFilter = null;
+        document.querySelectorAll(".letter-chip").forEach(c => c.classList.remove("active"));
+        allBtn.classList.add("active");
+        renderTopCandidates(currentCandidateWords);
+      };
+      bottomLettersStrip.appendChild(allBtn);
+
+      // Unique first letters in alphabetical order
+      const letters = Array.from(new Set(words.map(w => w[0].toUpperCase()))).sort();
+      letters.forEach(letter => {
+        const chip = document.createElement("button");
+        chip.className = "letter-chip";
+        chip.textContent = letter;
+        chip.onclick = () => {
+          activeLetterFilter = letter;
+          document.querySelectorAll(".letter-chip").forEach(c => c.classList.remove("active"));
+          chip.classList.add("active");
+
+          // Filter top words
+          const filtered = currentCandidateWords.filter(w => w[0].toUpperCase() === letter);
+          renderTopCandidates(filtered);
+
+          if (window.navigator && window.navigator.vibrate) {
+            window.navigator.vibrate(10);
           }
-        }
+        };
+        bottomLettersStrip.appendChild(chip);
+      });
+    }
+
+    function launchSafariForWord(word) {
+      const query = encodeURIComponent(word.toLowerCase());
+      const safariScheme = `x-safari-https://www.google.com/search?q=${query}`;
+
+      const isMobileIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                          (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+      if (isMobileIOS) {
+        window.location.href = safariScheme;
+      } else {
+        window.open(`https://www.google.com/search?q=${query}`, "_blank");
       }
-      touchCount = 0;
-    }, { passive: true });
+    }
 
     /* ========================================================
-       SECRET SETTINGS ACCESS
+       SWIPE DOWN ON HOMESCREEN TO LOCK BACK
+       ======================================================== */
+    let homeTouchStartY = 0;
+    homescreenView.addEventListener("touchstart", (e) => {
+      homeTouchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    homescreenView.addEventListener("touchend", (e) => {
+      if (e.changedTouches.length > 0) {
+        const diff = e.changedTouches[0].clientY - homeTouchStartY;
+        if (diff > 50) {
+          lockPhoneBack();
+        }
+      }
+    }, { passive: true });
+
+    function lockPhoneBack() {
+      lockscreenWrapper.classList.remove("unlocked-up");
+      topCandidatesBar.style.display = "none";
+      bottomLettersStrip.style.display = "none";
+      homescreenLockHint.style.display = "none";
+      clearDots();
+    }
+
+    /* ========================================================
+       SECRET SETTINGS & GESTURES
        ======================================================== */
     let promptPressTimer = null;
     const promptEl = document.getElementById("passcodePrompt");
@@ -919,138 +1170,106 @@
     });
     promptEl.addEventListener("dblclick", openSettings);
 
-    let emergencyTapCount = 0;
-    let emergencyTapTimer = null;
     function handleEmergencyClick() {
-      emergencyTapCount++;
-      if (emergencyTapCount === 1) {
-        emergencyTapTimer = setTimeout(() => {
-          emergencyTapCount = 0;
-        }, 400);
-      } else if (emergencyTapCount === 2) {
-        clearTimeout(emergencyTapTimer);
-        emergencyTapCount = 0;
-        openSettings();
-      }
+      toggleCategorySheet();
     }
 
     function openSettings() {
-      document.getElementById("categorySelect").value = activeCategory;
       settingsModal.classList.add("show");
     }
 
     function closeSettings() {
       settingsModal.classList.remove("show");
-      clearDots();
-    }
-
-    function changeCategory(cat) {
-      activeCategory = cat;
-      localStorage.setItem("enigma_category", cat);
     }
 
     /* ========================================================
-       OPTIMIZED WALLPAPER UPLOAD (Canvas Downscaling + Storage)
+       IMAGE UPLOADS (Canvas Downscaling + Storage)
        ======================================================== */
-    function handleWallpaperUpload(input) {
+    function handleImageUpload(input, type) {
       const file = input.files && input.files[0];
       if (!file) return;
 
-      const statusEl = document.getElementById("wallpaperStatus");
+      const statusEl = document.getElementById(type === "wallpaper" ? "lockStatus" : "homeStatus");
       statusEl.style.display = "block";
-      statusEl.style.color = "#0a84ff";
-      statusEl.textContent = "Optimizing image...";
+      statusEl.textContent = "Optimizing...";
 
       const reader = new FileReader();
       reader.onload = function(e) {
         const img = new Image();
         img.onload = async function() {
-          try {
-            const maxW = 1170;
-            const maxH = 2532;
-            let w = img.width;
-            let h = img.height;
+          const maxW = 1170;
+          const maxH = 2532;
+          let w = img.width;
+          let h = img.height;
 
-            if (w > maxW || h > maxH) {
-              const ratio = Math.min(maxW / w, maxH / h);
-              w = Math.round(w * ratio);
-              h = Math.round(h * ratio);
-            }
-
-            const canvas = document.createElement("canvas");
-            canvas.width = w;
-            canvas.height = h;
-            const ctx = canvas.getContext("2d");
-            ctx.drawImage(img, 0, 0, w, h);
-
-            const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.82);
-
-            await saveWallpaperToDB(compressedDataUrl);
-
-            try {
-              localStorage.setItem("enigma_custom_wallpaper", compressedDataUrl);
-            } catch (quotaErr) {}
-
-            try {
-              fetch("/api/wallpaper", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ image: compressedDataUrl })
-              }).catch(() => {});
-            } catch (err) {}
-
-            wallpaperLayer.style.backgroundImage = `url("${compressedDataUrl}")`;
-
-            statusEl.style.color = "#30d158";
-            statusEl.textContent = "✓ Wallpaper saved successfully!";
-            setTimeout(() => { statusEl.style.display = "none"; }, 3000);
-          } catch (err) {
-            statusEl.style.color = "#ff453a";
-            statusEl.textContent = "Error processing image.";
+          if (w > maxW || h > maxH) {
+            const ratio = Math.min(maxW / w, maxH / h);
+            w = Math.round(w * ratio);
+            h = Math.round(h * ratio);
           }
+
+          const canvas = document.createElement("canvas");
+          canvas.width = w;
+          canvas.height = h;
+          const ctx = canvas.getContext("2d");
+          ctx.drawImage(img, 0, 0, w, h);
+
+          const compressed = canvas.toDataURL("image/jpeg", 0.82);
+
+          const dbKey = type === "wallpaper" ? "lockscreen_wallpaper" : "homescreen_wallpaper";
+          await saveImageToDB(dbKey, compressed);
+
+          const endpoint = type === "wallpaper" ? "/api/wallpaper" : "/api/homescreen";
+          fetch(endpoint, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ image: compressed })
+          }).catch(() => {});
+
+          if (type === "wallpaper") {
+            lockWallpaperLayer.style.backgroundImage = `url("${compressed}")`;
+          } else {
+            homescreenView.style.backgroundImage = `url("${compressed}")`;
+          }
+
+          statusEl.textContent = "✓ Saved!";
+          setTimeout(() => { statusEl.style.display = "none"; }, 2500);
         };
         img.src = e.target.result;
       };
       reader.readAsDataURL(file);
     }
 
-    async function resetWallpaper() {
-      await deleteWallpaperFromDB();
-      localStorage.removeItem("enigma_custom_wallpaper");
-      wallpaperLayer.style.backgroundImage = 'linear-gradient(180deg, #182236 0%, #0d121c 50%, #07090e 100%)';
-      const statusEl = document.getElementById("wallpaperStatus");
-      statusEl.style.display = "block";
-      statusEl.style.color = "#8e8e93";
-      statusEl.textContent = "Reset to default wallpaper.";
-      setTimeout(() => { statusEl.style.display = "none"; }, 2500);
+    function resetWallpaper(type) {
+      if (type === "wallpaper") {
+        lockWallpaperLayer.style.backgroundImage = 'linear-gradient(180deg, #182236 0%, #0d121c 50%, #07090e 100%)';
+      } else {
+        homescreenView.style.backgroundImage = 'linear-gradient(180deg, #1c2331 0%, #10141f 50%, #080a10 100%)';
+      }
     }
 
     /* ========================================================
-       6-DIGIT ENIGMA CODE CALCULATOR
+       6-DIGIT CODE CALCULATOR
        ======================================================== */
     function computeWord6DigitCode(word) {
       const w = word.trim().toUpperCase().replace(/[^A-Z]/g, "");
       if (!w) return "—";
       const L = w.length;
       const lenCode = L < 10 ? String(L) : (L === 10 ? "0" : "1");
-
       const vowels = "AEIOU";
       const vPos = [];
       for (let i = 0; i < w.length; i++) {
         if (vowels.includes(w[i])) vPos.push(i + 1);
       }
-
       function shapeOf(ch) {
         if ("AEFHIKLMNTVWXYZ".includes(ch)) return "1";
         if ("BDGJPRU".includes(ch)) return "2";
         if ("COQS".includes(ch)) return "3";
         return "1";
       }
-
       const v1 = vPos.length > 0 ? String(vPos[0]) : "0";
       const v2 = vPos.length > 1 ? String(vPos[1]) : "0";
       const sh = shapeOf(w[0]);
-
       return `${lenCode}${v1}${v2}00${sh}`;
     }
 

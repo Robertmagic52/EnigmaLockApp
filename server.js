@@ -34,8 +34,9 @@ const server = http.createServer((req, res) => {
   const parsedUrl = new URL(req.url, `http://${req.headers.host}`);
   let pathname = parsedUrl.pathname;
 
-  // Handle Wallpaper Upload API
-  if (req.method === "POST" && pathname === "/api/wallpaper") {
+  // Handle Wallpaper / Homescreen Upload API
+  if (req.method === "POST" && (pathname === "/api/wallpaper" || pathname === "/api/homescreen")) {
+    const filename = pathname === "/api/homescreen" ? "custom_homescreen.jpg" : "custom_wallpaper.jpg";
     let body = [];
     req.on("data", chunk => body.push(chunk));
     req.on("end", () => {
@@ -58,14 +59,14 @@ const server = http.createServer((req, res) => {
         }
 
         if (buffer && buffer.length > 0) {
-          const targetPath = path.join(PUBLIC_DIR, "custom_wallpaper.jpg");
+          const targetPath = path.join(PUBLIC_DIR, filename);
           fs.writeFileSync(targetPath, buffer);
           res.writeHead(200, { "Content-Type": "application/json" });
-          res.end(JSON.stringify({ ok: true, url: "/custom_wallpaper.jpg?t=" + Date.now() }));
+          res.end(JSON.stringify({ ok: true, url: "/" + filename + "?t=" + Date.now() }));
           return;
         }
       } catch (err) {
-        console.error("Error saving wallpaper:", err);
+        console.error("Error saving image:", err);
       }
       res.writeHead(400, { "Content-Type": "application/json" });
       res.end(JSON.stringify({ ok: false, error: "Failed to process image" }));
@@ -77,7 +78,6 @@ const server = http.createServer((req, res) => {
 
   const filePath = path.join(PUBLIC_DIR, pathname);
 
-  // Security check: stay inside public dir
   if (!filePath.startsWith(PUBLIC_DIR)) {
     res.writeHead(403);
     res.end("Forbidden");
