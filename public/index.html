@@ -32,7 +32,22 @@
     }
 
     /* =========================================================
-       VIEW 1: FAKE HOMESCREEN (Underneath Lockscreen)
+       INVISIBLE CORNER RESET ZONES (ALL 4 CORNERS)
+       ========================================================= */
+    .corner-reset-zone {
+      position: fixed;
+      width: 80px;
+      height: 80px;
+      z-index: 999;
+      background: transparent;
+    }
+    .corner-tl { top: 0; left: 0; }
+    .corner-tr { top: 0; right: 0; }
+    .corner-bl { bottom: 0; left: 0; }
+    .corner-br { bottom: 0; right: 0; }
+
+    /* =========================================================
+       LAYER 1: FAKE HOMESCREEN VIEW
        ========================================================= */
     .homescreen-view {
       position: absolute;
@@ -48,130 +63,87 @@
       overflow: hidden;
     }
 
-    /* Homescreen Discreet Top Words Bar */
+    /* Homescreen Discreet Candidate Words (CLEAN WHITE TEXT, NO GRAY PILLS) */
     .top-candidates-bar {
       position: absolute;
-      top: calc(env(safe-area-inset-top, 44px) + 8px);
-      left: 12px;
-      right: 12px;
-      z-index: 20;
-      display: flex;
-      gap: 8px;
-      padding: 8px 10px;
-      background: rgba(22, 22, 24, 0.78);
-      backdrop-filter: blur(25px);
-      -webkit-backdrop-filter: blur(25px);
-      border-radius: 18px;
-      border: 0.5px solid rgba(255, 255, 255, 0.18);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-      overflow-x: auto;
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
-    }
-    .top-candidates-bar::-webkit-scrollbar { display: none; }
-
-    .candidate-word-chip {
-      flex: 0 0 auto;
-      background: rgba(255, 255, 255, 0.16);
-      border: 0.5px solid rgba(255, 255, 255, 0.22);
-      border-radius: 14px;
-      padding: 7px 16px;
-      font-size: 17px;
-      font-weight: 500;
-      color: #ffffff;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: background 0.15s ease, transform 0.1s ease;
-      touch-action: manipulation;
-    }
-
-    .candidate-word-chip:active {
-      background: rgba(255, 255, 255, 0.4);
-      transform: scale(0.96);
-    }
-
-    .word-arrow {
-      font-size: 13px;
-      opacity: 0.6;
-    }
-
-    /* Homescreen Discreet Bottom Letter Strip */
-    .bottom-letters-strip {
-      position: absolute;
-      bottom: calc(env(safe-area-inset-bottom, 24px) + 72px);
+      top: calc(env(safe-area-inset-top, 44px) + 12px);
       left: 16px;
       right: 16px;
       z-index: 20;
       display: flex;
-      align-items: center;
       justify-content: center;
-      gap: 8px;
-      padding: 8px 12px;
-      background: rgba(22, 22, 24, 0.82);
-      backdrop-filter: blur(25px);
-      -webkit-backdrop-filter: blur(25px);
-      border-radius: 20px;
-      border: 0.5px solid rgba(255, 255, 255, 0.18);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-      overflow-x: auto;
-      scrollbar-width: none;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px 22px;
+      padding: 6px 0;
     }
-    .bottom-letters-strip::-webkit-scrollbar { display: none; }
 
-    .letter-chip {
-      width: 38px;
-      height: 38px;
-      flex: 0 0 38px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.12);
-      border: 0.5px solid rgba(255, 255, 255, 0.2);
-      color: #ffffff;
-      font-size: 17px;
+    .candidate-word-chip {
+      background: none;
+      border: none;
+      font-size: 20px;
       font-weight: 600;
+      color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 1px #000000;
+      transition: transform 0.1s ease, opacity 0.15s ease;
+      touch-action: manipulation;
+      letter-spacing: -0.2px;
+    }
+
+    .candidate-word-chip:active {
+      transform: scale(0.94);
+      opacity: 0.7;
+    }
+
+    /* Homescreen Discreet Bottom Letter Strip (CLEAN WHITE TEXT, NO PILLS) */
+    .bottom-letters-strip {
+      position: absolute;
+      bottom: calc(env(safe-area-inset-bottom, 24px) + 72px);
+      left: 20px;
+      right: 20px;
+      z-index: 20;
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 20px;
+      padding: 6px 0;
+    }
+
+    .letter-chip {
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 19px;
+      font-weight: 700;
       cursor: pointer;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9), 0 2px 10px rgba(0, 0, 0, 0.8);
       transition: all 0.15s ease;
       touch-action: manipulation;
     }
 
     .letter-chip.active {
-      background: var(--accent-blue);
-      border-color: var(--accent-blue);
-      transform: scale(1.08);
-      box-shadow: 0 0 12px rgba(10, 132, 255, 0.5);
+      color: #ffffff;
+      transform: scale(1.15);
+      text-shadow: 0 0 8px rgba(10, 132, 255, 0.9), 0 2px 12px rgba(0, 0, 0, 0.9);
+      border-bottom: 2px solid var(--accent-blue);
     }
 
     .letter-chip:active {
-      background: rgba(255, 255, 255, 0.35);
+      opacity: 0.5;
     }
 
     .letter-chip.all-chip {
-      width: auto;
-      padding: 0 12px;
-      border-radius: 19px;
-      font-size: 13px;
+      font-size: 14px;
+      letter-spacing: 0.8px;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    /* Homescreen Hint to Lock Back */
-    .homescreen-lock-hint {
-      position: absolute;
-      bottom: calc(env(safe-area-inset-bottom, 24px) + 26px);
-      width: 100%;
-      text-align: center;
-      font-size: 12px;
-      color: rgba(255, 255, 255, 0.45);
-      z-index: 20;
-      pointer-events: none;
     }
 
     /* =========================================================
-       VIEW 2: LOCKSCREEN & KEYPAD (Slides up on unlock)
+       LAYER 2: GENUINE iOS PASSCODE SCREEN (PIXEL-ACCURATE)
        ========================================================= */
     .lockscreen-wrapper {
       position: absolute;
@@ -186,7 +158,7 @@
       transform: translateY(-100%);
     }
 
-    /* Wallpaper Layer with Authentic Gaussian Scrim */
+    /* Full-screen Wallpaper Layer with subtle genuine iOS scrim */
     .lock-wallpaper-bg {
       position: absolute;
       inset: 0;
@@ -201,76 +173,56 @@
     .lock-wallpaper-blur {
       position: absolute;
       inset: 0;
-      backdrop-filter: blur(36px) saturate(160%);
-      -webkit-backdrop-filter: blur(36px) saturate(160%);
-      background: rgba(0, 0, 0, 0.36);
+      backdrop-filter: blur(20px) saturate(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(140%);
+      background: rgba(0, 0, 0, 0.25);
       z-index: 2;
     }
 
-    /* Passcode Container: Anchored realistically to bottom */
-    .passcode-container {
-      position: relative;
-      width: 100%;
-      height: 100%;
+    /* =========================================================
+       GENUINE iOS GEOMETRIC POSITIONING
+       Top: 19.1% -> Enter Passcode
+       Top: 23.8% -> 6 Dots Row
+       Top: 34.6% -> Row 1 (1, 2, 3)
+       Top: 45.4% -> Row 2 (4, 5, 6)
+       Top: 56.3% -> Row 3 (7, 8, 9)
+       Top: 67.2% -> Row 4 (0)
+       Top: 90.0% -> Emergency / Cancel
+       ========================================================= */
+    .passcode-ui-layer {
+      position: absolute;
+      inset: 0;
       z-index: 5;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
       align-items: center;
-      padding-bottom: calc(env(safe-area-inset-bottom, 24px) + 28px);
     }
 
-    /* Top Lock Icon */
-    .lock-icon-container {
-      margin-bottom: 12px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .padlock-svg {
-      width: 22px;
-      height: 30px;
-      overflow: visible;
-    }
-
-    .padlock-shackle {
-      stroke: #ffffff;
-      stroke-width: 2.2;
-      stroke-linecap: round;
-      fill: none;
-      transform-origin: 5px 12px;
-      transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .padlock-body {
-      fill: #ffffff;
-      rx: 3px;
-    }
-
-    .unlocked .padlock-shackle {
-      transform: translateY(-5px) rotate(-32deg);
-    }
-
-    /* "Enter Passcode" Prompt */
+    /* "Enter Passcode" Prompt (Top: 19.1% on iOS) */
     .passcode-prompt {
-      font-size: 20px;
-      font-weight: 400;
+      position: absolute;
+      top: 19.1%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 21px;
+      font-weight: 500;
       color: #ffffff;
-      letter-spacing: -0.2px;
-      margin-bottom: 20px;
+      letter-spacing: -0.3px;
       text-align: center;
       cursor: pointer;
+      white-space: nowrap;
     }
 
-    /* 6 Circular Dots Row */
+    /* 6 Dots Row (Top: 23.8% on iOS) */
     .passcode-dots-row {
+      position: absolute;
+      top: 23.8%;
+      left: 50%;
+      transform: translateX(-50%);
       display: flex;
       gap: 19px;
       align-items: center;
       justify-content: center;
-      margin-bottom: 42px;
       height: 18px;
     }
 
@@ -308,30 +260,22 @@
       animation: shakeKeypad 0.35s ease;
     }
 
-    /* Keypad 0-9 Grid */
-    .keypad-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 76px);
-      gap: 15px 26px;
-      justify-content: center;
-      margin: 0 auto;
-    }
-
+    /* Keypad Rows (Positioned at exact iOS percentages) */
     .key-btn {
       width: 76px;
       height: 76px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.18);
       backdrop-filter: blur(25px);
       -webkit-backdrop-filter: blur(25px);
-      border: none;
+      border: 0.5px solid rgba(255, 255, 255, 0.25);
       color: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      transition: background 0.1s ease, transform 0.06s ease;
+      transition: background 0.08s ease, transform 0.06s ease;
       touch-action: manipulation;
     }
 
@@ -347,23 +291,39 @@
     }
 
     .key-sub {
-      font-size: 9.5px;
+      font-size: 10px;
       font-weight: 600;
-      letter-spacing: 2.2px;
-      margin-top: 1px;
-      color: rgba(255, 255, 255, 0.82);
+      letter-spacing: 2px;
+      margin-top: 2px;
+      color: rgba(255, 255, 255, 0.85);
       height: 12px;
       line-height: 12px;
     }
 
-    /* Bottom Actions: Emergency, 0, Cancel/Delete */
+    .keypad-row {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 28px;
+      justify-content: center;
+    }
+
+    .row-1 { top: 34.6%; }
+    .row-2 { top: 45.4%; }
+    .row-3 { top: 56.3%; }
+    .row-4 { top: 67.2%; }
+
+    /* Bottom Row: Emergency (Left) and Cancel/Delete (Right) at Top: 90.0% */
     .bottom-row-actions {
+      position: absolute;
+      top: 90.0%;
+      left: 50%;
+      transform: translateX(-50%);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
-      max-width: 280px;
-      margin: 15px auto 0 auto;
+      width: 284px;
       padding: 0 4px;
     }
 
@@ -376,16 +336,12 @@
       cursor: pointer;
       padding: 8px 10px;
       font-family: inherit;
-      width: 80px;
     }
-    .sub-action-btn:first-child { text-align: left; }
-    .sub-action-btn:last-child { text-align: right; }
-
     .sub-action-btn:active {
       opacity: 0.5;
     }
 
-    /* Home Indicator */
+    /* Home Indicator Pill Bar */
     .home-indicator {
       position: absolute;
       bottom: 8px;
@@ -400,14 +356,14 @@
     }
 
     /* =========================================================
-       DISCREET CATEGORY SELECTION SHEET (Christian Grace Style)
+       DISCREET CATEGORY SELECTION SHEET
        ========================================================= */
     .discreet-category-sheet {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
-      background: rgba(28, 28, 30, 0.95);
+      background: rgba(28, 28, 30, 0.96);
       backdrop-filter: blur(35px);
       -webkit-backdrop-filter: blur(35px);
       border-top-left-radius: 24px;
@@ -555,10 +511,6 @@
       margin-top: 6px;
     }
 
-    .file-input-btn:active {
-      background: rgba(255, 255, 255, 0.3);
-    }
-
     .reset-btn {
       background: rgba(255, 69, 58, 0.2);
       border: 1px solid rgba(255, 69, 58, 0.4);
@@ -603,51 +555,43 @@
 <body>
 
   <!-- ========================================================
+       4 INVISIBLE CORNER RESET ZONES (Double-tap or long-press)
+       ======================================================== -->
+  <div class="corner-reset-zone corner-tl" id="cornerTL"></div>
+  <div class="corner-reset-zone corner-tr" id="cornerTR"></div>
+  <div class="corner-reset-zone corner-bl" id="cornerBL"></div>
+  <div class="corner-reset-zone corner-br" id="cornerBR"></div>
+
+  <!-- ========================================================
        LAYER 1: FAKE HOMESCREEN VIEW
        ======================================================== -->
   <div class="homescreen-view" id="homescreenView">
 
-    <!-- Top Discreet Candidate Words Bar -->
+    <!-- Top Discreet Candidate Words Bar (CLEAN WHITE TEXT) -->
     <div class="top-candidates-bar" id="topCandidatesBar" style="display:none;">
       <!-- Word chips injected dynamically -->
     </div>
 
-    <!-- Bottom Discreet First-Letters Strip -->
+    <!-- Bottom Discreet First-Letters Strip (CLEAN WHITE TEXT) -->
     <div class="bottom-letters-strip" id="bottomLettersStrip" style="display:none;">
       <!-- Letter chips injected dynamically -->
-    </div>
-
-    <div class="homescreen-lock-hint" id="homescreenLockHint" style="display:none;">
-      Swipe down to lock
     </div>
 
   </div>
 
   <!-- ========================================================
-       LAYER 2: AUTHENTIC REALISTIC LOCKSCREEN
+       LAYER 2: AUTHENTIC GENUINE iOS PASSCODE SCREEN
        ======================================================== -->
   <div class="lockscreen-wrapper" id="lockscreenWrapper">
-    <!-- Full-screen Wallpaper Layer -->
     <div class="lock-wallpaper-bg" id="lockWallpaperLayer"></div>
     <div class="lock-wallpaper-blur"></div>
 
-    <!-- Keypad Passcode Interface -->
-    <div class="passcode-container" id="passcodeContainer">
+    <div class="passcode-ui-layer">
 
-      <!-- Apple Padlock Icon -->
-      <div class="lock-icon-container" id="lockIconContainer" onclick="toggleCategorySheet()">
-        <svg class="padlock-svg" viewBox="0 0 24 32">
-          <path class="padlock-shackle" d="M 6,13 V 7 A 6,6 0 0,1 18,7 V 13" />
-          <rect class="padlock-body" x="4" y="13" width="16" height="15" rx="3" />
-          <circle cx="12" cy="19" r="1.5" fill="#000" opacity="0.6"/>
-          <line x1="12" y1="20.5" x2="12" y2="23.5" stroke="#000" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
-        </svg>
-      </div>
-
-      <!-- "Enter Passcode" Prompt (Long press opens settings) -->
+      <!-- "Enter Passcode" Prompt (Top: 19.1%) -->
       <div class="passcode-prompt" id="passcodePrompt">Enter Passcode</div>
 
-      <!-- 6 Dots Row -->
+      <!-- 6 Dots Row (Top: 23.8%) -->
       <div class="passcode-dots-row" id="dotsRow">
         <div class="dot" id="dot0"></div>
         <div class="dot" id="dot1"></div>
@@ -657,63 +601,65 @@
         <div class="dot" id="dot5"></div>
       </div>
 
-      <!-- 10 Circular Keys (1-9) -->
-      <div class="keypad-grid">
-        <!-- 1 -->
+      <!-- Row 1: 1, 2, 3 (Top: 34.6%) -->
+      <div class="keypad-row row-1">
         <button class="key-btn" onclick="pressDigit('1')">
           <div class="key-num">1</div>
           <div class="key-sub">&nbsp;</div>
         </button>
-        <!-- 2 -->
         <button class="key-btn" onclick="pressDigit('2')">
           <div class="key-num">2</div>
           <div class="key-sub">ABC</div>
         </button>
-        <!-- 3 -->
         <button class="key-btn" onclick="pressDigit('3')">
           <div class="key-num">3</div>
           <div class="key-sub">DEF</div>
         </button>
-        <!-- 4 -->
+      </div>
+
+      <!-- Row 2: 4, 5, 6 (Top: 45.4%) -->
+      <div class="keypad-row row-2">
         <button class="key-btn" onclick="pressDigit('4')">
           <div class="key-num">4</div>
           <div class="key-sub">GHI</div>
         </button>
-        <!-- 5 -->
         <button class="key-btn" onclick="pressDigit('5')">
           <div class="key-num">5</div>
           <div class="key-sub">JKL</div>
         </button>
-        <!-- 6 -->
         <button class="key-btn" onclick="pressDigit('6')">
           <div class="key-num">6</div>
           <div class="key-sub">MNO</div>
         </button>
-        <!-- 7 -->
+      </div>
+
+      <!-- Row 3: 7, 8, 9 (Top: 56.3%) -->
+      <div class="keypad-row row-3">
         <button class="key-btn" onclick="pressDigit('7')">
           <div class="key-num">7</div>
           <div class="key-sub">PQRS</div>
         </button>
-        <!-- 8 -->
         <button class="key-btn" onclick="pressDigit('8')">
           <div class="key-num">8</div>
           <div class="key-sub">TUV</div>
         </button>
-        <!-- 9 -->
         <button class="key-btn" onclick="pressDigit('9')">
           <div class="key-num">9</div>
           <div class="key-sub">WXYZ</div>
         </button>
       </div>
 
-      <!-- Keypad Bottom Row: Emergency, 0, Cancel/Delete -->
-      <div class="bottom-row-actions">
-        <button class="sub-action-btn" id="emergencyBtn" onclick="handleEmergencyClick()">Emergency</button>
-        <!-- 0 -->
+      <!-- Row 4: 0 (Top: 67.2%) -->
+      <div class="keypad-row row-4">
         <button class="key-btn" onclick="pressDigit('0')">
           <div class="key-num">0</div>
           <div class="key-sub" style="font-size:12px;letter-spacing:0;">+</div>
         </button>
+      </div>
+
+      <!-- Bottom Actions: Emergency & Cancel (Top: 90.0%) -->
+      <div class="bottom-row-actions">
+        <button class="sub-action-btn" id="emergencyBtn" onclick="handleEmergencyClick()">Emergency</button>
         <button class="sub-action-btn" id="cancelBtn" onclick="handleCancelClick()">Cancel</button>
       </div>
 
@@ -729,13 +675,15 @@
         <button class="cat-sheet-close" onclick="closeCategorySheet()">Done</button>
       </div>
       <div class="category-grid-pills" id="categoryPillsGrid">
-        <button class="cat-pill-btn" data-cat="objects" onclick="selectCategory('objects')">Everyday Objects</button>
+        <button class="cat-pill-btn" data-cat="handheld" onclick="selectCategory('handheld')">Objects (In Hand)</button>
+        <button class="cat-pill-btn" data-cat="everyday" onclick="selectCategory('everyday')">Everyday Objects</button>
+        <button class="cat-pill-btn" data-cat="big_objects" onclick="selectCategory('big_objects')">Large Objects / Furniture</button>
         <button class="cat-pill-btn" data-cat="animals" onclick="selectCategory('animals')">Animals</button>
-        <button class="cat-pill-btn" data-cat="countries" onclick="selectCategory('countries')">Countries & Cities</button>
         <button class="cat-pill-btn" data-cat="food" onclick="selectCategory('food')">Foods & Drinks</button>
-        <button class="cat-pill-btn" data-cat="natural" onclick="selectCategory('natural')">Natural Things</button>
-        <button class="cat-pill-btn" data-cat="places_buildings" onclick="selectCategory('places_buildings')">Places & Vehicles</button>
-        <button class="cat-pill-btn" data-cat="combo" onclick="selectCategory('combo')">Combo (Zodiac/Color)</button>
+        <button class="cat-pill-btn" data-cat="countries" onclick="selectCategory('countries')">Countries & Cities</button>
+        <button class="cat-pill-btn" data-cat="natural_inhand" onclick="selectCategory('natural_inhand')">Natural (In Hand)</button>
+        <button class="cat-pill-btn" data-cat="natural_big" onclick="selectCategory('natural_big')">Natural (Big Things)</button>
+        <button class="cat-pill-btn" data-cat="combo" onclick="selectCategory('combo')">Combo (Zodiac/Colors)</button>
         <button class="cat-pill-btn" data-cat="all" onclick="selectCategory('all')">All Categories</button>
       </div>
     </div>
@@ -789,8 +737,8 @@
     </div>
 
     <div style="text-align: center; color: #636366; font-size: 12px; margin-top: 15px;">
-      Double-tap Emergency to open Category Picker.<br>
-      Long-press "Enter Passcode" to return here.
+      Double-tap Emergency to select Category.<br>
+      Double-tap or long-press ANY corner of the screen to RESET at any time.
     </div>
   </div>
 
@@ -850,7 +798,7 @@
        ======================================================== */
     let currentInput = "";
     let isUnlocked = false;
-    let activeCategory = localStorage.getItem("enigma_category") || "objects";
+    let activeCategory = localStorage.getItem("enigma_category") || "handheld";
     let currentCandidateWords = [];
     let activeLetterFilter = null;
 
@@ -860,8 +808,6 @@
     const homescreenView = document.getElementById("homescreenView");
     const topCandidatesBar = document.getElementById("topCandidatesBar");
     const bottomLettersStrip = document.getElementById("bottomLettersStrip");
-    const homescreenLockHint = document.getElementById("homescreenLockHint");
-    const lockIconContainer = document.getElementById("lockIconContainer");
     const cancelBtn = document.getElementById("cancelBtn");
     const categorySheet = document.getElementById("categorySheet");
     const settingsModal = document.getElementById("settingsModal");
@@ -903,6 +849,59 @@
     loadSavedImages();
 
     /* ========================================================
+       CORNER RESET SYSTEM (ANY OF THE 4 CORNERS)
+       Double-tap or Long-press on TL, TR, BL, BR
+       ======================================================== */
+    function setupCornerTriggers(id) {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      let tapCount = 0;
+      let tapTimer = null;
+      let pressTimer = null;
+
+      el.addEventListener("touchstart", (e) => {
+        pressTimer = setTimeout(() => {
+          triggerFullReset();
+        }, 500);
+      }, { passive: true });
+
+      el.addEventListener("touchend", (e) => {
+        clearTimeout(pressTimer);
+        tapCount++;
+        if (tapCount === 1) {
+          tapTimer = setTimeout(() => {
+            tapCount = 0;
+          }, 350);
+        } else if (tapCount === 2) {
+          clearTimeout(tapTimer);
+          tapCount = 0;
+          triggerFullReset();
+        }
+      }, { passive: true });
+    }
+
+    ["cornerTL", "cornerTR", "cornerBL", "cornerBR"].forEach(setupCornerTriggers);
+
+    function triggerFullReset() {
+      lockscreenWrapper.classList.remove("unlocked-up");
+      topCandidatesBar.style.display = "none";
+      bottomLettersStrip.style.display = "none";
+      currentInput = "";
+      dots.forEach(d => d.classList.remove("filled", "success", "error"));
+      cancelBtn.textContent = "Cancel";
+      isUnlocked = false;
+      currentCandidateWords = [];
+      activeLetterFilter = null;
+      closeCategorySheet();
+      closeSettings();
+
+      if (window.navigator && window.navigator.vibrate) {
+        window.navigator.vibrate([30, 40, 30]);
+      }
+    }
+
+    /* ========================================================
        DISCREET CATEGORY SELECTION
        ======================================================== */
     function toggleCategorySheet() {
@@ -921,7 +920,7 @@
       if (window.navigator && window.navigator.vibrate) {
         window.navigator.vibrate(20);
       }
-      setTimeout(closeCategorySheet, 200);
+      setTimeout(closeCategorySheet, 180);
     }
 
     function updateCategoryPills() {
@@ -932,6 +931,10 @@
           btn.classList.remove("selected");
         }
       });
+    }
+
+    function handleEmergencyClick() {
+      toggleCategorySheet();
     }
 
     /* ========================================================
@@ -974,7 +977,6 @@
       currentInput = "";
       dots.forEach(d => d.classList.remove("filled", "success", "error"));
       cancelBtn.textContent = "Cancel";
-      lockIconContainer.classList.remove("unlocked");
       isUnlocked = false;
     }
 
@@ -998,7 +1000,7 @@
 
       let matches = db[`${activeCategory}:${code}`] || db[`all:${code}`];
 
-      // Shape skip fallback
+      // Shape skip fallback (Christian Grace 0-shape)
       if ((!matches || matches.length === 0) && code.length === 6 && code[5] !== "0") {
         const skipCode = code.slice(0, 5) + "0";
         matches = db[`${activeCategory}:${skipCode}`] || db[`all:${skipCode}`];
@@ -1006,10 +1008,8 @@
 
       if (matches && matches.length > 0) {
         if (matches.length === 1) {
-          // Direct 1-word unlock to Safari
           unlockSingleWord(matches[0]);
         } else {
-          // Unlock to Fake Homescreen with multiple candidate words
           unlockToHomescreen(matches);
         }
       } else {
@@ -1022,7 +1022,6 @@
        ======================================================== */
     function unlockSingleWord(word) {
       isUnlocked = true;
-      lockIconContainer.classList.add("unlocked");
       dots.forEach(d => d.classList.add("filled", "success"));
 
       const query = encodeURIComponent(word.toLowerCase());
@@ -1041,11 +1040,10 @@
     }
 
     /* ========================================================
-       MULTIPLE MATCHES: UNLOCK TO FAKE HOMESCREEN WITH PEEK
+       MULTIPLE MATCHES: UNLOCK TO HOMESCREEN (DISCREET WHITE TEXT)
        ======================================================== */
     function unlockToHomescreen(words) {
       isUnlocked = true;
-      lockIconContainer.classList.add("unlocked");
       dots.forEach(d => d.classList.add("filled", "success"));
 
       currentCandidateWords = words;
@@ -1055,35 +1053,33 @@
         // Slide up lockscreen to reveal homescreen
         lockscreenWrapper.classList.add("unlocked-up");
 
-        // Render candidate words at top
+        // Render candidate words at top (Clean white text)
         renderTopCandidates(words);
         topCandidatesBar.style.display = "flex";
 
-        // Render first-letters strip at bottom
+        // Render first-letters strip at bottom (Clean white text)
         renderBottomLetters(words);
         bottomLettersStrip.style.display = "flex";
-
-        homescreenLockHint.style.display = "block";
       }, 200);
     }
 
     function renderTopCandidates(words) {
       topCandidatesBar.innerHTML = "";
       words.forEach(word => {
-        const chip = document.createElement("button");
-        chip.className = "candidate-word-chip";
-        chip.innerHTML = `<span>${word}</span><span class="word-arrow">&#8250;</span>`;
-        chip.onclick = () => {
+        const btn = document.createElement("button");
+        btn.className = "candidate-word-chip";
+        btn.textContent = word;
+        btn.onclick = () => {
           launchSafariForWord(word);
         };
-        topCandidatesBar.appendChild(chip);
+        topCandidatesBar.appendChild(btn);
       });
     }
 
     function renderBottomLetters(words) {
       bottomLettersStrip.innerHTML = "";
 
-      // All button
+      // All option
       const allBtn = document.createElement("button");
       allBtn.className = "letter-chip all-chip active";
       allBtn.textContent = "All";
@@ -1133,31 +1129,6 @@
     }
 
     /* ========================================================
-       SWIPE DOWN ON HOMESCREEN TO LOCK BACK
-       ======================================================== */
-    let homeTouchStartY = 0;
-    homescreenView.addEventListener("touchstart", (e) => {
-      homeTouchStartY = e.touches[0].clientY;
-    }, { passive: true });
-
-    homescreenView.addEventListener("touchend", (e) => {
-      if (e.changedTouches.length > 0) {
-        const diff = e.changedTouches[0].clientY - homeTouchStartY;
-        if (diff > 50) {
-          lockPhoneBack();
-        }
-      }
-    }, { passive: true });
-
-    function lockPhoneBack() {
-      lockscreenWrapper.classList.remove("unlocked-up");
-      topCandidatesBar.style.display = "none";
-      bottomLettersStrip.style.display = "none";
-      homescreenLockHint.style.display = "none";
-      clearDots();
-    }
-
-    /* ========================================================
        SECRET SETTINGS & GESTURES
        ======================================================== */
     let promptPressTimer = null;
@@ -1169,10 +1140,6 @@
       clearTimeout(promptPressTimer);
     });
     promptEl.addEventListener("dblclick", openSettings);
-
-    function handleEmergencyClick() {
-      toggleCategorySheet();
-    }
 
     function openSettings() {
       settingsModal.classList.add("show");
