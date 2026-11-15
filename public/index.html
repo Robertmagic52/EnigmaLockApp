@@ -189,26 +189,45 @@
       align-items: center;
     }
 
-    /* "Your passcode is required to enable Face ID" (Top: 18.8%) */
-    .passcode-prompt {
+    /* Passcode Header (Title + Subtitle) at genuine iOS vertical anchor (Top: 17.2%) */
+    .passcode-header {
       position: absolute;
-      top: 18.8%;
+      top: 17.2%;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 15px;
-      font-weight: 400;
-      color: rgba(255, 255, 255, 0.9);
-      letter-spacing: -0.15px;
       text-align: center;
       cursor: pointer;
-      max-width: 280px;
-      line-height: 1.35;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 320px;
+      z-index: 10;
     }
 
-    /* 6 Dots Row (Top: 23.8%) */
+    .passcode-title {
+      font-size: 21px;
+      font-weight: 500;
+      color: #ffffff;
+      letter-spacing: -0.2px;
+      line-height: 1.25;
+      margin-bottom: 4px;
+    }
+
+    .passcode-subtitle {
+      font-size: 14px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.82);
+      letter-spacing: -0.15px;
+      line-height: 1.3;
+      max-width: 270px;
+    }
+
+    /* 6 Dots Row (Top: 24.5%) */
     .passcode-dots-row {
       position: absolute;
-      top: 23.8%;
+      top: 24.5%;
       left: 50%;
       transform: translateX(-50%);
       display: flex;
@@ -576,9 +595,10 @@
 
     <div class="passcode-ui-layer">
 
-      <!-- "Your passcode is required to enable Face ID" Prompt -->
-      <div class="passcode-prompt" id="passcodePrompt" onclick="cyclePromptText()">
-        Your passcode is required to enable Face ID
+      <!-- Passcode Header Prompt (Title + Subtitle) -->
+      <div class="passcode-header" id="passcodeHeader" onclick="cyclePromptText()">
+        <div class="passcode-title" id="passcodeTitle">Enter Passcode</div>
+        <div class="passcode-subtitle" id="passcodeSubtitle">Your passcode is required to enable Face ID</div>
       </div>
 
       <!-- 6 Dots Row (Top: 23.8%) -->
@@ -663,6 +683,7 @@
       <div class="category-grid-pills" id="categoryPillsGrid">
         <button class="cat-pill-btn" data-cat="handheld" onclick="selectCategory('handheld')">Objects (In Hand)</button>
         <button class="cat-pill-btn" data-cat="everyday" onclick="selectCategory('everyday')">Everyday Objects</button>
+        <button class="cat-pill-btn" data-cat="large_objects" onclick="selectCategory('large_objects')">Large Objects</button>
         <button class="cat-pill-btn" data-cat="animals" onclick="selectCategory('animals')">Animals</button>
         <button class="cat-pill-btn" data-cat="food" onclick="selectCategory('food')">Foods & Drinks</button>
         <button class="cat-pill-btn" data-cat="countries" onclick="selectCategory('countries')">Countries & Cities</button>
@@ -827,7 +848,9 @@
     const cancelBtn = document.getElementById("cancelBtn");
     const categorySheet = document.getElementById("categorySheet");
     const settingsModal = document.getElementById("settingsModal");
-    const passcodePrompt = document.getElementById("passcodePrompt");
+    const passcodeHeader = document.getElementById("passcodeHeader");
+    const passcodeTitle = document.getElementById("passcodeTitle");
+    const passcodeSubtitle = document.getElementById("passcodeSubtitle");
 
     const dots = [
       document.getElementById("dot0"),
@@ -865,16 +888,31 @@
     }
     loadSavedImages();
 
-    // Prompt text cycling
+    // Prompt text cycling (tap header to cycle styles)
+    // 0: Both "Enter Passcode" + "Your passcode is required to enable Face ID"
+    // 1: Only "Enter Passcode"
+    // 2: Only "Enter Password"
+    // 3: Only "Your passcode is required to enable Face ID"
     let promptMode = 0;
     function cyclePromptText() {
-      promptMode = (promptMode + 1) % 2;
+      promptMode = (promptMode + 1) % 4;
       if (promptMode === 0) {
-        passcodePrompt.textContent = "Your passcode is required to enable Face ID";
-        passcodePrompt.style.fontSize = "15px";
-      } else {
-        passcodePrompt.textContent = "Enter Passcode";
-        passcodePrompt.style.fontSize = "21px";
+        passcodeTitle.style.display = "block";
+        passcodeTitle.textContent = "Enter Passcode";
+        passcodeSubtitle.style.display = "block";
+        passcodeSubtitle.textContent = "Your passcode is required to enable Face ID";
+      } else if (promptMode === 1) {
+        passcodeTitle.style.display = "block";
+        passcodeTitle.textContent = "Enter Passcode";
+        passcodeSubtitle.style.display = "none";
+      } else if (promptMode === 2) {
+        passcodeTitle.style.display = "block";
+        passcodeTitle.textContent = "Enter Password";
+        passcodeSubtitle.style.display = "none";
+      } else if (promptMode === 3) {
+        passcodeTitle.style.display = "none";
+        passcodeSubtitle.style.display = "block";
+        passcodeSubtitle.textContent = "Your passcode is required to enable Face ID";
       }
     }
 
@@ -1155,13 +1193,13 @@
        SECRET SETTINGS & GESTURES
        ======================================================== */
     let promptPressTimer = null;
-    passcodePrompt.addEventListener("touchstart", () => {
+    passcodeHeader.addEventListener("touchstart", () => {
       promptPressTimer = setTimeout(openSettings, 700);
     });
-    passcodePrompt.addEventListener("touchend", () => {
+    passcodeHeader.addEventListener("touchend", () => {
       clearTimeout(promptPressTimer);
     });
-    passcodePrompt.addEventListener("dblclick", openSettings);
+    passcodeHeader.addEventListener("dblclick", openSettings);
 
     function openSettings() {
       settingsModal.classList.add("show");
