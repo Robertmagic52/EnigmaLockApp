@@ -973,6 +973,7 @@
       lockscreenWrapper.classList.remove("unlocked-up");
       const notesView = document.getElementById("notesView");
       if (notesView) notesView.classList.remove("active");
+      document.querySelectorAll('.corner-reset-zone').forEach(el => el.style.display = 'block');
       topCandidatesBar.style.display = "none";
       bottomLettersStrip.style.display = "none";
       currentInput = "";
@@ -1121,15 +1122,28 @@
       const notesView = document.getElementById("notesView");
       const notesIframe = document.getElementById("notesIframe");
       if (notesView) notesView.classList.add("active");
+      document.querySelectorAll('.corner-reset-zone').forEach(el => el.style.display = 'none');
 
       try {
         if (notesIframe && notesIframe.contentWindow) {
-          notesIframe.contentWindow.location.reload();
+          if (notesIframe.contentWindow.updatePeekContent) {
+            notesIframe.contentWindow.updatePeekContent();
+          }
+          if (notesIframe.contentWindow.auraRefresh) {
+            notesIframe.contentWindow.auraRefresh();
+          }
         }
       } catch (e) {}
 
       setTimeout(() => {
         lockscreenWrapper.classList.add("unlocked-up");
+        setTimeout(() => {
+          try {
+            if (notesIframe && notesIframe.contentWindow && notesIframe.contentWindow.auraRefresh) {
+              notesIframe.contentWindow.auraRefresh();
+            }
+          } catch (e) {}
+        }, 300);
       }, 150);
     }
 

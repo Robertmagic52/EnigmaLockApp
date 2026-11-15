@@ -196,10 +196,9 @@
     <input type="file" id="file" accept="image/*" hidden />
   </div>
 
-  <!-- Noteify-Style Discreet Prediction Overlay (Pure text at top, matching Pro Illusion) -->
+  <!-- Discreet Word-Only Overlay (Pure word at top) -->
   <div id="noteifyPeekOverlay" class="noteify-peek-overlay">
-    <div class="noteify-peek-title">Prediction</div>
-    <div class="noteify-peek-body" id="noteifyPeekBody">I am anticipating that you will choose Spoon!</div>
+    <div class="noteify-peek-word" id="noteifyPeekWord">Spoon</div>
   </div>
 
   <script src="app.js"></script>
@@ -207,7 +206,7 @@
     (() => {
       'use strict';
       const peekOverlay = document.getElementById('noteifyPeekOverlay');
-      const peekBody = document.getElementById('noteifyPeekBody');
+      const peekWord = document.getElementById('noteifyPeekWord');
       const topPeekZone = document.getElementById('top-peek-zone');
 
       function updatePeekContent() {
@@ -221,10 +220,8 @@
           words = ["Spoon"];
         }
 
-        if (words.length === 1) {
-          peekBody.innerHTML = `I am anticipating that you will choose <strong>${words[0]}</strong>!`;
-        } else {
-          peekBody.innerHTML = `I am anticipating: <strong>${words.join(" &bull; ")}</strong>`;
+        if (peekWord) {
+          peekWord.textContent = words.join(" • ");
         }
       }
 

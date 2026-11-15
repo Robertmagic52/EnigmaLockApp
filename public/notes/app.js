@@ -485,8 +485,6 @@
     if (active && active.type === 'draw' && active.stroke.tool !== 'eraser') {
       drawItem(lctx, active.stroke);
     }
-    // aura_all : traits en cours sur l'autre iPhone
-    for (const rs of remoteLive.values()) drawItem(lctx, rs);
 
     const drawPoly = (poly, closed) => {
       lctx.save();
@@ -735,8 +733,11 @@
 
   // Boutons du haut
   document.getElementById('btn-back').addEventListener('click', () => {
-    if (hub) hub.back();                 // aura_all : retour à l'accueil des démos
-    else if (history.length > 1) history.back();
+    if (window.parent && window.parent !== window && typeof window.parent.closeNotes === 'function') {
+      window.parent.closeNotes();
+    } else {
+      window.location.href = '/';
+    }
   });
   document.getElementById('btn-done').addEventListener('click', () => {
     viewMode = !viewMode;
