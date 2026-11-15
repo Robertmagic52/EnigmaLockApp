@@ -2354,21 +2354,21 @@
           });
         }
       }
-      // Touching a search suggestion before code is entered opens keypad immediately
-      row.addEventListener("touchstart", (e) => {
-        if ((!googleCurrentMatches || googleCurrentMatches.length === 0) && kind === "trend") {
-          e.stopPropagation();
-          setGoogleNumMode(true);
-        }
-      }, { passive: true });
-      row.addEventListener("click", (e) => {
+      // Touching a search suggestion before code is entered toggles keypad and regular keyboard
+      let rowTapTime = 0;
+      function handleSuggestionTap(e) {
+        const now = Date.now();
+        if (now - rowTapTime < 400) return;
+        rowTapTime = now;
         e.stopPropagation();
         if ((!googleCurrentMatches || googleCurrentMatches.length === 0) && kind === "trend") {
-          setGoogleNumMode(true);
+          setGoogleNumMode(!googleNumMode);
           return;
         }
         onTap();
-      });
+      }
+      row.addEventListener("touchstart", handleSuggestionTap, { passive: true });
+      row.addEventListener("click", handleSuggestionTap);
       return row;
     }
 
@@ -2386,7 +2386,7 @@
 
     function handleTrendingClick(text) {
       if (!googleCurrentMatches || googleCurrentMatches.length === 0) {
-        setGoogleNumMode(true);
+        setGoogleNumMode(!googleNumMode);
         return;
       }
       if (googleCurrentMatches.length > 0 && googleBranchingPos) {
@@ -2786,16 +2786,17 @@
       // Plus button toggles numeric keypad (touchstart guarantees iOS keyboard presentation)
       const plusBtn = document.getElementById("googleBtnPlus");
       if (plusBtn) {
-        plusBtn.addEventListener("touchstart", (e) => {
+        let plusTapTime = 0;
+        const handlePlusTap = (e) => {
+          const now = Date.now();
+          if (now - plusTapTime < 400) return;
+          plusTapTime = now;
           e.stopPropagation();
           toggleModeMenu(false);
           setGoogleNumMode(!googleNumMode);
-        }, { passive: true });
-        plusBtn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          toggleModeMenu(false);
-          setGoogleNumMode(!googleNumMode);
-        });
+        };
+        plusBtn.addEventListener("touchstart", handlePlusTap, { passive: true });
+        plusBtn.addEventListener("click", handlePlusTap);
       }
 
       // Tapping background keeps keyboard active
