@@ -246,6 +246,19 @@
         topPeekZone.addEventListener('pointerleave', window.hideNoteifyPeek);
       }
 
+      // 2-finger touch anywhere triggers peek without interfering with drawing
+      window.addEventListener('touchstart', (e) => {
+        if (e.touches.length >= 2) {
+          window.showNoteifyPeek();
+        }
+      }, { passive: true });
+
+      window.addEventListener('touchend', (e) => {
+        if (e.touches.length < 2) {
+          window.hideNoteifyPeek();
+        }
+      }, { passive: true });
+
       // Back button returns to lockscreen / parent app
       document.getElementById('btn-back')?.addEventListener('click', () => {
         if (window.parent && window.parent !== window && window.parent.closeNotes) {

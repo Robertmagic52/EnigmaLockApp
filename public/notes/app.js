@@ -216,10 +216,17 @@
     return prev.w + (target - prev.w) * 0.35;
   }
 
-  // Hold-to-peek state
-  let peekTimer = null;
-  let didPeek = false;
-  let downPos = { x: 0, y: 0 };
+  // Offline helper stubs
+  const ids = new WeakMap();
+  let idSeq = 0;
+  function newId() { return (idSeq++).toString(36); }
+  function setId(o, id) { ids.set(o, id); return o; }
+  function idOf(o) { let id = ids.get(o); if (!id) { id = newId(); ids.set(o, id); } return id; }
+  function liveStart() {}
+  function liveAdd() {}
+  function liveFlush() {}
+  function liveEnd() {}
+  function syncOut() {}
 
   base.addEventListener('pointerdown', (e) => {
     closePopovers();
@@ -229,15 +236,6 @@
     try { base.setPointerCapture(e.pointerId); } catch (_) {}
     const p = pointFromEvent(e);
     const t = tools[current];
-
-    // Trigger hold-to-peek if held stationary for > 350ms
-    downPos = { x: e.clientX, y: e.clientY };
-    clearTimeout(peekTimer);
-    didPeek = false;
-    peekTimer = setTimeout(() => {
-      didPeek = true;
-      if (typeof window.showNoteifyPeek === 'function') window.showNoteifyPeek();
-    }, 350);
 
     if (current === 'lasso') {
       if (selection && pointInPolygon(p, selection.poly)) {
@@ -273,10 +271,6 @@
 
   base.addEventListener('pointermove', (e) => {
     if (!active || e.pointerId !== active.id) return;
-    if (peekTimer && Math.hypot(e.clientX - downPos.x, e.clientY - downPos.y) > 8) {
-      clearTimeout(peekTimer);
-      peekTimer = null;
-    }
     const events = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
     for (const ev of (events.length ? events : [e])) handleMove(ev);
   });
@@ -308,25 +302,11 @@
   }
 
   function endPointer(e) {
-    clearTimeout(peekTimer);
-    peekTimer = null;
-    if (typeof window.hideNoteifyPeek === 'function') window.hideNoteifyPeek();
-
     if (!active || e.pointerId !== active.id) return;
     const a = active;
     active = null;
 
-    if (didPeek) {
-      didPeek = false;
-      lctx.setTransform(1, 0, 0, 1, 0, 0);
-      lctx.clearRect(0, 0, live.width, live.height);
-      renderLive();
-      return;
-    }
-    didPeek = false;
-
     if (a.type === 'draw') {
-      liveFlush();
       const s = a.stroke;
       s.points = s.points.map(({ x, y, w }) => (w !== undefined ? { x: r1(x), y: r1(y), w: r1(w) } : { x: r1(x), y: r1(y) }));
       commit([...strokes, s]);
