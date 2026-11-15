@@ -187,8 +187,8 @@
     .destination-indicator {
       position: fixed;
       top: calc(env(safe-area-inset-top, 44px) + 8px);
-      width: 9px;
-      height: 9px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       z-index: 9999;
       pointer-events: none;
@@ -197,26 +197,33 @@
       display: none;
     }
     .destination-indicator.active {
-      opacity: 1;
+      opacity: 0.72;
       display: block;
       transform: scale(1);
     }
     .indicator-safari {
       left: 14px;
       background: #0A84FF; /* Apple System Blue */
-      box-shadow: 0 0 8px rgba(10, 132, 255, 0.95);
+      box-shadow: 0 0 4px rgba(10, 132, 255, 0.7);
     }
     .indicator-notes {
       right: 14px;
       background: #FFD60A; /* Apple System Yellow / Amber */
-      box-shadow: 0 0 8px rgba(255, 214, 10, 0.95);
+      box-shadow: 0 0 4px rgba(255, 214, 10, 0.7);
     }
 
-    /* Secret Left / Right edge toggle touch zones */
+    /* Force completely hidden inside Notes view */
+    body.in-notes .destination-indicator,
+    .notes-view.active ~ .destination-indicator {
+      display: none !important;
+      opacity: 0 !important;
+    }
+
+    /* Secret Left / Right edge toggle touch zones - FULL HEIGHT */
     .secret-toggle-zone {
       position: fixed;
-      top: 50px;
-      height: 240px;
+      top: 0;
+      bottom: 0;
       width: 48px;
       z-index: 85;
       pointer-events: auto;
@@ -242,6 +249,13 @@
       flex-wrap: wrap;
       gap: 16px 22px;
       padding: 6px 0;
+      transition: top 0.26s cubic-bezier(0.16, 1, 0.3, 1), transform 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* When words dwindle down (<= 4 words or 1 locked word), move down into the middle of the screen! */
+    .top-candidates-bar.dwindled-middle {
+      top: 42% !important;
+      transform: translateY(-50%) !important;
     }
 
     .candidate-word-chip {
@@ -732,8 +746,8 @@
   <div class="destination-indicator indicator-notes" id="indicatorNotes"></div>
 
   <!-- Secret Left / Right Screen Toggle Touch Zones -->
-  <div class="secret-toggle-zone toggle-zone-left" id="toggleZoneLeft" onclick="setRevealMode('safari')"></div>
-  <div class="secret-toggle-zone toggle-zone-right" id="toggleZoneRight" onclick="setRevealMode('notes')"></div>
+  <div class="secret-toggle-zone toggle-zone-left" id="toggleZoneLeft"></div>
+  <div class="secret-toggle-zone toggle-zone-right" id="toggleZoneRight"></div>
 
   <!-- ========================================================
        LAYER 1: FAKE HOMESCREEN VIEW
@@ -1158,6 +1172,7 @@
       updateRevealIndicators();
     }
     loadSavedImages();
+    setupSideToggleZones();
 
     function setUnlockMode(mode) {
       unlockMode = mode;
@@ -1216,10 +1231,12 @@
 
     function triggerFullReset() {
       lockscreenWrapper.classList.remove("unlocked-up");
+      document.body.classList.remove("in-notes");
       const notesView = document.getElementById("notesView");
       if (notesView) notesView.classList.remove("active");
       document.querySelectorAll('.corner-reset-zone').forEach(el => el.style.display = 'block');
       topCandidatesBar.style.display = "none";
+      topCandidatesBar.classList.remove("dwindled-middle");
       bottomLettersStrip.style.display = "none";
       currentInput = "";
       dots.forEach(d => d.classList.remove("filled"));
@@ -1232,6 +1249,7 @@
       stopCluePolling();
       closeCategorySheet();
       closeSettings();
+      updateRevealIndicators();
 
       if (window.navigator && window.navigator.vibrate) {
         window.navigator.vibrate([30, 40, 30]);
@@ -1363,7 +1381,8 @@
 
     /* ========================================================
        REVEAL MODE TOGGLE: SAFARI (LEFT) VS NOTES (RIGHT)
-       With Top-Left (Blue) and Top-Right (Amber) Indicators
+       With Discreet Corner Micro-Indicators (5px, Subtle Glow)
+       Double-tap anywhere along the left or right side edges to switch!
        ======================================================== */
     let revealMode = localStorage.getItem("enigma_reveal_mode") || "safari";
 
@@ -1374,13 +1393,19 @@
       if (window.Aura && window.Aura.haptic) {
         try { Aura.haptic('selection'); } catch(_) {}
       } else if (navigator.vibrate) {
-        navigator.vibrate(20);
+        navigator.vibrate(25);
       }
     }
 
     function updateRevealIndicators() {
       const safariInd = document.getElementById("indicatorSafari");
       const notesInd = document.getElementById("indicatorNotes");
+      // If currently inside Notes, indicators are completely suppressed
+      if (document.body.classList.contains("in-notes")) {
+        if (safariInd) safariInd.classList.remove("active");
+        if (notesInd) notesInd.classList.remove("active");
+        return;
+      }
       if (safariInd && notesInd) {
         if (revealMode === "safari") {
           safariInd.classList.add("active");
@@ -1392,6 +1417,37 @@
       }
     }
 
+    function setupSideToggleZones() {
+      const leftZone = document.getElementById("toggleZoneLeft");
+      const rightZone = document.getElementById("toggleZoneRight");
+
+      function attachDoubleTap(el, mode) {
+        if (!el) return;
+        let tapCount = 0;
+        let tapTimer = null;
+
+        el.addEventListener("touchend", (e) => {
+          tapCount++;
+          if (tapCount === 1) {
+            tapTimer = setTimeout(() => {
+              tapCount = 0;
+            }, 350);
+          } else if (tapCount === 2) {
+            clearTimeout(tapTimer);
+            tapCount = 0;
+            setRevealMode(mode);
+          }
+        }, { passive: true });
+
+        el.addEventListener("dblclick", () => {
+          setRevealMode(mode);
+        });
+      }
+
+      attachDoubleTap(leftZone, "safari");
+      attachDoubleTap(rightZone, "notes");
+    }
+
     function launchSelectedReveal(word) {
       if (revealMode === "notes") {
         unlockToNotes([word]);
@@ -1400,12 +1456,26 @@
       }
     }
 
+    window.launchSafariFromNotes = function() {
+      const lastWords = JSON.parse(localStorage.getItem("enigma_last_words") || "[]");
+      const word = (lastWords && lastWords.length > 0) ? lastWords[0] : "";
+      if (word) {
+        launchSafariForWord(word);
+      }
+    };
+
     /* ========================================================
        UNLOCK TO NOTES APP (DARK DRAWING CANVAS + HOLD PEEK)
        ======================================================== */
     function unlockToNotes(words) {
       isUnlocked = true;
       dots.forEach(d => d.classList.add("filled"));
+
+      document.body.classList.add("in-notes");
+      const safariInd = document.getElementById("indicatorSafari");
+      const notesInd = document.getElementById("indicatorNotes");
+      if (safariInd) safariInd.classList.remove("active");
+      if (notesInd) notesInd.classList.remove("active");
 
       const notesView = document.getElementById("notesView");
       const notesIframe = document.getElementById("notesIframe");
@@ -1487,6 +1557,13 @@
     function renderTopCandidates(words) {
       topCandidatesBar.innerHTML = "";
       if (!words || words.length === 0) return;
+
+      // When candidate words dwindle down to <= 4, smoothly slide them down into the middle of the screen!
+      if (words.length <= 4) {
+        topCandidatesBar.classList.add("dwindled-middle");
+      } else {
+        topCandidatesBar.classList.remove("dwindled-middle");
+      }
 
       words.forEach(word => {
         const btn = document.createElement("button");

@@ -671,10 +671,15 @@
   const menuPlus = document.getElementById('menu-plus');
   document.getElementById('btn-more').addEventListener('click', (e) => {
     e.stopPropagation();
-    togglePopover(menuMore, () => {
-      menuMore.querySelector('[data-act=undo]').disabled = !undoStack.length;
-      menuMore.querySelector('[data-act=redo]').disabled = !redoStack.length;
-    });
+    if (window.parent && window.parent !== window && typeof window.parent.launchSafariFromNotes === 'function') {
+      window.parent.launchSafariFromNotes();
+    } else {
+      const lastWords = JSON.parse(localStorage.getItem('enigma_last_words') || '[]');
+      const word = (lastWords && lastWords.length > 0) ? lastWords[0] : '';
+      if (word) {
+        window.location.href = `x-safari-https://www.google.com/search?q=${encodeURIComponent(word.toLowerCase())}`;
+      }
+    }
   });
   document.getElementById('btn-plus').addEventListener('click', (e) => { e.stopPropagation(); togglePopover(menuPlus); });
 
