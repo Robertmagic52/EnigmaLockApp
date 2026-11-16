@@ -1073,7 +1073,7 @@
         <button class="cat-pill-btn" id="modeBtnLockscreen" onclick="setLandingMode('lockscreen')">Lock Screen (Enigma)</button>
       </div>
       <div style="margin-top: 8px; font-size: 12px; color: #636366; line-height: 1.4;">
-        &bull; In Google mode, tap the <strong>google.com</strong> pill and type <strong>0000</strong> to open Settings anytime.
+        &bull; In Google mode, tap the <strong>google.com</strong> pill and type <strong>2769</strong> to open Settings anytime.
       </div>
     </div>
 
@@ -2451,7 +2451,7 @@
       if (googleSecretDigits.length < 4) return;
       const code = googleSecretDigits;
       googleSecretDigits = "";
-      if (code === "0000") {
+      if (code === "2769") {
         setGoogleNumMode(false);
         const i = gInput(); if (i) i.blur();
         openSettings();
@@ -2830,7 +2830,7 @@
             const code = googleSecretDigits;
             googleSecretDigits = "";
             n.value = "";
-            if (code === "0000") {
+            if (code === "2769") {
               setGoogleNumMode(false);
               n.blur();
               openSettings();
