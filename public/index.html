@@ -1849,35 +1849,44 @@
       if (pos === 2) return clean[1] || "";
       if (pos === 3) return clean[2] || ""; // strictly 3rd letter
       if (pos === 4) return clean[clean.length - 1] || ""; // strictly last letter
+      if (pos >= 5) return clean[pos - 1] || ""; // fallback 5th+ letter when 1-4 are tied
       return "";
     }
 
     function findBestOuijaPosition(words) {
       if (!words || words.length <= 1) return 1;
 
-      const positions = [1, 2, 3, 4];
-      let bestPos = 1;
-      let bestScore = -Infinity;
+      const scorePositions = (positions) => {
+        let bestPos = null;
+        let bestScore = -Infinity;
+        positions.forEach(pos => {
+          const letters = words.map(w => getLetterAtPos(w, pos));
+          if (letters.some(l => !l)) return;
 
-      positions.forEach(pos => {
-        const letters = words.map(w => getLetterAtPos(w, pos));
-        if (letters.some(l => !l)) return;
+          const freq = {};
+          letters.forEach(l => { freq[l] = (freq[l] || 0) + 1; });
+          const uniqueCount = Object.keys(freq).length;
+          if (uniqueCount <= 1) return;
 
-        const freq = {};
-        letters.forEach(l => { freq[l] = (freq[l] || 0) + 1; });
-        const uniqueCount = Object.keys(freq).length;
-        if (uniqueCount <= 1) return;
+          const maxBucket = Math.max(...Object.values(freq));
+          const score = (uniqueCount * 10) - (maxBucket * 2);
 
-        const maxBucket = Math.max(...Object.values(freq));
-        const score = (uniqueCount * 10) - (maxBucket * 2);
+          if (score > bestScore) {
+            bestScore = score;
+            bestPos = pos;
+          }
+        });
+        return bestPos;
+      };
 
-        if (score > bestScore) {
-          bestScore = score;
-          bestPos = pos;
-        }
-      });
+      const primary = scorePositions([1, 2, 3, 4]);
+      if (primary !== null) return primary;
 
-      return bestPos;
+      const maxLen = Math.max(...words.map(w => (w || "").trim().length));
+      const fallbackPositions = [];
+      for (let p = 5; p <= maxLen; p++) fallbackPositions.push(p);
+      const fallback = scorePositions(fallbackPositions);
+      return fallback !== null ? fallback : 1;
     }
 
     function updateOuijaBranching(words) {
