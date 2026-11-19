@@ -2303,72 +2303,112 @@
 
       const drawAll = (img) => {
         if (myId !== _enigmaGlassRenderId) return;
-        const vw = Math.max(window.innerWidth, 1);
-        const vh = Math.max(window.innerHeight, 1);
+        const el = document.getElementById("lockscreenWrapper") || document.body;
+        const vw = Math.max(el.clientWidth || window.innerWidth, 1);
+        const vh = Math.max(el.clientHeight || window.innerHeight, 1);
 
-        // Pre-render viewport-sized blurred backdrop once
-        const bgCvs = document.createElement("canvas");
-        bgCvs.width = vw;
-        bgCvs.height = vh;
-        const bctx = bgCvs.getContext("2d");
+        // Downsample-upscale blur (works reliably on iOS WebKit where ctx.filter is ignored)
+        const ds = 0.09;
+        const tmpW = Math.max(24, Math.round(vw * ds));
+        const tmpH = Math.max(24, Math.round(vh * ds));
+        const tmpC = document.createElement("canvas");
+        tmpC.width = tmpW;
+        tmpC.height = tmpH;
+        const tmpCtx = tmpC.getContext("2d");
+        tmpCtx.imageSmoothingQuality = "high";
+
         if (img && img.naturalWidth > 0) {
-          const scale = Math.max(vw / img.naturalWidth, vh / img.naturalHeight);
-          const dw = img.naturalWidth * scale;
-          const dh = img.naturalHeight * scale;
-          const dx = (vw - dw) / 2;
-          const dy = (vh - dh) / 2;
-          bctx.save();
-          bctx.filter = "blur(16px) saturate(135%) brightness(0.92)";
-          bctx.drawImage(img, dx, dy, dw, dh);
-          bctx.restore();
+          const nw = img.naturalWidth, nh = img.naturalHeight;
+          const coverScale = Math.max(vw / nw, vh / nh);
+          const drawW = nw * coverScale, drawH = nh * coverScale;
+          const drawX = (vw - drawW) / 2, drawY = (vh - drawH) / 2;
+          tmpCtx.drawImage(img, drawX * ds, drawY * ds, drawW * ds, drawH * ds);
         } else {
-          const g = bctx.createLinearGradient(0, 0, 0, vh);
+          const g = tmpCtx.createLinearGradient(0, 0, 0, tmpH);
           g.addColorStop(0, "#182236");
           g.addColorStop(0.5, "#0d121c");
           g.addColorStop(1, "#07090e");
-          bctx.fillStyle = g;
-          bctx.fillRect(0, 0, vw, vh);
+          tmpCtx.fillStyle = g;
+          tmpCtx.fillRect(0, 0, tmpW, tmpH);
         }
 
-        const dpr = Math.min(window.devicePixelRatio || 2, 3);
+        const srcC = document.createElement("canvas");
+        srcC.width = vw;
+        srcC.height = vh;
+        const srcCtx = srcC.getContext("2d");
+        srcCtx.imageSmoothingQuality = "high";
+        srcCtx.drawImage(tmpC, 0, 0, tmpW, tmpH, 0, 0, vw, vh);
+        // Subtle dark scrim matching .lock-wallpaper-blur
+        srcCtx.fillStyle = "rgba(0, 0, 0, 0.22)";
+        srcCtx.fillRect(0, 0, vw, vh);
+        const srcData = srcCtx.getImageData(0, 0, vw, vh).data;
+
+        const vwMax = vw - 1, vhMax = vh - 1;
+        const sampleChannel = (fx, fy, ch) => {
+          const cx = fx < 0 ? 0 : (fx > vwMax ? vwMax : fx);
+          const cy = fy < 0 ? 0 : (fy > vhMax ? vhMax : fy);
+          const x0 = cx | 0, y0 = cy | 0;
+          const x1 = x0 < vwMax ? x0 + 1 : vwMax, y1 = y0 < vhMax ? y0 + 1 : vhMax;
+          const tx = cx - x0, ty = cy - y0;
+          const i00 = ((y0 * vw + x0) << 2) + ch, i10 = ((y0 * vw + x1) << 2) + ch;
+          const i01 = ((y1 * vw + x0) << 2) + ch, i11 = ((y1 * vw + x1) << 2) + ch;
+          return (srcData[i00] + (srcData[i10] - srcData[i00]) * tx) +
+                 ((srcData[i01] + (srcData[i11] - srcData[i01]) * tx) - (srcData[i00] + (srcData[i10] - srcData[i00]) * tx)) * ty;
+        };
+
+        const dpr = Math.min(2, window.devicePixelRatio || 2);
+        const wrapperRect = el.getBoundingClientRect();
         document.querySelectorAll(".key-btn").forEach(btn => {
-          const lens = btn.querySelector(".glass-lens");
-          if (!lens) return;
+          const canvas = btn.querySelector("canvas.glass-lens");
+          if (!canvas) return;
           const rect = btn.getBoundingClientRect();
           if (rect.width <= 0 || rect.height <= 0) return;
 
-          btn.classList.add("has-lens");
+          const boxX = rect.left - wrapperRect.left;
+          const boxY = rect.top - wrapperRect.top;
           const size = Math.round(rect.width * dpr);
-          lens.width = size;
-          lens.height = size;
-          const ctx = lens.getContext("2d");
-          ctx.clearRect(0, 0, size, size);
+          if (canvas.width !== size || canvas.height !== size) {
+            canvas.width = size;
+            canvas.height = size;
+          }
+          const ctx = canvas.getContext("2d");
+          const outImg = ctx.createImageData(size, size);
+          const out = outImg.data;
+          const R = size * 0.5, invR = 1 / R;
+          const btnCx = boxX + rect.width * 0.5, btnCy = boxY + rect.height * 0.5, radCss = rect.width * 0.5;
 
-          const cx = size / 2;
-          const cy = size / 2;
-          const r = size / 2;
-
-          ctx.save();
-          ctx.beginPath();
-          ctx.arc(cx, cy, r, 0, Math.PI * 2);
-          ctx.clip();
-
-          // Slight optical refraction zoom from the underlying blurred wallpaper
-          const zoom = 1.14;
-          const sw = rect.width / zoom;
-          const sh = rect.height / zoom;
-          const sx = Math.max(0, Math.min(vw - sw, rect.left + (rect.width - sw) / 2));
-          const sy = Math.max(0, Math.min(vh - sh, rect.top + (rect.height - sh) / 2));
-          ctx.drawImage(bgCvs, sx, sy, sw, sh, 0, 0, size, size);
-
-          // Liquid lens surface tint & specular glow
-          const tint = ctx.createRadialGradient(cx, size * 0.24, r * 0.08, cx, cy, r);
-          tint.addColorStop(0, "rgba(255, 255, 255, 0.24)");
-          tint.addColorStop(0.55, "rgba(255, 255, 255, 0.09)");
-          tint.addColorStop(1, "rgba(255, 255, 255, 0.16)");
-          ctx.fillStyle = tint;
-          ctx.fillRect(0, 0, size, size);
-          ctx.restore();
+          for (let py = 0; py < size; py++) {
+            const ny = (py + 0.5 - R) * invR, ny2 = ny * ny, rowOff = py * size;
+            for (let px = 0; px < size; px++) {
+              const nx = (px + 0.5 - R) * invR, r2 = nx * nx + ny2;
+              if (r2 >= 1.0) continue;
+              const r = Math.sqrt(r2), r4 = r2 * r2, r8 = r4 * r4;
+              const sampleScale = 0.91 + 0.07 * r2 - 0.28 * r8;
+              const disp = r8 * 0.012;
+              let sr = sampleChannel(btnCx + nx * (sampleScale + disp) * radCss, btnCy + ny * (sampleScale + disp) * radCss, 0);
+              let sg = sampleChannel(btnCx + nx * sampleScale * radCss, btnCy + ny * sampleScale * radCss, 1);
+              let sb = sampleChannel(btnCx + nx * (sampleScale - disp) * radCss, btnCy + ny * (sampleScale - disp) * radCss, 2);
+              const lum = 0.299 * sr + 0.587 * sg + 0.114 * sb, sat = 1.08;
+              sr = lum + (sr - lum) * sat; sg = lum + (sg - lum) * sat; sb = lum + (sb - lum) * sat;
+              const topSpec = -ny * 0.88 - nx * 0.34, botSpec = ny * 0.88 + nx * 0.34;
+              const tW = topSpec > 0 ? Math.pow(topSpec, 1.45) : 0, bW = botSpec > 0 ? Math.pow(botSpec, 1.55) : 0;
+              const dirW = 0.20 + 0.78 * tW + 0.60 * bW;
+              const baseVeil = 0.08 + (ny < 0 ? (-ny) * 0.055 * (1 - r * 0.4) : 0);
+              const whiteAlpha = Math.min(0.68, baseVeil + r4 * r * 0.10 * dirW + r8 * r8 * 0.42 * dirW);
+              const invAlpha = 1 - whiteAlpha;
+              sr = sr * invAlpha + 255 * whiteAlpha;
+              sg = sg * invAlpha + 255 * whiteAlpha;
+              sb = sb * invAlpha + 255 * whiteAlpha;
+              const idx = (rowOff + px) << 2;
+              out[idx] = sr > 255 ? 255 : (sr < 0 ? 0 : sr | 0);
+              out[idx + 1] = sg > 255 ? 255 : (sg < 0 ? 0 : sg | 0);
+              out[idx + 2] = sb > 255 ? 255 : (sb < 0 ? 0 : sb | 0);
+              const edgePx = (1.0 - r) * R;
+              out[idx + 3] = edgePx < 1.5 ? Math.max(0, Math.min(255, (edgePx / 1.5 * 255) | 0)) : 255;
+            }
+          }
+          ctx.putImageData(outImg, 0, 0);
+          btn.classList.add("has-lens");
         });
       };
 
