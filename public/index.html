@@ -938,6 +938,7 @@
     <div class="top-candidates-bar" id="topCandidatesBar" style="display:none;">
       <!-- Word chips injected dynamically -->
     </div>
+    <div id="enigmaLiveTranscriptBar" style="display:none;position:fixed;top:max(54px, env(safe-area-inset-top, 47px));left:16px;right:16px;text-align:center;font-size:11px;font-weight:500;color:rgba(255,255,255,0.45);pointer-events:none;z-index:85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 1px 2px rgba(0,0,0,0.45);"></div>
 
     <!-- Authentic iOS Bottom App Dock (4 Apps) with Dynamic Ouija Dot Indicator -->
     <div class="homescreen-dock-row" id="dockAppsRow">
@@ -1208,6 +1209,10 @@
         Enigma automatically takes the first letter, locks the word, and triggers the physical Aura Taptic buzz.
       </div>
       <div id="lexiconMatchStatus" style="font-size: 12.5px; margin-top: 8px; min-height: 18px;"></div>
+      <div id="lexiconLiveTranscript" style="font-size: 12px; color: #8e8e93; margin-top: 4px; min-height: 16px;"></div>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+        <button class="cat-pill-btn" id="liveTranscriptToggleBtn" onclick="toggleLiveTranscriptPeek()">On-Screen Live Transcript: Off</button>
+      </div>
     </div>
 
     <!-- Unlock Destination Section -->
@@ -1333,6 +1338,23 @@
     let isLexiconListening = false;
     let lastProcessedUtterance = "";
     let lastProcessedTime = 0;
+    let liveTranscriptPeek = localStorage.getItem("enigma_live_transcript_peek") === "true";
+
+    function updateLiveTranscriptToggleUI() {
+      const btn = document.getElementById("liveTranscriptToggleBtn");
+      if (btn) {
+        btn.textContent = "On-Screen Live Transcript: " + (liveTranscriptPeek ? "On" : "Off");
+        btn.classList.toggle("active", liveTranscriptPeek);
+      }
+      const bar = document.getElementById("enigmaLiveTranscriptBar");
+      if (bar && !liveTranscriptPeek) bar.style.display = "none";
+    }
+    function toggleLiveTranscriptPeek() {
+      liveTranscriptPeek = !liveTranscriptPeek;
+      localStorage.setItem("enigma_live_transcript_peek", liveTranscriptPeek ? "true" : "false");
+      updateLiveTranscriptToggleUI();
+    }
+    updateLiveTranscriptToggleUI();
 
     // DOM Elements
     const lockscreenWrapper = document.getElementById("lockscreenWrapper");
@@ -2122,6 +2144,23 @@
       const testDisplay = document.getElementById("lexiconLiveTranscript");
       if (testDisplay) {
         testDisplay.textContent = `Heard: "${text.trim()}"`;
+      }
+      const liveBar = document.getElementById("enigmaLiveTranscriptBar");
+      if (liveBar && liveTranscriptPeek) {
+        liveBar.textContent = text.trim().slice(-48);
+        liveBar.style.display = text.trim() ? "block" : "none";
+      }
+
+      // Direct candidate word match from on-device speech without needing a cue phrase
+      if (Array.isArray(currentCandidateWords) && currentCandidateWords.length > 1) {
+        const spokenWords = text.toLowerCase().replace(/[^a-z\s]/g, " ").split(/\s+/).filter(Boolean);
+        const direct = currentCandidateWords.find(w => spokenWords.includes(String(w).toLowerCase()));
+        if (direct && !(direct === lastProcessedUtterance && (now - lastProcessedTime < 2500))) {
+          lastProcessedUtterance = direct;
+          lastProcessedTime = now;
+          applyOuijaLetterFilter("", direct);
+          return;
+        }
       }
 
       const result = extractOuijaLetter(text);
