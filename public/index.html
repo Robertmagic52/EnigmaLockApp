@@ -2893,8 +2893,6 @@
     }
 
     function startDiscreetSafariListening() {
-      // PER USER REQUIREMENT: Absolutely DO NOT turn on mic in Aura!
-      if (isAuraBrowser()) return;
       if (isSafariVoiceListening) return;
 
       const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -3027,12 +3025,10 @@
         const handleMic = (e) => {
           e.preventDefault();
           e.stopPropagation();
-          if (!isAuraBrowser()) {
-            if (isSafariVoiceListening) {
-              stopDiscreetSafariListening();
-            } else {
-              startDiscreetSafariListening();
-            }
+          if (isSafariVoiceListening) {
+            stopDiscreetSafariListening();
+          } else {
+            startDiscreetSafariListening();
           }
         };
         micBtn.addEventListener("touchend", handleMic);
